@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">        
+        <link rel="stylesheet" href="style.css">
+        <title>L5R app</title>
+
+        <style>
+            * {
+                font-family: Arial, Helvetica, sans-serif, customicons;
+            }
+
+            body {                
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                margin: auto;
+            }
+
+            #main {
+                height: 100vh;
+                width: 100vw;
+                max-width: 768px;
+                display: flex;
+                flex-direction: column;
+            }
+
+            #description {
+                position: absolute;
+                height: 90vh;
+                width: 90vw;
+                max-width: calc(0.9*768px);
+                background-color: #eeeeee;
+                border: 1px solid black;
+                display: none;
+            }
+            @media screen and (min-width: 1200px) {
+                #main {
+                    width: 50vw;
+                }
+                #description {
+                    position: static;
+                    display: block;
+                    max-width: 50vw;
+                }
+            }
+
+            #characterButton {
+                min-height: 50px;
+                border: none;
+                background-color: crimson;
+                text-align: center;
+                cursor: pointer;
+            }
+
+            #navbar {
+                display: flex;
+            }
+            #navbar button {
+                flex-grow: 1;
+                min-height: 50px;
+                border: none;
+                background-color: #333333;
+                color: white;
+                font-size: 1.5em;
+                cursor: pointer;
+            }
+            #navbar button:hover:not(.currentTab) {
+                background-color: #111111;
+            }
+            #navbar .currentTab {
+                background-color: #555555;
+            }
+
+            #filters {
+                background-color:darkgray;
+                display: grid;
+                grid-template-columns: auto 90%;
+                justify-content: space-evenly;
+                gap: 5px;
+                padding: 5px;
+            }
+            #filters>button {
+                grid-column: 1;
+                grid-row: 1 / span 2;
+                border: none;
+                background-color:darkgray;
+                font-size: 2em;
+            }
+            #filters>div{
+                grid-column: 2;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }
+            #filters select{
+                flex-grow: 1;                
+                padding: 3px;
+            }
+
+            #techList {
+                list-style-type:none;
+                margin: 0;
+                padding: 0;
+                overflow: auto;
+            }
+            #techList li {
+                border: 1px solid black;
+                border-radius: 25px;
+                background-color: #eeeeee;
+                display: flex;
+                align-items: center;
+                box-sizing: border-box;
+                padding: 15px;
+                margin: 10px;
+                height: 50px;
+            }              
+        </style>
+    </head>
+    <body>
+        <div id="main">
+            <button id="characterButton"> <!--THIS IS A TEST BUTTON FOR NOW-->
+                AZERTYUIOP
+            </button>
+            <div id="navbar">
+                <button id="userTab" onclick="changeTab('userTab')">&#xe91b</button>
+                <button id="statsTab" onclick="changeTab('statsTab')">&#xe916</button>
+                <button id="skillsTab" onclick="changeTab('skillsTab')">&#xe90e</button>
+                <button id="techniquesTab" class="currentTab" onclick="changeTab('techniquesTab')">&#xe914</button>
+                <button id="experienceTab" onclick="changeTab('experienceTab')">&#xe912</button>
+                <button id="itemsTab" onclick="changeTab('itemsTab')">&#xe919</button>
+                <button id="notesTab" onclick="changeTab('notesTab')">&#xe910</button>
+            </div>
+            <form id="filters">
+                <button>&#xe906</button>
+                <div>
+                    <label>Techniques</label>
+                    <select id="type" onchange="select_change(this.value)">
+                        <option value="all">Tout type</option>
+                        <option value="Kata">Katas</option>
+                        <option value="Kihō">Kihō</option>
+                        <option value="Invocation">Invocations</option>
+                        <option value="Ritual">Rituels</option>
+                        <option value="Shūji">Shūji</option>
+                        <option value="Mahō">Mahō</option>
+                        <option value="Ninjutsu">Ninjutsu</option>
+                    </select>
+                    <select id="ring" name="ring">
+                        <option value="all">Tout anneau</option>
+                        <option value="Air">Air</option>
+                        <option value="Earth">Terre</option>
+                        <option value="Fire">Feu</option>
+                        <option value="Water">Eau</option>
+                        <option value="Void">Vide</option>
+                    </select>
+                    <select id="rank" name="rank">
+                        <option value="all">Tout rang</option>
+                        <option value="1">Rang 1</option>
+                        <option value="2">Rang 2</option>
+                        <option value="3">Rang 3</option>
+                        <option value="4">Rang 4</option>
+                        <option value="5">Rang 5</option>
+                    </select>
+                </div>
+                <div>
+                    <label>Affichage</label>
+                    <select id="availability" name="availability">
+                        <option value="all">Liste complète</option>
+                        <option value="compatible">Techniques compatibles</option>
+                        <option value="available">Techniques disponibles</option>
+                        <option value="progress">Progression</option>
+                        <option value="learned">Techniques apprises</option>
+                    </select>
+                    <select id="curricula" name="curricula">
+                        <option value="independant">Indépendant du cursus</option>
+                        <option value="excluded">Hors cursus uniquement</option>
+                        <option value="included">Cursus uniquement</option>
+                        <option value="missable">Techniques manquables</option>
+                    </select>
+                </div>
+            </form>
+            <ul id="techList">
+                <li>tech1</li>
+                <li>tech2</li>
+                <li>tech3</li>
+                <li>tech4</li>
+                <li>tech5</li>
+                <li>tech6</li>
+                <li>tech7</li>
+                <li>tech8</li>
+                <li>tech9</li>
+                <li>tech10</li>
+                <li>tech11</li>
+                <li>tech12</li>
+                <li>tech13</li>
+                <li>tech14</li>
+                <li>tech15</li>
+                <li>tech16</li>
+                <li>tech17</li>
+                <li>tech18</li>
+                <li>tech19</li>
+                <li>tech20</li>
+            </ul>
+        </div>
+    </body>
+</html>

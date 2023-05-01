@@ -58,7 +58,7 @@ class DataManager {
         // Create an array of all content directory paths
         const paths = ["/content/base"];
         UserSettings.languages.forEach(language => {
-            paths.push(`./content/${language}`);
+            paths.push(`.content/${language}`);
         });
       
         // Create content properties as objects, and an array of urls for all content files
@@ -66,7 +66,7 @@ class DataManager {
         DataManager.contentTypes.forEach(contentType => {
             dataManager.content[contentType] = {};
             paths.forEach(path => {
-                urls.push(`./${path}/${contentType}.json`);            
+                urls.push(`.${path}/${contentType}.json`);            
             });            
         });
               
@@ -81,10 +81,10 @@ class DataManager {
             dataManager.characterNames = await dataManager.getCharacterNames(cache);
 
             // Complete the content properties by merging data from base and english directories by default, then overwriting english data if necessary
-            await dataManager.getContent(cache, `./content/base`);
-            await dataManager.getContent(cache, `./content/en`);
+            await dataManager.getContent(cache, `.content/base`);
+            await dataManager.getContent(cache, `.content/en`);
             if (dataManager.userSettings.language !== "en") {
-                await dataManager.getContent(cache, `./content/${dataManager.userSettings.language}`);
+                await dataManager.getContent(cache, `.content/${dataManager.userSettings.language}`);
             }
         }
         else {
@@ -94,12 +94,12 @@ class DataManager {
 
     async cacheUserSettings() {
         const cache = await caches.open(DataManager.cacheName);
-        await cache.put("./userSettings.json", new Response(JSON.stringify(dataManager.userSettings)));
+        await cache.put(".userSettings.json", new Response(JSON.stringify(dataManager.userSettings)));
     }
 
     async getUserSettings(cache) {
         // If userSettings.json exists in the cache, assign the corresponding object to dataManager.userSettings, otherwise create a new UserSettings
-        const response = await cache.match("./userSettings.json");
+        const response = await cache.match(".userSettings.json");
         if (response) {
             const jsonObject = await response.json();
             return jsonObject;
@@ -112,7 +112,7 @@ class DataManager {
     }
 
     async cacheCharacter() {
-        // Cache the loaded character in ./characters, in the form of familyName_givenName.json
+        // Cache the loaded character in .characters, in the form of familyName_givenName.json
         const cache = await caches.open(DataManager.cacheName);
         await cache.put(`characters/${dataManager.content.families[dataManager.loaded.character.familyRef].name}_${dataManager.loaded.character.givenName}.json`, new Response(JSON.stringify(dataManager.loaded.character)));        
     }
@@ -122,9 +122,9 @@ class DataManager {
         await cache.keys().then(requests => {
             requests.forEach(request => {
                 // for each JSON file in the cache, check if it is in /characters
-                if (request.url.includes("/characters/")) {
+                if (request.url.includes("characters/")) {
                     // If so, get the character's name from the file name and push it to the names array
-                    const nameStart = request.url.search("./characters/") + "/characters/".length;
+                    const nameStart = request.url.search(".characters/") + "characters/".length;
                     const characterName = request.url.slice(nameStart,-5).replace("_"," ");
                     names.push(characterName);
                 }

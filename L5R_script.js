@@ -58,7 +58,7 @@ class DataManager {
         // Create an array of all content directory paths
         const paths = ["./content/base"];
         UserSettings.languages.forEach(language => {
-            paths.push(`.content/${language}`);
+            paths.push(`./content/${language}`);
         });
       
         // Create content properties as objects, and an array of urls for all content files
@@ -84,7 +84,7 @@ class DataManager {
             await dataManager.getContent(cache, `./content/base`);
             await dataManager.getContent(cache, `./content/en`);
             if (dataManager.userSettings.language !== "en") {
-                await dataManager.getContent(cache, `.content/${dataManager.userSettings.language}`);
+                await dataManager.getContent(cache, `./content/${dataManager.userSettings.language}`);
             }
         }
         else {
@@ -114,7 +114,7 @@ class DataManager {
     async cacheCharacter() {
         // Cache the loaded character in .characters, in the form of familyName_givenName.json
         const cache = await caches.open(DataManager.cacheName);
-        await cache.put(`characters/${dataManager.content.families[dataManager.loaded.character.familyRef].name}_${dataManager.loaded.character.givenName}.json`, new Response(JSON.stringify(dataManager.loaded.character)));        
+        await cache.put(`./characters/${dataManager.content.families[dataManager.loaded.character.familyRef].name}_${dataManager.loaded.character.givenName}.json`, new Response(JSON.stringify(dataManager.loaded.character)));        
     }
 
     async getCharacterNames(cache) {

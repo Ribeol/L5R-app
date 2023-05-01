@@ -1,1 +1,3 @@
-source: /content
+source: /content/base
+source: /content/en
+source: /content/fr

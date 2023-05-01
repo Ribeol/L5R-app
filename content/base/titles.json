@@ -1,0 +1,20 @@
+{
+    "Emerald Magistrate [Melee]":{
+        "statusAward":[null,15,40],
+        "curriculum":[
+            [["SG: Trade","S: Fitness","S: Martial Arts [Melee]","S: Performance","TG: Kata 2","T: Open Hand Style","T: Shallow Waters"],30]
+        ]
+    },
+    "Emerald Magistrate [Ranged]":{
+        "statusAward":[null,15,40],
+        "curriculum":[
+            [["SG: Trade","S: Fitness","S: Martial Arts [Ranged]","S: Performance","TG: Kata 2","T: Open Hand Style","T: Shallow Waters"],30]
+        ]
+    },
+    "Emerald Magistrate [Unarmed]":{
+        "statusAward":[null,15,40],
+        "curriculum":[
+            [["SG: Trade","S: Fitness","S: Martial Arts [Unarmed]","S: Performance","TG: Kata 2","T: Open Hand Style","T: Shallow Waters"],30]
+        ]
+    }
+}

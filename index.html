@@ -3,10 +3,10 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="UTF-8">        
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style.css"><!-- Delete extra parts from the stylesheet -->
         <title>L5R app</title>
 
-        <style>
+        <style> /* Move this to style.css*/
             * {
                 font-family: Arial, Helvetica, sans-serif, customicons;
             }
@@ -14,7 +14,6 @@
             body {                
                 display: flex;
                 justify-content: space-evenly;
-                align-items: center;
                 margin: auto;
             }
 
@@ -25,33 +24,75 @@
                 display: flex;
                 flex-direction: column;
             }
+            #main.disabled {
+                pointer-events: none;
+                filter: blur(5px);
+            }
 
-            #description {
-                position: absolute;
-                height: 90vh;
-                width: 90vw;
-                max-width: calc(0.9*768px);
-                background-color: #eeeeee;
-                border: 1px solid black;
+            #overlay {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.5);
+                z-index: 1;
+                pointer-events: none;
                 display: none;
             }
-            @media screen and (min-width: 1200px) {
+            #overlay.visible {
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                pointer-events: all;
+                animation-name: darken;
+                animation-duration: 0.5s;
+            }
+            @keyframes darken {
+                from {background-color: rgba(0, 0, 0, 0);}
+                to {background-color: rgba(0, 0, 0, 0.5);}
+            }
+
+            /*
+            #description {
+                position: fixed;
+                height: 70vh;
+                width: 90vw;
+                z-index: 2;
+                background-color: antiquewhite;
+                border: 1px solid black;
+                overflow: auto;
+                animation-name: expand;
+                animation-duration: 0.5s;
+            }
+            @keyframes expand {
+                from {width: 0;}
+                to {width: 90vw;}
+            }
+
+            @media screen and (min-width: 1024px) {
                 #main {
                     width: 50vw;
                 }
-                #description {
+                #overlay {
                     position: static;
                     display: block;
                     max-width: 50vw;
                 }
             }
+            */
+
+            :root {
+                --customColor: grey;
+            }
+            span.customColor {color: var(--customColor);}
+            li.customColor {border: 2px solid var(--customColor);}
+            button.customColor {background-color: var(--customColor);}
 
             #characterButton {
                 min-height: 50px;
                 border: none;
-                background-color: crimson;
                 text-align: center;
-                cursor: pointer;
             }
 
             #navbar {
@@ -67,76 +108,173 @@
                 cursor: pointer;
             }
             #navbar button:hover:not(.currentTab) {
-                background-color: #111111;
-            }
-            #navbar .currentTab {
                 background-color: #555555;
             }
+            #navbar .currentTab {
+                background-color: #111111;
+            }
+
+            .Air {color: hsl(290, 40%, 60%);}
+            .Earth {color: hsl(140, 40%, 50%);}
+            .Fire {color: hsl(30, 80%, 60%);}
+            .Water {color: hsl(195, 60%, 60%);}
+            .Void {color: hsl(0, 20%, 40%);}
 
             #filters {
                 background-color:darkgray;
                 display: grid;
-                grid-template-columns: auto 90%;
-                justify-content: space-evenly;
+                grid-template-columns: 40px auto;
                 gap: 5px;
                 padding: 5px;
+                align-items: center;
             }
-            #filters>button {
-                grid-column: 1;
+            #filters>span {
                 grid-row: 1 / span 2;
-                border: none;
-                background-color:darkgray;
                 font-size: 2em;
+                padding-top: 5px;
+                text-align: center;
+                cursor: default;
             }
             #filters>div{
-                grid-column: 2;
                 display: flex;
-                align-items: center;
-                gap: 10px;
+                flex-wrap: wrap;
+                gap: 5px;
             }
             #filters select{
-                flex-grow: 1;                
-                padding: 3px;
+                flex-grow: 1;
+                padding: 2px;
+                cursor: pointer;
             }
 
-            #techList {
+            #contentList {
                 list-style-type:none;
                 margin: 0;
                 padding: 0;
                 overflow: auto;
-            }
-            #techList li {
-                border: 1px solid black;
+            } 
+            #contentList li {
                 border-radius: 25px;
                 background-color: #eeeeee;
+                margin: 5px;
+                padding-left: 5px;
+                padding-right: 5px;
                 display: flex;
                 align-items: center;
-                box-sizing: border-box;
-                padding: 15px;
-                margin: 10px;
-                height: 50px;
-            }              
+                min-width: 35px;
+                cursor: default;
+                position: relative;
+            }
+            #contentList li.expanded {
+                z-index: 2;
+                border: 1px solid black;
+                background-color: antiquewhite;
+            }
+            #contentList li.expanded span {
+                color: black;
+            }
+
+
+
+            #contentList li span {
+                text-align: center;
+            }
+            
+            #contentList .rank {
+                font-weight: bold;
+                width: 15px;
+            }
+            #contentList .icon {
+                font-size: 1.5em;
+            }
+            #contentList .left.icon {
+                width: 30px;
+            }
+            #contentList .left.icon:not(.Mahō) {
+                padding-top: 4px;
+            }
+            #contentList .Mahō {
+                padding-bottom: 4px;
+            }
+            #contentList .name {
+                flex-grow: 1;
+                padding: 5px;
+                display: flex;
+                flex-direction: column;                
+            }
+            #contentList .traditional {
+                font-size: small;
+                font-style: italic;
+            }
+            #contentList .right.icon {
+                width: 25px;
+            }
+            #contentList .pointer {
+                cursor: pointer;
+            }            
+            #contentList .available {border: 1px solid black;}
+            #contentList .incompatible * {color: #AAAAAA;}
+
         </style>
     </head>
     <body>
         <div id="main">
-            <button id="characterButton"> <!--THIS IS A TEST BUTTON FOR NOW-->
-                AZERTYUIOP
+            <button id="characterButton" class="customColor">
+                <span id="tempSpan">TEMP SCHOOL DROPDOWN</span>
+                <select id="tempSchoolDropdown">
+                    <option value="Hida">Hida</option>
+                    <option value="Hiruma">Hiruma</option>
+                    <option value="Kaiu">Kaiu</option>
+                    <option value="Kuni">Kuni</option>
+                    <option value="Yasuki">Yasuki</option>
+                    <option value="Asahina">Asahina</option>
+                    <option value="Daidoji">Daidoji</option>
+                    <option value="Doji">Doji</option>
+                    <option value="Kakita">Kakita</option>
+                    <option value="Agasha">Agasha</option>
+                    <option value="Kitsuki">Kitsuki</option>
+                    <option value="Mirumoto">Mirumoto</option>
+                    <option value="Togashi">Togashi</option>
+                    <option value="Akodo">Akodo</option>
+                    <option value="Ikoma">Ikoma</option>
+                    <option value="Kitsu">Kitsu</option>
+                    <option value="Matsu">Matsu</option>
+                    <option value="Asako">Asako</option>
+                    <option value="Isawa">Isawa</option>
+                    <option value="Shiba">Shiba</option>
+                    <option value="Kaito">Kaito</option>
+                    <option value="Bayushi">Bayushi</option>
+                    <option value="Shosuro">Shosuro</option>
+                    <option value="Soshi">Soshi</option>
+                    <option value="Yogo">Yogo</option>
+                    <option value="Ide">Ide</option>
+                    <option value="Iuchi">Iuchi</option>
+                    <option value="Moto">Moto</option>
+                    <option value="Shinjo">Shinjo</option>
+                    <option value="Utaku">Utaku</option>
+                    <option value="ronin">ronin</option>
+                </select>
             </button>
             <div id="navbar">
-                <button id="userTab" onclick="changeTab('userTab')">&#xe91b</button>
-                <button id="statsTab" onclick="changeTab('statsTab')">&#xe916</button>
-                <button id="skillsTab" onclick="changeTab('skillsTab')">&#xe90e</button>
-                <button id="techniquesTab" class="currentTab" onclick="changeTab('techniquesTab')">&#xe914</button>
-                <button id="experienceTab" onclick="changeTab('experienceTab')">&#xe912</button>
-                <button id="itemsTab" onclick="changeTab('itemsTab')">&#xe919</button>
-                <button id="notesTab" onclick="changeTab('notesTab')">&#xe910</button>
+                <button id="userTab">&#xe91b</button>
+                <button id="statsTab">&#xe916</button>
+                <button id="skillsTab">&#xe90e</button>
+                <button id="techniquesTab">&#xe914</button>
+                <button id="experienceTab">&#xe912</button>
+                <button id="itemsTab">&#xe919</button>
+                <button id="notesTab">&#xe910</button>
             </div>
             <form id="filters">
-                <button>&#xe906</button>
+                <span>&#xe906</span>
                 <div>
-                    <label>Techniques</label>
-                    <select id="type" onchange="select_change(this.value)">
+                    <select id="rankFilter">
+                        <option value="all">Tout rang</option>
+                        <option value="1">Rang 1</option>
+                        <option value="2">Rang 2</option>
+                        <option value="3">Rang 3</option>
+                        <option value="4">Rang 4</option>
+                        <option value="5">Rang 5</option>
+                    </select>
+                    <select id="typeFilter">
                         <option value="all">Tout type</option>
                         <option value="Kata">Katas</option>
                         <option value="Kihō">Kihō</option>
@@ -146,7 +284,7 @@
                         <option value="Mahō">Mahō</option>
                         <option value="Ninjutsu">Ninjutsu</option>
                     </select>
-                    <select id="ring" name="ring">
+                    <select id="ringFilter">
                         <option value="all">Tout anneau</option>
                         <option value="Air">Air</option>
                         <option value="Earth">Terre</option>
@@ -154,53 +292,31 @@
                         <option value="Water">Eau</option>
                         <option value="Void">Vide</option>
                     </select>
-                    <select id="rank" name="rank">
-                        <option value="all">Tout rang</option>
-                        <option value="1">Rang 1</option>
-                        <option value="2">Rang 2</option>
-                        <option value="3">Rang 3</option>
-                        <option value="4">Rang 4</option>
-                        <option value="5">Rang 5</option>
-                    </select>
                 </div>
                 <div>
-                    <label>Affichage</label>
-                    <select id="availability" name="availability">
+                    <select id="availabilityFilter">
                         <option value="all">Liste complète</option>
                         <option value="compatible">Techniques compatibles</option>
                         <option value="available">Techniques disponibles</option>
-                        <option value="progress">Progression</option>
+                        <option value="missable">Techniques manquables</option>
                         <option value="learned">Techniques apprises</option>
                     </select>
-                    <select id="curricula" name="curricula">
-                        <option value="independant">Indépendant du cursus</option>
-                        <option value="excluded">Hors cursus uniquement</option>
-                        <option value="included">Cursus uniquement</option>
-                        <option value="missable">Techniques manquables</option>
+                    <select id="curriculaFilter">
+                        <option value="indifferent">Toute origine</option>
+                        <option value="excluded">Hors du cursus</option>
+                        <option value="included">Dans le cursus</option>
+                        <option value="current">Rang actuel</option>
                     </select>
                 </div>
             </form>
-            <ul id="techList">
-                <li>tech1</li>
-                <li>tech2</li>
-                <li>tech3</li>
-                <li>tech4</li>
-                <li>tech5</li>
-                <li>tech6</li>
-                <li>tech7</li>
-                <li>tech8</li>
-                <li>tech9</li>
-                <li>tech10</li>
-                <li>tech11</li>
-                <li>tech12</li>
-                <li>tech13</li>
-                <li>tech14</li>
-                <li>tech15</li>
-                <li>tech16</li>
-                <li>tech17</li>
-                <li>tech18</li>
-                <li>tech19</li>
-            </ul>
+            <ul id="contentList">
         </div>
+        <div id="overlay">/*
+            <!--<div id="description">
+                
+            </div>-->
+        </div>
+
+        <script defer src="L5R_script.js"></script>
     </body>
 </html>

@@ -1,0 +1,42 @@
+{
+    "Air":{
+        "name":"Air",
+        "artisan":"Raffiner",
+        "social":"Duper",
+        "scholar":"Analyser",
+        "martial":"Feinter",
+        "trade":"Escroquer"
+    },
+    "Earth":{
+        "name":"Terre",
+        "artisan":"Restaurer",
+        "social":"Raisonner",
+        "scholar":"Se remémorer",
+        "martial":"Résister",
+        "trade":"Produire"
+    },
+    "Fire":{
+        "name":"Feu",
+        "artisan":"Inventer",
+        "social":"Inciter",
+        "scholar":"Théoriser",
+        "martial":"Submerger",
+        "trade":"Innover"
+    },
+    "Water":{
+        "name":"Eau",
+        "artisan":"Adapter",
+        "social":"Charmer",
+        "scholar":"Observer",
+        "martial":"Détourner",
+        "trade":"Échanger"
+    },
+    "Void":{
+        "name":"Vide",
+        "artisan":"S’harmoniser",
+        "social":"Illuminer",
+        "scholar":"Ressentir",
+        "martial":"Lâcher prise",
+        "trade":"Subsister"
+    }
+}

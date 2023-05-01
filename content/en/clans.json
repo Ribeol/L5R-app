@@ -1,0 +1,146 @@
+{
+    "Crab":{
+        "name":"Crab",
+        "description":[
+            "At the southern border of Rokugan stands a grim miracle: the Kaiu Wall, stretching like a great puckered scar along the landscape, its slate-gray blocks fitted together seamlessly into a structure thirty feet thick and a hundred feet tall. To the south loom the blighted Shadowlands, the domain of the corrupted armies of Jigoku, and to the north lie the lands of the Crab Clan, the Wall’s crafters and defenders.",
+            "The Crab Clan are known as guardians and warriors—slayers of monsters and protectors of the realm. Even those who do not fight with weapons often wage war with their minds and words, securing key supplies for their clan, maintaining alliances to guarantee support of the Wall, or engineering new technologies to turn back the endless hordes of the Shadowlands. However, the Crab Clan’s task often weighs heavily upon the disciples of the Kami Hida. They are known as taciturn, battle weary, or even disillusioned. The glories of the battlefield are scant reward, and surviving to fight another day can seem its own punishment at times when facing such a relentless threat. Still, these people find ways to live and express themselves, and many revel in the small joys that life provides them."
+        ],
+        "bushidō":[
+            "Courage is the greatest virtue in Crab lands, for the Kami Hida placed an especially grave task on the shoulders of his descendants. The Crab safeguard the most perilous border of the Emerald Empire, warding it against the terrible hordes of Fu Leng. The consequences of failure are obvious and dreadful to contemplate.",
+            "Rough and warlike, the Crab have never truly adopted the strict social refinement the other clans have come to demand of their constituents, and so Courtesy is defined somewhat more loosely for the Crab."
+        ],
+        "culture":[
+            "In comparison with the rest of Rokugan, the Crab Clan is rowdy, direct to the point of rudeness, and tends to look for pragmatic solutions. Weakness of the individual is weakness of the group, for a single failure could bring down disaster upon all. After all, what honor or respite can be expected from the foe when your enemies are goblins, demons, and other monstrosities?"
+        ],
+        "knowledge":[
+            "You have a general awareness of the politics within Crab lands. You can name major family heads and other leaders, and you know their respective positions and allegiances.",
+            "You can identify common Shadowlands creatures such as goblins, ogres, and zombies, and you know how to dispatch them.",
+            "You grew up hearing stories and songs of heroes who faced greater evils still, such as oni, but you likely have not encountered such horrors personally.",
+            "You know all too well the befouling Taint of the Shadowlands and how best to avoid it, and you can recognize the advanced stages of this unnatural corruption."
+        ]
+    },
+    "Crane":{
+        "name":"Crane",
+        "description":[
+            "At the dawn of the Empire, after the Kami had fallen from the Celestial Heavens, they found themselves plunged into a mortal world rife with cruelty and war. The Kami Doji—sister of Hantei, the first Emperor—resolved to bring order to this savage realm. The embodiment of elegance and grace, Doji walked among the earthly peoples, calming them in the way fair weather calms a storm-tossed sea. Any Crane will gladly speak of how from her, humans learned writing so they could record their achievements, politics to govern their affairs, economics and commerce to manage their wealth, and art and culture to lift them from their lives of misery. Those she touched the most became her devoted followers, the first samurai of the Crane Clan. Since that time, the Crane have become both the poets and the poetry of the Empire, at once the swordsmiths and the duelists wielding the smiths’ blades. In every aspect of their lives, the Crane strive for mastery in all things, an ideal that the other clans can only hope to emulate.",
+            "The Crane Clan represents the pinnacle of refinement in Rokugan, and its members are known for their elegance, grace, and mastery of social customs. People expect them to be well-spoken, subtle in the extreme, and unfailingly polite."
+        ],
+        "bushidō":[
+            "Vous incarnez avec diligence la vertu de courtoisie. En effet, le pouvoir politique du Clan de la Grue repose sur le respect de la bienséance, et le principe selon lequel chacun doit agir en sachant où est sa place… et la vôtre.",
+            "Bien que de nombreux membres du Clan de la Grue soient particulièrement braves, faire preuve de témérité peut conduire à l’imprudence. Garder la tête froide est une nécessité, qui implique parfois d’éviter purement et simplement le combat."
+        ],
+        "culture":[
+            "The Crane Clan’s political and cultural capital are indistinguishable. As a result, refinement, grace, and sensitivity are not only the defining features of the Crane Clan, but chief among its weapons. Those who fail in achieving excellence fall to obscurity and the silent shame of countless unspoken criticisms."
+        ],
+        "knowledge":[
+            "You have a strong awareness of the politics within Crane lands. You can name major family heads and other leaders, and you know their respective positions and allegiances.",
+            "You know about the general state of political affairs between the clans.",
+            "You know proper etiquette and protocol in the Imperial Capital.",
+            "You have a working knowledge of the high arts and the great masters of old (at least, among the Crane, for who else truly warrants note?)."
+        ]
+    },
+    "Dragon":{
+        "name":"Dragon",
+        "description":[
+            "In an empire that usually prizes conformity and respect for tradition, the Dragon Clan is an enigma. Inspired by their mysterious founder, the Kami Togashi, the Dragon place more emphasis than most of their fellow samurai on the individual search for Enlightenment and expertise.",
+            "In the centuries since the Kami fell to earth, Togashi’s followers have acquired a reputation for strange behavior. Isolated by the mountains of their northern home and entrusted with watching over the Empire, the Dragon rarely participate as actively in the politics of the Empire as other clans do—and when they do intervene, it is often for reasons others can only guess at. The secret of the Dragon is that they are guided by their founder’s foresight, but even they do not always know what Togashi saw in his visions.",
+            "Togashi’s acolytes are known for their esoteric practices, innate curiosity, and veritable tradition of disregarding tradition—at least in the eyes of the other clans. People expect them to be insightful and humble, but also unpredictable, individualistic, and even dangerous. They tend to look at problems from unexpected angles, and they seek solutions others might not consider."
+        ],
+        "bushidō":[
+            "La sincérité (faire coïncider ses paroles, ses actes et ses intentions) est la plus importante vertu pour le Clan du Dragon. Ses samouraïs peuvent ainsi rester fidèles à eux-mêmes, y compris dans l’échec.",
+            "Bien que les membres du Clan du Dragon prennent leurs obligations au sérieux, leur définition du devoir et de la loyauté diffère quelque peu de celle des autres samouraïs. Pour eux, celui qui ne remet jamais en question sa loyauté n’est pas loyal du tout. Les seigneurs de ce clan sont connus pour tolérer, voire apprécier, des critiques que d’autres verraient comme de graves insubordinations."
+        ],
+        "culture":[
+            "The Dragon Clan is diverse in its pursuits, even among members of the same schools and traditions. However, it is unified in one philosophy—a philosophy of commitment to the betterment of one’s self and, therefore, the betterment of the whole Empire. Despite the individuality displayed by Dragon Clan samurai, they have been united in their task to watch over the Empire and record its history—which occasionally means coming down from their seclusion in the northern mountains to experience the Empire face-to-face."
+        ],
+        "knowledge":[
+            "You have a general awareness of the politics within Dragon lands. You can name major family heads and other leaders, and you know their respective positions and allegiances.",
+            "You know more about monastic life and traditions than most other clans, having likely interacted with the Togashi Order throughout your life.",
+            "Due to the rugged nature of your homeland, you know how to properly prepare mountain flora and wildlife for human consumption.",
+            "You have a working understanding of many physical phenomena of the natural world, which others dismiss as uninteresting or beneath their station."
+        ]
+    },
+    "Lion":{
+        "name":"Lion",
+        "description":[
+            "Every samurai who lives in Rokugan measures courage, honor, and duty by the standard set by the Lion Clan. The Lion’s military is unrivaled, as there are no sharper tacticians and no larger armies in all of Rokugan. This proud military heritage has earned the Lion Clan a place as the Right Hand of the Emperor, sworn to protect him by serving as his personal guard and his standing army. ",
+            "In light of this duty, fear means nothing to Lion samurai. The threat of death only serves to embolden them and bolster their courage, for there can be no greater end than to perish in honorable combat. As veterans of countless wars, the Lion know that those who attack first shall be victorious. Above all, the Lion live, breathe, and die for the Emperor and Rokugan.",
+            "Perhaps the most well-known battlefield warriors in the Emerald Empire, the samurai of the Lion Clan are famous for their ferocity, loyalty, and courage. People expect members of the Lion Clan to be warlike and aggressive, often forgetting that the Kami Akodo was a master tactician as well, more than capable of learning from past mistakes and adapting new stratagems on the battlefield."
+        ],
+        "bushidō":[
+            "Honor is at the center of the Lion Clan’s view of Bushidō, especially in the context of martial virtue. Its samurai learn to be the harshest judges of themselves and their actions, for without honor, the other virtues ring hollow.",
+            "This emphasis on Honor colors the clan’s perception of Compassion, for only those who comport themselves with Honor are worthy of the Lion Clan’s benevolence."
+        ],
+        "culture":[
+            "The Lion Clan is war itself, forged by the Kami Akodo to crush the Emperor’s foes and enforce Hantei’s will absolutely. Lion Clan culture lives and breathes martial achievement and glory. It expects its children to meet force with force and death with a smile—a hard path for anyone to walk, and harder still for any gentle soul. Even those among the Lion Clan who are not warriors often couch their achievements in martial terms that glorify combat as the highest of arts."
+        ],
+        "knowledge":[
+            "You have a general awareness of the politics within Lion lands. You can name major family heads and other leaders, and you know their respective positions and allegiances.",
+            "You know military history quite well, especially as it pertains to the glorious deeds of your forebears.",
+            "You can identify and know the proper purpose of all Rokugani battlefield weapons, even if you are not personally proficient in their use.",
+            "You know about most common military maneuvers and engagements, such as feigned retreats, flank attacks, raids, and sieges."
+        ]
+    },
+    "Phoenix":{
+        "name":"Phoenix",
+        "description":[
+            "The Phoenix is a symbol of contradictions: explosive power and great restraint, vast intelligence and deep humility, immolating self-sacrifice and glorious rebirth. These entwined virtues illuminate the path of Rokugan’s most mystical Great Clan, the keepers of the Tao of Shinsei and caretakers of the Empire’s soul.",
+            "As the scent of incense wafts unseen to all corners of a shrine, so do the Spirit Realms overlap invisibly with the Realm of Mortals. The Phoenix mediate between the worlds, appealing to the very soul of the lands. Mountains collapse at their whispered requests, dry rivers are convinced to flow again, plagues are banished, restless ghosts are returned to slumber, and crops flourish in previously barren wastelands. Nevertheless, the Phoenix understand that even the purest wish can have unintended and destructive consequences if the elements are brought out of balance. Although others consider the Phoenix too hesitant in their entreaties to the kami, few are foolhardy enough to test the Phoenix’s dedication to peace and harmony.",
+            "The Kami Shiba and the priest Isawa were very different sorts of leaders, one humble and the other prideful, one calm in his wisdom and the other fierce in his brilliance. As such, people expect members of the Phoenix Clan to be calm, thoughtful, and scholarly—but also passionate, and sometimes even arrogant due to the vast knowledge their clan maintains. Both Shiba and Isawa were deeply spiritual; this bond has defined the Phoenix Clan since its earliest days, and people still expect members of the Phoenix Clan to be more concerned with cosmic problems than with matters mundane."
+        ],
+        "bushidō":[
+            "Righteousness drives the samurai of the Phoenix Clan in their pursuits, and they are willing to sacrifice themselves to ensure the right thing is done. They know that when samurai do not govern their lands justly, the Heavens themselves will voice their displeasure.",
+            "At the same time, some truths must not be revealed to the world, and some mysteries are not meant even for the other samurai clans. The Phoenix Clan takes a selective view of Sincerity, certain in their belief that they are the best equipped to protect and wield certain knowledge."
+        ],
+        "culture":[
+            "The Phoenix Clan values balance and the Tao of Shinsei far more than the other clans, seeking harmony between the mortal and spiritual realms, as well as harmony within themselves. The Phoenix know that every step sends ripples throughout the world, so one must tread lightly and with a peaceful heart, lest one’s actions sow disharmony or even chaos. Such restraint, however, is frequently viewed as cowardice or passivity by the other clans."
+        ],
+        "knowledge":[
+            "You have a general awareness of the politics within Phoenix lands. You can name major family heads and other leaders, and you know their respective positions and allegiances.",
+            "You are familiar with the religious practices of Rokugan, such as the rites practiced by various priesthoods, the invocations of shugenja, the Tao of Shinsei, and even the traditions that existed before the Kami, such as the Fortunist traditions of the Isawa and the animist practices of the Yobanjin who dwell in the Great Wall of the North Mountains.",
+            "You know some of the most significant kami who reside in Phoenix lands by name from stories or perhaps even personal interaction.",
+            "You know the names and locations of all major shrines in Rokugan."
+        ]
+    },
+    "Scorpion":{
+        "name":"Scorpion",
+        "description":[
+            "With six terrible words, the Kami Bayushi set his followers in the newly founded Scorpion Clan on a dark and dangerous path. Enemies loomed beyond Rokugan’s borders, but they also lurked within them. Bayushi swore to protect the Empire by any means necessary. Where the Code of Bushidō tied the Emperor’s Left and Right Hands—the courtiers of the Crane and the mighty legions of the Lion—the Emperor’s Underhand could still reach. To combat the liars, the thieves, and the traitors within the Great Clans, Bayushi’s followers would have to lie, steal, and cheat in turn. The weapons of the Scorpion became blackmail, poison, and sabotage. The Scorpion dirtied their hands so that others’ could remain pure.",
+            "Yet, in spite of—and perhaps because of—the clan’s fearsome reputation, there is none more loyal than a Scorpion. In a clan of deceivers and manipulators, trust is a hard-earned treasure to be cherished and guarded. Betrayal is punished with swift retribution, the souls of the treacherous forever bound into the horrific limbo of the place known as Traitor’s Grove. Such fierce loyalty is a small consolation, at least, given the dangerous but vital role the Scorpion have played in the Empire from the moment their Kami spoke his fateful words: “I will be your villain, Hantei.”",
+            "Bayushi’s successors are known for their insidious skill at scheming, but also the potential benefits of partnering with them—for without offering the proper incentives to their allies some of the time, they could never maintain their position as the great schemers of the Empire. People expect members of the Scorpion to be equal parts alluring and treacherous—and loyal only to the Emperor."
+        ],
+        "bushidō":[
+            "Duty and Loyalty is the core tenet of the Scorpion Clan. They must be prepared to do—and sacrifice—anything and everything in the service of the Empire.",
+            "Honor and Righteousness fall by the wayside for most Scorpion. While they are not wholly unimportant, obsessing over such matters would make many vital tasks impossible."
+        ],
+        "culture":[
+            "The Scorpion Clan is a group united by grave purposes: to preserve life by killing, and to let others live out the ideals of honor by staining themselves via dishonorable acts. Most Scorpion stake their humanity on one ideal of honor they can uphold or a personal bond that keeps them from slipping—while others vanish completely into their masks, truly becoming the villains others believe them to be."
+        ],
+        "knowledge":[
+            "You have a strong awareness of the politics within Scorpion lands. You can name major family heads and other leaders, and you know their respective positions and allegiances.",
+            "You know about the general state of political affairs between the clans.",
+            "You are aware of the most substantial criminal cartels in the Emerald Empire, especially as their interests overlap or conflict with those of the Scorpion Clan.",
+            "You know the state of court matters in the Imperial Capital."
+        ]
+    },
+    "Unicorn":{
+        "name":"Unicorn",
+        "description":[
+            "A thousand years ago, the Ki-Rin Clan rode out of Rokugan, seeking to discover enemies hiding beyond the Emerald Empire’s borders. Their journey was arduous, and they found many strange and powerful threats. In defeating each one, the clan learned, changing its fighting styles, magical practices, and even philosophy. To survive, it was forced to adapt—and overcome. After eight centuries of wandering, the Clan of the Wind returned to the Empire as the Unicorn Clan. They wear fur, speak foreign tongues, and wield strange weapons. Although they still revere the Kami Shinjo, they have drifted far from the traditions and ways of the Emerald Empire.",
+            "Shinjo’s descendants are known for their skill as riders, skirmishers, and messengers, and many are trained in foreign fighting techniques or schools of philosophy. People expect them to be worldly and gregarious, if perhaps a bit rough around the edges in polite Rokugani society, given that many members of the clan spend much of their lives ranging across the wilds in Unicorn lands and beyond."
+        ],
+        "bushidō":[
+            "Compassion is the most significant tenet of Bushidō to the Unicorn Clan, for mutual understanding and cooperation was the key to the clan’s survival during its long journey across the wider world. On this journey, members of the Unicorn Clan met many people with a wide variety of beliefs, cultures, and values, and they became far more accustomed to coexistence with strange outsiders than are most Great Clan samurai.",
+            "The Unicorn Clan has had several centuries to acclimate to the Emerald Empire, to which it has returned, but the customs and culture they adopted during their travels remain a powerful force within the clan. These customs often clash with the Rokugani concept of Courtesy, and the Unicorn’s seeming dismissal of Rokugani politeness is one of the most contentious ways in which Shinjo’s clan differs from those of her siblings."
+        ],
+        "culture":[
+            "The Unicorn Clan values novelty and flexibility of tradition in a way that other clans do not. Members of the Unicorn Clan tend to be very receptive to new ideas and cultural elements without fearing the loss or erosion of their own, for they preserved a consistent culture throughout their long centuries of journeying. However, the Unicorn are driven by an ambition that is not easy to quell, and those seen as lacking in drive are often pushed out by more aggressive members of the clan."
+        ],
+        "knowledge":[
+            "You have a general awareness of the politics within Unicorn lands. You can name major family heads and other leaders, and you know their respective positions and allegiances.",
+            "You know many basic facts of life about foreign lands, particularly the Burning Sands, the Ivory Kingdoms, and beyond, even if you have not journeyed there yourself.",
+            "You know at least some foreign words from numerous languages, such as Nehiri, Ivindi, Myantu, and Portuga, and might fluently speak one of these or even a language wholly unknown in the Emerald Empire.",
+            "You know the basics of mounted combat tactics, along with various other aspects of the proper handling and care of horses."
+        ]
+    }
+}

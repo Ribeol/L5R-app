@@ -1,0 +1,74 @@
+{
+    "Aesthetics":{
+        "name":"Esthétique"
+    },
+    "Composition":{
+        "name":"Composition"
+    },
+    "Design":{
+        "name":"Stylisme"
+    },
+    "Smithing":{
+        "name":"Forge"
+    },
+    "Command":{
+        "name":"Commandement"
+    },
+    "Courtesy":{
+        "name":"Courtoisie"
+    },
+    "Games":{
+        "name":"Jeux"
+    },
+    "Performance":{
+        "name":"Représentations"
+    },
+    "Culture":{
+        "name":"Culture"
+    },
+    "Government":{
+        "name":"Gouvernement"
+    },
+    "Medicine":{
+        "name":"Médecine"
+    },
+    "Sentiment":{
+        "name":"Sentiments"
+    },
+    "Theology":{
+        "name":"Théologie"
+    },
+    "Fitness":{
+        "name":"Forme"
+    },
+    "Martial Arts [Melee]":{
+        "name":"Arts Martiaux (corps à corps)"
+    },
+    "Martial Arts [Ranged]":{
+        "name":"Arts Martiaux (distance)"
+    },
+    "Martial Arts [Unarmed]":{
+        "name":"Arts Martiaux (mains nues)"
+    },
+    "Meditation":{
+        "name":"Méditation"
+    },
+    "Tactics":{
+        "name":"Tactique"
+    },
+    "Commerce":{
+        "name":"Commerce"
+    },
+    "Labor":{
+        "name":"Travail manuel"
+    },
+    "Seafaring":{
+        "name":"Navigation"
+    },
+    "Skulduggery":{
+        "name":"Magouilles"
+    },
+    "Survival":{
+        "name":"Survie"
+    }
+}

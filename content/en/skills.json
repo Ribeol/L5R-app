@@ -1,0 +1,74 @@
+{
+    "Aesthetics":{
+        "name":"Aesthetics"
+    },
+    "Composition":{
+        "name":"Composition"
+    },
+    "Design":{
+        "name":"Design"
+    },
+    "Smithing":{
+        "name":"Smithing"
+    },
+    "Command":{
+        "name":"Command"
+    },
+    "Courtesy":{
+        "name":"Courtesy"
+    },
+    "Games":{
+        "name":"Games"
+    },
+    "Performance":{
+        "name":"Performance"
+    },
+    "Culture":{
+        "name":"Culture"
+    },
+    "Government":{
+        "name":"Government"
+    },
+    "Medicine":{
+        "name":"Medicine"
+    },
+    "Sentiment":{
+        "name":"Sentiment"
+    },
+    "Theology":{
+        "name":"Theology"
+    },
+    "Fitness":{
+        "name":"Fitness"
+    },
+    "Martial Arts [Melee]":{
+        "name":"Martial Arts [Melee]"
+    },
+    "Martial Arts [Ranged]":{
+        "name":"Martial Arts [Ranged]"
+    },
+    "Martial Arts [Unarmed]":{
+        "name":"Martial Arts [Unarmed]"
+    },
+    "Meditation":{
+        "name":"Meditation"
+    },
+    "Tactics":{
+        "name":"Tactics"
+    },
+    "Commerce":{
+        "name":"Commerce"
+    },
+    "Labor":{
+        "name":"Labor"
+    },
+    "Seafaring":{
+        "name":"Seafaring"
+    },
+    "Skulduggery":{
+        "name":"Skulduggery"
+    },
+    "Survival":{
+        "name":"Survival"
+    }
+}

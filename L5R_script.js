@@ -56,7 +56,7 @@ class DataManager {
     async initialize() {
 
         // Create an array of all content directory paths
-        const paths = ["./content/base"];
+        const paths = [`./content/base`];
         UserSettings.languages.forEach(language => {
             paths.push(`./content/${language}`);
         });
@@ -94,12 +94,12 @@ class DataManager {
 
     async cacheUserSettings() {
         const cache = await caches.open(DataManager.cacheName);
-        await cache.put("./userSettings.json", new Response(JSON.stringify(dataManager.userSettings)));
+        await cache.put("userSettings.json", new Response(JSON.stringify(dataManager.userSettings)));
     }
 
     async getUserSettings(cache) {
         // If userSettings.json exists in the cache, assign the corresponding object to dataManager.userSettings, otherwise create a new UserSettings
-        const response = await cache.match("./userSettings.json");
+        const response = await cache.match(`./userSettings.json`);
         if (response) {
             const jsonObject = await response.json();
             return jsonObject;
@@ -112,7 +112,7 @@ class DataManager {
     }
 
     async cacheCharacter() {
-        // Cache the loaded character in .characters, in the form of familyName_givenName.json
+        // Cache the loaded character in /characters, in the form of familyName_givenName.json
         const cache = await caches.open(DataManager.cacheName);
         await cache.put(`./characters/${dataManager.content.families[dataManager.loaded.character.familyRef].name}_${dataManager.loaded.character.givenName}.json`, new Response(JSON.stringify(dataManager.loaded.character)));        
     }
@@ -122,10 +122,10 @@ class DataManager {
         await cache.keys().then(requests => {
             requests.forEach(request => {
                 // for each JSON file in the cache, check if it is in /characters
-                if (request.url.includes("/characters/")) {
+                if (request.url.includes('/characters/')) {
                     // If so, get the character's name from the file name and push it to the names array
-                    const nameStart = request.url.search("./characters/") + "/characters/".length;
-                    const characterName = request.url.slice(nameStart,-5).replace("_"," ");
+                    const nameStartPosition = request.url.search("/characters/") + "/characters/".length;
+                    const characterName = request.url.slice(nameStartPosition, -5).replace("_", " ");
                     names.push(characterName);
                 }
             });

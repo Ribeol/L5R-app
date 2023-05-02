@@ -1,74 +1,74 @@
 {
-    "Aesthetics":{
-        "group":"Artisan"
+    "aesthetics":{
+        "group":"artisan"
     },
-    "Composition":{
-        "group":"Artisan"
+    "composition":{
+        "group":"artisan"
     },
-    "Design":{
-        "group":"Artisan"
+    "design":{
+        "group":"artisan"
     },
-    "Smithing":{
-        "group":"Artisan"
+    "smithing":{
+        "group":"artisan"
     },
-    "Command":{
-        "group":"Social"
+    "command":{
+        "group":"social"
     },
-    "Courtesy":{
-        "group":"Social"
+    "courtesy":{
+        "group":"social"
     },
-    "Games":{
-        "group":"Social"
+    "games":{
+        "group":"social"
     },
-    "Performance":{
-        "group":"Social"
+    "performance":{
+        "group":"social"
     },
-    "Culture":{
-        "group":"Scholar"
+    "culture":{
+        "group":"scholar"
     },
-    "Government":{
-        "group":"Scholar"
+    "government":{
+        "group":"scholar"
     },
-    "Medicine":{
-        "group":"Scholar"
+    "medicine":{
+        "group":"scholar"
     },
-    "Sentiment":{
-        "group":"Scholar"
+    "sentiment":{
+        "group":"scholar"
     },
-    "Theology":{
-        "group":"Scholar"
+    "theology":{
+        "group":"scholar"
     },
-    "Fitness":{
-        "group":"Martial"
+    "fitness":{
+        "group":"martial"
     },
-    "Martial Arts [Melee]":{
-        "group":"Martial"
+    "martial arts [melee]":{
+        "group":"martial"
     },
-    "Martial Arts [Ranged]":{
-        "group":"Martial"
+    "martial arts [ranged]":{
+        "group":"martial"
     },
-    "Martial Arts [Unarmed]":{
-        "group":"Martial"
+    "martial arts [unarmed]":{
+        "group":"martial"
     },
-    "Meditation":{
-        "group":"Martial"
+    "meditation":{
+        "group":"martial"
     },
-    "Tactics":{
-        "group":"Martial"
+    "tactics":{
+        "group":"martial"
     },
-    "Commerce":{
-        "group":"Trade"
+    "commerce":{
+        "group":"trade"
     },
-    "Labor":{
-        "group":"Trade"
+    "labor":{
+        "group":"trade"
     },
-    "Seafaring":{
-        "group":"Trade"
+    "seafaring":{
+        "group":"trade"
     },
-    "Skulduggery":{
-        "group":"Trade"
+    "skulduggery":{
+        "group":"trade"
     },
-    "Survival":{
-        "group":"Trade"
+    "survival":{
+        "group":"trade"
     }
 }

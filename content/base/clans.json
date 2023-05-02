@@ -1,43 +1,43 @@
 {
-    "Crab":{
-        "ringRef":"Earth",
-        "skillRef":"Fitness",
+    "crab":{
+        "ringRef":"earth",
+        "skillRef":"fitness",
         "status":30,
         "familyRefs":["Hida","Hiruma","Kaiu","Kuni","Yasuki"]
     },
-    "Crane":{
-        "ringRef":"Air",
-        "skillRef":"Culture",
+    "crane":{
+        "ringRef":"air",
+        "skillRef":"culture",
         "status":35,
         "familyRefs":["Asahina","Daidoji","Doji","Kakita"]
     },
-    "Dragon":{
-        "ringRef":"Fire",
-        "skillRef":"Meditation",
+    "dragon":{
+        "ringRef":"fire",
+        "skillRef":"meditation",
         "status":30,
         "familyRefs":["Agasha","Kitsuki","Mirumoto","Togashi"]
     },
-    "Lion":{
-        "ringRef":"Water",
-        "skillRef":"Tactics",
+    "lion":{
+        "ringRef":"water",
+        "skillRef":"tactics",
         "status":35,
         "familyRefs":["Akodo","Ikoma","Kitsu","Matsu"]
     },
-    "Phoenix":{
-        "ringRef":"Void",
-        "skillRef":"Theology",
+    "phoenix":{
+        "ringRef":"void",
+        "skillRef":"theology",
         "status":30,
         "familyRefs":["Asako","Isawa","Kaito","Shiba"]
     },
-    "Scorpion":{
-        "ringRef":"Air",
-        "skillRef":"Skulduggery",
+    "scorpion":{
+        "ringRef":"air",
+        "skillRef":"skulduggery",
         "status":35,
         "familyRefs":["Bayushi","Shosuro","Soshi","Yogo"]
     },
-    "Unicorn":{
-        "ringRef":"Water",
-        "skillRef":"Survival",
+    "unicorn":{
+        "ringRef":"water",
+        "skillRef":"survival",
         "status":30,
         "familyRefs":["Ide","Iuchi","Moto","Shinjo","Utaku"]
     }

@@ -5,9 +5,9 @@
             "As two masters of any martial art square off before a duel, each seeks to predict the other’s angle of attack and strategy, and the ways their predictions might be foiled by the opponent’s."
         ],
         "activation":[
-            "Activation: When you make an Initiative check for a duel using your Void Ring, you may spend &#xe90d in the following way:",
-            "Void &#xe90d&#xe90d: You name two rings, then your opponent must name one of those two rings. When your opponent selects their stance during their first turn of the duel, they cannot select the ring they named as their stance.",
-            "Void &#xe90d+: Choose a technique category. Learn one of your opponent’s known techniques of that category (chosen by the opponent) per &#xe90d spent this way."
+            "Activation: When you make an Initiative check for a duel using your Void Ring, you may spend |opportunityIcon| in the following way:",
+            "Void |opportunityIcon|opportunityIcon|: You name two rings, then your opponent must name one of those two rings. When your opponent selects their stance during their first turn of the duel, they cannot select the ring they named as their stance.",
+            "Void |opportunityIcon|+: Choose a technique category. Learn one of your opponent’s known techniques of that category (chosen by the opponent) per |opportunityIcon| spent this way."
         ]
     },
     "Breath of Wind Style":{
@@ -16,8 +16,8 @@
             "A swift strike to the solar plexus or throat can leave the target reeling; an experienced bushi can steal the breath from their foe with a quick jab even while executing another attack."
         ],
         "activation":[
-            "Activation: When you make a Martial Arts [Melee, Ranged, or Unarmed] (Air) check, you may spend &#xe90d in the following way:",
-            "Air &#xe90d+: One target of your action must resist with a TN 3 Fitness check (Earth 4, Fire 1) or suffer the Disoriented condition and fatigue equal to their shortfall. Increase the TN of the check to resist by 1 per &#xe90d spent this way."
+            "Activation: When you make a Martial Arts [Melee, Ranged, or Unarmed] (Air) check, you may spend |opportunityIcon| in the following way:",
+            "Air |opportunityIcon|+: One target of your action must resist with a TN 3 Fitness check (Earth 4, Fire 1) or suffer the Disoriented condition and fatigue equal to their shortfall. Increase the TN of the check to resist by 1 per |opportunityIcon| spent this way."
         ]
     },
     "Crashing Wave Style":{
@@ -26,8 +26,8 @@
             "The wave washes over the stone, wearing it away, and so the bushi’s weapon passes across their foe’s flesh, leaving behind a bloody gash or slice that is sure to slow their enemy even if the hit is not fatal."
         ],
         "activation":[
-            "Activation: When you make a Martial Arts [Melee, Ranged, or Unarmed] (Water) check, you may spend &#xe90din the following way:",
-            "Water &#xe90d+: One target of your action must resist with a TN 3 Fitness check (Earth 1, Fire 4) or suffer the Bleeding condition and fatigue equal to their shortfall. Increase the TN of the check to resist by 1 per &#xe90d spent this way."
+            "Activation: When you make a Martial Arts [Melee, Ranged, or Unarmed] (Water) check, you may spend |opportunityIcon|in the following way:",
+            "Water |opportunityIcon|+: One target of your action must resist with a TN 3 Fitness check (Earth 1, Fire 4) or suffer the Bleeding condition and fatigue equal to their shortfall. Increase the TN of the check to resist by 1 per |opportunityIcon| spent this way."
         ]
     },
     "Crescent Moon Style":{
@@ -36,8 +36,8 @@
             "Striking first is valuable, but so is surviving. To defend without sacrificing offense, a bushi must be ready to retaliate swiftly after blocking or evading. With a quick shift, the bushi switches from defense to bring down their full force upon their enemy."
         ],
         "activation":[
-            "Activation: When you perform Guard action, you may spend &#xe90d in the following way:",
-            "&#xe90d: After a character at range 1–2 performs an Attack action targeting you or another character you are guarding, you may perform a Strike action with one readied Martial Arts [Melee or Unarmed] weapon targeting that character (if they are within your weapon’s range). This effect persists until the start of your next turn, or until you perform a Strike action this way."
+            "Activation: When you perform Guard action, you may spend |opportunityIcon| in the following way:",
+            "|opportunityIcon|: After a character at range 1–2 performs an Attack action targeting you or another character you are guarding, you may perform a Strike action with one readied Martial Arts [Melee or Unarmed] weapon targeting that character (if they are within your weapon’s range). This effect persists until the start of your next turn, or until you perform a Strike action this way."
         ]
     },
     "Crimson Leaves Strike":{
@@ -52,7 +52,7 @@
             "Effects: If you succeed, your target suffers physical damage equal to your Earth Ring, plus additional damage equal to your bonus successes. Choose one of your target’s readied weapons; the target must resist with a TN 4 Fitness check (Air 2, Water 5) or lose control of the chosen weapon, which travels 3 range bands in a direction of your choice."
         ],
         "newOpportunities":[
-            "Earth &#xe90d: If you disarm your opponent, you may take control of their weapon instead of knocking it away."
+            "Earth |opportunityIcon|: If you disarm your opponent, you may take control of their weapon instead of knocking it away."
         ]
     },
     "Disappearing World Style":{
@@ -61,8 +61,8 @@
             "Seeing nothing but their enemy, the bushi surges forward in a flurry of strikes, seeking to land a hit to the eyes, temple, or other vulnerable area rapidly after their initial attack. This stunning blow can leave the enemy staggered, giving the bushi a chance to finish the battle with their next attack."
         ],
         "activation":[
-            "Activation: When you make a Martial Arts [Melee, Ranged, or Unarmed] (Fire) check, you may spend &#xe90d in the following way:",
-            "Fire &#xe90d+: One target of your action must resist with a TN 3 Fitness check (Air 4, Water 1) or suffer the Dazed condition and fatigue equal to their shortfall. Increase the TN of the check to resist by 1 per &#xe90d spent this way."
+            "Activation: When you make a Martial Arts [Melee, Ranged, or Unarmed] (Fire) check, you may spend |opportunityIcon| in the following way:",
+            "Fire |opportunityIcon|+: One target of your action must resist with a TN 3 Fitness check (Air 4, Water 1) or suffer the Dazed condition and fatigue equal to their shortfall. Increase the TN of the check to resist by 1 per |opportunityIcon| spent this way."
         ]
     },
     "Flowing Water Strike":{
@@ -77,7 +77,7 @@
             "Effects: If you succeed, the target suffers physical damage equal to your Water Ring and suffers the Bleeding condition. The target must resist with a TN 4 Fitness check (Earth 2, Fire 5); if they fail, increase the physical damage they suffer by your weapon’s base damage."
         ],
         "newOpportunities":[
-            "Water &#xe90d: Remove the Dazed, Disoriented, Immobilized, or Prone condition from yourself."
+            "Water |opportunityIcon|: Remove the Dazed, Disoriented, Immobilized, or Prone condition from yourself."
         ]
     },
     "Heartpiercing Strike":{
@@ -93,7 +93,7 @@
             "If you fail, you suffer the Disoriented condition."
         ],
         "newOpportunities":[
-            "Fire &#xe90d: Before resolving the effect, move up to 1 range band toward your target."
+            "Fire |opportunityIcon|: Before resolving the effect, move up to 1 range band toward your target."
         ]
     },
     "Iron in the Mountains Style":{
@@ -102,8 +102,8 @@
             "The bushi strikes with crushing force, breaking their enemy’s footing and knocking them to the ground with an overwhelming blow or sweeping their stance out from underneath them with a well-placed kick."
         ],
         "activation":[
-            "Activation: When you make a Martial Arts [Melee, Ranged, or Unarmed] (Earth) check, you may spend &#xe90d in the following way:",
-            "Earth &#xe90d+: One target of your action must resist with a TN 3 Fitness check (Air 1, Water 4) or suffer the Prone condition and fatigue equal to their shortfall. Increase the TN of the check to resist by 1 per &#xe90d spent this way."
+            "Activation: When you make a Martial Arts [Melee, Ranged, or Unarmed] (Earth) check, you may spend |opportunityIcon| in the following way:",
+            "Earth |opportunityIcon|+: One target of your action must resist with a TN 3 Fitness check (Air 1, Water 4) or suffer the Prone condition and fatigue equal to their shortfall. Increase the TN of the check to resist by 1 per |opportunityIcon| spent this way."
         ]
     },
     "Lord Hida’s Grip":{
@@ -119,7 +119,7 @@
             "If you succeed, you count as granting assistance to all characters who perform Attack actions against your target. This effect persists until the beginning of your next turn."
         ],
         "newOpportunities":[
-            "Void &#xe90d: Your target must resist with a Fitness check or suffer physical damage equal to its silhouette, ignoring its resistance, and the Prone condition. The TN of this check is equal to your school rank."
+            "Void |opportunityIcon|: Your target must resist with a Fitness check or suffer physical damage equal to its silhouette, ignoring its resistance, and the Prone condition. The TN of this check is equal to your school rank."
         ]
     },
     "Lord Shiba’s Valor":{
@@ -134,7 +134,7 @@
             "Effects: If you succeed, other characters cannot select your targets as the targets of their Attack or Scheme actions if they could select you instead. If an action has multiple targets, you must be the first target chosen. This effect persists for a number of rounds equal to your school rank."
         ],
         "newOpportunities":[
-            "Void &#xe90d: If you succeed, increase the TN of Attack and Scheme checks targeting you by 1. This effect persists until the end of your next turn."
+            "Void |opportunityIcon|: If you succeed, increase the TN of Attack and Scheme checks targeting you by 1. This effect persists until the end of your next turn."
         ]
     },
     "Soaring Slice":{
@@ -150,8 +150,8 @@
             "If you succeed, you deal physical damage to the target equal to the weapon’s base damage plus your bonus successes. The weapon lands at range in a direction of your choice from the target if they defend against the damage, or embeds in them if they suffer a critical strike. If you fail, the weapon travels a number of range bands equal to the maximum range of the technique in the direction of the target."
         ],
         "newOpportunities":[
-            "&#xe90d+: Treat the maximum range of this technique as 1 higher per &#xe90d spent this way.",
-            "&#xe90d: Reduce the TN of the next Attack action against the target before the end of your next turn by 1."
+            "|opportunityIcon|+: Treat the maximum range of this technique as 1 higher per |opportunityIcon| spent this way.",
+            "|opportunityIcon|: Reduce the TN of the next Attack action against the target before the end of your next turn by 1."
         ]
     },
     "Soul Sunder":{
@@ -166,9 +166,9 @@
             "Effects: If you succeed, choose one readied weapon. It gains the Sacred quality, and when you use it to inflict a critical strike on an Otherworldly being, treat its deadliness as increased by your bonus successes. This effect persists until the end of your next turn."
         ],
         "newOpportunities":[
-            "Void &#xe90d+: This effect persists for one additional round per &#xe90d spent this way.",
-            "Void &#xe90d&#xe90d: Otherworldly beings cannot perform Attack actions targeting you until the start of your next turn.",
-            "Void &#xe90d&#xe90d: You may immediately perform a Strike action using your readied weapon."
+            "Void |opportunityIcon|+: This effect persists for one additional round per |opportunityIcon| spent this way.",
+            "Void |opportunityIcon|opportunityIcon|: Otherworldly beings cannot perform Attack actions targeting you until the start of your next turn.",
+            "Void |opportunityIcon|opportunityIcon|: You may immediately perform a Strike action using your readied weapon."
         ]
     },
     "Striking as Air":{
@@ -177,8 +177,8 @@
             "Not every stroke a warrior throws in battle is intended to kill—even if they all lead to that end goal. A skilled fighter can tell when an attack will not land and subtly shift it into a different sort of attack, meant to probe the enemy’s defenses or draw their guard out of position. By carefully placing attack after attack, a master of the blade can eventually whittle down their opponent’s options until none remain but death."
         ],
         "activation":[
-            "Activation: When you make a Martial Arts [Melee, Ranged, or Unarmed] (Air) check, you may spend &#xe90d in the following way:",
-            "Air &#xe90d+: Reserve one of your rolled dice, plus one additional die per &#xe90d&#xe90d spent this way. These dice become dropped dice. When making a check with the same skill before the end of your next turn, you may roll one fewer &#x2b1b per reserved &#x2b1b and one fewer &#xe90e per reserved &#xe90e, then add the reserved dice to your roll. These dice count as rolled dice, but are added set to the results they had when they were reserved."
+            "Activation: When you make a Martial Arts [Melee, Ranged, or Unarmed] (Air) check, you may spend |opportunityIcon| in the following way:",
+            "Air |opportunityIcon|+: Reserve one of your rolled dice, plus one additional die per |opportunityIcon|opportunityIcon| spent this way. These dice become dropped dice. When making a check with the same skill before the end of your next turn, you may roll one fewer |ringIcon| per reserved |ringIcon| and one fewer |skillIcon| per reserved |skillIcon|, then add the reserved dice to your roll. These dice count as rolled dice, but are added set to the results they had when they were reserved."
         ]
     },
     "Striking as Earth":{
@@ -187,8 +187,8 @@
             "After striking, the bushi roots themself to the ground, hunkering down to make sure their armor takes the brunt of a hit or raising a weapon in a warding position where it can deflect harm without being damaged."
         ],
         "activation":[
-            "Activation: When you make a Martial Arts [Melee, Ranged, or Unarmed] (Earth) check, you may spend &#xe90d in the following way:",
-            "Earth &#xe90d+: Treat your physical resistance as 1 higher per &#xe90d spent this way until the beginning of your next turn."
+            "Activation: When you make a Martial Arts [Melee, Ranged, or Unarmed] (Earth) check, you may spend |opportunityIcon| in the following way:",
+            "Earth |opportunityIcon|+: Treat your physical resistance as 1 higher per |opportunityIcon| spent this way until the beginning of your next turn."
         ]
     },
     "Striking as Fire":{
@@ -197,8 +197,8 @@
             "Victory cannot be achieved through defense alone, and it is a poor student of the sword who forgets that their most important goal is simple: cut down their enemy. All else fades to the background as the bushi fiercely presses the attack, trying to force an error or open an opportunity to end their foe."
         ],
         "activation":[
-            "Activation: When you make a Martial Arts [Melee, Ranged, or Unarmed] (Fire) Attack action check, you may spend &#xe90d in the following way:",
-            "Fire &#xe90d+: The next time your target suffers a critical strike, increase its severity by 1 per &#xe90d spent this way. This effect persists until the end of your next turn."
+            "Activation: When you make a Martial Arts [Melee, Ranged, or Unarmed] (Fire) Attack action check, you may spend |opportunityIcon| in the following way:",
+            "Fire |opportunityIcon|+: The next time your target suffers a critical strike, increase its severity by 1 per |opportunityIcon| spent this way. This effect persists until the end of your next turn."
         ]
     },
     "Striking as Void":{
@@ -207,9 +207,9 @@
             "The future is part of Void’s domain, infinite in possibility and unfathomable in depth. Because of its formlessness, one cannot scheme to undermine the uncertain future—but the instant it takes shape, an action is vulnerable to countermeasures. The bushi rests until the last possible second, allowing the potential energy of their strike to take shape only after it is too late for their enemy to respond."
         ],
         "activation":[
-            "Activation: When you make a Martial Arts [Melee, Ranged, or Unarmed] (Void) check, you may spend &#xe90d in the following ways:",
-            "Void &#xe90d: Immediately switch to a different stance of your choice.",
-            "Void &#xe90d: If you fail, you may perform another action. This must be an action you have not yet performed this turn. You can only activate this opportunity once per round."
+            "Activation: When you make a Martial Arts [Melee, Ranged, or Unarmed] (Void) check, you may spend |opportunityIcon| in the following ways:",
+            "Void |opportunityIcon|: Immediately switch to a different stance of your choice.",
+            "Void |opportunityIcon|: If you fail, you may perform another action. This must be an action you have not yet performed this turn. You can only activate this opportunity once per round."
         ]
     },
     "Striking as Water":{
@@ -218,8 +218,8 @@
             "The finest armor is useless if a warrior can bypass it, slipping a blade through the gaps that allow the wearer to move or using blunt, concussive force to create a space. As the bushi strikes, they attempt to slide past the target’s defenses to deliver a lethal blow."
         ],
         "activation":[
-            "Activation: When you make a Martial Arts [Melee, Ranged, or Unarmed] (Water) Attack action check, you may spend &#xe90d in the following way:",
-            "Water &#xe90d+: Your target treats their physical resistance as 1 lower per &#xe90d spent this way. This effect persists until the end of your next turn."
+            "Activation: When you make a Martial Arts [Melee, Ranged, or Unarmed] (Water) Attack action check, you may spend |opportunityIcon| in the following way:",
+            "Water |opportunityIcon|+: Your target treats their physical resistance as 1 lower per |opportunityIcon| spent this way. This effect persists until the end of your next turn."
         ]
     },
     "Tactical Assessment":{
@@ -228,11 +228,11 @@
             "Akodo’s Leadership and Bayushi’s Lies agree on a few topics, for both leaders were practical to a certain degree, even if Akodo famously scorned many of Bayushi’s methods. As the scholar Hida Fuyuko noted in her revelatory commentary on Leadership’s lessons for commanders on the Kaiu Wall, the most famous meeting of these two minds comes on the matter of preparation: battles are not won in the field, but in the leadup to the conflict. Even in small clashes, the warrior who better understands the terrain, the strength of their own forces, and the composition of the enemy’s troops is usually victorious."
         ],
         "activation":[
-            "Activation: When you make an Initiative check, you may spend &#xe90d in the following way:",
-            "Air &#xe90d: Choose an enemy in the conflict. Learn one of their advantages (of their choice) and their physical or supernatural resistance (your choice).",
-            "Earth &#xe90d: Choose a character in the conflict. They do not apply any of their disadvantages to their checks until the end of their first turn.",
-            "Water &#xe90d: Choose a piece of terrain in the scene. Until the start of your first turn, it counts as having the Obscuring quality for Attack action checks targeting you and your allies.",
-            "Fire &#xe90d: Choose a character in the conflict and one of their advantages you know. Until the end of their first turn, they apply that advantage to all of their checks."
+            "Activation: When you make an Initiative check, you may spend |opportunityIcon| in the following way:",
+            "Air |opportunityIcon|: Choose an enemy in the conflict. Learn one of their advantages (of their choice) and their physical or supernatural resistance (your choice).",
+            "Earth |opportunityIcon|: Choose a character in the conflict. They do not apply any of their disadvantages to their checks until the end of their first turn.",
+            "Water |opportunityIcon|: Choose a piece of terrain in the scene. Until the start of your first turn, it counts as having the Obscuring quality for Attack action checks targeting you and your allies.",
+            "Fire |opportunityIcon|: Choose a character in the conflict and one of their advantages you know. Until the end of their first turn, they apply that advantage to all of their checks."
         ]
     },
     "Warrior’s Resolve":{
@@ -253,9 +253,9 @@
             "Entrapping techniques can be performed with many different weapons, from the kusari-gama wielded by brigands to the ornate, hook-headed polearms used by the Phoenix Clan’s greatest masters of the spear."
         ],
         "activation":[
-            "Activation: When you make a Martial Arts [Melee] or Martial Arts [Unarmed] check using a Snaring weapon, you may spend &#xe90d in the following way:",
-            "&#xe90d+: Choose one weapon a target has readied; that weapon cannot be used for Attack actions. This effect persists until the end of your next turn.",
-            "&#xe90d&#xe90d+: One target of your action per &#xe90d&#xe90d spent this way becomes Immobilized."
+            "Activation: When you make a Martial Arts [Melee] or Martial Arts [Unarmed] check using a Snaring weapon, you may spend |opportunityIcon| in the following way:",
+            "|opportunityIcon|+: Choose one weapon a target has readied; that weapon cannot be used for Attack actions. This effect persists until the end of your next turn.",
+            "|opportunityIcon|opportunityIcon|+: One target of your action per |opportunityIcon|opportunityIcon| spent this way becomes Immobilized."
         ]
     },
     "Iaijutsu Cut: Crossing Blade":{
@@ -271,7 +271,7 @@
             "If you succeed, you deal physical damage to the target equal to the weapon’s deadliness plus your bonus successes."
         ],
         "newOpportunities":[
-            "&#xe90d: Ready one other sheathed Razor-Edged weapon."
+            "|opportunityIcon|: Ready one other sheathed Razor-Edged weapon."
         ]
     },
     "Iaijutsu Cut: Rising Blade":{
@@ -287,7 +287,7 @@
             "If you succeed, you deal physical damage to the target equal to the weapon’s deadliness. Your target cannot defend against this damage if they are Compromised."
         ],
         "newOpportunities":[
-            "&#xe90d: Ready one other sheathed Razor-Edged weapon."
+            "|opportunityIcon|: Ready one other sheathed Razor-Edged weapon."
         ]
     },
     "Iron Forest Style":{
@@ -296,8 +296,8 @@
             "A bushi versed in the spear can control their spacing with their opponent, forcing their foe to risk impalement each time they advance or catching loose clothes or stray body parts on the head of the weapon. Akodo’s Leadership refers to such a technique as the Iron Forest style, which turns the length of a single spear into an insurmountable distance."
         ],
         "activation":[
-            "Activation: When you make a Martial Arts [Melee] check using a polearm, you may spend &#xe90d in the following way:",
-            "&#xe90d+: The area in range of your weapon counts as Dangerous terrain for one target of your action per &#xe90d spent this way. When an affected character attempts to move closer to you, they must make a TN 4 Fitness check (Air 2, Water 5); if they fail, they cannot advance. This effect persists until the start of your next turn."
+            "Activation: When you make a Martial Arts [Melee] check using a polearm, you may spend |opportunityIcon| in the following way:",
+            "|opportunityIcon|+: The area in range of your weapon counts as Dangerous terrain for one target of your action per |opportunityIcon| spent this way. When an affected character attempts to move closer to you, they must make a TN 4 Fitness check (Air 2, Water 5); if they fail, they cannot advance. This effect persists until the start of your next turn."
         ]
     },
     "Open Hand Style":{
@@ -306,8 +306,8 @@
             "Power does not come from speed alone. A master martial artist can apply force for maximum effect, making even gentle movements devastatingly effective blocks and strikes. With enough experience, a martial artist can even control their opponent’s stance."
         ],
         "activation":[
-            "Activation: When you make a Martial Arts [Unarmed] check using a weapon with the Snaring quality, you may spend &#xe90d in the following way:",
-            "&#xe90d&#xe90d+: One target of your action per &#xe90d&#xe90d spent this way must switch to a different stance of your choice. Targets of silhouette 3 or greater may resist with a TN 3 Fitness check and ignore this effect if they succeed."
+            "Activation: When you make a Martial Arts [Unarmed] check using a weapon with the Snaring quality, you may spend |opportunityIcon| in the following way:",
+            "|opportunityIcon|opportunityIcon|+: One target of your action per |opportunityIcon|opportunityIcon| spent this way must switch to a different stance of your choice. Targets of silhouette 3 or greater may resist with a TN 3 Fitness check and ignore this effect if they succeed."
         ]
     },
     "Rushing Avalanche Style":{
@@ -316,9 +316,9 @@
             "When adopting this style, the bushi strikes with reckless abandon using a heavy armament. Thanks to the sheer weight of their weapon and the ferocity of their strikes, even a glancing blow can cause serious harm, and a telling blow usually ends the battle."
         ],
         "activation":[
-            "Activation: When you make a Martial Arts [Melee] check using a blunt weapon, you may spend &#xe90d in the following way:",
-            "&#xe90d: If you fail with a shortfall of two or less, your target suffers physical damage equal to your ranks in Fitness.",
-            "&#xe90d: If you succeed and your target is Prone, increase the damage you deal by your ranks in Fitness."
+            "Activation: When you make a Martial Arts [Melee] check using a blunt weapon, you may spend |opportunityIcon| in the following way:",
+            "|opportunityIcon|: If you fail with a shortfall of two or less, your target suffers physical damage equal to your ranks in Fitness.",
+            "|opportunityIcon|: If you succeed and your target is Prone, increase the damage you deal by your ranks in Fitness."
         ]
     },
     "Spinning Blades Style":{
@@ -327,8 +327,8 @@
             "The biggest advantage of dual wielding does not usually stem from striking with two weapons simultaneously, largely because this is a very difficult feat. Instead, it comes from the fact that the warrior does not need to sacrifice defense while attacking or offense while defending. The off-hand blade can deflect and threaten even as the main-hand weapon attacks, or the bushi can strike with the offhand weapon while the main-hand weapon is locked with the foe’s blade. Either weapon can deliver death, and so the enemy must watch both at all times."
         ],
         "activation":[
-            "Activation: When you make a Martial Arts [Melee] or Martial Arts [Unarmed] Attack action check, if you have a second readied weapon you did not use for the attack, you may spend &#xe90d in the following way:",
-            "&#xe90d+: You must spend &#xe90d equal to your target’s Vigilance to activate this technique. You use your second readied weapon against one target of your action, inflicting physical damage equal to its base damage. If that target is Dazed, increase this damage by your ranks in the skill you used for the check."
+            "Activation: When you make a Martial Arts [Melee] or Martial Arts [Unarmed] Attack action check, if you have a second readied weapon you did not use for the attack, you may spend |opportunityIcon| in the following way:",
+            "|opportunityIcon|+: You must spend |opportunityIcon| equal to your target’s Vigilance to activate this technique. You use your second readied weapon against one target of your action, inflicting physical damage equal to its base damage. If that target is Dazed, increase this damage by your ranks in the skill you used for the check."
         ]
     },
     "Thunderclap Strike":{
@@ -343,7 +343,7 @@
             "Effects: If you succeed, each target suffers damage equal to your weapon’s base damage and must resist with a TN 3 Fitness check (Earth 4, Fire 1) or move 2 range bands directly away from you."
         ],
         "newOpportunities":[
-            "Air &#xe90d+: Increase the TN of checks to resist the effect by 1 per &#xe90d spent this way."
+            "Air |opportunityIcon|+: Increase the TN of checks to resist the effect by 1 per |opportunityIcon| spent this way."
         ]
     },
     "Veiled Menace Style":{
@@ -352,8 +352,8 @@
             "Assassination and other clandestine tactics are frowned upon by many samurai. None can deny the effectiveness of such techniques, however. By drawing their enemy’s gaze away from the true threat, a bushi can often tip the scales against a strong foe."
         ],
         "activation":[
-            "Activation: When you make a Martial Arts [Melee] or Martial Arts [Unarmed] Attack action check using a weapon in a one-handed grip, you may spend &#xe90d in the following way:",
-            "&#xe90d+: If you succeed, choose one unaware or Disoriented target of your action. That target suffers a critical strike with severity equal to your weapon’s deadliness plus 1 per &#xe90d spent this way beyond the first."
+            "Activation: When you make a Martial Arts [Melee] or Martial Arts [Unarmed] Attack action check using a weapon in a one-handed grip, you may spend |opportunityIcon| in the following way:",
+            "|opportunityIcon|+: If you succeed, choose one unaware or Disoriented target of your action. That target suffers a critical strike with severity equal to your weapon’s deadliness plus 1 per |opportunityIcon| spent this way beyond the first."
         ]
     },
     "Hawk’s Precision":{
@@ -362,8 +362,8 @@
             "While most bushi are expected to be proficient in the use of the bow, some are terrifyingly accurate, capable of hitting targets well beyond the expected engagement range."
         ],
         "activation":[
-            "Activation: When you make a Martial Arts [Ranged] check, you may spend &#xe90d in the following way:",
-            "&#xe90d+: Treat the range of the weapon as 1 higher per &#xe90d spent this way, to a maximum of range 6."
+            "Activation: When you make a Martial Arts [Ranged] check, you may spend |opportunityIcon| in the following way:",
+            "|opportunityIcon|+: Treat the range of the weapon as 1 higher per |opportunityIcon| spent this way, to a maximum of range 6."
         ]
     },
     "Pelting Hail Style":{
@@ -372,8 +372,8 @@
             "A volley of arrows on the battlefield can be deadly, but most importantly from a strategic standpoint, it is terrifying to even the staunchest veterans. Even if only one in ten shots finds its mark, the salvo rattles opponents and forces caution."
         ],
         "activation":[
-            "Activation: When you make a Martial Arts [Ranged] check, you may spend &#xe90d in the following way:",
-            "&#xe90d+: Choose a number of other characters at range 0–2 of your target equal to &#xe90d spent this way. Each chosen character receives strife equal to the base damage of your weapon."
+            "Activation: When you make a Martial Arts [Ranged] check, you may spend |opportunityIcon| in the following way:",
+            "|opportunityIcon|+: Choose a number of other characters at range 0–2 of your target equal to |opportunityIcon| spent this way. Each chosen character receives strife equal to the base damage of your weapon."
         ]
     },
     "Pin the Fan":{
@@ -388,7 +388,7 @@
             "Effects: If you succeed, the target suffers damage equal to two times the weapon’s base damage plus your bonus successes."
         ],
         "newOpportunities":[
-            "&#xe90d: If the target becomes Incapacitated as a result of damage from this action, they suffer a critical strike with severity equal to two times the weapon’s deadliness damage plus your bonus successes."
+            "|opportunityIcon|: If the target becomes Incapacitated as a result of damage from this action, they suffer a critical strike with severity equal to two times the weapon’s deadliness damage plus your bonus successes."
         ]
     },
     "Cleansing Spirit":{
@@ -506,7 +506,7 @@
             "Activation: As a Movement and Support action, you may make a TN 3 Meditation (Air) check to adjust your defenses to the tempo of your foes’ strikes, making yourself much harder to hit."
         ],
         "effects":[
-            "Enhancement Effect: If you succeed, this kihō activates. While this kihō is active, when a character performs an Attack action check targeting you, reduce any damage you suffer by 2 for each kept die containing .",
+            "Enhancement Effect: If you succeed, this kihō activates. While this kihō is active, when a character performs an Attack action check targeting you, reduce any damage you suffer by 2 for each kept die containing |explosiveSuccessIcon|.",
             "Burst Effect: If you have two or more bonus successes, increase the TN of Attack action checks targeting you by your ranks in Meditation until the beginning of your next turn."
         ]
     },
@@ -685,8 +685,8 @@
             "Activation: As a Support action, you may make a TN 4 Meditation (Void) check to draw cosmic energy into your being."
         ],
         "effects":[
-            "Enhancement Effect: If you succeed, this kihō activates. While this kihō is active, you may spend &#xe90d from Void checks as if it were &#xe90d from a check using any Element.",
-            "While this kihō is active, you may spend &#xe90d from Air, Earth, Fire, or Water checks as if it were &#xe90d from a check using Void.",
+            "Enhancement Effect: If you succeed, this kihō activates. While this kihō is active, you may spend |opportunityIcon| from Void checks as if it were |opportunityIcon| from a check using any Element.",
+            "While this kihō is active, you may spend |opportunityIcon| from Air, Earth, Fire, or Water checks as if it were |opportunityIcon| from a check using Void.",
             "Burst Effect: If you have two or more bonus successes, gain 1 Void point. You can only gain 1 Void point from this effect per scene."
         ]
     },
@@ -720,7 +720,7 @@
             "Effects: If you succeed, you summon a swirling wind at the target position. Any character at range 0–2 of the chosen position counts as being in Obscuring terrain for the purposes of Attack actions targeting them. This effect persists for one round, plus additional rounds equal to your bonus successes."
         ],
         "newOpportunities":[
-            "Air &#xe90d: This effect persists until the end of the scene instead."
+            "Air |opportunityIcon|: This effect persists until the end of the scene instead."
         ]
     },
     "By the Light of the Lord Moon":{
@@ -737,8 +737,8 @@
             "Activation: As a Scheme action, you may make a TN 2 Theology (Air) check targeting an area at range 0–2 of you. Effects: If you succeed, you scry for each hidden character and concealed object (such as secret compartments, trap doors, and concealed weapons) in the targeted area, revealing it with an illusory, luminous outline that only you can perceive. This invocation only reveals objects and people concealed by mundane means."
         ],
         "newOpportunities":[
-            "Air &#xe90d+: If you succeed, you may also reveal up to one magically concealed object per &#xe90d spent this way.",
-            "Air &#xe90d&#xe90d+: Choose one additional character at range 0–1 per &#xe90d&#xe90d spent this way. The chosen characters can also see the objects."
+            "Air |opportunityIcon|+: If you succeed, you may also reveal up to one magically concealed object per |opportunityIcon| spent this way.",
+            "Air |opportunityIcon|opportunityIcon|+: Choose one additional character at range 0–1 per |opportunityIcon|opportunityIcon| spent this way. The chosen characters can also see the objects."
         ]
     },
     "Call Upon the Wind":{
@@ -758,7 +758,7 @@
             "Effects: If you succeed, you augment your movement with a gust of wind that carries you aloft. In addition to being able to move vertically freely, you ignore the effects of terrain while flying. This effect persists until the end of the scene."
         ],
         "newOpportunities":[
-            "Air &#xe90d&#xe90d+: While flying, you may carry up to one additional willing character at range 0–2 with you per &#xe90d&#xe90d spent this way."
+            "Air |opportunityIcon|opportunityIcon|+: While flying, you may carry up to one additional willing character at range 0–2 with you per |opportunityIcon|opportunityIcon| spent this way."
         ]
     },
     "Cloak of Night":{
@@ -778,7 +778,7 @@
             "Effects: If you succeed, you augment the target with an illusion that renders it invisible to the naked eye. The object is still physically present and can be touched, smelled, or sensed with any normal sense other than vision. This effect persists for one round, plus additional rounds equal to your bonus successes."
         ],
         "newOpportunities":[
-            "Air &#xe90d&#xe90d+: Choose one additional target of the same silhouette or smaller per &#xe90d&#xe90d spent this way."
+            "Air |opportunityIcon|opportunityIcon|+: Choose one additional target of the same silhouette or smaller per |opportunityIcon|opportunityIcon| spent this way."
         ]
     },
     "False Realm of the Fox Spirits":{
@@ -798,8 +798,8 @@
             "Effects: If you succeed, you summon illusory terrain at the target position that extends out a number of range bands up to your Air Ring. A character unaware of the illusion’s false nature must resist with a TN 4 Survival check (Earth 5, Fire 2) to realize its falsehood at a distance. As the illusion has no substance, any physical contact reveals the lie (though the illusion stays in place). This effect persists for a number of rounds equal to your Air Ring plus your bonus successes (or that many minutes during a narrative or downtime scene)."
         ],
         "newOpportunities":[
-            "Air &#xe90d: This effect persists until the end of the scene instead.",
-            "Air &#xe90d+: The illusory terrain you summon has one of the following terrain qualities per &#xe90d spent this way: Dangerous, Entangling, or Obscuring."
+            "Air |opportunityIcon|: This effect persists until the end of the scene instead.",
+            "Air |opportunityIcon|+: The illusory terrain you summon has one of the following terrain qualities per |opportunityIcon| spent this way: Dangerous, Entangling, or Obscuring."
         ]
     },
     "Grasp of the Air Dragon":{
@@ -819,8 +819,8 @@
             "Effects: If you succeed, you summon a gale-force wind to move the target a number of range bands equal to your Air Ring plus your bonus successes (to a maximum of 6 range bands), ignoring any intervening terrain. You may choose to set the target down on the ground gently (if you chose Support action) or slam them into it with full force (if you chose Attack action). When you slam a target to the ground this way, the target must resist with a TN 4 Fitness check (Earth 5, Fire 2) or suffer the effects of a fall from range 3."
         ],
         "newOpportunities":[
-            "Air &#xe90d+: Treat the maximum range of this technique as 1 higher per &#xe90d spent this way.",
-            "Air &#xe90d&#xe90d+: Increase the height of the fall the target suffers by 1 per &#xe90d&#xe90d spent this way."
+            "Air |opportunityIcon|+: Treat the maximum range of this technique as 1 higher per |opportunityIcon| spent this way.",
+            "Air |opportunityIcon|opportunityIcon|+: Increase the height of the fall the target suffers by 1 per |opportunityIcon|opportunityIcon| spent this way."
         ]
     },
     "Mask of Wind":{
@@ -837,11 +837,11 @@
             "Activation: As a Scheme and Support action, you may make a TN 3 Theology (Air) check targeting yourself."
         ],
         "effects":[
-            "Effects: If you succeed, you augment yourself with an illusion that makes you look like someone else. An observer must resist with a TN 4 Sentiment check (Earth 5, Fire 2) to notice something amiss from your appearance alone; if they succeed, they may spend &#xe90d to recognize you specifically. This effect persists until the end of the scene."
+            "Effects: If you succeed, you augment yourself with an illusion that makes you look like someone else. An observer must resist with a TN 4 Sentiment check (Earth 5, Fire 2) to notice something amiss from your appearance alone; if they succeed, they may spend |opportunityIcon| to recognize you specifically. This effect persists until the end of the scene."
         ],
         "newOpportunities":[
-            "Air &#xe90d: You may alter your voice to sound like someone else while the illusion is in place. An observer must resist with a TN 4 Sentiment check (Earth 5, Fire 2) to notice something amiss from the sound of your voice alone, and they may spend &#xe90d if they succeed to recognize you specifically.",
-            "Air &#xe90d&#xe90d+: This effect persists for one additional scene per &#xe90d&#xe90d spent this way."
+            "Air |opportunityIcon|: You may alter your voice to sound like someone else while the illusion is in place. An observer must resist with a TN 4 Sentiment check (Earth 5, Fire 2) to notice something amiss from the sound of your voice alone, and they may spend |opportunityIcon| if they succeed to recognize you specifically.",
+            "Air |opportunityIcon|opportunityIcon|+: This effect persists for one additional scene per |opportunityIcon|opportunityIcon| spent this way."
         ]
     },
     "Nature’s Touch":{
@@ -861,9 +861,9 @@
             "Effects: If you succeed, you augment yourself with the ability to speak to animals of the natural world (but not Otherworldly or Tainted beings). Animals can understand you (within their ability to do so, naturally— human political relationships will have no meaning to horses, no matter how many times you explain them). They are not compelled to obey you, however. This effect persists until the end of the scene."
         ],
         "newOpportunities":[
-            "Air &#xe90d: Until the end of the scene, you can understand animals’ speech.",
-            "Air &#xe90d: If you succeed, the animal also acts favorably toward you automatically due to your politeness, fulfilling one request that does not put it in danger without having to be convinced with bribes of food or subsequent checks.",
-            "Air &#xe90d&#xe90d: If you succeed, you can communicate with an Otherworldly being this way, provided it has anything to say to you."
+            "Air |opportunityIcon|: Until the end of the scene, you can understand animals’ speech.",
+            "Air |opportunityIcon|: If you succeed, the animal also acts favorably toward you automatically due to your politeness, fulfilling one request that does not put it in danger without having to be convinced with bribes of food or subsequent checks.",
+            "Air |opportunityIcon|opportunityIcon|: If you succeed, you can communicate with an Otherworldly being this way, provided it has anything to say to you."
         ]
     },
     "Rise, Air":{
@@ -883,7 +883,7 @@
             "Effects: If you succeed, you summon a Manifest Air Kami to fight for you. It appears at the target position and obeys you for two rounds, plus additional rounds equal to your bonus successes, taking its turn immediately after yours each round. When this effect ends, it departs or, if stirred to particular ire, begins to follow its own directives. If it begins to act independently, it does not attack the shugenja who summoned it unless provoked."
         ],
         "newOpportunities":[
-            "Air &#xe90d: The manifest air kami arrives in a cyclone that hurls aside anything nearby. Each character at range 0–2 of the target position must resist with a TN 4 Fitness check (Earth 5, Fire 2) or suffer supernatural damage equal to your Air Ring and be pushed away 2 range bands."
+            "Air |opportunityIcon|: The manifest air kami arrives in a cyclone that hurls aside anything nearby. Each character at range 0–2 of the target position must resist with a TN 4 Fitness check (Earth 5, Fire 2) or suffer supernatural damage equal to your Air Ring and be pushed away 2 range bands."
         ]
     },
     "Secrets on the Wind":{
@@ -903,9 +903,9 @@
             "Effects: If you succeed, you scry with whispering winds that eavesdrop on the chosen position. The air kami can overhear anything said within a number of range bands equal to your Air Ring. This effect persists for twenty-four hours or until you designate a new area for eavesdropping. While this effect persists, you may spend an action to hear anything being said at the moment in the designated area."
         ],
         "newOpportunities":[
-            "Air &#xe90d: In addition to hearing things in the designated area, you can also smell any scents in that area.",
-            "Air &#xe90d: If another character discovers your invocation, the effect immediately ends, preventing them from identifying it as your handiwork.",
-            "Air &#xe90d&#xe90d+: The effect persists for twenty-four additional hours per &#xe90d&#xe90d spent this way."
+            "Air |opportunityIcon|: In addition to hearing things in the designated area, you can also smell any scents in that area.",
+            "Air |opportunityIcon|: If another character discovers your invocation, the effect immediately ends, preventing them from identifying it as your handiwork.",
+            "Air |opportunityIcon|opportunityIcon|+: The effect persists for twenty-four additional hours per |opportunityIcon|opportunityIcon| spent this way."
         ]
     },
     "Summon Fog":{
@@ -925,9 +925,9 @@
             "Effects: If you succeed, you summon a fog bank that fills an area extending 1 range band around the target position. This fog bank counts as Obscuring terrain."
         ],
         "newOpportunities":[
-            "Air &#xe90d: You may choose a character instead of a position. The fog bank follows that character.",
-            "Air &#xe90d+: The fog bank encompasses 1 additional range band per &#xe90d spent this way (to a maximum of range 6).",
-            "Air &#xe90d&#xe90d: The fog bank becomes a freezing ice storm, causing it to become Dangerous terrain as well."
+            "Air |opportunityIcon|: You may choose a character instead of a position. The fog bank follows that character.",
+            "Air |opportunityIcon|+: The fog bank encompasses 1 additional range band per |opportunityIcon| spent this way (to a maximum of range 6).",
+            "Air |opportunityIcon|opportunityIcon|: The fog bank becomes a freezing ice storm, causing it to become Dangerous terrain as well."
         ]
     },
     "Tempest of Air":{
@@ -947,7 +947,7 @@
             "Effects: If you succeed, blasts of wind smite each target. Each target suffers supernatural damage equal to your Air Ring and must resist with a TN 4 Fitness check (Earth 5, Fire 2) or suffer the Disoriented condition."
         ],
         "newOpportunities":[
-            "Air &#xe90d+: Each target who fails their Fitness check is also pushed 1 range band away from you per &#xe90d spent this way."
+            "Air |opportunityIcon|+: Each target who fails their Fitness check is also pushed 1 range band away from you per |opportunityIcon| spent this way."
         ]
     },
     "Token of Memory":{
@@ -967,9 +967,9 @@
             "Effects: If you succeed, you summon an illusion of one inanimate object at the target position. The illusory object’s size is a silhouette of up to your bonus successes (beginning at 0, or a small handheld object). The item appears real, but it does not actually exist, and it cannot be used. Any character confronted with one of these illusions must resist with a TN 4 Artisan, Smithing, or Design check (Earth 5, Fire 2) using a Scholar skill approach to discern its illusory nature. The object persists until the end of the scene."
         ],
         "newOpportunities":[
-            "Air &#xe90d: The object can appear to be a creature or person (though it does not move).",
-            "Air &#xe90d+: Summon one additional illusory object in range per &#xe90d spent this way.",
-            "Air &#xe90d&#xe90d: Illusory objects you summon this way have mass, and they can be used as if they were real (though they are still inanimate, and thus do not move on their own). They still vanish when the effect ends."
+            "Air |opportunityIcon|: The object can appear to be a creature or person (though it does not move).",
+            "Air |opportunityIcon|+: Summon one additional illusory object in range per |opportunityIcon| spent this way.",
+            "Air |opportunityIcon|opportunityIcon|: Illusory objects you summon this way have mass, and they can be used as if they were real (though they are still inanimate, and thus do not move on their own). They still vanish when the effect ends."
         ]
     },
     "Vapor of Nightmares":{
@@ -989,8 +989,8 @@
             "Effects: If you succeed, you summon an illusion of your target’s greatest fear. Your target must resist with a TN 4 Meditation check (Earth 5, Fire 2) to see through against this phantasm; if they fail, they suffer strife equal to your Air Ring plus your bonus successes, and must immediately unmask if they become Compromised this way. If they unmask in the presence of the phantasm, they focus their attentions on the phantasm, attacking it, fleeing from it, or unleashing harsh words upon it (rather than dealing with you or anyone else). The phantasm persists for a number of rounds equal to your Air Ring."
         ],
         "newOpportunities":[
-            "Air &#xe90d: If a target fails the Meditation check, they also suffer the Disoriented condition.",
-            "Air &#xe90d: The phantasm persists until the end of the scene instead."
+            "Air |opportunityIcon|: If a target fails the Meditation check, they also suffer the Disoriented condition.",
+            "Air |opportunityIcon|: The phantasm persists until the end of the scene instead."
         ]
     },
     "Wrath of Kaze-no-Kami":{
@@ -1010,9 +1010,9 @@
             "Effects: If you succeed, you summon a hurricane that buffets all characters in range. At the end of each of your turns, each target in range must resist with a TN 4 Fitness check (Earth 5, Fire 2) or suffer supernatural damage equal to your Air Ring and suffer the Disoriented condition. The hurricane persists for a number of rounds equal to your Air Ring and can destroy objects or structures at your GM’s discretion."
         ],
         "newOpportunities":[
-            "Air &#xe90d: You may end the hurricane at any time as an action.",
-            "Air &#xe90d+: If you succeed, each target who fails the Fitness check at the end of this turn is hurled a number of range bands away from you equal to &#xe90d spent this way. Upon landing, each target hurled this way suffers the negative effects of falling the number of range bands they moved.",
-            "Air &#xe90d&#xe90d: While within the hurricane, you can fly, moving vertically and ignoring the effects of terrain."
+            "Air |opportunityIcon|: You may end the hurricane at any time as an action.",
+            "Air |opportunityIcon|+: If you succeed, each target who fails the Fitness check at the end of this turn is hurled a number of range bands away from you equal to |opportunityIcon| spent this way. Upon landing, each target hurled this way suffers the negative effects of falling the number of range bands they moved.",
+            "Air |opportunityIcon|opportunityIcon|: While within the hurricane, you can fly, moving vertically and ignoring the effects of terrain."
         ]
     },
     "Yari of Air":{
@@ -1029,12 +1029,12 @@
             "Activation: As a Support action, you may make a TN 1 Theology (Air) check to summon a spear made of swirling wind into your hand."
         ],
         "effects":[
-            "Effects: If you succeed, you summon and ready a spear made of wind, visible only by a wispy outline. It has the Concealable quality. When you make an Attack or Support action check using the invisible spear, during Step 5: Choose Kept Dice, add a kept &#x2b1b set to an &#xe90d result. The spear persists until the end of any turn in which it leaves your grip or until the end of the encounter, at which point it dissipates into wind."
+            "Effects: If you succeed, you summon and ready a spear made of wind, visible only by a wispy outline. It has the Concealable quality. When you make an Attack or Support action check using the invisible spear, during Step 5: Choose Kept Dice, add a kept |ringIcon| set to an |opportunityIcon| result. The spear persists until the end of any turn in which it leaves your grip or until the end of the encounter, at which point it dissipates into wind."
         ],
         "newOpportunities":[
-            "Air &#xe90d: The weapon you summon can be any kind of melee or ranged weapon instead of a spear.",
-            "Air &#xe90d: After performing this action, you may immediately perform a Guard action using the weapon you summoned.",
-            "Air &#xe90d&#xe90d: You may summon a pair of weapons instead of a single weapon."
+            "Air |opportunityIcon|: The weapon you summon can be any kind of melee or ranged weapon instead of a spear.",
+            "Air |opportunityIcon|: After performing this action, you may immediately perform a Guard action using the weapon you summoned.",
+            "Air |opportunityIcon|opportunityIcon|: You may summon a pair of weapons instead of a single weapon."
         ]
     },
     "Armor of Earth":{
@@ -1054,9 +1054,9 @@
             "Effects: You summon and equip a suit of armor that grants physical resistance equal to your Earth Ring plus your bonus successes and has the Cumbersome and Wargear qualities. The armor persists for a number of rounds equal to your Earth Ring, at which point it tumbles to the ground as loose stones or dirt."
         ],
         "newOpportunities":[
-            "Earth &#xe90d: This effect persists until the end of the scene instead.",
-            "Earth &#xe90d: The armor you summon has the Durable quality.",
-            "Earth &#xe90d&#xe90d: The armor you summon has the Sacred quality."
+            "Earth |opportunityIcon|: This effect persists until the end of the scene instead.",
+            "Earth |opportunityIcon|: The armor you summon has the Durable quality.",
+            "Earth |opportunityIcon|opportunityIcon|: The armor you summon has the Sacred quality."
         ]
     },
     "Bind the Shadow":{
@@ -1076,10 +1076,10 @@
             "Effects: If you succeed, crackling arcs of jade light smite and purify your target; it must resist with a TN 4 Fitness (Air 2, Water 5) check or suffer the Immobilized and Silenced conditions. This effect persists for a number of rounds equal to your Earth Ring."
         ],
         "newOpportunities":[
-            "Earth &#xe90d: Each target that fails its Fitness check to resist is bound until the end of the scene instead.",
-            "Earth &#xe90d&#xe90d: Each target that fails its Fitness check to resist is bound for one year instead.",
-            "Earth &#xe90d&#xe90d+: Increase the TN of checks to resist this effect by 1 per &#xe90d&#xe90d spent this way.",
-            "Earth &#xe90d&#xe90d &#xe90d&#xe90d: Each target that fails its Fitness check to resist is bound for one hundred years instead."
+            "Earth |opportunityIcon|: Each target that fails its Fitness check to resist is bound until the end of the scene instead.",
+            "Earth |opportunityIcon|opportunityIcon|: Each target that fails its Fitness check to resist is bound for one year instead.",
+            "Earth |opportunityIcon|opportunityIcon|+: Increase the TN of checks to resist this effect by 1 per |opportunityIcon|opportunityIcon| spent this way.",
+            "Earth |opportunityIcon|opportunityIcon|opportunityIcon|opportunityIcon|: Each target that fails its Fitness check to resist is bound for one hundred years instead."
         ]
     },
     "Caress of Earth":{
@@ -1099,7 +1099,7 @@
             "Effects: If you succeed, you mend the target, and remove the Damaged or Destroyed quality from it."
         ],
         "newOpportunities":[
-            "Earth &#xe90d: One target gains the Durable quality until the end of the scene."
+            "Earth |opportunityIcon|: One target gains the Durable quality until the end of the scene."
         ]
     },
     "Courage of Seven Thunders":{
@@ -1119,9 +1119,9 @@
             "Effects: If you succeed, you augment each target with vigorous resolve; each target increases their composure by your Earth Ring. This effect persists until the end of the scene."
         ],
         "newOpportunities":[
-            "Earth &#xe90d: If you succeed, each target also increases their endurance by your Earth Ring while this effect persists.",
-            "Earth &#xe90d+: Each target removes 1 &#xe917 per &#xe90d spent this way.",
-            "Earth &#xe90d&#xe90d: This technique targets each friendly character in range instead."
+            "Earth |opportunityIcon|: If you succeed, each target also increases their endurance by your Earth Ring while this effect persists.",
+            "Earth |opportunityIcon|+: Each target removes 1 |strifeIcon| per |opportunityIcon| spent this way.",
+            "Earth |opportunityIcon|opportunityIcon|: This technique targets each friendly character in range instead."
         ]
     },
     "Earthquake":{
@@ -1141,9 +1141,9 @@
             "Effects: If you succeed, you summon an earthquake that encompasses the range of the invocation in all directions around you. At the end of each of your turns, each target must resist with a TN 5 Fitness check (Air 3, Water 6) or suffer supernatural damage equal to twice your Earth Ring and suffer the Prone condition. The quake persists for a number of rounds equal to your Earth Ring."
         ],
         "newOpportunities":[
-            "Earth &#xe90d: The quake persists until the end of the scene instead, or you may dispel it at any time before that as an action.",
-            "Earth &#xe90d+: If you succeed, you may summon a chasm beneath the feet of one character in range, causing that character and anyone at range 0–1 of them to fall a number of range bands equal to &#xe90d spent this way into the bowels of the earth.",
-            "Earth &#xe90d&#xe90d+: If you succeed, you may destroy one building or fortification in range per &#xe90d&#xe90d spent this way. Each character inside must resist with a TN 3 Fitness check (Air 1, Water 4) to escape by immediately moving outside or suffer a critical strike with severity 10."
+            "Earth |opportunityIcon|: The quake persists until the end of the scene instead, or you may dispel it at any time before that as an action.",
+            "Earth |opportunityIcon|+: If you succeed, you may summon a chasm beneath the feet of one character in range, causing that character and anyone at range 0–1 of them to fall a number of range bands equal to |opportunityIcon| spent this way into the bowels of the earth.",
+            "Earth |opportunityIcon|opportunityIcon|+: If you succeed, you may destroy one building or fortification in range per |opportunityIcon|opportunityIcon| spent this way. Each character inside must resist with a TN 3 Fitness check (Air 1, Water 4) to escape by immediately moving outside or suffer a critical strike with severity 10."
         ]
     },
     "Earth Becomes Sky":{
@@ -1180,9 +1180,9 @@
             "Effects: If you succeed, you augment yourself with the ability to stick to earthen surfaces, allowing you to traverse even vertical surfaces made of earth or stone. This effect persists for one round, plus additional rounds equal to your bonus successes (or one minute in narrative time)."
         ],
         "newOpportunities":[
-            "Earth &#xe90d: This effect persists until the end of the scene instead.",
-            "Earth &#xe90d: If you succeed, you can also pass through solid earth as if it was water when you move. Further, you count as having supernatural resistance against damage from Earth invocations, Earth kihō, and Earth mahō equal to your Earth Ring.",
-            "Earth &#xe90d&#xe90d: The effects also apply to metal. You count as having physical resistance against damage from metal weapons equal to your Earth Ring."
+            "Earth |opportunityIcon|: This effect persists until the end of the scene instead.",
+            "Earth |opportunityIcon|: If you succeed, you can also pass through solid earth as if it was water when you move. Further, you count as having supernatural resistance against damage from Earth invocations, Earth kihō, and Earth mahō equal to your Earth Ring.",
+            "Earth |opportunityIcon|opportunityIcon|: The effects also apply to metal. You count as having physical resistance against damage from metal weapons equal to your Earth Ring."
         ]
     },
     "Grasp of Earth":{
@@ -1202,8 +1202,8 @@
             "Effects: If you succeed, you summon cracks in the earth; each target suffers supernatural damage equal to your Earth Ring and must resist with a TN 4 Fitness check (Air 2, Water 5) or suffer the Prone condition."
         ],
         "newOpportunities":[
-            "Earth &#xe90d: Each target that fails their Fitness check to resist also suffers the Immobilized condition.",
-            "Earth &#xe90d: Reduce the damage each targets suffers to 0."
+            "Earth |opportunityIcon|: Each target that fails their Fitness check to resist also suffers the Immobilized condition.",
+            "Earth |opportunityIcon|: Reduce the damage each targets suffers to 0."
         ]
     },
     "Jade Strike":{
@@ -1220,11 +1220,11 @@
             "Activation: As an Attack action, you may make a TN 2 Theology (Earth) check targeting one character at range 0–3."
         ],
         "effects":[
-            "Effects: If you succeed and the target is an Otherworldly being, you smite and purify it with searing jade energy. It suffers a critical strike with severity equal to your Earth Ring plus your bonus successes. The creature may spend &#xe90d&#xe90d from its check to resist this critical strike to conceal that it has been affected, potentially concealing its Otherworldly nature (though it still suffers the effects that it successfully hid).",
+            "Effects: If you succeed and the target is an Otherworldly being, you smite and purify it with searing jade energy. It suffers a critical strike with severity equal to your Earth Ring plus your bonus successes. The creature may spend |opportunityIcon|opportunityIcon| from its check to resist this critical strike to conceal that it has been affected, potentially concealing its Otherworldly nature (though it still suffers the effects that it successfully hid).",
             "If you succeed and your target is not a an Otherworldly being, it suffers no ill effects."
         ],
         "newOpportunities":[
-            "Earth &#xe90d: If you succeed, each target that is an Otherworldly being suffers the Silenced condition and cannot use mahō techniques until the end of your next turn."
+            "Earth |opportunityIcon|: If you succeed, each target that is an Otherworldly being suffers the Silenced condition and cannot use mahō techniques until the end of your next turn."
         ]
     },
     "Jurōjin’s Balm":{
@@ -1244,9 +1244,9 @@
             "Effects: If you succeed, you augment your target’s fortitude. The target reduces TN of all checks to resist the effects of poison and disease by 2 (to a minimum of 1). Additionally, the target cannot become intoxicated via imbibing alcohol. This effect persists until the end of the scene."
         ],
         "newOpportunities":[
-            "Earth &#xe90d: If you succeed, your target also reduces the TN of all checks to resist mahō, the Defiled terrain quality, and the effects of Otherworldly beings by 2 (to a minimum of 1).",
-            "Earth &#xe90d: This effect persists for twenty-four hours instead.",
-            "Earth &#xe90d&#xe90d: If you succeed, you also mend your target, removing any poisons currently afflicting them and the Dying condition, and any symptoms of diseases affecting them are suppressed until the end of the scene."
+            "Earth |opportunityIcon|: If you succeed, your target also reduces the TN of all checks to resist mahō, the Defiled terrain quality, and the effects of Otherworldly beings by 2 (to a minimum of 1).",
+            "Earth |opportunityIcon|: This effect persists for twenty-four hours instead.",
+            "Earth |opportunityIcon|opportunityIcon|: If you succeed, you also mend your target, removing any poisons currently afflicting them and the Dying condition, and any symptoms of diseases affecting them are suppressed until the end of the scene."
         ]
     },
     "Power of the Earth Dragon":{
@@ -1267,7 +1267,7 @@
             "Each target cannot be affected by the Power of the Earth Dragon invocation again until the end of the scene."
         ],
         "newOpportunities":[
-            "Earth &#xe90d: This effect persists until the end of the scene instead."
+            "Earth |opportunityIcon|: This effect persists until the end of the scene instead."
         ]
     },
     "Rise, Earth":{
@@ -1287,9 +1287,9 @@
             "Effects: If you succeed, you summon a Manifest Earth Kami to fight for you, which bursts forth at the target position. The manifest earth kami obeys you for three rounds, plus additional rounds equal to your bonus successes, taking its turn immediately after yours each round. When this effect ends, it departs or, if stirred to particular ire, begins to follow its own directives (but will not attack you unless provoked)."
         ],
         "newOpportunities":[
-            "Earth &#xe90d+: Increase the earth kami’s endurance by 2 per &#xe90d spent this way.",
-            "Earth &#xe90d: The earth kami’s stone fists unarmed attack profile gains the Sacred quality.",
-            "Earth &#xe90d: The manifest earth kami creates a rumbling shockwave when it erupts. Each character at range 0–2 of the chosen position must resist with a TN 4 Fitness check (Air 2, Water 5) or suffer physical or supernatural damage equal to your Earth Ring and gain the Prone condition."
+            "Earth |opportunityIcon|+: Increase the earth kami’s endurance by 2 per |opportunityIcon| spent this way.",
+            "Earth |opportunityIcon|: The earth kami’s stone fists unarmed attack profile gains the Sacred quality.",
+            "Earth |opportunityIcon|: The manifest earth kami creates a rumbling shockwave when it erupts. Each character at range 0–2 of the chosen position must resist with a TN 4 Fitness check (Air 2, Water 5) or suffer physical or supernatural damage equal to your Earth Ring and gain the Prone condition."
         ]
     },
     "Symbol of Earth":{
@@ -1309,8 +1309,8 @@
             "Effects: If you succeed, you summon a symbol that purifies the area at the target position. Each time an Otherworldly being attempts to move closer to the target, it suffers supernatural damage equal to your Earth Ring and must make a TN 4 Fitness check (Air 2, Water 5) or suffer the Prone condition. This effect persists for one round, plus additional rounds equal to your bonus successes."
         ],
         "newOpportunities":[
-            "Earth &#xe90d: This effect persists until the end of the scene instead.",
-            "Earth &#xe90d&#xe90d: This effect persists for twenty-four hours instead."
+            "Earth |opportunityIcon|: This effect persists until the end of the scene instead.",
+            "Earth |opportunityIcon|opportunityIcon|: This effect persists for twenty-four hours instead."
         ]
     },
     "Tetsubō of Earth":{
@@ -1330,9 +1330,9 @@
             "Effects: If you succeed, you summon and ready a tetsubō made of stone. When you deal damage with an Attack action using this weapon, if a target is suffering the Prone condition, that target suffers additional damage equal to your Earth Ring. The tetsubō persists until the end of any turn in which it leaves your grip or until the end of the scene, at which point it collapses into dust and pebbles."
         ],
         "newOpportunities":[
-            "Earth &#xe90d: The weapon you summon can be any kind of melee weapon instead. It has the Durable quality.",
-            "Earth &#xe90d: After performing this action, you may immediately perform a Guard action using this weapon.",
-            "Earth &#xe90d&#xe90d: The weapon you summon has the Sacred quality."
+            "Earth |opportunityIcon|: The weapon you summon can be any kind of melee weapon instead. It has the Durable quality.",
+            "Earth |opportunityIcon|: After performing this action, you may immediately perform a Guard action using this weapon.",
+            "Earth |opportunityIcon|opportunityIcon|: The weapon you summon has the Sacred quality."
         ]
     },
     "Tomb of Jade":{
@@ -1353,9 +1353,9 @@
             "If you succeed and your target is not a Tainted being, it suffers no ill effects."
         ],
         "newOpportunities":[
-            "Earth &#xe90d: This effect persists until the end of the scene instead.",
-            "Earth &#xe90d: At a later point, you may release the target from its jade prison as an action.",
-            "Earth &#xe90d+: Choose one of the following conditions for each &#xe90d spent this way: Dazed, Disoriented, Immobilized, or Prone. If the target is an Otherworldly being, it suffers the chosen conditions."
+            "Earth |opportunityIcon|: This effect persists until the end of the scene instead.",
+            "Earth |opportunityIcon|: At a later point, you may release the target from its jade prison as an action.",
+            "Earth |opportunityIcon|+: Choose one of the following conditions for each |opportunityIcon| spent this way: Dazed, Disoriented, Immobilized, or Prone. If the target is an Otherworldly being, it suffers the chosen conditions."
         ]
     },
     "Wall of Earth":{
@@ -1375,12 +1375,12 @@
             "Effects: If you succeed, you summon a wall of earth between the two target points that is range 1 in thickness and range 3 in height. Each character standing where the wall erupts must resist with a TN 2 Fitness check (Air 1, Water 3) or suffer physical damage equal to your Earth Ring and gain the Prone condition."
         ],
         "newOpportunities":[
-            "Earth &#xe90d: Choose one of the following terrain qualities:",
+            "Earth |opportunityIcon|: Choose one of the following terrain qualities:",
             "Dangerous, Entangling, or Obscuring. The wall of earth counts as terrain with that quality.",
-            "Earth &#xe90d+: Treat the maximum range of this technique as 1 higher per &#xe90d spent this way.",
-            "Earth &#xe90d&#xe90d: Instead of summoning a wall, you may summon an Outpost fortification.",
-            "Earth &#xe90d&#xe90d &#xe90d: Instead of summoning a wall, you may summon a Fortress fortification.",
-            "Earth &#xe90d&#xe90d &#xe90d&#xe90d: Instead of summoning a wall, you may summon a Castle fortification."
+            "Earth |opportunityIcon|+: Treat the maximum range of this technique as 1 higher per |opportunityIcon| spent this way.",
+            "Earth |opportunityIcon|opportunityIcon|: Instead of summoning a wall, you may summon an Outpost fortification.",
+            "Earth |opportunityIcon|opportunityIcon|opportunityIcon|: Instead of summoning a wall, you may summon a Fortress fortification.",
+            "Earth |opportunityIcon|opportunityIcon|opportunityIcon|opportunityIcon|: Instead of summoning a wall, you may summon a Castle fortification."
         ]
     },
     "Armor of Radiance":{
@@ -1400,8 +1400,8 @@
             "Effects: If you succeed, you augment the target armor, enveloping it in blinding radiance and searing heat (that miraculously do not affect the wearer). When a character at range 0–1 of the wearer begins their turn, they suffer the Burning and Dazed conditions. This effect persists for one round, plus additional rounds equal to your bonus successes."
         ],
         "newOpportunities":[
-            "Fire &#xe90d: The armor gains the Wargear quality.",
-            "Fire &#xe90d&#xe90d: This effect persists until the end of the scene instead."
+            "Fire |opportunityIcon|: The armor gains the Wargear quality.",
+            "Fire |opportunityIcon|opportunityIcon|: This effect persists until the end of the scene instead."
         ]
     },
     "Biting Steel":{
@@ -1421,9 +1421,9 @@
             "Effects: If you succeed, you augment the weapon with blazing energy. Increase the weapon’s base damage by your Fire Ring. This effect persists for one round, plus additional rounds equal to your bonus successes."
         ],
         "newOpportunities":[
-            "Fire &#xe90d: After performing this action, if you have the weapon you enhanced readied, you may immediately perform a Strike action with it.",
-            "Fire &#xe90d+: If you succeed, while the effect persists, increase the weapon’s deadliness by 1 per &#xe90d spent this way.",
-            "Fire &#xe90d&#xe90d: This effect persists until the end of the scene instead."
+            "Fire |opportunityIcon|: After performing this action, if you have the weapon you enhanced readied, you may immediately perform a Strike action with it.",
+            "Fire |opportunityIcon|+: If you succeed, while the effect persists, increase the weapon’s deadliness by 1 per |opportunityIcon| spent this way.",
+            "Fire |opportunityIcon|opportunityIcon|: This effect persists until the end of the scene instead."
         ]
     },
     "Breath of the Fire Dragon":{
@@ -1455,7 +1455,7 @@
             "Effects: If you succeed, you summon the fire kami’s energy into yourself. Extinguish each target flame and remove 1 fatigue per target source of fire extinguished this way."
         ],
         "newOpportunities":[
-            "Fire &#xe90d&#xe90d: If you succeed, you may also end all persistent effects from other Fire invocations and flame-based supernatural effects in the area."
+            "Fire |opportunityIcon|opportunityIcon|: If you succeed, you may also end all persistent effects from other Fire invocations and flame-based supernatural effects in the area."
         ]
     },
     "Fukurokujin’s Wit":{
@@ -1472,10 +1472,10 @@
             "Activation: As a Support action, you may make a TN 1 Theology (Fire) check targeting yourself."
         ],
         "effects":[
-            "Effects: If you succeed, you augment your target’s wits and cunning with the Fortune’s favor. When making checks, the target adds a kept &#x2b1b set to an &#xe90d&#xe917 result. This effect persists for one round, plus additional rounds equal to your bonus successes."
+            "Effects: If you succeed, you augment your target’s wits and cunning with the Fortune’s favor. When making checks, the target adds a kept |ringIcon| set to an |opportunityIcon|strifeIcon| result. This effect persists for one round, plus additional rounds equal to your bonus successes."
         ],
         "newOpportunities":[
-            "Fire &#xe90d: You may target another character at range 0–2 instead of yourself."
+            "Fire |opportunityIcon|: You may target another character at range 0–2 instead of yourself."
         ]
     },
     "Fury of Osano-wo":{
@@ -1495,8 +1495,8 @@
             "Effects: If you succeed, you call forth lightning to smite your target. The target suffers supernatural damage equal to your Fire Ring plus three times your bonus successes. If a target is Incapacitated by this damage, they suffer a critical strike with severity of 8."
         ],
         "newOpportunities":[
-            "Fire &#xe90d: The target and any other characters at range 0–2 of the target must make a TN 3 Meditation check (Air 4, Water 1) or suffer the Dazed condition and strife equal to three times your Fire Ring.",
-            "Fire &#xe90d+: Increase the severity of any critical strikes inflicted as part of this action by 2 per &#xe90d spent this way."
+            "Fire |opportunityIcon|: The target and any other characters at range 0–2 of the target must make a TN 3 Meditation check (Air 4, Water 1) or suffer the Dazed condition and strife equal to three times your Fire Ring.",
+            "Fire |opportunityIcon|+: Increase the severity of any critical strikes inflicted as part of this action by 2 per |opportunityIcon| spent this way."
         ]
     },
     "Katana of Fire":{
@@ -1516,9 +1516,9 @@
             "Effects: If you succeed, you summon and ready a katana made of fire. It has the Wargear quality. Damage inflicted with this weapon is supernatural rather than physical. The katana persists until the end of any turn in which it leaves your grip or until the end of the scene, at which point it scatters into embers, flashes into ash, or sputters out."
         ],
         "newOpportunities":[
-            "Fire &#xe90d: The weapon you summon can be any kind of melee weapon instead of a katana. Fire &#xe90d: You may immediately perform a Strike action using the weapon you summoned.",
-            "Fire &#xe90d: If you succeed, you may summon and immediately ready a pair of weapons instead of a single weapon.",
-            "Fire &#xe90d: After you perform an Attack action with the weapon, each target must resist with a TN 3 Fitness check (Air 4, Water 1) or suffer the Burning condition."
+            "Fire |opportunityIcon|: The weapon you summon can be any kind of melee weapon instead of a katana. Fire |opportunityIcon|: You may immediately perform a Strike action using the weapon you summoned.",
+            "Fire |opportunityIcon|: If you succeed, you may summon and immediately ready a pair of weapons instead of a single weapon.",
+            "Fire |opportunityIcon|: After you perform an Attack action with the weapon, each target must resist with a TN 3 Fitness check (Air 4, Water 1) or suffer the Burning condition."
         ]
     },
     "Matsu’s Battlecry":{
@@ -1556,8 +1556,8 @@
             "If you succeed, after you perform a Fire invocation, you summon one additional fiery mote. This effect persists until the end of the scene."
         ],
         "newOpportunities":[
-            "Fire &#xe90d: The fiery motes only set nearby objects on fire when you will them to do so, rather than haphazardly.",
-            "Fire &#xe90d: When you defend against damage, you may spend a number of motes up to your Fire Ring to reduce the damage you suffer by 1 for each mote spent this way."
+            "Fire |opportunityIcon|: The fiery motes only set nearby objects on fire when you will them to do so, rather than haphazardly.",
+            "Fire |opportunityIcon|: When you defend against damage, you may spend a number of motes up to your Fire Ring to reduce the damage you suffer by 1 for each mote spent this way."
         ]
     },
     "Rise, Flame":{
@@ -1577,9 +1577,9 @@
             "Effects: If you succeed, you summon a Manifest Fire Kami. It consumes the flammable material, appearing in its position. It obeys you for two rounds, plus additional rounds equal to your bonus successes, taking its turn immediately after yours each round. When this effect ends, it departs or, if stirred to anger, begins to follow its own directives (ignoring you unless provoked)."
         ],
         "newOpportunities":[
-            "Fire &#xe90d: The fire kami bursts forth in a pillar of searing flame. Each character at range 0–2 of the chosen position must resist with a TN 4 Fitness check (Air 5, Water 2) or suffer the Burning and Dazed conditions.",
-            "Fire &#xe90d+: The fire kami consumes one additional source of flammable material in range per &#xe90d spent this way. Increase its endurance by the silhouettes of all consumed objects.",
-            "Fire &#xe90d: When the fire kami’s fatigue exceeds its endurance, it detonates into a column of flame that sears the earth and the sky. Each character at range 0–3 of it must resist with a TN 5 Fitness check (Air 6, Water 3) or suffer supernatural damage equal to two times your Fire Ring and suffer the Burning and Dazed conditions."
+            "Fire |opportunityIcon|: The fire kami bursts forth in a pillar of searing flame. Each character at range 0–2 of the chosen position must resist with a TN 4 Fitness check (Air 5, Water 2) or suffer the Burning and Dazed conditions.",
+            "Fire |opportunityIcon|+: The fire kami consumes one additional source of flammable material in range per |opportunityIcon| spent this way. Increase its endurance by the silhouettes of all consumed objects.",
+            "Fire |opportunityIcon|: When the fire kami’s fatigue exceeds its endurance, it detonates into a column of flame that sears the earth and the sky. Each character at range 0–3 of it must resist with a TN 5 Fitness check (Air 6, Water 3) or suffer supernatural damage equal to two times your Fire Ring and suffer the Burning and Dazed conditions."
         ]
     },
     "The Cleansing Fire":{
@@ -1616,7 +1616,7 @@
             "Effects: If you succeed, you smite each target with a stream of fire. Each target suffers supernatural damage equal to your Fire Ring plus your bonus successes."
         ],
         "newOpportunities":[
-            "Fire &#xe90d+: Treat the maximum range of this technique as 1 higher per &#xe90d spent this way."
+            "Fire |opportunityIcon|+: Treat the maximum range of this technique as 1 higher per |opportunityIcon| spent this way."
         ]
     },
     "The Soul’s Blade":{
@@ -1636,11 +1636,11 @@
             "Effects: If you succeed, you summon and ready a katana or naginata made of searing, crackling energy. Attacks made with this weapon inflict supernatural damage and ignore all forms of resistance. The weapon persists until it leaves your grip or until the end of the scene, at which point it flickers out."
         ],
         "newOpportunities":[
-            "Fire &#xe90d: The weapon you summon can be any kind of melee weapon instead of a katana or naginata.",
-            "Fire &#xe90d: You may immediately perform a Strike action using the weapon you summoned.",
-            "Fire &#xe90d: If you succeed, you may summon and immediately ready a pair of weapons instead of a single weapon.",
-            "Fire &#xe90d: One character you choose other than yourself may wield the weapon.",
-            "Fire &#xe90d&#xe90d: After you perform an Attack action with the weapon, each target must resist with a TN 4 Fitness check (Air 5, Water 2) or suffer the Dazed condition."
+            "Fire |opportunityIcon|: The weapon you summon can be any kind of melee weapon instead of a katana or naginata.",
+            "Fire |opportunityIcon|: You may immediately perform a Strike action using the weapon you summoned.",
+            "Fire |opportunityIcon|: If you succeed, you may summon and immediately ready a pair of weapons instead of a single weapon.",
+            "Fire |opportunityIcon|: One character you choose other than yourself may wield the weapon.",
+            "Fire |opportunityIcon|opportunityIcon|: After you perform an Attack action with the weapon, each target must resist with a TN 4 Fitness check (Air 5, Water 2) or suffer the Dazed condition."
         ]
     },
     "Wall of Fire":{
@@ -1660,7 +1660,7 @@
             "Effects: If you succeed, you summon a wall of flame between the target points that extends to range 1 in thickness and range 3 in height; this area counts as Dangerous terrain. This effect persists for one round plus additional rounds equal to your bonus successes. Any character standing where the wall erupts suffers the Dazed condition and must resist with a TN 2 Fitness check (Air 3, Water 1) or suffer supernatural damage equal to your Fire Ring and the Burning condition."
         ],
         "newOpportunities":[
-            "Fire &#xe90d: The wall of fire counts as terrain with one of the following qualities: Entangling or Obscuring."
+            "Fire |opportunityIcon|: The wall of fire counts as terrain with one of the following qualities: Entangling or Obscuring."
         ]
     },
     "Wings of the Phoenix":{
@@ -1680,8 +1680,8 @@
             "Effects: If you succeed, augment yourself with wings of flame that carry you aloft. These flames do not harm you. In addition to being able to move vertically and horizontally freely, you ignore the effects of terrain while flying. This effect persists one round, plus additional rounds equal to your bonus successes. While this effect persists, any terrain you fly over at range 0–3 is ignited and becomes Dangerous terrain until the beginning of your next turn; each character within that area suffers the Dazed condition, and they must resist with a TN 2 Fitness check (Air 3, Water 1) or suffer supernatural damage equal to your Fire Ring and gain the Burning condition."
         ],
         "newOpportunities":[
-            "Fire &#xe90d+: While flying, you may safely carry up to one additional willing character at range 0–2 with you per &#xe90d spent this way.",
-            "Fire &#xe90d&#xe90d: This effect persists until the end of the scene instead."
+            "Fire |opportunityIcon|+: While flying, you may safely carry up to one additional willing character at range 0–2 with you per |opportunityIcon| spent this way.",
+            "Fire |opportunityIcon|opportunityIcon|: This effect persists until the end of the scene instead."
         ]
     },
     "Bō of Water":{
@@ -1701,9 +1701,9 @@
             "Effects: If you succeed, you summon and ready a staff made of water. It has the Snaring quality. At the end of each round, you may transform this weapon into a different melee weapon. The bō persists until the end of any turn in which it leaves your grip or until the end of the scene, at which point it splashes to the ground in a puddle."
         ],
         "newOpportunities":[
-            "Water &#xe90d: The weapon you summon can be any kind of melee or ranged weapon instead of a staff.",
-            "Water &#xe90d: You may immediately perform a Strike action using the weapon you summoned.",
-            "Water &#xe90d: When performing an Attack action with this weapon, treat its minimum or maximum range as 1 higher or lower."
+            "Water |opportunityIcon|: The weapon you summon can be any kind of melee or ranged weapon instead of a staff.",
+            "Water |opportunityIcon|: You may immediately perform a Strike action using the weapon you summoned.",
+            "Water |opportunityIcon|: When performing an Attack action with this weapon, treat its minimum or maximum range as 1 higher or lower."
         ]
     },
     "Dance of Seasons":{
@@ -1723,7 +1723,8 @@
             "Effects: If you succeed, you summon the essence of the seasons to freeze, thaw, or evaporate any amount of water at range 0–1 of the target position. If you transform water into ice, it becomes solid, Dangerous terrain. If you transform water into vapor, it creates a fog, which is Obscuring terrain. If you transform water into mud, it becomes Entangling terrain. Water within living beings remains unaffected, as the kami do not wish to ruin the elegant scene with grotesque results."
         ],
         "newOpportunities":[
-            "Water &#xe90d+: Choose one additional target position per &#xe90d spent this way. Water &#xe90d+: If you succeed, you may attempt to encase in ice one character in the affected area per &#xe90d spent this way. Each of these characters must resist with a TN 3 Fitness check (Earth 1, Fire 4) or suffer the Immobilized and Disoriented conditions."
+            "Water |opportunityIcon|+: Choose one additional target position per |opportunityIcon| spent this way.",
+            "Water |opportunityIcon|+: If you succeed, you may attempt to encase in ice one character in the affected area per |opportunityIcon| spent this way. Each of these characters must resist with a TN 3 Fitness check (Earth 1, Fire 4) or suffer the Immobilized and Disoriented conditions."
         ]
     },
     "Dominion of Suijin":{
@@ -1743,11 +1744,11 @@
             "Effects: If you succeed, you scry in the ripples. The target body of water displays an image of a second body of water of your choice and its surroundings as if the onlooker were just below the surface. This second body of water must be at range 0–6 of the target position, and you must have concrete knowledge of a specific body of water to use it this way."
         ],
         "newOpportunities":[
-            "Water &#xe90d: In addition to being able to see out the other pool of water, you can hear (very muffled) noises.",
-            "Water &#xe90d: Only you can see the vision; to others, the pool of water shows no images.",
-            "Water &#xe90d: The location you see can be any distance from you (but must still be familiar).",
-            "Water &#xe90d&#xe90d: You may use clouds, fog banks, snow, or sheets of ice as bodies of water for this technique.",
-            "Water &#xe90d&#xe90d &#xe90d: In addition to being able to see out of the other body of water, you and a number of other characters up to your Water Ring may pass through the temporary portal you have created to the other location. The trip is always one way for a given use of the technique, and you always arrive soaked."
+            "Water |opportunityIcon|: In addition to being able to see out the other pool of water, you can hear (very muffled) noises.",
+            "Water |opportunityIcon|: Only you can see the vision; to others, the pool of water shows no images.",
+            "Water |opportunityIcon|: The location you see can be any distance from you (but must still be familiar).",
+            "Water |opportunityIcon|opportunityIcon|: You may use clouds, fog banks, snow, or sheets of ice as bodies of water for this technique.",
+            "Water |opportunityIcon|opportunityIcon|opportunityIcon|: In addition to being able to see out of the other body of water, you and a number of other characters up to your Water Ring may pass through the temporary portal you have created to the other location. The trip is always one way for a given use of the technique, and you always arrive soaked."
         ]
     },
     "Ever-Changing Waves":{
@@ -1765,8 +1766,8 @@
             "Effects: If you succeed, you augment your body, transforming it into that of a natural animal of silhouette 2. While in this form, you use its ring values, derived attributes, abilities, and advantages with the physical or social type, but you use your own skill ranks and advantages with the mental or spiritual type. This effect persists until you choose to end it or are rendered unconscious, at which point your form reverts to its original state. Do not remove any fatigue or strife you have suffered in the alternate form when you return to your original; if this causes your fatigue to exceed your endurance (or your strife to exceed your composure) when it did not in the alternate form, you suffer a critical strike with severity 5 (or you become Compromised, in the case of strife)."
         ],
         "newOpportunities":[
-            "Water &#xe90d: If you succeed, you can transform your body into that of a different sentient species. Water &#xe90d: If you succeed, you can transform your body into that of an Otherworldly being, such as a supernatural beast.",
-            "Water &#xe90d+: You may choose a new form of silhouette 1 higher or lower per &#xe90d spent this way (to a minimum of 0 or a maximum of 6)."
+            "Water |opportunityIcon|: If you succeed, you can transform your body into that of a different sentient species. Water |opportunityIcon|: If you succeed, you can transform your body into that of an Otherworldly being, such as a supernatural beast.",
+            "Water |opportunityIcon|+: You may choose a new form of silhouette 1 higher or lower per |opportunityIcon| spent this way (to a minimum of 0 or a maximum of 6)."
         ]
     },
     "Hands of the Tides":{
@@ -1787,7 +1788,7 @@
             "If you succeed, each target receives 2 strife."
         ],
         "newOpportunities":[
-            "Water &#xe90d+: If you succeed, you may choose a new stance for one target per &#xe90d spent this way."
+            "Water |opportunityIcon|+: If you succeed, you may choose a new stance for one target per |opportunityIcon| spent this way."
         ]
     },
     "Heart of the Water Dragon":{
@@ -1808,7 +1809,7 @@
             "Each target cannot be affected by the Heart of the Water Dragon invocation again until the end of the scene."
         ],
         "newOpportunities":[
-            "Water &#xe90d&#xe90d: When the target succeeds on a check to resist the effect of a kihō, mahō, or invocation technique, the character who used the technique must also make the check to resist that effect, or suffer the effect themself."
+            "Water |opportunityIcon|opportunityIcon|: When the target succeeds on a check to resist the effect of a kihō, mahō, or invocation technique, the character who used the technique must also make the check to resist that effect, or suffer the effect themself."
         ]
     },
     "Inari’s Blessing":{
@@ -1828,8 +1829,8 @@
             "Effects: If you succeed, you summon a meal at the target position that can feed a number of people up to your Water Ring plus your bonus successes."
         ],
         "newOpportunities":[
-            "Water &#xe90d: The meal is particularly fortifying. Any character who partakes of it during downtime removes fatigue equal to your Water Ring.",
-            "Water &#xe90d+: The meal can feed a number of people up to your Water Ring plus your bonus successes times the &#xe90d spent this way instead."
+            "Water |opportunityIcon|: The meal is particularly fortifying. Any character who partakes of it during downtime removes fatigue equal to your Water Ring.",
+            "Water |opportunityIcon|+: The meal can feed a number of people up to your Water Ring plus your bonus successes times the |opportunityIcon| spent this way instead."
         ]
     },
     "Path to Inner Peace":{
@@ -1850,9 +1851,8 @@
             "Each target cannot be affected by the Path to Inner Peace invocation again until the end of the scene."
         ],
         "newOpportunities":[
-            "Water &#xe90d: Choose one of the following conditions:",
-            "Bleeding, Dazed, Disoriented, or Lightly Wounded. Remove that condition from each target.",
-            "Water &#xe90d: Your target also removes strife equal to your bonus successes."
+            "Water |opportunityIcon|: Choose one of the following conditions: Bleeding, Dazed, Disoriented, or Lightly Wounded. Remove that condition from each target.",
+            "Water |opportunityIcon|: Your target also removes strife equal to your bonus successes."
         ]
     },
     "Reflections of P’an Ku":{
@@ -1872,8 +1872,8 @@
             "Effects: If you succeed, you scry to uncover all properties an item possesses, including its name, maker, mundane qualities, magical properties, curses, and sealed techniques."
         ],
         "newOpportunities":[
-            "Water &#xe90d: Gain knowledge of the item’s origin in broad strokes, such as where it was forged, the clan of the individual who has carried it the longest, or a similar piece of information.",
-            "Water &#xe90d: You may target a character instead of an object. If you succeed, you identify one invocation, kihō, mahō, or supernatural ability or item possessed by that person, along with its name and general qualities."
+            "Water |opportunityIcon|: Gain knowledge of the item’s origin in broad strokes, such as where it was forged, the clan of the individual who has carried it the longest, or a similar piece of information.",
+            "Water |opportunityIcon|: You may target a character instead of an object. If you succeed, you identify one invocation, kihō, mahō, or supernatural ability or item possessed by that person, along with its name and general qualities."
         ]
     },
     "Rise, Water":{
@@ -1893,9 +1893,9 @@
             "Effects: If you succeed, you summon a Manifest Water Kami to fight for you. It appears from the targeted body of water and obeys you for two rounds, plus additional rounds equal to your bonus successes, taking its turn immediately after yours each round. When this effect ends, the manifest water kami departs or, if stirred to particular ire, begins to follow its own directives. If it begins to act independently, it does not attack the shugenja who summoned it unless provoked."
         ],
         "newOpportunities":[
-            "Water &#xe90d: The manifest water kami attempts to swallow up anyone inside it; each such character must resist with a TN 4 Fitness check (Earth 2, Fire 5) or be pulled into the water kami and begin suffocating. As an action, a character who failed to resist may make a TN 3 Fitness check (Earth 1, Fire 4) to escape this watery prison.",
-            "Water &#xe90d: Upon arrival, the water kami may move a number of range bands up to your Water Ring.",
-            "Water &#xe90d+: You split the manifest water kami into a number of smaller manifest water kami equal to &#xe90d spent this way. Each one has an endurance equal to 12 divided by the number of &#xe90d spent this way (rounded up)."
+            "Water |opportunityIcon|: The manifest water kami attempts to swallow up anyone inside it; each such character must resist with a TN 4 Fitness check (Earth 2, Fire 5) or be pulled into the water kami and begin suffocating. As an action, a character who failed to resist may make a TN 3 Fitness check (Earth 1, Fire 4) to escape this watery prison.",
+            "Water |opportunityIcon|: Upon arrival, the water kami may move a number of range bands up to your Water Ring.",
+            "Water |opportunityIcon|+: You split the manifest water kami into a number of smaller manifest water kami equal to |opportunityIcon| spent this way. Each one has an endurance equal to 12 divided by the number of |opportunityIcon| spent this way (rounded up)."
         ]
     },
     "Stride the Waves":{
@@ -1932,7 +1932,7 @@
             "Effects: If you succeed, you smite your targets with a spray of water. Each target suffers supernatural damage equal to your Water Ring plus your bonus successes. Each target must resist with a TN 3 Fitness check (Earth 1, Fire 4); you may move each target who fails a number of range bands up to their shortfall in any direction."
         ],
         "newOpportunities":[
-            "Water &#xe90d: Each target who fails the check to resist also suffers the Bleeding condition."
+            "Water |opportunityIcon|: Each target who fails the check to resist also suffers the Bleeding condition."
         ]
     },
     "Suijin’s Embrace":{
@@ -1969,7 +1969,7 @@
             "Effects: If you succeed, you augment the spiritual power of one persistent invocation effect that is already affecting one target. Each other target counts as being affected by it as well. This effect persists as long as the original effect persists on the original target."
         ],
         "newOpportunities":[
-            "Water &#xe90d&#xe90d: You may choose a condition that the target is suffering instead of a persistent invocation effect."
+            "Water |opportunityIcon|opportunityIcon|: You may choose a condition that the target is suffering instead of a persistent invocation effect."
         ]
     },
     "The Rushing Wave":{
@@ -2002,9 +2002,9 @@
             "Effects: If you succeed, remove the Afflicted condition from the target."
         ],
         "newOpportunities":[
-            "Void &#xe90d: If one or more targets is an Otherworldly being, you become aware of it after completing the ritual—but you do not know which target.",
-            "Void &#xe90d+: Choose one additional target per &#xe90d spent this way.",
-            "Void &#xe90d+: Instead of targeting characters, you may target an area that encompasses a number of range bands around you equal to &#xe90d spent this way. Remove the Defiled terrain quality from this area. If it is a deeply unhallowed place that has long been the domain of evil, the Defiled quality returns after one day, plus additional days equal to your bonus successes."
+            "Void |opportunityIcon|: If one or more targets is an Otherworldly being, you become aware of it after completing the ritual—but you do not know which target.",
+            "Void |opportunityIcon|+: Choose one additional target per |opportunityIcon| spent this way.",
+            "Void |opportunityIcon|+: Instead of targeting characters, you may target an area that encompasses a number of range bands around you equal to |opportunityIcon| spent this way. Remove the Defiled terrain quality from this area. If it is a deeply unhallowed place that has long been the domain of evil, the Defiled quality returns after one day, plus additional days equal to your bonus successes."
         ]
     },
     "Commune with the Spirits":{
@@ -2022,8 +2022,8 @@
         "elemental Gift: The kami deliver a small amount of the Element in question to you. For instance, a prayer to a water kami might cause it to begin raining lightly, for a short time, but it might also cause you to run across a stream, or even find groundwater. In contrast, a prayer to fire kami might bring forth a small shower of sparks, while a prayer to an air kami might elicit a gust of wind. Praying to an earth kami might cause you to stumble across a large stone, or find a small patch of arable ground amid a wasteland. Prayers to the ancestors may allow the petitioner to find something that belonged to an ancestor in a time of need."
         ],
         "newOpportunities":[
-            "&#xe90d: Reduce the TN of your next check to interact with or appeal to kami or supernatural presences of this Element by 1.",
-            "&#xe90d+: If you succeed, receive one additional boon per &#xe90d spent this way. Each boon can only be received one time per activation."
+            "|opportunityIcon|: Reduce the TN of your next check to interact with or appeal to kami or supernatural presences of this Element by 1.",
+            "|opportunityIcon|+: If you succeed, receive one additional boon per |opportunityIcon| spent this way. Each boon can only be received one time per activation."
         ]
     },
     "Divination":{
@@ -2036,15 +2036,15 @@
         ],
         "effects":[
             "Effects: If you succeed, choose one of the following omens that you see in the target’s near future:",
-            "Omen of the Azure Dragon: The next time the target performs a check using a skill from the Artisan skill group this game session, the target adds a kept &#x2b1b set to an &#xe90d&#xe917 result.",
-            "Omen of the Black Tortoise: The next time the target performs a check using a skill from the Scholar skill group this game session, the target adds a kept &#x2b1b set to an &#xe90d&#xe917 result.",
-            "Omen of the White Tiger: The next time the target performs a check using a skill from the Martial skill group this game session, the target adds a kept &#x2b1b set to an &#xe90d&#xe917 result.",
-            "Omen of the Vermilion Bird: The next time the target performs a check using a skill from the Social skill group this game session, the target adds a kept &#x2b1b set to an &#xe90d&#xe917 result.",
-            "Omen of the Weaver and the Cowherd: The next time the target performs a check using a skill from the Trade skill group this game session, the target adds a kept &#x2b1b set to an &#xe90d&#xe917 result.",
+            "Omen of the Azure Dragon: The next time the target performs a check using a skill from the Artisan skill group this game session, the target adds a kept |ringIcon| set to an |opportunityIcon|strifeIcon| result.",
+            "Omen of the Black Tortoise: The next time the target performs a check using a skill from the Scholar skill group this game session, the target adds a kept |ringIcon| set to an |opportunityIcon|strifeIcon| result.",
+            "Omen of the White Tiger: The next time the target performs a check using a skill from the Martial skill group this game session, the target adds a kept |ringIcon| set to an |opportunityIcon|strifeIcon| result.",
+            "Omen of the Vermilion Bird: The next time the target performs a check using a skill from the Social skill group this game session, the target adds a kept |ringIcon| set to an |opportunityIcon|strifeIcon| result.",
+            "Omen of the Weaver and the Cowherd: The next time the target performs a check using a skill from the Trade skill group this game session, the target adds a kept |ringIcon| set to an |opportunityIcon|strifeIcon| result.",
             "If you fail, the GM chooses one of the above omens instead. The target cannot receive another divination until the next game session."
         ],
         "newOpportunities":[
-            "&#xe90d: If you fail, an additional omen appears to you after the first. Choose one of the above omens in addition to the one the GM chose."
+            "|opportunityIcon|: If you fail, an additional omen appears to you after the first. Choose one of the above omens in addition to the one the GM chose."
         ]
     },
     "Tea Ceremony":{
@@ -2059,9 +2059,9 @@
             "Effects: Each target removes 3 strife, plus additional strife equal to your bonus successes."
         ],
         "newOpportunities":[
-            "&#xe90d: Reduce the TN of each target’s next check by 1.",
-            "&#xe90d+: Each target removes 1 fatigue, plus 1 fatigue per &#xe90d&#xe90d spent this way.",
-            "&#xe90d&#xe90d: If you succeed, each target gains 1 Void point."
+            "|opportunityIcon|: Reduce the TN of each target’s next check by 1.",
+            "|opportunityIcon|+: Each target removes 1 fatigue, plus 1 fatigue per |opportunityIcon|opportunityIcon| spent this way.",
+            "|opportunityIcon|opportunityIcon|: If you succeed, each target gains 1 Void point."
         ]
     },
     "Threshold Barrier":{
@@ -2081,8 +2081,8 @@
             "Void: Humans."
         ],
         "newOpportunities":[
-            "&#xe90d: Instead of protecting a threshold, you may protect the entirety of a sealed area that extends a number of range bands around you no greater than your bonus successes.",
-            "&#xe90d: If any beings of the type you are attempting to seal the threshold against have passed through the threshold within the last twenty-four hours, you become aware of their passage."
+            "|opportunityIcon|: Instead of protecting a threshold, you may protect the entirety of a sealed area that extends a number of range bands around you no greater than your bonus successes.",
+            "|opportunityIcon|: If any beings of the type you are attempting to seal the threshold against have passed through the threshold within the last twenty-four hours, you become aware of their passage."
         ]
     },
     "Artisan’s Appraisal":{
@@ -2091,9 +2091,9 @@
             "The courtier looks at an object but sees its maker. Each thumbprint tells a story about the hand that crafted the piece; every subtle choice reveals something about the desires that linger in the artist’s mind."
         ],
         "activation":[
-            "Activation: When assessing an object or performance with an Artisan skill (Air), Performance (Air), or Games (Air) check, you may spend &#xe90d in the following ways:",
-            "Air &#xe90d: Choose a ring; learn the value of that ring for the creator or performer and all advantages and disadvantages attached to that ring that are not of the curse type.",
-            "Air &#xe90d: If the creator or performer is an NPC, learn their demeanor."
+            "Activation: When assessing an object or performance with an Artisan skill (Air), Performance (Air), or Games (Air) check, you may spend |opportunityIcon| in the following ways:",
+            "Air |opportunityIcon|: Choose a ring; learn the value of that ring for the creator or performer and all advantages and disadvantages attached to that ring that are not of the curse type.",
+            "Air |opportunityIcon|: If the creator or performer is an NPC, learn their demeanor."
         ]
     },
     "Bend with the Storm":{
@@ -2102,8 +2102,8 @@
             "When faced with a much more powerful foe, a cunning courtier often feigns a position of weakness. In this way, they can lead the opponent where they desire by offering chances the foe cannot pass up."
         ],
         "activation":[
-            "Activation: When you make a Social skill (Air) check targeting another character, you may spend &#xe90d in the following way:",
-            "Air &#xe90d: Choose an advantage or disadvantage. The target comes to believe that you possess that advantage or disadvantage without your having to expend noticeable effort or state it directly. Further, the target believes that you do not know you have given this advantage or disadvantage away. If you do anything that could call this misconception into question, any character may resist with a TN 5 Sentiment check (Earth 6, Fire 3) to discern that the advantage or disadvantage is not real. This effect persists until the target is faced with incontrovertible evidence or succeeds on the check to resist in the face of cracks in your façade."
+            "Activation: When you make a Social skill (Air) check targeting another character, you may spend |opportunityIcon| in the following way:",
+            "Air |opportunityIcon|: Choose an advantage or disadvantage. The target comes to believe that you possess that advantage or disadvantage without your having to expend noticeable effort or state it directly. Further, the target believes that you do not know you have given this advantage or disadvantage away. If you do anything that could call this misconception into question, any character may resist with a TN 5 Sentiment check (Earth 6, Fire 3) to discern that the advantage or disadvantage is not real. This effect persists until the target is faced with incontrovertible evidence or succeeds on the check to resist in the face of cracks in your façade."
         ]
     },
     "Cadence":{
@@ -2112,9 +2112,9 @@
             "In courtly situations, it can be advantageous for courtiers of the same clan to be able to communicate wordlessly."
         ],
         "activation":[
-            "Activation: When you make a Social skill (Air) check, you may spend &#xe90d in the following ways:",
-            "Air &#xe90d: Convey a secret message that alters the meaning of what you are saying outwardly (or has nothing to do with it at all) to one character observing you who possesses this technique.",
-            "Air &#xe90d&#xe90d: Convey a secret message that alters the meaning of what you are saying outwardly (or has nothing to do with it at all) to one character observing you who does not possess this technique."
+            "Activation: When you make a Social skill (Air) check, you may spend |opportunityIcon| in the following ways:",
+            "Air |opportunityIcon|: Convey a secret message that alters the meaning of what you are saying outwardly (or has nothing to do with it at all) to one character observing you who possesses this technique.",
+            "Air |opportunityIcon|opportunityIcon|: Convey a secret message that alters the meaning of what you are saying outwardly (or has nothing to do with it at all) to one character observing you who does not possess this technique."
         ]
     },
     "Feigned Opening":{
@@ -2129,8 +2129,8 @@
             "Effects: If you succeed, reduce the TN of the next Attack checks against each target (or their cohort, in a mass battle) by 1 plus your bonus successes. This effect persists until the end of your next turn."
         ],
         "newOpportunities":[
-            "Air &#xe90d+: Choose one additional target with vigilance lower than or equal to the original target’s per &#xe90d spent this way.",
-            "Air &#xe90d+: In a mass battle, increase the TN of Attack checks targeting your cohort by 1, plus 1 per additional &#xe90d&#xe90d spent this way."
+            "Air |opportunityIcon|+: Choose one additional target with vigilance lower than or equal to the original target’s per |opportunityIcon| spent this way.",
+            "Air |opportunityIcon|+: In a mass battle, increase the TN of Attack checks targeting your cohort by 1, plus 1 per additional |opportunityIcon|opportunityIcon| spent this way."
         ]
     },
     "Prey on the Weak":{
@@ -2147,8 +2147,8 @@
             "Forfeit glory equal to your Air Ring plus your bonus successes to leave the scene."
         ],
         "newOpportunities":[
-            "Air &#xe90d+: If the target chooses to unmask, you learn one of their disadvantages of their choice per &#xe90d spent this way.",
-            "Air &#xe90d&#xe90d: If the target chooses to leave the scene, you notice their destination from the direction of their departure or overhear from the crowd where they will retreat."
+            "Air |opportunityIcon|+: If the target chooses to unmask, you learn one of their disadvantages of their choice per |opportunityIcon| spent this way.",
+            "Air |opportunityIcon|opportunityIcon|: If the target chooses to leave the scene, you notice their destination from the direction of their departure or overhear from the crowd where they will retreat."
         ]
     },
     "Rustling of Leaves":{
@@ -2157,8 +2157,8 @@
             "If everyone has heard a scandalous story, but it has no clear source, what can it be but true? The courtier cleverly spreads stories so none see them as the source."
         ],
         "activation":[
-            "Activation: When you make a Social skill (Air) check to spread a rumor, you may spend &#xe90d in the following way:",
-            "Air &#xe90d+: Increase the TN of any check to trace the rumor back to you by 2 per &#xe90d spent this way."
+            "Activation: When you make a Social skill (Air) check to spread a rumor, you may spend |opportunityIcon| in the following way:",
+            "Air |opportunityIcon|+: Increase the TN of any check to trace the rumor back to you by 2 per |opportunityIcon| spent this way."
         ]
     },
     "The Wind Blows Both Ways":{
@@ -2167,9 +2167,9 @@
             "A word in the right ear at the right time can enhance the accomplishment of another, or a cutting slight can diminish their success in the eyes of those who matter."
         ],
         "activation":[
-            "Activation: When you make a Courtesy or Performance (Air) check targeting another character, you may spend &#xe90d in the following ways:",
-            "Air &#xe90d+: The next time the target receives a glory award, increase the glory they gain by 1 per &#xe90d spent this way. This effect persists until the end of the scene.",
-            "Air &#xe90d+: The next time the target forfeits or stakes glory, increase the glory they must forfeit or stake by 1 per &#xe90d spent this way. This effect persists until the end of the scene."
+            "Activation: When you make a Courtesy or Performance (Air) check targeting another character, you may spend |opportunityIcon| in the following ways:",
+            "Air |opportunityIcon|+: The next time the target receives a glory award, increase the glory they gain by 1 per |opportunityIcon| spent this way. This effect persists until the end of the scene.",
+            "Air |opportunityIcon|+: The next time the target forfeits or stakes glory, increase the glory they must forfeit or stake by 1 per |opportunityIcon| spent this way. This effect persists until the end of the scene."
         ]
     },
     "Whispers of Court":{
@@ -2184,7 +2184,7 @@
             "Effects: If you succeed, you create a rumor that sweeps across the room like a storm. Everyone in the scene hears it, and characters with vigilance lower than your bonus successes even come to give it some credence. If spreading a rumor is your social objective in an intrigue, you score rhetorical points equal to your Air Ring plus your bonus successes."
         ],
         "newOpportunities":[
-            "Air &#xe90d: Learn one other rumor that is spreading in the current scene."
+            "Air |opportunityIcon|: Learn one other rumor that is spreading in the current scene."
         ]
     },
     "Wolf’s Proposal":{
@@ -2199,7 +2199,7 @@
             "Effects: If you succeed, each target behaves as though your honor is 10 higher or lower than its actual value, plus or minus an additional 10 for each bonus success (to a maximum honor value of 100 or a minimum honor value of 0). If you do anything that could call your perceived honor into question, any target may resist with a TN 4 Sentiment check (Earth 5, Fire 2) to determine your actual honor attribute. This effect persists until the end of the scene."
         ],
         "newOpportunities":[
-            "Air &#xe90d: Choose a character in the scene. Learn if their honor is higher or lower than yours (the actual value)."
+            "Air |opportunityIcon|: Choose a character in the scene. Learn if their honor is higher or lower than yours (the actual value)."
         ]
     },
     "Ancestry Unearthed":{
@@ -2208,10 +2208,10 @@
             "A samurai’s ancestry often reveals a great deal about their political opportunities, assets, and probable allies in the Emerald Empire, for the rigid social strata allow little divergence. Any courtier can likely dredge up another samurai’s lineage from the dark corners of their mind, but some can recall it in an instant."
         ],
         "activation":[
-            "Activation: When you make a Scholar skill (Earth) or Social skill (Earth) check targeting a character, you may spend &#xe90d as follows:",
-            "Earth &#xe90d: You know one sworn oath the character’s family took in the past, and whether or not they have broken or bent it.",
-            "Earth &#xe90d&#xe90d: You know one secret of the character’s family that they would prefer be forgotten, and have perhaps even worked to bury.",
-            "Earth &#xe90d&#xe90d &#xe90d: You know something the character does not even known about their own ancestry."
+            "Activation: When you make a Scholar skill (Earth) or Social skill (Earth) check targeting a character, you may spend |opportunityIcon| as follows:",
+            "Earth |opportunityIcon|: You know one sworn oath the character’s family took in the past, and whether or not they have broken or bent it.",
+            "Earth |opportunityIcon|opportunityIcon|: You know one secret of the character’s family that they would prefer be forgotten, and have perhaps even worked to bury.",
+            "Earth |opportunityIcon|opportunityIcon|opportunityIcon|: You know something the character does not even known about their own ancestry."
         ]
     },
     "Civility Foremost":{
@@ -2226,7 +2226,7 @@
             "Effects: If you succeed, the target must forfeit honor equal to your Earth Ring plus your bonus successes and suffer that much strife to perform an Attack or Scheme action targeting the chosen individual. This effect persists until the end of the scene, or until the target performs an Attack or Scheme action."
         ],
         "newOpportunities":[
-            "Earth &#xe90d+: Choose one additional target with vigilance lower than or equal to your first target’s vigilance per &#xe90d spent this way."
+            "Earth |opportunityIcon|+: Choose one additional target with vigilance lower than or equal to your first target’s vigilance per |opportunityIcon| spent this way."
         ]
     },
     "Honest Assessment":{
@@ -2241,8 +2241,8 @@
             "Effects: If you succeed, choose one of the target’s known disadvantages. The target does not apply that disadvantage to their checks until the end of the scene."
         ],
         "newOpportunities":[
-            "Earth &#xe90d+: Choose one additional disadvantage per &#xe90d spent this way.",
-            "Earth &#xe90d&#xe90d: Reduce the TN of the target’s next skill check using the ring the disadvantage is attached to by 2."
+            "Earth |opportunityIcon|+: Choose one additional disadvantage per |opportunityIcon| spent this way.",
+            "Earth |opportunityIcon|opportunityIcon|: Reduce the TN of the target’s next skill check using the ring the disadvantage is attached to by 2."
         ]
     },
     "Pillar of Calm":{
@@ -2257,7 +2257,7 @@
             "Effects: If you succeed while targeting all of the leaders involved in a conflict, you may de-escalate the conflict one level (from a mass battle to a skirmish, a skirmish to a duel, or a duel to an intrigue)."
         ],
         "newOpportunities":[
-            "Earth &#xe90d&#xe90d+: You may de-escalate the conflict by one additional level per &#xe90d&#xe90d spent this way."
+            "Earth |opportunityIcon|opportunityIcon|+: You may de-escalate the conflict by one additional level per |opportunityIcon|opportunityIcon| spent this way."
         ]
     },
     "Stonewall Tactics":{
@@ -2266,8 +2266,8 @@
             "The courtier makes themself impossible for the target to ignore, raising a pressing concern that must be addressed first or even physically planting themself between a rival and their allies."
         ],
         "activation":[
-            "Activation: When making a Social skill (Earth) or Martial skill (Earth) check targeting a character, you may spend &#xe90d in the following way:",
-            "Earth &#xe90d+: Increase the TN of any check the target makes that does not target you by 1 per &#xe90d spent this way. This effect persists until the beginning of your next turn."
+            "Activation: When making a Social skill (Earth) or Martial skill (Earth) check targeting a character, you may spend |opportunityIcon| in the following way:",
+            "Earth |opportunityIcon|+: Increase the TN of any check the target makes that does not target you by 1 per |opportunityIcon| spent this way. This effect persists until the beginning of your next turn."
         ]
     },
     "Touchstone of Courage":{
@@ -2283,8 +2283,8 @@
             "If you succeed during a mass battle, increase your army’s discipline by your Earth Ring plus your bonus successes. This effect persists until the end of the scene."
         ],
         "newOpportunities":[
-            "Earth &#xe90d&#xe90d: During an intrigue, duel, or skirmish, each target removes strife equal to your Earth Ring.",
-            "Earth &#xe90d&#xe90d: During a mass battle, your army removes panic equal to your Earth Ring."
+            "Earth |opportunityIcon|opportunityIcon|: During an intrigue, duel, or skirmish, each target removes strife equal to your Earth Ring.",
+            "Earth |opportunityIcon|opportunityIcon|: During a mass battle, your army removes panic equal to your Earth Ring."
         ]
     },
     "The Immovable Hand of Peace":{
@@ -2299,7 +2299,7 @@
             "Effects: If you succeed, the scene becomes an intrigue between you and the other principal characters. This effect persists for one round, plus additional rounds equal to your bonus successes. If you have not achieved a peaceful resolution by the time this effect ends, the scene returns to its previous state."
         ],
         "newOpportunities":[
-            "Earth &#xe90d: You may also perform this action during a mass battle or other form of conflict (other than an intrigue)."
+            "Earth |opportunityIcon|: You may also perform this action during a mass battle or other form of conflict (other than an intrigue)."
         ]
     },
     "Weight of Duty":{
@@ -2308,9 +2308,9 @@
             "All samurai know the pressure of expectation in countless forms. An observant courtier can read this when engaging with another character, learning their beliefs and in what ways they fear they might not live up to their own expectations."
         ],
         "activation":[
-            "Activation: When you make a Social skill (Earth) check targeting a character, you may spend &#xe90d as follows:",
-            "Earth &#xe90d: Learn one way the target fears failing as a samurai.",
-            "Earth &#xe90d&#xe90d: Learn the target’s giri."
+            "Activation: When you make a Social skill (Earth) check targeting a character, you may spend |opportunityIcon| as follows:",
+            "Earth |opportunityIcon|: Learn one way the target fears failing as a samurai.",
+            "Earth |opportunityIcon|opportunityIcon|: Learn the target’s giri."
         ]
     },
     "Bravado":{
@@ -2325,7 +2325,7 @@
             "Effects: If you succeed, each target behaves as though your glory is 10 higher or lower than its actual value, plus or minus an additional 10 for each bonus success (to a maximum glory value of 100 or a minimum glory value of 0). If you do anything that could call your glory into question, any character may resist with a TN 4 Sentiment check (Air 5, Water 2) to determine your actual glory attribute. This effect persists until the end of the scene."
         ],
         "newOpportunities":[
-            "Fire &#xe90d: Choose a character in the scene. Learn if their glory is higher or lower than yours (the actual value)."
+            "Fire |opportunityIcon|: Choose a character in the scene. Learn if their glory is higher or lower than yours (the actual value)."
         ]
     },
     "Dazzling Performance":{
@@ -2334,8 +2334,8 @@
             "Performing a great feat can win a character renown, but performing a great feat and then telling the story of it draws far greater accolades. A courtier building a reputation in the competitive courts of Rokugan must master not just excellence, but also capture the imagination."
         ],
         "activation":[
-            "Activation: When making an Artisan skill (Fire), Games (Fire), or Performance (Fire) check, you may spend &#xe90d in the following way:",
-            "Fire &#xe90d+: The next time you receive a glory award this scene, increase the amount you receive by 1. If there is a character of higher status in the scene, increase it by 1 per &#xe90d spent this way instead."
+            "Activation: When making an Artisan skill (Fire), Games (Fire), or Performance (Fire) check, you may spend |opportunityIcon| in the following way:",
+            "Fire |opportunityIcon|+: The next time you receive a glory award this scene, increase the amount you receive by 1. If there is a character of higher status in the scene, increase it by 1 per |opportunityIcon| spent this way instead."
         ]
     },
     "Fanning the Flames":{
@@ -2344,9 +2344,9 @@
             "Inciting people to act foolishly or to flinch at the crucial moment is a key skill of a courtier, for words are their weapons. Inducing unchecked emotion is another tool in the courtier’s arsenal, and most become quite adept in the art of manipulating people into feeling certain things that are advantageous for the courtier. The courtier stings their target’s pride with needling comments or makes a flirtatious remark to draw their attention, pulling the target’s emotions to the surface and making them easier to predict."
         ],
         "activation":[
-            "Activation: When making a Social skill (Fire) check targeting one or more characters, you may spend &#xe90d in the following way:",
-            "Fire &#xe90d+: One target gains the Dazed condition per &#xe90d spent this way.",
-            "Fire &#xe90d&#xe90d+: One target gains the Enraged condition per &#xe90d&#xe90d spent this way."
+            "Activation: When making a Social skill (Fire) check targeting one or more characters, you may spend |opportunityIcon| in the following way:",
+            "Fire |opportunityIcon|+: One target gains the Dazed condition per |opportunityIcon| spent this way.",
+            "Fire |opportunityIcon|opportunityIcon|+: One target gains the Enraged condition per |opportunityIcon|opportunityIcon| spent this way."
         ]
     },
     "Lightning Raid":{
@@ -2362,8 +2362,8 @@
             "If you succeed during a mass battle, one enemy leader’s cohort suffers panic equal to your Fire Ring plus your bonus successes."
         ],
         "newOpportunities":[
-            "Fire &#xe90d: During a skirmish, immediately perform a Strike action.",
-            "Fire &#xe90d: During a mass battle, immediately perform an Assault action against the chosen enemy cohort’s leader."
+            "Fire |opportunityIcon|: During a skirmish, immediately perform a Strike action.",
+            "Fire |opportunityIcon|: During a mass battle, immediately perform an Assault action against the chosen enemy cohort’s leader."
         ]
     },
     "Rallying Cry":{
@@ -2375,11 +2375,11 @@
             "Activation: As a Support action, you may make a TN 2 Command (Fire) or Performance (Fire) check targeting any number of characters in the scene (or one cohort in a mass battle)."
         ],
         "effects":[
-            "Effects: If you succeed, the targets are energized and excited by your rhetoric. After Step 5: Choose Kept Dice, each target adds a kept &#x2b1b set to an &#xe90d&#xe917 result. This effect persists until the end of your next turn."
+            "Effects: If you succeed, the targets are energized and excited by your rhetoric. After Step 5: Choose Kept Dice, each target adds a kept |ringIcon| set to an |opportunityIcon|strifeIcon| result. This effect persists until the end of your next turn."
         ],
         "newOpportunities":[
-            "Fire &#xe90d+: In a skirmish, each enemy in the scene suffers 1 strife per &#xe90d spent this way.",
-            "Fire &#xe90d+: In a mass battle, the enemy army suffers 1 panic per &#xe90d spent this way."
+            "Fire |opportunityIcon|+: In a skirmish, each enemy in the scene suffers 1 strife per |opportunityIcon| spent this way.",
+            "Fire |opportunityIcon|+: In a mass battle, the enemy army suffers 1 panic per |opportunityIcon| spent this way."
         ]
     },
     "Sear the Wound":{
@@ -2388,8 +2388,8 @@
             "Many courtiers cannot resist the opportunity to twist the knife after delivering a stabbing remark, but the wise use this power judiciously. Though somewhat cruel, the technique of bringing a rival’s weakness to the forefront of their mind to burn away at their resolve is often effective."
         ],
         "activation":[
-            "Activation: When making a Social skill (Fire) check targeting one or more characters, you may spend &#xe90d in the following way:",
-            "Fire &#xe90d+: Choose a known disadvantage of one of your targets per &#xe90d spent this way. That disadvantage applies to all of the target’s checks until the end of the scene."
+            "Activation: When making a Social skill (Fire) check targeting one or more characters, you may spend |opportunityIcon| in the following way:",
+            "Fire |opportunityIcon|+: Choose a known disadvantage of one of your targets per |opportunityIcon| spent this way. That disadvantage applies to all of the target’s checks until the end of the scene."
         ]
     },
     "Sensational Distraction":{
@@ -2398,8 +2398,8 @@
             "Standing out in court requires a great deal of both cunning and flair, and standing out on purpose can be even harder. Courtiers train for much of their lives to learn to control the perceptions of others at court. The best courtiers know when to draw attention to themselves with a display of rhetorical prowess or another social feat and when to avoid attention. Drawing attention to oneself can give collaborators the chance to work unnoticed as well, and thus it is an extremely valuable tool in the courtier’s arsenal."
         ],
         "activation":[
-            "Activation: When making a Social skill (Fire) check targeting one or more characters, you may spend &#xe90d in the following way:",
-            "Fire &#xe90d+: When interacting with other characters, the target treats their vigilance as 1 lower per &#xe90d spent this way; when interacting with you, the target treats their vigilance as 1 higher per &#xe90d spent this way. This effect persists until the end of the scene."
+            "Activation: When making a Social skill (Fire) check targeting one or more characters, you may spend |opportunityIcon| in the following way:",
+            "Fire |opportunityIcon|+: When interacting with other characters, the target treats their vigilance as 1 lower per |opportunityIcon| spent this way; when interacting with you, the target treats their vigilance as 1 higher per |opportunityIcon| spent this way. This effect persists until the end of the scene."
         ]
     },
     "Stirring the Embers":{
@@ -2408,8 +2408,8 @@
             "A good leader does not just compensate for the weaknesses of comrades, but also fosters their innate strengths. The courtier reminds an ally of one of their finer qualities, sparking their pride to get them to fight more fiercely or speak with greater conviction."
         ],
         "activation":[
-            "Activation: When making a Social skill (Fire) check targeting one or more characters, you may spend &#xe90d in the following way:",
-            "Fire &#xe90d+: Choose a target and one of their known distinctions per &#xe90d spent this way. Until the end of the scene, when that advantage applies to a check, the target may reroll up to three dice (instead of two)."
+            "Activation: When making a Social skill (Fire) check targeting one or more characters, you may spend |opportunityIcon| in the following way:",
+            "Fire |opportunityIcon|+: Choose a target and one of their known distinctions per |opportunityIcon| spent this way. Until the end of the scene, when that advantage applies to a check, the target may reroll up to three dice (instead of two)."
         ]
     },
     "Truth Burns through Lies":{
@@ -2418,8 +2418,8 @@
             "The courtier rapidly extrapolates, imagining the ramifications of a story and conjecturing what might have gone unsaid. If a loose thread exists in the account, they can find it, and that first thread can become the unraveling of the most cunning duplicity."
         ],
         "activation":[
-            "Activation: When making a Scholar skill (Fire) check to assess a character’s story, you may spend &#xe90d in the following way:",
-            "Fire &#xe90d: If there is a single statement upon which the character’s story hinges, you determine what it is and what you would need to do to verify or disprove it."
+            "Activation: When making a Scholar skill (Fire) check to assess a character’s story, you may spend |opportunityIcon| in the following way:",
+            "Fire |opportunityIcon|: If there is a single statement upon which the character’s story hinges, you determine what it is and what you would need to do to verify or disprove it."
         ]
     },
     "All in Jest":{
@@ -2428,8 +2428,8 @@
             "Veteran courtiers sometimes play off missteps as jokes. This underhanded but effective tactic puts the other person in a difficult position: press the issue and seem stubborn, or let it slide and give the courtier a pass."
         ],
         "activation":[
-            "Activation: When you make a Commerce (Water), Courtesy (Water), or Performance (Water) check, you may spend &#xe90d in the following way:",
-            "Water &#xe90d+: If you forfeited honor as part of the check in order to say something rude or appeal to your target’s base desires (greed, lust, laziness, etc.), regain 1 honor per &#xe90d spent this way."
+            "Activation: When you make a Commerce (Water), Courtesy (Water), or Performance (Water) check, you may spend |opportunityIcon| in the following way:",
+            "Water |opportunityIcon|+: If you forfeited honor as part of the check in order to say something rude or appeal to your target’s base desires (greed, lust, laziness, etc.), regain 1 honor per |opportunityIcon| spent this way."
         ]
     },
     "Buoyant Arrival":{
@@ -2457,8 +2457,8 @@
             "If you succeed (and chose Support action), choose one of the target’s disadvantages you know; whenever it applies, invert it. This effect persists until the end of the scene."
         ],
         "newOpportunities":[
-            "Water &#xe90d: Choose one additional advantage or disadvantage and apply the effect to it.",
-            "Water &#xe90d&#xe90d+: Choose one additional target with vigilance lower than or equal to your first target’s vigilance per &#xe90d&#xe90d spent this way."
+            "Water |opportunityIcon|: Choose one additional advantage or disadvantage and apply the effect to it.",
+            "Water |opportunityIcon|opportunityIcon|+: Choose one additional target with vigilance lower than or equal to your first target’s vigilance per |opportunityIcon|opportunityIcon| spent this way."
         ]
     },
     "Regal Bearing":{
@@ -2473,7 +2473,7 @@
             "Effects: If you succeed, each target treats your status as being 10 higher or lower (to a maximum status of 100 or a minimum status of 0), plus or minus an additional 10 per bonus success. If you do anything that could call your status into question, any character may resist with a TN 4 Sentiment check (Earth 2, Fire 5) to determine your actual status attribute. This effect persists until the end of the scene."
         ],
         "newOpportunities":[
-            "Water &#xe90d: Choose a character in the scene. Learn if their status is higher or lower than yours (the actual value)."
+            "Water |opportunityIcon|: Choose a character in the scene. Learn if their status is higher or lower than yours (the actual value)."
         ]
     },
     "Shallow Waters":{
@@ -2482,9 +2482,9 @@
             "A good courtier learns how to read the desires of those around them from the subtle cues of their responses in conversation, as well as how to probe for details without revealing their intentions."
         ],
         "activation":[
-            "Activation: When you make a Social skill (Water) check targeting a character, you may spend &#xe90d as follows:",
-            "Water &#xe90d: Learn of one material item or worldly experience the target desires.",
-            "Water &#xe90d&#xe90d: Learn the target’s ninjō."
+            "Activation: When you make a Social skill (Water) check targeting a character, you may spend |opportunityIcon| as follows:",
+            "Water |opportunityIcon|: Learn of one material item or worldly experience the target desires.",
+            "Water |opportunityIcon|opportunityIcon|: Learn the target’s ninjō."
         ]
     },
     "Slippery Maneuvers":{
@@ -2500,7 +2500,7 @@
             "If you succeed during a mass battle, choose a piece of terrain you can see. You and your cohort may immediately move to occupy it if it is unoccupied. Attack action checks targeting you and your cohort while you are inside the terrain treat the terrain as having the Obscuring terrain quality. This effect persists until the end of the scene."
         ],
         "newOpportunities":[
-            "Water &#xe90d: Each target is able to leverage Obscuring terrain to better effect; Attack action checks targeting them have their TN increased by 2 instead of 1. This effect persists until the end of the scene."
+            "Water |opportunityIcon|: Each target is able to leverage Obscuring terrain to better effect; Attack action checks targeting them have their TN increased by 2 instead of 1. This effect persists until the end of the scene."
         ]
     },
     "Tributaries of Trade":{
@@ -2515,7 +2515,7 @@
             "Effects: If you succeed, you produce an item with a rarity less than or equal to 1 plus your bonus successes. You must still pay the price of the item."
         ],
         "newOpportunities":[
-            "Water &#xe90d+: Reduce the price you must pay for the item by one-quarter per &#xe90d spent this way (to a minimum of one-quarter of the original price)."
+            "Water |opportunityIcon|+: Reduce the price you must pay for the item by one-quarter per |opportunityIcon| spent this way (to a minimum of one-quarter of the original price)."
         ]
     },
     "Well of Desire":{
@@ -2524,8 +2524,8 @@
             "Bribery is considered to be corruption in Rokugan, yet gift exchanges and gift giving is a time-honored tradition. The shrewdest courtiers can engineer scenarios in which their targets cannot refuse their gifts without tarnishing their reputations. Thus, the recipient of such a poisoned gift might find it preferable to owe the courtier a favor than to be shamed in public."
         ],
         "activation":[
-            "Activation: When you make a Courtesy (Water) check to present a gift to a target, you may spend &#xe90d as follows:",
-            "Water &#xe90d: To refuse your gift, your target must forfeit glory equal to your Water Ring. Additionally, if the gift is something that the target desires, the target also must suffer strife equal to its rarity to refuse it. If your target accepts the gift, reduce the TN of your next Social skill check targeting them by the rarity of the item (to a minimum of 1)."
+            "Activation: When you make a Courtesy (Water) check to present a gift to a target, you may spend |opportunityIcon| as follows:",
+            "Water |opportunityIcon|: To refuse your gift, your target must forfeit glory equal to your Water Ring. Additionally, if the gift is something that the target desires, the target also must suffer strife equal to its rarity to refuse it. If your target accepts the gift, reduce the TN of your next Social skill check targeting them by the rarity of the item (to a minimum of 1)."
         ]
     },
     "All Arts Are One":{
@@ -2540,7 +2540,7 @@
             "Effects: If you succeed, you immediately intuit how to wield a new weapon, play a new game, use a new instrument, or perform a new song, dance, or other task. You do not apply any TN increase that might be associated with dealing with something new to you."
         ],
         "newOpportunities":[
-            "Void &#xe90d: Choose a ring. Reduce the TN of your next check using that ring for the chosen skill by 1. This effect persists until the end of your next turn (or until the end of the scene during a narrative scene)."
+            "Void |opportunityIcon|: Choose a ring. Reduce the TN of your next check using that ring for the chosen skill by 1. This effect persists until the end of your next turn (or until the end of the scene during a narrative scene)."
         ]
     },
     "A Samurai’s Fate":{
@@ -2580,8 +2580,8 @@
             "Effects: If you succeed, your targets cannot perform Attack actions targeting you. This effect persists for one round, plus additional rounds equal to your bonus successes, or until you perform an Attack action."
         ],
         "newOpportunities":[
-            "Void &#xe90d+: Choose one additional target with status lower than your first target per &#xe90d spent this way.",
-            "Void &#xe90d&#xe90d: Your targets also cannot perform Scheme actions targeting you."
+            "Void |opportunityIcon|+: Choose one additional target with status lower than your first target per |opportunityIcon| spent this way.",
+            "Void |opportunityIcon|opportunityIcon|: Your targets also cannot perform Scheme actions targeting you."
         ]
     },
     "Lady Shinjo’s Speed":{
@@ -2596,7 +2596,7 @@
             "Effects: If you succeed, you reach the destination in half the time it would normally require. If you so desire, one character may ride along with you."
         ],
         "newOpportunities":[
-            "Void &#xe90d: You may lead a number of willing characters with mounts of their own up to your school rank."
+            "Void |opportunityIcon|: You may lead a number of willing characters with mounts of their own up to your school rank."
         ]
     },
     "Lord Akodo’s Roar":{
@@ -2611,7 +2611,7 @@
             "Effects: If you succeed, each target suffers the Dazed condition."
         ],
         "newOpportunities":[
-            "Void &#xe90d&#xe90d+: After you perform this action, one other friendly character per &#xe90d&#xe90d spent this way at range 0–3 may immediately perform a Strike action targeting a Dazed character."
+            "Void |opportunityIcon|opportunityIcon|+: After you perform this action, one other friendly character per |opportunityIcon|opportunityIcon| spent this way at range 0–3 may immediately perform a Strike action targeting a Dazed character."
         ]
     },
     "Lord Bayushi’s Whispers":{
@@ -2626,7 +2626,7 @@
             "Effects: If you succeed, you reveal one informant who can give you information about a topic of your choice. If the informant’s profile is required, use an appropriate NPC of the GM’s choice (see Chapter 8: Non-Player Characters)."
         ],
         "newOpportunities":[
-            "Void &#xe90d: If you succeed, choose one skill. The informant has a number of ranks in that skill equal to your school rank and can perform checks with that skill to assist you until the end of the scene."
+            "Void |opportunityIcon|: If you succeed, choose one skill. The informant has a number of ranks in that skill equal to your school rank and can perform checks with that skill to assist you until the end of the scene."
         ]
     },
     "Lord Togashi’s Insight":{
@@ -2641,7 +2641,7 @@
             "Effects: If you succeed, you receive a brief vision or hear the voice of Togashi providing a hint regarding one way you might proceed (which the GM should furnish). This hint should not be the full answer, but it should help you move forward toward a solution or at least formulate a plan of action."
         ],
         "newOpportunities":[
-            "Void &#xe90d: Reduce the TN of your first check to overcome the problem you are facing by your school rank (to a minimum of 1)."
+            "Void |opportunityIcon|: Reduce the TN of your first check to overcome the problem you are facing by your school rank (to a minimum of 1)."
         ]
     },
     "Rouse the Soul":{
@@ -2650,8 +2650,8 @@
             "Many things can cloud the soul, but words can awaken it. The courtier speaks honestly and without pretension, calling upon their allies to overcome earthly circumstances and reach a mutual goal."
         ],
         "activation":[
-            "Activation: When making a Social skill (Void) or Theology (Void) check targeting one or more characters, you may spend &#xe90d in the following way:",
-            "Void &#xe90d+: Remove one of the following conditions from one target per &#xe90d spent this way: Afflicted, Enraged, Exhausted, Intoxicated, or Unconscious."
+            "Activation: When making a Social skill (Void) or Theology (Void) check targeting one or more characters, you may spend |opportunityIcon| in the following way:",
+            "Void |opportunityIcon|+: Remove one of the following conditions from one target per |opportunityIcon| spent this way: Afflicted, Enraged, Exhausted, Intoxicated, or Unconscious."
         ]
     },
     "Incite Haunting":{
@@ -2667,8 +2667,8 @@
             "If you fail, the target rebuffs your efforts. If your shortfall is 2 or higher, the target also becomes aware of your attempted malediction."
         ],
         "newOpportunities":[
-            "&#xe90d+: Treat the maximum range of the technique as 1 higher per &#xe90d spent this way.",
-            "&#xe90d+: Choose one additional target per &#xe90d spent this way."
+            "|opportunityIcon|+: Treat the maximum range of the technique as 1 higher per |opportunityIcon| spent this way.",
+            "|opportunityIcon|+: Choose one additional target per |opportunityIcon| spent this way."
         ]
     },
     "Grip of Anguish":{
@@ -2683,10 +2683,10 @@
             "Effects: If you succeed, you curse your target, causing them to suffer supernatural damage equal to your Water Ring plus the number of your rings with a Shadowlands Taint disadvantage attached."
         ],
         "newOpportunities":[
-            "Water &#xe90d: One target must resist with a TN 3 Fitness check (Earth 1, Fire 4) or suffer one of the following conditions of your choice: Dazed, Disoriented, Silenced.",
-            "Water &#xe90d+: Treat the maximum range of the technique as 1 higher per &#xe90d spent this way.",
-            "Water &#xe90d+: Choose one additional target per &#xe90d spent this way.",
-            "Water &#xe90d&#xe90d: One target must resist with a TN 3 Fitness check (Earth 1, Fire 4) or suffer one of the following conditions of your choice: Bleeding, Immobilized, or Lightly Wounded."
+            "Water |opportunityIcon|: One target must resist with a TN 3 Fitness check (Earth 1, Fire 4) or suffer one of the following conditions of your choice: Dazed, Disoriented, Silenced.",
+            "Water |opportunityIcon|+: Treat the maximum range of the technique as 1 higher per |opportunityIcon| spent this way.",
+            "Water |opportunityIcon|+: Choose one additional target per |opportunityIcon| spent this way.",
+            "Water |opportunityIcon|opportunityIcon|: One target must resist with a TN 3 Fitness check (Earth 1, Fire 4) or suffer one of the following conditions of your choice: Bleeding, Immobilized, or Lightly Wounded."
         ]
     },
     "Mark of Desecration":{
@@ -2702,10 +2702,10 @@
             "If you succeed, you curse an area encompassing 1 range band around each target’s position, which gains the Defiled terrain quality."
         ],
         "newOpportunities":[
-            "Earth &#xe90d+: Choose one additional target per &#xe90d spent this way.",
-            "Earth &#xe90d+: Increase each zombie’s endurance by 1 per &#xe90d spent this way.",
-            "Earth &#xe90d&#xe90d: Once per round, one zombie may use your skill ranks instead of its own for a check.",
-            "Earth &#xe90d&#xe90d+: One target who was a warrior in life per &#xe90d&#xe90d spent this way rises as a Bushi Skeleton."
+            "Earth |opportunityIcon|+: Choose one additional target per |opportunityIcon| spent this way.",
+            "Earth |opportunityIcon|+: Increase each zombie’s endurance by 1 per |opportunityIcon| spent this way.",
+            "Earth |opportunityIcon|opportunityIcon|: Once per round, one zombie may use your skill ranks instead of its own for a check.",
+            "Earth |opportunityIcon|opportunityIcon|+: One target who was a warrior in life per |opportunityIcon|opportunityIcon| spent this way rises as a Bushi Skeleton."
         ]
     },
     "Sinful Whispers":{
@@ -2720,8 +2720,8 @@
             "Effects: If you succeed, you curse your target, sapping their will; they must answer your questions honestly (and find doing so unremarkable at the time). This effect persists for a number of rounds equal to your Air Ring."
         ],
         "newOpportunities":[
-            "Air &#xe90d: The target does not remember what you asked, even if prompted to think about the conversation later.",
-            "Air &#xe90d&#xe90d &#xe90d: You may give the target a single simple order.",
+            "Air |opportunityIcon|: The target does not remember what you asked, even if prompted to think about the conversation later.",
+            "Air |opportunityIcon|opportunityIcon|opportunityIcon|: You may give the target a single simple order.",
             "The target may ignore that order, but receives 2 strife at the end of each scene in which they disregard it. When the target becomes Compromised, they must unmask and attempt to fulfill the order until the end of the scene."
         ]
     },
@@ -2739,8 +2739,8 @@
             "If you succeed, you augment the target’s corruption; they may treat each of their Shadowlands Taint disadvantages as an advantage that apply to any checks using its ring. This effect persists until the end of the scene."
         ],
         "newOpportunities":[
-            "Fire &#xe90d: Each target receives strife equal to your Fire Ring and removes that much fatigue.",
-            "Fire &#xe90d+: Choose one additional target per &#xe90d spent this way."
+            "Fire |opportunityIcon|: Each target receives strife equal to your Fire Ring and removes that much fatigue.",
+            "Fire |opportunityIcon|+: Choose one additional target per |opportunityIcon| spent this way."
         ]
     },
     "Skulk":{
@@ -2749,8 +2749,8 @@
             "Shinobi are known for walking silently from shadow to shadow, moving like phantoms. Some of this relies upon agility and speed, of course, but veterans in the art of stealth know that using a crowd or another visual distraction to walk unnoticed can be as effective as the most complex acrobatics."
         ],
         "activation":[
-            "Activation: When you perform an Initiative or Attack check using Air, you may spend &#xe90d as follows:",
-            "&#xe90d: If you are in Obscuring terrain, a crowd, or otherwise concealed from sight, one character with vigilance lower than or equal to your ranks in Skulduggery loses sight of you."
+            "Activation: When you perform an Initiative or Attack check using Air, you may spend |opportunityIcon| as follows:",
+            "|opportunityIcon|: If you are in Obscuring terrain, a crowd, or otherwise concealed from sight, one character with vigilance lower than or equal to your ranks in Skulduggery loses sight of you."
         ]
     },
     "Deadly Sting":{
@@ -2765,8 +2765,8 @@
             "Effects: If you succeed, apply the chosen poison to your weapon. Then, the target suffers physical damage equal to the deadliness of your weapon plus your bonus successes."
         ],
         "newOpportunities":[
-            "Air &#xe90d: Move 1 range band.",
-            "Air &#xe90d+: If you succeed, the target suffers a critical strike with severity 2, plus 1 per &#xe90d spent this way."
+            "Air |opportunityIcon|: Move 1 range band.",
+            "Air |opportunityIcon|+: If you succeed, the target suffers a critical strike with severity 2, plus 1 per |opportunityIcon| spent this way."
         ]
     },
     "Noxious Cloud":{
@@ -2781,9 +2781,9 @@
             "Effects: If you succeed, each target suffers 3 physical damage, ignoring their resistance. This damage counts as being inflicted by a weapon envenomed with the poison you chose."
         ],
         "newOpportunities":[
-            "Air &#xe90d: Move 1 range band.",
-            "Air &#xe90d+: Until the end of the scene, the area at range 0–2 becomes Obscuring and Dangerous terrain.",
-            "Air &#xe90d&#xe90d+: If you succeed, one target per &#xe90d&#xe90d spent this way suffers a critical strike with severity 2."
+            "Air |opportunityIcon|: Move 1 range band.",
+            "Air |opportunityIcon|+: Until the end of the scene, the area at range 0–2 becomes Obscuring and Dangerous terrain.",
+            "Air |opportunityIcon|opportunityIcon|+: If you succeed, one target per |opportunityIcon|opportunityIcon| spent this way suffers a critical strike with severity 2."
         ]
     },
     "Silencing Stroke":{
@@ -2799,7 +2799,7 @@
             "If you succeed, other characters beyond range 0–2 of the target do not notice that they have been struck for 1 round, plus additional rounds equal to your bonus successes."
         ],
         "newOpportunities":[
-            "Air &#xe90d+: If you succeed, the target suffers a critical strike with severity equal to the deadliness of your weapon plus 1 per &#xe90d spent this way beyond the first."
+            "Air |opportunityIcon|+: If you succeed, the target suffers a critical strike with severity equal to the deadliness of your weapon plus 1 per |opportunityIcon| spent this way beyond the first."
         ]
     }
 }

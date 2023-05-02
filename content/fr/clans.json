@@ -1,5 +1,5 @@
 {
-    "Crab":{
+    "crab":{
         "name":"Crabe",
         "description":[
             "À la frontière sud de Rokugan se dresse une sinistre merveille d’architecture : la Grande Muraille Kaiu s’étend telle une gigantesque cicatrice ondulée, ses blocs gris ardoise formant une structure sans interstices de dix mètres d’épaisseur sur trente de haut. Au sud s’étendent, menaçantes, les terres dévastées de l’Outremonde, domaine des armées corrompues du Jigoku. Au nord les terres du Clan du Crabe et ses membres, qui défendent la Muraille depuis qu’ils l’ont construite.",
@@ -19,7 +19,7 @@
             "Vous ne connaissez que trop bien l’immonde Souillure de l’Outremonde et les meilleurs moyens de vous en prémunir. Vous savez reconnaître les stades avancés de cette corruption surnaturelle."
         ]
     },
-    "Crane":{
+    "crane":{
         "name":"Grue",
         "description":[
             "Aux origines de l’Empire, après leur chute du royaume Céleste, les Kamis se retrouvèrent plongés dans un monde déchiré par la cruauté et la guerre. Doji-no-Kami, la sœur de Hantei-no-Kami, le premier Empereur, décida de ramener l’ordre dans ce royaume sauvage. Incarnation de l’élégance et de la grâce, elle se rendit chez les peuples de la terre, les amadoua comme le beau temps apaise une mer déchaînée. Le Clan de la Grue est ravi de raconter ce qu’elle a appris aux humains : l’écriture pour garder trace de leurs exploits, la politique pour gouverner, l’économie et le commerce pour gérer leur richesse, l’art et la culture pour s’élever au-dessus des turpitudes de leur misérable existence… ceux qu’elle sut toucher devinrent ses disciples dévoués et les premiers samouraïs du Clan de la Grue. Depuis cette époque, ses membres sont à la fois les poètes et la poésie de l’Empire, les forgerons et les duellistes qui manient leurs lames. En toute chose ils aspirent à la maîtrise absolue, un idéal que les autres clans ne peuvent qu’espérer imiter.",
@@ -39,7 +39,7 @@
             "Vous avez de bonnes connaissances pratiques des arts nobles et des grands maîtres du passé (du moins dans le Clan de la Grue, car qui d’autre est vraiment digne d’attention ?)."
         ]
     },
-    "Dragon":{
+    "dragon":{
         "name":"Dragon",
         "description":[
             "Dans un Empire qui prise en général la conformité sociale et le respect des traditions, le Clan du Dragon représente une véritable énigme. Inspirés par son mystérieux fondateur, Togashi-no-Kami, ses samouraïs s’attachent davantage que leurs contemporains à la recherche personnelle de l’illumination et de l’accomplissement.",
@@ -60,7 +60,7 @@
             "Vous avez de bonnes connaissances pratiques sur de nombreux phénomènes physiques naturels, que les autres samouraïs considèrent comme inintéressants ou indignes d’eux."
         ]
     },
-    "Lion":{
+    "lion":{
         "name":"Lion",
         "description":[
             "Le Clan du Lion est le mètre étalon du courage, de l’honneur et du devoir. Son armée est sans égale, en termes d’effectifs et de talent stratégique. Ce fier héritage militaire lui a permis de gagner son titre de Main Droite de l’Empereur. Les membres du Clan du Lion ont juré de le protéger en lui servant de gardes personnels et d’armée permanente.",
@@ -81,7 +81,7 @@
             "Vous connaissez la plupart des manœuvres et des tactiques militaires courantes, comme les feintes de retraite, les attaques de flanc, les raids et les sièges."
         ]
     },
-    "Phoenix":{
+    "phoenix":{
         "name":"Phénix",
         "description":[
             "Le phénix est un symbole de contradiction : une puissance explosive et une grande retenue, une prodigieuse intelligence et une profonde humilité, l’abnégation et la glorieuse renaissance. Ces vertus associées illuminent la voie du clan majeur le plus mystique de tout Rokugan, gardien du Tao de Shinsei et de l’âme de l’Empire.",
@@ -102,7 +102,7 @@
             "Vous connaissez le nom et l’emplacement de tous les sanctuaires majeurs de Rokugan."
         ]
     },
-    "Scorpion":{
+    "scorpion":{
         "name":"Scorpion",
         "description":[
             "Il a suffi de six mots terribles pour que Bayushi-no-Kami entraîne ses disciples du nouveau Clan du Scorpion sur une voie sombre et périlleuse. Des menaces rôdaient certes au-delà des frontières de Rokugan, mais aussi à l’intérieur. Bayushi jura de protéger l’Empire coûte que coûte. Quand le code du bushidō entraverait la Main Gauche et la Main Droite de l’Empereur (les courtisans du Clan de la Grue et les puissantes légions du Clan du Lion), sa Main Cachée pourrait toujours agir. Pour combattre les mensonges, les voleurs et les traîtres au sein des autres clans majeurs, les disciples de Bayushi-no-Kami recourraient à leur tour au mensonge, au vol et à la perfidie. Le Clan du Scorpion choisit pour armes le chantage, le poison et le sabotage. Il allait se salir pour préserver la pureté des autres.",
@@ -123,7 +123,7 @@
             "Vous êtes au courant des affaires à la cour dans la capitale impériale."
         ]
     },
-    "Unicorn":{
+    "unicorn":{
         "name":"Licorne",
         "description":[
             "Il y a mille ans, le Clan de la Ki-Rin enfourcha ses chevaux et quitta Rokugan, à la recherche d’ennemis rôdant au-delà des frontières de l’Empire d’Émeraude. Au cours de son périple, il débusqua nombre d’adversaires étranges et terrifiants. Au fil des victoires, le clan développa et modifia ses tactiques de combat, ses pratiques magiques et même sa philosophie. Pour triompher de tous les obstacles et survivre, il dut s’adapter. Après huit siècles d’errance, le Clan du Vent revint à Rokugan sous le nom de Clan de la Licorne. Ses membres portent des fourrures, parlent des langues étrangères et manient des armes surprenantes. Bien qu’ils vénèrent toujours Shinjo-no-Kami, ils se sont considérablement éloignés des traditions et des coutumes de l’Empire d’Émeraude.",

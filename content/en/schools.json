@@ -38,7 +38,7 @@
         ],
         "schoolAbility":[
             "Masterful Builder (School Ability)",
-            "Once per scene,when making a check to use an item you personally crafted, you may add a number of kept &#x2b1b set to &#xe90d results equal to your school rank."
+            "Once per scene,when making a check to use an item you personally crafted, you may add a number of kept |ringIcon| set to |opportunityIcon| results equal to your school rank."
         ],
         "masteryAbility":[
             "Ingenious Design (Mastery Ability)",
@@ -53,7 +53,7 @@
         ],
         "schoolAbility":[
             "Gaze into Shadow (School Ability)",
-            "Once per round, when you make a check targeting or involving a Tainted being, you may choose a number of your kept dice up to your school rank containing &#xe917 symbols. Set each of these dice to a &#xe918 result. You cannot use this ability if you are unsure if a being is Tainted or not."
+            "Once per round, when you make a check targeting or involving a Tainted being, you may choose a number of your kept dice up to your school rank containing |strifeIcon| symbols. Set each of these dice to a |successIcon| result. You cannot use this ability if you are unsure if a being is Tainted or not."
         ],
         "masteryAbility":[
             "Purge the Wicked (Mastery Ability)",
@@ -72,7 +72,7 @@
         ],
         "masteryAbility":[
             "Treasures of the Carp (Mastery Ability)",
-            "Once per game session, you may give away one item in your possession to reduce the TN of the next Social skill check you make targeting the recipient by an amount equal to the rarity of the item. For each point by which this would reduce the TN below 1, add a kept &#x2b1b set to an &#xe90d result to your check."
+            "Once per game session, you may give away one item in your possession to reduce the TN of the next Social skill check you make targeting the recipient by an amount equal to the rarity of the item. For each point by which this would reduce the TN below 1, add a kept |ringIcon| set to an |opportunityIcon| result to your check."
         ]
     },
     "Asahina":{
@@ -83,7 +83,7 @@
         ],
         "schoolAbility":[
             "Spiritual Artisan (School Ability)",
-            "When making a check to mystically summon an illusion or to summon, augment, or awaken an object, you may add a number of kept &#x2b1b set to &#xe90d results equal to your school rank."
+            "When making a check to mystically summon an illusion or to summon, augment, or awaken an object, you may add a number of kept |ringIcon| set to |opportunityIcon| results equal to your school rank."
         ],
         "masteryAbility":[
             "Stir the Slumbering Spirit (Mastery Ability)",
@@ -113,7 +113,7 @@
         ],
         "schoolAbility":[
             "Speaking in Silence (School Ability)",
-            "Once per scene when making a check to persuade or influence someone, you may add a number of kept &#x2b1b set to &#xe90d results equal to your school rank."
+            "Once per scene when making a check to persuade or influence someone, you may add a number of kept |ringIcon| set to |opportunityIcon| results equal to your school rank."
         ],
         "masteryAbility":[
             "The Lady’s Grace (Mastery Ability)",
@@ -134,8 +134,8 @@
             "Strike with No Thought (Mastery Ability, Action)",
             "Once per scene, as an Attack and Movement action, you may make a Martial Arts [Melee] (Void) check targeting one character at range 2–3 using a sheathed katana or wakizashi. The TN of this check is equal to your target’s vigilance.",
             "You immediately move to range 1 of your target and draw the weapon you used. If you succeed, your target suffers a critical strike with severity equal to the deadliness of your weapon plus your bonus successes.",
-            "&#xe90d+: One character of your choice at range 0–2 of your target per &#xe90d spent this way suffers the Dazed and Disoriented conditions.",
-            "&#xe90d&#xe90d+: Treat the maximum range of this technique as 1 higher per &#xe90d&#xe90d spent this way."
+            "|opportunityIcon|+: One character of your choice at range 0–2 of your target per |opportunityIcon| spent this way suffers the Dazed and Disoriented conditions.",
+            "|opportunityIcon|opportunityIcon|+: Treat the maximum range of this technique as 1 higher per |opportunityIcon|opportunityIcon| spent this way."
         ]
     },
     "Agasha":{
@@ -146,7 +146,7 @@
         ],
         "schoolAbility":[
             "Elemental Transmutation (School Ability)",
-            "When performing an invocation, you may choose a different ring with which to make the check. While using this school ability, you cannot activate &#xe90d of the original Element of the invocation, but you can activate &#xe90d for the new Element. You can use this school ability a number of times per game session up to your school rank."
+            "When performing an invocation, you may choose a different ring with which to make the check. While using this school ability, you cannot activate |opportunityIcon| of the original Element of the invocation, but you can activate |opportunityIcon| for the new Element. You can use this school ability a number of times per game session up to your school rank."
         ],
         "masteryAbility":[
             "Experiment and Adapt (Mastery Ability)",
@@ -161,12 +161,12 @@
         ],
         "schoolAbility":[
             "Kitsuki’s Method (School Ability)",
-            "When performing a check to investigate with any skill, you may treat your ranks in the skill you are using as being equal to your school rank. If your ranks in the skill are equal to or higher than your school rank, or if you have 5 ranks in the skill, you may add a kept &#x2b1b set to an &#xe90d result instead."
+            "When performing a check to investigate with any skill, you may treat your ranks in the skill you are using as being equal to your school rank. If your ranks in the skill are equal to or higher than your school rank, or if you have 5 ranks in the skill, you may add a kept |ringIcon| set to an |opportunityIcon| result instead."
         ],
         "masteryAbility":[
             "The Eyes Betray the Heart (Mastery Ability)",
-            "Once per scene when performing a skill check to investigate, you may spend &#xe90d as follows:",
-            "&#xe90d+: You may reserve up to one dropped die per &#xe90d spent this way. The next time you perform a check to interact with the person or thing you were investigating (such as a check targeting that person or a check to use that object), you may add any number of these reserved dice as kept dice. Then, remove any unused reserved dice."
+            "Once per scene when performing a skill check to investigate, you may spend |opportunityIcon| as follows:",
+            "|opportunityIcon|+: You may reserve up to one dropped die per |opportunityIcon| spent this way. The next time you perform a check to interact with the person or thing you were investigating (such as a check targeting that person or a check to use that object), you may add any number of these reserved dice as kept dice. Then, remove any unused reserved dice."
         ]
     },
     "Mirumoto":{
@@ -178,14 +178,14 @@
         "schoolAbility":[
             "Way of the Dragon (School Ability)",
             "Once per round during a duel or skirmish when you are targeted by an Attack check with a melee weapon, you may use one of your weapons readied in a one-handed grip (or one of your hands, if it is empty) to ward or trap.",
-            "If you ward, the attacker must reroll dice containing &#xe918 or &#xe905 up to your school rank.",
+            "If you ward, the attacker must reroll dice containing |successIcon| or |explosiveSuccessIcon| up to your school rank.",
             "If you trap, reduce the TN of your next Attack check against the attacker this scene by your school rank (to a minimum of 1).",
             "You cannot choose this weapon for Attack actions until the end of your next turn."
         ],
         "masteryAbility":[
             "Heart of the Dragon (Mastery Ability)",
-            "Once per round, when performing an Attack action check, you may spend &#xe90d as follows:",
-            "&#xe90d: Perform a Strike action with a readied weapon you have not used for an Attack action this turn."
+            "Once per round, when performing an Attack action check, you may spend |opportunityIcon| as follows:",
+            "|opportunityIcon|: Perform a Strike action with a readied weapon you have not used for an Attack action this turn."
         ]
     },
     "Togashi":{
@@ -265,7 +265,7 @@
         ],
         "masteryAbility":[
             "Rending Jaws of the Lion (Mastery Ability)",
-            "Once per round, when performing an Attack action check while Enraged, you may spend 1 Void point to alter each kept die containing &#xe918 to a result containing &#xe905."
+            "Once per round, when performing an Attack action check while Enraged, you may spend 1 Void point to alter each kept die containing |successIcon| to a result containing |explosiveSuccessIcon|."
         ]
     },
     "Asako":{
@@ -276,7 +276,7 @@
         ],
         "schoolAbility":[
             "Wisdom of the Ages (School Ability)",
-            "When performing a Scholar skill check, you may treat your ranks in the skill as being equal to your school rank. If your ranks in that Scholar skill are equal to or higher than your school rank, or if you have 5 ranks in the skill, you may add one kept &#x2b1b set to an &#xe90d result instead."
+            "When performing a Scholar skill check, you may treat your ranks in the skill as being equal to your school rank. If your ranks in that Scholar skill are equal to or higher than your school rank, or if you have 5 ranks in the skill, you may add one kept |ringIcon| set to an |opportunityIcon| result instead."
         ],
         "masteryAbility":[
             "Insufferable Genius (Mastery Ability)",
@@ -306,7 +306,7 @@
         ],
         "schoolAbility":[
             "Way of the Phoenix (School Ability)",
-            "Once per scene, when a character at range 0–3 makes a check that contains 1 or more &#xe917 symbols, you may negate all of those &#xe917 symbols. Then, that character removes strife and fatigue equal to your school rank."
+            "Once per scene, when a character at range 0–3 makes a check that contains 1 or more |strifeIcon| symbols, you may negate all of those |strifeIcon| symbols. Then, that character removes strife and fatigue equal to your school rank."
         ],
         "masteryAbility":[
             "Stand of Honor (Mastery Ability)",
@@ -322,13 +322,13 @@
         "schoolAbility":[
             "Sacred Arrows (School Ability)",
             "As an action, you may augment one of your arrows with a prayer to the kami. Make the check to perform one invocation you know, reducing the TN by your school rank, and record the result. The arrow gains the Sacred quality, and remains infused with the invocation until the end of the scene.",
-            "After you perform an Attack action using the arrow (or fire it at a location, at the GM’s discretion), you may resolve the effects of the invocation from the place the arrow landed. You may spend &#xe90d+ to delay resolving the effects of the invocation for 1 round per &#xe90d spent this way, and may spend &#xe90d&#xe90d from a failed check to affect one target of the attack that you missed."
+            "After you perform an Attack action using the arrow (or fire it at a location, at the GM’s discretion), you may resolve the effects of the invocation from the place the arrow landed. You may spend |opportunityIcon|+ to delay resolving the effects of the invocation for 1 round per |opportunityIcon| spent this way, and may spend |opportunityIcon|opportunityIcon| from a failed check to affect one target of the attack that you missed."
         ],
         "masteryAbility":[
             "Demon, Begone! (Mastery Ability, Action)",
             "As an action, you may make a TN 3 Meditation (Void) check by plucking the string of a bow you are wielding, targeting each Otherworldly being within a number of range bands equal to your ranks in Meditation.",
             "If you succeed, each target suffers strife equal to your ranks in Meditation plus your bonus successes.",
-            "&#xe90d: Each target must resist with a TN 3 Meditation (Void) check or treat its physical and supernatural resistances as 0. This effect persists until the end of the scene."
+            "|opportunityIcon|: Each target must resist with a TN 3 Meditation (Void) check or treat its physical and supernatural resistances as 0. This effect persists until the end of the scene."
         ]
     },
     "Bayushi":{
@@ -434,8 +434,8 @@
         ],
         "schoolAbility":[
             "Swirling Desert Wind (School Ability)",
-            "When performing an Attack action during a skirmish or mass battle, you may spend &#xe90d as follows:",
-            "&#xe90d: Choose an enemy other than your target whom you can perceive. Increase the TN of that enemy’s Attack checks targeting you by your school rank until the start of your next turn."
+            "When performing an Attack action during a skirmish or mass battle, you may spend |opportunityIcon| as follows:",
+            "|opportunityIcon|: Choose an enemy other than your target whom you can perceive. Increase the TN of that enemy’s Attack checks targeting you by your school rank until the start of your next turn."
         ],
         "masteryAbility":[
             "Scouring Sirocco (Mastery Ability)",
@@ -482,7 +482,7 @@
         "schoolAbility":[
             "School of Waves (School Ability)",
             "Choose one bonus curriculum skill; this skill henceforth counts as part of the Worldly Rōnin Path curriculum for you at all ranks. Each time your school rank increases, choose one additional bonus curriculum skill this way.",
-            "When you make a check using one of your bonus curriculum skills, you may negate 1 &#xe917 symbol."
+            "When you make a check using one of your bonus curriculum skills, you may negate 1 |strifeIcon| symbol."
         ],
         "masteryAbility":[
             "A Bottomless Ocean (Mastery Ability)",

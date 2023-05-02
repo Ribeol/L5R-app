@@ -30,45 +30,103 @@
             }
 
             #overlay {
+                display: none;
+                pointer-events: none;
                 position: fixed;
                 top: 0;
                 left: 0;
                 width: 100%;
                 height: 100%;
-                background-color: rgba(0, 0, 0, 0.5);
                 z-index: 1;
-                pointer-events: none;
-                display: none;
+                justify-content: center;
+            }
+            #overlay.appear {
+                display: flex;
+                animation: darken 0.1s;                
             }
             #overlay.visible {
                 display: flex;
-                justify-content: space-evenly;
-                align-items: center;
-                pointer-events: all;
-                animation-name: darken;
-                animation-duration: 0.5s;
+                pointer-events: auto;
+                background-color: rgba(0, 0, 0, 0.5);
+            }
+            #overlay.disappear {
+                animation: darken 0.1s reverse;
+                pointer-events: none;
             }
             @keyframes darken {
-                from {background-color: rgba(0, 0, 0, 0);}
-                to {background-color: rgba(0, 0, 0, 0.5);}
+                from {
+                    background-color: rgba(0, 0, 0, 0);
+                }
+                to {
+                    background-color: rgba(0, 0, 0, 0.5);
+                }
             }
-
-            /*
-            #description {
+            
+            #viewer {
                 position: fixed;
-                height: 70vh;
-                width: 90vw;
+                width: 98%;
+                max-width: 768px;
+                box-sizing: border-box;
                 z-index: 2;
-                background-color: antiquewhite;
-                border: 1px solid black;
+                background-color: white;
+                border: 5px solid black;
+                border-radius: 25px;
+                padding: 20px;
+                display: flex;
+                flex-direction: column;
                 overflow: auto;
-                animation-name: expand;
-                animation-duration: 0.5s;
+            }
+            #viewer.appear {
+                animation: expand 0.1s;
+            }
+            #viewer.visible {
+                top: 10%;
+                height: 80%;
+            }
+            #viewer.disappear {                
+                animation: expand 0.1s reverse;
             }
             @keyframes expand {
-                from {width: 0;}
-                to {width: 90vw;}
+                from {
+                    top: var(--liTop);
+                    height: 0;
+                }
+                to {
+                    top: 10%;
+                    height: 80%;
+                }
             }
+
+            #viewer .attributes {
+                font-size: large;
+                display: flex;
+                justify-content: space-between;
+            }
+            .name {                
+                display: flex;
+                flex-direction: column;
+            }
+            #viewer .name {
+                background-color: #eeeeee;
+                border-top: 1px solid black;
+                border-bottom: 1px solid black;
+                padding-top: 5px;
+                padding-bottom: 3px;
+                text-align: center;
+                font-size: large;
+            }
+            #viewer .opportunities {
+                font-size: large;
+                font-style: italic;
+                border-top: 1px solid black;
+                border-bottom: 1px solid black;
+            }
+            .bold {
+                font-weight: bold;
+            }
+            
+
+            /*
 
             @media screen and (min-width: 1024px) {
                 #main {
@@ -80,10 +138,12 @@
                     max-width: 50vw;
                 }
             }
+            
             */
 
             :root {
                 --customColor: grey;
+                --liTop: 0;
             }
             span.customColor {color: var(--customColor);}
             li.customColor {border: 2px solid var(--customColor);}
@@ -114,11 +174,11 @@
                 background-color: #111111;
             }
 
-            .Air {color: hsl(290, 40%, 60%);}
-            .Earth {color: hsl(140, 40%, 50%);}
-            .Fire {color: hsl(30, 80%, 60%);}
-            .Water {color: hsl(195, 60%, 60%);}
-            .Void {color: hsl(0, 20%, 40%);}
+            .air {color: hsl(290, 40%, 60%);}
+            .earth {color: hsl(140, 40%, 50%);}
+            .fire {color: hsl(30, 80%, 60%);}
+            .water {color: hsl(195, 60%, 60%);}
+            .void {color: hsl(0, 20%, 40%);}
 
             #filters {
                 background-color:darkgray;
@@ -163,17 +223,8 @@
                 min-width: 35px;
                 cursor: default;
                 position: relative;
+                font-size: 4vw;
             }
-            #contentList li.expanded {
-                z-index: 2;
-                border: 1px solid black;
-                background-color: antiquewhite;
-            }
-            #contentList li.expanded span {
-                color: black;
-            }
-
-
 
             #contentList li span {
                 text-align: center;
@@ -181,36 +232,43 @@
             
             #contentList .rank {
                 font-weight: bold;
-                width: 15px;
+                width: 1em;
             }
             #contentList .icon {
                 font-size: 1.5em;
-            }
-            #contentList .left.icon {
-                width: 30px;
+                width: 1.2em;
+                padding-top: 2px;
             }
             #contentList .left.icon:not(.Mahō) {
                 padding-top: 4px;
             }
-            #contentList .Mahō {
+            #contentList .mahō {
                 padding-bottom: 4px;
             }
             #contentList .name {
                 flex-grow: 1;
                 padding: 5px;
-                display: flex;
-                flex-direction: column;                
             }
             #contentList .traditional {
-                font-size: small;
+                font-size: 3vw;
                 font-style: italic;
             }
-            #contentList .right.icon {
-                width: 25px;
+            
+            #contentList .addSymbol {
+                font-size: 1.7em;
+                width: 0.7em;
+            }
+            @media screen and (min-width: 425px) {
+                #contentList li {
+                    font-size: medium;
+                }
+                #contentList .traditional {
+                    font-size: small;
+                }
             }
             #contentList .pointer {
                 cursor: pointer;
-            }            
+            }
             #contentList .available {border: 1px solid black;}
             #contentList .incompatible * {color: #AAAAAA;}
 
@@ -276,21 +334,21 @@
                     </select>
                     <select id="typeFilter">
                         <option value="all">Tout type</option>
-                        <option value="Kata">Katas</option>
-                        <option value="Kihō">Kihō</option>
-                        <option value="Invocation">Invocations</option>
-                        <option value="Ritual">Rituels</option>
-                        <option value="Shūji">Shūji</option>
-                        <option value="Mahō">Mahō</option>
-                        <option value="Ninjutsu">Ninjutsu</option>
+                        <option value="kata">Katas</option>
+                        <option value="kihō">Kihō</option>
+                        <option value="invocation">Invocations</option>
+                        <option value="ritual">Rituels</option>
+                        <option value="shūji">Shūji</option>
+                        <option value="mahō">Mahō</option>
+                        <option value="ninjutsu">Ninjutsu</option>
                     </select>
                     <select id="ringFilter">
                         <option value="all">Tout anneau</option>
-                        <option value="Air">Air</option>
-                        <option value="Earth">Terre</option>
-                        <option value="Fire">Feu</option>
-                        <option value="Water">Eau</option>
-                        <option value="Void">Vide</option>
+                        <option value="air">Air</option>
+                        <option value="earth">Terre</option>
+                        <option value="fire">Feu</option>
+                        <option value="water">Eau</option>
+                        <option value="void">Vide</option>
                     </select>
                 </div>
                 <div>
@@ -311,10 +369,8 @@
             </form>
             <ul id="contentList">
         </div>
-        <div id="overlay">/*
-            <!--<div id="description">
-                
-            </div>-->
+        <div id="overlay" onclick="contentManager.hideOverlay(event.target)">
+            <div id="viewer">
         </div>
 
         <script defer src="L5R_script.js"></script>

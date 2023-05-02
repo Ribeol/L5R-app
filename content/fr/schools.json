@@ -38,7 +38,7 @@
         ],
         "schoolAbility":[
             "Maître bâtisseur (capacité d’école)",
-            "Une fois par scène, lorsque vous effectuez un test destiné à utiliser un objet de votre fabrication, vous pouvez ajouter au résultat un nombre de &#x2b1b gardés supplémentaires affichant &#xe90d égal à votre rang d’école."
+            "Une fois par scène, lorsque vous effectuez un test destiné à utiliser un objet de votre fabrication, vous pouvez ajouter au résultat un nombre de |ringIcon| gardés supplémentaires affichant |opportunityIcon| égal à votre rang d’école."
         ],
         "masteryAbility":[
             "Ingénieuse conception (capacité de maîtrise)",
@@ -53,7 +53,7 @@
         ],
         "schoolAbility":[
             "Regarder dans les ténèbres (capacité d’école)",
-            "Une fois par round, lorsque vous effectuez un test visant ou impliquant une créature Souillée, vous pouvez choisir un nombre de dés gardés contenant &#xe917 inférieur ou égal à votre rang d’école. Changez leur résultat en &#xe918. Vous ne pouvez utiliser cette capacité que si vous êtes sûr que la cible est Souillée."
+            "Une fois par round, lorsque vous effectuez un test visant ou impliquant une créature Souillée, vous pouvez choisir un nombre de dés gardés contenant |strifeIcon| inférieur ou égal à votre rang d’école. Changez leur résultat en |successIcon|. Vous ne pouvez utiliser cette capacité que si vous êtes sûr que la cible est Souillée."
         ],
         "masteryAbility":[
             "Purifier le mal (capacité de maîtrise)",
@@ -72,7 +72,7 @@
         ],
         "masteryAbility":[
             "Les trésors de la carpe (capacité de maîtrise)",
-            "Une fois par session de jeu, vous pouvez offrir un objet en votre possession. Ce faisant, vous retirez la rareté de l’objet au ND du prochain test de compétence sociale que vous effectuez contre le destinataire (ND minimum 1). Chaque point qui aurait dû réduire le ND en dessous de 1 vous permet d’ajouter 1 &#x2b1b gardé supplémentaire affichant &#xe90d au résultat de votre test."
+            "Une fois par session de jeu, vous pouvez offrir un objet en votre possession. Ce faisant, vous retirez la rareté de l’objet au ND du prochain test de compétence sociale que vous effectuez contre le destinataire (ND minimum 1). Chaque point qui aurait dû réduire le ND en dessous de 1 vous permet d’ajouter 1 |ringIcon| gardé supplémentaire affichant |opportunityIcon| au résultat de votre test."
         ]
     },
     "Asahina":{
@@ -83,7 +83,7 @@
         ],
         "schoolAbility":[
             "Artisan spirituel (capacité d’école)",
-            "Lorsque vous effectuez un test pour conjurer mystiquement une illusion, ou bien pour conjurer, améliorer ou éveiller un objet, vous pouvez ajouter au résultat un nombre de &#x2b1b gardés affichant &#xe90d égal à votre rang d’école."
+            "Lorsque vous effectuez un test pour conjurer mystiquement une illusion, ou bien pour conjurer, améliorer ou éveiller un objet, vous pouvez ajouter au résultat un nombre de |ringIcon| gardés affichant |opportunityIcon| égal à votre rang d’école."
         ],
         "masteryAbility":[
             "Éveiller l’esprit endormi (capacité de maîtrise)",
@@ -113,7 +113,7 @@
         ],
         "schoolAbility":[
             "Communication silencieuse (capacité d’école)",
-            "Une fois par scène, lorsque vous effectuez un test pour persuader ou influencer un interlocuteur, vous pouvez ajouter au résultat un nombre de &#x2b1b gardés affichant &#xe90d égal à votre rang d’école."
+            "Une fois par scène, lorsque vous effectuez un test pour persuader ou influencer un interlocuteur, vous pouvez ajouter au résultat un nombre de |ringIcon| gardés affichant |opportunityIcon| égal à votre rang d’école."
         ],
         "masteryAbility":[
             "La grâce de la Dame (capacité de maîtrise)",
@@ -134,8 +134,8 @@
             "Frappe instinctive (capacité de maîtrise, action)",
             "Une fois par scène, au prix d’une action d’Attaque et de Déplacement, vous pouvez effectuer un test d’Arts martiaux (corps à corps) (Vide) avec un katana ou un wakizashi rengainé contre un personnage situé à portée 2-3. Le ND de ce test est égal à la Vigilance de la cible.",
             "Vous vous déplacez immédiatement à portée 1 de la cible et dégainez. En cas de réussite, votre cible subit un coup critique dont la gravité est égale à la Dangerosité de l’arme utilisée, plus vos succès bonus.",
-            "&#xe90d+ : pour chaque &#xe90d dépensé de cette façon, vous choisissez un personnage situé à portée 0–2 de votre cible. Il subit les états Hébété Et Désorienté.",
-            "&#xe90d&#xe90d+ : considérez que la portée maximale de cette technique augmente de 1 par &#xe90d&#xe90d dépensés de cette façon."
+            "|opportunityIcon|+ : pour chaque |opportunityIcon| dépensé de cette façon, vous choisissez un personnage situé à portée 0–2 de votre cible. Il subit les états Hébété Et Désorienté.",
+            "|opportunityIcon|opportunityIcon|+ : considérez que la portée maximale de cette technique augmente de 1 par |opportunityIcon|opportunityIcon| dépensés de cette façon."
         ]
     },
     "Agasha":{
@@ -146,7 +146,7 @@
         ],
         "schoolAbility":[
             "Transmutation élémentaire (capacité d’école)",
-            "Lorsque vous lancez une invocation, vous pouvez choisir un anneau différent pour effectuer votre test. Quand vous utilisez cette capacité d’école, vous ne pouvez activer aucun &#xe90d de l’élément original de l’invocation, mais vous pouvez activer &#xe90d du nouvel élément. Vous pouvez utiliser cette capacité d’école un nombre de fois égal à votre rang d’école à chaque session."
+            "Lorsque vous lancez une invocation, vous pouvez choisir un anneau différent pour effectuer votre test. Quand vous utilisez cette capacité d’école, vous ne pouvez activer aucun |opportunityIcon| de l’élément original de l’invocation, mais vous pouvez activer |opportunityIcon| du nouvel élément. Vous pouvez utiliser cette capacité d’école un nombre de fois égal à votre rang d’école à chaque session."
         ],
         "masteryAbility":[
             "Expérimente et adapte—toi (capacité de maîtrise)",
@@ -161,12 +161,12 @@
         ],
         "schoolAbility":[
             "La méthode Kitsuki (capacité d’école)",
-            "Lorsque vous effectuez un test pour enquêter, vous pouvez considérer que le rang de la compétence utilisée, quelle qu’elle soit, est égal à votre rang d’école. Si votre rang dans la compétence en question est supérieur ou égal à votre rang d’école, ou s’il est égal à 5, vous pouvez à la place ajouter 1 &#x2b1b gardé affichant &#xe90d au résultat."
+            "Lorsque vous effectuez un test pour enquêter, vous pouvez considérer que le rang de la compétence utilisée, quelle qu’elle soit, est égal à votre rang d’école. Si votre rang dans la compétence en question est supérieur ou égal à votre rang d’école, ou s’il est égal à 5, vous pouvez à la place ajouter 1 |ringIcon| gardé affichant |opportunityIcon| au résultat."
         ],
         "masteryAbility":[
             "Les yeux trahissent le cœur (capacité de maîtrise)",
-            "Une fois par scène, lorsque vous effectuez un test de compétence pour enquêter, vous pouvez dépenser vos &#xe90d de la façon suivante :",
-            "&#xe90d+ : vous pouvez réserver un dé abandonné par &#xe90d dépensé ainsi. La prochaine fois que vous effectuerez un test pour interagir avec la personne ou l’objet sur lequel vous enquêtez (un test ciblant cette personne ou utilisant cet objet par exemple), vous pouvez ajouter au résultat tout ou partie de ces dés réservés en tant que dés gardés. Tous les dés réservés non utilisés sur ce test sont perdus."
+            "Une fois par scène, lorsque vous effectuez un test de compétence pour enquêter, vous pouvez dépenser vos |opportunityIcon| de la façon suivante :",
+            "|opportunityIcon|+ : vous pouvez réserver un dé abandonné par |opportunityIcon| dépensé ainsi. La prochaine fois que vous effectuerez un test pour interagir avec la personne ou l’objet sur lequel vous enquêtez (un test ciblant cette personne ou utilisant cet objet par exemple), vous pouvez ajouter au résultat tout ou partie de ces dés réservés en tant que dés gardés. Tous les dés réservés non utilisés sur ce test sont perdus."
         ]
     },
     "Mirumoto":{
@@ -178,14 +178,14 @@
         "schoolAbility":[
             "La voie du Dragon (capacité d’école)",
             "Une fois par round, au cours d’un duel ou d’une escarmouche, lorsque vous êtes la cible d’un test d’Attaque effectué avec une arme de corps à corps, vous pouvez utiliser l’une de vos armes à une prise à une main apprêtées (ou l’une de vos mains libres) pour parer ou bloquer.",
-            "Si vous parez, l’attaquant doit relancer un nombre de dés contenant &#xe918 ou &#xe905 inférieur ou égal à votre rang d’école (vous choisissez le nombre).",
+            "Si vous parez, l’attaquant doit relancer un nombre de dés contenant |successIcon| ou |explosiveSuccessIcon| inférieur ou égal à votre rang d’école (vous choisissez le nombre).",
             "Si vous bloquez (ce qui consiste à coincer l’arme adverse à l’aide de la vôtre), retirez votre rang d’école au ND de votre prochain test d’Attaque contre cet adversaire pendant cette scène (ND minimum 1).",
             "Vous ne pouvez pas utiliser l’arme qui vous a servi à bloquer ou à parer pour des actions d’Attaque, et ce, jusqu’à la fin de votre prochain tour."
         ],
         "masteryAbility":[
             "Le cœur du Dragon (capacité de maîtrise)",
-            "Une fois par round, lorsque que vous effectuez une action d’Attaque, vous pouvez dépenser &#xe90d de la façon suivante :",
-            "&#xe90d : effectuez une action Frapper avec une arme apprêtée que vous n’avez pas encore utilisée pour une action d’Attaque lors de ce tour."
+            "Une fois par round, lorsque que vous effectuez une action d’Attaque, vous pouvez dépenser |opportunityIcon| de la façon suivante :",
+            "|opportunityIcon| : effectuez une action Frapper avec une arme apprêtée que vous n’avez pas encore utilisée pour une action d’Attaque lors de ce tour."
         ]
     },
     "Togashi":{
@@ -265,7 +265,7 @@
         ],
         "masteryAbility":[
             "Féroces mâchoires du lion (capacité de maîtrise)",
-            "Une fois par round, quand vous effectuez une action d’Attaque alors que vous êtes Enragé, vous pouvez dépenser 1 point de Vide pour changer le résultat de chaque dé gardé contenant &#xe918 en un résultat contenant &#xe905."
+            "Une fois par round, quand vous effectuez une action d’Attaque alors que vous êtes Enragé, vous pouvez dépenser 1 point de Vide pour changer le résultat de chaque dé gardé contenant |successIcon| en un résultat contenant |explosiveSuccessIcon|."
         ]
     },
     "Asako":{
@@ -276,7 +276,7 @@
         ],
         "schoolAbility":[
             "Sagesse éternelle (capacité d’école)",
-            "Lorsque vous effectuez un test de compétence savante, vous pouvez considérer que le rang de cette compétence est égal à votre rang d’école. Si votre rang dans cette compétence est supérieur ou égal à votre rang d’école, ou s’il est égal à 5, vous pouvez à la place ajouter 1 &#x2b1b gardé affichant &#xe90d au résultat."
+            "Lorsque vous effectuez un test de compétence savante, vous pouvez considérer que le rang de cette compétence est égal à votre rang d’école. Si votre rang dans cette compétence est supérieur ou égal à votre rang d’école, ou s’il est égal à 5, vous pouvez à la place ajouter 1 |ringIcon| gardé affichant |opportunityIcon| au résultat."
         ],
         "masteryAbility":[
             "Génie exaspérant (capacité de maîtrise)",
@@ -306,7 +306,7 @@
         ],
         "schoolAbility":[
             "La voie du Phénix (capacité d’école)",
-            "Une fois par scène, lorsqu’un personnage à portée 0–3 effectue un test et qu’il obtient 1 ou plusieurs &#xe917,vous pouvez annuler tous ces &#xe917. Ce personnage élimine ensuite un nombre de points de Conflit et de points de Fatigue égal à votre rang d’école."
+            "Une fois par scène, lorsqu’un personnage à portée 0–3 effectue un test et qu’il obtient 1 ou plusieurs |strifeIcon|,vous pouvez annuler tous ces |strifeIcon|. Ce personnage élimine ensuite un nombre de points de Conflit et de points de Fatigue égal à votre rang d’école."
         ],
         "masteryAbility":[
             "Résistance de l’Honneur (capacité de maîtrise)",
@@ -322,13 +322,13 @@
         "schoolAbility":[
             "Flèches sacrées (capacité d’école)",
             "Au prix d’une action, vous pouvez améliorer l’une de vos flèches en adressant une prière aux kamis. Effectuez le test pour activer une invocation que vous connaissez, en retirant votre rang d’école au ND, et notez le résultat. La flèche gagne la propriété d’équipement Sacrée et reste imprégnée du pouvoir de l’invocation jusqu’à la fin de la scène.",
-            "Après avoir effectué une action d’Attaque à l’aide de cette flèche (ou après l’avoir tirée sur un lieu, si le MJ l’autorise), vous pouvez résoudre les effets de l’invocation à l’endroit où la flèche a atterri. Vous pouvez dépenser &#xe90d+ pour retarder la résolution des effets de l’invocation de 1 round par &#xe90d, ou &#xe90d&#xe90d lors d’un test raté pour affecter une cible que vous avez manquée lors de l’attaque."
+            "Après avoir effectué une action d’Attaque à l’aide de cette flèche (ou après l’avoir tirée sur un lieu, si le MJ l’autorise), vous pouvez résoudre les effets de l’invocation à l’endroit où la flèche a atterri. Vous pouvez dépenser |opportunityIcon|+ pour retarder la résolution des effets de l’invocation de 1 round par |opportunityIcon|, ou |opportunityIcon|opportunityIcon| lors d’un test raté pour affecter une cible que vous avez manquée lors de l’attaque."
         ],
         "masteryAbility":[
             "Arrière, démon ! (capacité de maîtrise, action)",
             "Au prix d’une action, vous pouvez effectuer un test de Méditation (Vide) ND 3 en faisant vibrer la corde de l’arc que vous tenez. Vous prenez pour cible chaque créature Extérieure située dans un nombre de niveaux de portée inférieur ou égal à votre rang en Méditation.",
             "En cas de réussite, chaque cible subit un nombre de points de Conflit égal à votre rang dans cette compétence plus vos succès bonus.",
-            "&#xe90d : chaque cible doit résister en effectuant un test de Méditation (Vide) ND 3. Si elle le rate, ses Résistances physique et surnaturelle tombent à 0. Cet effet dure jusqu’à la fin de la scène."
+            "|opportunityIcon| : chaque cible doit résister en effectuant un test de Méditation (Vide) ND 3. Si elle le rate, ses Résistances physique et surnaturelle tombent à 0. Cet effet dure jusqu’à la fin de la scène."
         ]
     },
     "Bayushi":{
@@ -434,8 +434,8 @@
         ],
         "schoolAbility":[
             "Le tourbillon du simoun (capacité d’école)",
-            "Lorsque vous effectuez une action d’Attaque au cours d’une escarmouche ou d’une bataille rangée, vous pouvez dépenser vos &#xe90d de la façon suivante:",
-            "&#xe90d : choisissez un ennemi autre que votre cible et que vous pouvez percevoir. Jusqu’au début de votre prochain tour, ajoutez votre rang d’école au ND des tests d’Attaque qu’il effectue contre vous."
+            "Lorsque vous effectuez une action d’Attaque au cours d’une escarmouche ou d’une bataille rangée, vous pouvez dépenser vos |opportunityIcon| de la façon suivante:",
+            "|opportunityIcon| : choisissez un ennemi autre que votre cible et que vous pouvez percevoir. Jusqu’au début de votre prochain tour, ajoutez votre rang d’école au ND des tests d’Attaque qu’il effectue contre vous."
         ],
         "masteryAbility":[
             "Sirocco cinglant (capacité de maîtrise)",
@@ -482,7 +482,7 @@
         "schoolAbility":[
             "L’école des vagues (capacité d’école)",
             "Choisissez une compétence supplémentaire. Elle fait désormais partie intégrante de votre cursus dans la Voie du ronin expérimenté, pour tous les rangs. Chaque fois que vous gagnerez un rang d’école, choisissez une nouvelle compétence de cursus bonus de la même façon.",
-            "Lorsque vous effectuez un test avec l’une de vos compétences bonus, vous pouvez ignorer 1 symbole &#xe917."
+            "Lorsque vous effectuez un test avec l’une de vos compétences bonus, vous pouvez ignorer 1 symbole |strifeIcon|."
         ],
         "masteryAbility":[
             "Un insondable océan (capacité de maîtrise)",

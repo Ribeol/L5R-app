@@ -1,9 +1,9 @@
 {
     "Hida":{
-        "ringRefs":["Earth","Water"],
-        "startingSkillRefs":[["Fitness","Martial Arts [Melee]","Martial Arts [Ranged]","Martial Arts [Unarmed]","Meditation","Survival","Tactics"],5],
+        "ringRefs":["earth","water"],
+        "startingSkillRefs":[["fitness","martial arts [melee]","martial arts [ranged]","martial arts [unarmed]","meditation","survival","tactics"],5],
         "honor":40,
-        "techniqueTypeRefs":["Kata","Ritual","Shūji"],
+        "techniqueTypeRefs":["kata","ritual","shūji"],
         "startingTechniqueRefs":[
             "Lord Hida’s Grip",
             [["Striking as Earth","Striking as Water"],1]
@@ -19,18 +19,18 @@
             "Traveling pack"
         ],
         "curriculum":[
-            {"list":["SG: Martial","S: Command","S: Medicine","S: Survival","TG: Kata 1","T: Rushing Avalanche Style","T: Honest Assessment"],"exp":20},
-            {"list":["SG: Martial","S: Command","S: Labor","S: Theology","TG: Kata 2","T: Touchstone of Courage","T: Slippery Maneuvers"],"exp":24},
-            {"list":["SG: Trade","S: Fitness","S: Martial Arts [Melee]","S: Meditation","TG: Kata 3","T: Iron in the Mountains Style","T: Rallying Cry"],"exp":32},
-            {"list":["SG: Scholar","S: Fitness","S: Martial Arts [Melee]","S: Meditation","TG: Kata 4","T: Striking as Void","T: A Samurai’s Fate"],"exp":44},
-            {"list":["SG: Martial","S: Command","S: Survival","S: Theology","TG: Kata 5","T: Rouse the Soul","T: The Immovable Hand of Peace"],"exp":60}
+            {"list":["SG: martial","S: command","S: medicine","S: survival","TG: kata 1","T: Rushing Avalanche Style","T: Honest Assessment"],"exp":20},
+            {"list":["SG: martial","S: command","S: labor","S: theology","TG: kata 2","T: Touchstone of Courage","T: Slippery Maneuvers"],"exp":24},
+            {"list":["SG: trade","S: fitness","S: martial arts [melee]","S: meditation","TG: kata 3","T: Iron in the Mountains Style","T: Rallying Cry"],"exp":32},
+            {"list":["SG: scholar","S: fitness","S: martial arts [melee]","S: meditation","TG: kata 4","T: Striking as Void","T: A Samurai’s Fate"],"exp":44},
+            {"list":["SG: martial","S: command","S: survival","S: theology","TG: kata 5","T: Rouse the Soul","T: The Immovable Hand of Peace"],"exp":60}
         ]
     },
     "Hiruma":{
-        "ringRefs":["Air","Water"],
-        "startingSkillRefs":[["Fitness","Martial Arts [Melee]","Martial Arts [Ranged]","Skulduggery","Survival","Tactics","Theology"],5],
+        "ringRefs":["air","water"],
+        "startingSkillRefs":[["fitness","martial arts [melee]","martial arts [ranged]","skulduggery","survival","tactics","theology"],5],
         "honor":35,
-        "techniqueTypeRefs":["Kata","Ritual","Shūji"],
+        "techniqueTypeRefs":["kata","ritual","shūji"],
         "startingTechniqueRefs":[
             [["Pelting Hail Style","Rushing Avalanche Style"],1],
             [["Striking as Air","Striking as Water"],1]
@@ -46,18 +46,18 @@
             "Finger of jade"
         ],
         "curriculum":[
-            {"list":["SG: Martial","S: Medicine","S: Survival","S: Theology","TG: Kata 1","T: Threshold Barrier","T: Slippery Maneuvers"],"exp":20},
-            {"list":["SG: Trade","S: Martial Arts [Unarmed]","S: Martial Arts [Ranged]","S: Smithing","TG: Water Shūji 2","T: Skulk","T: Lord Hida’s Grip"],"exp":24},
-            {"list":["SG: Martial","S: Command","S: Skulduggery","S: Survival","TG: Kata 3","T: Deadly Sting","T: Touchstone of Courage"],"exp":32},
-            {"list":["SG: Scholar","S: Command","S: Martial Arts [Ranged]","S: Tactics","TG: Air Shūji 4","T: Noxious Cloud","T: Crashing Wave Style"],"exp":44},
-            {"list":["SG: Martial","S: Command","S: Smithing","S: Survival","TG: Kata 5","T: Rouse the Soul","T: Silencing Stroke"],"exp":60}
+            {"list":["SG: martial","S: medicine","S: survival","S: theology","TG: kata 1","T: Threshold Barrier","T: Slippery Maneuvers"],"exp":20},
+            {"list":["SG: trade","S: martial arts [unarmed]","S: martial arts [ranged]","S: smithing","TG: water shūji 2","T: Skulk","T: Lord Hida’s Grip"],"exp":24},
+            {"list":["SG: martial","S: command","S: skulduggery","S: survival","TG: kata 3","T: Deadly Sting","T: Touchstone of Courage"],"exp":32},
+            {"list":["SG: scholar","S: command","S: martial arts [ranged]","S: tactics","TG: air shūji 4","T: Noxious Cloud","T: Crashing Wave Style"],"exp":44},
+            {"list":["SG: martial","S: command","S: smithing","S: survival","TG: kata 5","T: Rouse the Soul","T: Silencing Stroke"],"exp":60}
         ]
     },
     "Kaiu":{
-        "ringRefs":["Earth","Fire"],
-        "startingSkillRefs":[["Command","Design","Labor","Martial Arts [Ranged]","Medicine","Smithing","Theology"],5],
+        "ringRefs":["earth","fire"],
+        "startingSkillRefs":[["command","design","labor","martial arts [ranged]","medicine","smithing","theology"],5],
         "honor":40,
-        "techniqueTypeRefs":["Kata","Ritual","Shūji"],
+        "techniqueTypeRefs":["kata","ritual","shūji"],
         "startingTechniqueRefs":[
             "Tactical Assessment",
             "Stirring the Embers",
@@ -75,18 +75,18 @@
             "Traveling pack"
         ],
         "curriculum":[
-            {"list":["SG: Trade","S: Martial Arts [Ranged]","S: Smithing","S: Tactics","TG: Earth Shūji 1","T: Pelting Hail Style","T: Hawk’s Precision"],"exp":20},
-            {"list":["SG: Martial","S: Command","S: Medicine","S: Smithing","TG: Kata 2","T: Battle in the Mind","T: Noxious Cloud"],"exp":24},
-            {"list":["SG: Social","S: Government","S: Martial Arts [Ranged]","S: Smithing","TG: Water Shūji 3","T: Pillar of Calm","T: Flowing Water Strike"],"exp":32},
-            {"list":["SG: Artisan","S: Command","S: Labor","S: Tactics","TG: Fire Shūji 4","T: Soul Sunder","T: Iron in the Mountains Style"],"exp":44},
-            {"list":["SG: Scholar","S: Command","S: Smithing","S: Tactics","TG: Earth Shūji 5","T: Sear the Wound","T: Pin the Fan"],"exp":60}
+            {"list":["SG: trade","S: martial arts [ranged]","S: smithing","S: tactics","TG: earth shūji 1","T: Pelting Hail Style","T: Hawk’s Precision"],"exp":20},
+            {"list":["SG: martial","S: command","S: medicine","S: smithing","TG: kata 2","T: Battle in the Mind","T: Noxious Cloud"],"exp":24},
+            {"list":["SG: social","S: government","S: martial arts [ranged]","S: smithing","TG: water shūji 3","T: Pillar of Calm","T: Flowing Water Strike"],"exp":32},
+            {"list":["SG: artisan","S: command","S: labor","S: tactics","TG: fire shūji 4","T: Soul Sunder","T: Iron in the Mountains Style"],"exp":44},
+            {"list":["SG: scholar","S: command","S: smithing","S: tactics","TG: earth shūji 5","T: Sear the Wound","T: Pin the Fan"],"exp":60}
         ]
     },
     "Kuni":{
-        "ringRefs":["Earth","Fire"],
-        "startingSkillRefs":[["Martial Arts [Melee]","Medicine","Sentiment","Skulduggery","Survival","Theology"],3],
+        "ringRefs":["earth","fire"],
+        "startingSkillRefs":[["martial arts [melee]","medicine","sentiment","skulduggery","survival","theology"],3],
         "honor":35,
-        "techniqueTypeRefs":["Invocation","Kata","Ritual"],
+        "techniqueTypeRefs":["invocation","kata","ritual"],
         "startingTechniqueRefs":[
             [["Striking as Earth","Striking as Fire"],1],
             "Armor of Earth",
@@ -103,18 +103,18 @@
             "Traveling pack"
         ],
         "curriculum":[
-            {"list":["SG: Martial","S: Skulduggery","S: Survival","S: Theology","TG: Earth Invocation 1","T: Bind the Shadow","T: Biting Steel"],"exp":20},
-            {"list":["SG: Scholar","S: Command","S: Performance","S: Skulduggery","TG: Water Invocation 2","T: Crimson Leaves Strike","T: Symbol of Earth"],"exp":24},
-            {"list":["SG: Trade","S: Martial Arts [Unarmed]","S: Sentiment","S: Theology","TG: Fire Invocation 3","T: Rise, Earth","T: Open Hand Style"],"exp":32},
-            {"list":["SG: Martial","S: Medicine","S: Survival","S: Theology","TG: Earth Invocation 4","T: Tomb of Jade","T: Flowing Water Strike"],"exp":44},
-            {"list":["SG: Social","S: Government","S: Theology","S: Tactics","TG: Air Invocation 5","T: Earthquake","T: Soul Sunder"],"exp":60}
+            {"list":["SG: martial","S: skulduggery","S: survival","S: theology","TG: earth invocation 1","T: Bind the Shadow","T: Biting Steel"],"exp":20},
+            {"list":["SG: scholar","S: command","S: performance","S: skulduggery","TG: water invocation 2","T: Crimson Leaves Strike","T: Symbol of Earth"],"exp":24},
+            {"list":["SG: trade","S: martial arts [unarmed]","S: sentiment","S: theology","TG: fire invocation 3","T: Rise, Earth","T: Open Hand Style"],"exp":32},
+            {"list":["SG: martial","S: medicine","S: survival","S: theology","TG: earth invocation 4","T: Tomb of Jade","T: Flowing Water Strike"],"exp":44},
+            {"list":["SG: social","S: government","S: theology","S: tactics","TG: air invocation 5","T: Earthquake","T: Soul Sunder"],"exp":60}
         ]
     },
     "Yasuki":{
-        "ringRefs":["Air","Earth"],
-        "startingSkillRefs":[["Commerce","Composition","Courtesy","Culture","Design","Government","Martial Arts [Ranged]"],5],
+        "ringRefs":["air","earth"],
+        "startingSkillRefs":[["commerce","composition","courtesy","culture","design","government","martial arts [ranged]"],5],
         "honor":40,
-        "techniqueTypeRefs":["Kata","Ritual","Shūji"],
+        "techniqueTypeRefs":["kata","ritual","shūji"],
         "startingTechniqueRefs":[
             "Artisan’s Appraisal",
             [["Rustling of Leaves","Well of Desire"],1]
@@ -130,18 +130,18 @@
             "Traveling pack"
         ],
         "curriculum":[
-            {"list":["SG: Trade","S: Command","S: Design","S: Government","TG: Earth Shūji 1","T: Tributaries of Trade","T: All in Jest"],"exp":20},
-            {"list":["SG: Social","S: Commerce","S: Composition","S: Culture","TG: Fire Shūji 2","T: Ebb and Flow","T: Slippery Maneuvers"],"exp":24},
-            {"list":["SG: Scholar","S: Commerce","S: Martial Arts [Ranged]","S: Seafaring","TG: Air Shūji 3","T: Pillar of Calm","T: Lord Hida’s Grip"],"exp":32},
-            {"list":["SG: Trade","S: Command","S: Government","S: Sentiment","TG: Water Shūji 4","T: Buoyant Arrival","T: Bravado"],"exp":44},
-            {"list":["SG: Social","S: Commerce","S: Culture","S: Design","TG: Void Shūji 5","T: The Immovable Hand of Peace","T: Lady Doji’s Decree"],"exp":60}
+            {"list":["SG: trade","S: command","S: design","S: government","TG: earth shūji 1","T: Tributaries of Trade","T: All in Jest"],"exp":20},
+            {"list":["SG: social","S: commerce","S: composition","S: culture","TG: fire shūji 2","T: Ebb and Flow","T: Slippery Maneuvers"],"exp":24},
+            {"list":["SG: scholar","S: commerce","S: martial arts [ranged]","S: seafaring","TG: air shūji 3","T: Pillar of Calm","T: Lord Hida’s Grip"],"exp":32},
+            {"list":["SG: trade","S: command","S: government","S: sentiment","TG: water shūji 4","T: Buoyant Arrival","T: Bravado"],"exp":44},
+            {"list":["SG: social","S: commerce","S: culture","S: design","TG: void shūji 5","T: The Immovable Hand of Peace","T: Lady Doji’s Decree"],"exp":60}
         ]
     },
     "Asahina":{
-        "ringRefs":["Air","Fire"],
-        "startingSkillRefs":[["Aesthetics","Courtesy","Culture","Design","Games","Theology"],3],
+        "ringRefs":["air","fire"],
+        "startingSkillRefs":[["aesthetics","courtesy","culture","design","games","theology"],3],
         "honor":50,
-        "techniqueTypeRefs":["Invocation","Ritual","Shūji"],
+        "techniqueTypeRefs":["invocation","ritual","shūji"],
         "traditionRef":"elemental",
         "startingTechniqueRefs":[
             [["Blessed Wind","Armor of Radiance","Inari’s Blessing","Reflections of P’an Ku","Token of Memory"],3],
@@ -158,18 +158,18 @@
             "Traveling pack"
         ],
         "curriculum":[
-            {"list":["SG: Artisan","S: Courtesy","S: Culture","S: Theology","TG: Air Invocation 1","T: Path to Inner Peace","T: Artisan’s Appraisal"],"exp":20},
-            {"list":["SG: Scholar","S: Aesthetics","S: Design","S: Performance","TG: Water Invocation 2","T: Grasp of the Air Dragon","T: Tea Ceremony"],"exp":24},
-            {"list":["SG: Social","S: Aesthetics","S: Design","S: Theology","TG: Fire Invocation 3","T: Wings of the Phoenix","T: Vapor of Nightmares"],"exp":32},
-            {"list":["SG: Artisan","S: Fitness","S: Performance","S: Theology","TG: Water Invocation 4","T: Bend with the Storm","T: Rise, Air"],"exp":44},
-            {"list":["SG: Scholar","S: Aesthetics","S: Design","S: Performance","TG: Air Invocation 5","T: Ever-Changing Waves","T: Buoyant Arrival"],"exp":60}
+            {"list":["SG: artisan","S: courtesy","S: culture","S: theology","TG: air invocation 1","T: Path to Inner Peace","T: Artisan’s Appraisal"],"exp":20},
+            {"list":["SG: scholar","S: aesthetics","S: design","S: performance","TG: water invocation 2","T: Grasp of the Air Dragon","T: Tea Ceremony"],"exp":24},
+            {"list":["SG: social","S: aesthetics","S: design","S: theology","TG: fire invocation 3","T: Wings of the Phoenix","T: Vapor of Nightmares"],"exp":32},
+            {"list":["SG: artisan","S: fitness","S: performance","S: theology","TG: water invocation 4","T: Bend with the Storm","T: Rise, Air"],"exp":44},
+            {"list":["SG: scholar","S: aesthetics","S: design","S: performance","TG: air invocation 5","T: Ever-Changing Waves","T: Buoyant Arrival"],"exp":60}
         ]
     },
     "Daidoji":{
-        "ringRefs":["Earth","Water"],
-        "startingSkillRefs":[["Command","Courtesy","Culture","Fitness","Government","Martial Arts [Melee]","Tactics"],5],
+        "ringRefs":["earth","water"],
+        "startingSkillRefs":[["command","courtesy","culture","fitness","government","martial arts [melee]","tactics"],5],
         "honor":55,
-        "techniqueTypeRefs":["Kata","Ritual","Shūji"],
+        "techniqueTypeRefs":["kata","ritual","shūji"],
         "startingTechniqueRefs":[
             "Iron Forest Style",
             [["Striking as Earth","Striking as Water"],1]
@@ -187,18 +187,18 @@
             "Traveling pack"
         ],
         "curriculum":[
-            {"list":["SG: Martial","S: Courtesy","S: Government","S: Sentiment","TG: Kata 1","T: Crescent Moon Style","T: Stonewall Tactics"],"exp":20},
-            {"list":["SG: Scholar","S: Courtesy","S: Martial Arts [Melee]","S: Tactics","TG: Earth Shūji 2","T: Flowing Water Strike","T: Lady Doji’s Decree"],"exp":24},
-            {"list":["SG: Martial","S: Command","S: Courtesy","S: Sentiment","TG: Kata 3","T: Crashing Wave Style","T: Ebb and Flow"],"exp":32},
-            {"list":["SG: Social","S: Fitness","S: Martial Arts [Melee]","S: Tactics","TG: Air Shūji 4","T: Striking as Void","T: A Samurai’s Fate"],"exp":44},
-            {"list":["SG: Martial","S: Aesthetics","S: Culture","S: Government","TG: Kata 5","T: The Immovable Hand of Peace","T: Rouse the Soul"],"exp":60}
+            {"list":["SG: martial","S: courtesy","S: government","S: sentiment","TG: kata 1","T: Crescent Moon Style","T: Stonewall Tactics"],"exp":20},
+            {"list":["SG: scholar","S: courtesy","S: martial arts [melee]","S: tactics","TG: earth shūji 2","T: Flowing Water Strike","T: Lady Doji’s Decree"],"exp":24},
+            {"list":["SG: martial","S: command","S: courtesy","S: sentiment","TG: kata 3","T: Crashing Wave Style","T: Ebb and Flow"],"exp":32},
+            {"list":["SG: social","S: fitness","S: martial arts [melee]","S: tactics","TG: air shūji 4","T: Striking as Void","T: A Samurai’s Fate"],"exp":44},
+            {"list":["SG: martial","S: aesthetics","S: culture","S: government","TG: kata 5","T: The Immovable Hand of Peace","T: Rouse the Soul"],"exp":60}
         ]
     },
     "Doji":{
-        "ringRefs":["Air","Water"],
-        "startingSkillRefs":[["Aesthetics","Composition","Courtesy","Culture","Design","Government","Martial Arts [Ranged]"],5],
+        "ringRefs":["air","water"],
+        "startingSkillRefs":[["aesthetics","composition","courtesy","culture","design","government","martial arts [ranged]"],5],
         "honor":50,
-        "techniqueTypeRefs":["Kata","Ritual","Shūji"],
+        "techniqueTypeRefs":["kata","ritual","shūji"],
         "startingTechniqueRefs":[
             [["Cadence","Shallow Waters","Whispers of Court"],1],
             "Lady Doji’s Decree"
@@ -212,18 +212,18 @@
             [["Attendant","Rokugani pony"],1]
         ],
         "curriculum":[
-            {"list":["SG: Social","S: Aesthetics","S: Culture","S: Composition","TG: Air Shūji 1","T: Civility Foremost","T: Tea Ceremony"],"exp":20},
-            {"list":["SG: Scholar","S: Command","S: Courtesy","S: Tactics","TG: Water Shūji 2","T: The Wind Blows Both Ways","T: Artisan’s Appraisal"],"exp":24},
-            {"list":["SG: Artisan","S: Courtesy","S: Games","S: Performance","TG: Earth Shūji 3","T: Regal Bearing","T: Ebb and Flow"],"exp":32},
-            {"list":["SG: Social","S: Government","S: Composition","S: Tactics","TG: Air Shūji 4","T: Bend with the Storm","T: Pillar of Calm"],"exp":44},
-            {"list":["SG: Scholar","S: Aesthetics","S: Courtesy","S: Command","TG: Void Shūji 5","T: Buoyant Arrival","T: The Immovable Hand of Peace"],"exp":60}
+            {"list":["SG: social","S: aesthetics","S: culture","S: composition","TG: air shūji 1","T: Civility Foremost","T: Tea Ceremony"],"exp":20},
+            {"list":["SG: scholar","S: command","S: courtesy","S: tactics","TG: water shūji 2","T: The Wind Blows Both Ways","T: Artisan’s Appraisal"],"exp":24},
+            {"list":["SG: artisan","S: courtesy","S: games","S: performance","TG: earth shūji 3","T: Regal Bearing","T: Ebb and Flow"],"exp":32},
+            {"list":["SG: social","S: government","S: composition","S: tactics","TG: air shūji 4","T: Bend with the Storm","T: Pillar of Calm"],"exp":44},
+            {"list":["SG: scholar","S: aesthetics","S: courtesy","S: command","TG: void shūji 5","T: Buoyant Arrival","T: The Immovable Hand of Peace"],"exp":60}
         ]
     },
     "Kakita":{
-        "ringRefs":["Air","Earth"],
-        "startingSkillRefs":[["Courtesy","Design","Fitness","Martial Arts [Melee]","Meditation","Sentiment","Smithing"],5],
+        "ringRefs":["air","earth"],
+        "startingSkillRefs":[["courtesy","design","fitness","martial arts [melee]","meditation","sentiment","smithing"],5],
         "honor":50,
-        "techniqueTypeRefs":["Kata","Ritual","Shūji"],
+        "techniqueTypeRefs":["kata","ritual","shūji"],
         "startingTechniqueRefs":[
             "Iaijutsu Cut: Rising Blade",
             [["Shallow Waters","Weight of Duty"],1]
@@ -239,18 +239,18 @@
             [["Attendant","Rokugani pony"],1]
         ],
         "curriculum":[
-            {"list":["SG: Martial","S: Aesthetics","S: Courtesy","S: Sentiment","TG: Kata 1","T: Iaijutsu Cut: Crossing Blade","T: Cadence"],"exp":20},
-            {"list":["SG: Scholar","S: Martial Arts [Melee]","S: Martial Arts [Ranged]","S: Smithing","TG: Kata 2","T: All Arts Are One","T: Thunderclap Strike"],"exp":24},
-            {"list":["SG: Artisan","S: Martial Arts [Melee]","S: Meditation","S: Survival","TG: Air Shūji 3","T: A Samurai’s Fate","T: Heartpiercing Strike"],"exp":32},
-            {"list":["SG: Social","S: Fitness","S: Tactics","S: Martial Arts [Melee]","TG: Kata 4","T: Striking as Void","T: Pillar of Calm"],"exp":44},
-            {"list":["SG: Martial","S: Aesthetics","S: Survival","S: Theology","TG: Fire Shūji 5","T: Soul Sunder","T: Rouse the Soul"],"exp":60}
+            {"list":["SG: martial","S: aesthetics","S: courtesy","S: sentiment","TG: kata 1","T: Iaijutsu Cut: Crossing Blade","T: Cadence"],"exp":20},
+            {"list":["SG: scholar","S: martial arts [melee]","S: martial arts [ranged]","S: smithing","TG: kata 2","T: All Arts Are One","T: Thunderclap Strike"],"exp":24},
+            {"list":["SG: artisan","S: martial arts [melee]","S: meditation","S: survival","TG: air shūji 3","T: A Samurai’s Fate","T: Heartpiercing Strike"],"exp":32},
+            {"list":["SG: social","S: fitness","S: tactics","S: martial arts [melee]","TG: kata 4","T: Striking as Void","T: Pillar of Calm"],"exp":44},
+            {"list":["SG: martial","S: aesthetics","S: survival","S: theology","TG: fire shūji 5","T: Soul Sunder","T: Rouse the Soul"],"exp":60}
         ]
     },
     "Agasha":{
-        "ringRefs":["Earth","Water"],
-        "startingSkillRefs":[["Fitness","Martial Arts [Unarmed]","Medicine","Meditation","Smithing","Theology"],3],
+        "ringRefs":["earth","water"],
+        "startingSkillRefs":[["fitness","martial arts [unarmed]","medicine","meditation","smithing","theology"],3],
         "honor":40,
-        "techniqueTypeRefs":["Invocation","Ritual","Shūji"],
+        "techniqueTypeRefs":["invocation","ritual","shūji"],
         "traditionRef":"alchemy",
         "startingTechniqueRefs":[
             [["The Fires from Within","Tetsubō of Earth"],1],
@@ -270,18 +270,18 @@
             "Journal"
         ],
         "curriculum":[
-            {"list":["SG: Scholar","S: Fitness","S: Meditation","S: Smithing","TG: Earth Invocation 1","T: Heart of the Water Dragon","T: Divination"],"exp":20},
-            {"list":["SG: Trade","S: Fitness","S: Medicine","S: Theology","TG: Water Invocation 2","T: Power of the Earth Dragon","T: Touchstone of Courage"],"exp":24},
-            {"list":["SG: Martial","S: Command","S: Medicine","S: Theology","TG: Fire Invocation 3","T: Rise, Earth","T: Earth Becomes Sky"],"exp":32},
-            {"list":["SG: Scholar","S: Meditation","S: Smithing","S: Survival","TG: Earth Invocation 4","T: Ever-Changing Waves","T: Rise, Water"],"exp":44},
-            {"list":["SG: Martial","S: Command","S: Medicine","S: Theology","TG: Water Invocation 5","T: Earthquake","T: Sear the Wound"],"exp":60}
+            {"list":["SG: scholar","S: fitness","S: meditation","S: smithing","TG: earth invocation 1","T: Heart of the Water Dragon","T: Divination"],"exp":20},
+            {"list":["SG: trade","S: fitness","S: medicine","S: theology","TG: water invocation 2","T: Power of the Earth Dragon","T: Touchstone of Courage"],"exp":24},
+            {"list":["SG: martial","S: command","S: medicine","S: theology","TG: fire invocation 3","T: Rise, Earth","T: Earth Becomes Sky"],"exp":32},
+            {"list":["SG: scholar","S: meditation","S: smithing","S: survival","TG: earth invocation 4","T: Ever-Changing Waves","T: Rise, Water"],"exp":44},
+            {"list":["SG: martial","S: command","S: medicine","S: theology","TG: water invocation 5","T: Earthquake","T: Sear the Wound"],"exp":60}
         ]
     },
     "Kitsuki":{
-        "ringRefs":["Air","Earth"],
-        "startingSkillRefs":[["Culture","Government","Martial Arts [Melee]","Medicine","Sentiment","Skulduggery","Survival"],5],
+        "ringRefs":["air","earth"],
+        "startingSkillRefs":[["culture","government","martial arts [melee]","medicine","sentiment","skulduggery","survival"],5],
         "honor":45,
-        "techniqueTypeRefs":["Kata","Ritual","Shūji"],
+        "techniqueTypeRefs":["kata","ritual","shūji"],
         "startingTechniqueRefs":[
             [["Striking as Air","Tactical Assessment"],1],
             "Shallow Waters"
@@ -296,18 +296,18 @@
             "Journal of observations"
         ],
         "curriculum":[
-            {"list":["SG: Scholar","S: Fitness","S: Martial Arts [Melee]","S: Skulduggery","TG: Fire Shūji 1","T: Slippery Maneuvers","T: Honest Assessment"],"exp":20},
-            {"list":["SG: Martial","S: Command","S: Sentiment","S: Survival","TG: Kata 2","T: All Arts Are One","T: Feigned Opening"],"exp":24},
-            {"list":["SG: Scholar","S: Martial Arts [Melee]","S: Meditation","S: Survival","TG: Earth Shūji 3","T: Regal Bearing","T: Battle in the Mind"],"exp":32},
-            {"list":["SG: Martial","S: Sentiment","S: Medicine","S: Skulduggery","TG: Kata 4","T: Sear the Wound","T: Bravado"],"exp":44},
-            {"list":["SG: Social","S: Sentiment","S: Martial Arts [Melee]","S: Skulduggery","TG: Fire Shūji 5","T: Wolf’s Proposal","T: Crashing Wave Style"],"exp":60}
+            {"list":["SG: scholar","S: fitness","S: martial arts [melee]","S: skulduggery","TG: fire shūji 1","T: Slippery Maneuvers","T: Honest Assessment"],"exp":20},
+            {"list":["SG: martial","S: command","S: sentiment","S: survival","TG: kata 2","T: All Arts Are One","T: Feigned Opening"],"exp":24},
+            {"list":["SG: scholar","S: martial arts [melee]","S: meditation","S: survival","TG: earth shūji 3","T: Regal Bearing","T: Battle in the Mind"],"exp":32},
+            {"list":["SG: martial","S: sentiment","S: medicine","S: skulduggery","TG: kata 4","T: Sear the Wound","T: Bravado"],"exp":44},
+            {"list":["SG: social","S: sentiment","S: martial arts [melee]","S: skulduggery","TG: fire shūji 5","T: Wolf’s Proposal","T: Crashing Wave Style"],"exp":60}
         ]
     },
     "Mirumoto":{
-        "ringRefs":["Earth","Fire"],
-        "startingSkillRefs":[["Command","Composition","Fitness","Martial Arts [Melee]","Meditation","Tactics","Theology"],5],
+        "ringRefs":["earth","fire"],
+        "startingSkillRefs":[["command","composition","fitness","martial arts [melee]","meditation","tactics","theology"],5],
         "honor":50,
-        "techniqueTypeRefs":["Kata","Ritual","Shūji"],
+        "techniqueTypeRefs":["kata","ritual","shūji"],
         "startingTechniqueRefs":[
             [["Striking as Fire","Striking as Water","Striking as Earth"],1],
             "Dazzling Performance"
@@ -321,18 +321,18 @@
             "Traveling pack"
         ],
         "curriculum":[
-            {"list":["SG: Martial","S: Composition","S: Labor","S: Medicine","TG: Kata 1","T: Iaijutsu Cut: Rising Blade","T: Stirring the Embers"],"exp":20},
-            {"list":["SG: Trade","S: Command","S: Martial Arts [Melee]","S: Meditation","TG: Kata 2","T: Heartpiercing Strike","T: Slippery Maneuvers"],"exp":24},
-            {"list":["SG: Martial","S: Composition","S: Smithing","S: Theology","TG: Kata 3","T: Pillar of Calm","T: Commune with the Spirits"],"exp":32},
-            {"list":["SG: Scholar","S: Command","S: Martial Arts [Melee]","S: Meditation","TG: Earth Shūji 4","T: Striking as Void","T: Crashing Wave Style"],"exp":44},
-            {"list":["SG: Martial","S: Composition","S: Medicine","S: Survival","TG: Kata 5","T: Sear the Wound","T: Rouse the Soul"],"exp":60}
+            {"list":["SG: martial","S: composition","S: labor","S: medicine","TG: kata 1","T: Iaijutsu Cut: Rising Blade","T: Stirring the Embers"],"exp":20},
+            {"list":["SG: trade","S: command","S: martial arts [melee]","S: meditation","TG: kata 2","T: Heartpiercing Strike","T: Slippery Maneuvers"],"exp":24},
+            {"list":["SG: martial","S: composition","S: smithing","S: theology","TG: kata 3","T: Pillar of Calm","T: Commune with the Spirits"],"exp":32},
+            {"list":["SG: scholar","S: command","S: martial arts [melee]","S: meditation","TG: earth shūji 4","T: Striking as Void","T: Crashing Wave Style"],"exp":44},
+            {"list":["SG: martial","S: composition","S: medicine","S: survival","TG: kata 5","T: Sear the Wound","T: Rouse the Soul"],"exp":60}
         ]
     },
     "Togashi":{
-        "ringRefs":["Earth","Void"],
-        "startingSkillRefs":[["Fitness","Martial Arts [Melee]","Martial Arts [Unarmed]","Meditation","Survival","Theology"],4],
+        "ringRefs":["earth","void"],
+        "startingSkillRefs":[["fitness","martial arts [melee]","martial arts [unarmed]","meditation","survival","theology"],4],
         "honor":40,
-        "techniqueTypeRefs":["Kihō","Shūji","Ritual"],
+        "techniqueTypeRefs":["kihō","shūji","ritual"],
         "startingTechniqueRefs":[
             [["Earthen Fist","Earth Needs No Eyes","Flame Fist","Ki Protection","Water Fist"],1],
             "Lord Togashi’s Insight"
@@ -343,18 +343,18 @@
             "Traveling pack"
         ],
         "curriculum":[
-            {"list":["SG: Scholar","S: Martial Arts [Unarmed]","S: Fitness","S: Survival","TG: Fire Kihō 1","T: Way of the Earthquake","T: Honest Assessment"],"exp":20},
-            {"list":["SG: Martial","S: Command","S: Composition","S: Survival","TG: Water Kihō 2","T: Open Hand Style","T: Stirring the Embers"],"exp":24},
-            {"list":["SG: Scholar","S: Martial Arts [Unarmed]","S: Labor","S: Meditation","TG: Air Kihō 3","T: Death Touch","T: All Arts Are One"],"exp":32},
-            {"list":["SG: Martial","S: Labor","S: Medicine","S: Survival","TG: Earth Kihō 4","T: Touch the Void Dragon","T: Pillar of Calm"],"exp":44},
-            {"list":["SG: Scholar","S: Meditation","S: Martial Arts [Unarmed]","S: Survival","TG: Void Kihō 5","TG: Ritual 5","T: Rouse the Soul"],"exp":60}
+            {"list":["SG: scholar","S: martial arts [unarmed]","S: fitness","S: survival","TG: fire kihō 1","T: Way of the Earthquake","T: Honest Assessment"],"exp":20},
+            {"list":["SG: martial","S: command","S: composition","S: survival","TG: water kihō 2","T: Open Hand Style","T: Stirring the Embers"],"exp":24},
+            {"list":["SG: scholar","S: martial arts [unarmed]","S: labor","S: meditation","TG: air kihō 3","T: Death Touch","T: All Arts Are One"],"exp":32},
+            {"list":["SG: martial","S: labor","S: medicine","S: survival","TG: earth kihō 4","T: Touch the Void Dragon","T: Pillar of Calm"],"exp":44},
+            {"list":["SG: scholar","S: meditation","S: martial arts [unarmed]","S: survival","TG: void kihō 5","TG: ritual 5","T: Rouse the Soul"],"exp":60}
         ]
     },
     "Akodo":{
-        "ringRefs":["Earth","Water"],
-        "startingSkillRefs":[["Command","Fitness","Government","Martial Arts [Melee]","Martial Arts [Ranged]","Meditation","Tactics"],5],
+        "ringRefs":["earth","water"],
+        "startingSkillRefs":[["command","fitness","government","martial arts [melee]","martial arts [ranged]","meditation","tactics"],5],
         "honor":50,
-        "techniqueTypeRefs":["Kata","Ritual","Shūji"],
+        "techniqueTypeRefs":["kata","ritual","shūji"],
         "startingTechniqueRefs":[
             [["Striking as Earth","Striking as Water"],1],
             "Lord Akodo’s Roar"
@@ -372,18 +372,18 @@
             "Traveling pack"
         ],
         "curriculum":[
-            {"list":["SG: Martial","S: Government","S: Command","S: Performance","TG: Kata 1","T: Iron Forest Style","T: Honest Assessment"],"exp":20},
-            {"list":["SG: Martial","S: Command","S: Medicine","S: Survival","TG: Kata 2","T: Rallying Cry","T: Lightning Raid"],"exp":24},
-            {"list":["SG: Martial","S: Government","S: Composition","S: Sentiment","TG: Kata 3","T: A Samurai’s Fate","T: Touchstone of Courage"],"exp":32},
-            {"list":["SG: Social","S: Government","S: Martial Arts [Melee]","S: Tactics","TG: Fire Shūji 4","T: Rouse the Soul","T: Disappearing World Style"],"exp":44},
-            {"list":["SG: Scholar","S: Martial Arts [Melee]","S: Meditation","S: Tactics","TG: Earth Shūji 5","T: Bend with the Storm","T: Striking as Void"],"exp":60}
+            {"list":["SG: martial","S: government","S: command","S: performance","TG: kata 1","T: Iron Forest Style","T: Honest Assessment"],"exp":20},
+            {"list":["SG: martial","S: command","S: medicine","S: survival","TG: kata 2","T: Rallying Cry","T: Lightning Raid"],"exp":24},
+            {"list":["SG: martial","S: government","S: composition","S: sentiment","TG: kata 3","T: A Samurai’s Fate","T: Touchstone of Courage"],"exp":32},
+            {"list":["SG: social","S: government","S: martial arts [melee]","S: tactics","TG: fire shūji 4","T: Rouse the Soul","T: Disappearing World Style"],"exp":44},
+            {"list":["SG: scholar","S: martial arts [melee]","S: meditation","S: tactics","TG: earth shūji 5","T: Bend with the Storm","T: Striking as Void"],"exp":60}
         ]
     },
     "Ikoma":{
-        "ringRefs":["Fire","Water"],
-        "startingSkillRefs":[["Composition","Courtesy","Culture","Martial Arts [Ranged]","Performance","Sentiment","Tactics"],5],
+        "ringRefs":["fire","water"],
+        "startingSkillRefs":[["composition","courtesy","culture","martial arts [ranged]","performance","sentiment","tactics"],5],
         "honor":45,
-        "techniqueTypeRefs":["Kata","Ritual","Shūji"],
+        "techniqueTypeRefs":["kata","ritual","shūji"],
         "startingTechniqueRefs":[
             "Warrior’s Resolve",
             "Fanning the Flames",
@@ -400,18 +400,18 @@
             "Journal"
         ],
         "curriculum":[
-            {"list":["SG: Social","S: Composition","S: Culture","S: Martial Arts [Melee]","TG: Fire Shūji 1","T: Slippery Maneuvers","T: Soaring Slice"],"exp":20},
-            {"list":["SG: Martial","S: Command","S: Performance","S: Sentiment","TG: Water Shūji 2","T: Dazzling Performance","T: Spinning Blades Style"],"exp":24},
-            {"list":["SG: Scholar","S: Composition","S: Performance","S: Survival","TG: Earth Shūji 3","T: Rallying Cry","T: Regal Bearing"],"exp":32},
-            {"list":["SG: Social","S: Government","S: Sentiment","S: Martial Arts [Ranged]","TG: Air Shūji 4","T: Sear the Wound","T: Pillar of Calm"],"exp":44},
-            {"list":["SG: Scholar","S: Command","S: Performance","S: Meditation","TG: Void Shūji 5","T: Bend with the Storm","T: Buoyant Arrival"],"exp":60}
+            {"list":["SG: social","S: composition","S: culture","S: martial arts [melee]","TG: fire shūji 1","T: Slippery Maneuvers","T: Soaring Slice"],"exp":20},
+            {"list":["SG: martial","S: command","S: performance","S: sentiment","TG: water shūji 2","T: Dazzling Performance","T: Spinning Blades Style"],"exp":24},
+            {"list":["SG: scholar","S: composition","S: performance","S: survival","TG: earth shūji 3","T: Rallying Cry","T: Regal Bearing"],"exp":32},
+            {"list":["SG: social","S: government","S: sentiment","S: martial arts [ranged]","TG: air shūji 4","T: Sear the Wound","T: Pillar of Calm"],"exp":44},
+            {"list":["SG: scholar","S: command","S: performance","S: meditation","TG: void shūji 5","T: Bend with the Storm","T: Buoyant Arrival"],"exp":60}
         ]
     },
     "Kitsu":{
-        "ringRefs":["Void","Water"],
-        "startingSkillRefs":[["Courtesy","Government","Meditation","Performance","Survival","Theology"],3],
+        "ringRefs":["void","water"],
+        "startingSkillRefs":[["courtesy","government","meditation","performance","survival","theology"],3],
         "honor":50,
-        "techniqueTypeRefs":["Invocation","Ritual","Shūji"],
+        "techniqueTypeRefs":["invocation","ritual","shūji"],
         "traditionRef":"ancestral",
         "startingTechniqueRefs":[
             [["The Rushing Wave","Path to Inner Peace","Biting Steel"],2],
@@ -429,18 +429,18 @@
             "Traveling pack"
         ],
         "curriculum":[
-            {"list":["SG: Scholar","S: Command","S: Meditation","S: Performance","TG: Water Invocation 1","T: Courage of Seven Thunders","T: Heart of the Water Dragon"],"exp":20},
-            {"list":["SG: Social","S: Government","S: Fitness","S: Theology","TG: Air Invocation 2","T: Hands of the Tides","T: Fanning the Flames"],"exp":24},
-            {"list":["SG: Martial","S: Government","S: Survival","S: Theology","TG: Earth Invocation 3","T: Rise, Earth","T: Ebb and Flow"],"exp":32},
-            {"list":["SG: Scholar","S: Command","S: Meditation","S: Performance","TG: Ritual 4","T: Wrath of Kaze-no-Kami","T: Bravado"],"exp":44},
-            {"list":["SG: Social","S: Government","S: Sentiment","S: Theology","TG: Fire Invocation 5","T: Sear the Wound","T: Buoyant Arrival"],"exp":60}
+            {"list":["SG: scholar","S: command","S: meditation","S: performance","TG: water invocation 1","T: Courage of Seven Thunders","T: Heart of the Water Dragon"],"exp":20},
+            {"list":["SG: social","S: government","S: fitness","S: theology","TG: air invocation 2","T: Hands of the Tides","T: Fanning the Flames"],"exp":24},
+            {"list":["SG: martial","S: government","S: survival","S: theology","TG: earth invocation 3","T: Rise, Earth","T: Ebb and Flow"],"exp":32},
+            {"list":["SG: scholar","S: command","S: meditation","S: performance","TG: ritual 4","T: Wrath of Kaze-no-Kami","T: Bravado"],"exp":44},
+            {"list":["SG: social","S: government","S: sentiment","S: theology","TG: fire invocation 5","T: Sear the Wound","T: Buoyant Arrival"],"exp":60}
         ]
     },
     "Matsu":{
-        "ringRefs":["Earth","Fire"],
-        "startingSkillRefs":[["Command","Fitness","Labor","Martial Arts [Melee]","Martial Arts [Ranged]","Martial Arts [Unarmed]","Survival"],5],
+        "ringRefs":["earth","fire"],
+        "startingSkillRefs":[["command","fitness","labor","martial arts [melee]","martial arts [ranged]","martial arts [unarmed]","survival"],5],
         "honor":55,
-        "techniqueTypeRefs":["Kata","Ritual","Shūji"],
+        "techniqueTypeRefs":["kata","ritual","shūji"],
         "startingTechniqueRefs":[
             [["Rushing Avalanche Style","Spinning Blades Style"],1],
             "Stirring the Embers"
@@ -457,18 +457,18 @@
             "Traveling pack"
         ],
         "curriculum":[
-            {"list":["SG: Martial","S: Command","S: Labor","S: Survival","TG: Kata 1","T: Lord Akodo’s Roar","T: Stonewall Tactics"],"exp":20},
-            {"list":["SG: Martial","S: Command","S: Medicine","S: Smithing","TG: Kata 2","T: Heartpiercing Strike","T: Fanning the Flames"],"exp":24},
-            {"list":["SG: Martial","S: Composition","S: Government","S: Theology","TG: Kata 3","T: Disappearing World Style","T: Rallying Cry"],"exp":32},
-            {"list":["SG: Martial","S: Command","S: Courtesy","S: Culture","TG: Kata 4","T: Striking as Void","T: Bravado"],"exp":44},
-            {"list":["SG: Martial","S: Labor","S: Medicine","S: Smithing","TG: Kata 5","T: Rouse the Soul","T: Sear the Wound"],"exp":60}
+            {"list":["SG: martial","S: command","S: labor","S: survival","TG: kata 1","T: Lord Akodo’s Roar","T: Stonewall Tactics"],"exp":20},
+            {"list":["SG: martial","S: command","S: medicine","S: smithing","TG: kata 2","T: Heartpiercing Strike","T: Fanning the Flames"],"exp":24},
+            {"list":["SG: martial","S: composition","S: government","S: theology","TG: kata 3","T: Disappearing World Style","T: Rallying Cry"],"exp":32},
+            {"list":["SG: martial","S: command","S: courtesy","S: culture","TG: kata 4","T: Striking as Void","T: Bravado"],"exp":44},
+            {"list":["SG: martial","S: labor","S: medicine","S: smithing","TG: kata 5","T: Rouse the Soul","T: Sear the Wound"],"exp":60}
         ]
     },
     "Asako":{
-        "ringRefs":["Air","Earth"],
-        "startingSkillRefs":[["Culture","Government","Martial Arts [Unarmed]","Medicine","Performance","Sentiment","Theology"],5],
+        "ringRefs":["air","earth"],
+        "startingSkillRefs":[["culture","government","martial arts [unarmed]","medicine","performance","sentiment","theology"],5],
         "honor":45,
-        "techniqueTypeRefs":["Kata","Ritual","Shūji"],
+        "techniqueTypeRefs":["kata","ritual","shūji"],
         "startingTechniqueRefs":[
             "Civility Foremost",
             [["Ancestry Unearthed","Cadence"],1]
@@ -484,18 +484,18 @@
             "Traveling pack"
         ],
         "curriculum":[
-            {"list":["SG: Scholar","S: Courtesy","S: Games","S: Martial Arts [Unarmed]","TG: Earth Shūji 1","T: Open Hand Style","T: Divination"],"exp":20},
-            {"list":["SG: Social","S: Government","S: Medicine","S: Sentiment","TG: Air Shūji 2","T: All Arts Are One","T: Tea Ceremony"],"exp":24},
-            {"list":["SG: Scholar","S: Courtesy","S: Performance","S: Meditation","TG: Fire Shūji 3","T: Pillar of Calm","T: Ebb and Flow"],"exp":32},
-            {"list":["SG: Social","S: Culture","S: Medicine","S: Theology","TG: Earth Shūji 4","T: Cleansing Spirit","T: Wolf’s Proposal"],"exp":44},
-            {"list":["SG: Scholar","S: Courtesy","S: Performance","S: Meditation","TG: Water Shūji 5","T: Still the Elements","T: Bend with the Storm"],"exp":60}
+            {"list":["SG: scholar","S: courtesy","S: games","S: martial arts [unarmed]","TG: earth shūji 1","T: Open Hand Style","T: Divination"],"exp":20},
+            {"list":["SG: social","S: government","S: medicine","S: sentiment","TG: air shūji 2","T: All Arts Are One","T: Tea Ceremony"],"exp":24},
+            {"list":["SG: scholar","S: courtesy","S: performance","S: meditation","TG: fire shūji 3","T: Pillar of Calm","T: Ebb and Flow"],"exp":32},
+            {"list":["SG: social","S: culture","S: medicine","S: theology","TG: earth shūji 4","T: Cleansing Spirit","T: Wolf’s Proposal"],"exp":44},
+            {"list":["SG: scholar","S: courtesy","S: performance","S: meditation","TG: water shūji 5","T: Still the Elements","T: Bend with the Storm"],"exp":60}
         ]
     },
     "Isawa":{
         "ringRefs":["Any two different rings"],
-        "startingSkillRefs":[["Composition","Courtesy","Medicine","Meditation","Performance","Theology"],3],
+        "startingSkillRefs":[["composition","courtesy","medicine","meditation","performance","theology"],3],
         "honor":40,
-        "techniqueTypeRefs":["Invocation","Ritual","Shūji"],
+        "techniqueTypeRefs":["invocation","ritual","shūji"],
         "traditionRef":"elemental",
         "startingTechniqueRefs":[
             [["Extinguish","Grasp of Earth","Path to Inner Peace","Tempest of Air"],3],
@@ -510,18 +510,18 @@
             "Traveling pack"
         ],
         "curriculum":[
-            {"list":["SG: Scholar","S: Composition","S: Command","S: Meditation","TG: Fire Invocation 1","T: Dance of Seasons","T: Cleansing Rite"],"exp":20},
-            {"list":["SG: Scholar","S: Courtesy","S: Meditation","S: Performance","TG: Water Invocation 2","T: Fury of Osano-wo","T: Fanning the Flames"],"exp":24},
-            {"list":["SG: Scholar","S: Composition","S: Meditation","S: Survival","TG: Air Invocation 3","T: Wings of the Phoenix","T: Strike the Tsunami"],"exp":32},
-            {"list":["SG: Martial","S: Government","S: Sentiment","S: Theology","TG: Earth Invocation 4","T: Wrath of Kaze-no-Kami","T: Rise, Flame"],"exp":44},
-            {"list":["SG: Social","S: Composition","S: Sentiment","S: Theology","TG: Fire Invocation 5","T: Earthquake","T: Rouse the Soul"],"exp":60}
+            {"list":["SG: scholar","S: composition","S: command","S: meditation","TG: fire invocation 1","T: Dance of Seasons","T: Cleansing Rite"],"exp":20},
+            {"list":["SG: scholar","S: courtesy","S: meditation","S: performance","TG: water invocation 2","T: Fury of Osano-wo","T: Fanning the Flames"],"exp":24},
+            {"list":["SG: scholar","S: composition","S: meditation","S: survival","TG: air invocation 3","T: Wings of the Phoenix","T: Strike the Tsunami"],"exp":32},
+            {"list":["SG: martial","S: government","S: sentiment","S: theology","TG: earth invocation 4","T: Wrath of Kaze-no-Kami","T: Rise, Flame"],"exp":44},
+            {"list":["SG: social","S: composition","S: sentiment","S: theology","TG: fire invocation 5","T: Earthquake","T: Rouse the Soul"],"exp":60}
         ]
     },
     "Shiba":{
-        "ringRefs":["Earth","Water"],
-        "startingSkillRefs":[["Courtesy","Fitness","Martial Arts [Melee]","Meditation","Survival","Tactics","Theology"],5],
+        "ringRefs":["earth","water"],
+        "startingSkillRefs":[["courtesy","fitness","martial arts [melee]","meditation","survival","tactics","theology"],5],
         "honor":45,
-        "techniqueTypeRefs":["Kata","Ritual","Shūji"],
+        "techniqueTypeRefs":["kata","ritual","shūji"],
         "startingTechniqueRefs":[
             "Lord Shiba’s Valor",
             [["Striking as Earth","Striking as Water"],1]
@@ -535,18 +535,18 @@
             "Traveling pack"
         ],
         "curriculum":[
-            {"list":["SG: Martial","S: Courtesy","S: Sentiment","S: Survival","TG: Kata 1","T: Civility Foremost","T: Stirring the Embers"],"exp":20},
-            {"list":["SG: Scholar","S: Fitness","S: Meditation","S: Martial Arts [Melee]","TG: Kata 2","T: Rallying Cry","T: Slippery Maneuvers"],"exp":24},
-            {"list":["SG: Social","S: Culture","S: Meditation","S: Martial Arts [Melee]","TG: Water Shūji 3","T: A Samurai’s Fate","T: Touchstone of Courage"],"exp":32},
-            {"list":["SG: Scholar","S: Command","S: Martial Arts [Melee]","S: Tactics","TG: Kata 4","T: The Immovable Hand of Peace","T: Touch the Void Dragon"],"exp":44},
-            {"list":["SG: Martial","S: Sentiment","S: Survival","S: Theology","TG: Earth Shūji 5","T: Way of the Edgeless Sword","T: Rouse the Soul"],"exp":60}
+            {"list":["SG: martial","S: courtesy","S: sentiment","S: survival","TG: kata 1","T: Civility Foremost","T: Stirring the Embers"],"exp":20},
+            {"list":["SG: scholar","S: fitness","S: meditation","S: martial arts [melee]","TG: kata 2","T: Rallying Cry","T: Slippery Maneuvers"],"exp":24},
+            {"list":["SG: social","S: culture","S: meditation","S: martial arts [melee]","TG: water shūji 3","T: A Samurai’s Fate","T: Touchstone of Courage"],"exp":32},
+            {"list":["SG: scholar","S: command","S: martial arts [melee]","S: tactics","TG: kata 4","T: The Immovable Hand of Peace","T: Touch the Void Dragon"],"exp":44},
+            {"list":["SG: martial","S: sentiment","S: survival","S: theology","TG: earth shūji 5","T: Way of the Edgeless Sword","T: Rouse the Soul"],"exp":60}
         ]
     },
     "Kaito":{
-        "ringRefs":["Air","Water"],
-        "startingSkillRefs":[["Fitness","Martial Arts [Ranged]","Meditation","Performance","Smithing","Theology"],4],
+        "ringRefs":["air","water"],
+        "startingSkillRefs":[["fitness","martial arts [ranged]","meditation","performance","smithing","theology"],4],
         "honor":45,
-        "techniqueTypeRefs":["Kata","Ritual","Shūji"],
+        "techniqueTypeRefs":["kata","ritual","shūji"],
         "traditionRef":"fortunist",
         "startingTechniqueRefs":[
             "Hawk’s Precision",
@@ -563,18 +563,18 @@
             "Traveling pack"
         ],
         "curriculum":[
-            {"list":["SG: Scholar","S: Fitness","S: Martial Arts [Ranged]","S: Meditation","TG: Air Invocation 1","T: Bind the Shadow","T: Striking as Air"],"exp":20},
-            {"list":["SG: Martial","S: Performance","S: Theology","S: Smithing","TG: Kata 2","T: Grasp of the Air Dragon","T: Divination"],"exp":24},
-            {"list":["SG: Social","S: Labor","S: Medicine","S: Survival","TG: Water Invocation 3","T: Breath of Wind Style","T: Flowing Water Strike"],"exp":32},
-            {"list":["SG: Scholar","S: Fitness","S: Martial Arts [Ranged]","S: Meditation","TG: Kata 4","T: Rise, Air","T: Soul Sunder"],"exp":44},
-            {"list":["SG: Martial","S: Command","S: Sentiment","S: Theology","TG: Fire Invocation 5","T: Tomb of Jade","T: Pin the Fan"],"exp":60}
+            {"list":["SG: scholar","S: fitness","S: martial arts [ranged]","S: meditation","TG: air invocation 1","T: Bind the Shadow","T: Striking as Air"],"exp":20},
+            {"list":["SG: martial","S: performance","S: theology","S: smithing","TG: kata 2","T: Grasp of the Air Dragon","T: Divination"],"exp":24},
+            {"list":["SG: social","S: labor","S: medicine","S: survival","TG: water invocation 3","T: Breath of Wind Style","T: Flowing Water Strike"],"exp":32},
+            {"list":["SG: scholar","S: fitness","S: martial arts [ranged]","S: meditation","TG: kata 4","T: Rise, Air","T: Soul Sunder"],"exp":44},
+            {"list":["SG: martial","S: command","S: sentiment","S: theology","TG: fire invocation 5","T: Tomb of Jade","T: Pin the Fan"],"exp":60}
         ]
     },
     "Bayushi":{
-        "ringRefs":["Air","Fire"],
-        "startingSkillRefs":[["Command","Courtesy","Design","Martial Arts [Unarmed]","Performance","Sentiment","Skulduggery"],5],
+        "ringRefs":["air","fire"],
+        "startingSkillRefs":[["command","courtesy","design","martial arts [unarmed]","performance","sentiment","skulduggery"],5],
         "honor":35,
-        "techniqueTypeRefs":["Kata","Ritual","Shūji"],
+        "techniqueTypeRefs":["kata","ritual","shūji"],
         "startingTechniqueRefs":[
             "Lord Bayushi’s Whispers",
             [["Cadence","Rustling of Leaves"],1]
@@ -589,18 +589,18 @@
             "Traveling pack"
         ],
         "curriculum":[
-            {"list":["SG: Social","S: Sentiment","S: Martial Arts [Unarmed]","S: Skulduggery","TG: Air Shūji 1","T: Fanning the Flames","T: Weight of Duty"],"exp":20},
-            {"list":["SG: Scholar","S: Courtesy","S: Skulduggery","S: Martial Arts [Melee]","TG: Fire Shūji 2","T: Dazzling Performance","T: Veiled Menace Style"],"exp":24},
-            {"list":["SG: Trade","S: Courtesy","S: Culture","S: Sentiment","TG: Water Shūji 3","T: Wolf’s Proposal","T: Skulk"],"exp":32},
-            {"list":["SG: Social","S: Aesthetics","S: Sentiment","S: Medicine","TG: Earth Shūji 4","T: Buoyant Arrival","T: Deadly Sting"],"exp":44},
-            {"list":["SG: Scholar","S: Courtesy","S: Performance","S: Martial Arts [Ranged]","TG: Void Shūji 5","T: Bend with the Storm","T: Sear the Wound"],"exp":60}
+            {"list":["SG: social","S: sentiment","S: martial arts [unarmed]","S: skulduggery","TG: air shūji 1","T: Fanning the Flames","T: Weight of Duty"],"exp":20},
+            {"list":["SG: scholar","S: courtesy","S: skulduggery","S: martial arts [melee]","TG: fire shūji 2","T: Dazzling Performance","T: Veiled Menace Style"],"exp":24},
+            {"list":["SG: trade","S: courtesy","S: culture","S: sentiment","TG: water shūji 3","T: Wolf’s Proposal","T: Skulk"],"exp":32},
+            {"list":["SG: social","S: aesthetics","S: sentiment","S: medicine","TG: earth shūji 4","T: Buoyant Arrival","T: Deadly Sting"],"exp":44},
+            {"list":["SG: scholar","S: courtesy","S: performance","S: martial arts [ranged]","TG: void shūji 5","T: Bend with the Storm","T: Sear the Wound"],"exp":60}
         ]
     },
     "Shosuro":{
-        "ringRefs":["Air","Fire"],
-        "startingSkillRefs":[["Courtesy","Fitness","Games","Martial Arts [Melee]","Martial Arts [Unarmed]","Performance","Skulduggery"],5],
+        "ringRefs":["air","fire"],
+        "startingSkillRefs":[["courtesy","fitness","games","martial arts [melee]","martial arts [unarmed]","performance","skulduggery"],5],
         "honor":30,
-        "techniqueTypeRefs":["Kata","Ritual","Shūji"],
+        "techniqueTypeRefs":["kata","ritual","shūji"],
         "startingTechniqueRefs":[
             "Deadly Sting",
             [["Whispers of Court","Sensational Distraction"],1]
@@ -617,18 +617,18 @@
             "Traveling pack"
         ],
         "curriculum":[
-            {"list":["SG: Martial","S: Courtesy","S: Performance","S: Skulduggery","TG: Kata 1","T: Veiled Menace Style","T: Skulk"],"exp":20},
-            {"list":["SG: Trade","S: Fitness","S: Performance","S: Martial Arts [Unarmed]","TG: Air Shūji 2","T: Lord Bayushi’s Whispers","T: Noxious Cloud"],"exp":24},
-            {"list":["SG: Martial","S: Sentiment","S: Performance","S: Skulduggery","TG: Kata 3","T: Bravado","T: Dazzling Performance"],"exp":32},
-            {"list":["SG: Social","S: Sentiment","S: Martial Arts [Melee]","S: Skulduggery","TG: Air Shūji 4","T: Silencing Stroke","T: A Samurai’s Fate"],"exp":44},
-            {"list":["SG: Martial","S: Courtesy","S: Performance","S: Skulduggery","TG: Kata 5","T: Buoyant Arrival","T: Sear the Wound"],"exp":60}
+            {"list":["SG: martial","S: courtesy","S: performance","S: skulduggery","TG: kata 1","T: Veiled Menace Style","T: Skulk"],"exp":20},
+            {"list":["SG: trade","S: fitness","S: performance","S: martial arts [unarmed]","TG: air shūji 2","T: Lord Bayushi’s Whispers","T: Noxious Cloud"],"exp":24},
+            {"list":["SG: martial","S: sentiment","S: performance","S: skulduggery","TG: kata 3","T: Bravado","T: Dazzling Performance"],"exp":32},
+            {"list":["SG: social","S: sentiment","S: martial arts [melee]","S: skulduggery","TG: air shūji 4","T: Silencing Stroke","T: A Samurai’s Fate"],"exp":44},
+            {"list":["SG: martial","S: courtesy","S: performance","S: skulduggery","TG: kata 5","T: Buoyant Arrival","T: Sear the Wound"],"exp":60}
         ]
     },
     "Soshi":{
-        "ringRefs":["Air","Water"],
-        "startingSkillRefs":[["Courtesy","Fitness","Games","Performance","Skulduggery","Theology"],3],
+        "ringRefs":["air","water"],
+        "startingSkillRefs":[["courtesy","fitness","games","performance","skulduggery","theology"],3],
         "honor":30,
-        "techniqueTypeRefs":["Invocation","Ritual","Shūji"],
+        "techniqueTypeRefs":["invocation","ritual","shūji"],
         "traditionRef":"fortunist",
         "startingTechniqueRefs":[
             [["Bō of Water","Cloak of Night","Nature’s Touch","Token of Memory"],3],
@@ -644,18 +644,18 @@
             "Traveling pack"
         ],
         "curriculum":[
-            {"list":["SG: Trade","S: Courtesy","S: Fitness","S: Theology","TG: Air Invocation 1","T: Mask of Wind","T: Skulk"],"exp":20},
-            {"list":["SG: Social","S: Medicine","S: Sentiment","S: Theology","TG: Water Invocation 2","T: Vapor of Nightmares","T: Lord Bayushi’s Whispers"],"exp":24},
-            {"list":["SG: Scholar","S: Games","S: Courtesy","S: Skulduggery","TG: Air Invocation 3","T: False Realm of the Fox Spirits","T: Noxious Cloud"],"exp":32},
-            {"list":["SG: Martial","S: Performance","S: Sentiment","S: Theology","TG: Earth Invocation 4","T: Deadly Sting","T: Rise, Air"],"exp":44},
-            {"list":["SG: Scholar","S: Courtesy","S: Fitness","S: Skulduggery","TG: Air Invocation 5","T: Buoyant Arrival","T: Silencing Stroke"],"exp":60}
+            {"list":["SG: trade","S: courtesy","S: fitness","S: theology","TG: air invocation 1","T: Mask of Wind","T: Skulk"],"exp":20},
+            {"list":["SG: social","S: medicine","S: sentiment","S: theology","TG: water invocation 2","T: Vapor of Nightmares","T: Lord Bayushi’s Whispers"],"exp":24},
+            {"list":["SG: scholar","S: games","S: courtesy","S: skulduggery","TG: air invocation 3","T: False Realm of the Fox Spirits","T: Noxious Cloud"],"exp":32},
+            {"list":["SG: martial","S: performance","S: sentiment","S: theology","TG: earth invocation 4","T: Deadly Sting","T: Rise, Air"],"exp":44},
+            {"list":["SG: scholar","S: courtesy","S: fitness","S: skulduggery","TG: air invocation 5","T: Buoyant Arrival","T: Silencing Stroke"],"exp":60}
         ]
     },
     "Yogo":{
-        "ringRefs":["Earth","Water"],
-        "startingSkillRefs":[["Composition","Fitness","Martial Arts [Melee]","Martial Arts [Unarmed]","Meditation","Theology"],3],
+        "ringRefs":["earth","water"],
+        "startingSkillRefs":[["composition","fitness","martial arts [melee]","martial arts [unarmed]","meditation","theology"],3],
         "honor":40,
-        "techniqueTypeRefs":["Invocation","Ritual","Shūji"],
+        "techniqueTypeRefs":["invocation","ritual","shūji"],
         "traditionRef":"elemental",
         "startingTechniqueRefs":[
             [["Jade Strike","Grasp of Earth","The Rushing Wave"],2],
@@ -674,18 +674,18 @@
             "Traveling pack"
         ],
         "curriculum":[
-            {"list":["SG: Scholar","S: Composition","S: Martial Arts [Unarmed]","S: Skulduggery","TG: Earth Invocation 1","T: Civility Foremost","T: Path to Inner Peace"],"exp":20},
-            {"list":["SG: Martial","S: Composition","S: Skulduggery","S: Theology","TG: Water Invocation 2","T: Ebb and Flow","T: Embrace of Kenro-Ji-Jin"],"exp":24},
-            {"list":["SG: Artisan","S: Martial Arts [Unarmed]","S: Performance","S: Theology","TG: Fire Invocation 3","T: Open Hand Style","T: Earth Becomes Sky"],"exp":32},
-            {"list":["SG: Scholar","S: Composition","S: Martial Arts [Unarmed]","S: Skulduggery","TG: Air Invocation 4","T: Skulk","T: Rise, Water"],"exp":44},
-            {"list":["SG: Martial","S: Composition","S: Performance","S: Theology","TG: Earth Shūji 5","T: Deadly Sting","T: Tomb of Jade"],"exp":60}
+            {"list":["SG: scholar","S: composition","S: martial arts [unarmed]","S: skulduggery","TG: earth invocation 1","T: Civility Foremost","T: Path to Inner Peace"],"exp":20},
+            {"list":["SG: martial","S: composition","S: skulduggery","S: theology","TG: water invocation 2","T: Ebb and Flow","T: Embrace of Kenro-Ji-Jin"],"exp":24},
+            {"list":["SG: artisan","S: martial arts [unarmed]","S: performance","S: theology","TG: fire invocation 3","T: Open Hand Style","T: Earth Becomes Sky"],"exp":32},
+            {"list":["SG: scholar","S: composition","S: martial arts [unarmed]","S: skulduggery","TG: air invocation 4","T: Skulk","T: Rise, Water"],"exp":44},
+            {"list":["SG: martial","S: composition","S: performance","S: theology","TG: earth shūji 5","T: Deadly Sting","T: Tomb of Jade"],"exp":60}
         ]
     },
     "Ide":{
-        "ringRefs":["Air","Water"],
-        "startingSkillRefs":[["Commerce","Courtesy","Games","Labor","Martial Arts [Ranged]","Medicine","Survival"],5],
+        "ringRefs":["air","water"],
+        "startingSkillRefs":[["commerce","courtesy","games","labor","martial arts [ranged]","medicine","survival"],5],
         "honor":45,
-        "techniqueTypeRefs":["Kata","Ritual","Shūji"],
+        "techniqueTypeRefs":["kata","ritual","shūji"],
         "startingTechniqueRefs":[
             "Tributaries of Trade",
             [["Cadence","Shallow Waters"],1]
@@ -701,18 +701,18 @@
             "Journal"
         ],
         "curriculum":[
-            {"list":["SG: Trade","S: Courtesy","S: Fitness","S: Martial Arts [Ranged]","TG: Air Shūji 1","T: Feigned Opening","T: Hawk’s Precision"],"exp":20},
-            {"list":["SG: Social","S: Commerce","S: Martial Arts [Ranged]","S: Survival","TG: Water Shūji 2","T: Ebb and Flow","T: Lady Shinjo’s Speed"],"exp":24},
-            {"list":["SG: Martial","S: Aesthetics","S: Commerce","S: Games","TG: Earth Shūji 3","T: Pillar of Calm","T: All Arts Are One"],"exp":32},
-            {"list":["SG: Social","S: Aesthetics","S: Martial Arts [Ranged]","S: Sentiment","TG: Fire Shūji 4","T: Sear the Wound","T: Regal Bearing"],"exp":44},
-            {"list":["SG: Trade","S: Command","S: Fitness","S: Games","TG: Void Shūji 5","T: Bend with the Storm","T: The Immovable Hand of Peace"],"exp":60}
+            {"list":["SG: trade","S: courtesy","S: fitness","S: martial arts [ranged]","TG: air shūji 1","T: Feigned Opening","T: Hawk’s Precision"],"exp":20},
+            {"list":["SG: social","S: commerce","S: martial arts [ranged]","S: survival","TG: water shūji 2","T: Ebb and Flow","T: Lady Shinjo’s Speed"],"exp":24},
+            {"list":["SG: martial","S: aesthetics","S: commerce","S: games","TG: earth shūji 3","T: Pillar of Calm","T: All Arts Are One"],"exp":32},
+            {"list":["SG: social","S: aesthetics","S: martial arts [ranged]","S: sentiment","TG: fire shūji 4","T: Sear the Wound","T: Regal Bearing"],"exp":44},
+            {"list":["SG: trade","S: command","S: fitness","S: games","TG: void shūji 5","T: Bend with the Storm","T: The Immovable Hand of Peace"],"exp":60}
         ]
     },
     "Iuchi":{
-        "ringRefs":["Earth","Water"],
-        "startingSkillRefs":[["Aesthetics","Design","Martial Arts [Melee]","Meditation","Survival","Theology"],3],
+        "ringRefs":["earth","water"],
+        "startingSkillRefs":[["aesthetics","design","martial arts [melee]","meditation","survival","theology"],3],
         "honor":40,
-        "techniqueTypeRefs":["Invocation","Ritual","Shūji"],
+        "techniqueTypeRefs":["invocation","ritual","shūji"],
         "traditionRef":"foreign",
         "startingTechniqueRefs":[
             [["Grasp of Earth","Jurōjin’s Balm","The Rushing Wave"],2],
@@ -729,18 +729,18 @@
             "Unicorn warhorse"
         ],
         "curriculum":[
-            {"list":["SG: Scholar","S: Courtesy","S: Design","S: Survival","TG: Water Invocation 1","T: Sympathetic Energies","T: Cleansing Rite"],"exp":20},
-            {"list":["SG: Martial","S: Design","S: Theology","S: Survival","TG: Earth Invocation 2","T: Hands of the Tides","T: Artisan’s Appraisal"],"exp":24},
-            {"list":["SG: Artisan","S: Performance","S: Survival","S: Theology","TG: Ritual 3","T: Rise, Earth","T: Dazzling Performance"],"exp":32},
-            {"list":["SG: Social","S: Medicine","S: Survival","S: Theology","TG: Air Invocation 4","T: Rouse the Soul","T: A Samurai’s Fate"],"exp":44},
-            {"list":["SG: Artisan","S: Culture","S: Survival","S: Theology","TG: Earth Shūji 5","T: The Soul’s Blade","T: Ever-Changing Waves"],"exp":60}
+            {"list":["SG: scholar","S: courtesy","S: design","S: survival","TG: water invocation 1","T: Sympathetic Energies","T: Cleansing Rite"],"exp":20},
+            {"list":["SG: martial","S: design","S: theology","S: survival","TG: earth invocation 2","T: Hands of the Tides","T: Artisan’s Appraisal"],"exp":24},
+            {"list":["SG: artisan","S: performance","S: survival","S: theology","TG: ritual 3","T: Rise, Earth","T: Dazzling Performance"],"exp":32},
+            {"list":["SG: social","S: medicine","S: survival","S: theology","TG: air invocation 4","T: Rouse the Soul","T: A Samurai’s Fate"],"exp":44},
+            {"list":["SG: artisan","S: culture","S: survival","S: theology","TG: earth shūji 5","T: The Soul’s Blade","T: Ever-Changing Waves"],"exp":60}
         ]
     },
     "Moto":{
-        "ringRefs":["Fire","Water"],
-        "startingSkillRefs":[["Command","Fitness","Performance","Martial Arts [Melee]","Martial Arts [Unarmed]","Survival","Tactics"],5],
+        "ringRefs":["fire","water"],
+        "startingSkillRefs":[["command","fitness","performance","martial arts [melee]","martial arts [unarmed]","survival","tactics"],5],
         "honor":35,
-        "techniqueTypeRefs":["Kata","Ritual","Shūji"],
+        "techniqueTypeRefs":["kata","ritual","shūji"],
         "startingTechniqueRefs":[
             [["Lightning Raid","Slippery Maneuvers"],1],
             "All in Jest"
@@ -757,18 +757,18 @@
             "Unicorn warhorse"
         ],
         "curriculum":[
-            {"list":["SG: Martial","S: Command","S: Performance","S: Survival","TG: Kata 1","T: Crescent Moon Style","T: Stirring the Embers"],"exp":20},
-            {"list":["SG: Trade","S: Performance","S: Martial Arts [Melee]","S: Martial Arts [Unarmed]","TG: Fire Shūji 2","T: Heartpiercing Strike","T: Veiled Menace Style"],"exp":24},
-            {"list":["SG: Social","S: Fitness","S: Martial Arts [Melee]","S: Tactics","TG: Kata 3","T: Bravado","T: Dazzling Performance"],"exp":32},
-            {"list":["SG: Trade","S: Command","S: Martial Arts [Ranged]","S: Tactics","TG: Water Shūji 4","T: Striking as Void","T: Crashing Wave Style"],"exp":44},
-            {"list":["SG: Martial","S: Command","S: Government","S: Survival","TG: Kata 5","T: Sear the Wound","T: Buoyant Arrival"],"exp":60}
+            {"list":["SG: martial","S: command","S: performance","S: survival","TG: kata 1","T: Crescent Moon Style","T: Stirring the Embers"],"exp":20},
+            {"list":["SG: trade","S: performance","S: martial arts [melee]","S: martial arts [unarmed]","TG: fire shūji 2","T: Heartpiercing Strike","T: Veiled Menace Style"],"exp":24},
+            {"list":["SG: social","S: fitness","S: martial arts [melee]","S: tactics","TG: kata 3","T: Bravado","T: Dazzling Performance"],"exp":32},
+            {"list":["SG: trade","S: command","S: martial arts [ranged]","S: tactics","TG: water shūji 4","T: Striking as Void","T: Crashing Wave Style"],"exp":44},
+            {"list":["SG: martial","S: command","S: government","S: survival","TG: kata 5","T: Sear the Wound","T: Buoyant Arrival"],"exp":60}
         ]
     },
     "Shinjo":{
-        "ringRefs":["Earth","Fire"],
-        "startingSkillRefs":[["Commerce","Martial Arts [Melee]","Martial Arts [Ranged]","Medicine","Skulduggery","Survival","Tactics"],5],
+        "ringRefs":["earth","fire"],
+        "startingSkillRefs":[["commerce","martial arts [melee]","martial arts [ranged]","medicine","skulduggery","survival","tactics"],5],
         "honor":40,
-        "techniqueTypeRefs":["Kata","Ritual","Shūji"],
+        "techniqueTypeRefs":["kata","ritual","shūji"],
         "startingTechniqueRefs":[
             [["Striking as Fire","Striking as Water"],1],
             "Lady Shinjo’s Speed"
@@ -785,18 +785,18 @@
             "Unicorn warhorse"
         ],
         "curriculum":[
-            {"list":["SG: Martial","S: Commerce","S: Courtesy","S: Survival","TG: Earth Shūji 1","T: Pelting Hail Style","T: Cadence"],"exp":20},
-            {"list":["SG: Trade","S: Courtesy","S: Martial Arts [Melee]","S: Martial Arts [Ranged]","TG: Kata 2","T: Flowing Water Strike","T: Dazzling Performance"],"exp":24},
-            {"list":["SG: Scholar","S: Martial Arts [Ranged]","S: Performance","S: Survival","TG: Water Shūji 3","T: Crashing Wave Style","T: Crimson Leaves Strike"],"exp":32},
-            {"list":["SG: Martial","S: Command","S: Skulduggery","S: Survival","TG: Kata 4","T: Bend with the Storm","T: Bravado"],"exp":44},
-            {"list":["SG: Social","S: Government","S: Meditation","S: Survival","TG: Fire Shūji 5","T: Pin the Fan","T: Rouse the Soul"],"exp":60}
+            {"list":["SG: martial","S: commerce","S: courtesy","S: survival","TG: earth shūji 1","T: Pelting Hail Style","T: Cadence"],"exp":20},
+            {"list":["SG: trade","S: courtesy","S: martial arts [melee]","S: martial arts [ranged]","TG: kata 2","T: Flowing Water Strike","T: Dazzling Performance"],"exp":24},
+            {"list":["SG: scholar","S: martial arts [ranged]","S: performance","S: survival","TG: water shūji 3","T: Crashing Wave Style","T: Crimson Leaves Strike"],"exp":32},
+            {"list":["SG: martial","S: command","S: skulduggery","S: survival","TG: kata 4","T: Bend with the Storm","T: Bravado"],"exp":44},
+            {"list":["SG: social","S: government","S: meditation","S: survival","TG: fire shūji 5","T: Pin the Fan","T: Rouse the Soul"],"exp":60}
         ]
     },
     "Utaku":{
-        "ringRefs":["Air","Earth"],
-        "startingSkillRefs":[["Command","Fitness","Government","Martial Arts [Melee]","Meditation","Smithing","Survival"],5],
+        "ringRefs":["air","earth"],
+        "startingSkillRefs":[["command","fitness","government","martial arts [melee]","meditation","smithing","survival"],5],
         "honor":50,
-        "techniqueTypeRefs":["Kata","Ritual","Shūji"],
+        "techniqueTypeRefs":["kata","ritual","shūji"],
         "startingTechniqueRefs":[
             [["Crescent Moon Style","Iron Forest Style"],1],
             "Warrior’s Resolve"
@@ -814,18 +814,18 @@
             "Utaku steed"
         ],
         "curriculum":[
-            {"list":["SG: Martial","S: Command","S: Smithing","S: Survival","TG: Kata 1","T: Lady Shinjo’s Speed","T: Courtier’s Resolve"],"exp":20},
-            {"list":["SG: Artisan","S: Fitness","S: Martial Arts [Melee]","S: Tactics","TG: Earth Shūji 2","T: Thunderclap Strike","T: Rushing Avalanche Style"],"exp":24},
-            {"list":["SG: Martial","S: Medicine","S: Survival","S: Theology","TG: Kata 3","T: Pillar of Calm","T: Touchstone of Courage"],"exp":32},
-            {"list":["SG: Scholar","S: Command","S: Fitness","S: Martial Arts [Melee]","TG: Air Shūji 4","T: Soul Sunder","T: Breath of Wind Style"],"exp":44},
-            {"list":["SG: Martial","S: Command","S: Culture","S: Survival","TG: Kata 5","T: Rouse the Soul","T: Bend with the Storm"],"exp":60}
+            {"list":["SG: martial","S: command","S: smithing","S: survival","TG: kata 1","T: Lady Shinjo’s Speed","T: Courtier’s Resolve"],"exp":20},
+            {"list":["SG: artisan","S: fitness","S: martial arts [melee]","S: tactics","TG: earth shūji 2","T: Thunderclap Strike","T: Rushing Avalanche Style"],"exp":24},
+            {"list":["SG: martial","S: medicine","S: survival","S: theology","TG: kata 3","T: Pillar of Calm","T: Touchstone of Courage"],"exp":32},
+            {"list":["SG: scholar","S: command","S: fitness","S: martial arts [melee]","TG: air shūji 4","T: Soul Sunder","T: Breath of Wind Style"],"exp":44},
+            {"list":["SG: martial","S: command","S: culture","S: survival","TG: kata 5","T: Rouse the Soul","T: Bend with the Storm"],"exp":60}
         ]
     },
     "ronin":{
         "ringRefs":["Any two different rings"],
-        "startingSkillRefs":[["Command","Fitness","Labor","Martial Arts [Melee]","Martial Arts [Ranged]","Martial Arts [Unarmed]","Skulduggery"],5],
+        "startingSkillRefs":[["command","fitness","labor","martial arts [melee]","martial arts [ranged]","martial arts [unarmed]","skulduggery"],5],
         "honor":30,
-        "techniqueTypeRefs":["Kata","Ritual","Shūji"],
+        "techniqueTypeRefs":["kata","ritual","shūji"],
         "startingTechniqueRefs":[
             [["Pelting Hail Style","Crescent Moon Style"],1],
             [["All in Jest","Honest Assessment","Stirring the Embers","Rustling of Leaves"],1]
@@ -839,11 +839,11 @@
             "Any item of rarity 4 or lower"
         ],
         "curriculum":[
-            {"list":["SG: Trade","S: Fitness","Martial Arts [Choose One]","S: Performance","TG: Kata 1","T: Open Hand Style","T: Shallow Waters"],"exp":20},
-            {"list":["SG: Martial","S: Command","S: Labor","S: Medicine","TG: Shūji","T: All Arts Are One","T: Iron Forest Style"],"exp":24},
-            {"list":["SG: Social","Martial Arts [Choose One]","S: Sentiment","S: Skulduggery","TG: Kata 3","T: A Samurai’s Fate","T: Dazzling Performance"],"exp":32},
-            {"list":["SG: Artisan","S: Labor","Martial Arts [Choose One]","S: Survival","TG: Shūji 4","T: Striking as Void","T: Crimson Leaves Strike"],"exp":44},
-            {"list":["SG: Scholar","S: Composition","Martial Arts [Choose One]","S: Meditation","TG: Kata 5","T: Buoyant Arrival","T: Sear the Wound"],"exp":60}
+            {"list":["SG: trade","S: fitness","martial arts [Choose One]","S: performance","TG: kata 1","T: Open Hand Style","T: Shallow Waters"],"exp":20},
+            {"list":["SG: martial","S: command","S: labor","S: medicine","TG: shūji","T: All Arts Are One","T: Iron Forest Style"],"exp":24},
+            {"list":["SG: social","martial arts [Choose One]","S: sentiment","S: skulduggery","TG: kata 3","T: A Samurai’s Fate","T: Dazzling Performance"],"exp":32},
+            {"list":["SG: artisan","S: labor","martial arts [Choose One]","S: survival","TG: shūji 4","T: Striking as Void","T: Crimson Leaves Strike"],"exp":44},
+            {"list":["SG: scholar","S: composition","martial arts [Choose One]","S: meditation","TG: kata 5","T: Buoyant Arrival","T: Sear the Wound"],"exp":60}
         ]
     }
 }

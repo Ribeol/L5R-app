@@ -1,0 +1,13 @@
+{
+    "characterCreation":{},
+    "userTab":{},
+    "statsTab":{},
+    "skillsTab":{},
+    "techniquesTab":{
+        "rank":"Rang",
+        "newOpportunities":"Nouvelles aubaines"
+    },
+    "experienceTab":{},
+    "itemsTab":{},
+    "notesTab":{}
+}

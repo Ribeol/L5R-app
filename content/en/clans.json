@@ -1,5 +1,5 @@
 {
-    "Crab":{
+    "crab":{
         "name":"Crab",
         "description":[
             "At the southern border of Rokugan stands a grim miracle: the Kaiu Wall, stretching like a great puckered scar along the landscape, its slate-gray blocks fitted together seamlessly into a structure thirty feet thick and a hundred feet tall. To the south loom the blighted Shadowlands, the domain of the corrupted armies of Jigoku, and to the north lie the lands of the Crab Clan, the Wall’s crafters and defenders.",
@@ -19,7 +19,7 @@
             "You know all too well the befouling Taint of the Shadowlands and how best to avoid it, and you can recognize the advanced stages of this unnatural corruption."
         ]
     },
-    "Crane":{
+    "crane":{
         "name":"Crane",
         "description":[
             "At the dawn of the Empire, after the Kami had fallen from the Celestial Heavens, they found themselves plunged into a mortal world rife with cruelty and war. The Kami Doji—sister of Hantei, the first Emperor—resolved to bring order to this savage realm. The embodiment of elegance and grace, Doji walked among the earthly peoples, calming them in the way fair weather calms a storm-tossed sea. Any Crane will gladly speak of how from her, humans learned writing so they could record their achievements, politics to govern their affairs, economics and commerce to manage their wealth, and art and culture to lift them from their lives of misery. Those she touched the most became her devoted followers, the first samurai of the Crane Clan. Since that time, the Crane have become both the poets and the poetry of the Empire, at once the swordsmiths and the duelists wielding the smiths’ blades. In every aspect of their lives, the Crane strive for mastery in all things, an ideal that the other clans can only hope to emulate.",
@@ -39,7 +39,7 @@
             "You have a working knowledge of the high arts and the great masters of old (at least, among the Crane, for who else truly warrants note?)."
         ]
     },
-    "Dragon":{
+    "dragon":{
         "name":"Dragon",
         "description":[
             "In an empire that usually prizes conformity and respect for tradition, the Dragon Clan is an enigma. Inspired by their mysterious founder, the Kami Togashi, the Dragon place more emphasis than most of their fellow samurai on the individual search for Enlightenment and expertise.",
@@ -60,7 +60,7 @@
             "You have a working understanding of many physical phenomena of the natural world, which others dismiss as uninteresting or beneath their station."
         ]
     },
-    "Lion":{
+    "lion":{
         "name":"Lion",
         "description":[
             "Every samurai who lives in Rokugan measures courage, honor, and duty by the standard set by the Lion Clan. The Lion’s military is unrivaled, as there are no sharper tacticians and no larger armies in all of Rokugan. This proud military heritage has earned the Lion Clan a place as the Right Hand of the Emperor, sworn to protect him by serving as his personal guard and his standing army. ",
@@ -81,7 +81,7 @@
             "You know about most common military maneuvers and engagements, such as feigned retreats, flank attacks, raids, and sieges."
         ]
     },
-    "Phoenix":{
+    "phoenix":{
         "name":"Phoenix",
         "description":[
             "The Phoenix is a symbol of contradictions: explosive power and great restraint, vast intelligence and deep humility, immolating self-sacrifice and glorious rebirth. These entwined virtues illuminate the path of Rokugan’s most mystical Great Clan, the keepers of the Tao of Shinsei and caretakers of the Empire’s soul.",
@@ -102,7 +102,7 @@
             "You know the names and locations of all major shrines in Rokugan."
         ]
     },
-    "Scorpion":{
+    "scorpion":{
         "name":"Scorpion",
         "description":[
             "With six terrible words, the Kami Bayushi set his followers in the newly founded Scorpion Clan on a dark and dangerous path. Enemies loomed beyond Rokugan’s borders, but they also lurked within them. Bayushi swore to protect the Empire by any means necessary. Where the Code of Bushidō tied the Emperor’s Left and Right Hands—the courtiers of the Crane and the mighty legions of the Lion—the Emperor’s Underhand could still reach. To combat the liars, the thieves, and the traitors within the Great Clans, Bayushi’s followers would have to lie, steal, and cheat in turn. The weapons of the Scorpion became blackmail, poison, and sabotage. The Scorpion dirtied their hands so that others’ could remain pure.",
@@ -123,7 +123,7 @@
             "You know the state of court matters in the Imperial Capital."
         ]
     },
-    "Unicorn":{
+    "unicorn":{
         "name":"Unicorn",
         "description":[
             "A thousand years ago, the Ki-Rin Clan rode out of Rokugan, seeking to discover enemies hiding beyond the Emerald Empire’s borders. Their journey was arduous, and they found many strange and powerful threats. In defeating each one, the clan learned, changing its fighting styles, magical practices, and even philosophy. To survive, it was forced to adapt—and overcome. After eight centuries of wandering, the Clan of the Wind returned to the Empire as the Unicorn Clan. They wear fur, speak foreign tongues, and wield strange weapons. Although they still revere the Kami Shinjo, they have drifted far from the traditions and ways of the Emerald Empire.",

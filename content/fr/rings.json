@@ -1,5 +1,5 @@
 {
-    "Air":{
+    "air":{
         "name":"Air",
         "artisan":"Raffiner",
         "social":"Duper",
@@ -7,7 +7,7 @@
         "martial":"Feinter",
         "trade":"Escroquer"
     },
-    "Earth":{
+    "earth":{
         "name":"Terre",
         "artisan":"Restaurer",
         "social":"Raisonner",
@@ -15,7 +15,7 @@
         "martial":"Résister",
         "trade":"Produire"
     },
-    "Fire":{
+    "fire":{
         "name":"Feu",
         "artisan":"Inventer",
         "social":"Inciter",
@@ -23,7 +23,7 @@
         "martial":"Submerger",
         "trade":"Innover"
     },
-    "Water":{
+    "water":{
         "name":"Eau",
         "artisan":"Adapter",
         "social":"Charmer",
@@ -31,7 +31,7 @@
         "martial":"Détourner",
         "trade":"Échanger"
     },
-    "Void":{
+    "void":{
         "name":"Vide",
         "artisan":"S’harmoniser",
         "social":"Illuminer",

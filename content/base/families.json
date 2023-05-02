@@ -1,211 +1,211 @@
 {
     "Hida":{
         "name":"Hida",
-        "ringChoiceRefs":["Earth","Fire"],
-        "skillRefs":["Command","Tactics"],
+        "ringChoiceRefs":["earth","fire"],
+        "skillRefs":["command","tactics"],
         "glory":44,
         "koku":4
     },
     "Hiruma":{
         "name":"Hiruma",
-        "ringChoiceRefs":["Air","Water"],
-        "skillRefs":["Skulduggery","Survival"],
+        "ringChoiceRefs":["air","water"],
+        "skillRefs":["skulduggery","survival"],
         "glory":39,
         "koku":3
     },
     "Kaiu":{
         "name":"Kaiu",
-        "ringChoiceRefs":["Earth","Fire"],
-        "skillRefs":["Smithing","Labor"],
+        "ringChoiceRefs":["earth","fire"],
+        "skillRefs":["smithing","labor"],
         "glory":40,
         "koku":5
     },
     "Kuni":{
         "name":"Kuni",
-        "ringChoiceRefs":["Earth","Void"],
-        "skillRefs":["Medicine","Theology"],
+        "ringChoiceRefs":["earth","void"],
+        "skillRefs":["medicine","theology"],
         "glory":40,
         "koku":4
     },
     "Yasuki":{
         "name":"Yasuki",
-        "ringChoiceRefs":["Air","Water"],
-        "skillRefs":["Commerce","Design"],
+        "ringChoiceRefs":["air","water"],
+        "skillRefs":["commerce","design"],
         "glory":39,
         "koku":10
     },
     "Asahina":{
         "name":"Asahina",
-        "ringChoiceRefs":["Water","Void"],
-        "skillRefs":["Aesthetics","Theology"],
+        "ringChoiceRefs":["water","void"],
+        "skillRefs":["aesthetics","theology"],
         "glory":40,
         "koku":6
     },
     "Daidoji":{
         "name":"Daidoji",
-        "ringChoiceRefs":["Earth","Water"],
-        "skillRefs":["Fitness","Tactics"],
+        "ringChoiceRefs":["earth","water"],
+        "skillRefs":["fitness","tactics"],
         "glory":40,
         "koku":7
     },
     "Doji":{
         "name":"Doji",
-        "ringChoiceRefs":["Air","Water"],
-        "skillRefs":["Courtesy","Design"],
+        "ringChoiceRefs":["air","water"],
+        "skillRefs":["courtesy","design"],
         "glory":44,
         "koku":8
     },
     "Kakita":{
         "name":"Kakita",
-        "ringChoiceRefs":["Air","Fire"],
-        "skillRefs":["Aesthetics","Meditation"],
+        "ringChoiceRefs":["air","fire"],
+        "skillRefs":["aesthetics","meditation"],
         "glory":44,
         "koku":7
     },
     "Agasha":{
         "name":"Agasha",
-        "ringChoiceRefs":["Fire","Void"],
-        "skillRefs":["Medicine","Fitness"],
+        "ringChoiceRefs":["fire","void"],
+        "skillRefs":["medicine","fitness"],
         "glory":40,
         "koku":4
     },
     "Kitsuki":{
         "name":"Kitsuki",
-        "ringChoiceRefs":["Air","Water"],
-        "skillRefs":["Government","Sentiment"],
+        "ringChoiceRefs":["air","water"],
+        "skillRefs":["government","sentiment"],
         "glory":44,
         "koku":6
     },
     "Mirumoto":{
         "name":"Mirumoto",
-        "ringChoiceRefs":["Earth","Water"],
-        "skillRefs":["Fitness","Tactics"],
+        "ringChoiceRefs":["earth","water"],
+        "skillRefs":["fitness","tactics"],
         "glory":44,
         "koku":5
     },
     "Togashi":{
         "name":"Togashi",
-        "ringChoiceRefs":["Earth","Void"],
-        "skillRefs":["Fitness","Theology"],
+        "ringChoiceRefs":["earth","void"],
+        "skillRefs":["fitness","theology"],
         "glory":45,
         "koku":3
     },
     "Akodo":{
         "name":"Akodo",
-        "ringChoiceRefs":["Air","Earth"],
-        "skillRefs":["Command","Government"],
+        "ringChoiceRefs":["air","earth"],
+        "skillRefs":["command","government"],
         "glory":44,
         "koku":5
     },
     "Ikoma":{
         "name":"Ikoma",
-        "ringChoiceRefs":["Air","Water"],
-        "skillRefs":["Composition","Performance"],
+        "ringChoiceRefs":["air","water"],
+        "skillRefs":["composition","performance"],
         "glory":40,
         "koku":5
     },
     "Kitsu":{
         "name":"Kitsu",
-        "ringChoiceRefs":["Void","Water"],
-        "skillRefs":["Meditation","Theology"],
+        "ringChoiceRefs":["void","water"],
+        "skillRefs":["meditation","theology"],
         "glory":40,
         "koku":4
     },
     "Matsu":{
         "name":"Matsu",
-        "ringChoiceRefs":["Earth","Fire"],
-        "skillRefs":["Command","Fitness"],
+        "ringChoiceRefs":["earth","fire"],
+        "skillRefs":["command","fitness"],
         "glory":44,
         "koku":5
     },
     "Asako":{
         "name":"Asako",
-        "ringChoiceRefs":["Air","Fire"],
-        "skillRefs":["Culture","Sentiment"],
+        "ringChoiceRefs":["air","fire"],
+        "skillRefs":["culture","sentiment"],
         "glory":40,
         "koku":5
     },
     "Isawa":{
         "name":"Isawa",
-        "ringChoiceRefs":["Fire","Void"],
-        "skillRefs":["Meditation","Theology"],
+        "ringChoiceRefs":["fire","void"],
+        "skillRefs":["meditation","theology"],
         "glory":44,
         "koku":5
     },
     "Kaito":{
         "name":"Kaito",
-        "ringChoiceRefs":["Air","Void"],
-        "skillRefs":["Fitness","Theology"],
+        "ringChoiceRefs":["air","void"],
+        "skillRefs":["fitness","theology"],
         "glory":40,
         "koku":4
     },
     "Shiba":{
         "name":"Shiba",
-        "ringChoiceRefs":["Earth","Water"],
-        "skillRefs":["Meditation","Tactics"],
+        "ringChoiceRefs":["earth","water"],
+        "skillRefs":["meditation","tactics"],
         "glory":40,
         "koku":5
     },
     "Bayushi":{
         "name":"Bayushi",
-        "ringChoiceRefs":["Air","Fire"],
-        "skillRefs":["Courtesy","Design"],
+        "ringChoiceRefs":["air","fire"],
+        "skillRefs":["courtesy","design"],
         "glory":44,
         "koku":8
     },
     "Shosuro":{
         "name":"Shosuro",
-        "ringChoiceRefs":["Air","Water"],
-        "skillRefs":["Courtesy","Performance"],
+        "ringChoiceRefs":["air","water"],
+        "skillRefs":["courtesy","performance"],
         "glory":40,
         "koku":6
     },
     "Soshi":{
         "name":"Soshi",
-        "ringChoiceRefs":["Air","Void"],
-        "skillRefs":["Design","Theology"],
+        "ringChoiceRefs":["air","void"],
+        "skillRefs":["design","theology"],
         "glory":40,
         "koku":6
     },
     "Yogo":{
         "name":"Yogo",
-        "ringChoiceRefs":["Earth","Void"],
-        "skillRefs":["Composition","Theology"],
+        "ringChoiceRefs":["earth","void"],
+        "skillRefs":["composition","theology"],
         "glory":39,
         "koku":4
     },
     "Ide":{
         "name":"Ide",
-        "ringChoiceRefs":["Earth","Water"],
-        "skillRefs":["Commerce","Courtesy"],
+        "ringChoiceRefs":["earth","water"],
+        "skillRefs":["commerce","courtesy"],
         "glory":40,
         "koku":9
     },
     "Iuchi":{
         "name":"Iuchi",
-        "ringChoiceRefs":["Air","Void"],
-        "skillRefs":["Meditation","Theology"],
+        "ringChoiceRefs":["air","void"],
+        "skillRefs":["meditation","theology"],
         "glory":40,
         "koku":5
     },
     "Moto":{
         "name":"Moto",
-        "ringChoiceRefs":["Earth","Fire"],
-        "skillRefs":["Command","Survival"],
+        "ringChoiceRefs":["earth","fire"],
+        "skillRefs":["command","survival"],
         "glory":40,
         "koku":6
     },
     "Shinjo":{
         "name":"Shinjo",
-        "ringChoiceRefs":["Fire","Water"],
-        "skillRefs":["Sentiment","Survival"],
+        "ringChoiceRefs":["fire","water"],
+        "skillRefs":["sentiment","survival"],
         "glory":44,
         "koku":8
     },
     "Utaku":{
         "name":"Utaku",
-        "ringChoiceRefs":["Earth","Fire"],
-        "skillRefs":["Survival","Tactics"],
+        "ringChoiceRefs":["earth","fire"],
+        "skillRefs":["survival","tactics"],
         "glory":44,
         "koku":6
     }

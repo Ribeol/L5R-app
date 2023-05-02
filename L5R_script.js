@@ -2,11 +2,28 @@
 
 // #region Class definitions ----------------------------------------------------------------------------------------------------
 
+class UserSettings {
+    static languages = ["en", "fr"];
+
+    constructor() {
+        const language = (navigator.language || navigator.userLanguage).slice(0,2);
+        if (UserSettings.languages.includes(language)) {
+            this.language = language;
+        }
+        else {
+            this.language = "en";
+        }
+        //this.currentTab = "characterCreation"; // CHANGE?
+        // ADD MORE? IF CHARACTER DETECTED IN CACHE, SET TAB TO CHOOSE CHARACTER, OTHERWISE CREATE CHARACTER
+        // FOR EACH TAB WITH A SCROLLING LIST, ALSO STORE THE FILTER SETTINGS AND SCROLL AMOUNT
+    }
+}
+
 class DataManager {
     static cacheName = "L5R_app";
 
      // For each language + base, the JSON file with a matching name will be cached for each of the following content types.
-    static contentTypes = ["clans", "families", "schools", "rings", "skills", "techniques", "techniqueTypes", "titles", "traditions", "display"];
+    static contentTypes = ["clans", "families", "schools", "rings", "skills", "techniques", "techniqueTypes", "titles", "traditions", "uiDisplay"];
 
     constructor() {
 
@@ -24,7 +41,7 @@ class DataManager {
         // this.characterNames will store the names of all loadable characters in an array
         this.characterNames = undefined;
         
-        // this.loaded is a container for the loaded character and data derived from it and this.content
+        // this.loaded is a container for the loaded character, and data derived from it and this.content
         this.loaded = {
             character: undefined,
             school: undefined,
@@ -37,7 +54,7 @@ class DataManager {
             skillMaps: { // Maps of [skillRef, int]
                 all: undefined,
                 learned: undefined, 
-                upgradable: undefined,                
+                upgradable: undefined,
                 included: undefined,
                 current: undefined
             },
@@ -66,7 +83,7 @@ class DataManager {
         DataManager.contentTypes.forEach(contentType => {
             dataManager.content[contentType] = {};
             paths.forEach(path => {
-                urls.push(`${path}/${contentType}.json`);            
+                urls.push(`${path}/${contentType}.json`);
             });            
         });
               
@@ -122,7 +139,7 @@ class DataManager {
         await cache.keys().then(requests => {
             requests.forEach(request => {
                 // for each JSON file in the cache, check if it is in /characters
-                if (request.url.includes('/characters/')) {
+                if (request.url.includes("/characters/")) {
                     // If so, get the character's name from the file name and push it to the names array
                     const nameStartPosition = request.url.search("/characters/") + "/characters/".length;
                     const characterName = request.url.slice(nameStartPosition, -5).replace("_", " ");
@@ -193,7 +210,7 @@ class DataManager {
 
         const techsLearned = new Set(); // Set of techniques
         for (const techRef of character.startingTechniqueRefs) {
-            techsLearned.add(dataManager.content.techniques[techRef]);            
+            techsLearned.add(dataManager.content.techniques[techRef]);
         }
 
         //let oldSkills = new Set();
@@ -270,9 +287,9 @@ class DataManager {
                     else if (refString.startsWith('TG: ')) {
                         // If it is a group of techniques, find all techniques that belong to the group and add them to the rankTechs set
                         const groupString = refString.slice(4).split(' ').reverse();
-                        const groupRing = groupString[2];                              
+                        const groupRing = groupString[2];
                         const groupType = groupString[1];
-                        const groupMaxRank = parseInt(groupString[0]);                        
+                        const groupMaxRank = parseInt(groupString[0]);
                         for (const tech of Object.values(dataManager.content.techniques)) {
                             if ((!groupRing || tech.ringRef === groupRing) && tech.typeRef === groupType && tech.rank <= groupMaxRank) {
                                 rankTechs.add(tech);
@@ -331,7 +348,7 @@ class DataManager {
                         if (!isFree) {
                             let techniqueCost = defaultTechCost;
                             if(tech.expCost !== undefined) {
-                                techniqueCost = tech.expCost;                                
+                                techniqueCost = tech.expCost;
                             }
                             spentExp[key] += techniqueCost;
                             if (rankTechs.has(tech)) {
@@ -389,7 +406,7 @@ class DataManager {
                     }
                 }
                 else {
-                    filteredMap.set(key, 0);                  
+                    filteredMap.set(key, 0);
                 }
             }
             return filteredMap;
@@ -463,10 +480,11 @@ class ContentManager {
         this.nameMap = undefined;
 
         // A map that will have clickable add icons as keys and techniques as values, to allow the user to learn techniques by clicking add icons
-        this.addIconMap = undefined;
+        this.addSymbolMap = undefined;
 
-        // liTop will store the original Y position of a list element while it is expanded
-        this.liTop = undefined;
+        this.list = document.getElementById("contentList");
+        this.overlay = document.getElementById("overlay");
+        this.viewer = document.getElementById("viewer");
     }
 
     filterSkills(skillGroup, availabilitySetting, curriculaSetting) {
@@ -490,10 +508,10 @@ class ContentManager {
                 availabilitySet = dataManager.loaded.skillMaps.learned;
         }
         let combinedArray;
-        switch(curriculaSetting) {            
+        switch(curriculaSetting) {
             case "indifferent":
                 combinedArray = [...availabilitySet];
-                break;            
+                break;
             case "excluded":
                 combinedArray = [...availabilitySet].filter(x => !dataManager.loaded.skillMaps.included.has(x[0]));
                 break;
@@ -534,14 +552,8 @@ class ContentManager {
                 }
             }
         });
-        // Clear the existing list
-        const list = document.getElementById("contentList");
-        list.innerHTML = "";
 
-        // Create the fragment that will contain the new list elements
-        const fragment = document.createDocumentFragment();
-
-        // Create li elements to display for each skill, with span elements inside, each with the proper content and classes for styling
+        // SHOW CONTENT
 
 
 
@@ -550,7 +562,7 @@ class ContentManager {
 
 
 
-
+        // ADD INITIATIVE SKILLS, ETC
     }
 
     filterTechniques() {
@@ -615,7 +627,7 @@ class ContentManager {
         // ADD A NO RESULT MESSAGE IF NO RESULT, ELSE KEEP GOING
 
         // Ordering the array based on rank order, then order of types from the source book, then alphabetical order of rings and names
-        const techTypeOrder = ["Kata", "Kihō", "Invocation", "Ritual", "Shūji", "Mahō", "Ninjutsu"];    
+        const techTypeOrder = ["kata", "kihō", "invocation", "ritual", "shūji", "mahō", "ninjutsu"];
         filteredTechniques.sort(function(a, b) {
             if (a.rank < b.rank) {
                 return -1;
@@ -652,98 +664,47 @@ class ContentManager {
             }
         });
 
-        // Clear the existing list
-        const list = document.getElementById("contentList");        
-        list.innerHTML = "";        
-        // reset nameMap and addIconMap for the new list
+        // Clear the list
+        contentManager.list.innerHTML = "";        
+        // Reset nameMap and addSymbolMap for the new list
         contentManager.nameMap = new Map();
-        contentManager.addIconMap = new Map();
+        contentManager.addSymbolMap = new Map();
 
         // Create the fragment that will contain the new list elements
         const fragment = document.createDocumentFragment();
 
         // Create li elements to display for each technique, with span elements inside, each with the proper content and classes for styling
-        for (const tech of filteredTechniques) {            
+        const customIcons = dataManager.content.uiDisplay.customIcons;
+        for (const tech of filteredTechniques) {
             const li = document.createElement("li");
 
             const rankSpan = document.createElement("span");
-            rankSpan.textContent += tech.rank;
-            rankSpan.classList.add("rank");            
+            rankSpan.textContent = tech.rank;
+            rankSpan.classList.add("rank");
+            li.appendChild(rankSpan);
 
             const typeIconSpan = document.createElement("span");
-            switch(tech.typeRef) {            
-                case "Kata":
-                    typeIconSpan.textContent = String.fromCharCode(0xe909);
-                    break;
-                case "Invocation":
-                    typeIconSpan.textContent = String.fromCharCode(0xe908);
-                    break;
-                case "Shūji":
-                    typeIconSpan.textContent = String.fromCharCode(0xe915);
-                    break;
-                case "Kihō":
-                    typeIconSpan.textContent = String.fromCharCode(0xe90a);
-                    break;
-                case "Ritual":
-                    typeIconSpan.textContent = String.fromCharCode(0xe911);
-                    break;
-                case "Ninjutsu":
-                    typeIconSpan.textContent = String.fromCharCode(0xe90c);
-                    break;            
-                case "Mahō":
-                    typeIconSpan.textContent = "魔";
-                    typeIconSpan.classList.add("Mahō");
+            if (tech.typeRef === "mahō") {
+                typeIconSpan.textContent = "魔";
+                typeIconSpan.classList.add("mahō");
+            }
+            else {
+                typeIconSpan.textContent = String.fromCharCode(customIcons[`${tech.typeRef}Icon`]);
             }
             typeIconSpan.classList.add("left", "icon");
 
-            li.appendChild(rankSpan);
             li.appendChild(typeIconSpan);
 
             const ringIconSpan = document.createElement("span");
             if (tech.ringRef !== undefined) {
-                switch(tech.ringRef) {            
-                    case "Air":
-                        ringIconSpan.textContent = String.fromCharCode(0xe900);
-                        break;
-                    case "Earth":
-                        ringIconSpan.textContent = String.fromCharCode(0xe904);
-                        break;
-                    case "Fire":
-                        ringIconSpan.textContent = String.fromCharCode(0xe907);
-                        break;
-                    case "Water":
-                        ringIconSpan.textContent = String.fromCharCode(0xe91d);
-                        break;
-                    case "Void":
-                        ringIconSpan.textContent = String.fromCharCode(0xe91c);
-                }
+                ringIconSpan.textContent = String.fromCharCode(customIcons[`${tech.ringRef}Icon`]);
                 ringIconSpan.classList.add("left", "icon", tech.ringRef);
                 li.appendChild(ringIconSpan);
             }            
             
             const clanIconSpan = document.createElement("span");
             if (tech.clanRef !== undefined) {
-                switch(tech.clanRef) {            
-                    case "Crab":
-                        clanIconSpan.textContent = String.fromCharCode(0xe901);
-                        break;
-                    case "Crane":
-                        clanIconSpan.textContent = String.fromCharCode(0xe902);
-                        break;
-                    case "Dragon":
-                        clanIconSpan.textContent = String.fromCharCode(0xe903);
-                        break;
-                    case "Lion":
-                        clanIconSpan.textContent = String.fromCharCode(0xe90b);
-                        break;
-                    case "Phoenix":
-                        clanIconSpan.textContent = String.fromCharCode(0xe90f);
-                    case "Scorpion":
-                        clanIconSpan.textContent = String.fromCharCode(0xe913);
-                        break;
-                    case "Unicorn":
-                        clanIconSpan.textContent = String.fromCharCode(0xe91a);
-                }
+                clanIconSpan.textContent = String.fromCharCode(customIcons[`${tech.clanRef}Icon`]);
                 clanIconSpan.classList.add("left", "icon");
                 li.appendChild(clanIconSpan);
             }
@@ -756,7 +717,7 @@ class ContentManager {
             if (tech.traditionalNames !== undefined
             && traditionRef !== undefined
             && Object.keys(tech.traditionalNames).includes(traditionRef)) {
-                addedElement = document.createElement("div")
+                addedElement = document.createElement("div");
                 const traditionalNameSpan = document.createElement("span");
                 traditionalNameSpan.textContent = tech.traditionalNames[traditionRef];
                 traditionalNameSpan.classList.add("traditional", "customColor");
@@ -768,7 +729,7 @@ class ContentManager {
             }
             addedElement.classList.add("name", "pointer");
             addedElement.addEventListener('click', () => {
-                contentManager.viewContentObject(li, list, contentManager.nameMap.get(addedElement));
+                contentManager.showOverlay(li, contentManager.nameMap.get(addedElement));
             });
             contentManager.nameMap.set(addedElement, tech);
             li.appendChild(addedElement);
@@ -776,9 +737,9 @@ class ContentManager {
 
             // If the technique is included in unlearned future curriculum techniques, add the school icon
             if (dataManager.loaded.techSets.included.has(tech) && !dataManager.loaded.techSets.learned.has(tech)) {
-                const schoolIconSpan = document.createElement("span");                    
-                schoolIconSpan.textContent += String.fromCharCode(0xe912);
-                schoolIconSpan.classList.add("right", "icon");
+                const schoolIconSpan = document.createElement("span");
+                schoolIconSpan.textContent += String.fromCharCode(customIcons.schoolIcon);
+                schoolIconSpan.classList.add("icon");
 
                 // If it is part of a current rank, add the customColor class
                 if (dataManager.loaded.techSets.current.has(tech)) {
@@ -790,15 +751,15 @@ class ContentManager {
             // If the technique is available, learned or incompatible, the added class will allow it to be styled accordingly
             // Compatible is the default style and does not need a class
             if (dataManager.loaded.techSets.available.has(tech)) {
-                li.classList.add("available");                
-                const addIconSpan = document.createElement("span");
-                addIconSpan.textContent = "+";
-                addIconSpan.classList.add("right", "icon", "pointer");                
-                addIconSpan.addEventListener('click', () => {
-                    contentManager.addContentObject(contentManager.addIconMap.get(addIconSpan));
+                li.classList.add("available");
+                const addSymbolSpan = document.createElement("span");
+                addSymbolSpan.textContent = "+";
+                addSymbolSpan.classList.add("addSymbol", "pointer");
+                addSymbolSpan.addEventListener('click', () => {
+                    contentManager.addToLearned(contentManager.addSymbolMap.get(addSymbolSpan));
                 });
-                contentManager.addIconMap.set(addIconSpan, tech);
-                li.appendChild(addIconSpan);
+                contentManager.addSymbolMap.set(addSymbolSpan, tech);
+                li.appendChild(addSymbolSpan);
             }            
             else if (dataManager.loaded.techSets.learned.has(tech)) {
                 li.classList.add("customColor");
@@ -811,7 +772,7 @@ class ContentManager {
             fragment.appendChild(li);
         }
         // Create the new list from the completed fragment
-        list.appendChild(fragment);        
+        contentManager.list.appendChild(fragment);
     }
 
 
@@ -820,7 +781,7 @@ class ContentManager {
 
 
 
-    // TEST FUCNTIONS BELOW
+    // TEST FUCNTIONS BELOW ----------------------------------------------------------------------------------------------------------------------------
 
     changeTab(newTabName) {
         if(newTabName != currentTabName) {
@@ -830,32 +791,25 @@ class ContentManager {
         }    
     }
 
-    toggleOverlay() {
-        document.getElementById("overlay").classList.toggle("visible");
-        document.getElementById("main").classList.toggle("disabled");
-    }
-
     selectSchoolTEST() { // THIS IS A TEMPORARY TEST FUNCTION. DELETE!
 
         const charSchoolRef = document.getElementById("tempSchoolDropdown").value;
         let charClanRef;
 
         const clanColors = new Map();
-        clanColors.set("Crab", `hsl(210, 20%, 60%)`);
-        clanColors.set("Crane",`hsl(195, 60%, 60%)`);
-        clanColors.set("Dragon",`hsl(140, 40%, 50%)`);
-        clanColors.set("Lion",`hsl(45, 70%, 50%)`);
-        clanColors.set("Phoenix",`hsl(30, 80%, 60%)`);
-        clanColors.set("Scorpion",`hsl(0, 70%, 50%)`);
-        clanColors.set("Unicorn",`hsl(290, 40%, 60%)`);
-
-        const root = document.querySelector(':root');
+        clanColors.set("crab", `hsl(210, 20%, 60%)`);
+        clanColors.set("crane",`hsl(195, 60%, 60%)`);
+        clanColors.set("dragon",`hsl(140, 40%, 50%)`);
+        clanColors.set("lion",`hsl(45, 70%, 50%)`);
+        clanColors.set("phoenix",`hsl(30, 80%, 60%)`);
+        clanColors.set("scorpion",`hsl(0, 70%, 50%)`);
+        clanColors.set("unicorn",`hsl(290, 40%, 60%)`);
 
         for (const clanRef of Object.keys(dataManager.content.clans)) {
             for (const familyRef of dataManager.content.clans[clanRef].familyRefs) {
                 if (familyRef === charSchoolRef) {;
                     charClanRef = clanRef;
-                    root.style.setProperty('--customColor', clanColors.get(clanRef));
+                    document.querySelector(':root').style.setProperty('--customColor', clanColors.get(clanRef));
                 }
             }
         }
@@ -866,92 +820,155 @@ class ContentManager {
         contentManager.filterTechniques();
     }
 
-    viewContentObject(li, list, technique) {
+    showOverlay(li, tech) {
+        document.querySelector(':root').style.setProperty('--liTop', li.getBoundingClientRect().top + "px");
 
-        // Animation duration
-        const duration = 10;
-        // Height fraction
-        const fraction = 0.8;
-        const targetTop = (1 - fraction) / 2 * window.innerHeight;
-        const targetHeight = fraction * window.innerHeight;
+        document.getElementById("main").classList.add("disabled");
+        contentManager.overlay.classList.add("appear");
+        contentManager.viewer.classList.add("appear");
+        
 
-        if (!li.classList.contains("expanded")) {
-            li.classList.add("expanded");
-            li.style.position = "fixed";
-            //li.style.width = list.offsetWidth + "px"; // NOT GOOD ENOUGH BECAUSE DOES NOT ADAPT TO WINDOW CHANGES AFTER EXPAND. SAME FOR HEIGHT. MOVE "EXPANDED"?
-            let liTop = li.getBoundingClientRect().top - list.scrollTop;
-            contentManager.liTop = liTop;
-            const movementSpeed = (liTop - targetTop) / duration;
-            const growthSpeed = targetHeight / duration;
 
-            let liHeight = 0;
-		    function animate() {
-			    liTop -= movementSpeed;
-                liHeight += growthSpeed;
-			    li.style.top = liTop + "px";
-                li.style.height = liHeight + "px";
-			    if (liTop <= targetTop) {
-				    li.style.top = targetTop + "px";
-                    li.style.height = targetHeight + "px";
-				    return;
-			    }
-			    requestAnimationFrame(animate);
-		    }
-		    requestAnimationFrame(animate);            
+
+
+
+
+        // Clear the viewer
+        this.viewer.innerHTML = "";        
+
+        // Create the fragment that will contain the new viewer elements
+        const fragment = document.createDocumentFragment();
+
+        // Create elements to display, each with the proper content and classes for styling
+
+        const attributes = document.createElement("div");
+
+        const rank = document.createElement("span");
+        rank.textContent = `${dataManager.content.uiDisplay.techniquesTab.rank} ${tech.rank}`;
+        attributes.appendChild(rank);
+
+        const customIcons = dataManager.content.uiDisplay.customIcons;
+
+        const type = document.createElement("span");
+        type.textContent = String.fromCharCode(customIcons[`${tech.typeRef}Icon`]) + " " + dataManager.content.techniqueTypes[tech.typeRef].name;
+        attributes.appendChild(type);
+
+        if (tech.ringRef !== undefined) {
+            const ring = document.createElement("span");
+            ring.textContent = String.fromCharCode(customIcons[`${tech.ringRef}Icon`]) + " " + dataManager.content.rings[tech.ringRef].name;
+            attributes.appendChild(ring);
         }
-        else {            
-            
-            const movementSpeed = (contentManager.liTop - targetTop) / duration;
-            const shrinkSpeed = targetHeight / duration;
-
-            let liTop = targetTop;
-            let liHeight = targetHeight;
-		    function animate() {
-			    liTop += movementSpeed;
-                liHeight -= shrinkSpeed;
-			    li.style.top = liTop + "px";
-                li.style.height = liHeight + "px";
-			    if (liTop >= contentManager.liTop) {
-                    li.style.position = "";
-				    li.style.top = "";
-                    li.style.height = "";
-                    li.classList.remove("expanded");
-				    return;
-			    }
-			    requestAnimationFrame(animate);
-		    }
-		    requestAnimationFrame(animate);            
+        if (tech.clanRef !== undefined) {
+            const clan = document.createElement("span");
+            clan.textContent = String.fromCharCode(customIcons[`${tech.clanRef}Icon`]) + " " + dataManager.content.clans[tech.clanRef].name;
+            attributes.appendChild(clan);
         }
+        attributes.classList.add("attributes");
+        fragment.appendChild(attributes);
 
-        
+        const nameSpan = document.createElement("span");
+        nameSpan.textContent = tech.name;
+        nameSpan.classList.add("bold");
+        const namesParagraph = document.createElement("p");
+        namesParagraph.appendChild(nameSpan);
 
-        
-        
+        // If there is a traditional name to display, the element with the name class will contain 2 spans instead of a single span        
+        const traditionRef = dataManager.loaded.school.traditionRef;
+        if (tech.traditionalNames !== undefined
+        && traditionRef !== undefined
+        && Object.keys(tech.traditionalNames).includes(traditionRef)) {
+            const traditionalNameSpan = document.createElement("span");
+            traditionalNameSpan.textContent = tech.traditionalNames[traditionRef] + ` (${dataManager.content.traditions[traditionRef].name})`;
+            namesParagraph.appendChild(traditionalNameSpan);
+        }
+        namesParagraph.classList.add("name");
+        fragment.appendChild(namesParagraph);
 
-        /*
-        document.getElementById("overlay").classList.toggle("visible");
-        document.getElementById("main").classList.toggle("disabled");
-        document.getElementById("description").innerHTML = technique.description;
-        */
+        const stringArrayNames = ["description", "activation", "effects", "newOpportunities"];        
+        for (let stringArrayName of stringArrayNames) {
+            if (tech[stringArrayName] !== undefined) {
+                if (stringArrayName === "newOpportunities") {
+                    const opportunity = document.createElement("p");
+                    opportunity.textContent = dataManager.content.uiDisplay.techniquesTab.newOpportunities;
+                    opportunity.classList.add("opportunities");
+                    fragment.appendChild(opportunity);
+                }
+                const container = document.createElement("div");
+                for (let string of tech[stringArrayName]) {
+                    const paragraph = document.createElement("p");
+                    
+                    // Isolate the icon references and use String.fromCharCode on the corresponding codes, then reconstruct string
+                    // "|" is being used as an icon delimiter in our JSON files
+                    if (string.includes("|")) {
+                        let parts = string.split("|");
+                        string = "";
+                        for (let i = 0; i < parts.length; i++) {
+                            if (parts[i].includes("Icon")) {
+                                string += String.fromCharCode(customIcons[parts[i]]);
+                            }
+                            else {
+                                string += parts[i];
+                            }                        
+                        }
+                    }
+                    
+                    // If string is not the description and includes ":", separate it in two spans after the first ":" and bold the first span
+                    // Arbitrary limit on bold part length set at 20 to avoid false positives
+                    const splitPosition = string.search(":") + 1;
+                    if (stringArrayName !== "description" && splitPosition > 0 && splitPosition < 20) {
+                        
+                        const boldSpan = document.createElement("span");
+                        boldSpan.textContent = string.slice(0, splitPosition);
+                        boldSpan.classList.add("bold");
+                        paragraph.appendChild(boldSpan);
+
+                        // MODIFY TO CHECK NORMALSPAN FOR SKILLS
+                        const normalSpan = document.createElement("span");
+                        normalSpan.textContent = string.slice(splitPosition, string.length);
+                        paragraph.appendChild(normalSpan);
+                    }
+                    else {
+                        paragraph.textContent = string;
+                    }
+                    container.appendChild(paragraph);
+                }
+                fragment.appendChild(container);
+            }
+        }
+        // Add the new viewer content from the completed fragment
+        contentManager.viewer.appendChild(fragment);
+
+        // ADD EXTRA OPPORTUNITIES THAT APPLY, LIKE THE ONES FOR INVOCATIONS OR THE EXAMPLES AT THE END OF THE BOOK
     }
-    addContentObject(technique) {
+
+
+
+
+
+
+    toggleVisible() {
+        contentManager.overlay.classList.toggle("visible");
+        contentManager.viewer.classList.toggle("visible");
+        contentManager.overlay.classList.remove("appear");
+        contentManager.viewer.classList.remove("appear");
+        contentManager.overlay.classList.remove("disappear");
+        contentManager.viewer.classList.remove("disappear");
+
+        if (!contentManager.overlay.classList.contains("visible")) {
+            document.getElementById("main").classList.remove("disabled");
+        }
+    }
+
+    hideOverlay(target) {
+        if (!contentManager.viewer.contains(target)) {
+            contentManager.overlay.classList.add("disappear");
+            contentManager.viewer.classList.add("disappear");
+            contentManager.viewer.scrollTop = 0;
+        }
+    }
+
+    addToLearned(technique) {
         // WRITE
-    }
-}
-
-class UserSettings {
-    static languages = ["en", "fr"];
-
-    constructor() {
-        const language = (navigator.language || navigator.userLanguage).slice(0,2);
-        if (UserSettings.languages.includes(language)) {
-            this.language = language;
-        }
-        else {
-            this.language = "en";
-        }
-        //this.currentTab = "characterCreation"; // CHANGE?
-        // ADD MORE? IF CHARACTER DETECTED IN CACHE, SET TAB TO CHOOSE CHARACTER, OTHERWISE CREATE CHARACTER
     }
 }
 
@@ -982,7 +999,7 @@ class Character {
         this._status = status; // int
         this._fatigue = 0; // int
         this._strife = 0; // int
-        this._voidPoints = Math.ceil(startingRingRefs["Void"]/2); // int
+        this._voidPoints = Math.ceil(startingRingRefs["void"]/2); // int
     }
 
     get honor() {return this._honor;}
@@ -1001,12 +1018,12 @@ class Character {
     changeStrife(difference) {this._strife = Math.max(0, this._strife += difference);}
 
     get voidPoints() {return this._voidPoints;}
-    changeVoidPoints(difference) {this._voidPoints = Math.min(Math.max(0, this._voidPoints += difference), dataManager.loaded.ringMaps.all["Void"]);}
+    changeVoidPoints(difference) {this._voidPoints = Math.min(Math.max(0, this._voidPoints += difference), dataManager.loaded.ringMaps.all["void"]);}
 
-    getEndurance() {return (dataManager.loaded.ringMaps.all["Earth"] + dataManager.loaded.ringMaps.all["Fire"])*2;}
-    getComposure() {return (dataManager.loaded.ringMaps.all["Earth"] + dataManager.loaded.ringMaps.all["Water"])*2;}
-    getFocus() {return dataManager.loaded.ringMaps.all["Fire"] + dataManager.loaded.ringMaps.all["Air"];}
-    getVigilance() {return (dataManager.loaded.ringMaps.all["Air"] + dataManager.loaded.ringMaps.all["Water"])/2;}
+    getEndurance() {return (dataManager.loaded.ringMaps.all["earth"] + dataManager.loaded.ringMaps.all["fire"])*2;}
+    getComposure() {return (dataManager.loaded.ringMaps.all["earth"] + dataManager.loaded.ringMaps.all["water"])*2;}
+    getFocus() {return dataManager.loaded.ringMaps.all["fire"] + dataManager.loaded.ringMaps.all["air"];}
+    getVigilance() {return (dataManager.loaded.ringMaps.all["air"] + dataManager.loaded.ringMaps.all["water"])/2;}
 
     endOfScene() {
         this._fatigue = Math.ceil(Math.min(this._fatigue, this.getEndurance()/2));
@@ -1015,7 +1032,7 @@ class Character {
     }
 
     rest() {
-        changeFatigue(-dataManager.loaded.ringMaps.all["Water"]*2);
+        changeFatigue(-dataManager.loaded.ringMaps.all["water"]*2);
         //UPDATE DISPLAY
     }
 
@@ -1035,6 +1052,7 @@ class Character {
 const dataManager = new DataManager();
 // Create a contentManager singleton
 const contentManager = new ContentManager();
+contentManager.viewer.addEventListener("animationend", contentManager.toggleVisible);
 
 // JSON caching and content object creation are done through dataManager.initialize() as an async process
 dataManager.initialize().then(() => {

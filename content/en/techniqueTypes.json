@@ -1,9 +1,23 @@
 {    
-    "Kata":{"name":"Kata"},
-    "Kihō":{"name":"Kihō"},
-    "Invocation":{"name":"Invocations"},
-    "Ritual":{"name":"Rituals"},
-    "Shūji":{"name":"Shūji"},
-    "Mahō":{"name":"Mahō"},
-    "Ninjutsu":{"name":"Ninjutsu"}
+    "kata":{
+        "name":"Kata"
+    },
+    "kihō":{
+        "name":"Kihō"
+    },
+    "invocation":{
+        "name":"Invocation"
+    },
+    "ritual":{
+        "name":"Ritual"
+    },
+    "shūji":{
+        "name":"Shūji"
+    },
+    "mahō":{
+        "name":"Mahō"
+    },
+    "ninjutsu":{
+        "name":"Ninjutsu"
+    }
 }

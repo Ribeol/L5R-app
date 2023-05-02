@@ -23,7 +23,7 @@ class DataManager {
     static cacheName = "L5R_app";
 
      // For each language + base, the JSON file with a matching name will be cached for each of the following content types.
-    static contentTypes = ["clans", "families", "schools", "rings", "skills", "techniques", "techniqueTypes", "titles", "traditions", "uiDisplay"];
+    static contentTypes = ["clans", "families", "schools", "rings", "skills", "techniques", "techniqueTypes", "titles", "traditions", "ui"];
 
     constructor() {
 
@@ -103,6 +103,7 @@ class DataManager {
             if (dataManager.userSettings.language !== "en") {
                 await dataManager.getContent(cache, `./content/${dataManager.userSettings.language}`);
             }
+            // MAKE IT POSSIBLE TO HAVE ONE FILE MISSING
         }
         else {
             // ERROR MESSAGE, CLOSE APPLICATION? <<<<<<<<<<<<<<<
@@ -674,7 +675,7 @@ class ContentManager {
         const fragment = document.createDocumentFragment();
 
         // Create li elements to display for each technique, with span elements inside, each with the proper content and classes for styling
-        const customIcons = dataManager.content.uiDisplay.customIcons;
+        const customIcons = dataManager.content.ui.customIcons;
         for (const tech of filteredTechniques) {
             const li = document.createElement("li");
 
@@ -844,10 +845,10 @@ class ContentManager {
         const attributes = document.createElement("div");
 
         const rank = document.createElement("span");
-        rank.textContent = `${dataManager.content.uiDisplay.techniquesTab.rank} ${tech.rank}`;
+        rank.textContent = `${dataManager.content.ui.techniquesTab.rank} ${tech.rank}`;
         attributes.appendChild(rank);
 
-        const customIcons = dataManager.content.uiDisplay.customIcons;
+        const customIcons = dataManager.content.ui.customIcons;
 
         const type = document.createElement("span");
         type.textContent = String.fromCharCode(customIcons[`${tech.typeRef}Icon`]) + " " + dataManager.content.techniqueTypes[tech.typeRef].name;
@@ -889,7 +890,7 @@ class ContentManager {
             if (tech[stringArrayName] !== undefined) {
                 if (stringArrayName === "newOpportunities") {
                     const opportunity = document.createElement("p");
-                    opportunity.textContent = dataManager.content.uiDisplay.techniquesTab.newOpportunities;
+                    opportunity.textContent = dataManager.content.ui.techniquesTab.newOpportunities;
                     opportunity.classList.add("opportunities");
                     fragment.appendChild(opportunity);
                 }

@@ -286,13 +286,13 @@ class DataManager {
                         rankTechs.add(dataManager.content.techniques[techRef]);
                     }
                     else if (refString.startsWith('TG: ')) {
-                        // If it is a group of techniques, find all techniques that belong to the group and add them to the rankTechs set
+                        // If it is a group of techniques, find all techniques that belong to the group and add them to the rankTechs set unless there is a clan restriction
                         const groupString = refString.slice(4).split(' ').reverse();
                         const groupRing = groupString[2];
                         const groupType = groupString[1];
                         const groupMaxRank = parseInt(groupString[0]);
                         for (const tech of Object.values(dataManager.content.techniques)) {
-                            if ((!groupRing || tech.ringRef === groupRing) && tech.typeRef === groupType && tech.rank <= groupMaxRank) {
+                            if ((!groupRing || tech.ringRef === groupRing) && tech.typeRef === groupType && tech.rank <= groupMaxRank && (!tech.clanRef || tech.clanRef === character.clanRef)) {
                                 rankTechs.add(tech);
                             }
                         }

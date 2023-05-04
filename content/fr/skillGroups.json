@@ -1,0 +1,17 @@
+{
+    "artisan":{
+        "name":"Compétence artisanale"
+    },
+    "social":{
+        "name":"Compétence sociale"
+    },
+    "scholar":{
+        "name":"Compétence savante"
+    },
+    "martial":{
+        "name":"Compétence martiale"
+    },
+    "trade":{
+        "name":"Compétence professionnelle"
+    }
+}

@@ -7,8 +7,59 @@
         <title>L5R app</title>
 
         <style> /* Move this to style.css*/
+
+            :root {
+                --customColor: grey;
+                --liTop: 0;
+            }
+            span.customColor {color: var(--customColor);}
+            li.customColor {border: 3px solid var(--customColor);}
+            button.customColor {background-color: var(--customColor);}
+
+            .air {color: hsl(290, 40%, 60%);}
+            .earth {color: hsl(140, 40%, 50%);}
+            .fire {color: hsl(30, 80%, 60%);}
+            .water {color: hsl(195, 60%, 60%);}
+            .void {color: hsl(0, 20%, 40%);}
+
             * {
                 font-family: Arial, Helvetica, sans-serif, customicons;
+            }
+
+            .bold {
+                font-weight: bold;
+            }
+            .italic {
+                font-style: italic;
+            }
+            .smallFontSize {
+                font-size: 0.75em;
+            }
+            .normalFontSize {
+                font-size: 4vw;
+            }
+            .largeFontSize {
+                font-size: 1.25em;
+            }
+
+            @media screen and (min-width: 400px) {
+                .smallFontSize {
+                    font-size: 12px;
+                }
+                .normalFontSize {
+                    font-size: 16px;
+                }
+                .largeFontSize {
+                    font-size: 20px;
+                }
+            }
+
+            .columnContainer {
+                display: flex;
+                flex-direction: column;
+            }
+            .flexGrow {
+                flex-grow: 1;
             }
 
             body {                
@@ -21,13 +72,134 @@
                 height: 100vh;
                 width: 100vw;
                 max-width: 768px;
-                display: flex;
-                flex-direction: column;
             }
             #main.disabled {
                 pointer-events: none;
                 filter: blur(5px);
+            }            
+
+            #characterHeader {
+                min-height: 50px;
+                border: none;
             }
+
+            #navbar {
+                display: flex;
+            }
+            #navbar button {
+                flex-grow: 1;
+                min-height: 50px;
+                border: none;
+                background-color: #333333;
+                color: white;
+                font-size: 1.5em;
+                cursor: pointer;
+                padding-top: 6px;
+            }
+            #navbar button:hover:not(.currentTab) {
+                background-color: #111111;
+            }
+            #navbar .currentTab {
+                background-color: #555555;
+            }
+
+            .page {
+                overflow: hidden;
+            }
+            .page:not(.currentTab) {
+                display: none;
+            }
+
+            .filters {
+                width: inherit;
+                background-color:darkgray;
+                display: grid;
+                grid-template-columns: 8% auto;
+                gap: 5px;
+                padding: 5px;
+                align-items: center;
+            }
+            .filters>span {
+                grid-row: 1 / span 2;
+                font-size: 2em;
+                padding-top: 5px;
+                text-align: center;
+                cursor: default;
+            }
+            .filters>div{
+                display: flex;
+                flex-wrap: wrap;
+                gap: 5px;
+            }
+            .filters select{
+                font-size: 1em;
+                flex-grow: 1;
+                padding-bottom: 1px;
+                cursor: pointer;
+            }
+
+            .list {
+                list-style-type:none;
+                margin: 0;
+                padding: 0;
+                overflow: auto;
+            }
+            li {
+                border-radius: 25px;
+                background-color: #eeeeee;
+                margin: 5px;
+                padding-left: 5px;
+                padding-right: 5px;
+                min-height: 2.5em;
+                box-sizing: border-box;
+                display: flex;
+                align-items: center;
+                cursor: default;
+                position: relative;
+            }
+            li:hover {
+                background-color: #dddddd;
+            }
+            li * {
+                text-align: center;
+            }
+            
+            .list div>div {
+                display: flex;
+                align-items: center; 
+                justify-content: center;
+                gap: 10px;               
+            }
+
+            .list .rank {
+                font-weight: bold;
+                width: 1em;
+            }
+            .list .large.icon {
+                font-size: 1.5em;
+                width: 1.25em;                
+            }
+            .offset.small.icon {
+                padding-top: 2px;
+            }
+            .offset.large.icon {
+                padding-top: 4px;
+            }
+            .list .mahō {
+                padding-bottom: 3px;
+            }
+            .list .school {
+                padding-top: 2px;
+            }
+            .list .addSymbol {
+                font-size: 1.75em;
+                width: 0.7em;
+            }
+            .list .pointer {
+                cursor: pointer;
+            }
+            .list .available {border: 1px solid black;}
+            .list .incompatible * {color: #AAAAAA;}
 
             #overlay {
                 display: none;
@@ -72,8 +244,6 @@
                 border: 5px solid black;
                 border-radius: 25px;
                 padding: 20px;
-                display: flex;
-                flex-direction: column;
                 overflow: auto;
             }
             #viewer.appear {
@@ -98,279 +268,179 @@
             }
 
             #viewer .attributes {
-                font-size: large;
                 display: flex;
                 justify-content: space-between;
             }
-            .name {                
-                display: flex;
-                flex-direction: column;
-            }
-            #viewer .name {
+            #viewer .title {
                 background-color: #eeeeee;
                 border-top: 1px solid black;
                 border-bottom: 1px solid black;
                 padding-top: 5px;
                 padding-bottom: 3px;
                 text-align: center;
-                font-size: large;
             }
             #viewer .opportunities {
-                font-size: large;
-                font-style: italic;
                 border-top: 1px solid black;
                 border-bottom: 1px solid black;
             }
-            .bold {
-                font-weight: bold;
-            }
-            
-
-            /*
-
-            @media screen and (min-width: 1024px) {
-                #main {
-                    width: 50vw;
-                }
-                #overlay {
-                    position: static;
-                    display: block;
-                    max-width: 50vw;
-                }
-            }
-            
-            */
-
-            :root {
-                --customColor: grey;
-                --liTop: 0;
-            }
-            span.customColor {color: var(--customColor);}
-            li.customColor {border: 2px solid var(--customColor);}
-            button.customColor {background-color: var(--customColor);}
-
-            #characterButton {
-                min-height: 50px;
-                border: none;
-                text-align: center;
-            }
-
-            #navbar {
-                display: flex;
-            }
-            #navbar button {
-                flex-grow: 1;
-                min-height: 50px;
-                border: none;
-                background-color: #333333;
-                color: white;
-                font-size: 1.5em;
-                cursor: pointer;
-            }
-            #navbar button:hover:not(.currentTab) {
-                background-color: #555555;
-            }
-            #navbar .currentTab {
-                background-color: #111111;
-            }
-
-            .air {color: hsl(290, 40%, 60%);}
-            .earth {color: hsl(140, 40%, 50%);}
-            .fire {color: hsl(30, 80%, 60%);}
-            .water {color: hsl(195, 60%, 60%);}
-            .void {color: hsl(0, 20%, 40%);}
-
-            #filters {
-                background-color:darkgray;
-                display: grid;
-                grid-template-columns: 40px auto;
-                gap: 5px;
-                padding: 5px;
-                align-items: center;
-            }
-            #filters>span {
-                grid-row: 1 / span 2;
-                font-size: 2em;
-                padding-top: 5px;
-                text-align: center;
-                cursor: default;
-            }
-            #filters>div{
-                display: flex;
-                flex-wrap: wrap;
-                gap: 5px;
-            }
-            #filters select{
-                flex-grow: 1;
-                padding: 2px;
-                cursor: pointer;
-            }
-
-            #contentList {
-                list-style-type:none;
-                margin: 0;
-                padding: 0;
-                overflow: auto;
-            } 
-            #contentList li {
-                border-radius: 25px;
-                background-color: #eeeeee;
-                margin: 5px;
-                padding-left: 5px;
-                padding-right: 5px;
-                display: flex;
-                align-items: center;
-                min-width: 35px;
-                cursor: default;
-                position: relative;
-                font-size: 4vw;
-            }
-
-            #contentList li span {
-                text-align: center;
-            }
-            
-            #contentList .rank {
-                font-weight: bold;
-                width: 1em;
-            }
-            #contentList .icon {
-                font-size: 1.5em;
-                width: 1.2em;
-                padding-top: 2px;
-            }
-            #contentList .left.icon:not(.Mahō) {
-                padding-top: 4px;
-            }
-            #contentList .mahō {
-                padding-bottom: 4px;
-            }
-            #contentList .name {
-                flex-grow: 1;
-                padding: 5px;
-            }
-            #contentList .traditional {
-                font-size: 3vw;
-                font-style: italic;
-            }
-            
-            #contentList .addSymbol {
-                font-size: 1.7em;
-                width: 0.7em;
-            }
-            @media screen and (min-width: 425px) {
-                #contentList li {
-                    font-size: medium;
-                }
-                #contentList .traditional {
-                    font-size: small;
-                }
-            }
-            #contentList .pointer {
-                cursor: pointer;
-            }
-            #contentList .available {border: 1px solid black;}
-            #contentList .incompatible * {color: #AAAAAA;}
 
         </style>
     </head>
-    <body>
-        <div id="main">
-            <button id="characterButton" class="customColor">
-                <span id="tempSpan">TEMP SCHOOL DROPDOWN</span>
-                <select id="tempSchoolDropdown">
-                    <option value="Hida">Hida</option>
-                    <option value="Hiruma">Hiruma</option>
-                    <option value="Kaiu">Kaiu</option>
-                    <option value="Kuni">Kuni</option>
-                    <option value="Yasuki">Yasuki</option>
-                    <option value="Asahina">Asahina</option>
-                    <option value="Daidoji">Daidoji</option>
-                    <option value="Doji">Doji</option>
-                    <option value="Kakita">Kakita</option>
-                    <option value="Agasha">Agasha</option>
-                    <option value="Kitsuki">Kitsuki</option>
-                    <option value="Mirumoto">Mirumoto</option>
-                    <option value="Togashi">Togashi</option>
-                    <option value="Akodo">Akodo</option>
-                    <option value="Ikoma">Ikoma</option>
-                    <option value="Kitsu">Kitsu</option>
-                    <option value="Matsu">Matsu</option>
-                    <option value="Asako">Asako</option>
-                    <option value="Isawa">Isawa</option>
-                    <option value="Shiba">Shiba</option>
-                    <option value="Kaito">Kaito</option>
-                    <option value="Bayushi">Bayushi</option>
-                    <option value="Shosuro">Shosuro</option>
-                    <option value="Soshi">Soshi</option>
-                    <option value="Yogo">Yogo</option>
-                    <option value="Ide">Ide</option>
-                    <option value="Iuchi">Iuchi</option>
-                    <option value="Moto">Moto</option>
-                    <option value="Shinjo">Shinjo</option>
-                    <option value="Utaku">Utaku</option>
-                    <option value="ronin">ronin</option>
-                </select>
+    <body class="normalFontSize">
+        <div id="main" class="columnContainer">
+            <button id="characterHeader" class="customColor">
+                <div style="display: flex; justify-content: space-evenly;">School:
+                    <select id="tempSchoolDropdown">
+                        <option value="Hida">Hida</option>
+                        <option value="Hiruma">Hiruma</option>
+                        <option value="Kaiu">Kaiu</option>
+                        <option value="Kuni">Kuni</option>
+                        <option value="Yasuki">Yasuki</option>
+                        <option value="Asahina">Asahina</option>
+                        <option value="Daidoji">Daidoji</option>
+                        <option value="Doji">Doji</option>
+                        <option value="Kakita">Kakita</option>
+                        <option value="Agasha">Agasha</option>
+                        <option value="Kitsuki">Kitsuki</option>
+                        <option value="Mirumoto">Mirumoto</option>
+                        <option value="Togashi">Togashi</option>
+                        <option value="Akodo">Akodo</option>
+                        <option value="Ikoma">Ikoma</option>
+                        <option value="Kitsu">Kitsu</option>
+                        <option value="Matsu">Matsu</option>
+                        <option value="Asako">Asako</option>
+                        <option value="Isawa">Isawa</option>
+                        <option value="Shiba">Shiba</option>
+                        <option value="Kaito">Kaito</option>
+                        <option value="Bayushi">Bayushi</option>
+                        <option value="Shosuro">Shosuro</option>
+                        <option value="Soshi">Soshi</option>
+                        <option value="Yogo">Yogo</option>
+                        <option value="Ide">Ide</option>
+                        <option value="Iuchi">Iuchi</option>
+                        <option value="Moto">Moto</option>
+                        <option value="Shinjo">Shinjo</option>
+                        <option value="Utaku">Utaku</option>
+                        <option value="ronin">ronin</option>
+                    </select>
+                    <span>/ Spent EXP:</span>
+                    <span id="spentExp"></span>
+                    <span>/ Rank:</span>
+                    <span id="rank"></span>
+                </div>             
+                <div style="display: flex; justify-content: space-evenly;">
+                    <span onclick="contentManager.confirm(contentManager.increaseRing, 'air')" style="background-color: #dddddd; border: 1px solid #111111; padding: 2px;">Air</span>                    
+                    <span onclick="contentManager.confirm(contentManager.increaseRing, 'earth')" style="background-color: #dddddd; border: 1px solid #111111; padding: 2px;">Earth</span>
+                    <span onclick="contentManager.confirm(contentManager.increaseRing, 'fire')" style="background-color: #dddddd; border: 1px solid #111111; padding: 2px;">Fire</span>
+                    <span onclick="contentManager.confirm(contentManager.increaseRing, 'water')" style="background-color: #dddddd; border: 1px solid #111111; padding: 2px;">Water</span>
+                    <span onclick="contentManager.confirm(contentManager.increaseRing, 'void')" style="background-color: #dddddd; border: 1px solid #111111; padding: 2px;">Void</span>
+                </div>                   
             </button>
             <div id="navbar">
-                <button id="userTab">&#xe91b</button>
-                <button id="statsTab">&#xe916</button>
-                <button id="skillsTab">&#xe90e</button>
-                <button id="techniquesTab">&#xe914</button>
-                <button id="experienceTab">&#xe912</button>
-                <button id="itemsTab">&#xe919</button>
-                <button id="notesTab">&#xe910</button>
+                <button class="user" onclick="contentManager.changeTab('user')">&#xe91b</button>
+                <button class="rings" onclick="contentManager.changeTab('rings')">&#xe916</button>
+                <button class="skills" onclick="contentManager.changeTab('skills')">&#xe90e</button>
+                <button class="techniques" onclick="contentManager.changeTab('techniques')">&#xe914</button>
+                <button class="experience" onclick="contentManager.changeTab('experience')">&#xe912</button>
+                <button class="items" onclick="contentManager.changeTab('items')">&#xe919</button>
+                <button class="notes" onclick="contentManager.changeTab('notes')">&#xe910</button>
             </div>
-            <form id="filters">
-                <span>&#xe906</span>
-                <div>
-                    <select id="rankFilter">
-                        <option value="all">Tout rang</option>
-                        <option value="1">Rang 1</option>
-                        <option value="2">Rang 2</option>
-                        <option value="3">Rang 3</option>
-                        <option value="4">Rang 4</option>
-                        <option value="5">Rang 5</option>
-                    </select>
-                    <select id="typeFilter">
-                        <option value="all">Tout type</option>
-                        <option value="kata">Katas</option>
-                        <option value="kihō">Kihō</option>
-                        <option value="invocation">Invocations</option>
-                        <option value="ritual">Rituels</option>
-                        <option value="shūji">Shūji</option>
-                        <option value="mahō">Mahō</option>
-                        <option value="ninjutsu">Ninjutsu</option>
-                    </select>
-                    <select id="ringFilter">
-                        <option value="all">Tout anneau</option>
-                        <option value="air">Air</option>
-                        <option value="earth">Terre</option>
-                        <option value="fire">Feu</option>
-                        <option value="water">Eau</option>
-                        <option value="void">Vide</option>
-                    </select>
+            <div class="page user columnContainer">WIP</div>
+            <div class="page rings columnContainer">WIP</div>
+            <div class="page skills columnContainer">
+                <div class="filters">
+                    <span>&#xe906</span>
+                    <div>
+                        <select id="skillGroupFilter">
+                            <option value="any">Tout groupe</option>
+                            <option value="artisan">Artisanal</option>
+                            <option value="social">Social</option>
+                            <option value="scholar">Savant</option>
+                            <option value="martial">Martial</option>
+                            <option value="trade">Professionnel</option>
+                        </select>
+                        <select id="skillRingFilter">
+                            <option value="any">Tout anneau</option>
+                            <option value="air">Air</option>
+                            <option value="earth">Terre</option>
+                            <option value="fire">Feu</option>
+                            <option value="water">Eau</option>
+                            <option value="void">Vide</option>
+                        </select>
+                    </div>
+                    <div>
+                        <select id="skillAvailabilityFilter">
+                            <option value="all">Liste complète</option>
+                            <option value="learned">Compétences apprises</option>
+                        </select>
+                        <select id="skillCurriculaFilter">
+                            <option value="any">Toute origine</option>
+                            <option value="excluded">Hors cursus</option>
+                            <option value="included">Cursus</option>
+                            <option value="current">Rang actuel</option>
+                        </select>
+                    </div>
                 </div>
-                <div>
-                    <select id="availabilityFilter">
-                        <option value="all">Liste complète</option>
-                        <option value="compatible">Techniques compatibles</option>
-                        <option value="available">Techniques disponibles</option>
-                        <option value="missable">Techniques manquables</option>
-                        <option value="learned">Techniques apprises</option>
-                    </select>
-                    <select id="curriculaFilter">
-                        <option value="indifferent">Toute origine</option>
-                        <option value="excluded">Hors du cursus</option>
-                        <option value="included">Dans le cursus</option>
-                        <option value="current">Rang actuel</option>
-                    </select>
+                <ul id="skillsList" class="list">
+                </ul>
+            </div>
+            <div class="page techniques columnContainer">
+                <div class="filters">
+                    <span>&#xe906</span>
+                    <div>
+                        <select id="techRankFilter">
+                            <option value="any">Tout rang</option>
+                            <option value="1">Rang 1</option>
+                            <option value="2">Rang 2</option>
+                            <option value="3">Rang 3</option>
+                            <option value="4">Rang 4</option>
+                            <option value="5">Rang 5</option>
+                        </select>
+                        <select id="techTypeFilter">
+                            <option value="any">Tout type</option>
+                            <option value="kata">Katas</option>
+                            <option value="kihō">Kihō</option>
+                            <option value="invocation">Invocations</option>
+                            <option value="ritual">Rituels</option>
+                            <option value="shūji">Shūji</option>
+                            <option value="mahō">Mahō</option>
+                            <option value="ninjutsu">Ninjutsu</option>
+                        </select>
+                        <select id="techRingFilter">
+                            <option value="any">Tout anneau</option>
+                            <option value="air">Air</option>
+                            <option value="earth">Terre</option>
+                            <option value="fire">Feu</option>
+                            <option value="water">Eau</option>
+                            <option value="void">Vide</option>
+                        </select>
+                    </div>
+                    <div>
+                        <select id="techAvailabilityFilter">
+                            <option value="all">Liste complète</option>
+                            <option value="compatible">Techniques compatibles</option>
+                            <option value="available">Techniques disponibles</option>
+                            <option value="missable">Techniques manquables</option>
+                            <option value="learned">Techniques apprises</option>
+                        </select>
+                        <select id="techCurriculaFilter">
+                            <option value="any">Toute origine</option>
+                            <option value="excluded">Hors cursus</option>
+                            <option value="included">Cursus</option>
+                            <option value="current">Rang actuel</option>
+                        </select>
+                    </div>
                 </div>
-            </form>
-            <ul id="contentList">
+                <ul id="techniquesList" class="list">
+                </ul>
+            </div>
+            <div class="page experience columnContainer">WIP</div>
+            <div class="page items columnContainer">WIP</div>
+            <div class="page notes columnContainer">WIP</div>
         </div>
         <div id="overlay" onclick="contentManager.hideOverlay(event.target)">
-            <div id="viewer">
+            <div id="viewer" class="columnContainer">
+            </div>
         </div>
 
         <script defer src="L5R_script.js"></script>

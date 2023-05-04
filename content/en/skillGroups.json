@@ -1,0 +1,17 @@
+{
+    "artisan":{
+        "name":"Artisan skill"
+    },
+    "social":{
+        "name":"Social skill"
+    },
+    "scholar":{
+        "name":"Scholar skill"
+    },
+    "martial":{
+        "name":"Martial skill"
+    },
+    "trade":{
+        "name":"Trade skill"
+    }
+}

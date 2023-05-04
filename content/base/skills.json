@@ -1,74 +1,74 @@
 {
     "aesthetics":{
-        "group":"artisan"
+        "groupRef":"artisan"
     },
     "composition":{
-        "group":"artisan"
+        "groupRef":"artisan"
     },
     "design":{
-        "group":"artisan"
+        "groupRef":"artisan"
     },
     "smithing":{
-        "group":"artisan"
+        "groupRef":"artisan"
     },
     "command":{
-        "group":"social"
+        "groupRef":"social"
     },
     "courtesy":{
-        "group":"social"
+        "groupRef":"social"
     },
     "games":{
-        "group":"social"
+        "groupRef":"social"
     },
     "performance":{
-        "group":"social"
+        "groupRef":"social"
     },
     "culture":{
-        "group":"scholar"
+        "groupRef":"scholar"
     },
     "government":{
-        "group":"scholar"
+        "groupRef":"scholar"
     },
     "medicine":{
-        "group":"scholar"
+        "groupRef":"scholar"
     },
     "sentiment":{
-        "group":"scholar"
+        "groupRef":"scholar"
     },
     "theology":{
-        "group":"scholar"
+        "groupRef":"scholar"
     },
     "fitness":{
-        "group":"martial"
+        "groupRef":"martial"
     },
     "martial arts [melee]":{
-        "group":"martial"
+        "groupRef":"martial"
     },
     "martial arts [ranged]":{
-        "group":"martial"
+        "groupRef":"martial"
     },
     "martial arts [unarmed]":{
-        "group":"martial"
+        "groupRef":"martial"
     },
     "meditation":{
-        "group":"martial"
+        "groupRef":"martial"
     },
     "tactics":{
-        "group":"martial"
+        "groupRef":"martial"
     },
     "commerce":{
-        "group":"trade"
+        "groupRef":"trade"
     },
     "labor":{
-        "group":"trade"
+        "groupRef":"trade"
     },
     "seafaring":{
-        "group":"trade"
+        "groupRef":"trade"
     },
     "skulduggery":{
-        "group":"trade"
+        "groupRef":"trade"
     },
     "survival":{
-        "group":"trade"
+        "groupRef":"trade"
     }
 }

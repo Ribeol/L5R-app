@@ -1,13 +1,79 @@
 {
     "characterCreation":{},
-    "userTab":{},
-    "statsTab":{},
-    "skillsTab":{},
-    "techniquesTab":{
+    "user":{},
+    "stats":{},
+    "skills":{
+        "groupFilterOptions":[
+            {"value":"any","text":"Any group"},
+            {"value":"artisan","text":"Artisan skills"},
+            {"value":"social","text":"Social skills"},
+            {"value":"scholar","text":"Scholar skills"},
+            {"value":"martial","text":"Martial skills"},
+            {"value":"trade","text":"Trade skills"}
+        ],
+        "ringFilterOptions":[
+            {"value":"any","text":"Any ring"},
+            {"value":"air","text":"Air"},
+            {"value":"earth","text":"Earth"},
+            {"value":"fire","text":"Fire"},
+            {"value":"water","text":"Water"},
+            {"value":"void","text":"Void"}
+        ],
+        "availabilityFilterOptions":[
+            {"value":"all","text":"Full list"},
+            {"value":"learned","text":"Learned skills"}
+        ],
+        "curriculaFilterOptions":[
+            {"value":"any","text":"Any origin"},
+            {"value":"excluded","text":"Extra-curricular"},
+            {"value":"included","text":"Curricular"},
+            {"value":"current","text":"Current rank"}
+        ]
+    },
+    "techniques":{
+        "rankFilterOptions":[
+            {"value":"any","text":"Any rank"},
+            {"value":"1","text":"Rank 1"},
+            {"value":"2","text":"Rank 2"},
+            {"value":"3","text":"Rank 3"},
+            {"value":"4","text":"Rank 4"},
+            {"value":"5","text":"Rank 5"}
+        ],
+        "typeFilterOptions":[
+            {"value":"any","text":"Any type"},
+            {"value":"kata","text":"Kata"},
+            {"value":"kihō","text":"Kihō"},
+            {"value":"invocation","text":"Invocations"},
+            {"value":"ritual","text":"Rituals"},
+            {"value":"shūji","text":"Shūji"},
+            {"value":"mahō","text":"Mahō"},
+            {"value":"ninjutsu","text":"Ninjutsu"}
+        ],
+        "ringFilterOptions":[
+            {"value":"any","text":"Any ring"},
+            {"value":"air","text":"Air"},
+            {"value":"earth","text":"Earth"},
+            {"value":"fire","text":"Fire"},
+            {"value":"water","text":"Water"},
+            {"value":"void","text":"Void"}
+        ],
+        "availabilityFilterOptions":[
+            {"value":"all","text":"Full list"},
+            {"value":"compatible","text":"Compatible techniques"},
+            {"value":"available","text":"Available techniques"},
+            {"value":"missable","text":"Missable techniques"},
+            {"value":"learned","text":"Learned techniques"}
+        ],
+        "curriculaFilterOptions":[
+            {"value":"any","text":"Any origin"},
+            {"value":"excluded","text":"Extra-curricular"},
+            {"value":"included","text":"Curricular"},
+            {"value":"current","text":"Current rank"}
+        ],
         "rank":"Rank",
         "newOpportunities":"New Opportunities"
     },
-    "experienceTab":{},
-    "itemsTab":{},
-    "notesTab":{}
+    "experience":{},
+    "items":{},
+    "notes":{}
 }

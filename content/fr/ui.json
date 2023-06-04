@@ -11,16 +11,18 @@
             {"value":"martial","text":"Compétences martiales"},
             {"value":"trade","text":"Compétences professionnelles"}
         ],
-        "ringFilterOptions":[
-            {"value":"any","text":"Tout anneau"},
-            {"value":"air","text":"Air"},
-            {"value":"earth","text":"Terre"},
-            {"value":"fire","text":"Feu"},
-            {"value":"water","text":"Eau"},
-            {"value":"void","text":"Vide"}
+        "rankFilterOptions":[
+            {"value":"any","text":"Tout rang"},
+            {"value":"0","text":"Rang 0"},
+            {"value":"1","text":"Rang 1"},
+            {"value":"2","text":"Rang 2"},
+            {"value":"3","text":"Rang 3"},
+            {"value":"4","text":"Rang 4"},
+            {"value":"5","text":"Rang 5"}
         ],
         "availabilityFilterOptions":[
             {"value":"all","text":"Liste complète"},
+            {"value":"upgradable","text":"Compétences améliorables"},
             {"value":"learned","text":"Compétences apprises"}
         ],
         "curriculaFilterOptions":[
@@ -37,7 +39,8 @@
             {"value":"2","text":"Rang 2"},
             {"value":"3","text":"Rang 3"},
             {"value":"4","text":"Rang 4"},
-            {"value":"5","text":"Rang 5"}
+            {"value":"5","text":"Rang 5"},
+            {"value":"6","text":"Rang 6"}
         ],
         "typeFilterOptions":[
             {"value":"any","text":"Tout type"},
@@ -47,7 +50,11 @@
             {"value":"ritual","text":"Rituels"},
             {"value":"shūji","text":"Shūji"},
             {"value":"mahō","text":"Mahō"},
-            {"value":"ninjutsu","text":"Ninjutsu"}
+            {"value":"ninjutsu","text":"Ninjutsu"},            
+            {"value":"school ability","text":"Capa. école"},
+            {"value":"mastery ability","text":"Capa. maîtrise"},
+            {"value":"title effect","text":"Effets de titre"},
+            {"value":"title ability","text":"Capa. titre"}
         ],
         "ringFilterOptions":[
             {"value":"any","text":"Tout anneau"},
@@ -58,11 +65,11 @@
             {"value":"void","text":"Vide"}
         ],
         "availabilityFilterOptions":[
-            {"value":"all","text":"Liste complète"},
-            {"value":"compatible","text":"Techniques compatibles"},
-            {"value":"available","text":"Techniques disponibles"},
+            {"value":"learned","text":"Techniques apprises"},
             {"value":"missable","text":"Techniques manquables"},
-            {"value":"learned","text":"Techniques apprises"}
+            {"value":"available","text":"Techniques disponibles"},
+            {"value":"compatible","text":"Techniques compatibles"},
+            {"value":"all","text":"Liste complète"}
         ],
         "curriculaFilterOptions":[
             {"value":"any","text":"Toute origine"},

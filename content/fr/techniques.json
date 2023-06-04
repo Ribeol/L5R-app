@@ -704,7 +704,7 @@
     },
     "Blessed Wind":{
         "name":"Vent béni",
-        "traditionalNames":{
+        "extraNames":{
             "alchemy":"Tempête de sable en flacon",
             "fortunist":"Reproche de Tamon",
             "foreign":"Pilier du monde"
@@ -724,7 +724,7 @@
     },
     "By the Light of the Lord Moon":{
         "name":"Par la lumière de Sire Lune",
-        "traditionalNames":{
+        "extraNames":{
             "ancestral":"Les yeux de Kitsuki",
             "elemental":"Le vent éparpille les ombres",
             "foreign":"Révéler le monde des Fantômes"
@@ -739,13 +739,13 @@
             "Effets : en cas de réussite, vous révélez les personnages et les objets dissimulés (des compartiments secrets, des trappes piégées, des armes cachées…) dans la zone ciblée. Les éléments cachés sont soulignés par un contour lumineux que seul vous êtes capable de percevoir. Cette invocation ne permet de révéler que des objets et des gens cachés par des moyens ordinaires."
         ],
         "newOpportunities":[
-            "|opportunityIcon|+ de l’Air : en cas de réussite, par 􀀀 |opportunityIcon| dépensé de cette façon, vous pouvez également révéler 1 objet dissimulé par des moyens magiques.",
+            "|opportunityIcon|+ de l’Air : en cas de réussite, par  |opportunityIcon| dépensé de cette façon, vous pouvez également révéler 1 objet dissimulé par des moyens magiques.",
             "|opportunityIcon|opportunityIcon|+ de l’Air : désignez un autre personnage à portée 0-1 par |opportunityIcon|opportunityIcon| dépensés de cette façon. Le ou les personnages choisis sont également capables de voir les objets cachés."
         ]
     },
     "Call Upon the Wind":{
         "name":"L’appel du vent",
-        "traditionalNames":{
+        "extraNames":{
             "alchemy":"Les douces ailes du Wren",
             "ancestral":"Petits pas de Doji",
             "fortunist":"Les sourires de Benten"
@@ -765,7 +765,7 @@
     },
     "Cloak of Night":{
         "name":"Manteau de nuit",
-        "traditionalNames":{
+        "extraNames":{
             "alchemy":"Fumée de lumière volée",
             "fortunist":"Étole du vent du nord",
             "foreign":"Arpenter le monde des ombres"
@@ -785,7 +785,7 @@
     },
     "False Realm of the Fox Spirits":{
         "name":"Royaume factice des esprits renards",
-        "traditionalNames":{
+        "extraNames":{
             "ancestral":"Ikoma se rappelle une histoire",
             "fortunist":"Perdu dans Isawa Mori",
             "foreign":"Longue-vue occultée"
@@ -806,7 +806,7 @@
     },
     "Grasp of the Air Dragon":{
         "name":"Étreinte du Dragon de l’Air",
-        "traditionalNames":{
+        "extraNames":{
             "ancestral":"Bond de Shikajin",
             "fortunist":"Le voyage de Jikoju",
             "foreign":"Le berceau du vent"
@@ -821,13 +821,13 @@
             "Effets : en cas de réussite, vous conjurez une rafale de vent qui emporte la cible sur un nombre de niveaux de portée égal à votre anneau d’Air, plus 1 par succès bonus (maximum 6 niveaux de portée), quel que soit le terrain environnant. Vous pouvez choisir de déposer la cible avec douceur (action de Soutien) ou de la projeter au sol (action d’Attaque). Dans ce dernier cas, la cible doit résister à l’aide d’un test de Forme (Terre 5, Feu 2) ND 4 pour éviter de subir les effets d’une chute de portée 3."
         ],
         "newOpportunities":[
-            "|opportunityIcon|+ de l’Air : la portée maximale de cette technique augmente de 1 par 􀀀 |opportunityIcon| dépensé de cette façon.",
+            "|opportunityIcon|+ de l’Air : la portée maximale de cette technique augmente de 1 par  |opportunityIcon| dépensé de cette façon.",
             "|opportunityIcon|opportunityIcon|+ de l’Air : la hauteur de la chute augmente de 1 niveau de portée par |opportunityIcon| dépensés de cette façon."
         ]
     },
     "Mask of Wind":{
         "name":"Masque du vent",
-        "traditionalNames":{
+        "extraNames":{
             "alchemy":"Traits d’argile mouvants",
             "ancestral":"Le visage de Furuyari",
             "fortunist":"Plaisanterie de Sadahako"
@@ -848,7 +848,7 @@
     },
     "Nature’s Touch":{
         "name":"Caresse de la nature",
-        "traditionalNames":{
+        "extraNames":{
             "ancestral":"Murmures de Shinjo",
             "fortunist":"Danse avec les Ki-Rin",
             "foreign":"Voix du roi des vallons"
@@ -870,7 +870,7 @@
     },
     "Rise, Air":{
         "name":"Air, incarne-toi",
-        "traditionalNames":{
+        "extraNames":{
             "alchemy":"Poussière de l’incarnation",
             "ancestral":"Gardien d’Air",
             "foreign":"Invocation du Djinn de l’Air"
@@ -890,7 +890,7 @@
     },
     "Secrets on the Wind":{
         "name":"Des secrets dans le vent",
-        "traditionalNames":{
+        "extraNames":{
             "ancestral":"Murmure à l’oreille de Bayushi",
             "fortunist":"Don de Tenjin",
             "foreign":"La mouche sur le mur du Nord"
@@ -912,7 +912,7 @@
     },
     "Summon Fog":{
         "name":"Nappe de brouillard",
-        "traditionalNames":{
+        "extraNames":{
             "ancestral":"Fuite de Soshi",
             "elemental":"Voile de l’aube",
             "fortunist":"Jotei lové au repos"
@@ -934,7 +934,7 @@
     },
     "Tempest of Air":{
         "name":"Tornade",
-        "traditionalNames":{
+        "extraNames":{
             "alchemy":"Fiole de tempête",
             "fortunist":"Hurlement d’Isora",
             "foreign":"Battement d’ailes de la wyverne"
@@ -954,7 +954,7 @@
     },
     "Token of Memory":{
         "name":"Fragment de souvenir",
-        "traditionalNames":{
+        "extraNames":{
             "ancestral":"Énigme d’Agasha",
             "elemental":"Ruse du kami de l’Air",
             "fortunist":"Plaisanterie d’Ebisu"
@@ -976,7 +976,7 @@
     },
     "Vapor of Nightmares":{
         "name":"Émanation de cauchemar",
-        "traditionalNames":{
+        "extraNames":{
             "ancestral":"Togashi parle avec douceur",
             "elemental":"L’ennemi du cœur",
             "fortunist":"L’ombre de la roue du karma"
@@ -997,7 +997,7 @@
     },
     "Wrath of Kaze-no-Kami":{
         "name":"Courroux de Kaze no kami",
-        "traditionalNames":{
+        "extraNames":{
             "alchemy":"Fiole de typhon",
             "ancestral":"Piétinement d’Utaku",
             "elemental":"Furie du dragon de l’Air"
@@ -1019,7 +1019,7 @@
     },
     "Yari of Air":{
         "name":"Yari de l’air",
-        "traditionalNames":{
+        "extraNames":{
             "alchemy":"Manche du yari du vent",
             "fortunist":"Lance de Suijin",
             "foreign":"Hallebarde du Djinn"
@@ -1041,7 +1041,7 @@
     },
     "Armor of Earth":{
         "name":"Armure de la Terre",
-        "traditionalNames":{
+        "extraNames":{
             "ancestral":"Carapace de Hida",
             "fortunist":"La main de Bishamon",
             "foreign":"Champs de pierre"
@@ -1063,7 +1063,7 @@
     },
     "Bind the Shadow":{
         "name":"Enchaîner les ténèbres",
-        "traditionalNames":{
+        "extraNames":{
             "alchemy":"Cercle de Cendres et de Sel",
             "elemental":"Réprimande du kami de la Terre",
             "fortunist":"Jugement des Dix Mille"
@@ -1086,7 +1086,7 @@
     },
     "Caress of Earth":{
         "name":"Caresse de la Terre",
-        "traditionalNames":{
+        "extraNames":{
             "alchemy":"Baume du kami de la pierre",
             "ancestral":"Les multiples mains de Kaiu",
             "foreign":"Litanie des liens infinis"
@@ -1106,7 +1106,7 @@
     },
     "Courage of Seven Thunders":{
         "name":"Courage des Sept Tonnerres",
-        "traditionalNames":{
+        "extraNames":{
             "ancestral":"La position inébranlable d’Akodo",
             "elemental":"Cœur de pierre inflexible",
             "foreign":"Marche dans la vallée des ombres"
@@ -1128,7 +1128,7 @@
     },
     "Earthquake":{
         "name":"Séisme",
-        "traditionalNames":{
+        "extraNames":{
             "ancestral":"Le rugissement d’Akodo",
             "elemental":"Englouti par les kamis de la Terre",
             "fortunist":"Le marteau de Kyufoki"
@@ -1150,7 +1150,7 @@
     },
     "Earth Becomes Sky":{
         "name":"La terre devient le ciel",
-        "traditionalNames":{
+        "extraNames":{
             "alchemy":"Fiole de terre explosive",
             "fortunist":"La chute de Yama no kami",
             "foreign":"Avalanche de terre"
@@ -1167,7 +1167,7 @@
     },
     "Embrace of Kenro-Ji-Jin":{
         "name":"Étreinte de Kenro-ji-jin",
-        "traditionalNames":{
+        "extraNames":{
             "alchemy":"Baume de l’araignée terrestre",
             "ancestral":"Passage de Hiruma",
             "elemental":"Grimper sur le dos du dragon de la Terre"
@@ -1189,7 +1189,7 @@
     },
     "Grasp of Earth":{
         "name":"Étreinte de la Terre",
-        "traditionalNames":{
+        "extraNames":{
             "alchemy":"Potion de cristallisation",
             "ancestral":"Les chaînes de Hida",
             "fortunist":"Figé sous le regard de Bishamon"
@@ -1210,7 +1210,7 @@
     },
     "Jade Strike":{
         "name":"Assaut de jade",
-        "traditionalNames":{
+        "extraNames":{
             "ancestral":"Larmes de la déesse Soleil",
             "fortunist":"Souffle du dragon de Jade",
             "foreign":"Anathème de la Terre"
@@ -1231,7 +1231,7 @@
     },
     "Jurōjin’s Balm":{
         "name":"Baume de Jurōjin",
-        "traditionalNames":{
+        "extraNames":{
             "elemental":"Sang des kamis de la Terre",
             "fortunist":"La patience de Jiro",
             "foreign":"Le baiser de la dame de l’étang"
@@ -1253,7 +1253,7 @@
     },
     "Power of the Earth Dragon":{
         "name":"Puissance du Dragon de la Terre",
-        "traditionalNames":{
+        "extraNames":{
             "alchemy":"Fiole de pierre fortifiante",
             "ancestral":"Détermination d’Osano-wo",
             "fortunist":"Bénédiction verdoyante de Jurōjin"
@@ -1274,7 +1274,7 @@
     },
     "Rise, Earth":{
         "name":"Terre, incarne-toi",
-        "traditionalNames":{
+        "extraNames":{
             "ancestral":"Gardien de la Terre",
             "fortunist":"Sentinelles du Mont Sengen",
             "foreign":"Guerriers de terre glaise"
@@ -1296,7 +1296,7 @@
     },
     "Symbol of Earth":{
         "name":"Symbole de la Terre",
-        "traditionalNames":{
+        "extraNames":{
             "alchemy":"Marque de Cristal et de Jade",
             "fortunist":"Consécration du Ningen-do",
             "foreign":"Sceau de la Terre purifiée"
@@ -1317,7 +1317,7 @@
     },
     "Tetsubō of Earth":{
         "name":"Tetsubō de la Terre",
-        "traditionalNames":{
+        "extraNames":{
             "alchemy":"Le marteau du forgeron",
             "ancestral":"Pilier d’Akemi",
             "fortunist":"Kanabo de Bishamon"
@@ -1339,7 +1339,7 @@
     },
     "Tomb of Jade":{
         "name":"Tombe de jade",
-        "traditionalNames":{
+        "extraNames":{
             "ancestral":"Miséricorde de la déesse Soleil",
             "elemental":"Accolade des kamis de pierre",
             "fortunist":"Regard pétrifiant d’Amaterasu"
@@ -1362,7 +1362,7 @@
     },
     "Wall of Earth":{
         "name":"Muraille de terre",
-        "traditionalNames":{
+        "extraNames":{
             "alchemy":"Poudre de cristallisation",
             "elemental":"Modeler la Terre",
             "fortunist":"Les mains de Sengen"
@@ -1386,7 +1386,7 @@
     },
     "Armor of Radiance":{
         "name":"Armure rayonnante",
-        "traditionalNames":{
+        "extraNames":{
             "alchemy":"L’huile pour attiser le feu",
             "ancestral":"Armure d’Osano-wo",
             "foreign":"Tunique d’Efrit"
@@ -1407,7 +1407,7 @@
     },
     "Biting Steel":{
         "name":"Morsure de l’acier",
-        "traditionalNames":{
+        "extraNames":{
             "alchemy":"Baume du métal impitoyable",
             "elemental":"Éveil de la flamme de la lame",
             "fortunist":"La forge de Xing Guo"
@@ -1429,7 +1429,7 @@
     },
     "Breath of the Fire Dragon":{
         "name":"Souffle du Dragon du Feu",
-        "traditionalNames":{
+        "extraNames":{
             "alchemy":"Saké d’oni",
             "ancestral":"Souffle ardent de Togashi",
             "foreign":"Soupirs des vents du désert"
@@ -1461,7 +1461,7 @@
     },
     "Fukurokujin’s Wit":{
         "name":"Esprit de Fukurokujin",
-        "traditionalNames":{
+        "extraNames":{
             "ancestral":"Sagesse des Kitsu",
             "elemental":"Allumer la chandelle de l’esprit",
             "foreign":"Mantra des rois érudits"
@@ -1481,7 +1481,7 @@
     },
     "Fury of Osano-wo":{
         "name":"Fureur d’Osano-wo",
-        "traditionalNames":{
+        "extraNames":{
             "alchemy":"Orbe de feu céleste",
             "ancestral":"Ultime bataille de Hochiu",
             "elemental":"Récolte des graines crépitantes"
@@ -1502,7 +1502,7 @@
     },
     "Katana of Fire":{
         "name":"Katana du Feu",
-        "traditionalNames":{
+        "extraNames":{
             "alchemy":"Changer le feu en acier",
             "ancestral":"Écho étranglé",
             "fortunist":"Sabre d’Osano-wo"
@@ -1525,7 +1525,7 @@
     },
     "Matsu’s Battlecry":{
         "name":"Cri de guerre de Matsu",
-        "traditionalNames":{
+        "extraNames":{
             "elemental":"Accueillir les flammes",
             "fortunist":"Malédiction de Hotei",
             "foreign":"Brume de bataille"
@@ -1542,7 +1542,7 @@
     },
     "Ravenous Swarms":{
         "name":"Nuée vorace",
-        "traditionalNames":{
+        "extraNames":{
             "ancestral":"La fureur oubliée d’Asahina",
             "elemental":"Orbes de flammes dansantes",
             "fortunist":"Kitsunebi d’Inari"
@@ -1564,7 +1564,7 @@
     },
     "Rise, Flame":{
         "name":"Feu, incarne-toi",
-        "traditionalNames":{
+        "extraNames":{
             "alchemy":"Flacon d’incarnation",
             "ancestral":"Gardien du Feu",
             "fortunist":"La dame de compagnie d’Uzume"
@@ -1586,7 +1586,7 @@
     },
     "The Cleansing Fire":{
         "name":"Le feu purificateur",
-        "traditionalNames":{
+        "extraNames":{
             "alchemy":"Onction du dragon du Feu",
             "ancestral":"Rage miséricordieuse d’Isawa",
             "fortunist":"La paix d’Osano-wo"
@@ -1603,7 +1603,7 @@
     },
     "The Fires from Within":{
         "name":"Feu intérieur",
-        "traditionalNames":{
+        "extraNames":{
             "ancestral":"Lumière édifiante d’Asako",
             "fortunist":"L’énigme de Hotei",
             "foreign":"Extension du cœur de flammes"
@@ -1623,7 +1623,7 @@
     },
     "The Soul’s Blade":{
         "name":"Lame spirituelle",
-        "traditionalNames":{
+        "extraNames":{
             "alchemy":"Griffe du dragon du Feu",
             "ancestral":"Pétale céleste du chrysanthème",
             "foreign":"Tranche-montagne"
@@ -1647,7 +1647,7 @@
     },
     "Wall of Fire":{
         "name":"Muraille de flammes",
-        "traditionalNames":{
+        "extraNames":{
             "alchemy":"Poudre de cendre combustible",
             "fortunist":"À la poursuite d’Osano-wo",
             "foreign":"Murs du palais de Feu"
@@ -1667,7 +1667,7 @@
     },
     "Wings of the Phoenix":{
         "name":"Ailes du phénix",
-        "traditionalNames":{
+        "extraNames":{
             "alchemy":"Transmutation enflammée",
             "ancestral":"Ascension d’Isawa",
             "fortunist":"Étalon ardent de Hachiman"
@@ -1688,7 +1688,7 @@
     },
     "Bō of Water":{
         "name":"Bō de l’Eau",
-        "traditionalNames":{
+        "extraNames":{
             "ancestral":"Pagaie de Kaimetsu-O",
             "fortunist":"Bâton de marche d’Ebisu",
             "foreign":"Bâton du sorcier"
@@ -1710,7 +1710,7 @@
     },
     "Dance of Seasons":{
         "name":"La danse des saisons",
-        "traditionalNames":{
+        "extraNames":{
             "alchemy":"Sels de changement saisonnier",
             "ancestral":"Le vœu intime de Kuriko",
             "fortunist":"Tour de la roue d’Uzume"
@@ -1731,7 +1731,7 @@
     },
     "Dominion of Suijin":{
         "name":"Le domaine de Suijin",
-        "traditionalNames":{
+        "extraNames":{
             "ancestral":"Fenêtre d’Iuchi",
             "elemental":"La confluence des rivières",
             "foreign":"Espions de l’étang des jardins"
@@ -1747,15 +1747,15 @@
         ],
         "newOpportunities":[
             "|opportunityIcon| de l’Eau : en plus de pouvoir observer l’autre point d’eau, vous pouvez entendre des sons très étouffés provenant de l’autre côté.",
-            "􀀀􀀀|opportunityIcon| de l’Eau : la vision est réservée à vous et à vous seul : aux yeux des observateurs, la surface de l’eau semble parfaitement normale.",
-            "􀀀|opportunityIcon| de l’Eau : le lieu que vous observez peut être situé à n’importe quelle distance de vous, mais doit tout de même vous être familier.",
+            "|opportunityIcon| de l’Eau : la vision est réservée à vous et à vous seul : aux yeux des observateurs, la surface de l’eau semble parfaitement normale.",
+            "|opportunityIcon| de l’Eau : le lieu que vous observez peut être situé à n’importe quelle distance de vous, mais doit tout de même vous être familier.",
             "|opportunityIcon|opportunityIcon| de l’Eau : vous pouvez également utiliser des nuages, des bancs de brouillard, de la neige ou des blocs de glace comme support pour cette technique.",
             "|opportunityIcon|opportunityIcon|opportunityIcon| de l’Eau : en plus d’être capable d’observer à travers l’autre étendue d’eau, vous pouvez traverser le portail temporaire que vous avez créé pour rejoindre l’autre lieu et emmener un nombre de personnages égal à votre anneau de l’Eau. Chaque utilisation de cette invocation permet d’effectuer un aller simple ; en outre, tout le monde est systématiquement trempé à l’arrivée."
         ]
     },
     "Ever-Changing Waves":{
         "name":"L’impermanence du ressac",
-        "traditionalNames":{
+        "extraNames":{
             "alchemy":"Élixir de métamorphose",
             "fortunist":"Bénédiction de Megumi",
             "foreign":"Une myriade de formes"
@@ -1777,7 +1777,7 @@
     },
     "Hands of the Tides":{
         "name":"Mains des marées",
-        "traditionalNames":{
+        "extraNames":{
             "alchemy":"Remonter la lignée du sang",
             "ancestral":"Rencontre d’Ikoma et d’Akodo",
             "fortunist":"Sous les ordres de Suijin"
@@ -1793,12 +1793,12 @@
             "En cas de réussite, chaque cible reçoit 2 points de Conflit."
         ],
         "newOpportunities":[
-            "|opportunityIcon|+ de l’Eau : en cas de réussite, vous pouvez obliger une cible à adopter une nouvelle posture de votre choix par |opportunityIcon|􀀀 dépensé de cette façon."
+            "|opportunityIcon|+ de l’Eau : en cas de réussite, vous pouvez obliger une cible à adopter une nouvelle posture de votre choix par |opportunityIcon| dépensé de cette façon."
         ]
     },
     "Heart of the Water Dragon":{
         "name":"Cœur du Dragon de l’eau",
-        "traditionalNames":{
+        "extraNames":{
             "alchemy":"Vapeurs de bienveillance",
             "fortunist":"Marche aux côtés de Jurōjin",
             "foreign":"Sceau de résistance"
@@ -1819,7 +1819,7 @@
     },
     "Inari’s Blessing":{
         "name":"Bénédiction d’Inari",
-        "traditionalNames":{
+        "extraNames":{
             "ancestral":"Cadeau de Miya",
             "elemental":"Festin des kamis de l’Eau",
             "foreign":"Oasis dans le désert"
@@ -1840,7 +1840,7 @@
     },
     "Path to Inner Peace":{
         "name":"Voie de la sérénité",
-        "traditionalNames":{
+        "extraNames":{
             "alchemy":"Le baiser de Jurōjin",
             "ancestral":"Transcendance d’Asako",
             "elemental":"Bienfaits des sources chaudes"
@@ -1862,7 +1862,7 @@
     },
     "Reflections of P’an Ku":{
         "name":"Reflets de P’an Ku",
-        "traditionalNames":{
+        "extraNames":{
             "ancestral":"L’immense sagesse d’Agasha",
             "elemental":"Rumeur des kamis de l’Eau",
             "foreign":"Murmures de l’acier"
@@ -1883,7 +1883,7 @@
     },
     "Rise, Water":{
         "name":"Eau, incarne-toi",
-        "traditionalNames":{
+        "extraNames":{
             "alchemy":"Vin d’invocation",
             "ancestral":"Gardien de l’Eau",
             "fortunist":"Bras droit d’Isora"
@@ -1905,7 +1905,7 @@
     },
     "Stride the Waves":{
         "name":"Marcher sur les vagues",
-        "traditionalNames":{
+        "extraNames":{
             "alchemy":"Élixir de flottaison",
             "ancestral":"Route de Kaimetsu-O",
             "fortunist":"Arpenter le Jardin de l’Eau"
@@ -1922,7 +1922,7 @@
     },
     "Strike the Tsunami":{
         "name":"Impact du tsunami",
-        "traditionalNames":{
+        "extraNames":{
             "alchemy":"Tempête océanique en bouteille",
             "fortunist":"Flèche de Suitengu",
             "foreign":"Appel de la vague"
@@ -1942,7 +1942,7 @@
     },
     "Suijin’s Embrace":{
         "name":"Étreinte de Suijin",
-        "traditionalNames":{
+        "extraNames":{
             "alchemy":"L’océan contenu dans une goutte",
             "ancestral":"Dans le sillage de Doji",
             "elemental":"Baiser du kami de l’Eau"
@@ -1959,7 +1959,7 @@
     },
     "Sympathetic Energies":{
         "name":"Transfert d’énergie",
-        "traditionalNames":{
+        "extraNames":{
             "ancestral":"Compassion de Shinjo",
             "fortunist":"Suijin est généreux",
             "foreign":"Pollen du désert"
@@ -1979,7 +1979,7 @@
     },
     "The Rushing Wave":{
         "name":"La déferlante",
-        "traditionalNames":{
+        "extraNames":{
             "alchemy":"Le kobune d’argile",
             "ancestral":"L’étalon aquatique d’Utaku",
             "fortunist":"La danse tourbillonnante d’Isora"
@@ -2742,7 +2742,7 @@
         ],
         "newOpportunities":[
             "|opportunityIcon| du Feu : chaque cible reçoit un nombre de points de Conflit égal à votre anneau du Feu et élimine autant de points de Fatigue.",
-            "|opportunityIcon|􀀀+ du Feu : choisissez une cible supplémentaire par |opportunityIcon| dépensé de cette façon."
+            "|opportunityIcon|+ du Feu : choisissez une cible supplémentaire par |opportunityIcon| dépensé de cette façon."
         ]
     },
     "Skulk":{

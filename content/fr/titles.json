@@ -4,29 +4,35 @@
         "description":[
             "Ces agents de la loi de l’Empereur sont des guerriers avisés qui dispensent conseils et justice."
         ],
-        "titleAbility":[
-            "Voix de l’autorité (capacité de titre)",
-            "Une fois par session de jeu, lorsque vous effectuez un test d’action de Manipulation ou de Soutien en utilisant une compétence sociale, vous pouvez choisir un nombre de cibles supplémentaires égal à votre rang de Gloire. Ces cibles supplémentaires ne peuvent pas avoir une vigilance supérieure à la plus élevée parmi vos cibles initiales."
-        ]
+        "finalAbility":{
+            "name":"Voix de l’autorité",
+            "description":[
+                "Une fois par session de jeu, lorsque vous effectuez un test d’action de Manipulation ou de Soutien en utilisant une compétence sociale, vous pouvez choisir un nombre de cibles supplémentaires égal à votre rang de Gloire. Ces cibles supplémentaires ne peuvent pas avoir une vigilance supérieure à la plus élevée parmi vos cibles initiales."
+            ]
+        }
     },
     "Emerald Magistrate [Ranged]":{
         "name":"Magistrat d’Émeraude (distance)",
         "description":[
             "Ces agents de la loi de l’Empereur sont des guerriers avisés qui dispensent conseils et justice."
         ],
-        "titleAbility":[
-            "Voix de l’autorité (capacité de titre)",
-            "Une fois par session de jeu, lorsque vous effectuez un test d’action de Manipulation ou de Soutien en utilisant une compétence sociale, vous pouvez choisir un nombre de cibles supplémentaires égal à votre rang de Gloire. Ces cibles supplémentaires ne peuvent pas avoir une vigilance supérieure à la plus élevée parmi vos cibles initiales."
-        ]
+        "finalAbility":{
+            "name":"Voix de l’autorité",
+            "description":[
+                "Une fois par session de jeu, lorsque vous effectuez un test d’action de Manipulation ou de Soutien en utilisant une compétence sociale, vous pouvez choisir un nombre de cibles supplémentaires égal à votre rang de Gloire. Ces cibles supplémentaires ne peuvent pas avoir une vigilance supérieure à la plus élevée parmi vos cibles initiales."
+            ]
+        }
     },
     "Emerald Magistrate [Unarmed]":{
         "name":"Magistrat d’Émeraude (mains nues)",
         "description":[
             "Ces agents de la loi de l’Empereur sont des guerriers avisés qui dispensent conseils et justice."
         ],
-        "titleAbility":[
-            "Voix de l’autorité (capacité de titre)",
-            "Une fois par session de jeu, lorsque vous effectuez un test d’action de Manipulation ou de Soutien en utilisant une compétence sociale, vous pouvez choisir un nombre de cibles supplémentaires égal à votre rang de Gloire. Ces cibles supplémentaires ne peuvent pas avoir une vigilance supérieure à la plus élevée parmi vos cibles initiales."
-        ]
+        "finalAbility":{
+            "name":"Voix de l’autorité",
+            "description":[
+                "Une fois par session de jeu, lorsque vous effectuez un test d’action de Manipulation ou de Soutien en utilisant une compétence sociale, vous pouvez choisir un nombre de cibles supplémentaires égal à votre rang de Gloire. Ces cibles supplémentaires ne peuvent pas avoir une vigilance supérieure à la plus élevée parmi vos cibles initiales."
+            ]
+        }
     }
 }

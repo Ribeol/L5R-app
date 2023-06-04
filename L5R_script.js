@@ -45,8 +45,10 @@ class DataManager {
         this.loaded = {
             character: undefined,
             school: undefined,
-            titles: undefined,
-            abilities: [], // [[string]]
+            titles: undefined, // Set of titles
+            institutionRanks: undefined,
+            institutionRankSkills: undefined,
+            institutionRankTechs: undefined,            
             ringMaps: { // Maps of [ring, int]
                 all: undefined, 
                 upgradable: undefined
@@ -97,12 +99,14 @@ class DataManager {
             dataManager.userSettings = await dataManager.getUserSettings(cache);
             dataManager.characterNames = await dataManager.getCharacterNames(cache);
 
-            // Complete the content properties by merging data from base and english directories by default, then overwriting english data if necessary
+            // Complete the content properties by merging data from base and english directories by default, overwriting english data if necessary, then finalizing abilities
             await dataManager.getContent(cache, `./content/base`);
             await dataManager.getContent(cache, `./content/en`);
             if (dataManager.userSettings.language !== "en") {
                 await dataManager.getContent(cache, `./content/${dataManager.userSettings.language}`);
             }
+            dataManager.finalizeAbilities();
+
             // MAKE IT POSSIBLE TO HAVE ONE FILE MISSING
         }
         else {
@@ -194,8 +198,33 @@ class DataManager {
         await Promise.all(promises);
     }
 
+    finalizeAbilities() {
+        for (const school of Object.values(dataManager.content.schools)) {
+            school.initialAbility.rank = 1;
+            school.initialAbility.typeRef = "school ability";
+            school.initialAbility.extraNames = {abilityOrigin: school.name};
+            school.finalAbility.rank = 6;
+            school.finalAbility.typeRef = "mastery ability";
+            school.finalAbility.extraNames = {abilityOrigin: school.name};
+        }
+        for (const title of Object.values(dataManager.content.titles)) {
+            // The ranks are set to 7 to place these abilities at the end of the list, but the number will not be displayed
+            if (title.initialAbility !== undefined) {                
+                title.initialAbility.rank = 7;                
+                title.initialAbility.typeRef = "title effect";              
+                // Because there is no name, use the type instead
+                title.initialAbility.name = dataManager.content.techniqueTypes[title.initialAbility.typeRef].name;
+                title.initialAbility.extraNames = {abilityOrigin: title.name};
+            }
+            title.finalAbility.rank = 7;
+            title.finalAbility.typeRef = "title ability";
+            title.finalAbility.extraNames = {abilityOrigin: title.name};
+        }
+    }
+
     updateFilteredSets(character) {
-        // MAKE A DIFFERENT FUNCTION FOR LEARNING SKILLS/TECHS, RANK UPS, NEW TITLES? OR RUN AGAIN EACH TIME (INEFFICIENT)
+        // MAKE A DIFFERENT FUNCTION FOR LEARNING SKILLS/TECHS, RANK UPS, NEW TITLES
+        // institutionRankSkills AND institutionRankTechs ONLY CHANGE WHEN A TITLE IS ADDED, SO THEY SHOULD BE REUSED INSTEAD OF REMADE
 
         // The following sets and maps used will be used to update filtered sets down the line
         
@@ -214,97 +243,117 @@ class DataManager {
             techsLearned.add(dataManager.content.techniques[techRef]);
         }
 
-        //let oldSkills = new Set();
-        let currentSkills = new Set();
-        let futureSkills = new Set();
-
-        //let oldTechs = new Set();
-        let currentTechs = new Set();
-        let futureTechs = new Set();
-
         // Variables used to get the above
 
         const ringCostPerRank = 3;
         const skillCostPerRank = 2;
         const defaultTechCost = 3;
 
-        const progress = character.progress;
-        const spentExp = {};
-        const progressExp = {};
-        let schoolRef;
-        let schoolRank = 1;
+        dataManager.loaded.titles = new Set();
+        
+        // An institution could be the school or a title
+        const progressLists = new Map(); // Map of (institution, [string])
 
-        // Get the school and titles from progress
-        const curricula = {};
-        for (const key of Object.keys(progress)) {
+        const spentExp = new Map();
+        const progressExp = new Map();
+        // The Map institutionRanks will contain contain pairs of (institution, int), where int is the institution rank based on progressExp
+        dataManager.loaded.institutionRanks = new Map();
+
+        // The Maps institutionRankSkills and institutionRankTechs will contain arrays for each institution, with each array containing a Set of skills or techniques for each rank
+        dataManager.loaded.institutionRankSkills = new Map();
+        dataManager.loaded.institutionRankTechs = new Map();
+        
+        // Set pairs for institutionRankSkills and institutionRankTechs, where the keys will be the actual objects referenced by Object.keys(character.progress)
+        // Also save the school and titles for easy access, and set progressLists for later        
+        for (const key of Object.keys(character.progress)) {
+            let institution;
             if (Object.keys(dataManager.content.schools).includes(key)) {
-                schoolRef = key;
-                const school = dataManager.content.schools[schoolRef];
-                curricula[schoolRef] = school.curriculum;
-                dataManager.loaded.abilities.push(school.schoolAbility);
-                dataManager.loaded.school = school;
+                institution = dataManager.content.schools[key];
+                dataManager.loaded.school = institution;
             }
             else {
-                curricula[key] = dataManager.content.titles[key].curriculum;
-                // FIND A WAY TO IMPLEMENT IMMEDIATE EFFECTS FROM TITLES
-            }
+                institution = dataManager.content.titles[key];                          
+                dataManager.loaded.titles.add(institution);
+            }            
+            dataManager.loaded.institutionRanks.set(institution, 1);
+            dataManager.loaded.institutionRankSkills.set(institution, []);
+            dataManager.loaded.institutionRankTechs.set(institution, []);
+            progressLists.set(institution, character.progress[key]);
         }
 
-        // Loop through all the curricula
-        for (const key of Object.keys(curricula)) {
+        let oldSkills = new Set();
+        let currentSkills = new Set();
+        let futureSkills = new Set();
+        let oldTechs = new Set();
+        let currentTechs = new Set();
+        let futureTechs = new Set();
 
-            spentExp[key] = 0;
-            progressExp[key] = 0;
+        // Loop through all the institutions from institutionRankSkills (or institutionRankTechs)
+        for (const institution of dataManager.loaded.institutionRankSkills.keys()) {
+
+            spentExp.set(institution, 0);
+            progressExp.set(institution, 0);
             let previousRanksExp = 0;
             let learningIndex = 0;
 
+            if (institution.initialAbility !== undefined) {
+                techsLearned.add(institution.initialAbility);
+                oldTechs.add(institution.initialAbility);
+            }
+            futureTechs.add(institution.finalAbility);
+
             // Loop through each rank in each curriculum            
-            for (let i = 0; i < curricula[key].length; i++) {
+            for (let i = 0; i < institution.curriculum.length; i++) {
 
-                const rankSkills = new Set();
-                const rankTechs = new Set();
+                const skillSet = new Set();
+                const techSet = new Set();
 
-                // Loop through all the strings in curricula[key][i].list
-                for (const refString of curricula[key][i].list) {
+                // Loop through all the strings in institution.curriculum[i].list
+                for (const refString of institution.curriculum[i].list) {
                     if (refString.startsWith('S: ')) {
-                        // If it is an individual skill, add it to the rankSkills set
+                        // If it is an individual skill, add it to the skillSet
                         const skillRef = refString.slice(3);
-                        rankSkills.add(dataManager.content.skills[skillRef]);
+                        skillSet.add(dataManager.content.skills[skillRef]);
                     }
                     else if (refString.startsWith('SG: ')) {
-                        // If it is a group of skills, find all skills that belong to the group and add them to the rankSkills set
+                        // If it is a group of skills, find all skills that belong to the group and add them to the skillSet
                         const skillGroup = refString.slice(4);
                         for (const skill of Object.values(dataManager.content.skills)) {
                             if (skill.groupRef === skillGroup) {
-                                rankSkills.add(skill);
+                                skillSet.add(skill);
                             }
                         }
                     }
                     if (refString.startsWith('T: ')) {
-                        // If it is an individual technique, add it to the rankTechs set
+                        // If it is an individual technique, add it to the techSet
                         const techRef = refString.slice(3);
-                        rankTechs.add(dataManager.content.techniques[techRef]);
+                        techSet.add(dataManager.content.techniques[techRef]);
                     }
                     else if (refString.startsWith('TG: ')) {
-                        // If it is a group of techniques, find all techniques that belong to the group and add them to the rankTechs set unless there is a clan restriction
+                        // If it is a group of techniques, find all techniques that belong to the group and add them to the techSet unless there is a clan restriction
                         const groupString = refString.slice(4).split(' ').reverse();
                         const groupRing = groupString[2];
                         const groupType = groupString[1];
                         const groupMaxRank = parseInt(groupString[0]);
                         for (const tech of Object.values(dataManager.content.techniques)) {
                             if ((!groupRing || tech.ringRef === groupRing) && tech.typeRef === groupType && tech.rank <= groupMaxRank && (!tech.clanRef || tech.clanRef === character.clanRef)) {
-                                rankTechs.add(tech);
+                                techSet.add(tech);
                             }
                         }
                     }
                 }
 
-                const nextExpThreshold = previousRanksExp + curricula[key][i].exp;
+                // Add skillSet and techSet to institutionRankSkills and institutionRankTechs respectively
+                // A Set with index i corresponds to a school or title rank of i+1
+                dataManager.loaded.institutionRankSkills.get(institution).push(skillSet);
+                dataManager.loaded.institutionRankTechs.get(institution).push(techSet);
+
+                const nextExpThreshold = previousRanksExp + institution.curriculum[i].exp;
 
                 // Add everything that is learned for this rank to the corresponding maps or set, and calculate cost and progression
                 // If the curriculum gets completed, finish all progress before ending the loop instead of stopping when nextExpThreshold is reached
-                while ((progressExp[key] < nextExpThreshold || i === curricula[key].length - 1) && learningIndex < progress[key].length) {
-                    let refString = progress[key][learningIndex];
+                while ((progressExp.get(institution) < nextExpThreshold || i === institution.curriculum.length - 1) && learningIndex < progressLists.get(institution).length) {
+                    let refString = progressLists.get(institution)[learningIndex];
                     let isFree = false;
                     // F stands for free. This means what is learned doesn't cost nor contribute experience points
                     if (refString.startsWith('F')) {
@@ -318,8 +367,8 @@ class DataManager {
                         ringsLearned.set(ring, newRank);
                         if (!isFree) {
                             const cost = newRank*ringCostPerRank;
-                            spentExp[key] += cost;
-                            progressExp[key] += cost/2;
+                            spentExp.set(institution, spentExp.get(institution) + cost);
+                            progressExp.set(institution, progressExp.get(institution) + cost/2);
                         }                    
                     }
                     else if (refString.startsWith('S: ')) {
@@ -334,12 +383,12 @@ class DataManager {
                         skillsLearned.set(skill, newRank);
                         if (!isFree) {
                             const cost = newRank*skillCostPerRank;
-                            spentExp[key] += cost;
-                            if (rankSkills.has(skill)) {
-                                progressExp[key] += cost;
+                            spentExp.set(institution, spentExp.get(institution) + cost);
+                            if (skillSet.has(skill)) {
+                                progressExp.set(institution, progressExp.get(institution) + cost);
                             }
                             else {
-                                progressExp[key] += cost/2;
+                                progressExp.set(institution, progressExp.get(institution) + cost/2);
                             }
                         }
                     }
@@ -351,37 +400,40 @@ class DataManager {
                             if(tech.expCost !== undefined) {
                                 techniqueCost = tech.expCost;
                             }
-                            spentExp[key] += techniqueCost;
-                            if (rankTechs.has(tech)) {
-                                progressExp[key] += techniqueCost;
+                            spentExp.set(institution, spentExp.get(institution) + techniqueCost);
+                            if (techSet.has(tech)) {
+                                progressExp.set(institution, progressExp.get(institution) + techniqueCost);
                             }
                             else {
-                                progressExp[key] += techniqueCost/2;
+                                progressExp.set(institution, progressExp.get(institution) + techniqueCost/2);
                             }
                         }
                     }
                     learningIndex += 1;
                 }
 
-                // Based on progressExp for this curriculum, determine if the skills and techniques in rankSkills and rankTechs belong to a future rank, the current rank, or a past rank
-                if (progressExp[key] < previousRanksExp) {
-                    futureSkills = new Set([...futureSkills, ...rankSkills]);
-                    futureTechs = new Set([...futureTechs, ...rankTechs]);
+                // Based on progressExp for this curriculum, determine if the skills and techniques in skillSet and techSet belong to a future rank, the current rank, or a past rank
+                if (progressExp.get(institution) < previousRanksExp) {
+                    // This rank has not been reached
+                    futureSkills = new Set([...futureSkills, ...skillSet]);
+                    futureTechs = new Set([...futureTechs, ...techSet]);
                 }
-                else if (progressExp[key] < nextExpThreshold){
-                    currentSkills = new Set([...currentSkills, ...rankSkills]);
-                    currentTechs = new Set([...currentTechs, ...rankTechs]);
+                else if (progressExp.get(institution) < nextExpThreshold){
+                    // This rank has been reached but has not been completed
+                    currentSkills = new Set([...currentSkills, ...skillSet]);
+                    currentTechs = new Set([...currentTechs, ...techSet]);
                 }
                 else {
-                    //oldSkills = new Set([...oldSkills, ...rankSkills]);
-                    //oldTechs = new Set([...oldTechs, ...rankTechs]);
-                    // If this past rank is of the school, increase schoolRank each loop until it gets to its true value of current rank
-                    if (key === schoolRef) {
-                        schoolRank += 1;
+                    // This rank has been completed
+                    oldSkills = new Set([...oldSkills, ...skillSet]);
+                    oldTechs = new Set([...oldTechs, ...techSet]);                    
+                    // Increase institution rank each loop until it gets to its true value of the current rank
+                    if (institution === dataManager.loaded.school) {
+                        dataManager.loaded.institutionRanks.set(institution, dataManager.loaded.institutionRanks.get(institution) + 1);
                     }
-                    // If the final rank belongs to the past, then the curriculum is complete: unlock the final ability
-                    if (i === curricula[key].length - 1) {
-                        dataManager.loaded.abilities.push(dataManager.content.schools[key].finalAbility);
+                    // If the final rank belongs to the past, then the curriculum is complete: unlock the final ability of this institution
+                    if (i === institution.curriculum.length - 1) {
+                        techsLearned.add(institution.finalAbility);
                     }
                 }
                 // Increase previousRanksExp before going through the loop again
@@ -389,18 +441,18 @@ class DataManager {
             }
         }
 
-        // Give a value to dataManager.loaded.remainingExp by substracting the calculated totalSpentExp from the stored totalExp
-        let totalSpentExp;
-        for (const partialAmount of Object.values(spentExp)) {
+        // Give a value to dataManager.loaded.remainingExp by substracting the calculated totalSpentExp from the stored receivedExp
+        let totalSpentExp = 0;
+        for (const partialAmount of spentExp.values()) {
             totalSpentExp += partialAmount;
         }
-        dataManager.loaded.remainingExp = dataManager.loaded.character.totalExp - totalSpentExp;
+        dataManager.loaded.remainingExp = dataManager.loaded.character.receivedExp - totalSpentExp;
 
-        document.getElementById("spentExp").innerHTML = Object.values(spentExp); // REMOVE AFTER TESTING!
-        document.getElementById("rank").innerHTML = schoolRank; // REMOVE AFTER TESTING!
+        document.getElementById("spentExp").innerHTML = totalSpentExp; // REMOVE AFTER TESTING!
+        document.getElementById("rank").innerHTML = dataManager.loaded.institutionRanks.get(dataManager.loaded.school); // REMOVE AFTER TESTING!
 
-        // Utility function to return full maps by adding unlearned things of rank 0 to a map containing only learned things of rank > 0
-        // upgradeableOnly depends on what the map will be used for, and determines whether rank 5 should be included or not
+        // Utility function that returns a map based on the 1st parameter keys, with rank = 0 except for those from the 2nd parameter
+        // Depending on what the map will be used for, upgradeableOnly determines whether rank 5 should be excluded or not
         function getFullMap(keys, learnedMap, upgradeableOnly) {
             const filteredMap = new Map();
             for (const key of keys) {
@@ -419,7 +471,7 @@ class DataManager {
         // Update the map of all rings
         dataManager.loaded.ringMaps.all = ringsLearned;
 
-        // Update the map of all upgradable rings (ranks >= 5 not included)
+        // Update the map of all upgradable rings (ring ranks >= 5 not included)
         dataManager.loaded.ringMaps.upgradable = getFullMap(Object.values(dataManager.content.rings), ringsLearned, true);
 
         // Update the map of all known skills
@@ -428,45 +480,44 @@ class DataManager {
         // Update the map of all skills
         dataManager.loaded.skillMaps.all = getFullMap(Object.values(dataManager.content.skills), skillsLearned, false);
 
-        // Update the map of all upgradable skills (ranks >= 5 not included)
+        // Update the map of all upgradable skills (skill ranks >= 5 not included)
         dataManager.loaded.skillMaps.upgradable = getFullMap(Object.values(dataManager.content.skills), skillsLearned, true);
 
-        // Update the map of all curricula skills (past ranks not included, ranks >= 5 not included)
-        dataManager.loaded.skillMaps.included = getFullMap(new Set([...currentSkills, ...futureSkills]), skillsLearned, true);
+        // Update the map of all curricula skills
+        dataManager.loaded.skillMaps.included = getFullMap(new Set([...oldSkills, ...currentSkills, ...futureSkills]), skillsLearned, false);
 
-        // Update the map of all skills that fully contribute to the school or a title (ranks >= 5 not included)
-        dataManager.loaded.skillMaps.current = getFullMap(currentSkills, skillsLearned, true);
-
-        const compatibleTechsBase = new Set();
-        for (const tech of Object.values(dataManager.content.techniques)) {
-            if (dataManager.content.schools[schoolRef].techniqueTypeRefs.includes(tech.typeRef)) {
-                compatibleTechsBase.add(tech);
-            }
-        }
+        // Update the map of all skills that fully contribute to the school or a title
+        dataManager.loaded.skillMaps.current = getFullMap(currentSkills, skillsLearned, false);
 
         // Update the set of all known techniques
         dataManager.loaded.techSets.learned = techsLearned;
 
-        // Update the set of all compatible techniques (learned included)
-        dataManager.loaded.techSets.compatible = new Set([...compatibleTechsBase, ...currentTechs, ...futureTechs]);
+        const compatibleTechsBase = new Set();
+        for (const tech of Object.values(dataManager.content.techniques)) {
+            if (dataManager.loaded.school.techniqueTypeRefs.includes(tech.typeRef)) {
+                compatibleTechsBase.add(tech);
+            }
+        }
+        // Update the set of all compatible techniques (learned not included)
+        dataManager.loaded.techSets.compatible = new Set([...new Set([...compatibleTechsBase, ...currentTechs, ...futureTechs])].filter(x => !techsLearned.has(x)));
 
         const availableTechsBase = new Set();
         for (const tech of compatibleTechsBase) {
-            if (tech.rank <= schoolRank) {
+            if (tech.rank <= dataManager.loaded.institutionRanks.get(dataManager.loaded.school)) {
                 availableTechsBase.add(tech);
             }
         }
         // Update the set of all available techniques (learned not included)
         dataManager.loaded.techSets.available = new Set([...new Set([...availableTechsBase, ...currentTechs])].filter(x => !techsLearned.has(x)));
 
-        // Update the set of all curricula techniques (past ranks not included)
-        dataManager.loaded.techSets.included = new Set([...currentTechs, ...futureTechs]);
+        // Update the set of all curricula techniques
+        dataManager.loaded.techSets.included = new Set([...oldTechs, ...currentTechs, ...futureTechs]);
 
-        // Update the set of all techniques that fully contribute to the school or a title (learned not included)
-        dataManager.loaded.techSets.current = new Set([...currentTechs].filter(x => !techsLearned.has(x)));
+        // Update the set of all techniques that fully contribute to the school or a title
+        dataManager.loaded.techSets.current = currentTechs;
 
-        // Update the set of all missable techniques (past ranks not included)
-        dataManager.loaded.techSets.missable = new Set([...dataManager.loaded.techSets.included].filter(x => !compatibleTechsBase.has(x)));
+        // Update the set of all missable techniques
+        dataManager.loaded.techSets.missable = new Set([...dataManager.loaded.techSets.included].filter(x => !compatibleTechsBase.has(x) && x.typeRef !== "school ability" && x.typeRef !== "mastery ability" && x.typeRef !== "title effect" && x.typeRef !== "title ability"));
     }
 }
 
@@ -487,7 +538,8 @@ class ContentManager {
         this.viewer = document.getElementById("viewer");
 
         this.skills = { //ALSO ADD DERIVED STATS AND STANCES/OPPORTUNITIES TO THE PAGE
-            list: document.getElementById("skillsList"),            
+            list: document.getElementById("skillsList"), 
+            expanded: undefined           
         }
         this.techniques = {
             list: document.getElementById("techniquesList"),
@@ -498,18 +550,21 @@ class ContentManager {
 
         // Get the filter settings        
         const skillGroupRef = document.getElementById("skillGroupFilter").value;
-        const skillRing = document.getElementById("skillRingFilter").value;
+        const skillRank = document.getElementById("skillRankFilter").value;
         const availabilitySetting = document.getElementById("skillAvailabilityFilter").value;
         const curriculaSetting = document.getElementById("skillCurriculaFilter").value;
 
         // Get a combinedArray from the intersection of 2 maps, depending on availability and curricula filter settings
         let availabilityMap;
         switch(availabilitySetting) {
-            case "all":
-                availabilityMap = dataManager.loaded.skillMaps.all;
-                break;
             case "learned":
                 availabilityMap = dataManager.loaded.skillMaps.learned;
+                break;            
+            case "upgradable":
+                availabilityMap = dataManager.loaded.skillMaps.upgradable;
+                break;
+            case "all":
+                availabilityMap = dataManager.loaded.skillMaps.all;            
         }
         let combinedArray;
         switch(curriculaSetting) {
@@ -528,7 +583,13 @@ class ContentManager {
         
         // Additional filtering based on skill group
         const filteredSkills = combinedArray.filter(pair => {
-            return (skillGroupRef === "any" || pair[0].groupRef === skillGroupRef);
+            if (skillGroupRef !== "any" && pair[0].groupRef !== skillGroupRef) {
+                return false;
+            }
+            if (skillRank !== "any" && pair[1] !== parseInt(skillRank)) {
+                return false;
+            }
+            return true;
         });
 
         // ADD A NO RESULT MESSAGE IF NO RESULT, ELSE KEEP GOING
@@ -558,80 +619,77 @@ class ContentManager {
         // pair is an array of a skill and its corresponding rank
         for (const pair of filteredSkills) {
 
-            for (const ringRef of Object.keys(dataManager.content.rings)) {
+            const container = document.createElement("div");                
+            const li = document.createElement("li");
 
-                if (skillRing === "any" || skillRing === ringRef) {
+            const dice = document.createElement("span");
+            dice.textContent = `${pair[1]} ${String.fromCharCode(customIcons.skillIcon)}`;
+            dice.classList.add("bold");
+            li.appendChild(dice);
 
-                    const ring = dataManager.content.rings[ringRef];
-                
-                    const li = document.createElement("li");
+            const skillName = document.createElement("span");
+            skillName.textContent = pair[0].name;
+            skillName.classList.add("pointer", "flexGrow");
+            skillName.addEventListener('click', () => {
+                contentManager.expandSkill(container, pair[0]);
+            });
+            li.appendChild(skillName);
 
-                    const dice = document.createElement("span");
-                    dice.textContent = `${dataManager.loaded.ringMaps.all.get(ring)}${String.fromCharCode(customIcons.ringIcon)} ${pair[1]}${String.fromCharCode(customIcons.skillIcon)}`;
-                    dice.classList.add("bold");
-                    li.appendChild(dice);
+            if (pair[1] < 5) {
+                const curriculaDiv = document.createElement("div");
+                const institutionRanks = dataManager.loaded.institutionRanks;
 
-                    const container = document.createElement("div");
+                // If the skill is included in dataManager.loaded.institutionRankSkills, add the school rank number or Ⓣ
+                for (const institution of institutionRanks.keys()) {
+                    const rankArrays = dataManager.loaded.institutionRankSkills.get(institution);
 
-                    const skillName = document.createElement("span");
-                    skillName.textContent = pair[0].name;
-                    skillName.classList.add("bold");
-                    container.appendChild(skillName);
+                    for (let i = 0; i < rankArrays.length; i++) {
+                        if (rankArrays[i].has(pair[0])) {
 
-                    const approachDiv = document.createElement("div");
+                            const numSpan = document.createElement("span");
+                            numSpan.classList.add("largeFontSize");
+                            if (i === institutionRanks.get(institution) - 1) {
+                                numSpan.classList.add("customColor", "bold");
+                            }
 
-                    const icon = document.createElement("span");
-                    icon.textContent = String.fromCharCode(customIcons[`${ringRef}Icon`]);;
-                    icon.classList.add(ringRef, "small", "icon", "offset");
-                    approachDiv.appendChild(icon);
-
-                    const approachName = document.createElement("span");
-                    approachName.textContent = ring[pair[0].groupRef];
-                    approachDiv.appendChild(approachName);
-
-                    container.appendChild(approachDiv);
-
-                    container.classList.add("pointer", "columnContainer", "flexGrow");
-                    container.addEventListener('click', () => {
-                        contentManager.consultSkill(li, pair[0], ringRef);
-                    });
-                    li.appendChild(container);
-
-                    // If the skill is included in future curriculum skills, add the school icon
-                    if (dataManager.loaded.skillMaps.included.has(pair[0])) {
-                        const schoolIconSpan = document.createElement("span");
-                        schoolIconSpan.textContent += String.fromCharCode(customIcons.schoolIcon);
-                        schoolIconSpan.classList.add("school", "icon", "large");
-
-                        // If it is part of a current rank, add the customColor class
-                        if (dataManager.loaded.skillMaps.current.has(pair[0])) {
-                            schoolIconSpan.classList.add("customColor");
+                            if (institution === dataManager.loaded.school) {
+                                numSpan.textContent += String.fromCharCode(`0xe90${i+3}`);
+                            }
+                            else {
+                                numSpan.textContent += String.fromCharCode(customIcons.titleIcon);           
+                            }
+                            curriculaDiv.appendChild(numSpan);
                         }
-                        li.appendChild(schoolIconSpan);
                     }
-
-                    // If the skill has at least one level learned, it will have the learned style, otherwise it will have the available style
-                    if (dataManager.loaded.skillMaps.learned.has(pair[0])) {
-                        li.classList.add("customColor");
-                    }
-                    else {
-                        li.classList.add("available");
-                    }
-
-                    // If a skill is upgradable, addSymbolSpan is added
-                    if (dataManager.loaded.skillMaps.upgradable.has(pair[0])) {
-                        const addSymbolSpan = document.createElement("span");
-                        addSymbolSpan.textContent = "+";
-                        addSymbolSpan.classList.add("addSymbol", "pointer");
-                        addSymbolSpan.addEventListener('click', () => {
-                            contentManager.confirm(contentManager.upgradeSkill, pair[0]);
-                        });
-                        li.appendChild(addSymbolSpan);
-                    }
-                    // Add each completed li to the fragment and to the item list
-                    fragment.appendChild(li);
+                }
+                if (curriculaDiv.firstChild) {
+                    curriculaDiv.classList.add("curriculaRanks");
+                    li.appendChild(curriculaDiv);
                 }
             }
+
+            // If the skill has at least one level learned, it will have the learned style, otherwise it will have the available style
+            if (dataManager.loaded.skillMaps.learned.has(pair[0])) {
+                li.classList.add("customColor");
+            }
+            else {
+                li.classList.add("available");
+            }
+
+            // If a skill is upgradable, addSymbolSpan is added
+            if (dataManager.loaded.skillMaps.upgradable.has(pair[0])) {
+                const addSymbolSpan = document.createElement("span");
+                addSymbolSpan.textContent = "+";
+                addSymbolSpan.classList.add("addSymbol", "pointer");
+                addSymbolSpan.addEventListener('click', () => {
+                    contentManager.confirm(contentManager.upgradeSkill, pair[0]);
+                });
+                li.appendChild(addSymbolSpan);
+            }
+            // Add each completed li to the fragment and to the item list
+            li.classList.add("rounded");
+            container.appendChild(li);
+            fragment.appendChild(container);
         }
         // Create the new list from the completed fragment
         contentManager.skills.list.appendChild(fragment);
@@ -656,17 +714,24 @@ class ContentManager {
             case "learned":
                 availabilitySet = dataManager.loaded.techSets.learned;
                 break;
-            case "all":
-                availabilitySet = new Set(Object.values(dataManager.content.techniques));
-                break;            
-            case "compatible":
-                availabilitySet = dataManager.loaded.techSets.compatible;
+            case "missable":
+                availabilitySet = dataManager.loaded.techSets.missable;
                 break;
             case "available":
                 availabilitySet = dataManager.loaded.techSets.available;
                 break;
-            case "missable":
-                availabilitySet = dataManager.loaded.techSets.missable;
+            case "compatible":
+                availabilitySet = dataManager.loaded.techSets.compatible;
+                break;
+            case "all":
+                availabilitySet = new Set(Object.values(dataManager.content.techniques));
+                const institutions = Object.values(dataManager.content.schools).concat(Object.values(dataManager.content.titles));
+                for (const institution of institutions) {
+                    if (institution.initialAbility !== undefined) {
+                        availabilitySet.add(institution.initialAbility);
+                    }
+                    availabilitySet.add(institution.finalAbility);
+                }
         }
         let combinedArray;
         switch(curriculaSetting) {            
@@ -703,9 +768,9 @@ class ContentManager {
         // ADD A NO RESULT MESSAGE IF NO RESULT, ELSE KEEP GOING
 
         // Ordering the array based on rank order, then types and rings order from the source book, then alphabetical order of names
-        const techTypeOrder = ["kata", "kihō", "invocation", "ritual", "shūji", "mahō", "ninjutsu"];
+        const techTypeOrder = ["school ability", "kata", "kihō", "invocation", "ritual", "shūji", "mahō", "ninjutsu", "mastery ability", "title effect", "title ability"];
         const ringOrder = ["air", "earth", "fire", "water", "void"];
-        filteredTechniques.sort(function(a, b) {
+        filteredTechniques.sort(function(a, b) {            
             if (a.rank < b.rank) {
                 return -1;
             }
@@ -753,21 +818,24 @@ class ContentManager {
             const li = document.createElement("li");
 
             const rankSpan = document.createElement("span");
-            rankSpan.textContent = tech.rank;
+            if (tech.rank < 7) {
+                rankSpan.textContent = tech.rank;
+            }
             rankSpan.classList.add("rank");
             li.appendChild(rankSpan);
 
             const typeIconSpan = document.createElement("span");            
-            typeIconSpan.classList.add("offset", "icon", "large");
-            if (tech.typeRef === "mahō") {
-                typeIconSpan.textContent = "魔";
-                typeIconSpan.classList.add("mahō");
-                typeIconSpan.classList.remove("offset");
+            typeIconSpan.classList.add("offset", "icon", "large");            
+            if (["kata", "kihō", "invocation", "ritual", "shūji", "mahō", "ninjutsu"].includes(tech.typeRef)) {
+                typeIconSpan.textContent = String.fromCharCode(customIcons[`${tech.typeRef}Icon`]);
+                li.classList.add("rounded");
+            }
+            else if (["school ability", "mastery ability"].includes(tech.typeRef)) {
+                typeIconSpan.textContent = String.fromCharCode(customIcons.schoolIcon);
             }
             else {
-                typeIconSpan.textContent = String.fromCharCode(customIcons[`${tech.typeRef}Icon`]);
+                typeIconSpan.textContent = String.fromCharCode(customIcons.titleIcon);
             }
-
             li.appendChild(typeIconSpan);
 
             const ringIconSpan = document.createElement("span");
@@ -783,21 +851,37 @@ class ContentManager {
                 clanIconSpan.classList.add("offset", "icon", "large");
                 li.appendChild(clanIconSpan);
             }
-            const nameSpan = document.createElement("span");
+            const nameSpan = document.createElement("span");            
             nameSpan.textContent = tech.name;
             
-            // If there is a traditional name to display, the element with the name class will be a container of 2 spans instead of a single span
+            
+            // If there is an extra name to display, the element with the name class will be a container of 2 spans instead of a single span
             let addedElement;
             const traditionRef = dataManager.loaded.school.traditionRef;
-            if (tech.traditionalNames !== undefined
-            && traditionRef !== undefined
-            && Object.keys(tech.traditionalNames).includes(traditionRef)) {
-                addedElement = document.createElement("div");
-                const traditionalNameSpan = document.createElement("span");
-                traditionalNameSpan.textContent = tech.traditionalNames[traditionRef];
-                traditionalNameSpan.classList.add("customColor"/*, "smallFontSize"*/, "italic");
-                addedElement.appendChild(nameSpan);
-                addedElement.appendChild(traditionalNameSpan);
+            if (tech.extraNames !== undefined) {
+
+                const displayTraditionalName = traditionRef !== undefined && Object.keys(tech.extraNames).includes(traditionRef);
+                const displayAbilityOrigin = tech.extraNames.abilityOrigin !== undefined;
+
+                if (displayTraditionalName || displayAbilityOrigin) {
+                    addedElement = document.createElement("div");
+                    const extraNameSpan = document.createElement("span");
+                    if (displayTraditionalName) {
+                        extraNameSpan.textContent = tech.extraNames[traditionRef];
+                        extraNameSpan.classList.add("customColor", "italic");
+                        addedElement.appendChild(nameSpan);
+                        addedElement.appendChild(extraNameSpan);
+                    }
+                    if (displayAbilityOrigin) {
+                        extraNameSpan.textContent = tech.extraNames.abilityOrigin;
+                        extraNameSpan.classList.add("customColor", "italic");
+                        addedElement.appendChild(extraNameSpan);
+                        addedElement.appendChild(nameSpan);                    
+                    }                    
+                }
+                else {
+                    addedElement = nameSpan;
+                }
             }
             else {
                 addedElement = nameSpan;
@@ -807,39 +891,60 @@ class ContentManager {
                 contentManager.consultTechnique(li, tech);
             });
             li.appendChild(addedElement);
-            
 
-            // If the technique is included in unlearned future curriculum techniques, add the school icon
-            if (dataManager.loaded.techSets.included.has(tech) && !dataManager.loaded.techSets.learned.has(tech)) {
-                const schoolIconSpan = document.createElement("span");
-                schoolIconSpan.textContent += String.fromCharCode(customIcons.schoolIcon);
-                schoolIconSpan.classList.add("school", "icon", "large");
+            if (!dataManager.loaded.techSets.learned.has(tech)) {
 
-                // If it is part of a current rank, add the customColor class
-                if (dataManager.loaded.techSets.current.has(tech)) {
-                    schoolIconSpan.classList.add("customColor");
+                const curriculaDiv = document.createElement("div");
+                const institutionRanks = dataManager.loaded.institutionRanks;
+
+                // If the technique is included in dataManager.loaded.institutionRankTechs, add the school rank number or Ⓣ
+                for (const institution of institutionRanks.keys()) {
+                    const rankArrays = dataManager.loaded.institutionRankTechs.get(institution);
+
+                    for (let i = 0; i < rankArrays.length; i++) {
+                        if (rankArrays[i].has(tech)) {
+
+                            const numSpan = document.createElement("span");
+                            numSpan.classList.add("largeFontSize");
+                            if (i === institutionRanks.get(institution) - 1) {
+                                numSpan.classList.add("customColor", "bold");
+                            }
+
+                            if (institution === dataManager.loaded.school) {
+                                numSpan.textContent += String.fromCharCode(`0xe90${i+3}`);
+                            }
+                            else {
+                                numSpan.textContent += String.fromCharCode(customIcons.titleIcon);
+                            }
+                            curriculaDiv.appendChild(numSpan);
+                        }
+                    }
                 }
-                li.appendChild(schoolIconSpan);
-            }
+                if (curriculaDiv.firstChild) {
+                    curriculaDiv.classList.add("curriculaRanks");
+                    li.appendChild(curriculaDiv);
+                }
 
-            // If the technique is available, learned or incompatible, the added class will allow it to be styled accordingly
-            // Compatible is the default style and does not need a class
-            if (dataManager.loaded.techSets.available.has(tech)) {
-                li.classList.add("available");
-                const addSymbolSpan = document.createElement("span");
-                addSymbolSpan.textContent = "+";
-                addSymbolSpan.classList.add("addSymbol", "pointer");
-                addSymbolSpan.addEventListener('click', () => {
-                    contentManager.confirm(contentManager.learnTechnique, tech);
-                });
-                li.appendChild(addSymbolSpan);
-            }            
-            else if (dataManager.loaded.techSets.learned.has(tech)) {
+                // Here the technique has not been learned, but if it is available or incompatible, the added class will allow it to be styled accordingly
+                // Compatible is the default style and does not need a class
+                if (dataManager.loaded.techSets.available.has(tech)) {
+                    li.classList.add("available");
+                    const addSymbolSpan = document.createElement("span");
+                    addSymbolSpan.textContent = "+";
+                    addSymbolSpan.classList.add("addSymbol", "pointer");
+                    addSymbolSpan.addEventListener('click', () => {
+                        contentManager.confirm(contentManager.learnTechnique, tech);
+                    });
+                    li.appendChild(addSymbolSpan);
+                }             
+                else if (!dataManager.loaded.techSets.compatible.has(tech)) {
+                    li.classList.add("incompatible");
+                }
+            }
+            else {
+                // If the technique is learned
                 li.classList.add("customColor");
-            }  
-            else if (!dataManager.loaded.techSets.compatible.has(tech)) {
-                li.classList.add("incompatible");
-            }            
+            }           
 
             // Add each completed li to the fragment and to the item list
             fragment.appendChild(li);
@@ -860,6 +965,60 @@ class ContentManager {
             }
             contentManager.currentTabClass = newTabClass;
         }
+    }
+
+    expandSkill(container, skill) {
+
+        if (contentManager.skills.expanded !== undefined) {
+            contentManager.skills.expanded.remove();
+        }
+
+        // Create the fragment that will contain the skill approach elements
+        const fragment = document.createDocumentFragment();
+
+        // Create elements to display, each with the proper content and classes for styling
+
+        const approachGrid = document.createElement("div");
+        contentManager.skills.expanded = approachGrid;
+
+        const customIcons = dataManager.content.ui.customIcons;
+
+        const approachGroup = document.createElement("div");
+        approachGroup.textContent = dataManager.content.skillGroups[skill.groupRef].name;
+        approachGrid.appendChild(approachGroup);
+
+        for (const ringRef of Object.keys(dataManager.content.rings)) {
+            const ring = dataManager.content.rings[ringRef];            
+        
+            const approachLine = document.createElement("div");
+
+            const dice = document.createElement("span");
+            dice.textContent = `${dataManager.loaded.ringMaps.all.get(ring)} ${String.fromCharCode(customIcons.ringIcon)}`;
+            dice.classList.add("bold");
+            approachLine.appendChild(dice);
+
+            const icon = document.createElement("span");
+            icon.textContent = String.fromCharCode(customIcons[`${ringRef}Icon`]);;
+            icon.classList.add(ringRef, "small", "icon", "offset");
+            approachLine.appendChild(icon);
+
+            const approachName = document.createElement("span");
+            approachName.textContent = ring[skill.groupRef];
+            approachLine.appendChild(approachName);
+
+            approachLine.classList.add("approachLine", "pointer");
+            approachLine.addEventListener('click', () => {
+                contentManager.consultSkill(container.firstChild, skill, ringRef);
+            });
+            approachGrid.appendChild(approachLine);
+        }
+
+        // Add the completed approachGrid to the fragment
+        approachGrid.classList.add("columnContainer", "approachGrid");
+        fragment.appendChild(approachGrid);
+
+        // Create the new elements
+        container.appendChild(fragment);
     }
 
     consultSkill(li, skill, ringRef) {
@@ -931,44 +1090,72 @@ class ContentManager {
 
         const attributes = document.createElement("div");
 
-        const rank = document.createElement("span");
-        rank.textContent = `${dataManager.content.ui.techniques.rank} ${tech.rank}`;
-        attributes.appendChild(rank);
+        const rankSpan = document.createElement("span");
+        rankSpan.textContent = `${dataManager.content.ui.techniques.rank} ${tech.rank}`;
+        attributes.appendChild(rankSpan);
 
         const customIcons = dataManager.content.ui.customIcons;
 
-        const type = document.createElement("span");
-        type.textContent = dataManager.content.techniqueTypes[tech.typeRef].name + " " + String.fromCharCode(customIcons[`${tech.typeRef}Icon`]);
-        attributes.appendChild(type);
+        const typeSpan = document.createElement("span");
+        let typeIcon;
+        if (["kata", "kihō", "invocation", "ritual", "shūji", "mahō", "ninjutsu"].includes(tech.typeRef)) {
+            typeIcon = String.fromCharCode(customIcons[`${tech.typeRef}Icon`]);
+        }
+        else if (["school ability", "mastery ability"].includes(tech.typeRef)) {
+            typeIcon = String.fromCharCode(customIcons.schoolIcon);
+        }
+        else {
+            typeIcon = String.fromCharCode(customIcons.titleIcon);
+        }
+        typeSpan.textContent = dataManager.content.techniqueTypes[tech.typeRef].name + " " + typeIcon;
+        attributes.appendChild(typeSpan);
 
         if (tech.ringRef !== undefined) {
-            const ring = document.createElement("span");
-            ring.textContent = dataManager.content.rings[tech.ringRef].name + " " + String.fromCharCode(customIcons[`${tech.ringRef}Icon`]);
-            attributes.appendChild(ring);
+            const ringSpan = document.createElement("span");
+            ringSpan.textContent = dataManager.content.rings[tech.ringRef].name + " " + String.fromCharCode(customIcons[`${tech.ringRef}Icon`]);
+            attributes.appendChild(ringSpan);
         }
         if (tech.clanRef !== undefined) {
-            const clan = document.createElement("span");
-            clan.textContent = dataManager.content.clans[tech.clanRef].name + " " + String.fromCharCode(customIcons[`${tech.clanRef}Icon`]);
-            attributes.appendChild(clan);
+            const clanSpan = document.createElement("span");
+            clanSpan.textContent = dataManager.content.clans[tech.clanRef].name + " " + String.fromCharCode(customIcons[`${tech.clanRef}Icon`]);
+            attributes.appendChild(clanSpan);
         }
         attributes.classList.add("attributes", "largeFontSize");
         fragment.appendChild(attributes);
 
-        const nameSpan = document.createElement("span");
+        const nameSpan = document.createElement("span");        
         nameSpan.textContent = tech.name;
         nameSpan.classList.add("bold");
         const namesParagraph = document.createElement("p");
-        namesParagraph.appendChild(nameSpan);
 
-        // If there is a traditional name to display, the element with the name class will contain 2 spans instead of a single span        
+        // If there is an extra name to display, the element with the name class will contain 2 spans instead of a single span
         const traditionRef = dataManager.loaded.school.traditionRef;
-        if (tech.traditionalNames !== undefined
-        && traditionRef !== undefined
-        && Object.keys(tech.traditionalNames).includes(traditionRef)) {
-            const traditionalNameSpan = document.createElement("span");
-            traditionalNameSpan.textContent = tech.traditionalNames[traditionRef] + ` (${dataManager.content.traditions[traditionRef].name})`;
-            namesParagraph.appendChild(traditionalNameSpan);
+
+        if (tech.extraNames !== undefined) {
+            const displayTraditionalName = traditionRef !== undefined && Object.keys(tech.extraNames).includes(traditionRef);
+            const displayAbilityOrigin = tech.extraNames.abilityOrigin !== undefined;
+
+            if (displayTraditionalName || displayAbilityOrigin) {
+                const extraNameSpan = document.createElement("span");
+                if (displayTraditionalName) {
+                    extraNameSpan.textContent = tech.extraNames[traditionRef] + ` (${dataManager.content.traditions[traditionRef].name})`;                    
+                    namesParagraph.appendChild(nameSpan);
+                    namesParagraph.appendChild(extraNameSpan);  
+                }
+                if (displayAbilityOrigin) {
+                    extraNameSpan.textContent = tech.extraNames.abilityOrigin;
+                    namesParagraph.appendChild(extraNameSpan);                
+                    namesParagraph.appendChild(nameSpan);
+                }                
+            }
+            else {
+                namesParagraph.appendChild(nameSpan);
+            }
         }
+        else {
+            namesParagraph.appendChild(nameSpan);
+        }
+
         namesParagraph.classList.add("title", "largeFontSize", "columnContainer");
         fragment.appendChild(namesParagraph);
 
@@ -1064,12 +1251,12 @@ class ContentManager {
         let charClanRef;
 
         const clanColors = new Map();
-        clanColors.set("crab", `hsl(210, 30%, 60%)`);
+        clanColors.set("crab", `hsl(220, 40%, 60%)`);
         clanColors.set("crane",`hsl(195, 60%, 60%)`);
         clanColors.set("dragon",`hsl(140, 40%, 50%)`);
         clanColors.set("lion",`hsl(45, 70%, 50%)`);
         clanColors.set("phoenix",`hsl(30, 80%, 60%)`);
-        clanColors.set("scorpion",`hsl(0, 70%, 50%)`);
+        clanColors.set("scorpion",`hsl(0, 60%, 50%)`);
         clanColors.set("unicorn",`hsl(290, 40%, 60%)`);
 
         for (const clanRef of Object.keys(dataManager.content.clans)) {
@@ -1082,6 +1269,8 @@ class ContentManager {
         }
 
         const emptyCharacter = new Character("", charClanRef, "", charSchoolRef, "", "", "", "", [""], [""], [""], [""], {air:1, earth:1, fire:1, water:1, void:1}, {}, [], [], 0, 0, 0, 0);
+        const titleRef = "Emerald Magistrate [Melee]";
+        emptyCharacter.progress[titleRef] = [];
         dataManager.loaded.character = emptyCharacter;
         dataManager.updateFilteredSets(emptyCharacter);
         contentManager.filterSkills();
@@ -1178,7 +1367,7 @@ class ContentManager {
 }
 
 class Character {
-    constructor(givenName, clanRef, familyRef, schoolRef, giri, ninjō, relationships, personality, distinctionRefs, adversityRefs, passionRefs, anxietyRefs, startingRingRefs, startingSkillRefs, startingTechniqueRefs, itemRefs, honor, glory, status, totalExp) {
+    constructor(givenName, clanRef, familyRef, schoolRef, giri, ninjō, relationships, personality, distinctionRefs, adversityRefs, passionRefs, anxietyRefs, startingRingRefs, startingSkillRefs, startingTechniqueRefs, itemRefs, honor, glory, status, receivedExp) {
         
         this.givenName = givenName; // string
         this.clanRef = clanRef; // string
@@ -1197,7 +1386,7 @@ class Character {
         this.startingSkillRefs = startingSkillRefs; // object with skillRef keys and int values
         this.startingTechniqueRefs = startingTechniqueRefs; // [string]
         this.itemRefs = itemRefs; // [[string, int]]
-        this.totalExp = totalExp; // int
+        this.receivedExp = receivedExp; // int
 
         this._honor = honor; // int
         this._glory = glory; // int
@@ -1264,7 +1453,7 @@ contentManager.viewer.addEventListener("animationend", contentManager.toggleVisi
 dataManager.initialize().then(() => {
 
     document.getElementById("skillGroupFilter").addEventListener('change', contentManager.filterSkills);
-    document.getElementById("skillRingFilter").addEventListener('change', contentManager.filterSkills);
+    document.getElementById("skillRankFilter").addEventListener('change', contentManager.filterSkills);
     document.getElementById("skillAvailabilityFilter").addEventListener('change', contentManager.filterSkills);
     document.getElementById("skillCurriculaFilter").addEventListener('change', contentManager.filterSkills);
 

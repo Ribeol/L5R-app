@@ -705,7 +705,7 @@
     },
     "Blessed Wind":{
         "name":"Blessed Wind",
-        "traditionalNames":{
+        "extraNames":{
             "alchemy":"Bottled Duststorm",
             "fortunist":"Tamon’s Rebuke",
             "foreign":"Column of the World"
@@ -725,7 +725,7 @@
     },
     "By the Light of the Lord Moon":{
         "name":"By the Light of the Lord Moon",
-        "traditionalNames":{
+        "extraNames":{
             "ancestral":"Kitsuki’s Eyes",
             "elemental":"Wind Scatters Shadow",
             "foreign":"Reveal the World of Ghosts"
@@ -743,7 +743,7 @@
     },
     "Call Upon the Wind":{
         "name":"Call Upon the Wind",
-        "traditionalNames":{
+        "extraNames":{
             "alchemy":"Gentle Wings of the Wren",
             "ancestral":"Doji’s Steps",
             "fortunist":"Benten Smiles"
@@ -763,7 +763,7 @@
     },
     "Cloak of Night":{
         "name":"Cloak of Night",
-        "traditionalNames":{
+        "extraNames":{
             "alchemy":"Smoke of Stolen Light",
             "fortunist":"Shroud of the North Wind",
             "foreign":"Walk in the Shadow World"
@@ -783,7 +783,7 @@
     },
     "False Realm of the Fox Spirits":{
         "name":"False Realm of the Fox Spirits",
-        "traditionalNames":{
+        "extraNames":{
             "ancestral":"Ikoma Recalls a Tale",
             "fortunist":"Lost in the Isawa Mori",
             "foreign":"Paint the Spyglass Lens"
@@ -804,7 +804,7 @@
     },
     "Grasp of the Air Dragon":{
         "name":"Grasp of the Air Dragon",
-        "traditionalNames":{
+        "extraNames":{
             "ancestral":"Shikajin’s Leap",
             "fortunist":"Jikoju’s Journey",
             "foreign":"The Wind’s Cradle"
@@ -825,7 +825,7 @@
     },
     "Mask of Wind":{
         "name":"Mask of Wind",
-        "traditionalNames":{
+        "extraNames":{
             "alchemy":"Paste of Moving Features",
             "ancestral":"Furuyari’s Face",
             "fortunist":"Sadahako’s Joke"
@@ -846,7 +846,7 @@
     },
     "Nature’s Touch":{
         "name":"Nature’s Touch",
-        "traditionalNames":{
+        "extraNames":{
             "ancestral":"Shinjo’s Whispers",
             "fortunist":"Run Alongside the Ki-Rin",
             "foreign":"Voice of the Glen King"
@@ -868,7 +868,7 @@
     },
     "Rise, Air":{
         "name":"Rise, Air",
-        "traditionalNames":{
+        "extraNames":{
             "alchemy":"Dust of Incarnation",
             "ancestral":"Guardian of Air",
             "foreign":"Summon the Air Djinn"
@@ -888,7 +888,7 @@
     },
     "Secrets on the Wind":{
         "name":"Secrets on the Wind",
-        "traditionalNames":{
+        "extraNames":{
             "ancestral":"Whisper in Bayushi’s Ear",
             "fortunist":"Tenjin’s Gift",
             "foreign":"The Fly on the Northern Wall"
@@ -910,7 +910,7 @@
     },
     "Summon Fog":{
         "name":"Summon Fog",
-        "traditionalNames":{
+        "extraNames":{
             "ancestral":"Soshi’s Escape",
             "elemental":"Veil of the Dawn",
             "fortunist":"Jotei Curls in Rest"
@@ -932,7 +932,7 @@
     },
     "Tempest of Air":{
         "name":"Tempest of Air",
-        "traditionalNames":{
+        "extraNames":{
             "alchemy":"Stormy Vial",
             "fortunist":"Howl of Isora",
             "foreign":"Flap of the Wyvern’s Wings"
@@ -952,7 +952,7 @@
     },
     "Token of Memory":{
         "name":"Token of Memory",
-        "traditionalNames":{
+        "extraNames":{
             "ancestral":"Riddle of Agasha ",
             "elemental":"Trick of the Air Kami",
             "fortunist":"Ebisu’s Joke"
@@ -974,7 +974,7 @@
     },
     "Vapor of Nightmares":{
         "name":"Vapor of Nightmares",
-        "traditionalNames":{
+        "extraNames":{
             "ancestral":"Togashi Speaks Softly",
             "elemental":"Your Heart’s Enemy",
             "fortunist":"Shadow of the Karmic Wheel"
@@ -995,7 +995,7 @@
     },
     "Wrath of Kaze-no-Kami":{
         "name":"Wrath of Kaze-no-Kami",
-        "traditionalNames":{
+        "extraNames":{
             "alchemy":"Bottled Typhoon",
             "ancestral":"Utaku’s Stampede",
             "elemental":"The Air Dragon’s Fury"
@@ -1017,7 +1017,7 @@
     },
     "Yari of Air":{
         "name":"Yari of Air",
-        "traditionalNames":{
+        "extraNames":{
             "alchemy":"Rod of the Wind Yari",
             "fortunist":"Suijin’s Spear",
             "foreign":"Halberd of the Djinn"
@@ -1039,7 +1039,7 @@
     },
     "Armor of Earth":{
         "name":"Armor of Earth",
-        "traditionalNames":{
+        "extraNames":{
             "ancestral":"Hida’s Shell",
             "fortunist":"The Hand of Bishamon",
             "foreign":"Stone Shields"
@@ -1061,7 +1061,7 @@
     },
     "Bind the Shadow":{
         "name":"Bind the Shadow",
-        "traditionalNames":{
+        "extraNames":{
             "alchemy":"Circle of Salt and Ash",
             "elemental":"Earth Kami’s Scorn",
             "fortunist":"Judgment of the Ten-Thousand"
@@ -1084,7 +1084,7 @@
     },
     "Caress of Earth":{
         "name":"Caress of Earth",
-        "traditionalNames":{
+        "extraNames":{
             "alchemy":"Salve of the Stone Kami",
             "ancestral":"Kaiu’s Many Hands",
             "foreign":"Litany of Rebinding"
@@ -1104,7 +1104,7 @@
     },
     "Courage of Seven Thunders":{
         "name":"Courage of Seven Thunders",
-        "traditionalNames":{
+        "extraNames":{
             "ancestral":"Akodo’s Unflinching Stand",
             "elemental":"Unyielding Heart of Stone",
             "foreign":"Walk into the Valley of Shadow"
@@ -1126,7 +1126,7 @@
     },
     "Earthquake":{
         "name":"Earthquake",
-        "traditionalNames":{
+        "extraNames":{
             "ancestral":"Akodo’s Bellow",
             "elemental":"Swallowed by the Earth Kami",
             "fortunist":"Kyufoki’s Hammer"
@@ -1148,7 +1148,7 @@
     },
     "Earth Becomes Sky":{
         "name":"Earth Becomes Sky",
-        "traditionalNames":{
+        "extraNames":{
             "alchemy":"Vial of Explosive Earth",
             "fortunist":"The Fall of Yama-No-Kami",
             "foreign":"Throwing the Avalanche"
@@ -1165,7 +1165,7 @@
     },
     "Embrace of Kenro-Ji-Jin":{
         "name":"Embrace of Kenro-Ji-Jin",
-        "traditionalNames":{
+        "extraNames":{
             "alchemy":"Earth Spider’s Salve",
             "ancestral":"Hiruma’s Passage",
             "elemental":"Climbing the Earth Dragon’s Back"
@@ -1187,7 +1187,7 @@
     },
     "Grasp of Earth":{
         "name":"Grasp of Earth",
-        "traditionalNames":{
+        "extraNames":{
             "alchemy":"Crystallizing Potion",
             "ancestral":"Hida’s Bindings",
             "fortunist":"Frozen in Bishamon’s Gaze"
@@ -1208,7 +1208,7 @@
     },
     "Jade Strike":{
         "name":"Jade Strike",
-        "traditionalNames":{
+        "extraNames":{
             "ancestral":"Tears of the Sun Goddess",
             "fortunist":"Breath of the Jade Dragon",
             "foreign":"The Earth’s Sacred Rebuke"
@@ -1229,7 +1229,7 @@
     },
     "Jurōjin’s Balm":{
         "name":"Jurōjin’s Balm",
-        "traditionalNames":{
+        "extraNames":{
             "elemental":"Lifeblood of the Earth Kami",
             "fortunist":"Jiro’s Patience",
             "foreign":"Kiss of the Pond Woman"
@@ -1251,7 +1251,7 @@
     },
     "Power of the Earth Dragon":{
         "name":"Power of the Earth Dragon",
-        "traditionalNames":{
+        "extraNames":{
             "alchemy":"Fortifying Stone Vial",
             "ancestral":"Osano-wo’s Determination",
             "fortunist":"Jurōjin’s Verdant Blessing"
@@ -1272,7 +1272,7 @@
     },
     "Rise, Earth":{
         "name":"Rise, Earth",
-        "traditionalNames":{
+        "extraNames":{
             "ancestral":"Guardian of Earth",
             "fortunist":"Sentinels of Mount Sengen",
             "foreign":"Clay Warriors"
@@ -1294,7 +1294,7 @@
     },
     "Symbol of Earth":{
         "name":"Symbol of Earth",
-        "traditionalNames":{
+        "extraNames":{
             "alchemy":"Mark of Crystal and Jade",
             "fortunist":"Consecration of Ningen-do",
             "foreign":"Seal of the Pure Soil"
@@ -1315,7 +1315,7 @@
     },
     "Tetsubō of Earth":{
         "name":"Tetsubō of Earth",
-        "traditionalNames":{
+        "extraNames":{
             "alchemy":"The Blacksmith’s Hammer",
             "ancestral":"Akemi’s Pillar",
             "fortunist":"Bishamon’s Kanabo"
@@ -1337,7 +1337,7 @@
     },
     "Tomb of Jade":{
         "name":"Tomb of Jade",
-        "traditionalNames":{
+        "extraNames":{
             "ancestral":"Mercy of the Sun Goddess",
             "elemental":"Embrace of the Stone Kami",
             "fortunist":"Amaterasu’s Petrifying Gaze"
@@ -1360,7 +1360,7 @@
     },
     "Wall of Earth":{
         "name":"Wall of Earth",
-        "traditionalNames":{
+        "extraNames":{
             "alchemy":"Crystallizing Powder",
             "elemental":"Shape the Earth",
             "fortunist":"Sengen’s Hands"
@@ -1385,7 +1385,7 @@
     },
     "Armor of Radiance":{
         "name":"Armor of Radiance",
-        "traditionalNames":{
+        "extraNames":{
             "alchemy":"Oil of Awakening Flames",
             "ancestral":"Armor of Osano-wo",
             "foreign":"Robes of the Ifrit"
@@ -1406,7 +1406,7 @@
     },
     "Biting Steel":{
         "name":"Biting Steel",
-        "traditionalNames":{
+        "extraNames":{
             "alchemy":"Salve of Unyielding Metal",
             "elemental":"Awaken the Blade’s Flame",
             "fortunist":"The Forge of Xing Guo"
@@ -1428,7 +1428,7 @@
     },
     "Breath of the Fire Dragon":{
         "name":"Breath of the Fire Dragon",
-        "traditionalNames":{
+        "extraNames":{
             "alchemy":"Oni’s Sake",
             "ancestral":"Togashi’s Radiant Breath",
             "foreign":"Sigh of the Desert Winds"
@@ -1460,7 +1460,7 @@
     },
     "Fukurokujin’s Wit":{
         "name":"Fukurokujin’s Wit",
-        "traditionalNames":{
+        "extraNames":{
             "ancestral":"Wisdom of the Kitsu",
             "elemental":"Ignite the Mind’s Candle",
             "foreign":"Mantra of the Scholar Kings"
@@ -1480,7 +1480,7 @@
     },
     "Fury of Osano-wo":{
         "name":"Fury of Osano-wo",
-        "traditionalNames":{
+        "extraNames":{
             "alchemy":"Orbs of Heavenly Fire",
             "ancestral":"Hochiu’s Final Stand",
             "elemental":"Reap the Sparking Seeds"
@@ -1501,7 +1501,7 @@
     },
     "Katana of Fire":{
         "name":"Katana of Fire",
-        "traditionalNames":{
+        "extraNames":{
             "alchemy":"Forging Fire Into Steel",
             "ancestral":"Echo of Short",
             "fortunist":"Sword of Osano-wo"
@@ -1523,7 +1523,7 @@
     },
     "Matsu’s Battlecry":{
         "name":"Matsu’s Battlecry",
-        "traditionalNames":{
+        "extraNames":{
             "elemental":"Embracing the Flames",
             "fortunist":"Hotei’s Curse",
             "foreign":"Haze of Battle"
@@ -1540,7 +1540,7 @@
     },
     "Ravenous Swarms":{
         "name":"Ravenous Swarms",
-        "traditionalNames":{
+        "extraNames":{
             "ancestral":"Forgotten Fury of Asahina",
             "elemental":"Dancing Orbs of Flame",
             "fortunist":"Inari’s Kitsunebi"
@@ -1562,7 +1562,7 @@
     },
     "Rise, Flame":{
         "name":"Rise, Flame",
-        "traditionalNames":{
+        "extraNames":{
             "alchemy":"Bulb of Incarnation",
             "ancestral":"Guardian of Fire",
             "fortunist":"Uzume’s Handmaiden"
@@ -1584,7 +1584,7 @@
     },
     "The Cleansing Fire":{
         "name":"The Cleansing Fire",
-        "traditionalNames":{
+        "extraNames":{
             "alchemy":"Anointment of the Fire Dragon",
             "ancestral":"Merciful Rage of Isawa",
             "fortunist":"The Peace of Osano-wo"
@@ -1601,7 +1601,7 @@
     },
     "The Fires from Within":{
         "name":"The Fires from Within",
-        "traditionalNames":{
+        "extraNames":{
             "ancestral":"The Illuminating Light of Asako",
             "fortunist":"The Riddle of Hotei ",
             "foreign":"Extending the Fire-Heart"
@@ -1621,7 +1621,7 @@
     },
     "The Soul’s Blade":{
         "name":"The Soul’s Blade",
-        "traditionalNames":{
+        "extraNames":{
             "alchemy":"Talon of the Fire Dragon",
             "ancestral":"Heavenly Petal of the Chrysanthemum",
             "foreign":"Mountain Splitter"
@@ -1645,7 +1645,7 @@
     },
     "Wall of Fire":{
         "name":"Wall of Fire",
-        "traditionalNames":{
+        "extraNames":{
             "alchemy":"Igniting Powder of Combusting Ash",
             "fortunist":"Chasing Osano-wo",
             "foreign":"Walls of the Fire Palace"
@@ -1665,7 +1665,7 @@
     },
     "Wings of the Phoenix":{
         "name":"Wings of the Phoenix",
-        "traditionalNames":{
+        "extraNames":{
             "alchemy":"Flameform Transmutation",
             "ancestral":"Isawa’s Ascent",
             "fortunist":"Hachiman’s Fiery Steed"
@@ -1686,7 +1686,7 @@
     },
     "Bō of Water":{
         "name":"Bō of Water",
-        "traditionalNames":{
+        "extraNames":{
             "ancestral":"Kaimetsu-o’s Paddle",
             "fortunist":"Ebisu’s Walking Stick",
             "foreign":"Staff of the Sorcerer"
@@ -1708,7 +1708,7 @@
     },
     "Dance of Seasons":{
         "name":"Dance of Seasons",
-        "traditionalNames":{
+        "extraNames":{
             "alchemy":"Salt of Seasonal Change",
             "ancestral":"Kuriko’s Earnest Wish",
             "fortunist":"Spinning Uzume’s Wheel"
@@ -1729,7 +1729,7 @@
     },
     "Dominion of Suijin":{
         "name":"Dominion of Suijin",
-        "traditionalNames":{
+        "extraNames":{
             "ancestral":"Iuchi’s Window",
             "elemental":"All Rivers Meet Again",
             "foreign":"Spies of the Garden Pond"
@@ -1772,7 +1772,7 @@
     },
     "Hands of the Tides":{
         "name":"Hands of the Tides",
-        "traditionalNames":{
+        "extraNames":{
             "alchemy":"Tracing the Lifeblood",
             "ancestral":"Ikoma Tumbles with Akodo",
             "fortunist":"Suijin’s Command"
@@ -1793,7 +1793,7 @@
     },
     "Heart of the Water Dragon":{
         "name":"Heart of the Water Dragon",
-        "traditionalNames":{
+        "extraNames":{
             "alchemy":"Vapors of Goodwill",
             "fortunist":"Walking Beside Jurojin",
             "foreign":"Mark of Resistance"
@@ -1814,7 +1814,7 @@
     },
     "Inari’s Blessing":{
         "name":"Inari’s Blessing",
-        "traditionalNames":{
+        "extraNames":{
             "ancestral":"Miya’s Gift",
             "elemental":"Feast of the Water Kami",
             "foreign":"Oasis in the Desert"
@@ -1835,7 +1835,7 @@
     },
     "Path to Inner Peace":{
         "name":"Path to Inner Peace",
-        "traditionalNames":{
+        "extraNames":{
             "alchemy":"Jurōjin’s Kiss",
             "ancestral":"Trancendence of Asako",
             "elemental":"Touch of the Hot Springs"
@@ -1857,7 +1857,7 @@
     },
     "Reflections of P’an Ku":{
         "name":"Reflections of P’an Ku",
-        "traditionalNames":{
+        "extraNames":{
             "ancestral":"Agasha’s Vast Wisdom",
             "elemental":"Rumors of the Water Kami",
             "foreign":"Whispers of the Steel"
@@ -1878,7 +1878,7 @@
     },
     "Rise, Water":{
         "name":"Rise, Water",
-        "traditionalNames":{
+        "extraNames":{
             "alchemy":"Wine of Invocation",
             "ancestral":"Guardian of Water",
             "fortunist":"Isora’s Attendant"
@@ -1900,7 +1900,7 @@
     },
     "Stride the Waves":{
         "name":"Stride the Waves",
-        "traditionalNames":{
+        "extraNames":{
             "alchemy":"Elixir of Cork Properties",
             "ancestral":"Kaimetsu-O’s Road",
             "fortunist":"Walking the Water Garden"
@@ -1917,7 +1917,7 @@
     },
     "Strike the Tsunami":{
         "name":"Strike the Tsunami",
-        "traditionalNames":{
+        "extraNames":{
             "alchemy":"Bottle of Oceanic Storms",
             "fortunist":"Suitengu’s Arrow",
             "foreign":"Calling the Wave"
@@ -1937,7 +1937,7 @@
     },
     "Suijin’s Embrace":{
         "name":"Suijin’s Embrace",
-        "traditionalNames":{
+        "extraNames":{
             "alchemy":"The Ocean in a Drop",
             "ancestral":"Following Doji’s Steps",
             "elemental":"Kissing the Water Kami"
@@ -1954,7 +1954,7 @@
     },
     "Sympathetic Energies":{
         "name":"Sympathetic Energies",
-        "traditionalNames":{
+        "extraNames":{
             "ancestral":"Compassion of Shinjo",
             "fortunist":"Suijin is Generous",
             "foreign":"Desert Pollen"
@@ -1974,7 +1974,7 @@
     },
     "The Rushing Wave":{
         "name":"The Rushing Wave",
-        "traditionalNames":{
+        "extraNames":{
             "alchemy":"The Clay Kobune",
             "ancestral":"Utaku’s Waterborne Steed",
             "fortunist":"Isora’s Spinning Dance"

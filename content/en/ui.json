@@ -11,16 +11,18 @@
             {"value":"martial","text":"Martial skills"},
             {"value":"trade","text":"Trade skills"}
         ],
-        "ringFilterOptions":[
-            {"value":"any","text":"Any ring"},
-            {"value":"air","text":"Air"},
-            {"value":"earth","text":"Earth"},
-            {"value":"fire","text":"Fire"},
-            {"value":"water","text":"Water"},
-            {"value":"void","text":"Void"}
+        "rankFilterOptions":[
+            {"value":"any","text":"Any rank"},
+            {"value":"0","text":"Rank 0"},
+            {"value":"1","text":"Rank 1"},
+            {"value":"2","text":"Rank 2"},
+            {"value":"3","text":"Rank 3"},
+            {"value":"4","text":"Rank 4"},
+            {"value":"5","text":"Rank 5"}
         ],
         "availabilityFilterOptions":[
             {"value":"all","text":"Full list"},
+            {"value":"upgradable","text":"Upgradable skills"},
             {"value":"learned","text":"Learned skills"}
         ],
         "curriculaFilterOptions":[
@@ -37,7 +39,8 @@
             {"value":"2","text":"Rank 2"},
             {"value":"3","text":"Rank 3"},
             {"value":"4","text":"Rank 4"},
-            {"value":"5","text":"Rank 5"}
+            {"value":"5","text":"Rank 5"},
+            {"value":"6","text":"Rank 6"}
         ],
         "typeFilterOptions":[
             {"value":"any","text":"Any type"},
@@ -47,7 +50,11 @@
             {"value":"ritual","text":"Rituals"},
             {"value":"shūji","text":"Shūji"},
             {"value":"mahō","text":"Mahō"},
-            {"value":"ninjutsu","text":"Ninjutsu"}
+            {"value":"ninjutsu","text":"Ninjutsu"},
+            {"value":"school ability","text":"School Abilities"},
+            {"value":"mastery ability","text":"Mastery abilities"},
+            {"value":"title effect","text":"Title Effects"},
+            {"value":"title ability","text":"Title Abilities"}
         ],
         "ringFilterOptions":[
             {"value":"any","text":"Any ring"},
@@ -58,11 +65,11 @@
             {"value":"void","text":"Void"}
         ],
         "availabilityFilterOptions":[
-            {"value":"all","text":"Full list"},
-            {"value":"compatible","text":"Compatible techniques"},
+            {"value":"learned","text":"Learned techniques"},
+            {"value":"missable","text":"Missable techniques"},            
             {"value":"available","text":"Available techniques"},
-            {"value":"missable","text":"Missable techniques"},
-            {"value":"learned","text":"Learned techniques"}
+            {"value":"compatible","text":"Compatible techniques"},
+            {"value":"all","text":"Full list"}            
         ],
         "curriculaFilterOptions":[
             {"value":"any","text":"Any origin"},

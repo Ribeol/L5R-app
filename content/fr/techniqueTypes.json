@@ -1,4 +1,10 @@
 {    
+    "school ability":{
+        "name":"Capacité d'école"
+    },
+    "ability":{
+        "name":"Ability"
+    },
     "kata":{
         "name":"Kata"
     },
@@ -19,5 +25,14 @@
     },
     "ninjutsu":{
         "name":"Ninjutsu"
+    },
+    "mastery ability":{
+        "name":"Capacité de maîtrise"
+    },
+    "title effect":{
+        "name":"Effet immédiat"
+    },
+    "title ability":{
+        "name":"Capacité de titre"
     }
 }

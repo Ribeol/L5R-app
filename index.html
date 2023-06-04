@@ -41,6 +41,9 @@
             .largeFontSize {
                 font-size: 1.25em;
             }
+            .rounded {
+                border-radius: 25px;
+            }
 
             @media screen and (min-width: 400px) {
                 .smallFontSize {
@@ -60,6 +63,10 @@
             }
             .flexGrow {
                 flex-grow: 1;
+            }
+
+            .pointer {
+                cursor: pointer;
             }
 
             body {                
@@ -122,7 +129,7 @@
             .filters>span {
                 grid-row: 1 / span 2;
                 font-size: 2em;
-                padding-top: 5px;
+                padding-top: 7px;
                 text-align: center;
                 cursor: default;
             }
@@ -134,6 +141,7 @@
             .filters select{
                 font-size: 1em;
                 flex-grow: 1;
+                padding-top: 1px;
                 padding-bottom: 1px;
                 cursor: pointer;
             }
@@ -145,13 +153,11 @@
                 overflow: auto;
             }
             li {
-                border-radius: 25px;
                 background-color: #eeeeee;
                 margin: 5px;
                 padding-left: 5px;
                 padding-right: 5px;
-                min-height: 2.5em;
-                box-sizing: border-box;
+                min-height: calc(2.5em + 4px);
                 display: flex;
                 align-items: center;
                 cursor: default;
@@ -164,12 +170,23 @@
                 text-align: center;
             }
             
-            .list div>div {
-                display: flex;
-                align-items: center; 
-                justify-content: center;
-                gap: 10px;               
+            .approachGrid{
+                display: grid;
+                grid-template-columns: auto auto;
+                gap: 10px;
             }
+            .approachGrid >:first-child {
+                display: flex;
+                grid-row: span 5;
+                justify-content: center;
+                align-items: center;
+            }            
+            .approachLine{
+                display: flex;
+                gap: 10px;
+                align-items: center;
+            }
+            
 
             .list .rank {
                 font-weight: bold;
@@ -185,19 +202,20 @@
             .offset.large.icon {
                 padding-top: 4px;
             }
-            .list .mahō {
-                padding-bottom: 3px;
+            .list .curriculaRanks {
+                display: grid;
+                grid-template-rows: 1.25em 1.25em;
+                grid-auto-flow: column;
             }
-            .list .school {
-                padding-top: 2px;
+            .curriculaRanks :last-child:nth-child(odd) {
+                grid-row: span 2;
+                align-self: center;
             }
             .list .addSymbol {
                 font-size: 1.75em;
                 width: 0.7em;
             }
-            .list .pointer {
-                cursor: pointer;
-            }
+            
             .list .available {border: 1px solid black;}
             .list .incompatible * {color: #AAAAAA;}
 
@@ -214,7 +232,7 @@
             }
             #overlay.appear {
                 display: flex;
-                animation: darken 0.1s;                
+                animation: darken 0.2s;                
             }
             #overlay.visible {
                 display: flex;
@@ -222,7 +240,7 @@
                 background-color: rgba(0, 0, 0, 0.5);
             }
             #overlay.disappear {
-                animation: darken 0.1s reverse;
+                animation: darken 0.2s reverse;
                 pointer-events: none;
             }
             @keyframes darken {
@@ -247,14 +265,14 @@
                 overflow: auto;
             }
             #viewer.appear {
-                animation: expand 0.1s;
+                animation: expand 0.2s;
             }
             #viewer.visible {
                 top: 10%;
                 height: 80%;
             }
             #viewer.disappear {                
-                animation: expand 0.1s reverse;
+                animation: expand 0.2s reverse;
             }
             @keyframes expand {
                 from {
@@ -337,19 +355,19 @@
                 </div>                   
             </button>
             <div id="navbar">
-                <button class="user" onclick="contentManager.changeTab('user')">&#xe91b</button>
-                <button class="rings" onclick="contentManager.changeTab('rings')">&#xe916</button>
-                <button class="skills" onclick="contentManager.changeTab('skills')">&#xe90e</button>
-                <button class="techniques" onclick="contentManager.changeTab('techniques')">&#xe914</button>
-                <button class="experience" onclick="contentManager.changeTab('experience')">&#xe912</button>
-                <button class="items" onclick="contentManager.changeTab('items')">&#xe919</button>
-                <button class="notes" onclick="contentManager.changeTab('notes')">&#xe910</button>
+                <button class="character" onclick="contentManager.changeTab('character')">&#xe902</button>
+                <button class="rings" onclick="contentManager.changeTab('rings')">&#xe920</button>
+                <button class="skills" onclick="contentManager.changeTab('skills')">&#xe917</button>
+                <button class="techniques" onclick="contentManager.changeTab('techniques')">&#xe91d</button>
+                <button class="experience" onclick="contentManager.changeTab('experience')">&#xe922</button>
+                <button class="items" onclick="contentManager.changeTab('items')">&#xe924</button>
+                <button class="beginner" onclick="contentManager.changeTab('beginner')">&#xe901</button>
             </div>
-            <div class="page user columnContainer">WIP</div>
+            <div class="page character columnContainer">WIP</div>
             <div class="page rings columnContainer">WIP</div>
             <div class="page skills columnContainer">
                 <div class="filters">
-                    <span>&#xe906</span>
+                    <span>&#xe90e</span>
                     <div>
                         <select id="skillGroupFilter">
                             <option value="any">Tout groupe</option>
@@ -359,19 +377,22 @@
                             <option value="martial">Martial</option>
                             <option value="trade">Professionnel</option>
                         </select>
-                        <select id="skillRingFilter">
-                            <option value="any">Tout anneau</option>
-                            <option value="air">Air</option>
-                            <option value="earth">Terre</option>
-                            <option value="fire">Feu</option>
-                            <option value="water">Eau</option>
-                            <option value="void">Vide</option>
+                        <select id="skillRankFilter">
+                            <option value="any">Tout rang</option>
+                            <option value="0">Rang 0</option>
+                            <option value="1">Rang 1</option>
+                            <option value="2">Rang 2</option>
+                            <option value="3">Rang 3</option>
+                            <option value="4">Rang 4</option>
+                            <option value="5">Rang 5</option>
                         </select>
                     </div>
                     <div>
                         <select id="skillAvailabilityFilter">
+                            <option value="learned">Compétences apprises</option>                            
+                            <option value="upgradable">Compétences améliorables</option>
                             <option value="all">Liste complète</option>
-                            <option value="learned">Compétences apprises</option>
+                            
                         </select>
                         <select id="skillCurriculaFilter">
                             <option value="any">Toute origine</option>
@@ -386,7 +407,7 @@
             </div>
             <div class="page techniques columnContainer">
                 <div class="filters">
-                    <span>&#xe906</span>
+                    <span>&#xe90e</span>
                     <div>
                         <select id="techRankFilter">
                             <option value="any">Tout rang</option>
@@ -395,6 +416,7 @@
                             <option value="3">Rang 3</option>
                             <option value="4">Rang 4</option>
                             <option value="5">Rang 5</option>
+                            <option value="6">Rang 6</option>
                         </select>
                         <select id="techTypeFilter">
                             <option value="any">Tout type</option>
@@ -405,6 +427,10 @@
                             <option value="shūji">Shūji</option>
                             <option value="mahō">Mahō</option>
                             <option value="ninjutsu">Ninjutsu</option>
+                            <option value="school ability">Capa. école</option>
+                            <option value="mastery ability">Capa. maîtrise</option>
+                            <option value="title effect">Effets titre</option>
+                            <option value="title ability">Capa. titre</option>
                         </select>
                         <select id="techRingFilter">
                             <option value="any">Tout anneau</option>
@@ -417,11 +443,11 @@
                     </div>
                     <div>
                         <select id="techAvailabilityFilter">
-                            <option value="all">Liste complète</option>
-                            <option value="compatible">Techniques compatibles</option>
-                            <option value="available">Techniques disponibles</option>
-                            <option value="missable">Techniques manquables</option>
                             <option value="learned">Techniques apprises</option>
+                            <option value="missable">Techniques manquables</option>
+                            <option value="available">Techniques disponibles</option>                            
+                            <option value="compatible">Techniques compatibles</option>
+                            <option value="all">Liste complète</option>
                         </select>
                         <select id="techCurriculaFilter">
                             <option value="any">Toute origine</option>
@@ -436,7 +462,7 @@
             </div>
             <div class="page experience columnContainer">WIP</div>
             <div class="page items columnContainer">WIP</div>
-            <div class="page notes columnContainer">WIP</div>
+            <div class="page beginner columnContainer">WIP</div>
         </div>
         <div id="overlay" onclick="contentManager.hideOverlay(event.target)">
             <div id="viewer" class="columnContainer">

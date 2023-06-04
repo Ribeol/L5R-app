@@ -1,9 +1,13 @@
-{    
+{
+    "school ability":{},
     "kata":{},
     "kihō":{},
     "invocation":{},
     "ritual":{},
     "shūji":{},
     "mahō":{},
-    "ninjutsu":{}
+    "ninjutsu":{},
+    "mastery ability":{},
+    "title effect":{},
+    "title ability":{}
 }

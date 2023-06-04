@@ -5,15 +5,19 @@
         "description":[
             "L’école de défenseur Hida forme les plus vaillants protecteurs de Rokugan à affronter les horreurs qui grouillent derrière la Grande Muraille Kaiu. Elle enseigne à ses disciples la force d’âme, le courage et le pragmatisme. Les gobelins, les démons et les morts-vivants ne sont pas des adversaires honorables, et les défenseurs Hida ne peuvent donc pas se permettre de les combattre à la loyale. N’importe quel guerrier est capable de se jeter sur un oni à la peau de pierre dans l’espoir de le tuer (au risque de succomber lui-même), mais le défenseur Hida, lui, sait qu’il est de son devoir de résister. Les défenseurs portent de lourdes armures de plates et peuvent briser des cuirasses d’acier d’un coup de marteau : ils ont développé un armement et un style de combat qui améliorent considérablement leurs chances de victoire, et surtout de survie."
         ],
-        "schoolAbility":[
-            "La voie du Crabe (capacité d’école)",
-            "Ignorez la propriété Encombrant de l’armure que vous portez.",
-            "Une fois par round, vous pouvez réduire la gravité d’un coup critique (minimum 0) en lui retirant une valeur égale à la somme de la Résistance physique de votre armure et de votre rang d’école. Cette réduction s’applique avant le test destiné à résister au coup critique."
-        ],
-        "masteryAbility":[
-            "La montagne ne recule pas (capacité de maîtrise)",
-            "Au début de votre tour, vous pouvez dépenser 1 point de Vide. Ignorez alors tous vos états, tous les terrains et tous les effets négatifs persistants des techniques et des capacités. N’appliquez pas vos désavantages aux tests. Si vous mourez, vous vous accrochez à la vie encore quelques instants (vous décéderez malgré tout quand l’effet prendra fin). Cet effet persiste jusqu’à la fin de votre prochain tour."
-        ]
+        "initialAbility":{
+            "name":"La voie du Crabe",
+            "description":[
+                "Ignorez la propriété Encombrant de l’armure que vous portez.",
+                "Une fois par round, vous pouvez réduire la gravité d’un coup critique (minimum 0) en lui retirant une valeur égale à la somme de la Résistance physique de votre armure et de votre rang d’école. Cette réduction s’applique avant le test destiné à résister au coup critique."
+            ]
+        },
+        "finalAbility":{
+            "name":"La montagne ne recule pas",
+            "description":[
+                "Au début de votre tour, vous pouvez dépenser 1 point de Vide. Ignorez alors tous vos états, tous les terrains et tous les effets négatifs persistants des techniques et des capacités. N’appliquez pas vos désavantages aux tests. Si vous mourez, vous vous accrochez à la vie encore quelques instants (vous décéderez malgré tout quand l’effet prendra fin). Cet effet persiste jusqu’à la fin de votre prochain tour."
+            ]
+        }
     },
     "Hiruma":{
         "name":"École d’éclaireur Hiruma",
@@ -21,14 +25,18 @@
         "description":[
             "L’Outremonde ne dort jamais. Ceux qui le surveillent ne peuvent pas non plus se le permettre. Explorer ce territoire est une tâche dangereuse qui requiert une intense préparation. Les Hiruma ont vu leurs terres submergées par les forces démoniaques, et ils mourront plutôt que de laisser une telle tragédie se reproduire. Les disciples de l’école Hiruma sont l’incarnation de la patience et de l’endurance. On les entraîne à observer et à s’échapper. Ces maîtres dans les arts de la survie et du déplacement n’attaquent que si le jeu en vaut la chandelle. Quand un éclaireur Hiruma retourne servir à l’intérieur des frontières de l’Empire, son air tourmenté et sa vigilance constante trahissent le vétéran."
         ],
-        "schoolAbility":[
-            "Dérobade de la flamme fugitive (capacité d’école)",
-            "Vous pouvez changer de posture après avoir effectué une action d’Attaque. Ajoutez alors votre rang d’école au ND des tests d’Attaque effectués par les créatures d’un gabarit supérieur ou égal à trois qui vous prennent pour cible jusqu’au début de votre prochain tour."
-        ],
-        "masteryAbility":[
-            "Entaille du tueur (capacité de maîtrise)",
-            "Ajoutez votre rang en Survie à la gravité des coups critiques que vous infligez à des cibles d’un gabarit supérieur ou égal à trois."
-        ]
+        "initialAbility":{
+            "name":"Dérobade de la flamme fugitive",
+            "description":[
+                "Vous pouvez changer de posture après avoir effectué une action d’Attaque. Ajoutez alors votre rang d’école au ND des tests d’Attaque effectués par les créatures d’un gabarit supérieur ou égal à trois qui vous prennent pour cible jusqu’au début de votre prochain tour."
+            ]
+        },
+        "finalAbility":{
+            "name":"Entaille du tueur",
+            "description":[
+                "Ajoutez votre rang en Survie à la gravité des coups critiques que vous infligez à des cibles d’un gabarit supérieur ou égal à trois."
+            ]
+        }
     },
     "Kaiu":{
         "name":"École d’ingénieur Kaiu",
@@ -36,14 +44,18 @@
         "description":[
             "Depuis la création du Clan du Crabe, la famille Kaiu a pour devoir d’équiper ses samouraïs afin qu’ils triomphent de leurs ennemis par les armes, les engins de siège ou les idées. En leur qualité d’inventeurs du clan, les ingénieurs Kaiu se chargent de fournir tout cet équipement. Leur dojo est une école de guerre, mais aussi la plus importante école d’ingénieurs de l’Empire. Ses diplômés sont des logisticiens aguerris et de fins tacticiens, qui font preuve d’une inventivité déconcertante. Principal soutien des fantassins du Clan du Crabe, ils bâtissent des ponts en terrain hostile, fabriquent des armures capables de résister même aux coups d’un oni, et forgent les rares lames Kaiu qui comptent parmi les meilleurs sabres de l’Empire. Quand l’heure est grave et que le chemin de la victoire est bloqué, les ingénieurs Kaiu en trouvent un autre !"
         ],
-        "schoolAbility":[
-            "Maître bâtisseur (capacité d’école)",
-            "Une fois par scène, lorsque vous effectuez un test destiné à utiliser un objet de votre fabrication, vous pouvez ajouter au résultat un nombre de |ringIcon| gardés supplémentaires affichant |opportunityIcon| égal à votre rang d’école."
-        ],
-        "masteryAbility":[
-            "Ingénieuse conception (capacité de maîtrise)",
-            "Vous pouvez ajouter ou retirer une propriété d’équipement à un objet que vous fabriquez. Vous devez décrire comment cet objet gagne (ou perd) cette propriété habituelle. Le MJ est seul juge de la pertinence de cette modification."
-        ]
+        "initialAbility":{
+            "name":"Maître bâtisseur",
+            "description":[
+                "Une fois par scène, lorsque vous effectuez un test destiné à utiliser un objet de votre fabrication, vous pouvez ajouter au résultat un nombre de |ringIcon| gardés supplémentaires affichant |opportunityIcon| égal à votre rang d’école."
+            ]
+        },
+        "finalAbility":{
+            "name":"Ingénieuse conception",
+            "description":[
+                "Vous pouvez ajouter ou retirer une propriété d’équipement à un objet que vous fabriquez. Vous devez décrire comment cet objet gagne (ou perd) cette propriété habituelle. Le MJ est seul juge de la pertinence de cette modification."
+            ]
+        }
     },
     "Kuni":{
         "name":"École de purificateur Kuni",
@@ -51,14 +63,18 @@
         "description":[
             "Les purificateurs Kuni connaissent des méthodes et des prières pour empêcher les forces de l’Outremonde d’entrer dans l’Empire. Ils se sont donc spécialisés dans les invocations aux kamis de la Terre, destinées à terrasser ou à bannir les serviteurs maléfiques de Fu Leng. Depuis la création de leur école, les purificateurs Kuni ont cherché à comprendre la nature de la menace qu’affronte leur clan. Cette quête les a conduits sur des chemins dangereux, et beaucoup ont succombé à la corruption qu’ils étudient. Si les purificateurs Kuni peignent sur leur visage des motifs stylisés rappelant les masques de kabuki, c’est pour protéger leur véritable identité des insidieuses caresses de l’Outremonde. Une vigilance éternelle, une paranoïa de tous les instants, tel est le lot des purificateurs Kuni."
         ],
-        "schoolAbility":[
-            "Regarder dans les ténèbres (capacité d’école)",
-            "Une fois par round, lorsque vous effectuez un test visant ou impliquant une créature Souillée, vous pouvez choisir un nombre de dés gardés contenant |strifeIcon| inférieur ou égal à votre rang d’école. Changez leur résultat en |successIcon|. Vous ne pouvez utiliser cette capacité que si vous êtes sûr que la cible est Souillée."
-        ],
-        "masteryAbility":[
-            "Purifier le mal (capacité de maîtrise)",
-            "Une fois par session de jeu, vous pouvez dépenser 1 point de Vide pour utiliser une invocation contre toutes les créatures maléfiques dans votre ligne de vue. Votre prochaine technique d’invocation affectera toutes les créatures Souillées dans sa portée maximale, au lieu de ses cibles habituelles."
-        ]
+        "initialAbility":{
+            "name":"Regarder dans les ténèbres",
+            "description":[
+                "Une fois par round, lorsque vous effectuez un test visant ou impliquant une créature Souillée, vous pouvez choisir un nombre de dés gardés contenant |strifeIcon| inférieur ou égal à votre rang d’école. Changez leur résultat en |successIcon|. Vous ne pouvez utiliser cette capacité que si vous êtes sûr que la cible est Souillée."
+            ]
+        },
+        "finalAbility":{
+            "name":"Purifier le mal",
+            "description":[
+                "Une fois par session de jeu, vous pouvez dépenser 1 point de Vide pour utiliser une invocation contre toutes les créatures maléfiques dans votre ligne de vue. Votre prochaine technique d’invocation affectera toutes les créatures Souillées dans sa portée maximale, au lieu de ses cibles habituelles."
+            ]
+        }
     },
     "Yasuki":{
         "name":"École de marchand Yasuki",
@@ -66,14 +82,18 @@
         "description":[
             "Les ennemis du Clan du Crabe affirment que les Yasuki ne sont guère plus que des marchands. Les Yasuki rétorqueront qu’ils sont bien plus. Ils sont passés maîtres dans les arts du commerce et de la circulation des marchandises, des compétences considérées comme grossières à Rokugan. Les Yasuki offrent des biens et des services, même à ceux qui ne savent pas qu’ils en ont besoin, en leur faisant promettre en échange d’aider leur famille ou leur clan par la suite. Ils respectent toujours leur parole, et s’assurent que leurs partenaires font de même."
         ],
-        "schoolAbility":[
-            "La voie de la Carpe (capacité d’école)",
-            "Au prix d’une activité de temps mort et si vous avez accès à un marché, vous pouvez acquérir des objets. Leur nombre sera compris entre 1 et votre rang d’école, et leur rareté inférieure ou égale à 4. Vous pouvez à la place acquérir un seul objet dont la rareté est inférieure ou égale à 4 plus votre rang d’école. Vous n’avez pas besoin de faire de test, de dépenser d’argent,ou bien de sacrifier ou de mettre en jeu des points d’Honneur ou de Gloire. Que ces objets soient indignes de votre statut ou Interdits n’a pas d’importance (les montrer ouvertement par la suite est un tout autre problème). Le MJ peut, comme à l’accoutumée, appliquer des ajustements sur la rareté de l’objet en fonction du marché auquel vous avez accès."
-        ],
-        "masteryAbility":[
-            "Les trésors de la carpe (capacité de maîtrise)",
-            "Une fois par session de jeu, vous pouvez offrir un objet en votre possession. Ce faisant, vous retirez la rareté de l’objet au ND du prochain test de compétence sociale que vous effectuez contre le destinataire (ND minimum 1). Chaque point qui aurait dû réduire le ND en dessous de 1 vous permet d’ajouter 1 |ringIcon| gardé supplémentaire affichant |opportunityIcon| au résultat de votre test."
-        ]
+        "initialAbility":{
+            "name":"La voie de la Carpe",
+            "description":[
+                "Au prix d’une activité de temps mort et si vous avez accès à un marché, vous pouvez acquérir des objets. Leur nombre sera compris entre 1 et votre rang d’école, et leur rareté inférieure ou égale à 4. Vous pouvez à la place acquérir un seul objet dont la rareté est inférieure ou égale à 4 plus votre rang d’école. Vous n’avez pas besoin de faire de test, de dépenser d’argent,ou bien de sacrifier ou de mettre en jeu des points d’Honneur ou de Gloire. Que ces objets soient indignes de votre statut ou Interdits n’a pas d’importance (les montrer ouvertement par la suite est un tout autre problème). Le MJ peut, comme à l’accoutumée, appliquer des ajustements sur la rareté de l’objet en fonction du marché auquel vous avez accès."
+            ]
+        },
+        "finalAbility":{
+            "name":"Les trésors de la carpe",
+            "description":[
+                "Une fois par session de jeu, vous pouvez offrir un objet en votre possession. Ce faisant, vous retirez la rareté de l’objet au ND du prochain test de compétence sociale que vous effectuez contre le destinataire (ND minimum 1). Chaque point qui aurait dû réduire le ND en dessous de 1 vous permet d’ajouter 1 |ringIcon| gardé supplémentaire affichant |opportunityIcon| au résultat de votre test."
+            ]
+        }
     },
     "Asahina":{
         "name":"École d’artificier Asahina",
@@ -81,14 +101,18 @@
         "description":[
             "L’art et la religion ne font qu’un pour les Asahina, car à leurs yeux, la foi, la beauté et la paix ne sont que les différents aspects d’une même réalité. La famille Asahina profite de chaque occasion pour enseigner sa philosophie et promouvoir l’harmonie. L’ardeur qu’elle investit dans la création d’objets esthétiques répond également à ce désir de paix. Bien des affrontements ont été désamorcés par un rituel religieux ouvrant une issue pacifique. Les Asahina font tout leur possible pour vivre leurs idéaux pacifistes dans un monde déchiré par les conflits. C’est une tâche laborieuse, mais ils persévèrent, convaincus du bien-fondé de leurs croyances."
         ],
-        "schoolAbility":[
-            "Artisan spirituel (capacité d’école)",
-            "Lorsque vous effectuez un test pour conjurer mystiquement une illusion, ou bien pour conjurer, améliorer ou éveiller un objet, vous pouvez ajouter au résultat un nombre de |ringIcon| gardés affichant |opportunityIcon| égal à votre rang d’école."
-        ],
-        "masteryAbility":[
-            "Éveiller l’esprit endormi (capacité de maîtrise)",
-            "Une fois par session de jeu, au prix d’une activité de temps mort, vous pouvez effectuer un test de compétence artisanale (Vide) ND 4 pour éveiller l’esprit d’un objet. En cas de réussite, ce dernier devient jusqu’à la fin de la session un nemuranai doté d’une invocation scellée que vous choisissez en fonction de son passé. Le MJ est seul juge de la pertinence de l’invocation sélectionnée."
-        ]
+        "initialAbility":{
+            "name":"Artisan spirituel",
+            "description":[
+                "Lorsque vous effectuez un test pour conjurer mystiquement une illusion, ou bien pour conjurer, améliorer ou éveiller un objet, vous pouvez ajouter au résultat un nombre de |ringIcon| gardés affichant |opportunityIcon| égal à votre rang d’école."
+            ]
+        },
+        "finalAbility":{
+            "name":"Éveiller l’esprit endormi",
+            "description":[
+                "Une fois par session de jeu, au prix d’une activité de temps mort, vous pouvez effectuer un test de compétence artisanale (Vide) ND 4 pour éveiller l’esprit d’un objet. En cas de réussite, ce dernier devient jusqu’à la fin de la session un nemuranai doté d’une invocation scellée que vous choisissez en fonction de son passé. Le MJ est seul juge de la pertinence de l’invocation sélectionnée."
+            ]
+        }
     },
     "Daidoji":{
         "name":"École des guerriers de fer Daidoji",
@@ -96,14 +120,18 @@
         "description":[
             "Les bushi de la famille Daidoji forment le principal contingent des troupes de la petite armée du clan. Cette infanterie lourde surentraînée peut tenir sa position et retarder l’avancée de n’importe quelle troupe ennemie. Les lances et la discipline d’acier des guerriers de fer Daidoji ont déjà brisé les rangs de nombreux adversaires. En l’absence de conflit, la plupart des Daidoji sont affectés à la protection des châteaux du clan, ou veillent sur les courtisans du Clan de la Grue en qualité de yôjimbô (gardes du corps). Si la vigilance et la solidarité dont ils font preuve ont empêché d’innombrables situations de dégénérer, on raconte que la plupart des guerriers Daidoji préfèrent le champ de bataille, où nul mensonge n’est possible."
         ],
-        "schoolAbility":[
-            "Vigilance de l’esprit (capacité d’école)",
-            "Une fois par round, vous pouvez intercepter les dégâts physiques infligés à un autre personnage situé à portée d’une de vos armes de corps à corps apprêtées. Vous subissez alors un nombre de points de Fatigue égal à votre rang d’école, et retirez le double aux dégâts subis par la cible de l’attaque."
-        ],
-        "masteryAbility":[
-            "Dans l’ombre de ma lame (capacité de maîtrise)",
-            "Lorsque vous utilisez l’action Protéger, vous pouvez choisir de défendre un nombre de personnages inférieur ou égal à votre rang d’Arts martiaux (corps à corps) situés dans la portée de votre arme, et non un seul."
-        ]
+        "initialAbility":{
+            "name":"Vigilance de l’esprit",
+            "description":[
+                "Une fois par round, vous pouvez intercepter les dégâts physiques infligés à un autre personnage situé à portée d’une de vos armes de corps à corps apprêtées. Vous subissez alors un nombre de points de Fatigue égal à votre rang d’école, et retirez le double aux dégâts subis par la cible de l’attaque."
+            ]
+        },
+        "finalAbility":{
+            "name":"Dans l’ombre de ma lame",
+            "description":[
+                "Lorsque vous utilisez l’action Protéger, vous pouvez choisir de défendre un nombre de personnages inférieur ou égal à votre rang d’Arts martiaux (corps à corps) situés dans la portée de votre arme, et non un seul."
+            ]
+        }
     },
     "Doji":{
         "name":"École de diplomate Doji",
@@ -111,14 +139,18 @@
         "description":[
             "Personne ne bat le Clan de la Grue aux jeux de la cour. Après tout, c’est lui qui en a écrit les règles. Les diplomates Doji chorégraphient la danse des faveurs échangées, des présents offerts et des invitations mondaines. Toujours vêtus à la dernière mode et à la pointe de la culture, ils ne prononcent jamais de paroles blessantes : leurs silences assourdissants et un simple geste suffisent. Le réseau de faveurs, de présents et d’invitations des diplomates Doji leur permet de sentir le vent et d’ajuster l’équilibre social de l’Empire à leur avantage."
         ],
-        "schoolAbility":[
-            "Communication silencieuse (capacité d’école)",
-            "Une fois par scène, lorsque vous effectuez un test pour persuader ou influencer un interlocuteur, vous pouvez ajouter au résultat un nombre de |ringIcon| gardés affichant |opportunityIcon| égal à votre rang d’école."
-        ],
-        "masteryAbility":[
-            "La grâce de la Dame (capacité de maîtrise)",
-            "Une fois par scène, vous pouvez dépenser 1 point de Vide pour réduire votre Conflit à 0. Chaque allié présent peut alors éliminer un nombre de points de Conflit égal à votre rang d’Honneur."
-        ]
+        "initialAbility":{
+            "name":"Communication silencieuse",
+            "description":[
+                "Une fois par scène, lorsque vous effectuez un test pour persuader ou influencer un interlocuteur, vous pouvez ajouter au résultat un nombre de |ringIcon| gardés affichant |opportunityIcon| égal à votre rang d’école."
+            ]
+        },
+        "finalAbility":{
+            "name":"La grâce de la Dame",
+            "description":[
+                "Une fois par scène, vous pouvez dépenser 1 point de Vide pour réduire votre Conflit à 0. Chaque allié présent peut alors éliminer un nombre de points de Conflit égal à votre rang d’Honneur."
+            ]
+        }
     },
     "Kakita":{
         "name":"École de duelliste Kakita",
@@ -126,17 +158,21 @@
         "description":[
             "L’école de duelliste Kakita se fonde sur la maxime « un coup, un mort » et cherche à enseigner à ses élèves la maîtrise du coup parfait dans un duel iaijutsu, le summum de toutes les compétences martiales. Bien que les autres arts de la guerre y soient évoques, l’Académie des duellistes Kakita ne met l’accent sur aucun d’entre eux. On peut certes critiquer une dévotion si acharnée, mais les duellistes de cette école sont incontestablement les meilleurs de tout l’Empire. Leur virtuosité au katana complète à merveille la maestria des diplomates Doji à la cour, et elle renforce la domination du Clan de la Grue sur la politique."
         ],
-        "schoolAbility":[
-            "La voie de la Grue (capacité d’école)",
-            "Une fois par round, vous pouvez ajouter ou retirer à la gravité d’un coup critique que vous venez d’infliger un nombre inférieur ou égal à votre rang d’école."
-        ],
-        "masteryAbility":[
-            "Frappe instinctive (capacité de maîtrise, action)",
-            "Une fois par scène, au prix d’une action d’Attaque et de Déplacement, vous pouvez effectuer un test d’Arts martiaux (corps à corps) (Vide) avec un katana ou un wakizashi rengainé contre un personnage situé à portée 2-3. Le ND de ce test est égal à la Vigilance de la cible.",
-            "Vous vous déplacez immédiatement à portée 1 de la cible et dégainez. En cas de réussite, votre cible subit un coup critique dont la gravité est égale à la Dangerosité de l’arme utilisée, plus vos succès bonus.",
-            "|opportunityIcon|+ : pour chaque |opportunityIcon| dépensé de cette façon, vous choisissez un personnage situé à portée 0–2 de votre cible. Il subit les états Hébété Et Désorienté.",
-            "|opportunityIcon|opportunityIcon|+ : considérez que la portée maximale de cette technique augmente de 1 par |opportunityIcon|opportunityIcon| dépensés de cette façon."
-        ]
+        "initialAbility":{
+            "name":"La voie de la Grue",
+            "description":[
+                "Une fois par round, vous pouvez ajouter ou retirer à la gravité d’un coup critique que vous venez d’infliger un nombre inférieur ou égal à votre rang d’école."
+            ]
+        },
+        "finalAbility":{
+            "name":"Frappe instinctive",
+            "description":[
+                "Une fois par scène, au prix d’une action d’Attaque et de Déplacement, vous pouvez effectuer un test d’Arts martiaux (corps à corps) (Vide) avec un katana ou un wakizashi rengainé contre un personnage situé à portée 2-3. Le ND de ce test est égal à la Vigilance de la cible.",
+                "Vous vous déplacez immédiatement à portée 1 de la cible et dégainez. En cas de réussite, votre cible subit un coup critique dont la gravité est égale à la Dangerosité de l’arme utilisée, plus vos succès bonus.",
+                "|opportunityIcon|+ : pour chaque |opportunityIcon| dépensé de cette façon, vous choisissez un personnage situé à portée 0–2 de votre cible. Il subit les états Hébété Et Désorienté.",
+                "|opportunityIcon|opportunityIcon|+ : considérez que la portée maximale de cette technique augmente de 1 par |opportunityIcon|opportunityIcon| dépensés de cette façon."
+            ]
+        }
     },
     "Agasha":{
         "name":"École de mystique Agasha",
@@ -144,14 +180,18 @@
         "description":[
             "Les mystiques Agasha mélangent artisanat et invocations, et ils utilisent les objets alchimiques et la métallurgie en guise de focalisateurs pour leurs arts mystiques. Ces pratiques leur ont permis de découvrir que tous les éléments sont liés et qu’on peut accéder à un grand pouvoir en modifiant leur état. La magie des Agasha améliore (et est améliorée par) leurs mixtures chimiques, qui servent aussi bien à la guerre qu’au divertissement. Les membres de cette école imprègnent de prières chaque objet qu’ils créent, des sabres aux médicaments. lls cherchent constamment à repousser leurs limites. Les mystiques Agasha ont l’habitude de s’aventurer dans le vaste monde, en quête dmoment où la nature, dans l’une de ses multiples formes, leur apportera l’inspiration."
         ],
-        "schoolAbility":[
-            "Transmutation élémentaire (capacité d’école)",
-            "Lorsque vous lancez une invocation, vous pouvez choisir un anneau différent pour effectuer votre test. Quand vous utilisez cette capacité d’école, vous ne pouvez activer aucun |opportunityIcon| de l’élément original de l’invocation, mais vous pouvez activer |opportunityIcon| du nouvel élément. Vous pouvez utiliser cette capacité d’école un nombre de fois égal à votre rang d’école à chaque session."
-        ],
-        "masteryAbility":[
-            "Expérimente et adapte—toi (capacité de maîtrise)",
-            "Ajoutez votre rang en Théologie à votre Résistance surnaturelle contre les invocations de l’Air, de l’Eau, du Feu et de la Terre. Quand un autre personnage vient de lancer une telle invocation en vous prenant pour cible, vous pouvez dépenser 1 point de Vide pour la lancer aussitôt vous aussi, même si vous ne la connaissez pas."
-        ]
+        "initialAbility":{
+            "name":"Transmutation élémentaire",
+            "description":[
+                "Lorsque vous lancez une invocation, vous pouvez choisir un anneau différent pour effectuer votre test. Quand vous utilisez cette capacité d’école, vous ne pouvez activer aucun |opportunityIcon| de l’élément original de l’invocation, mais vous pouvez activer |opportunityIcon| du nouvel élément. Vous pouvez utiliser cette capacité d’école un nombre de fois égal à votre rang d’école à chaque session."
+            ]
+        },
+        "finalAbility":{
+            "name":"Expérimente et adapte—toi",
+            "description":[
+                "Ajoutez votre rang en Théologie à votre Résistance surnaturelle contre les invocations de l’Air, de l’Eau, du Feu et de la Terre. Quand un autre personnage vient de lancer une telle invocation en vous prenant pour cible, vous pouvez dépenser 1 point de Vide pour la lancer aussitôt vous aussi, même si vous ne la connaissez pas."
+            ]
+        }
     },
     "Kitsuki":{
         "name":"École d’enquêteur Kitsuki",
@@ -159,15 +199,19 @@
         "description":[
             "Cette école est un ajout récent à l’arsenal du Clan du Dragon. Créée par Agasha Kitsuki, qui se servit de preuves matérielles pour sauver la vie du daimyô de la famille Mirumoto, elle s’appuie sur l’observation, l’expérimentation et la logique pour comprendre la vérité. Cette méthode singularise les Kitsuki par rapport au système judiciaire de Rokugan, basé sur le témoignage. Les enquêteurs Kitsuki occupent des fonctions en lien avec la loi (comme magistrats ou juges) en plus de leurs missions de courtisans et de représentants du Clan du Dragon."
         ],
-        "schoolAbility":[
-            "La méthode Kitsuki (capacité d’école)",
-            "Lorsque vous effectuez un test pour enquêter, vous pouvez considérer que le rang de la compétence utilisée, quelle qu’elle soit, est égal à votre rang d’école. Si votre rang dans la compétence en question est supérieur ou égal à votre rang d’école, ou s’il est égal à 5, vous pouvez à la place ajouter 1 |ringIcon| gardé affichant |opportunityIcon| au résultat."
-        ],
-        "masteryAbility":[
-            "Les yeux trahissent le cœur (capacité de maîtrise)",
-            "Une fois par scène, lorsque vous effectuez un test de compétence pour enquêter, vous pouvez dépenser vos |opportunityIcon| de la façon suivante :",
-            "|opportunityIcon|+ : vous pouvez réserver un dé abandonné par |opportunityIcon| dépensé ainsi. La prochaine fois que vous effectuerez un test pour interagir avec la personne ou l’objet sur lequel vous enquêtez (un test ciblant cette personne ou utilisant cet objet par exemple), vous pouvez ajouter au résultat tout ou partie de ces dés réservés en tant que dés gardés. Tous les dés réservés non utilisés sur ce test sont perdus."
-        ]
+        "initialAbility":{
+            "name":"La méthode Kitsuki",
+            "description":[
+                "Lorsque vous effectuez un test pour enquêter, vous pouvez considérer que le rang de la compétence utilisée, quelle qu’elle soit, est égal à votre rang d’école. Si votre rang dans la compétence en question est supérieur ou égal à votre rang d’école, ou s’il est égal à 5, vous pouvez à la place ajouter 1 |ringIcon| gardé affichant |opportunityIcon| au résultat."
+            ]
+        },
+        "finalAbility":{
+            "name":"Les yeux trahissent le cœur",
+            "description":[
+                "Une fois par scène, lorsque vous effectuez un test de compétence pour enquêter, vous pouvez dépenser vos |opportunityIcon| de la façon suivante :",
+                "|opportunityIcon|+ : vous pouvez réserver un dé abandonné par |opportunityIcon| dépensé ainsi. La prochaine fois que vous effectuerez un test pour interagir avec la personne ou l’objet sur lequel vous enquêtez (un test ciblant cette personne ou utilisant cet objet par exemple), vous pouvez ajouter au résultat tout ou partie de ces dés réservés en tant que dés gardés. Tous les dés réservés non utilisés sur ce test sont perdus."
+            ]
+        }
     },
     "Mirumoto":{
         "name":"École d’adepte des Cieux jumeaux Mirumoto",
@@ -175,18 +219,22 @@
         "description":[
             "Le style à deux sabres du dojo Mirumoto, ou niten (Cieux jumeaux), n’est qu’un aspect de la technique martiale de ses disciples. Ceux-ci obéissent au Tao de Shinsei, qui les guide à la guerre comme en temps de paix. lls cherchent à appliquer à chaque chose le pragmatisme de ses leçons. Comme tous les membres du Clan du Dragon, ils sont habitués aux rigueurs physiques et peuvent résister à une intense pression."
         ],
-        "schoolAbility":[
-            "La voie du Dragon (capacité d’école)",
-            "Une fois par round, au cours d’un duel ou d’une escarmouche, lorsque vous êtes la cible d’un test d’Attaque effectué avec une arme de corps à corps, vous pouvez utiliser l’une de vos armes à une prise à une main apprêtées (ou l’une de vos mains libres) pour parer ou bloquer.",
-            "Si vous parez, l’attaquant doit relancer un nombre de dés contenant |successIcon| ou |explosiveSuccessIcon| inférieur ou égal à votre rang d’école (vous choisissez le nombre).",
-            "Si vous bloquez (ce qui consiste à coincer l’arme adverse à l’aide de la vôtre), retirez votre rang d’école au ND de votre prochain test d’Attaque contre cet adversaire pendant cette scène (ND minimum 1).",
-            "Vous ne pouvez pas utiliser l’arme qui vous a servi à bloquer ou à parer pour des actions d’Attaque, et ce, jusqu’à la fin de votre prochain tour."
-        ],
-        "masteryAbility":[
-            "Le cœur du Dragon (capacité de maîtrise)",
-            "Une fois par round, lorsque que vous effectuez une action d’Attaque, vous pouvez dépenser |opportunityIcon| de la façon suivante :",
-            "|opportunityIcon| : effectuez une action Frapper avec une arme apprêtée que vous n’avez pas encore utilisée pour une action d’Attaque lors de ce tour."
-        ]
+        "initialAbility":{
+            "name":"La voie du Dragon",
+            "description":[
+                "Une fois par round, au cours d’un duel ou d’une escarmouche, lorsque vous êtes la cible d’un test d’Attaque effectué avec une arme de corps à corps, vous pouvez utiliser l’une de vos armes à une prise à une main apprêtées (ou l’une de vos mains libres) pour parer ou bloquer.",
+                "Si vous parez, l’attaquant doit relancer un nombre de dés contenant |successIcon| ou |explosiveSuccessIcon| inférieur ou égal à votre rang d’école (vous choisissez le nombre).",
+                "Si vous bloquez (ce qui consiste à coincer l’arme adverse à l’aide de la vôtre), retirez votre rang d’école au ND de votre prochain test d’Attaque contre cet adversaire pendant cette scène (ND minimum 1).",
+                "Vous ne pouvez pas utiliser l’arme qui vous a servi à bloquer ou à parer pour des actions d’Attaque, et ce, jusqu’à la fin de votre prochain tour."
+            ]
+        },
+        "finalAbility":{
+            "name":"Le cœur du Dragon",
+            "description":[
+                "Une fois par round, lorsque que vous effectuez une action d’Attaque, vous pouvez dépenser |opportunityIcon| de la façon suivante :",
+                "|opportunityIcon| : effectuez une action Frapper avec une arme apprêtée que vous n’avez pas encore utilisée pour une action d’Attaque lors de ce tour."
+            ]
+        }
     },
     "Togashi":{
         "name":"Ordre des moines tatoués de Togashi",
@@ -194,16 +242,20 @@
         "description":[
             "Les moines de l’ordre de Togashi se consacrent à découvrir et à accomplir le destin de leur âme, car ils pensent qu’il s’agit là de leur voie personnelle vers l’lllumination. Les visions prophétiques de leur chef, le champion du Clan du Dragon, et les tatouages mystiques doués d’étranges pouvoirs qui les lient à leur ordre les aident dans cette quête. Seuls les véritables ise zumi savent qu’ils tirent leur puissance du sang de Togashi, le Kami fondateur du Clan du Dragon, mélangé aux encres utilisées."
         ],
-        "schoolAbility":[
-            "Sang des Kamis (capacité d’école)",
-            "Vous possédez un tatouage mystique dont vos kihō tirent leur énergie, et vous en acquérez d’autres à mesure que vous progressez dans votre école. Quand vous réussissez un test pour activer un kihō lié à l’un d’entre eux, vous bénéficiez automatiquement d’un nombre de succès bonus égal à votre rang d’école.",
-            "Choisissez un sujet inspiré de la nature, ainsi qu’un kihō dans le même thème (et dont vous remplissez les conditions). Si vous ne connaissez pas déjà ce kihō, vous l’apprenez (sans payer son coût en XP). Vous ne pouvez pas choisir plusieurs fois le même kihō de cette façon.",
-            "Chaque fois que votre rang d’école augmente, vous gagnez un nouveau tatouage."
-        ],
-        "masteryAbility":[
-            "Le sang du Dragon (capacité de maîtrise)",
-            "Une fois par scene, lorsque vous bénéficiez de l’effet d amélioration d’un kihō lié à l’un de vos tatouages et que vous activez un autre kihō, vous pouvez dépenser 1 point de Vide. Vous pouvez alors maintenir les deux effets d’amélioration jusqu’à la fin de la scène, ou jusqu’à ce que vous activiez un autre kihō."
-        ]
+        "initialAbility":{
+            "name":"Sang des Kamis",
+            "description":[
+                "Vous possédez un tatouage mystique dont vos kihō tirent leur énergie, et vous en acquérez d’autres à mesure que vous progressez dans votre école. Quand vous réussissez un test pour activer un kihō lié à l’un d’entre eux, vous bénéficiez automatiquement d’un nombre de succès bonus égal à votre rang d’école.",
+                "Choisissez un sujet inspiré de la nature, ainsi qu’un kihō dans le même thème (et dont vous remplissez les conditions). Si vous ne connaissez pas déjà ce kihō, vous l’apprenez (sans payer son coût en XP). Vous ne pouvez pas choisir plusieurs fois le même kihō de cette façon.",
+                "Chaque fois que votre rang d’école augmente, vous gagnez un nouveau tatouage."
+            ]
+        },
+        "finalAbility":{
+            "name":"Le sang du Dragon",
+            "description":[
+                "Une fois par scene, lorsque vous bénéficiez de l’effet d amélioration d’un kihō lié à l’un de vos tatouages et que vous activez un autre kihō, vous pouvez dépenser 1 point de Vide. Vous pouvez alors maintenir les deux effets d’amélioration jusqu’à la fin de la scène, ou jusqu’à ce que vous activiez un autre kihō."
+            ]
+        }
     },
     "Akodo":{
         "name":"École de commandant Akodo",
@@ -211,14 +263,18 @@
         "description":[
             "La formation du Collège militaire Akodo se concentre sur le contrôle : celui de ses armes, celui du champ de bataille, celui du rythme du conflit et enfin de soi-même. On y étudie les conseils du Commandement d’Akodo, écrit par le Kami du Clan du Lion en personne. En plus de leur entraînement guerrier, les élèves apprennent à être des officiers de terrain. La guerre est souvent pour eux une partie de go, qui se gagne grâce à des coups précis. Les commandants Akodo frappent avec précision et sans hésitation, qu’ils manient un sabre ou une armée. Ils poursuivent l’idéal de l’art de la guerre : atteindre les objectifs en minimisant les pertes."
         ],
-        "schoolAbility":[
-            "La voie du Lion (capacité d’école)",
-            "Lorsque vous réussissez un test d’action d’Attaque ou de Soutien, vous pouvez éliminer un nombre de points de Conflit inférieur ou égal à votre rang d’école. Pour chaque point de Conflit éliminé ainsi, ajoutez un succès bonus à votre test et subissez 1 point de Fatigue."
-        ],
-        "masteryAbility":[
-            "L’ultime leçon d’Akodo (capacité de maîtrise)",
-            "Une fois par session de jeu, au cours d’une escarmouche ou d’une bataille rangée et après avoir échoué à un test, vous pouvez refaire ce test en considérant que le ND est de 1."
-        ]
+        "initialAbility":{
+            "name":"La voie du Lion",
+            "description":[
+                "Lorsque vous réussissez un test d’action d’Attaque ou de Soutien, vous pouvez éliminer un nombre de points de Conflit inférieur ou égal à votre rang d’école. Pour chaque point de Conflit éliminé ainsi, ajoutez un succès bonus à votre test et subissez 1 point de Fatigue."
+            ]
+        },
+        "finalAbility":{
+            "name":"L’ultime leçon d’Akodo",
+            "description":[
+                "Une fois par session de jeu, au cours d’une escarmouche ou d’une bataille rangée et après avoir échoué à un test, vous pouvez refaire ce test en considérant que le ND est de 1."
+            ]
+        }
     },
     "Ikoma":{
         "name":"École de barde Ikoma",
@@ -226,17 +282,21 @@
         "description":[
             "Au bout du compte, apres les épreuves, les sacrifices et la mort, l histoire d’un samouraï est la seule chose qu’il laisse vraiment derrière lui. L’école de barde Ikoma forme des historiens, des bardes et des conteurs. lls ne se contentent pas de préserver les histoires du passé, mais cherchent à inspirer les guerriers du Clan du Lion et à les pousser à égaler, et à surpasser, les exploits de leurs lointains ancêtres. Les bardes Ikoma ne sont pas moins guerriers que leurs frères. Toutefois, leur plus important devoir est de galvaniser les Lions pour qu’ils courent vers la gloire au mépris du danger, combattant envers et contre tout en sachant qu’aucun héros ne sera oublié."
         ],
-        "schoolAbility":[
-            "Le cœur du Lion (capacité d’école)",
-            "Une fois par scène, après avoir effectué un test de compétence sociale prenant pour cible un ou plusieurs personnages, vous pouvez agiter ou réconforter vos interlocuteurs.",
-            "Si vous les agitez, transférez à vos cibles un nombre de vos points de Conflit inférieur ou égal au double de votre rang d’école (répartissez ces points entre elles comme vous l’entendez).",
-            "Si vous les réconfortez, transférez depuis vos cibles et vers vous-même un nombre de points de Conflit inférieur ou égal au double de votre rang d’école (répartissez ces points comme vous l’entendez)."
-        ],
-        "masteryAbility":[
-            "La fierté du Lion (capacité de maîtrise, action)",
-            "Une fois par session de jeu, au prix d’une action de Soutien, vous pouvez tenter de convaincre toutes les personnes présentes dans la scène qu’un individu jouit d’une glorieuse réputation (si besoin en embellissant la vérité). Effectuez un test de Représentations (Feu) ND 5 visant un personnage. Le ND de ce test est de 6 s’il s’agit de vous, et de 4 s’il s’agit d’un autre membre du Clan du Lion.",
-            "En cas de réussite, le ND de tous les tests de compétences sociales du personnage ciblé diminue de 3, et celui de tous ses autres tests diminue de 1. Cet effet persiste jusqu’à la fin de la scène."
-        ]
+        "initialAbility":{
+            "name":"Le cœur du Lion",
+            "description":[
+                "Une fois par scène, après avoir effectué un test de compétence sociale prenant pour cible un ou plusieurs personnages, vous pouvez agiter ou réconforter vos interlocuteurs.",
+                "Si vous les agitez, transférez à vos cibles un nombre de vos points de Conflit inférieur ou égal au double de votre rang d’école (répartissez ces points entre elles comme vous l’entendez).",
+                "Si vous les réconfortez, transférez depuis vos cibles et vers vous-même un nombre de points de Conflit inférieur ou égal au double de votre rang d’école (répartissez ces points comme vous l’entendez)."
+            ]
+        },
+        "finalAbility":{
+            "name":"La fierté du Lion",
+            "description":[
+                "Une fois par session de jeu, au prix d’une action de Soutien, vous pouvez tenter de convaincre toutes les personnes présentes dans la scène qu’un individu jouit d’une glorieuse réputation (si besoin en embellissant la vérité). Effectuez un test de Représentations (Feu) ND 5 visant un personnage. Le ND de ce test est de 6 s’il s’agit de vous, et de 4 s’il s’agit d’un autre membre du Clan du Lion.",
+                "En cas de réussite, le ND de tous les tests de compétences sociales du personnage ciblé diminue de 3, et celui de tous ses autres tests diminue de 1. Cet effet persiste jusqu’à la fin de la scène."
+            ]
+        }
     },
     "Kitsu":{
         "name":"École de médium Kitsu",
@@ -244,14 +304,18 @@
         "description":[
             "Cette école de shugenja est la plus petite de tous les clans majeurs. Elle se concentre depuis toujours sur les liens ésotériques avec les ancêtres, ce qui nécessite un entraînement unique et un lien de sang, aussi ténu soit-il, avec la lignée originelle des Kitsu. Grâce à la connexion mystique qu’ils entretiennent avec leurs aïeux, les médiums Kitsu peuvent pratiquer une magie à laquelle aucun autre shugenja n’a accès. Ils incarnent le lien vivant entre le passé et le présent du Clan du Lion. Ils sont la voix des ancêtres. Traditionalistes, les médiums Kitsu utilisent les noms ancestraux des prières pour honorer ceux qui les ont maîtrisées les premiers."
         ],
-        "schoolAbility":[
-            "Faveur des ancêtres (capacité d’école)",
-            "Une fois par scène, vous pouvez soutirer une invocation dont le rang d’école prérequis est inférieur ou égal à votre rang d’école. Vous n’avez pas besoin de faire les sacrifices habituels nécessaires, ni d’augmenter le ND."
-        ],
-        "masteryAbility":[
-            "La force d’un millier d’ancêtres (capacité de maîtrise, action)",
-            "Une fois par session de jeu, au prix d’une action de Soutien, vous pouvez conjurer l’esprit d’un ancêtre afin qu’il vous possède jusqu’à la fin de la scène. Vous êtes alors considéré comme une créature Extérieure, et vous utilisez le profil de l’ancêtre en question (par exemple celui d’un PNJ humain ordinaire ou, avec l’accord du MJ, un PJ créé à l’avance avec 180 XP au maximum). Votre personnage ne se souviendra pas de ce qui s’est passé pendant la possession."
-        ]
+        "initialAbility":{
+            "name":"Faveur des ancêtres",
+            "description":[
+                "Une fois par scène, vous pouvez soutirer une invocation dont le rang d’école prérequis est inférieur ou égal à votre rang d’école. Vous n’avez pas besoin de faire les sacrifices habituels nécessaires, ni d’augmenter le ND."
+            ]
+        },
+        "finalAbility":{
+            "name":"La force d’un millier d’ancêtres",
+            "description":[
+                "Une fois par session de jeu, au prix d’une action de Soutien, vous pouvez conjurer l’esprit d’un ancêtre afin qu’il vous possède jusqu’à la fin de la scène. Vous êtes alors considéré comme une créature Extérieure, et vous utilisez le profil de l’ancêtre en question (par exemple celui d’un PNJ humain ordinaire ou, avec l’accord du MJ, un PJ créé à l’avance avec 180 XP au maximum). Votre personnage ne se souviendra pas de ce qui s’est passé pendant la possession."
+            ]
+        }
     },
     "Matsu":{
         "name":"École de berserker Matsu",
@@ -259,14 +323,18 @@
         "description":[
             "Les soldats Matsu forment la première ligne et la force principale des armées du Clan du Lion. Leur courage et leur ardeur au combat sont indiscutables. Dans leur dojo, on enseigne que l’attaque prime sur tout le reste, et qu’il est nécessaire de prendre l’initiative quelle que soit l’occasion. L’agressivité est la marque de fabrique du style Matsu, l’action directe son mot d’ordre. Cette attitude belliqueuse les place souvent en porte-à-faux vis-à-vis des stratégies prudentes des commandants Akodo, mais les berserker Matsu servent le Clan du Lion et l’Empire avec une loyauté indéfectible."
         ],
-        "schoolAbility":[
-            "La fureur de Matsu (capacité d’école)",
-            "Après avoir subi un coup critique ou tombé le masque, vous pouvez subir l’état Enragé afin d’éliminer un nombre de points de Fatigue égal à votre rang d’école."
-        ],
-        "masteryAbility":[
-            "Féroces mâchoires du lion (capacité de maîtrise)",
-            "Une fois par round, quand vous effectuez une action d’Attaque alors que vous êtes Enragé, vous pouvez dépenser 1 point de Vide pour changer le résultat de chaque dé gardé contenant |successIcon| en un résultat contenant |explosiveSuccessIcon|."
-        ]
+        "initialAbility":{
+            "name":"La fureur de Matsu",
+            "description":[
+                "Après avoir subi un coup critique ou tombé le masque, vous pouvez subir l’état Enragé afin d’éliminer un nombre de points de Fatigue égal à votre rang d’école."
+            ]
+        },
+        "finalAbility":{
+            "name":"Féroces mâchoires du lion",
+            "description":[
+                "Une fois par round, quand vous effectuez une action d’Attaque alors que vous êtes Enragé, vous pouvez dépenser 1 point de Vide pour changer le résultat de chaque dé gardé contenant |successIcon| en un résultat contenant |explosiveSuccessIcon|."
+            ]
+        }
     },
     "Asako":{
         "name":"École de maître du savoir Asako",
@@ -274,14 +342,18 @@
         "description":[
             "Les maîtres du savoir Asako étudient de nombreuses disciplines, et développent leurs spécialités sur ce socle stable et vaste. ll est rare qu’un maître du savoir ne sache rien d’un sujet, aussi obscur soit-il. lls officient en tant que courtisans du Clan du Phénix et, à ce titre, dirigent les débats en s’appuyant sur leurs connaissances du passé. Si l’on désire trouver un étudiant de l’école Asako, il faut commencer par la bibliothèque, puis chercher à la cour, où il est en général en pleine discussion. Peu de samouraïs se risquent à défier un maître du savoir Asako sur une question d’érudition, mais de tels débats font souvent partie des temps forts de la cour."
         ],
-        "schoolAbility":[
-            "Sagesse éternelle (capacité d’école)",
-            "Lorsque vous effectuez un test de compétence savante, vous pouvez considérer que le rang de cette compétence est égal à votre rang d’école. Si votre rang dans cette compétence est supérieur ou égal à votre rang d’école, ou s’il est égal à 5, vous pouvez à la place ajouter 1 |ringIcon| gardé affichant |opportunityIcon| au résultat."
-        ],
-        "masteryAbility":[
-            "Génie exaspérant (capacité de maîtrise)",
-            "Après avoir réussi un test pour apprendre ou vous souvenir d’une information, vous pouvez dépenser 1 point de Vide, et choisir autant de personnages avec lesquels vous pouvez communiquer que vous le souhaitez. Vous devez décrire la façon dont l’information acquise vient en aide à chacun d’entre eux. lls diminueront alors le ND de leur prochain test de 1 (minimum 1), et subissent 1 point de Conflit."
-        ]
+        "initialAbility":{
+            "name":"Sagesse éternelle",
+            "description":[
+                "Lorsque vous effectuez un test de compétence savante, vous pouvez considérer que le rang de cette compétence est égal à votre rang d’école. Si votre rang dans cette compétence est supérieur ou égal à votre rang d’école, ou s’il est égal à 5, vous pouvez à la place ajouter 1 |ringIcon| gardé affichant |opportunityIcon| au résultat."
+            ]
+        },
+        "finalAbility":{
+            "name":"Génie exaspérant",
+            "description":[
+                "Après avoir réussi un test pour apprendre ou vous souvenir d’une information, vous pouvez dépenser 1 point de Vide, et choisir autant de personnages avec lesquels vous pouvez communiquer que vous le souhaitez. Vous devez décrire la façon dont l’information acquise vient en aide à chacun d’entre eux. lls diminueront alors le ND de leur prochain test de 1 (minimum 1), et subissent 1 point de Conflit."
+            ]
+        }
     },
     "Isawa":{
         "name":"École d’élémentaliste Isawa",
@@ -289,14 +361,18 @@
         "description":[
             "Aucune école ne maîtrise mieux la voie des esprits que celle des élémentalistes lsawa. Les prêtres de cette famille n’ont pas attendu la Chute des Kamis pour chercher à connaître et à comprendre les Fortunes, les kamis et les éléments eux-mêmes. Au fil des siècles, ils ont perfectionné les rituels et les prières destinés à invoquer de formidables bénédictions pour le Clan du Phénix, et à infliger de terribles malédictions à ses ennemis. Malgré tout, les élémentalistes lsawa savent que les esprits demandent des services en échange de leurs faveurs. Ils n’y font donc appel qu’en dernier recours. Sans raison valable, ils risqueraient de bouleverser l’équilibre délicat du monde naturel... ou de s’attirer le courroux des esprits."
         ],
-        "schoolAbility":[
-            "Union avec les éléments (capacité d’école)",
-            "Une fois par scène, avant de lancer les dés pour effectuer un test visant à activer une technique d’invocation, vous pouvez retirer votre rang d’école au ND de ce test."
-        ],
-        "masteryAbility":[
-            "Maître des éléments (capacité de maîtrise)",
-            "Une fois par round, après avoir lancé une invocation, vous pouvez dépenser 1 point de Vide afin de modifier votre posture et en lancer une autre, qui ne doit avoir aucun type d’action (Attaque, Soutien, etc.) en commun avec la première."
-        ]
+        "initialAbility":{
+            "name":"Union avec les éléments",
+            "description":[
+                "Une fois par scène, avant de lancer les dés pour effectuer un test visant à activer une technique d’invocation, vous pouvez retirer votre rang d’école au ND de ce test."
+            ]
+        },
+        "finalAbility":{
+            "name":"Maître des éléments",
+            "description":[
+                "Une fois par round, après avoir lancé une invocation, vous pouvez dépenser 1 point de Vide afin de modifier votre posture et en lancer une autre, qui ne doit avoir aucun type d’action (Attaque, Soutien, etc.) en commun avec la première."
+            ]
+        }
     },
     "Shiba":{
         "name":"École de protecteur Shiba",
@@ -304,14 +380,18 @@
         "description":[
             "À l’image du Kami qui jura de protéger Isawa, l’école de protecteur Shiba met l’accent sur la défense des membres de cette famille, et sur la coopération avec eux. Ses bushi assistent et protègent les prêtres, les gardiens de sanctuaire et les shugenja. Les protecteurs Shiba sont formés dans de nombreux domaines, tout autant érudits que martiaux, et ils considèrent le conflit comme un problème que l’on doit résoudre sans bain de sang. Ceux qui les sous-estiment en raison de leur réticence à tuer ne le font qu’une fois. Les protecteurs Shiba sont aussi attachés à la perfection dans les arts de la guerre que n’importe quel autre samouraï. L’étude passionnée de la théologie et les longues heures de méditation leur ont permis d’atteindre l’harmonie avec les kamis élémentaires qu’invoquent les shugenja."
         ],
-        "schoolAbility":[
-            "La voie du Phénix (capacité d’école)",
-            "Une fois par scène, lorsqu’un personnage à portée 0–3 effectue un test et qu’il obtient 1 ou plusieurs |strifeIcon|,vous pouvez annuler tous ces |strifeIcon|. Ce personnage élimine ensuite un nombre de points de Conflit et de points de Fatigue égal à votre rang d’école."
-        ],
-        "masteryAbility":[
-            "Résistance de l’Honneur (capacité de maîtrise)",
-            "À la fin de votre tour, vous pouvez dépenser 1 point de Vide et vous préparer à repousser l’avancée ennemie. Lorsqu’un adversaire entre à portée d’une de vos armes apprêtées, vous pouvez immédiatement l’utiliser et prendre ce dernier pour cible d’une action Frapper. En cas de réussite, il subit l’état Immobilisé en plus de tout autre effet. Cet effet persiste jusqu’au début de votre tour suivant."
-        ]
+        "initialAbility":{
+            "name":"La voie du Phénix",
+            "description":[
+                "Une fois par scène, lorsqu’un personnage à portée 0–3 effectue un test et qu’il obtient 1 ou plusieurs |strifeIcon|,vous pouvez annuler tous ces |strifeIcon|. Ce personnage élimine ensuite un nombre de points de Conflit et de points de Fatigue égal à votre rang d’école."
+            ]
+        },
+        "finalAbility":{
+            "name":"Résistance de l’Honneur",
+            "description":[
+                "À la fin de votre tour, vous pouvez dépenser 1 point de Vide et vous préparer à repousser l’avancée ennemie. Lorsqu’un adversaire entre à portée d’une de vos armes apprêtées, vous pouvez immédiatement l’utiliser et prendre ce dernier pour cible d’une action Frapper. En cas de réussite, il subit l’état Immobilisé en plus de tout autre effet. Cet effet persiste jusqu’au début de votre tour suivant."
+            ]
+        }
     },
     "Kaito":{
         "name":"École de gardien de sanctuaire Kaito",
@@ -319,17 +399,21 @@
         "description":[
             "Les disciples de cette école travaillent de concert avec les prêtres pour protéger les temples éparpillés sur les terres du Clan du Phénix, ou veillent seuls sur de plus petits sanctuaires. lls apprennent les arts mystiques pour apaiser les kamis (et leur servent parfois même de réceptacles), mais aussi l’artisanat pour entretenir les lieux dont ils ont la charge. Les gardiens de sanctuaire Kaito se servent de magie protectrice (comme celle des ofuda, des talismans en papier) et de techniques mystiques de tir à l’arc pour repousser les menaces surnaturelles et ordinaires."
         ],
-        "schoolAbility":[
-            "Flèches sacrées (capacité d’école)",
-            "Au prix d’une action, vous pouvez améliorer l’une de vos flèches en adressant une prière aux kamis. Effectuez le test pour activer une invocation que vous connaissez, en retirant votre rang d’école au ND, et notez le résultat. La flèche gagne la propriété d’équipement Sacrée et reste imprégnée du pouvoir de l’invocation jusqu’à la fin de la scène.",
-            "Après avoir effectué une action d’Attaque à l’aide de cette flèche (ou après l’avoir tirée sur un lieu, si le MJ l’autorise), vous pouvez résoudre les effets de l’invocation à l’endroit où la flèche a atterri. Vous pouvez dépenser |opportunityIcon|+ pour retarder la résolution des effets de l’invocation de 1 round par |opportunityIcon|, ou |opportunityIcon|opportunityIcon| lors d’un test raté pour affecter une cible que vous avez manquée lors de l’attaque."
-        ],
-        "masteryAbility":[
-            "Arrière, démon ! (capacité de maîtrise, action)",
-            "Au prix d’une action, vous pouvez effectuer un test de Méditation (Vide) ND 3 en faisant vibrer la corde de l’arc que vous tenez. Vous prenez pour cible chaque créature Extérieure située dans un nombre de niveaux de portée inférieur ou égal à votre rang en Méditation.",
-            "En cas de réussite, chaque cible subit un nombre de points de Conflit égal à votre rang dans cette compétence plus vos succès bonus.",
-            "|opportunityIcon| : chaque cible doit résister en effectuant un test de Méditation (Vide) ND 3. Si elle le rate, ses Résistances physique et surnaturelle tombent à 0. Cet effet dure jusqu’à la fin de la scène."
-        ]
+        "initialAbility":{
+            "name":"Flèches sacrées",
+            "description":[
+                "Au prix d’une action, vous pouvez améliorer l’une de vos flèches en adressant une prière aux kamis. Effectuez le test pour activer une invocation que vous connaissez, en retirant votre rang d’école au ND, et notez le résultat. La flèche gagne la propriété d’équipement Sacrée et reste imprégnée du pouvoir de l’invocation jusqu’à la fin de la scène.",
+                "Après avoir effectué une action d’Attaque à l’aide de cette flèche (ou après l’avoir tirée sur un lieu, si le MJ l’autorise), vous pouvez résoudre les effets de l’invocation à l’endroit où la flèche a atterri. Vous pouvez dépenser |opportunityIcon|+ pour retarder la résolution des effets de l’invocation de 1 round par |opportunityIcon|, ou |opportunityIcon|opportunityIcon| lors d’un test raté pour affecter une cible que vous avez manquée lors de l’attaque."
+            ]
+        },
+        "finalAbility":{
+            "name":"Arrière, démon !",
+            "description":[
+                "Au prix d’une action, vous pouvez effectuer un test de Méditation (Vide) ND 3 en faisant vibrer la corde de l’arc que vous tenez. Vous prenez pour cible chaque créature Extérieure située dans un nombre de niveaux de portée inférieur ou égal à votre rang en Méditation.",
+                "En cas de réussite, chaque cible subit un nombre de points de Conflit égal à votre rang dans cette compétence plus vos succès bonus.",
+                "|opportunityIcon| : chaque cible doit résister en effectuant un test de Méditation (Vide) ND 3. Si elle le rate, ses Résistances physique et surnaturelle tombent à 0. Cet effet dure jusqu’à la fin de la scène."
+            ]
+        }
     },
     "Bayushi":{
         "name":"École de manipulateur Bayushi",
@@ -337,14 +421,18 @@
         "description":[
             "L’utilisation experte de la tromperie, de la tentation et de l’espionnage fait des courtisans formés par l’école Bayushi les maîtres incontestés dans l’art de trouver et d’exploiter les faiblesses d’autrui. Aucune méthode n’est déshonorante tant qu’elle est efficace et indétectable. Les manipulateurs Bayushi sont l’ombre des diplomates Doji, et tous les craignent à juste titre, mais aucune cour ne saurait se passer d’au moins un scélérat du Clan du Scorpion. Les disciples de cette école adoptent avec enthousiasme leur rôle de méchants sur la scène qu’est Rokugan. Ils s’assurent ainsi qu’aucun véritable ennemi ne se dresse contre l’Empereur."
         ],
-        "schoolAbility":[
-            "La faiblesse est ma force (capacité d’école)",
-            "Lorsque vous exploitez le désavantage d’une cible dans le cadre d’une action de Manipulation, vous n’avez pas besoin de dépenser de points de Vide, et vous pouvez relancer un nombre de dés supplémentaires égal à votre rang d’école."
-        ],
-        "masteryAbility":[
-            "Petites vérités (capacité de maîtrise)",
-            "Lorsque vous effectuez un test prenant pour cible un autre personnage, vous pouvez remplacer l’un de vos avantages ou de vos désavantages s’appliquant à ce test par un autre. Il doit avoir en commun un type avec celui qu’il remplace. À moins d’avoir une preuve évidente du contraire, votre cible croit que vous possédez l’avantage ou le désavantage choisi, et non celui que vous possédez en réalité. Si elle tente d’en tirer parti ou de l’exploiter, elle rate automatiquement son test avec un degré d’échec de 3. Elle subit 3 points de Conflit ainsi que l’état Désorienté."
-        ]
+        "initialAbility":{
+            "name":"La faiblesse est ma force",
+            "description":[
+                "Lorsque vous exploitez le désavantage d’une cible dans le cadre d’une action de Manipulation, vous n’avez pas besoin de dépenser de points de Vide, et vous pouvez relancer un nombre de dés supplémentaires égal à votre rang d’école."
+            ]
+        },
+        "finalAbility":{
+            "name":"Petites vérités",
+            "description":[
+                "Lorsque vous effectuez un test prenant pour cible un autre personnage, vous pouvez remplacer l’un de vos avantages ou de vos désavantages s’appliquant à ce test par un autre. Il doit avoir en commun un type avec celui qu’il remplace. À moins d’avoir une preuve évidente du contraire, votre cible croit que vous possédez l’avantage ou le désavantage choisi, et non celui que vous possédez en réalité. Si elle tente d’en tirer parti ou de l’exploiter, elle rate automatiquement son test avec un degré d’échec de 3. Elle subit 3 points de Conflit ainsi que l’état Désorienté."
+            ]
+        }
     },
     "Shosuro":{
         "name":"École d’infiltré Shosuro",
@@ -352,15 +440,19 @@
         "description":[
             "Les infiltrés Shosuro ont perfectionné l’art de la tromperie. Les extraordinaires talents en acrobatie, en déguisement et en discrétion de ces agents du Clan du Scorpion leur permettent d’entrer presque n’importe où pour surprendre et perturber l’ennemi. lls ne restent donc pas pour se battre, mais sèment plutôt le chaos avant de disparaître afin de masquer la nature de leur mission. De nombreux yôjimbô ont fait échouer une tentative d’assassinat qui n’était en fait qu’une diversion, les infiltrés Shosuro ayant pendant ce temps éliminé leur véritable cible. Ces agents peuvent s’évanouir dans les ombres, ou se fondre dans la masse des paysans, invisibles aux yeux des samouraïs."
         ],
-        "schoolAbility":[
-            "Le sentier des ombres (capacité d’école)",
-            "Lorsque vous effectuez une action d’Attaque contre une cible Compromise, Hors de combat, Inconsciente ou qui ignore votre présence, ajoutez votre rang d’école aux dégâts et à la Dangerosité de votre arme."
-        ],
-        "masteryAbility":[
-            "L’ultime silence (capacité de maîtrise, action)",
-            "Au prix d’une action d’Attaque et de Déplacement, vous pouvez effectuer un test d’Arts martiaux (mains nues) (Air) ND 4 prenant pour cible autant de Sous-fifres à portée 0–4 que vous le souhaitez.",
-            "Si vous réussissez cette action au cours d’une scène narrative, vous tuez toutes vos cibles en silence et en quelques minutes. Si vous réussissez cette action au cours d’une scène de confrontation, vous pouvez tuer en silence l’une de ces cibles située à portée 0–2 à la fin de chacun de vos tours (en plus de vos autres actions)."
-        ]
+        "initialAbility":{
+            "name":"Le sentier des ombres",
+            "description":[
+                "Lorsque vous effectuez une action d’Attaque contre une cible Compromise, Hors de combat, Inconsciente ou qui ignore votre présence, ajoutez votre rang d’école aux dégâts et à la Dangerosité de votre arme."
+            ]
+        },
+        "finalAbility":{
+            "name":"L’ultime silence",
+            "description":[
+                "Au prix d’une action d’Attaque et de Déplacement, vous pouvez effectuer un test d’Arts martiaux (mains nues) (Air) ND 4 prenant pour cible autant de Sous-fifres à portée 0–4 que vous le souhaitez.",
+                "Si vous réussissez cette action au cours d’une scène narrative, vous tuez toutes vos cibles en silence et en quelques minutes. Si vous réussissez cette action au cours d’une scène de confrontation, vous pouvez tuer en silence l’une de ces cibles située à portée 0–2 à la fin de chacun de vos tours (en plus de vos autres actions)."
+            ]
+        }
     },
     "Soshi":{
         "name":"École d’illusionniste Soshi",
@@ -368,15 +460,19 @@
         "description":[
             "L’école d’illusionniste Soshi est celle des murmures et des ombres. « Subtilité » est la devise de ses disciples au cours de leurs missions. Même leurs obligations et leurs rituels religieux sont discrets, mais ils n’en sont pas moins exécutés avec ferveur. Quand le Clan du Scorpion a besoin d’un appui mystique à la cour, les subtiles invocations des illusionnistes Soshi et leur parfaite compréhension des kamis leur permettent de réciter leurs prières sans être vus ni entendus. Ces shugenja figurent parmi les plus pragmatiques de l’Empire. lls préfèrent employer leurs invocations dans des buts concrets et pertinents que d’y recourir pour des coups d’éclat ou des effets fastueux."
         ],
-        "schoolAbility":[
-            "Le murmure des kamis (capacité d’école)",
-            "Quand vous exécutez une technique d’invocation ou que vous canalisez une invocation, les personnages dont la Vigilance est inférieure ou égale à votre rang d’école plus 1 ne détectent aucun signe physique que vous êtes en train d’invoquer les esprits. Ils peuvent malgré tout observer les effets de l’invocation.",
-            "Votre rang d’école s’ajoute au ND des tests effectués pour détecter ou étudier vos activités surnaturelles."
-        ],
-        "masteryAbility":[
-            "Un monde d’ombres (capacité de maîtrise)",
-            "Vous pouvez dépenser 1 point de Vide pour tenter d’établir qu’un élément de la scène était une illusion depuis le début. ll peut s’agir d’un objet, de l’image d’une personne ou d’un autre phénomène illusoire que vous pourriez conjurer avec une invocation. Vous devez effectuer le test d’invocation pour conjurer cette illusion, le MJ ajustant le ND en fonction de sa vraisemblance. En cas de réussite, vous révélez que l’élément que vous avez choisi est en fait une illusion créée par vos soins, et qu’elle est là depuis déjà quelques instants. En cas d’échec, il est clair que votre personnage n’y a pas pensé, et que l’objet est bien réel. Comme d’habitude, le MJ est seul juge des utilisations acceptables de cette capacité."
-        ]
+        "initialAbility":{
+            "name":"Le murmure des kamis",
+            "description":[
+                "Quand vous exécutez une technique d’invocation ou que vous canalisez une invocation, les personnages dont la Vigilance est inférieure ou égale à votre rang d’école plus 1 ne détectent aucun signe physique que vous êtes en train d’invoquer les esprits. Ils peuvent malgré tout observer les effets de l’invocation.",
+                "Votre rang d’école s’ajoute au ND des tests effectués pour détecter ou étudier vos activités surnaturelles."
+            ]
+        },
+        "finalAbility":{
+            "name":"Un monde d’ombres",
+            "description":[
+                "Vous pouvez dépenser 1 point de Vide pour tenter d’établir qu’un élément de la scène était une illusion depuis le début. ll peut s’agir d’un objet, de l’image d’une personne ou d’un autre phénomène illusoire que vous pourriez conjurer avec une invocation. Vous devez effectuer le test d’invocation pour conjurer cette illusion, le MJ ajustant le ND en fonction de sa vraisemblance. En cas de réussite, vous révélez que l’élément que vous avez choisi est en fait une illusion créée par vos soins, et qu’elle est là depuis déjà quelques instants. En cas d’échec, il est clair que votre personnage n’y a pas pensé, et que l’objet est bien réel. Comme d’habitude, le MJ est seul juge des utilisations acceptables de cette capacité."
+            ]
+        }
     },
     "Yogo":{
         "name":"École de maître des glyphes Yogo",
@@ -384,14 +480,18 @@
         "description":[
             "Le dojo des maîtres des glyphes Yogo, fondé par Asako Yogo après qu’il eut rejoint le Clan du Scorpion, est la principale école de gyosetsudô, l’art de créer des protections surnaturelles au moyen d’une calligraphie mystique. Chargés de veiller sur les douze Parchemins Noirs, les Yogo ont développé les techniques de leur fondateur afin d’empêcher les forces des ténèbres de localiser ces rouleaux et de contenir leur pouvoir corrupteur. En inscrivant des symboles de pouvoir sur des morceaux de papier imprégnés de leur ki, les maîtres de cette école sont capables d’ériger des barrières invisibles, de lier des esprits et de faire échouer des incantations. Pour les Yogo, un zeste de préparation suffit largement."
         ],
-        "schoolAbility":[
-            "Calligraphie mystique (capacité d’école)",
-            "Vous pouvez posséder un nombre inférieur ou égal à votre rang d’école de glyphes supplémentaires contenant des invocations préparées. Pour réussir à décoder ou à utiliser l’un de vos glyphes, un autre personnage doit réussir un test de Théologie (Vide) dont le ND est égal à votre rang d’école."
-        ],
-        "masteryAbility":[
-            "Prison d’encre (capacité de maîtrise)",
-            "Une fois par scène, lorsque vous êtes la cible d’une technique d’invocation ou de mahō, vous pouvez y résister avec un test de Composition ND 4. En cas de réussite, vous absorbez la technique, annulez tous ses effets et créez un glyphe qui la contient."
-        ]
+        "initialAbility":{
+            "name":"Calligraphie mystique",
+            "description":[
+                "Vous pouvez posséder un nombre inférieur ou égal à votre rang d’école de glyphes supplémentaires contenant des invocations préparées. Pour réussir à décoder ou à utiliser l’un de vos glyphes, un autre personnage doit réussir un test de Théologie (Vide) dont le ND est égal à votre rang d’école."
+            ]
+        },
+        "finalAbility":{
+            "name":"Prison d’encre",
+            "description":[
+                "Une fois par scène, lorsque vous êtes la cible d’une technique d’invocation ou de mahō, vous pouvez y résister avec un test de Composition ND 4. En cas de réussite, vous absorbez la technique, annulez tous ses effets et créez un glyphe qui la contient."
+            ]
+        }
     },
     "Ide":{
         "name":"École de négociant Ide",
@@ -399,16 +499,20 @@
         "description":[
             "Le Clan de la Licorne montre un visage toujours affable : celui des négociants de la famille Ide. Ceux-ci s’efforcent toujours de résoudre les problèmes par la négociation, car ils savent que des accords commerciaux conclus entre amis et égaux tissent des liens aussi solides que l’acier. Si certains clans considèrent les samouraïs de la famille Ide comme des faibles, personne ne peut affirmer preuves à l’appui avoir exploité cette supposée faiblesse. Les négociants Ide ignorent les insultes et accueillent poliment les compliments. Leur vaste connaissance des cultures rokugani et étrangères leur permet de conclure des marchés toujours parfaitement adaptés à la situation."
         ],
-        "schoolAbility":[
-            "Vendeur d’étranges articles (capacité d’école)",
-            "Ignorez la propriété d’équipement Interdit quand vous achetez ou gérez des objets.",
-            "Lorsque vous acquérez, vendez ou offrez un objet, vous pouvez ajouter ou soustraire votre rang d’école à sa rareté."
-        ],
-        "masteryAbility":[
-            "Un ami dans chaque ville (capacité de maîtrise)",
-            "Au prix d’une activité de temps mort et dans toutes les communautés humaines, vous pouvez effectuer un test de Commerce (Eau) ND 4 pour retrouver un marchand avec qui vous (ou vos proches) avez déjà fait affaire.",
-            "En cas de réussite, vous le retrouvez et gagnez l’avantage Allié. Il sera disposé à vous aider de différentes façons."
-        ]
+        "initialAbility":{
+            "name":"Vendeur d’étranges articles",
+            "description":[
+                "Ignorez la propriété d’équipement Interdit quand vous achetez ou gérez des objets.",
+                "Lorsque vous acquérez, vendez ou offrez un objet, vous pouvez ajouter ou soustraire votre rang d’école à sa rareté."
+            ]
+        },
+        "finalAbility":{
+            "name":"Un ami dans chaque ville",
+            "description":[
+                "Au prix d’une activité de temps mort et dans toutes les communautés humaines, vous pouvez effectuer un test de Commerce (Eau) ND 4 pour retrouver un marchand avec qui vous (ou vos proches) avez déjà fait affaire.",
+                "En cas de réussite, vous le retrouvez et gagnez l’avantage Allié. Il sera disposé à vous aider de différentes façons."
+            ]
+        }
     },
     "Iuchi":{
         "name":"École de maître du meishōdō Iuchi",
@@ -416,15 +520,19 @@
         "description":[
             "Le Clan de la Licorne a passé de longues années à explorer le monde au-delà des frontières de l’Empire, et ce périple a fortement influencé sa compréhension de la magie et des esprits. Son art, le meishōdō, unique parmi les shugenja de Rokugan, se consacre tout entier à la création de talismans magiques. Les maîtres du meishōdō se servent des mots de pouvoir que leur ont enseignés les sorciers étrangers, pour lier des esprits à des talismans qu’ils offriront à leurs alliés. Cette tradition fait des Iuchi l’une des familles de shugenja les plus ouvertes d’esprit."
         ],
-        "schoolAbility":[
-            "La voie des noms (capacité d’école)",
-            "Au prix d’une activité de temps mort, vous pouvez utiliser n’importe quel anneau et faire un test de Stylisme ND 2 afin de lier un esprit à un réceptacle inanimé, pour créer un talisman meishōdō destiné à produire une invocation de l’élément choisi et que vous connaissez. Tant que le talisman est en votre possession, réduisez de 1 le ND des tests pour activer cette invocation. Vous pouvez donner le talisman à un autre shugenja, qui peut alors utiliser cette invocation même s’il ne l’a pas apprise, en bénéficiant de la même réduction au ND. Le talisman cessera toutefois de fonctionner après un nombre d’utilisations égal à votre rang d’école.",
-            "Vous pouvez alimenter un nombre de talismans de meishōdō égal à votre rang d’école. Vous ne pouvez avoir qu’un seul talisman de meishōdō par invocation."
-        ],
-        "masteryAbility":[
-            "Esprits déchaînés (capacité de maîtrise)",
-            "À la fin de votre tour, vous pouvez dépenser 1 ou plusieurs points de Vide pour déchaîner la puissance de vos talismans de meishōdō. Vous activez autant de talismans que vous avez dépensé de points de Vide. L’utilisation de cette capacité les détruit et libère les esprits enfermés à l’intérieur. Vous pouvez effectuer immédiatement les invocations pour lesquelles ces talismans ont été créés, en réduisant leur ND de 3."
-        ]
+        "initialAbility":{
+            "name":"La voie des noms",
+            "description":[
+                "Au prix d’une activité de temps mort, vous pouvez utiliser n’importe quel anneau et faire un test de Stylisme ND 2 afin de lier un esprit à un réceptacle inanimé, pour créer un talisman meishōdō destiné à produire une invocation de l’élément choisi et que vous connaissez. Tant que le talisman est en votre possession, réduisez de 1 le ND des tests pour activer cette invocation. Vous pouvez donner le talisman à un autre shugenja, qui peut alors utiliser cette invocation même s’il ne l’a pas apprise, en bénéficiant de la même réduction au ND. Le talisman cessera toutefois de fonctionner après un nombre d’utilisations égal à votre rang d’école.",
+                "Vous pouvez alimenter un nombre de talismans de meishōdō égal à votre rang d’école. Vous ne pouvez avoir qu’un seul talisman de meishōdō par invocation."
+            ]
+        },
+        "finalAbility":{
+            "name":"Esprits déchaînés",
+            "description":[
+                "À la fin de votre tour, vous pouvez dépenser 1 ou plusieurs points de Vide pour déchaîner la puissance de vos talismans de meishōdō. Vous activez autant de talismans que vous avez dépensé de points de Vide. L’utilisation de cette capacité les détruit et libère les esprits enfermés à l’intérieur. Vous pouvez effectuer immédiatement les invocations pour lesquelles ces talismans ont été créés, en réduisant leur ND de 3."
+            ]
+        }
     },
     "Moto":{
         "name":"École de conquérant Moto",
@@ -432,15 +540,19 @@
         "description":[
             "Alors que la plupart des dojos du Clan de la Licorne se concentrent sur des techniques rapides et complexes, le style de combat des conquérants Moto privilégie la force brute. Les Moto combattent bruyamment, avec des gestes amples et des armes inconnues de la plupart des Rokugani. Rares sont les samouraïs qui savent réagir face au style de cette école, et encore plus rares ceux qui peuvent s’en protéger. Les autres clans considèrent les conquérants Moto comme des barbares, et la horde utilise ce préjugé à son avantage. Si l’Empire ne fait aucun effort pour comprendre leurs coutumes, comment pourrait-il leur résister ?"
         ],
-        "schoolAbility":[
-            "Le tourbillon du simoun (capacité d’école)",
-            "Lorsque vous effectuez une action d’Attaque au cours d’une escarmouche ou d’une bataille rangée, vous pouvez dépenser vos |opportunityIcon| de la façon suivante:",
-            "|opportunityIcon| : choisissez un ennemi autre que votre cible et que vous pouvez percevoir. Jusqu’au début de votre prochain tour, ajoutez votre rang d’école au ND des tests d’Attaque qu’il effectue contre vous."
-        ],
-        "masteryAbility":[
-            "Sirocco cinglant (capacité de maîtrise)",
-            "Une fois par round, après avoir infligé l’état Hors de combat à une cible (ou vaincu un PNJ Sous-fifre), vous pouvez effectuer l’action Frapper contre une cible différente."
-        ]
+        "initialAbility":{
+            "name":"Le tourbillon du simoun",
+            "description":[
+                "Lorsque vous effectuez une action d’Attaque au cours d’une escarmouche ou d’une bataille rangée, vous pouvez dépenser vos |opportunityIcon| de la façon suivante:",
+                "|opportunityIcon| : choisissez un ennemi autre que votre cible et que vous pouvez percevoir. Jusqu’au début de votre prochain tour, ajoutez votre rang d’école au ND des tests d’Attaque qu’il effectue contre vous."
+            ]
+        },
+        "finalAbility":{
+            "name":"Sirocco cinglant",
+            "description":[
+                "Une fois par round, après avoir infligé l’état Hors de combat à une cible (ou vaincu un PNJ Sous-fifre), vous pouvez effectuer l’action Frapper contre une cible différente."
+            ]
+        }
     },
     "Shinjo":{
         "name":"École d’éclaireur monté Shinjo",
@@ -448,14 +560,18 @@
         "description":[
             "Les éclaireurs montés Shinjo forment le cœur de l’armée du Clan de la Licorne et privilégient la vitesse et la polyvalence. Tous apprennent à effectuer des reconnaissances de terrain et à tirer le meilleur parti de leurs montures, qui leur confère une mobilité unique. Leur arme favorite est l’arc de cavalerie Shinjo, qu’ils utilisent avec une précision extrême même au galop. Entraînés à vivre de la nature, ils étudient minutieusement le terrain de chaque champ de bataille potentiel avant de devoir y combattre."
         ],
-        "schoolAbility":[
-            "Né sur une selle (capacité d’école)",
-            "Une fois par scène, avant de lancer les dés, vous pouvez déclarer que vous demandez à votre cheval (qui doit être présent) de vous aider dans votre tâche. Vous décrivez comment ses efforts vous aident dans ces circonstances. Retirez alors votre rang d’école au ND du test que vous entreprenez."
-        ],
-        "masteryAbility":[
-            "Je reviendrai toujours (capacité de maîtrise)",
-            "Une fois par session de jeu, vous pouvez appeler votre cheval. Celui-ci arrive au début du round suivant, quels que soient les obstacles qui auraient normalement dû l’empêcher de rejoindre l’endroit où vous vous trouvez. Sa loyauté envers vous est telle que même la mort ne pourra l’arrêter. S’il a récemment été tué, son esprit prendra possession du cheval le plus proche de vous et vous viendra en aide malgré tout."
-        ]
+        "initialAbility":{
+            "name":"Né sur une selle",
+            "description":[
+                "Une fois par scène, avant de lancer les dés, vous pouvez déclarer que vous demandez à votre cheval (qui doit être présent) de vous aider dans votre tâche. Vous décrivez comment ses efforts vous aident dans ces circonstances. Retirez alors votre rang d’école au ND du test que vous entreprenez."
+            ]
+        },
+        "finalAbility":{
+            "name":"Je reviendrai toujours",
+            "description":[
+                "Une fois par session de jeu, vous pouvez appeler votre cheval. Celui-ci arrive au début du round suivant, quels que soient les obstacles qui auraient normalement dû l’empêcher de rejoindre l’endroit où vous vous trouvez. Sa loyauté envers vous est telle que même la mort ne pourra l’arrêter. S’il a récemment été tué, son esprit prendra possession du cheval le plus proche de vous et vous viendra en aide malgré tout."
+            ]
+        }
     },
     "Utaku":{
         "name":"École de vierge de bataille Utaku",
@@ -463,15 +579,19 @@
         "description":[
             "Les légendaires Shiotome, ou « vierges de bataille » vénérées, forment la plus prestigieuse et la plus traditionnelle école du Clan de la Licorne. Le dojo n’accepte que des femmes qui portent le nom d’Utaku et même dans ce cas, les postulantes doivent être à la hauteur de ses rigoureuses attentes en matière de bravoure et d’honneur. C’est la seule école de l’Empire à enseigner les secrets du dressage des puissantes montures Utaku, de massifs destriers de guerre qui refusent tous les autres cavaliers. Leur style de combat repose sur des mouvements fluides et gracieux, effectués avec une sérénité déconcertante. Même lorsqu’elles chargent au cœur de la mêlée, les vierges de bataille le font souvent dans un silence total."
         ],
-        "schoolAbility":[
-            "Charge héroïque (capacité d’école)",
-            "Lorsque vous réussissez un test d’action d’Attaque, ajoutez au résultat un nombre de succès bonus égal au nombre de niveaux de portée que vous avez parcourus au cours de ce round, mais n’excédant pas votre rang d’école.",
-            "Au cours d’un duel ou d’une bataille rangée, si vous chevauchez votre monture, on considère toujours que vous avez parcouru un nombre de niveaux de portée égal à votre rang d’école pendant ce tour."
-        ],
-        "masteryAbility":[
-            "Sentir la brise (capacité de maîtrise)",
-            "Une fois par round, après vous être défendu contre des dégâts, vous pouvez vous déplacer de 1 niveau de portée et changer de posture."
-        ]
+        "initialAbility":{
+            "name":"Charge héroïque",
+            "description":[
+                "Lorsque vous réussissez un test d’action d’Attaque, ajoutez au résultat un nombre de succès bonus égal au nombre de niveaux de portée que vous avez parcourus au cours de ce round, mais n’excédant pas votre rang d’école.",
+                "Au cours d’un duel ou d’une bataille rangée, si vous chevauchez votre monture, on considère toujours que vous avez parcouru un nombre de niveaux de portée égal à votre rang d’école pendant ce tour."
+            ]
+        },
+        "finalAbility":{
+            "name":"Sentir la brise",
+            "description":[
+                "Une fois par round, après vous être défendu contre des dégâts, vous pouvez vous déplacer de 1 niveau de portée et changer de posture."
+            ]
+        }
     },
     "ronin":{
         "name":"Voie du ronin expérimenté",
@@ -479,14 +599,18 @@
         "description":[
             "On peut arpenter la voie du ronin pour de multiples raisons. Ces « hommes-vagues » dérivant sur la mer du destin peuvent être d’anciens samouraïs de clan déchus ou dont le maître a été tué ou destitué, voire des enfants illégitimes ou nés dans des circonstances fâcheuses. La plupart de ces vagabonds n’ont plus de vrai sensei (si tant est qu’ils en aient eu un jour), et c’est donc le monde lui-même qui leur enseigne. Comme ils doivent s’adapter pour survivre, de nombreux ronin s’en remettent à une compétence particulière pour se faire une place dans le monde, que ce soit en tant que mercenaires, marchands ou artistes itinérants, ou bien encore comme guides et gardiens dédiés à des routes, des rivières ou des cols de montagne particuliers."
         ],
-        "schoolAbility":[
-            "L’école des vagues (capacité d’école)",
-            "Choisissez une compétence supplémentaire. Elle fait désormais partie intégrante de votre cursus dans la Voie du ronin expérimenté, pour tous les rangs. Chaque fois que vous gagnerez un rang d’école, choisissez une nouvelle compétence de cursus bonus de la même façon.",
-            "Lorsque vous effectuez un test avec l’une de vos compétences bonus, vous pouvez ignorer 1 symbole |strifeIcon|."
-        ],
-        "masteryAbility":[
-            "Un insondable océan (capacité de maîtrise)",
-            "Vous pouvez hisser vos compétences de cursus bonus jusqu’au rang 6 (en dépensant 12 XP pour passer chacune d’entre d’elles du rang 5 au rang 6)."
-        ]
+        "initialAbility":{
+            "name":"L’école des vagues",
+            "description":[
+                "Choisissez une compétence supplémentaire. Elle fait désormais partie intégrante de votre cursus dans la Voie du ronin expérimenté, pour tous les rangs. Chaque fois que vous gagnerez un rang d’école, choisissez une nouvelle compétence de cursus bonus de la même façon.",
+                "Lorsque vous effectuez un test avec l’une de vos compétences bonus, vous pouvez ignorer 1 symbole |strifeIcon|."
+            ]
+        },
+        "finalAbility":{
+            "name":"Un insondable océan",
+            "description":[
+                "Vous pouvez hisser vos compétences de cursus bonus jusqu’au rang 6 (en dépensant 12 XP pour passer chacune d’entre d’elles du rang 5 au rang 6)."
+            ]
+        }
     }
 }

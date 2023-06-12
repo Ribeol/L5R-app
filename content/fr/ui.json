@@ -65,6 +65,15 @@
             {"value":"water","text":"Eau"},
             {"value":"void","text":"Vide"}            
         ],
+        "activationFilterOptions":[
+            {"value":"any","text":"Toute activation"},
+            {"value":"action","text":"Action"},
+            {"value":"downtime","text":"Temps mort"},
+            {"value":"opportunity","text":"Aubaine"},
+            {"value":"void","text":"Point de vide"},
+            {"value":"limited","text":"Limité"},
+            {"value":"permanent","text":"Permanent"}
+        ],
         "availabilityFilterOptions":[
             {"value":"learned","text":"Techniques apprises"},
             {"value":"missable","text":"Techniques manquables"},

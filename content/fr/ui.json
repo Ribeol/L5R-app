@@ -101,7 +101,7 @@
             "action":["action"],
             "downtime":["activité de temps mort"],
             "tn":[" nd "],
-            "opportunity":["vous pouvez dépenser |opportunityicon|"],
+            "opportunity":["|opportunityicon| comme suit :", "|opportunityicon| de la façon suivante :"],
             "voidPoint":[" point de vide", "points de vide"],
             "timesPer":["une fois par ", "un nombre de fois "]
         },

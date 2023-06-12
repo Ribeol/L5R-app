@@ -66,6 +66,15 @@
             {"value":"void","text":"Void"}
             
         ],
+        "activationFilterOptions":[
+            {"value":"any","text":"Any activation"},
+            {"value":"action","text":"Action"},
+            {"value":"downtime","text":"Downtime"},
+            {"value":"opportunity","text":"Opportunity"},
+            {"value":"void","text":"Void point"},
+            {"value":"limited","text":"Limited"},
+            {"value":"permanent","text":"Permanent"}
+        ],
         "availabilityFilterOptions":[
             {"value":"learned","text":"Learned techniques"},
             {"value":"missable","text":"Missable techniques"},            

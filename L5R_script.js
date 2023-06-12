@@ -767,7 +767,7 @@ class ContentManager {
                             }
 
                             if (institution === dataManager.loaded.school) {
-                                numSpan.textContent += String.fromCharCode(`0xe90${i+3}`);
+                                numSpan.textContent += String.fromCharCode(`0xe90${i+4}`);
                             }
                             else {
                                 numSpan.textContent += String.fromCharCode(customIcons.titleIcon);           

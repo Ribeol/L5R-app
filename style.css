@@ -1,9 +1,9 @@
 @font-face {
   font-family: 'customicons';
   src:
-    url('fonts/customicons.ttf?ai201n') format('truetype'),
-    url('fonts/customicons.woff?ai201n') format('woff'),
-    url('fonts/customicons.svg?ai201n#customicons') format('svg');
+    url('fonts/customicons.ttf?1m18b8') format('truetype'),
+    url('fonts/customicons.woff?1m18b8') format('woff'),
+    url('fonts/customicons.svg?1m18b8#customicons') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -30,117 +30,129 @@
 .icon-beginner:before {
   content: "\e901";
 }
-.icon-character:before {
+.icon-bolt:before {
   content: "\e902";
 }
-.icon-circled1:before {
+.icon-character:before {
   content: "\e903";
 }
-.icon-circled2:before {
+.icon-circled1:before {
   content: "\e904";
 }
-.icon-circled3:before {
+.icon-circled2:before {
   content: "\e905";
 }
-.icon-circled4:before {
+.icon-circled3:before {
   content: "\e906";
 }
-.icon-circled5:before {
+.icon-circled4:before {
   content: "\e907";
 }
-.icon-circledT:before {
+.icon-circled5:before {
   content: "\e908";
 }
-.icon-crab:before {
+.icon-circledT:before {
   content: "\e909";
 }
-.icon-crane:before {
+.icon-crab:before {
   content: "\e90a";
 }
-.icon-dragon:before {
+.icon-crane:before {
   content: "\e90b";
 }
-.icon-earth:before {
+.icon-dragon:before {
   content: "\e90c";
 }
-.icon-explosiveSuccess:before {
+.icon-earth:before {
   content: "\e90d";
 }
-.icon-filter:before {
+.icon-explosiveSuccess:before {
   content: "\e90e";
 }
-.icon-fire:before {
+.icon-filter:before {
   content: "\e90f";
 }
-.icon-invocation:before {
+.icon-fire:before {
   content: "\e910";
 }
-.icon-kata:before {
+.icon-hourglass:before {
   content: "\e911";
 }
-.icon-kih:before {
+.icon-infinity:before {
   content: "\e912";
 }
-.icon-lion:before {
+.icon-invocation:before {
   content: "\e913";
 }
-.icon-mah:before {
+.icon-kata:before {
   content: "\e914";
 }
-.icon-ninjutsu:before {
+.icon-kih:before {
   content: "\e915";
 }
-.icon-opportunity:before {
+.icon-lion:before {
   content: "\e916";
 }
-.icon-pentagonFill:before {
+.icon-mah:before {
   content: "\e917";
 }
-.icon-pentagonStroke:before {
+.icon-ninjutsu:before {
   content: "\e918";
 }
-.icon-phoenix:before {
+.icon-opportunity:before {
   content: "\e919";
 }
-.icon-ritual:before {
+.icon-pentagonFill:before {
   content: "\e91a";
 }
-.icon-school:before {
+.icon-pentagonStroke:before {
   content: "\e91b";
 }
-.icon-scorpion:before {
+.icon-phoenix:before {
   content: "\e91c";
 }
-.icon-scroll:before {
+.icon-renew:before {
   content: "\e91d";
 }
-.icon-shji:before {
+.icon-ritual:before {
   content: "\e91e";
 }
-.icon-squareFill:before {
+.icon-school:before {
   content: "\e91f";
 }
-.icon-squareStroke:before {
+.icon-scorpion:before {
   content: "\e920";
 }
-.icon-strife:before {
+.icon-scroll:before {
   content: "\e921";
 }
-.icon-study:before {
+.icon-shji:before {
   content: "\e922";
 }
-.icon-success:before {
+.icon-squareFill:before {
   content: "\e923";
 }
-.icon-treasure:before {
+.icon-squareStroke:before {
   content: "\e924";
 }
-.icon-unicorn:before {
+.icon-strife:before {
   content: "\e925";
 }
-.icon-void:before {
+.icon-study:before {
   content: "\e926";
 }
-.icon-water:before {
+.icon-success:before {
   content: "\e927";
+}
+.icon-treasure:before {
+  content: "\e928";
+}
+.icon-unicorn:before {
+  content: "\e929";
+}
+.icon-void:before {
+  content: "\e92a";
+}
+.icon-water:before {
+  content: "\e92b";
 }

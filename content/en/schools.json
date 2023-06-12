@@ -7,14 +7,14 @@
         ],
         "initialAbility":{
             "name":"Way of the Crab",
-            "description":[
+            "activation":[
                 "Ignore the Cumbersome quality of armor you wear.",
                 "Once per round, before making a check to resist a critical strike, you may reduce the severity of that critical strike by the physical resistance of your armor plus your school rank (to a minimum of 0)."
             ]
         },
         "finalAbility":{
             "name":"The Mountain Does Not Fall",
-            "description":[
+            "activation":[
                 "At the beginning of your turn, you may spend 1 Void point. If you do, ignore all of your conditions, terrain, and negative persistent effects of techniques and abilities. Do not apply your disadvantages to checks. If you would die, you cling to life for a few moments longer instead (but still die when the effect ends). This effect persists until the end of your next turn."
             ]
         }
@@ -27,13 +27,13 @@
         ],
         "initialAbility":{
             "name":"Flickering Flame Skirmisher",
-            "description":[
+            "activation":[
                 "After performing an Attack action, you may change your stance. If you do, increase the TN of Attack checks by creatures of silhouette 3 or larger targeting you by your school rank until the start of your next turn."
             ]
         },
         "finalAbility":{
             "name":"Slayer’s Slash",
-            "description":[
+            "activation":[
                 "Increase the severity of critical strikes you inflict on targets of silhouette 3 or larger by your ranks in Survival."
             ]
         }
@@ -46,13 +46,13 @@
         ],
         "initialAbility":{
             "name":"Masterful Builder",
-            "description":[
-                "Once per scene,when making a check to use an item you personally crafted, you may add a number of kept |ringIcon| set to |opportunityIcon| results equal to your school rank."
+            "activation":[
+                "Once per scene,when making a check to use an item you personally crafted, you may add a number of kept |ringDieIcon| set to |opportunityIcon| results equal to your school rank."
             ]
         },
         "finalAbility":{
             "name":"Ingenious Design",
-            "description":[
+            "activation":[
                 "When you construct an item, you may add or remove one quality from the item. You must describe to the GM how the item possesses (or lacks) the usual quality, and the GM is the final arbiter of whether an addition (or subtraction) is appropriate."
             ]
         }
@@ -65,13 +65,13 @@
         ],
         "initialAbility":{
             "name":"Gaze into Shadow",
-            "description":[
+            "activation":[
                 "Once per round, when you make a check targeting or involving a Tainted being, you may choose a number of your kept dice up to your school rank containing |strifeIcon| symbols. Set each of these dice to a |successIcon| result. You cannot use this ability if you are unsure if a being is Tainted or not."
             ]
         },
         "finalAbility":{
             "name":"Purge the Wicked",
-            "description":[
+            "activation":[
                 "Once per game session, you may spend 1 Void point to wield an invocation against all the wicked in your sight. Instead of affecting its usual targets, the next invocation technique you perform targets each Tainted being in range."
             ]
         }
@@ -84,14 +84,14 @@
         ],
         "initialAbility":{
             "name":"Way of the Carp",
-            "description":[
+            "activation":[
                 "As a downtime activity, if you have access to a market, you may acquire a number of items up to your school rank of rarity 4 or lower, or a single item of up to rarity 4 plus your school rank. You do not need to make a check or expend money to acquire these items, nor do you need to forfeit or stake honor or glory for the act of acquiring them, even if they are not befitting of your station or Forbidden (though displaying them openly later is a different matter). The GM can still apply rarity adjustments as usual based on the specifics of the market available."
             ]
         },
         "finalAbility":{
             "name":"Treasures of the Carp",
-            "description":[
-                "Once per game session, you may give away one item in your possession to reduce the TN of the next Social skill check you make targeting the recipient by an amount equal to the rarity of the item. For each point by which this would reduce the TN below 1, add a kept |ringIcon| set to an |opportunityIcon| result to your check."
+            "activation":[
+                "Once per game session, you may give away one item in your possession to reduce the TN of the next Social skill check you make targeting the recipient by an amount equal to the rarity of the item. For each point by which this would reduce the TN below 1, add a kept |ringDieIcon| set to an |opportunityIcon| result to your check."
             ]
         }
     },
@@ -103,13 +103,13 @@
         ],
         "initialAbility":{
             "name":"Spiritual Artisan",
-            "description":[
-                "When making a check to mystically summon an illusion or to summon, augment, or awaken an object, you may add a number of kept |ringIcon| set to |opportunityIcon| results equal to your school rank."
+            "activation":[
+                "When making a check to mystically summon an illusion or to summon, augment, or awaken an object, you may add a number of kept |ringDieIcon| set to |opportunityIcon| results equal to your school rank."
             ]
         },
         "finalAbility":{
             "name":"Stir the Slumbering Spirit",
-            "description":[
+            "activation":[
                 "Once per game session as a downtime activity, you may make a TN 4 Artisan (Void) check to awaken an item’s spirit. If you succeed, until the end of the game session, it becomes a nemuranai with a sealed invocation of your choice based on the item’s history. The GM is the final arbiter of the appropriateness of any invocation selected this way."
             ]
         }
@@ -122,13 +122,13 @@
         ],
         "initialAbility":{
             "name":"Vigilance of Mind",
-            "description":[
+            "activation":[
                 "Once per round, when another character within range of one of your readied melee weapons would suffer physical damage, you may intercept. If you do, you may suffer fatigue up to your school rank to reduce the damage the target suffers by twice that amount."
             ]
         },
         "finalAbility":{
             "name":"To Tread the Sword",
-            "description":[
+            "activation":[
                 "When you use the Guard action, instead of guarding one character, you may choose to guard a number of other characters in range up to your ranks in Martial Arts [Melee]."
             ]
         }
@@ -141,13 +141,13 @@
         ],
         "initialAbility":{
             "name":"Speaking in Silence",
-            "description":[
-                "Once per scene when making a check to persuade or influence someone, you may add a number of kept |ringIcon| set to |opportunityIcon| results equal to your school rank."
+            "activation":[
+                "Once per scene when making a check to persuade or influence someone, you may add a number of kept |ringDieIcon| set to |opportunityIcon| results equal to your school rank."
             ]
         },
         "finalAbility":{
             "name":"The Lady’s Grace",
-            "description":[
+            "activation":[
                 "Once per scene, you may spend 1 Void point to reduce your strife to 0. When you do, each friendly character in the scene may reduce their strife by your honor rank."
             ]
         }
@@ -160,13 +160,13 @@
         ],
         "initialAbility":{
             "name":"Way of the Crane",
-            "description":[
+            "activation":[
                 "Once per round, you may increase or decrease the severity of a critical strike you inflict by an amount up to your school rank."
             ]
         },
         "finalAbility":{
             "name":"Strike with No Thought",
-            "description":[
+            "activation":[
                 "Once per scene, as an Attack and Movement action, you may make a Martial Arts [Melee] (Void) check targeting one character at range 2–3 using a sheathed katana or wakizashi. The TN of this check is equal to your target’s vigilance.",
                 "You immediately move to range 1 of your target and draw the weapon you used. If you succeed, your target suffers a critical strike with severity equal to the deadliness of your weapon plus your bonus successes.",
                 "|opportunityIcon|+: One character of your choice at range 0–2 of your target per |opportunityIcon| spent this way suffers the Dazed and Disoriented conditions.",
@@ -182,13 +182,13 @@
         ],
         "initialAbility":{
             "name":"Elemental Transmutation",
-            "description":[
+            "activation":[
                 "When performing an invocation, you may choose a different ring with which to make the check. While using this school ability, you cannot activate |opportunityIcon| of the original Element of the invocation, but you can activate |opportunityIcon| for the new Element. You can use this school ability a number of times per game session up to your school rank."
             ]
         },
         "finalAbility":{
             "name":"Experiment and Adapt",
-            "description":[
+            "activation":[
                 "Increase your supernatural resistance against Air, Earth, Fire, and Water invocations by your ranks in Theology. After another character performs an Air, Earth, Fire, or Water invocation targeting you, you may spend 1 Void Point to immediately perform that invocation, even if you have not learned it."
             ]
         }
@@ -201,13 +201,13 @@
         ],
         "initialAbility":{
             "name":"Kitsuki’s Method",
-            "description":[
-                "When performing a check to investigate with any skill, you may treat your ranks in the skill you are using as being equal to your school rank. If your ranks in the skill are equal to or higher than your school rank, or if you have 5 ranks in the skill, you may add a kept |ringIcon| set to an |opportunityIcon| result instead."
+            "activation":[
+                "When performing a check to investigate with any skill, you may treat your ranks in the skill you are using as being equal to your school rank. If your ranks in the skill are equal to or higher than your school rank, or if you have 5 ranks in the skill, you may add a kept |ringDieIcon| set to an |opportunityIcon| result instead."
             ]
         },
         "finalAbility":{
             "name":"The Eyes Betray the Heart",
-            "description":[
+            "activation":[
                 "Once per scene when performing a skill check to investigate, you may spend |opportunityIcon| as follows:",            
                 "|opportunityIcon|+: You may reserve up to one dropped die per |opportunityIcon| spent this way. The next time you perform a check to interact with the person or thing you were investigating (such as a check targeting that person or a check to use that object), you may add any number of these reserved dice as kept dice. Then, remove any unused reserved dice."
             ]
@@ -221,7 +221,7 @@
         ],
         "initialAbility":{
             "name":"Way of the Dragon",
-            "description":[
+            "activation":[
                 "Once per round during a duel or skirmish when you are targeted by an Attack check with a melee weapon, you may use one of your weapons readied in a one-handed grip (or one of your hands, if it is empty) to ward or trap.",
                 "If you ward, the attacker must reroll dice containing |successIcon| or |explosiveSuccessIcon| up to your school rank.",
                 "If you trap, reduce the TN of your next Attack check against the attacker this scene by your school rank (to a minimum of 1).",
@@ -230,7 +230,7 @@
         },
         "finalAbility":{
             "name":"Heart of the Dragon",
-            "description":[
+            "activation":[
                 "Once per round, when performing an Attack action check, you may spend |opportunityIcon| as follows:",
                 "|opportunityIcon|: Perform a Strike action with a readied weapon you have not used for an Attack action this turn."
             ]
@@ -244,7 +244,7 @@
         ],
         "initialAbility":{
             "name":"Blood of the Kami",
-            "description":[
+            "activation":[
                 "You have one mystical tattoo that empowers your kihō, and gain more as your school rank increases. When you make a check to activate a kihō linked to one of your mystical tattoos, if you succeed, add additional bonus successes equal to your school rank.",
                 "Select a natural motif for your first tattoo and choose one kihō for which you meet the prerequisites that are linked to the tattoo. If you have not learned it, you learn that kihō (without paying its XP cost). You cannot choose the same kihō multiple times this way.",
                 "Each time your school rank increases, you gain one additional tattoo this way."
@@ -252,7 +252,7 @@
         },
         "finalAbility":{
             "name":"Blood of the Dragon",
-            "description":[
+            "activation":[
                 "Once per scene, while you are benefiting from the enhancement effect of a kihō linked to one of your tattoos, when you activate a different kihō, you may spend 1 Void point. If you do, you may maintain both enhancement effects until the end of the scene or until you activate another kihō."
             ]
         }
@@ -265,13 +265,13 @@
         ],
         "initialAbility":{
             "name":"Way of the Lion",
-            "description":[
+            "activation":[
                 "When you succeed at an Attack or Support action check, you may remove an amount of strife from yourself up to your school rank. For each strife you remove this way, add that one bonus success to the check and receive 1 fatigue."
             ]
         },
         "finalAbility":{
             "name":"Akodo’s Final Lesson",
-            "description":[
+            "activation":[
                 "Once per game session during a skirmish or mass battle, after you fail a check, you may attempt the check again, treating the TN as 1."
             ]
         }
@@ -284,7 +284,7 @@
         ],
         "initialAbility":{
             "name":"Heart of the Lion",
-            "description":[
+            "activation":[
                 "Once per scene, after you perform a check using a Social skill that targets one or more characters, you may agitate or console:",
                 "If you agitate, transfer strife up to twice your school rank from yourself to your targets (divided among them as you choose).",
                 "If you console, transfer strife up to twice your school rank from your targets (divided among them as you choose) to yourself."
@@ -292,7 +292,7 @@
         },
         "finalAbility":{
             "name":"Lion’s Pride",
-            "description":[
+            "activation":[
                 "Once per game session as a Support action, you may attempt to convince everyone in the scene of the glorious reputation of one character, embellishing the truth as needed, by making a TN 5 Performance (Fire) check targeting one character. The TN of this check is 6 if you target yourself, and 4 if you target another Lion Clan character.",
                 "If you succeed, reduce the TN of all of the character’s Social skill checks by 3 until the end of the scene, and the TN of all of the character’s other checks by 1."
             ]
@@ -306,13 +306,13 @@
         ],
         "initialAbility":{
             "name":"Favor of the Ancestors",
-            "description":[
+            "activation":[
                 "Once per scene, you may importune one invocation with a school rank prerequisite up to your school rank without making the sacrifices usually required and without the usual TN increase."
             ]
         },
         "finalAbility":{
             "name":"Strength of a Thousand Ancestors",
-            "description":[
+            "activation":[
                 "Once per game session, as a Support action, you may summon the spirit of an ancestor to possess you until the end of the scene. While possessed, you count as an Otherworldly being and use the profile of the ancestor (a non-specific human NPC profile, or, at the GM’s discretion, a PC with up to 180 XP that you have created in advance). Your character does not remember any time they spend possessed."
             ]
         }
@@ -325,13 +325,13 @@
         ],
         "initialAbility":{
             "name":"Matsu’s Fury",
-            "description":[
+            "activation":[
                 "After you suffer a critical strike or unmask, you may suffer the Enraged condition to remove an amount of fatigue from yourself equal to your school rank."
             ]
         },
         "finalAbility":{
             "name":"Rending Jaws of the Lion",
-            "description":[
+            "activation":[
                 "Once per round, when performing an Attack action check while Enraged, you may spend 1 Void point to alter each kept die containing |successIcon| to a result containing |explosiveSuccessIcon|."
             ]
         }
@@ -344,13 +344,13 @@
         ],
         "initialAbility":{
             "name":"Wisdom of the Ages",
-            "description":[
-                "When performing a Scholar skill check, you may treat your ranks in the skill as being equal to your school rank. If your ranks in that Scholar skill are equal to or higher than your school rank, or if you have 5 ranks in the skill, you may add one kept |ringIcon| set to an |opportunityIcon| result instead."
+            "activation":[
+                "When performing a Scholar skill check, you may treat your ranks in the skill as being equal to your school rank. If your ranks in that Scholar skill are equal to or higher than your school rank, or if you have 5 ranks in the skill, you may add one kept |ringDieIcon| set to an |opportunityIcon| result instead."
             ]
         },
         "finalAbility":{
             "name":"Insufferable Genius",
-            "description":[
+            "activation":[
                 "After you succeed at a check to acquire or remember information, you may spend 1 Void point and choose any number of characters with whom you can communicate. You must describe how the knowledge you acquired helps each character you choose. Each of those characters reduces the TN of their next check by 1 (to a minimum of 1) and suffers 1 strife."
             ]
         }
@@ -363,13 +363,13 @@
         ],
         "initialAbility":{
             "name":"One with the Elements",
-            "description":[
+            "activation":[
                 "Once per scene when making the check to activate an invocation technique, before rolling dice, you may reduce the TN of the check by your school rank."
             ]
         },
         "finalAbility":{
             "name":"Master of Elements",
-            "description":[
+            "activation":[
                 "Once per round, after you perform an invocation, you may spend 1 Void point to switch to any other stance and perform another invocation that shares no action types with the first invocation (Attack, Support, etc.)."
             ]
         }
@@ -382,13 +382,13 @@
         ],
         "initialAbility":{
             "name":"Way of the Phoenix",
-            "description":[
+            "activation":[
                 "Once per scene, when a character at range 0–3 makes a check that contains 1 or more |strifeIcon| symbols, you may negate all of those |strifeIcon| symbols. Then, that character removes strife and fatigue equal to your school rank."
             ]
         },
         "finalAbility":{
             "name":"Stand of Honor",
-            "description":[
+            "activation":[
                 "At the end of your turn, you may spend 1 Void point to prepare to fend off advancing foes; this effect persists until the start of your next turn. When an enemy enters the range of one of your readied weapons, you may immediately make a Strike action using that weapon and targeting that enemy; if you succeed, the target suffers the Immobilized condition in addition to any other effects."
             ]
         }
@@ -401,14 +401,14 @@
         ],
         "initialAbility":{
             "name":"Sacred Arrows",
-            "description":[
+            "activation":[
                 "As an action, you may augment one of your arrows with a prayer to the kami. Make the check to perform one invocation you know, reducing the TN by your school rank, and record the result. The arrow gains the Sacred quality, and remains infused with the invocation until the end of the scene.",
                 "After you perform an Attack action using the arrow (or fire it at a location, at the GM’s discretion), you may resolve the effects of the invocation from the place the arrow landed. You may spend |opportunityIcon|+ to delay resolving the effects of the invocation for 1 round per |opportunityIcon| spent this way, and may spend |opportunityIcon|opportunityIcon| from a failed check to affect one target of the attack that you missed."
             ]
         },
         "finalAbility":{
             "name":"Demon, Begone!",
-            "description":[
+            "activation":[
                 "As an action, you may make a TN 3 Meditation (Void) check by plucking the string of a bow you are wielding, targeting each Otherworldly being within a number of range bands equal to your ranks in Meditation.",
                 "If you succeed, each target suffers strife equal to your ranks in Meditation plus your bonus successes.",
                 "|opportunityIcon|: Each target must resist with a TN 3 Meditation (Void) check or treat its physical and supernatural resistances as 0. This effect persists until the end of the scene."
@@ -423,13 +423,13 @@
         ],
         "initialAbility":{
             "name":"Weakness Is My Strength",
-            "description":[
+            "activation":[
                 "When you exploit a target’s disadvantage as part of a Scheme action, you do not need to spend a Void point, and you may reroll additional dice up to your school rank."
             ]
         },
         "finalAbility":{
             "name":"Little Truths",
-            "description":[
+            "activation":[
                 "When you perform a check targeting another character to which one of your advantages or disadvantages applies, you may choose another advantage or disadvantage that shares a type with it. Unless they have clear evidence to the contrary, the target comes to believe that you have the advantage or disadvantage you chose instead of the one you actually have.If the target attempts to seize or exploit this false advantage or disadvantage, their check automatically counts as failing with a shortfall of 3. They suffer 3 strife and the Disoriented condition."
             ]
         }
@@ -442,13 +442,13 @@
         ],
         "initialAbility":{
             "name":"The Path of Shadows",
-            "description":[
+            "activation":[
                 "While performing an Attack action against a target who is Compromised, Incapacitated, Unconscious, or unaware of your presence, treat the damage and deadliness of your weapon as being increased by your school rank."
             ]
         },
         "finalAbility":{
             "name":"The Final Silence",
-            "description":[
+            "activation":[
                 "As an Attack and Movement action, you may make a TN 4 Martial Arts [Unarmed] (Air) check targeting any number of minion NPCsat range 0–4.",
                 "If you succeed during a narrative scene, you silently kill all targets over the course of a few minutes. If you succeed during a conflict scene, at the end of each of your turns, you may silently kill one of these targets at range 0–2 (in addition to your other actions)."
             ]
@@ -462,14 +462,14 @@
         ],
         "initialAbility":{
             "name":"The Kami’s Whisper",
-            "description":[
+            "activation":[
                 "While you are performing an invocation technique or channeling, characters with a vigilance lower than or equal to your school rank plus one cannot detect any physical sign that you are in the act of invoking the spirits. They can still observe effects of the invocation, however.",
                 "Increase the TN of Theology checks to detect or study your supernatural activities by your school rank."
             ]
         },
         "finalAbility":{
             "name":"World of Shadows",
-            "description":[
+            "activation":[
                 "You may spend 1 Void point to attempt to establish that something in the scene has been an illusion all along. This could be an object, image of a person, or other illusory phenomenon you could summon with an invocation. You must make the check to summon this illusion using an invocation, with adjustments to the TN for plausibility determined by the GM. If you succeed, you reveal that the thing you chose is in fact an illusion you wove, and has been for at least a few moments. If you fail, your character clearly did not think to set up an illusion—the object is as it appears. As with all matters, the GM has final say over acceptable uses of this ability."
             ]
         }
@@ -482,13 +482,13 @@
         ],
         "initialAbility":{
             "name":"Mystical Script",
-            "description":[
+            "activation":[
                 "You can have a number of additional wards with prepared invocations up to your school rank. Decoding or using one of your wards requires any other character to make a Theology (Void) check with TN equal to your school rank."
             ]
         },
         "finalAbility":{
             "name":"Bound in Ink",
-            "description":[
+            "activation":[
                 "Once per scene, when you are targeted by an invocation or mahō technique, you may resist with a TN 4 Composition check. If you succeed, you absorb the invocation or mahō, nullifying all of its effects and creating a ward containing it."
             ]
         }
@@ -501,14 +501,14 @@
         ],
         "initialAbility":{
             "name":"Vendor of Strange Wares",
-            "description":[
+            "activation":[
                 "Ignore the Forbidden quality when acquiring and handling items.",
                 "When acquiring, selling, or gifting an item, you may treat its rarity as reduced or increased by your school rank."
             ]
         },
         "finalAbility":{
             "name":"A Friend in Every City",
-            "description":[
+            "activation":[
                 "As a downtime activity in any place of human habitation, you may make a TN 4 Commerce (Water) check to find a merchant with whom you (or your relatives) have done business.",
                 "If you succeed, you find this individual and gain the Ally advantage for them, which predisposes them to assist you in various ways."
             ]
@@ -522,14 +522,14 @@
         ],
         "initialAbility":{
             "name":"The Way of Names",
-            "description":[
+            "activation":[
                 "As a downtime activity, you may make a TN 2 Design check using anyring to bind a spirit to an inanimate vessel, creating a meishōdō talisman for one invocation of that Element that you have learned. While you have the talisman in your possession, reduce the TN of checks to activate that invocation by 1. You can give the talisman to another shugenja, allowing them to perform that invocation even if they have not learned it and reducing the TN to activate it by 1, but the talisman ceases to function after a number of uses equal to your school rank.",
                 "You can sustain a number of meishōdō talismans up to your school rank. You can only have one meishōdō talisman for any single invocation."
             ]
         },
         "finalAbility":{
             "name":"The Spirits Unbound",
-            "description":[
+            "activation":[
                 "At the end of your turn, you may spend 1 or more Void points to unleash the powers within an equal number of your meishōdō talismans, destroying these talismans and freeing the entities within. You may immediately perform each of the invocations for which the talismans were created, reducing the TN by 3."
             ]
         }
@@ -542,14 +542,14 @@
         ],
         "initialAbility":{
             "name":"Swirling Desert Wind",
-            "description":[
+            "activation":[
                 "When performing an Attack action during a skirmish or mass battle, you may spend |opportunityIcon| as follows:",
                 "|opportunityIcon|: Choose an enemy other than your target whom you can perceive. Increase the TN of that enemy’s Attack checks targeting you by your school rank until the start of your next turn."
             ]
         },
         "finalAbility":{
             "name":"Scouring Sirocco",
-            "description":[
+            "activation":[
                 "Once per round, after you inflict the Incapacitated condition on a target (or defeat a minion NPC), you may perform a Strike action against a different target."
             ]
         }
@@ -562,13 +562,13 @@
         ],
         "initialAbility":{
             "name":"Born in the Saddle",
-            "description":[
+            "activation":[
                 "Once per scene, before rolling dice, you may declare that you are directing your horse (who must be present) to aid in a task and describe how its efforts help in those circumstances. Reduce the TN of the check by your school rank."
             ]
         },
         "finalAbility":{
             "name":"I Will Always Return",
-            "description":[
+            "activation":[
                 "Once per game session, you may call out for your steed. At the beginning of the following round, your horse arrives, regardless of any barriers that might normally have prevented it from reaching your location. If your steed has recently been slain, its spirit will possess the closest horse to you and come to your aid regardless, such is its loyalty to you."
             ]
         }
@@ -581,14 +581,14 @@
         ],
         "initialAbility":{
             "name":"Heroic Charge",
-            "description":[
+            "activation":[
                 "When you succeed at an Attack action check, add bonus successes equal to the number of range bands you have moved this round, to a maximum of your school rank.",
                 "During a duel or mass battle, if you are mounted on your steed, you always count as having moved a number of range bands equal to your school rank this turn."
             ]
         },
         "finalAbility":{
             "name":"Sensing the Breeze",
-            "description":[
+            "activation":[
                 "Once per round, after you defend against damage, you may move 1 range band and you may switch to a different stance."
             ]
         }
@@ -601,14 +601,14 @@
         ],
         "initialAbility":{
             "name":"School of Waves",
-            "description":[
+            "activation":[
                 "Choose one bonus curriculum skill; this skill henceforth counts as part of the Worldly Rōnin Path curriculum for you at all ranks. Each time your school rank increases, choose one additional bonus curriculum skill this way.",
                 "When you make a check using one of your bonus curriculum skills, you may negate 1 |strifeIcon| symbol."
             ]
         },
         "finalAbility":{
             "name":"A Bottomless Ocean",
-            "description":[
+            "activation":[
                 "You can increase your bonus curriculum skills to rank 6 (paying 12 XP per skill raised from rank 5 to rank 6 this way)."
             ]
         }

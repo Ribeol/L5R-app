@@ -1,17 +1,27 @@
 {
     "artisan":{
-        "name":"Artisan skill"
+        "name":"Artisan",
+        "skillType":"Artisan skill",
+        "approaches":"Artisan approaches"
     },
     "social":{
-        "name":"Social skill"
+        "name":"Social",
+        "skillType":"Social skill",
+        "approaches":"Social approaches"
     },
     "scholar":{
-        "name":"Scholar skill"
+        "name":"Scholar",
+        "skillType":"Scholar skill",
+        "approaches":"Scholar approaches"
     },
     "martial":{
-        "name":"Martial skill"
+        "name":"Martial",
+        "skillType":"Martial skill",
+        "approaches":"Martial approaches"
     },
     "trade":{
-        "name":"Trade skill"
+        "name":"Trade",
+        "skillType":"Trade skill",
+        "approaches":"Trade approaches"
     }
 }

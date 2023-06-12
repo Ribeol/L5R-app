@@ -1,42 +1,200 @@
 {
-    "air":{
-        "name":"Air",
-        "artisan":"Refine",
-        "social":"Trick",
-        "scholar":"Analyze",
-        "martial":"Feint",
-        "trade":"Con"
+    "any":{
+        "name":"Any ring",
+        "opportunities":{
+            "general":[
+                "|opportunityIcon|: If you failed, determine the easiest way to accomplish the task you were attempting (skill and approach).",
+                "|opportunityIcon|+: Remove 1 strife you gained from this check per |opportunityIcon| spent this way.",
+                "|opportunityIcon|opportunityIcon|: Provide assistance to the next character to attempt a check to accomplish something similar."
+            ]
+        }
     },
     "earth":{
         "name":"Earth",
-        "artisan":"Restore",
-        "social":"Reason",
-        "scholar":"Recall",
-        "martial":"Withstand",
-        "trade":"Produce"
-    },
-    "fire":{
-        "name":"Fire",
-        "artisan":"Invent",
-        "social":"Incite",
-        "scholar":"Theorize",
-        "martial":"Overwhelm",
-        "trade":"Innovate"
+        "approachNames":{
+            "artisan":"Restore",
+            "social":"Reason",
+            "scholar":"Recall",
+            "martial":"Withstand",
+            "trade":"Produce"
+        },
+        "opportunities":{
+            "invocation":[
+                "Earth |opportunityIcon|: Increase your physical resistance by 1. This effect persists until the end of the beginning of your next turn.",
+                "Earth |opportunityIcon|+: If this technique can target characters other than you, choose additional target per |opportunityIcon| spent this way.",
+                "Earth |opportunityIcon|+: Treat the maximum range of this technique as 1 higher per |opportunityIcon| spent this way.",
+                "Earth |opportunityIcon|: This effect inflicts physical damage instead of supernatural damage.",
+                "Earth |opportunityIcon|: The damage inflicted by this technique has the Sacred quality."
+            ],
+            "general":[
+                "Earth |opportunityIcon|: Reassure another character in the scene with your presence, allowing them to remove 2 strife.",
+                "Earth |opportunityIcon|+: Act carefully to minimize consequences of failure or other dangers that could arise from the task. Extra |opportunityIcon| makes the attempt even safer.",
+                "Earth |opportunityIcon|opportunityIcon|: Suddenly recall an important piece of information not directly related to the task. At the GM’s discretion, you may establish a small preparatory action you took earlier, such as bringing along a common useful item."
+            ],
+            "conflict":[
+                "Earth |opportunityIcon|: During a Movement action, ignore one terrain quality of your choice.",
+                "Earth |opportunityIcon|+: Reduce the severity of the next critical strike you suffer before the start of your next turn by 1 per |opportunityIcon| spent this way.",
+                "Earth |opportunityIcon|opportunityIcon|: Do not apply one of your disadvantages to checks until the end of your next turn."
+            ],
+            "initiative":"Earth |opportunityIcon|: On an Initiative check, choose another character’s disadvantage you know. They do not apply that disadvantage to their checks this scene.",
+            "artisan":"Earth |opportunityIcon| (Artisan): If you succeed, add the Durable quality to an item that you are restoring.",
+            "social":"Earth |opportunityIcon| (Social): Increase the TN of the next Social check another character makes before the end of the scene by 1.",
+            "scholar":"Earth |opportunityIcon| (Scholar): Remember a place where you can research or study the topic you were attempting to recall.",
+            "trade":"Earth |opportunityIcon| (Trade): Reduce the TN of the next check another character makes with the same skill before the end of the scene by 1.",
+            "downtime":[
+                "Earth |opportunityIcon|+: Another character in your company may remove 1 strife or fatigue per |opportunityIcon| spent this way.",
+                "Earth |opportunityIcon|opportunityIcon|: Memorize a small but vital detail from to your activity; you can recall it later without a check."
+            ]
+        },
+        "stanceEffect":"Earth: When other characters make Attack action checks and Scheme action checks that target you, they cannot spend |opportunityIcon| to inflict critical strikes or conditions on you."
     },
     "water":{
         "name":"Water",
-        "artisan":"Adapt",
-        "social":"Charm",
-        "scholar":"Survey",
-        "martial":"Shift",
-        "trade":"Exchange"
+        "approachNames":{
+            "artisan":"Adapt",
+            "social":"Charm",
+            "scholar":"Survey",
+            "martial":"Shift",
+            "trade":"Exchange"
+        },
+        "opportunities":{
+            "invocation":[
+                "Water |opportunityIcon|: Increase your supernatural resistance by 1 until the end of your next turn.",
+                "Water |opportunityIcon|+: If this technique can target characters other than you, choose additional target per |opportunityIcon| spent this way.",
+                "Water |opportunityIcon|opportunityIcon|+: Treat the maximum or minimum range of this technique as 1 higher or lower per |opportunityIcon|opportunityIcon| spent this way.",
+                "Water |opportunityIcon|opportunityIcon|: Remove 1 fatigue from the target or yourself.",
+                "Water |opportunityIcon|: Reduce the TN of the next Support action check you make by 1. This effect persists until the end of your next turn."
+            ],
+            "general":[
+                "Water |opportunityIcon|: Remove 2 strife from yourself.",
+                "Water |opportunityIcon|+: Perform the task efficiently, completing it more quickly or saving supplies. Extra |opportunityIcon| further reduces the time or materials expended.",
+                "Water |opportunityIcon|opportunityIcon|: Spot an interesting physical detail present in your environment not directly related to your check. At the GM’s discretion, you may establish a piece of terrain or a mundane object nearby."
+            ],
+            "conflict":[
+                "Water |opportunityIcon|: Remove 1 fatigue.",
+                "Water |opportunityIcon|+: During an Attack action check, ignore 1 point of target’s physical resistance per |opportunityIcon| spent this way.",
+                "Water |opportunityIcon|opportunityIcon|: Move 1 range band."
+            ],
+            "initiative":"Water |opportunityIcon|: On an Initiative check, assess the qualities of all terrain in the scene.",
+            "artisan":"Water |opportunityIcon| (Artisan): Add a kept |ringDieIcon| set to an |opportunityIcon| result to the next Artisan skill check you make before the end of the game session.",
+            "social":"Water |opportunityIcon| (Social): Add a kept |ringDieIcon| set to an |opportunityIcon| result to your next Social check before the end of the scene.",
+            "scholar":"Water |opportunityIcon| (Scholar): Spot a unique or identifying quality, aspect, or ability of something that you are identifying.",
+            "trade":"Water |opportunityIcon| (Trade): Convince a seller to give you an additional 10% discount for an item you are buying.",
+            "downtime":[
+                "Water |opportunityIcon|+: Remove 1 strife or fatigue per |opportunityIcon| spent this way.",
+                "Water |opportunityIcon|opportunityIcon|: Make a new friend while undertaking your downtime activity."
+            ]
+        },
+        "stanceEffect":"Water: During your turn, you may perform one additional action that does not require a check. This action cannot share a type with another action you perform this turn."
+    },
+    "fire":{
+        "name":"Fire",
+        "approachNames":{
+            "artisan":"Invent",
+            "social":"Incite",
+            "scholar":"Theorize",
+            "martial":"Overwhelm",
+            "trade":"Innovate"
+        },
+        "opportunities":{
+            "invocation":[
+                "Fire |opportunityIcon|+: Treat the maximum range of this technique as 1 higher per |opportunityIcon| spent this way.",
+                "Fire |opportunityIcon|+: If this technique can target characters other than you, choose additional target per |opportunityIcon| spent this way.",
+                "Fire |opportunityIcon|: Reduce the TN of the next Attack action check you make by 1. This effect persists until the end of your next turn.",
+                "Fire |opportunityIcon|+: Increase the TN of checks to resist this effect by 1 per |opportunityIcon| spent this way.",
+                "Fire |opportunityIcon|opportunityIcon|+: One target per |opportunityIcon|opportunityIcon| spent this way must resist with a TN 3 Fitness check (Air 4, Water 1) or suffer the Burning condition."
+            ],
+            "general":[
+                "Fire |opportunityIcon|: Inflame another character in the scene with your presence, causing them to receive 2 strife.",
+                "Fire |opportunityIcon|+: Perform the task in a flashy way, drawing attention to yourself. Extra |opportunityIcon| attracts even more notice.",
+                "Fire |opportunityIcon|opportunityIcon|: Notice something missing or out of place in the vicinity that is not directly related to the task. At the GM’s discretion, you may establish an absence, such as a lack of shoes outside indicating the occupant’s absence."
+            ],
+            "conflict":[
+                "Fire |opportunityIcon|: Choose another character in the scene; increase the TN of the next check they make before the end of their next turn by 1 if it does not include you as a target.",
+                "Fire |opportunityIcon|+: During an Attack action check, increase the TN of the next check the target makes to resist a critical strike they suffer before the start of your next turn by 1 per |opportunityIcon| spent this way.",
+                "Fire |opportunityIcon|opportunityIcon|: Other characters must receive 2 strife to choose you as the target of their Attack and Scheme actions until the start of your next turn."
+            ],
+            "initiative":"Fire |opportunityIcon|: On an Initiative check, use your focus instead of your vigilance for your initiative when surprised.",
+            "artisan":"Fire |opportunityIcon| (Artisan): If you succeed, make one additional copy of the item you are creating.",
+            "social":"Fire |opportunityIcon| (Social): Reduce the TN of the next Social check another character makes before the end of the scene by 1.",
+            "scholar":"Fire |opportunityIcon| (Scholar): Extrapolate the motivations or desires of another character in the scene or wider situation.",
+            "trade":"Fire |opportunityIcon| (Trade): Unusual inspiration strikes; add a kept |ringDieIcon| set to an |opportunityIcon| result to the next check you make with another skill.",
+            "downtime":[
+                "Fire |opportunityIcon|+: Assist one other character per |opportunityIcon| spent this way with their next downtime activity check this session.",
+                "Fire |opportunityIcon|opportunityIcon|: Energize another character in your company with your efforts; they may perform 1 additional downtime action this downtime (to a maximum of 2)."
+            ]
+        },
+        "stanceEffect":"Fire: When you succeed on a check, you count as having one additional bonus success for each |strifeIcon| symbol on your kept dice."
+    },
+    "air":{
+        "name":"Air",
+        "approachNames":{
+            "artisan":"Refine",
+            "social":"Trick",
+            "scholar":"Analyze",
+            "martial":"Feint",
+            "trade":"Con"
+        },
+        "opportunities":{
+            "invocation":[
+                "Air |opportunityIcon|opportunityIcon|+: Choose one additional target per |opportunityIcon|opportunityIcon| spent this way.",
+                "Air |opportunityIcon|+: Treat the maximum range of this technique as 1 higher per |opportunityIcon| spent this way.",
+                "Air |opportunityIcon|: Reduce the TN of the next Movement action check you make by 1. This effect persists until the end of your next turn.",
+                "Air |opportunityIcon|opportunityIcon|+: If this technique can target characters other than you, choose additional target per |opportunityIcon|opportunityIcon| spent this way.",
+                "Air |opportunityIcon|opportunityIcon|+: If this technique targets all characters in an area, choose 1 character in range to exclude as a target per |opportunityIcon|opportunityIcon| spent this way."
+            ],
+            "general":[
+                "Air |opportunityIcon|opportunityIcon|: Provide assistance to the next character to attempt a check to accomplish something similar.",
+                "Air |opportunityIcon|+: Act subtly to attract minimal attention in your efforts. Extra |opportunityIcon| makes the attempt even subtler.",
+                "Air |opportunityIcon|opportunityIcon|: Notice an interesting detail about a character in the scene, such as an advantage or disadvantage. At the GM’s discretion, you may establish a new detail for an NPC."
+            ],
+            "conflict":[
+                "Air |opportunityIcon|: Add a kept |ringDieIcon| set to an |opportunityIcon| result to your next Martial skill check.",
+                "Air |opportunityIcon|+: During a Movement action check, up to 1 range band of any distance you move per |opportunityIcon| spent this way may be along a vertical surface.",
+                "Air |opportunityIcon|opportunityIcon|: Increase the TN of the next Martial Arts [Ranged] check targeting you before the start of your next turn by 2."
+            ],
+            "initiative":"Air |opportunityIcon|: On an Initiative check, assess one foe’s weakness. Learn one of their disadvantages of that foe’s choice.",
+            "artisan":"Air |opportunityIcon| (Artisan): If you succeed, add the Resplendent or Subtle quality to an item that you are refining.",
+            "social":"Air |opportunityIcon| (Social): Learn if the honor, glory, or status attribute of a character in the scene is higher, lower, or equal to yours.",
+            "scholar":"Air |opportunityIcon| (Scholar): Learn a something about a character who created or used the item you are studying (such as one of their advantages or disadvantages of the GM’s choice that affected their creation or use of the item).",
+            "trade":"Air |opportunityIcon| (Trade): Convince a buyer to pay an additional 10% for an item you are selling.",
+            "downtime":[
+                "Air |opportunityIcon|+: Learn a detail about one person in your company (such as an advantage or disadvantage of their choice) per |opportunityIcon| spent this way. You can learn only one detail about each person this way in a single downtime scene.",
+                "Air |opportunityIcon|opportunityIcon|: Perform your downtime activity without letting one or more others of your choice know that you did."
+            ]
+        },
+        "stanceEffect":"Air: Increase the TN of Attack and Scheme action checks targeting you by 1. If your school rank is 4 or higher, increase the TN by 2 instead."
     },
     "void":{
         "name":"Void",
-        "artisan":"Attune",
-        "social":"Enlighten",
-        "scholar":"Sense",
-        "martial":"Sacrifice",
-        "trade":"Subsist"
+        "approachNames":{
+            "artisan":"Attune",
+            "social":"Enlighten",
+            "scholar":"Sense",
+            "martial":"Sacrifice",
+            "trade":"Subsist"
+        },
+        "opportunities":{
+            "general":[
+                "Void |opportunityIcon|: Choose a ring other than Void. Reduce the TN of your next check by 1 if it uses that ring.",
+                "Void |opportunityIcon|+: Feel a chill down your spine, notice a sudden silence, or detect another sign of the supernatural if there is a spiritual disturbance in the scene. Extra |opportunityIcon| gives an increasingly precise location for the supernatural occurrence.",
+                "Void |opportunityIcon|opportunityIcon|: Gain spiritual insight into the nature of the universe or your own heart. At the GM’s discretion, you may establish a fact about your character that has not been previously revealed but relates to the situation."
+            ],
+            "conflict":[
+                "Void |opportunityIcon|: During the next Attack action check you make before the end of your next turn, ignore one terrain quality of your choice.",
+                "Void |opportunityIcon|+: During a Support action check, increase your Initiative value by 1 per |opportunityIcon| spent this way.",
+                "Void |opportunityIcon|opportunityIcon|: Ignore the effects of one condition you are suffering until the end of your next turn."
+            ],
+            "initiative":"Void |opportunityIcon|: On an Initiative check, sense if there is an Otherworldly being in the scene.",
+            "artisan":"Void |opportunityIcon| (Artisan): Reduce the TN of the next check you make using the item you are attuning yourself to by 1.",
+            "social":"Void |opportunityIcon| (Social): Discern the objective of another character in the scene.",
+            "scholar":"Void |opportunityIcon| (Scholar): Intuit whether you can learn anything of value from your current course of inquiry.",
+            "trade":"Void |opportunityIcon| (Trade): Reduce any effect you have on your environment (and physical traces of your efforts) to a minimum.",
+            "downtime":[
+                "Void |opportunityIcon|+: Reserve 1 dropped die from your check, to a maximum of your ranks in the skill you used. Add that die to your next check with the same skill as a kept die instead of rolling it.",
+                "Void |opportunityIcon|opportunityIcon|: Have a brief premonition of a possible future event while undertaking your downtime activity."
+            ]
+        },
+        "stanceEffect":"Void: You do not receive strife from |strifeIcon| symbols on your kept dice. You can still receive strife from other sources."
     }
 }

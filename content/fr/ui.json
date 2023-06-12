@@ -22,7 +22,7 @@
         ],
         "availabilityFilterOptions":[
             {"value":"all","text":"Liste complète"},
-            {"value":"upgradable","text":"Compétences améliorables"},
+            {"value":"upgradable","text":"Améliorable"},
             {"value":"learned","text":"Compétences apprises"}
         ],
         "curriculaFilterOptions":[
@@ -58,11 +58,12 @@
         ],
         "ringFilterOptions":[
             {"value":"any","text":"Tout anneau"},
+            {"value":"none","text":"Aucun anneau"},
             {"value":"air","text":"Air"},
             {"value":"earth","text":"Terre"},
             {"value":"fire","text":"Feu"},
             {"value":"water","text":"Eau"},
-            {"value":"void","text":"Vide"}
+            {"value":"void","text":"Vide"}            
         ],
         "availabilityFilterOptions":[
             {"value":"learned","text":"Techniques apprises"},
@@ -76,11 +77,33 @@
             {"value":"excluded","text":"Hors cursus"},
             {"value":"included","text":"Cursus"},
             {"value":"current","text":"Rang actuel"}
-        ],
-        "rank":"Rang",
-        "newOpportunities":"Nouvelles aubaines"
+        ]
     },
     "experience":{},
     "items":{},
-    "notes":{}
+    "notes":{},
+    "viewer":{
+        "rank":"Rang",
+        "newOpportunities":"Nouvelles aubaines",
+        "invocationOpportunities":"Aubaines pour les invocations",
+        "activationKeywords":{
+            "ring":["anneau d"],
+            "cost":["au prix d"],
+            "action":["action"],
+            "downtime":["activité de temps mort"],
+            "tn":[" nd "],
+            "opportunity":["|opportunityicon|"],
+            "voidPoint":[" point de vide", "points de vide"],
+            "timesPer":["une fois par ", "un nombre de fois "]
+        },
+        "exampleOpportunities":{
+            "title":"Exemples d'aubaines",
+            "general":"Usage général",
+            "conflict":"Confrontations et compétences martiales",
+            "initiative":"Initiative",
+            "skill":"Compétence",
+            "downtime":"Temps mort"            
+        },
+        "stanceEffect":"Effet de la posture"
+    }
 }

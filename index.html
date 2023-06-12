@@ -122,21 +122,21 @@
                 background-color:darkgray;
                 display: grid;
                 grid-template-columns: 8% auto;
-                gap: 5px;
-                padding: 5px;
+                gap: 0.25em;
+                padding: 0.25em;
                 align-items: center;
             }
             .filters>span {
                 grid-row: 1 / span 2;
                 font-size: 2em;
-                padding-top: 7px;
+                padding-top: 0.25em;
                 text-align: center;
                 cursor: default;
             }
             .filters>div{
                 display: flex;
                 flex-wrap: wrap;
-                gap: 5px;
+                gap: 0.25em;
             }
             .filters select{
                 font-size: 1em;
@@ -146,74 +146,117 @@
                 cursor: pointer;
             }
 
+            ul {
+                padding-left: 1.5em;
+            }
+            ul >* {
+                margin: 0.5em;
+            }
             .list {
                 list-style-type:none;
                 margin: 0;
                 padding: 0;
                 overflow: auto;
             }
-            li {
+            .list >* {
+                margin: 0.3em;
+            }
+            .list li {
                 background-color: #eeeeee;
-                margin: 5px;
-                padding-left: 5px;
-                padding-right: 5px;
+                padding-left: 0.5em;
+                padding-right: 0.5em;
+                gap: 0.25em;
                 min-height: calc(2.5em + 4px);
                 display: flex;
-                align-items: center;
-                cursor: default;
-                position: relative;
             }
-            li:hover {
+            .list li:hover {
                 background-color: #dddddd;
             }
-            li * {
+            .list li * {
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 text-align: center;
             }
+            .list li >:first-child {
+                flex-grow: 1;
+                gap: 0.25em;
+            }
             
-            .approachGrid{
+            .approachGrid {
                 display: grid;
                 grid-template-columns: auto auto;
-                gap: 10px;
+                box-sizing: border-box;
+                width: 90%;
+                margin-left: 5%;
+                padding-top: 0.25em;
+                padding-bottom: 0.25em;
+                padding-right: 1em;
+                border-left: 1px solid black;
+                border-right: 1px solid black;
+                border-bottom: 1px solid black;
+                border-bottom-left-radius: 25px;
+                border-bottom-right-radius: 25px;
+                overflow: hidden;
+                animation: skillExpand 0.2s;
+                animation-fill-mode: forwards;               
+            }
+            /* ADD A SHRINKING ANIMATION? */
+            @keyframes skillExpand {
+                from {
+                    max-height: 0;
+                }
+                to {
+                    max-height: 200px;
+                }
             }
             .approachGrid >:first-child {
                 display: flex;
                 grid-row: span 5;
+                margin-right: 1em;
+                padding: 0.5em;
                 justify-content: center;
+                text-align: center;
                 align-items: center;
+                border-right: 1px solid black;
             }            
-            .approachLine{
+            .approachLine {
                 display: flex;
                 gap: 10px;
                 align-items: center;
+                min-height: 2em;
+                white-space: nowrap;
             }
-            
+            .approachLine:hover {
+                background-color: #dddddd;
+            }
 
             .list .rank {
                 font-weight: bold;
+                width: 0.75em;
+            }
+            .list .largeIcon {
                 width: 1em;
-            }
-            .list .large.icon {
                 font-size: 1.5em;
-                width: 1.25em;                
-            }
-            .offset.small.icon {
-                padding-top: 2px;
-            }
-            .offset.large.icon {
                 padding-top: 4px;
             }
-            .list .curriculaRanks {
+            .list .smallIcon {
+                font-size: 1.25em;
+                padding-top: 2px;
+            }
+            .list .gridIcons {
                 display: grid;
                 grid-template-rows: 1.25em 1.25em;
                 grid-auto-flow: column;
+                padding-top: 4px;
             }
-            .curriculaRanks :last-child:nth-child(odd) {
+            .gridIcons :last-child:nth-child(odd) {
                 grid-row: span 2;
                 align-self: center;
             }
             .list .addSymbol {
                 font-size: 1.75em;
-                width: 0.7em;
+                padding-top: 1px;
             }
             
             .list .available {border: 1px solid black;}
@@ -261,20 +304,23 @@
                 background-color: white;
                 border: 5px solid black;
                 border-radius: 25px;
-                padding: 20px;
+                padding-top: 1.5em;
+                padding-bottom: 1.5em;
+                padding-left: 1em;
+                padding-right: 1em;
                 overflow: auto;
             }
             #viewer.appear {
-                animation: expand 0.2s;
+                animation: viewerExpand 0.2s;
             }
             #viewer.visible {
                 top: 10%;
                 height: 80%;
             }
             #viewer.disappear {                
-                animation: expand 0.2s reverse;
+                animation: viewerExpand 0.2s reverse;
             }
-            @keyframes expand {
+            @keyframes viewerExpand {
                 from {
                     top: var(--liTop);
                     height: 0;
@@ -293,8 +339,10 @@
                 background-color: #eeeeee;
                 border-top: 1px solid black;
                 border-bottom: 1px solid black;
-                padding-top: 5px;
-                padding-bottom: 3px;
+                padding-top: 0.3em;
+                padding-bottom: 0.2em;
+                margin-top: 1em;
+                margin-bottom: 0.8em;
                 text-align: center;
             }
             #viewer .opportunities {
@@ -355,19 +403,19 @@
                 </div>                   
             </button>
             <div id="navbar">
-                <button class="character" onclick="contentManager.changeTab('character')">&#xe902</button>
-                <button class="rings" onclick="contentManager.changeTab('rings')">&#xe920</button>
-                <button class="skills" onclick="contentManager.changeTab('skills')">&#xe917</button>
-                <button class="techniques" onclick="contentManager.changeTab('techniques')">&#xe91d</button>
-                <button class="experience" onclick="contentManager.changeTab('experience')">&#xe922</button>
-                <button class="items" onclick="contentManager.changeTab('items')">&#xe924</button>
+                <button class="character" onclick="contentManager.changeTab('character')">&#xe903</button>
+                <button class="rings" onclick="contentManager.changeTab('rings')">&#xe924</button>
+                <button class="skills" onclick="contentManager.changeTab('skills')">&#xe91a</button>
+                <button class="techniques" onclick="contentManager.changeTab('techniques')">&#xe921</button>
+                <button class="experience" onclick="contentManager.changeTab('experience')">&#xe926</button>
+                <button class="items" onclick="contentManager.changeTab('items')">&#xe928</button>
                 <button class="beginner" onclick="contentManager.changeTab('beginner')">&#xe901</button>
             </div>
             <div class="page character columnContainer">WIP</div>
             <div class="page rings columnContainer">WIP</div>
             <div class="page skills columnContainer">
                 <div class="filters">
-                    <span>&#xe90e</span>
+                    <span>&#xe90f</span>
                     <div>
                         <select id="skillGroupFilter">
                             <option value="any">Tout groupe</option>
@@ -390,7 +438,7 @@
                     <div>
                         <select id="skillAvailabilityFilter">
                             <option value="learned">Compétences apprises</option>                            
-                            <option value="upgradable">Compétences améliorables</option>
+                            <option value="upgradable">Améliorable</option>
                             <option value="all">Liste complète</option>
                             
                         </select>
@@ -407,7 +455,7 @@
             </div>
             <div class="page techniques columnContainer">
                 <div class="filters">
-                    <span>&#xe90e</span>
+                    <span>&#xe90f</span>
                     <div>
                         <select id="techRankFilter">
                             <option value="any">Tout rang</option>
@@ -427,18 +475,28 @@
                             <option value="shūji">Shūji</option>
                             <option value="mahō">Mahō</option>
                             <option value="ninjutsu">Ninjutsu</option>
-                            <option value="school ability">Capa. école</option>
-                            <option value="mastery ability">Capa. maîtrise</option>
-                            <option value="title effect">Effets titre</option>
-                            <option value="title ability">Capa. titre</option>
+                            <option value="school ability">Capacité d'école</option>
+                            <option value="mastery ability">Capacité de maîtrise</option>
+                            <option value="title effect">Effets de titre</option>
+                            <option value="title ability">Capacité de titre</option>
+                        </select>
+                        <select id="techActivationFilter">
+                            <option value="any">Toute activation</option>
+                            <option value="action">Action</option>
+                            <option value="downtime">Temps mort</option>
+                            <option value="opportunity">Aubaine</option>
+                            <option value="void">Point de vide</option>
+                            <option value="limited">Limité</option>
+                            <option value="permanent">Permanent</option>
                         </select>
                         <select id="techRingFilter">
                             <option value="any">Tout anneau</option>
+                            <option value="none">Aucun anneau</option>
                             <option value="air">Air</option>
                             <option value="earth">Terre</option>
                             <option value="fire">Feu</option>
                             <option value="water">Eau</option>
-                            <option value="void">Vide</option>
+                            <option value="void">Vide</option>                            
                         </select>
                     </div>
                     <div>

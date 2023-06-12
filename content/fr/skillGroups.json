@@ -1,17 +1,27 @@
 {
     "artisan":{
-        "name":"Compétence artisanale"
+        "name":"Artisan",
+        "skillType":"Compétence artisanale",
+        "approaches":"Approches artisanales"
     },
     "social":{
-        "name":"Compétence sociale"
+        "name":"Social",
+        "skillType":"Compétence sociale",
+        "approaches":"Approches sociales"
     },
     "scholar":{
-        "name":"Compétence savante"
+        "name":"Savant",
+        "skillType":"Compétence savante",
+        "approaches":"Approches savantes"
     },
     "martial":{
-        "name":"Compétence martiale"
+        "name":"Martial",
+        "skillType":"Compétence martiale",
+        "approaches":"Approches martiales"
     },
     "trade":{
-        "name":"Compétence professionnelle"
+        "name":"Professionnel",
+        "skillType":"Compétence professionnelle",
+        "approaches":"Approches professionnelles"
     }
 }

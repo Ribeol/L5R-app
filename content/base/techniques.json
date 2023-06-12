@@ -556,27 +556,22 @@
     },
     "Cleansing Rite":{
         "typeRef":"ritual",
-        "ringRef":"air",
         "rank":1
     },
     "Commune with the Spirits":{
         "typeRef":"ritual",
-        "ringRef":"air",
         "rank":1
     },
     "Divination":{
         "typeRef":"ritual",
-        "ringRef":"air",
         "rank":1
     },
     "Tea Ceremony":{
         "typeRef":"ritual",
-        "ringRef":"air",
         "rank":2
     },
     "Threshold Barrier":{
         "typeRef":"ritual",
-        "ringRef":"air",
         "rank":1
     },
     "Artisan’s Appraisal":{

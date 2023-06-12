@@ -58,11 +58,13 @@
         ],
         "ringFilterOptions":[
             {"value":"any","text":"Any ring"},
+            {"value":"none","text":"No ring"},
             {"value":"air","text":"Air"},
             {"value":"earth","text":"Earth"},
             {"value":"fire","text":"Fire"},
             {"value":"water","text":"Water"},
             {"value":"void","text":"Void"}
+            
         ],
         "availabilityFilterOptions":[
             {"value":"learned","text":"Learned techniques"},
@@ -76,11 +78,33 @@
             {"value":"excluded","text":"Extra-curricular"},
             {"value":"included","text":"Curricular"},
             {"value":"current","text":"Current rank"}
-        ],
-        "rank":"Rank",
-        "newOpportunities":"New Opportunities"
+        ]
     },
     "experience":{},
     "items":{},
-    "notes":{}
+    "notes":{},
+    "viewer":{
+        "rank":"Rank",
+        "newOpportunities":"New Opportunities",
+        "invocationOpportunities":"Opportunities for Invocations",
+        "activationKeywords":{
+            "ring":[" ring"],
+            "cost":["as a"],
+            "action":[" action"],
+            "downtime":[" downtime activity"],
+            "tn":[" tn "],
+            "opportunity":["|opportunityicon|"],
+            "voidPoint":[" void point"],
+            "timesPer":["once per "," times per "]
+        },
+        "exampleOpportunities":{
+            "title":"Examples of opportunities",
+            "general":"General use",
+            "conflict":"Conflicts and Martial skills",
+            "initiative":"Initiative",
+            "skill":"Skill",
+            "downtime":"Downtime"            
+        },
+        "stanceEffect":"Stance Effect"        
+    }
 }

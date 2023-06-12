@@ -178,7 +178,7 @@
         ],
         "activation":[
             "Activation: When you make a Martial Arts [Melee, Ranged, or Unarmed] (Air) check, you may spend |opportunityIcon| in the following way:",
-            "Air |opportunityIcon|+: Reserve one of your rolled dice, plus one additional die per |opportunityIcon|opportunityIcon| spent this way. These dice become dropped dice. When making a check with the same skill before the end of your next turn, you may roll one fewer |ringIcon| per reserved |ringIcon| and one fewer |skillIcon| per reserved |skillIcon|, then add the reserved dice to your roll. These dice count as rolled dice, but are added set to the results they had when they were reserved."
+            "Air |opportunityIcon|+: Reserve one of your rolled dice, plus one additional die per |opportunityIcon|opportunityIcon| spent this way. These dice become dropped dice. When making a check with the same skill before the end of your next turn, you may roll one fewer |ringDieIcon| per reserved |ringDieIcon| and one fewer |skillDieIcon| per reserved |skillDieIcon|, then add the reserved dice to your roll. These dice count as rolled dice, but are added set to the results they had when they were reserved."
         ]
     },
     "Striking as Earth":{
@@ -1029,7 +1029,7 @@
             "Activation: As a Support action, you may make a TN 1 Theology (Air) check to summon a spear made of swirling wind into your hand."
         ],
         "effects":[
-            "Effects: If you succeed, you summon and ready a spear made of wind, visible only by a wispy outline. It has the Concealable quality. When you make an Attack or Support action check using the invisible spear, during Step 5: Choose Kept Dice, add a kept |ringIcon| set to an |opportunityIcon| result. The spear persists until the end of any turn in which it leaves your grip or until the end of the encounter, at which point it dissipates into wind."
+            "Effects: If you succeed, you summon and ready a spear made of wind, visible only by a wispy outline. It has the Concealable quality. When you make an Attack or Support action check using the invisible spear, during Step 5: Choose Kept Dice, add a kept |ringDieIcon| set to an |opportunityIcon| result. The spear persists until the end of any turn in which it leaves your grip or until the end of the encounter, at which point it dissipates into wind."
         ],
         "newOpportunities":[
             "Air |opportunityIcon|: The weapon you summon can be any kind of melee or ranged weapon instead of a spear.",
@@ -1472,7 +1472,7 @@
             "Activation: As a Support action, you may make a TN 1 Theology (Fire) check targeting yourself."
         ],
         "effects":[
-            "Effects: If you succeed, you augment your target’s wits and cunning with the Fortune’s favor. When making checks, the target adds a kept |ringIcon| set to an |opportunityIcon|strifeIcon| result. This effect persists for one round, plus additional rounds equal to your bonus successes."
+            "Effects: If you succeed, you augment your target’s wits and cunning with the Fortune’s favor. When making checks, the target adds a kept |ringDieIcon| set to an |opportunityIcon|strifeIcon| result. This effect persists for one round, plus additional rounds equal to your bonus successes."
         ],
         "newOpportunities":[
             "Fire |opportunityIcon|: You may target another character at range 0–2 instead of yourself."
@@ -2036,11 +2036,11 @@
         ],
         "effects":[
             "Effects: If you succeed, choose one of the following omens that you see in the target’s near future:",
-            "Omen of the Azure Dragon: The next time the target performs a check using a skill from the Artisan skill group this game session, the target adds a kept |ringIcon| set to an |opportunityIcon|strifeIcon| result.",
-            "Omen of the Black Tortoise: The next time the target performs a check using a skill from the Scholar skill group this game session, the target adds a kept |ringIcon| set to an |opportunityIcon|strifeIcon| result.",
-            "Omen of the White Tiger: The next time the target performs a check using a skill from the Martial skill group this game session, the target adds a kept |ringIcon| set to an |opportunityIcon|strifeIcon| result.",
-            "Omen of the Vermilion Bird: The next time the target performs a check using a skill from the Social skill group this game session, the target adds a kept |ringIcon| set to an |opportunityIcon|strifeIcon| result.",
-            "Omen of the Weaver and the Cowherd: The next time the target performs a check using a skill from the Trade skill group this game session, the target adds a kept |ringIcon| set to an |opportunityIcon|strifeIcon| result.",
+            "Omen of the Azure Dragon: The next time the target performs a check using a skill from the Artisan skill group this game session, the target adds a kept |ringDieIcon| set to an |opportunityIcon|strifeIcon| result.",
+            "Omen of the Black Tortoise: The next time the target performs a check using a skill from the Scholar skill group this game session, the target adds a kept |ringDieIcon| set to an |opportunityIcon|strifeIcon| result.",
+            "Omen of the White Tiger: The next time the target performs a check using a skill from the Martial skill group this game session, the target adds a kept |ringDieIcon| set to an |opportunityIcon|strifeIcon| result.",
+            "Omen of the Vermilion Bird: The next time the target performs a check using a skill from the Social skill group this game session, the target adds a kept |ringDieIcon| set to an |opportunityIcon|strifeIcon| result.",
+            "Omen of the Weaver and the Cowherd: The next time the target performs a check using a skill from the Trade skill group this game session, the target adds a kept |ringDieIcon| set to an |opportunityIcon|strifeIcon| result.",
             "If you fail, the GM chooses one of the above omens instead. The target cannot receive another divination until the next game session."
         ],
         "newOpportunities":[
@@ -2375,7 +2375,7 @@
             "Activation: As a Support action, you may make a TN 2 Command (Fire) or Performance (Fire) check targeting any number of characters in the scene (or one cohort in a mass battle)."
         ],
         "effects":[
-            "Effects: If you succeed, the targets are energized and excited by your rhetoric. After Step 5: Choose Kept Dice, each target adds a kept |ringIcon| set to an |opportunityIcon|strifeIcon| result. This effect persists until the end of your next turn."
+            "Effects: If you succeed, the targets are energized and excited by your rhetoric. After Step 5: Choose Kept Dice, each target adds a kept |ringDieIcon| set to an |opportunityIcon|strifeIcon| result. This effect persists until the end of your next turn."
         ],
         "newOpportunities":[
             "Fire |opportunityIcon|+: In a skirmish, each enemy in the scene suffers 1 strife per |opportunityIcon| spent this way.",

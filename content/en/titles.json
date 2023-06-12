@@ -6,7 +6,7 @@
         ],
         "finalAbility":{
             "name":"Voice of Authority",
-            "description":[
+            "activation":[
                 "Once per game session when making a Scheme or Support action check using a Social skill, you may choose additional targets equal to your Glory rank. You cannot choose any additional target with vigilance higher than the highest among your initial targets."
             ]
         }
@@ -18,7 +18,7 @@
         ],
         "finalAbility":{
             "name":"Voice of Authority",
-            "description":[
+            "activation":[
                 "Once per game session when making a Scheme or Support action check using a Social skill, you may choose additional targets equal to your Glory rank. You cannot choose any additional target with vigilance higher than the highest among your initial targets."
             ]
         }
@@ -30,7 +30,7 @@
         ],
         "finalAbility":{
             "name":"Voice of Authority",
-            "description":[
+            "activation":[
                 "Once per game session when making a Scheme or Support action check using a Social skill, you may choose additional targets equal to your Glory rank. You cannot choose any additional target with vigilance higher than the highest among your initial targets."
             ]
         }

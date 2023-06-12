@@ -6,7 +6,7 @@
         ],
         "finalAbility":{
             "name":"Voix de l’autorité",
-            "description":[
+            "activation":[
                 "Une fois par session de jeu, lorsque vous effectuez un test d’action de Manipulation ou de Soutien en utilisant une compétence sociale, vous pouvez choisir un nombre de cibles supplémentaires égal à votre rang de Gloire. Ces cibles supplémentaires ne peuvent pas avoir une vigilance supérieure à la plus élevée parmi vos cibles initiales."
             ]
         }
@@ -18,7 +18,7 @@
         ],
         "finalAbility":{
             "name":"Voix de l’autorité",
-            "description":[
+            "activation":[
                 "Une fois par session de jeu, lorsque vous effectuez un test d’action de Manipulation ou de Soutien en utilisant une compétence sociale, vous pouvez choisir un nombre de cibles supplémentaires égal à votre rang de Gloire. Ces cibles supplémentaires ne peuvent pas avoir une vigilance supérieure à la plus élevée parmi vos cibles initiales."
             ]
         }
@@ -30,7 +30,7 @@
         ],
         "finalAbility":{
             "name":"Voix de l’autorité",
-            "description":[
+            "activation":[
                 "Une fois par session de jeu, lorsque vous effectuez un test d’action de Manipulation ou de Soutien en utilisant une compétence sociale, vous pouvez choisir un nombre de cibles supplémentaires égal à votre rang de Gloire. Ces cibles supplémentaires ne peuvent pas avoir une vigilance supérieure à la plus élevée parmi vos cibles initiales."
             ]
         }

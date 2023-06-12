@@ -178,7 +178,7 @@
         ],
         "activation":[
             "Activation : lorsque vous effectuez un test d’Arts martiaux (Corps à corps, Distance ou Mains nues) (Air), vous pouvez dépenser |opportunityIcon| comme suit :",
-            "|opportunityIcon|+ de l’Air : réservez l’un des dés lancés, ainsi que de 1 dé supplémentaire par |opportunityIcon|opportunityIcon| dépensés de cette façon. Lorsque vous effectuez un autre test avec la même compétence avant la fin de votre prochain tour, vous avez la possibilité de lancer un |ringIcon| de moins par |ringIcon| préalablement réservé, ainsi qu’un |skillIcon| par |skillIcon| réservé, afin de les remplacer par les dés réservés lors de votre lancer précédent. Ces dés sont considérés comme des dés lancés, mais on les ajoute au résultat en les positionnant sur le résultat qu’ils affichaient lorsqu’ils ont été réservés."
+            "|opportunityIcon|+ de l’Air : réservez l’un des dés lancés, ainsi que 1 dé supplémentaire par |opportunityIcon|opportunityIcon| dépensés de cette façon. Lorsque vous effectuez un autre test avec la même compétence avant la fin de votre prochain tour, vous avez la possibilité de lancer un |ringDieIcon| de moins par |ringDieIcon| préalablement réservé, ainsi qu’un |skillDieIcon| par |skillDieIcon| réservé, afin de les remplacer par les dés réservés lors de votre lancer précédent. Ces dés sont considérés comme des dés lancés, mais on les ajoute au résultat en les positionnant sur le résultat qu’ils affichaient lorsqu’ils ont été réservés."
         ]
     },
     "Striking as Earth":{
@@ -1031,7 +1031,7 @@
             "Activation : au prix d’une action de Soutien, effectuez un test de Théologie (Air) ND 1 pour invoquer au creux de vos mains une lance de vent."
         ],
         "effects":[
-            "Effets : en cas de réussite, vous conjurez et apprêtez une lance constituée de vent. Uniquement soulignée par un contour subtil, cette arme presque invisible bénéficie de la propriété Discret. Lorsque vous effectuez une action d’Attaque ou de Soutien à l’aide de cette lance invisible, ajoutez au résultat 1 |ringIcon| gardé et affichant |opportunityIcon| lors de l’Étape 5 : Choisir les dés gardés. La lance demeure solide jusqu’à la fin du tour où vous la lâchez, ou jusqu’à la fin de la rencontre — elle se dissipe alors dans le néant."
+            "Effets : en cas de réussite, vous conjurez et apprêtez une lance constituée de vent. Uniquement soulignée par un contour subtil, cette arme presque invisible bénéficie de la propriété Discret. Lorsque vous effectuez une action d’Attaque ou de Soutien à l’aide de cette lance invisible, ajoutez au résultat 1 |ringDieIcon| gardé et affichant |opportunityIcon| lors de l’Étape 5 : Choisir les dés gardés. La lance demeure solide jusqu’à la fin du tour où vous la lâchez, ou jusqu’à la fin de la rencontre — elle se dissipe alors dans le néant."
         ],
         "newOpportunities":[
             "|opportunityIcon| de l’Air : vous pouvez invoquer n’importe quelle arme de corps à corps ou à distance au lieu d’une lance.",
@@ -1473,7 +1473,7 @@
             "Activation : au prix d’une action de Soutien, effectuez un test de Théologie (Feu) ND 1 sur vous-même."
         ],
         "effects":[
-            "Effets : en cas de réussite, vous améliorez l’intelligence de la cible, qui acquiert une astuce remarquable octroyée par la Fortune. Lors de ses tests suivants, la cible ajoute 1 |ringIcon| gardé affichant |opportunityIcon|strifeIcon|. Cet effet persiste pendant 1 round, plus 1 par succès bonus."
+            "Effets : en cas de réussite, vous améliorez l’intelligence de la cible, qui acquiert une astuce remarquable octroyée par la Fortune. Lors de ses tests suivants, la cible ajoute 1 |ringDieIcon| gardé affichant |opportunityIcon|strifeIcon|. Cet effet persiste pendant 1 round, plus 1 par succès bonus."
         ],
         "newOpportunities":[
             "|opportunityIcon| du Feu : vous pouvez cibler un autre personnage situé à portée 0-2 plutôt que vous-même."
@@ -2039,11 +2039,11 @@
         "activation":[
             "Activation : au prix d’une activité de temps mort, effectuez un test de Théologie (Vide) ND 2 prenant pour cible un autre personnage pour entrevoir son avenir.",
             "En cas de réussite, vous lisez dans l’avenir de la cible l’un des présages suivants, que vous choisissez :",
-            "Présage du Dragon azur : lors du prochain test de compétence artisanale que la cible effectue lors de cette session, elle ajoute au résultat 1 |ringIcon| gardé et affichant |opportunityIcon|strifeIcon|.",
-            "Présage de la Tortue noire : lors du prochain test de compétence savante que la cible effectue lors de cette session, elle ajoute au résultat 1 |ringIcon| gardé et affichant |opportunityIcon|strifeIcon|.",
-            "Présage du Tigre blanc : lors du prochain test de compétence martiale que la cible effectue lors de cette session, elle ajoute au résultat 1 |ringIcon| gardé et affichant |opportunityIcon|strifeIcon|.",
-            "Présage de l’Oiseau vermillon : lors du prochain test de compétence sociale que la cible effectue lors de cette session, elle ajoute au résultat 1 |ringIcon| gardé et affichant |opportunityIcon|strifeIcon|.",
-            "Présage de la Tisserande et du Bouvier : lors du prochain test de compétence professionnelle que la cible effectue lors de cette session, elle ajoute au résultat 1 |ringIcon| gardé et affichant |opportunityIcon|strifeIcon|.",
+            "Présage du Dragon azur : lors du prochain test de compétence artisanale que la cible effectue lors de cette session, elle ajoute au résultat 1 |ringDieIcon| gardé et affichant |opportunityIcon|strifeIcon|.",
+            "Présage de la Tortue noire : lors du prochain test de compétence savante que la cible effectue lors de cette session, elle ajoute au résultat 1 |ringDieIcon| gardé et affichant |opportunityIcon|strifeIcon|.",
+            "Présage du Tigre blanc : lors du prochain test de compétence martiale que la cible effectue lors de cette session, elle ajoute au résultat 1 |ringDieIcon| gardé et affichant |opportunityIcon|strifeIcon|.",
+            "Présage de l’Oiseau vermillon : lors du prochain test de compétence sociale que la cible effectue lors de cette session, elle ajoute au résultat 1 |ringDieIcon| gardé et affichant |opportunityIcon|strifeIcon|.",
+            "Présage de la Tisserande et du Bouvier : lors du prochain test de compétence professionnelle que la cible effectue lors de cette session, elle ajoute au résultat 1 |ringDieIcon| gardé et affichant |opportunityIcon|strifeIcon|.",
             "En cas d’échec, c’est le MJ qui choisit l’un des présages ci-dessus. La cible ne peut pas faire l’objet d’une autre séance de divination jusqu’à la fin de la session."
         ],
         "newOpportunities":[
@@ -2378,7 +2378,7 @@
             "Activation : au prix d’une action de Soutien, effectuez un test de Commandement (Feu) ou de Représentations (Feu) ND 2 prenant pour cible autant de personnages présents que vous le souhaitez (ou votre unité lors d’une bataille rangée)."
         ],
         "effects":[
-            "Effets : en cas de réussite, les cibles sont galvanisées par votre rhétorique. Au terme de l’Étape 5 : Choisir les dés gardés, chaque cible ajoute à son résultat 1 |ringIcon| gardé et affichant |opportunityIcon|strifeIcon|. Cet effet persiste jusqu’à la fin de votre prochain tour."
+            "Effets : en cas de réussite, les cibles sont galvanisées par votre rhétorique. Au terme de l’Étape 5 : Choisir les dés gardés, chaque cible ajoute à son résultat 1 |ringDieIcon| gardé et affichant |opportunityIcon|strifeIcon|. Cet effet persiste jusqu’à la fin de votre prochain tour."
         ],
         "newOpportunities":[
             "|opportunityIcon|+ du Feu : lors d’une escarmouche, chaque ennemi présent reçoit 1 point de Conflit par |opportunityIcon| dépensé de cette façon.",

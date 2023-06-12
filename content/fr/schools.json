@@ -7,14 +7,14 @@
         ],
         "initialAbility":{
             "name":"La voie du Crabe",
-            "description":[
+            "activation":[
                 "Ignorez la propriété Encombrant de l’armure que vous portez.",
                 "Une fois par round, vous pouvez réduire la gravité d’un coup critique (minimum 0) en lui retirant une valeur égale à la somme de la Résistance physique de votre armure et de votre rang d’école. Cette réduction s’applique avant le test destiné à résister au coup critique."
             ]
         },
         "finalAbility":{
             "name":"La montagne ne recule pas",
-            "description":[
+            "activation":[
                 "Au début de votre tour, vous pouvez dépenser 1 point de Vide. Ignorez alors tous vos états, tous les terrains et tous les effets négatifs persistants des techniques et des capacités. N’appliquez pas vos désavantages aux tests. Si vous mourez, vous vous accrochez à la vie encore quelques instants (vous décéderez malgré tout quand l’effet prendra fin). Cet effet persiste jusqu’à la fin de votre prochain tour."
             ]
         }
@@ -27,13 +27,13 @@
         ],
         "initialAbility":{
             "name":"Dérobade de la flamme fugitive",
-            "description":[
+            "activation":[
                 "Vous pouvez changer de posture après avoir effectué une action d’Attaque. Ajoutez alors votre rang d’école au ND des tests d’Attaque effectués par les créatures d’un gabarit supérieur ou égal à trois qui vous prennent pour cible jusqu’au début de votre prochain tour."
             ]
         },
         "finalAbility":{
             "name":"Entaille du tueur",
-            "description":[
+            "activation":[
                 "Ajoutez votre rang en Survie à la gravité des coups critiques que vous infligez à des cibles d’un gabarit supérieur ou égal à trois."
             ]
         }
@@ -46,13 +46,13 @@
         ],
         "initialAbility":{
             "name":"Maître bâtisseur",
-            "description":[
-                "Une fois par scène, lorsque vous effectuez un test destiné à utiliser un objet de votre fabrication, vous pouvez ajouter au résultat un nombre de |ringIcon| gardés supplémentaires affichant |opportunityIcon| égal à votre rang d’école."
+            "activation":[
+                "Une fois par scène, lorsque vous effectuez un test destiné à utiliser un objet de votre fabrication, vous pouvez ajouter au résultat un nombre de |ringDieIcon| gardés supplémentaires affichant |opportunityIcon| égal à votre rang d’école."
             ]
         },
         "finalAbility":{
             "name":"Ingénieuse conception",
-            "description":[
+            "activation":[
                 "Vous pouvez ajouter ou retirer une propriété d’équipement à un objet que vous fabriquez. Vous devez décrire comment cet objet gagne (ou perd) cette propriété habituelle. Le MJ est seul juge de la pertinence de cette modification."
             ]
         }
@@ -65,13 +65,13 @@
         ],
         "initialAbility":{
             "name":"Regarder dans les ténèbres",
-            "description":[
+            "activation":[
                 "Une fois par round, lorsque vous effectuez un test visant ou impliquant une créature Souillée, vous pouvez choisir un nombre de dés gardés contenant |strifeIcon| inférieur ou égal à votre rang d’école. Changez leur résultat en |successIcon|. Vous ne pouvez utiliser cette capacité que si vous êtes sûr que la cible est Souillée."
             ]
         },
         "finalAbility":{
             "name":"Purifier le mal",
-            "description":[
+            "activation":[
                 "Une fois par session de jeu, vous pouvez dépenser 1 point de Vide pour utiliser une invocation contre toutes les créatures maléfiques dans votre ligne de vue. Votre prochaine technique d’invocation affectera toutes les créatures Souillées dans sa portée maximale, au lieu de ses cibles habituelles."
             ]
         }
@@ -84,14 +84,14 @@
         ],
         "initialAbility":{
             "name":"La voie de la Carpe",
-            "description":[
+            "activation":[
                 "Au prix d’une activité de temps mort et si vous avez accès à un marché, vous pouvez acquérir des objets. Leur nombre sera compris entre 1 et votre rang d’école, et leur rareté inférieure ou égale à 4. Vous pouvez à la place acquérir un seul objet dont la rareté est inférieure ou égale à 4 plus votre rang d’école. Vous n’avez pas besoin de faire de test, de dépenser d’argent,ou bien de sacrifier ou de mettre en jeu des points d’Honneur ou de Gloire. Que ces objets soient indignes de votre statut ou Interdits n’a pas d’importance (les montrer ouvertement par la suite est un tout autre problème). Le MJ peut, comme à l’accoutumée, appliquer des ajustements sur la rareté de l’objet en fonction du marché auquel vous avez accès."
             ]
         },
         "finalAbility":{
             "name":"Les trésors de la carpe",
-            "description":[
-                "Une fois par session de jeu, vous pouvez offrir un objet en votre possession. Ce faisant, vous retirez la rareté de l’objet au ND du prochain test de compétence sociale que vous effectuez contre le destinataire (ND minimum 1). Chaque point qui aurait dû réduire le ND en dessous de 1 vous permet d’ajouter 1 |ringIcon| gardé supplémentaire affichant |opportunityIcon| au résultat de votre test."
+            "activation":[
+                "Une fois par session de jeu, vous pouvez offrir un objet en votre possession. Ce faisant, vous retirez la rareté de l’objet au ND du prochain test de compétence sociale que vous effectuez contre le destinataire (ND minimum 1). Chaque point qui aurait dû réduire le ND en dessous de 1 vous permet d’ajouter 1 |ringDieIcon| gardé supplémentaire affichant |opportunityIcon| au résultat de votre test."
             ]
         }
     },
@@ -103,13 +103,13 @@
         ],
         "initialAbility":{
             "name":"Artisan spirituel",
-            "description":[
-                "Lorsque vous effectuez un test pour conjurer mystiquement une illusion, ou bien pour conjurer, améliorer ou éveiller un objet, vous pouvez ajouter au résultat un nombre de |ringIcon| gardés affichant |opportunityIcon| égal à votre rang d’école."
+            "activation":[
+                "Lorsque vous effectuez un test pour conjurer mystiquement une illusion, ou bien pour conjurer, améliorer ou éveiller un objet, vous pouvez ajouter au résultat un nombre de |ringDieIcon| gardés affichant |opportunityIcon| égal à votre rang d’école."
             ]
         },
         "finalAbility":{
             "name":"Éveiller l’esprit endormi",
-            "description":[
+            "activation":[
                 "Une fois par session de jeu, au prix d’une activité de temps mort, vous pouvez effectuer un test de compétence artisanale (Vide) ND 4 pour éveiller l’esprit d’un objet. En cas de réussite, ce dernier devient jusqu’à la fin de la session un nemuranai doté d’une invocation scellée que vous choisissez en fonction de son passé. Le MJ est seul juge de la pertinence de l’invocation sélectionnée."
             ]
         }
@@ -122,13 +122,13 @@
         ],
         "initialAbility":{
             "name":"Vigilance de l’esprit",
-            "description":[
+            "activation":[
                 "Une fois par round, vous pouvez intercepter les dégâts physiques infligés à un autre personnage situé à portée d’une de vos armes de corps à corps apprêtées. Vous subissez alors un nombre de points de Fatigue égal à votre rang d’école, et retirez le double aux dégâts subis par la cible de l’attaque."
             ]
         },
         "finalAbility":{
             "name":"Dans l’ombre de ma lame",
-            "description":[
+            "activation":[
                 "Lorsque vous utilisez l’action Protéger, vous pouvez choisir de défendre un nombre de personnages inférieur ou égal à votre rang d’Arts martiaux (corps à corps) situés dans la portée de votre arme, et non un seul."
             ]
         }
@@ -141,13 +141,13 @@
         ],
         "initialAbility":{
             "name":"Communication silencieuse",
-            "description":[
-                "Une fois par scène, lorsque vous effectuez un test pour persuader ou influencer un interlocuteur, vous pouvez ajouter au résultat un nombre de |ringIcon| gardés affichant |opportunityIcon| égal à votre rang d’école."
+            "activation":[
+                "Une fois par scène, lorsque vous effectuez un test pour persuader ou influencer un interlocuteur, vous pouvez ajouter au résultat un nombre de |ringDieIcon| gardés affichant |opportunityIcon| égal à votre rang d’école."
             ]
         },
         "finalAbility":{
             "name":"La grâce de la Dame",
-            "description":[
+            "activation":[
                 "Une fois par scène, vous pouvez dépenser 1 point de Vide pour réduire votre Conflit à 0. Chaque allié présent peut alors éliminer un nombre de points de Conflit égal à votre rang d’Honneur."
             ]
         }
@@ -160,13 +160,13 @@
         ],
         "initialAbility":{
             "name":"La voie de la Grue",
-            "description":[
+            "activation":[
                 "Une fois par round, vous pouvez ajouter ou retirer à la gravité d’un coup critique que vous venez d’infliger un nombre inférieur ou égal à votre rang d’école."
             ]
         },
         "finalAbility":{
             "name":"Frappe instinctive",
-            "description":[
+            "activation":[
                 "Une fois par scène, au prix d’une action d’Attaque et de Déplacement, vous pouvez effectuer un test d’Arts martiaux (corps à corps) (Vide) avec un katana ou un wakizashi rengainé contre un personnage situé à portée 2-3. Le ND de ce test est égal à la Vigilance de la cible.",
                 "Vous vous déplacez immédiatement à portée 1 de la cible et dégainez. En cas de réussite, votre cible subit un coup critique dont la gravité est égale à la Dangerosité de l’arme utilisée, plus vos succès bonus.",
                 "|opportunityIcon|+ : pour chaque |opportunityIcon| dépensé de cette façon, vous choisissez un personnage situé à portée 0–2 de votre cible. Il subit les états Hébété Et Désorienté.",
@@ -182,13 +182,13 @@
         ],
         "initialAbility":{
             "name":"Transmutation élémentaire",
-            "description":[
+            "activation":[
                 "Lorsque vous lancez une invocation, vous pouvez choisir un anneau différent pour effectuer votre test. Quand vous utilisez cette capacité d’école, vous ne pouvez activer aucun |opportunityIcon| de l’élément original de l’invocation, mais vous pouvez activer |opportunityIcon| du nouvel élément. Vous pouvez utiliser cette capacité d’école un nombre de fois égal à votre rang d’école à chaque session."
             ]
         },
         "finalAbility":{
             "name":"Expérimente et adapte—toi",
-            "description":[
+            "activation":[
                 "Ajoutez votre rang en Théologie à votre Résistance surnaturelle contre les invocations de l’Air, de l’Eau, du Feu et de la Terre. Quand un autre personnage vient de lancer une telle invocation en vous prenant pour cible, vous pouvez dépenser 1 point de Vide pour la lancer aussitôt vous aussi, même si vous ne la connaissez pas."
             ]
         }
@@ -201,13 +201,13 @@
         ],
         "initialAbility":{
             "name":"La méthode Kitsuki",
-            "description":[
-                "Lorsque vous effectuez un test pour enquêter, vous pouvez considérer que le rang de la compétence utilisée, quelle qu’elle soit, est égal à votre rang d’école. Si votre rang dans la compétence en question est supérieur ou égal à votre rang d’école, ou s’il est égal à 5, vous pouvez à la place ajouter 1 |ringIcon| gardé affichant |opportunityIcon| au résultat."
+            "activation":[
+                "Lorsque vous effectuez un test pour enquêter, vous pouvez considérer que le rang de la compétence utilisée, quelle qu’elle soit, est égal à votre rang d’école. Si votre rang dans la compétence en question est supérieur ou égal à votre rang d’école, ou s’il est égal à 5, vous pouvez à la place ajouter 1 |ringDieIcon| gardé affichant |opportunityIcon| au résultat."
             ]
         },
         "finalAbility":{
             "name":"Les yeux trahissent le cœur",
-            "description":[
+            "activation":[
                 "Une fois par scène, lorsque vous effectuez un test de compétence pour enquêter, vous pouvez dépenser vos |opportunityIcon| de la façon suivante :",
                 "|opportunityIcon|+ : vous pouvez réserver un dé abandonné par |opportunityIcon| dépensé ainsi. La prochaine fois que vous effectuerez un test pour interagir avec la personne ou l’objet sur lequel vous enquêtez (un test ciblant cette personne ou utilisant cet objet par exemple), vous pouvez ajouter au résultat tout ou partie de ces dés réservés en tant que dés gardés. Tous les dés réservés non utilisés sur ce test sont perdus."
             ]
@@ -221,7 +221,7 @@
         ],
         "initialAbility":{
             "name":"La voie du Dragon",
-            "description":[
+            "activation":[
                 "Une fois par round, au cours d’un duel ou d’une escarmouche, lorsque vous êtes la cible d’un test d’Attaque effectué avec une arme de corps à corps, vous pouvez utiliser l’une de vos armes à une prise à une main apprêtées (ou l’une de vos mains libres) pour parer ou bloquer.",
                 "Si vous parez, l’attaquant doit relancer un nombre de dés contenant |successIcon| ou |explosiveSuccessIcon| inférieur ou égal à votre rang d’école (vous choisissez le nombre).",
                 "Si vous bloquez (ce qui consiste à coincer l’arme adverse à l’aide de la vôtre), retirez votre rang d’école au ND de votre prochain test d’Attaque contre cet adversaire pendant cette scène (ND minimum 1).",
@@ -230,7 +230,7 @@
         },
         "finalAbility":{
             "name":"Le cœur du Dragon",
-            "description":[
+            "activation":[
                 "Une fois par round, lorsque que vous effectuez une action d’Attaque, vous pouvez dépenser |opportunityIcon| de la façon suivante :",
                 "|opportunityIcon| : effectuez une action Frapper avec une arme apprêtée que vous n’avez pas encore utilisée pour une action d’Attaque lors de ce tour."
             ]
@@ -244,7 +244,7 @@
         ],
         "initialAbility":{
             "name":"Sang des Kamis",
-            "description":[
+            "activation":[
                 "Vous possédez un tatouage mystique dont vos kihō tirent leur énergie, et vous en acquérez d’autres à mesure que vous progressez dans votre école. Quand vous réussissez un test pour activer un kihō lié à l’un d’entre eux, vous bénéficiez automatiquement d’un nombre de succès bonus égal à votre rang d’école.",
                 "Choisissez un sujet inspiré de la nature, ainsi qu’un kihō dans le même thème (et dont vous remplissez les conditions). Si vous ne connaissez pas déjà ce kihō, vous l’apprenez (sans payer son coût en XP). Vous ne pouvez pas choisir plusieurs fois le même kihō de cette façon.",
                 "Chaque fois que votre rang d’école augmente, vous gagnez un nouveau tatouage."
@@ -252,7 +252,7 @@
         },
         "finalAbility":{
             "name":"Le sang du Dragon",
-            "description":[
+            "activation":[
                 "Une fois par scene, lorsque vous bénéficiez de l’effet d amélioration d’un kihō lié à l’un de vos tatouages et que vous activez un autre kihō, vous pouvez dépenser 1 point de Vide. Vous pouvez alors maintenir les deux effets d’amélioration jusqu’à la fin de la scène, ou jusqu’à ce que vous activiez un autre kihō."
             ]
         }
@@ -265,13 +265,13 @@
         ],
         "initialAbility":{
             "name":"La voie du Lion",
-            "description":[
+            "activation":[
                 "Lorsque vous réussissez un test d’action d’Attaque ou de Soutien, vous pouvez éliminer un nombre de points de Conflit inférieur ou égal à votre rang d’école. Pour chaque point de Conflit éliminé ainsi, ajoutez un succès bonus à votre test et subissez 1 point de Fatigue."
             ]
         },
         "finalAbility":{
             "name":"L’ultime leçon d’Akodo",
-            "description":[
+            "activation":[
                 "Une fois par session de jeu, au cours d’une escarmouche ou d’une bataille rangée et après avoir échoué à un test, vous pouvez refaire ce test en considérant que le ND est de 1."
             ]
         }
@@ -284,7 +284,7 @@
         ],
         "initialAbility":{
             "name":"Le cœur du Lion",
-            "description":[
+            "activation":[
                 "Une fois par scène, après avoir effectué un test de compétence sociale prenant pour cible un ou plusieurs personnages, vous pouvez agiter ou réconforter vos interlocuteurs.",
                 "Si vous les agitez, transférez à vos cibles un nombre de vos points de Conflit inférieur ou égal au double de votre rang d’école (répartissez ces points entre elles comme vous l’entendez).",
                 "Si vous les réconfortez, transférez depuis vos cibles et vers vous-même un nombre de points de Conflit inférieur ou égal au double de votre rang d’école (répartissez ces points comme vous l’entendez)."
@@ -292,7 +292,7 @@
         },
         "finalAbility":{
             "name":"La fierté du Lion",
-            "description":[
+            "activation":[
                 "Une fois par session de jeu, au prix d’une action de Soutien, vous pouvez tenter de convaincre toutes les personnes présentes dans la scène qu’un individu jouit d’une glorieuse réputation (si besoin en embellissant la vérité). Effectuez un test de Représentations (Feu) ND 5 visant un personnage. Le ND de ce test est de 6 s’il s’agit de vous, et de 4 s’il s’agit d’un autre membre du Clan du Lion.",
                 "En cas de réussite, le ND de tous les tests de compétences sociales du personnage ciblé diminue de 3, et celui de tous ses autres tests diminue de 1. Cet effet persiste jusqu’à la fin de la scène."
             ]
@@ -306,13 +306,13 @@
         ],
         "initialAbility":{
             "name":"Faveur des ancêtres",
-            "description":[
+            "activation":[
                 "Une fois par scène, vous pouvez soutirer une invocation dont le rang d’école prérequis est inférieur ou égal à votre rang d’école. Vous n’avez pas besoin de faire les sacrifices habituels nécessaires, ni d’augmenter le ND."
             ]
         },
         "finalAbility":{
             "name":"La force d’un millier d’ancêtres",
-            "description":[
+            "activation":[
                 "Une fois par session de jeu, au prix d’une action de Soutien, vous pouvez conjurer l’esprit d’un ancêtre afin qu’il vous possède jusqu’à la fin de la scène. Vous êtes alors considéré comme une créature Extérieure, et vous utilisez le profil de l’ancêtre en question (par exemple celui d’un PNJ humain ordinaire ou, avec l’accord du MJ, un PJ créé à l’avance avec 180 XP au maximum). Votre personnage ne se souviendra pas de ce qui s’est passé pendant la possession."
             ]
         }
@@ -325,13 +325,13 @@
         ],
         "initialAbility":{
             "name":"La fureur de Matsu",
-            "description":[
+            "activation":[
                 "Après avoir subi un coup critique ou tombé le masque, vous pouvez subir l’état Enragé afin d’éliminer un nombre de points de Fatigue égal à votre rang d’école."
             ]
         },
         "finalAbility":{
             "name":"Féroces mâchoires du lion",
-            "description":[
+            "activation":[
                 "Une fois par round, quand vous effectuez une action d’Attaque alors que vous êtes Enragé, vous pouvez dépenser 1 point de Vide pour changer le résultat de chaque dé gardé contenant |successIcon| en un résultat contenant |explosiveSuccessIcon|."
             ]
         }
@@ -344,13 +344,13 @@
         ],
         "initialAbility":{
             "name":"Sagesse éternelle",
-            "description":[
-                "Lorsque vous effectuez un test de compétence savante, vous pouvez considérer que le rang de cette compétence est égal à votre rang d’école. Si votre rang dans cette compétence est supérieur ou égal à votre rang d’école, ou s’il est égal à 5, vous pouvez à la place ajouter 1 |ringIcon| gardé affichant |opportunityIcon| au résultat."
+            "activation":[
+                "Lorsque vous effectuez un test de compétence savante, vous pouvez considérer que le rang de cette compétence est égal à votre rang d’école. Si votre rang dans cette compétence est supérieur ou égal à votre rang d’école, ou s’il est égal à 5, vous pouvez à la place ajouter 1 |ringDieIcon| gardé affichant |opportunityIcon| au résultat."
             ]
         },
         "finalAbility":{
             "name":"Génie exaspérant",
-            "description":[
+            "activation":[
                 "Après avoir réussi un test pour apprendre ou vous souvenir d’une information, vous pouvez dépenser 1 point de Vide, et choisir autant de personnages avec lesquels vous pouvez communiquer que vous le souhaitez. Vous devez décrire la façon dont l’information acquise vient en aide à chacun d’entre eux. lls diminueront alors le ND de leur prochain test de 1 (minimum 1), et subissent 1 point de Conflit."
             ]
         }
@@ -363,13 +363,13 @@
         ],
         "initialAbility":{
             "name":"Union avec les éléments",
-            "description":[
+            "activation":[
                 "Une fois par scène, avant de lancer les dés pour effectuer un test visant à activer une technique d’invocation, vous pouvez retirer votre rang d’école au ND de ce test."
             ]
         },
         "finalAbility":{
             "name":"Maître des éléments",
-            "description":[
+            "activation":[
                 "Une fois par round, après avoir lancé une invocation, vous pouvez dépenser 1 point de Vide afin de modifier votre posture et en lancer une autre, qui ne doit avoir aucun type d’action (Attaque, Soutien, etc.) en commun avec la première."
             ]
         }
@@ -382,13 +382,13 @@
         ],
         "initialAbility":{
             "name":"La voie du Phénix",
-            "description":[
+            "activation":[
                 "Une fois par scène, lorsqu’un personnage à portée 0–3 effectue un test et qu’il obtient 1 ou plusieurs |strifeIcon|,vous pouvez annuler tous ces |strifeIcon|. Ce personnage élimine ensuite un nombre de points de Conflit et de points de Fatigue égal à votre rang d’école."
             ]
         },
         "finalAbility":{
             "name":"Résistance de l’Honneur",
-            "description":[
+            "activation":[
                 "À la fin de votre tour, vous pouvez dépenser 1 point de Vide et vous préparer à repousser l’avancée ennemie. Lorsqu’un adversaire entre à portée d’une de vos armes apprêtées, vous pouvez immédiatement l’utiliser et prendre ce dernier pour cible d’une action Frapper. En cas de réussite, il subit l’état Immobilisé en plus de tout autre effet. Cet effet persiste jusqu’au début de votre tour suivant."
             ]
         }
@@ -401,14 +401,14 @@
         ],
         "initialAbility":{
             "name":"Flèches sacrées",
-            "description":[
+            "activation":[
                 "Au prix d’une action, vous pouvez améliorer l’une de vos flèches en adressant une prière aux kamis. Effectuez le test pour activer une invocation que vous connaissez, en retirant votre rang d’école au ND, et notez le résultat. La flèche gagne la propriété d’équipement Sacrée et reste imprégnée du pouvoir de l’invocation jusqu’à la fin de la scène.",
                 "Après avoir effectué une action d’Attaque à l’aide de cette flèche (ou après l’avoir tirée sur un lieu, si le MJ l’autorise), vous pouvez résoudre les effets de l’invocation à l’endroit où la flèche a atterri. Vous pouvez dépenser |opportunityIcon|+ pour retarder la résolution des effets de l’invocation de 1 round par |opportunityIcon|, ou |opportunityIcon|opportunityIcon| lors d’un test raté pour affecter une cible que vous avez manquée lors de l’attaque."
             ]
         },
         "finalAbility":{
             "name":"Arrière, démon !",
-            "description":[
+            "activation":[
                 "Au prix d’une action, vous pouvez effectuer un test de Méditation (Vide) ND 3 en faisant vibrer la corde de l’arc que vous tenez. Vous prenez pour cible chaque créature Extérieure située dans un nombre de niveaux de portée inférieur ou égal à votre rang en Méditation.",
                 "En cas de réussite, chaque cible subit un nombre de points de Conflit égal à votre rang dans cette compétence plus vos succès bonus.",
                 "|opportunityIcon| : chaque cible doit résister en effectuant un test de Méditation (Vide) ND 3. Si elle le rate, ses Résistances physique et surnaturelle tombent à 0. Cet effet dure jusqu’à la fin de la scène."
@@ -423,13 +423,13 @@
         ],
         "initialAbility":{
             "name":"La faiblesse est ma force",
-            "description":[
+            "activation":[
                 "Lorsque vous exploitez le désavantage d’une cible dans le cadre d’une action de Manipulation, vous n’avez pas besoin de dépenser de points de Vide, et vous pouvez relancer un nombre de dés supplémentaires égal à votre rang d’école."
             ]
         },
         "finalAbility":{
             "name":"Petites vérités",
-            "description":[
+            "activation":[
                 "Lorsque vous effectuez un test prenant pour cible un autre personnage, vous pouvez remplacer l’un de vos avantages ou de vos désavantages s’appliquant à ce test par un autre. Il doit avoir en commun un type avec celui qu’il remplace. À moins d’avoir une preuve évidente du contraire, votre cible croit que vous possédez l’avantage ou le désavantage choisi, et non celui que vous possédez en réalité. Si elle tente d’en tirer parti ou de l’exploiter, elle rate automatiquement son test avec un degré d’échec de 3. Elle subit 3 points de Conflit ainsi que l’état Désorienté."
             ]
         }
@@ -442,13 +442,13 @@
         ],
         "initialAbility":{
             "name":"Le sentier des ombres",
-            "description":[
+            "activation":[
                 "Lorsque vous effectuez une action d’Attaque contre une cible Compromise, Hors de combat, Inconsciente ou qui ignore votre présence, ajoutez votre rang d’école aux dégâts et à la Dangerosité de votre arme."
             ]
         },
         "finalAbility":{
             "name":"L’ultime silence",
-            "description":[
+            "activation":[
                 "Au prix d’une action d’Attaque et de Déplacement, vous pouvez effectuer un test d’Arts martiaux (mains nues) (Air) ND 4 prenant pour cible autant de Sous-fifres à portée 0–4 que vous le souhaitez.",
                 "Si vous réussissez cette action au cours d’une scène narrative, vous tuez toutes vos cibles en silence et en quelques minutes. Si vous réussissez cette action au cours d’une scène de confrontation, vous pouvez tuer en silence l’une de ces cibles située à portée 0–2 à la fin de chacun de vos tours (en plus de vos autres actions)."
             ]
@@ -462,14 +462,14 @@
         ],
         "initialAbility":{
             "name":"Le murmure des kamis",
-            "description":[
+            "activation":[
                 "Quand vous exécutez une technique d’invocation ou que vous canalisez une invocation, les personnages dont la Vigilance est inférieure ou égale à votre rang d’école plus 1 ne détectent aucun signe physique que vous êtes en train d’invoquer les esprits. Ils peuvent malgré tout observer les effets de l’invocation.",
                 "Votre rang d’école s’ajoute au ND des tests effectués pour détecter ou étudier vos activités surnaturelles."
             ]
         },
         "finalAbility":{
             "name":"Un monde d’ombres",
-            "description":[
+            "activation":[
                 "Vous pouvez dépenser 1 point de Vide pour tenter d’établir qu’un élément de la scène était une illusion depuis le début. ll peut s’agir d’un objet, de l’image d’une personne ou d’un autre phénomène illusoire que vous pourriez conjurer avec une invocation. Vous devez effectuer le test d’invocation pour conjurer cette illusion, le MJ ajustant le ND en fonction de sa vraisemblance. En cas de réussite, vous révélez que l’élément que vous avez choisi est en fait une illusion créée par vos soins, et qu’elle est là depuis déjà quelques instants. En cas d’échec, il est clair que votre personnage n’y a pas pensé, et que l’objet est bien réel. Comme d’habitude, le MJ est seul juge des utilisations acceptables de cette capacité."
             ]
         }
@@ -482,13 +482,13 @@
         ],
         "initialAbility":{
             "name":"Calligraphie mystique",
-            "description":[
+            "activation":[
                 "Vous pouvez posséder un nombre inférieur ou égal à votre rang d’école de glyphes supplémentaires contenant des invocations préparées. Pour réussir à décoder ou à utiliser l’un de vos glyphes, un autre personnage doit réussir un test de Théologie (Vide) dont le ND est égal à votre rang d’école."
             ]
         },
         "finalAbility":{
             "name":"Prison d’encre",
-            "description":[
+            "activation":[
                 "Une fois par scène, lorsque vous êtes la cible d’une technique d’invocation ou de mahō, vous pouvez y résister avec un test de Composition ND 4. En cas de réussite, vous absorbez la technique, annulez tous ses effets et créez un glyphe qui la contient."
             ]
         }
@@ -501,14 +501,14 @@
         ],
         "initialAbility":{
             "name":"Vendeur d’étranges articles",
-            "description":[
+            "activation":[
                 "Ignorez la propriété d’équipement Interdit quand vous achetez ou gérez des objets.",
                 "Lorsque vous acquérez, vendez ou offrez un objet, vous pouvez ajouter ou soustraire votre rang d’école à sa rareté."
             ]
         },
         "finalAbility":{
             "name":"Un ami dans chaque ville",
-            "description":[
+            "activation":[
                 "Au prix d’une activité de temps mort et dans toutes les communautés humaines, vous pouvez effectuer un test de Commerce (Eau) ND 4 pour retrouver un marchand avec qui vous (ou vos proches) avez déjà fait affaire.",
                 "En cas de réussite, vous le retrouvez et gagnez l’avantage Allié. Il sera disposé à vous aider de différentes façons."
             ]
@@ -522,14 +522,14 @@
         ],
         "initialAbility":{
             "name":"La voie des noms",
-            "description":[
+            "activation":[
                 "Au prix d’une activité de temps mort, vous pouvez utiliser n’importe quel anneau et faire un test de Stylisme ND 2 afin de lier un esprit à un réceptacle inanimé, pour créer un talisman meishōdō destiné à produire une invocation de l’élément choisi et que vous connaissez. Tant que le talisman est en votre possession, réduisez de 1 le ND des tests pour activer cette invocation. Vous pouvez donner le talisman à un autre shugenja, qui peut alors utiliser cette invocation même s’il ne l’a pas apprise, en bénéficiant de la même réduction au ND. Le talisman cessera toutefois de fonctionner après un nombre d’utilisations égal à votre rang d’école.",
                 "Vous pouvez alimenter un nombre de talismans de meishōdō égal à votre rang d’école. Vous ne pouvez avoir qu’un seul talisman de meishōdō par invocation."
             ]
         },
         "finalAbility":{
             "name":"Esprits déchaînés",
-            "description":[
+            "activation":[
                 "À la fin de votre tour, vous pouvez dépenser 1 ou plusieurs points de Vide pour déchaîner la puissance de vos talismans de meishōdō. Vous activez autant de talismans que vous avez dépensé de points de Vide. L’utilisation de cette capacité les détruit et libère les esprits enfermés à l’intérieur. Vous pouvez effectuer immédiatement les invocations pour lesquelles ces talismans ont été créés, en réduisant leur ND de 3."
             ]
         }
@@ -542,14 +542,14 @@
         ],
         "initialAbility":{
             "name":"Le tourbillon du simoun",
-            "description":[
+            "activation":[
                 "Lorsque vous effectuez une action d’Attaque au cours d’une escarmouche ou d’une bataille rangée, vous pouvez dépenser vos |opportunityIcon| de la façon suivante:",
                 "|opportunityIcon| : choisissez un ennemi autre que votre cible et que vous pouvez percevoir. Jusqu’au début de votre prochain tour, ajoutez votre rang d’école au ND des tests d’Attaque qu’il effectue contre vous."
             ]
         },
         "finalAbility":{
             "name":"Sirocco cinglant",
-            "description":[
+            "activation":[
                 "Une fois par round, après avoir infligé l’état Hors de combat à une cible (ou vaincu un PNJ Sous-fifre), vous pouvez effectuer l’action Frapper contre une cible différente."
             ]
         }
@@ -562,13 +562,13 @@
         ],
         "initialAbility":{
             "name":"Né sur une selle",
-            "description":[
+            "activation":[
                 "Une fois par scène, avant de lancer les dés, vous pouvez déclarer que vous demandez à votre cheval (qui doit être présent) de vous aider dans votre tâche. Vous décrivez comment ses efforts vous aident dans ces circonstances. Retirez alors votre rang d’école au ND du test que vous entreprenez."
             ]
         },
         "finalAbility":{
             "name":"Je reviendrai toujours",
-            "description":[
+            "activation":[
                 "Une fois par session de jeu, vous pouvez appeler votre cheval. Celui-ci arrive au début du round suivant, quels que soient les obstacles qui auraient normalement dû l’empêcher de rejoindre l’endroit où vous vous trouvez. Sa loyauté envers vous est telle que même la mort ne pourra l’arrêter. S’il a récemment été tué, son esprit prendra possession du cheval le plus proche de vous et vous viendra en aide malgré tout."
             ]
         }
@@ -581,14 +581,14 @@
         ],
         "initialAbility":{
             "name":"Charge héroïque",
-            "description":[
+            "activation":[
                 "Lorsque vous réussissez un test d’action d’Attaque, ajoutez au résultat un nombre de succès bonus égal au nombre de niveaux de portée que vous avez parcourus au cours de ce round, mais n’excédant pas votre rang d’école.",
                 "Au cours d’un duel ou d’une bataille rangée, si vous chevauchez votre monture, on considère toujours que vous avez parcouru un nombre de niveaux de portée égal à votre rang d’école pendant ce tour."
             ]
         },
         "finalAbility":{
             "name":"Sentir la brise",
-            "description":[
+            "activation":[
                 "Une fois par round, après vous être défendu contre des dégâts, vous pouvez vous déplacer de 1 niveau de portée et changer de posture."
             ]
         }
@@ -601,14 +601,14 @@
         ],
         "initialAbility":{
             "name":"L’école des vagues",
-            "description":[
+            "activation":[
                 "Choisissez une compétence supplémentaire. Elle fait désormais partie intégrante de votre cursus dans la Voie du ronin expérimenté, pour tous les rangs. Chaque fois que vous gagnerez un rang d’école, choisissez une nouvelle compétence de cursus bonus de la même façon.",
                 "Lorsque vous effectuez un test avec l’une de vos compétences bonus, vous pouvez ignorer 1 symbole |strifeIcon|."
             ]
         },
         "finalAbility":{
             "name":"Un insondable océan",
-            "description":[
+            "activation":[
                 "Vous pouvez hisser vos compétences de cursus bonus jusqu’au rang 6 (en dépensant 12 XP pour passer chacune d’entre d’elles du rang 5 au rang 6)."
             ]
         }

@@ -1,11 +1,6 @@
-{
-    "air":{
-        "name":"Air",
-        "artisan":"Raffiner",
-        "social":"Duper",
-        "scholar":"Analyser",
-        "martial":"Feinter",
-        "trade":"Escroquer"
+{    
+    "any":{
+        "name":"Tout anneau"
     },
     "earth":{
         "name":"Terre",
@@ -14,6 +9,14 @@
         "scholar":"Se remémorer",
         "martial":"Résister",
         "trade":"Produire"
+    },    
+    "water":{
+        "name":"Eau",
+        "artisan":"Adapter",
+        "social":"Charmer",
+        "scholar":"Observer",
+        "martial":"Détourner",
+        "trade":"Échanger"
     },
     "fire":{
         "name":"Feu",
@@ -23,13 +26,13 @@
         "martial":"Submerger",
         "trade":"Innover"
     },
-    "water":{
-        "name":"Eau",
-        "artisan":"Adapter",
-        "social":"Charmer",
-        "scholar":"Observer",
-        "martial":"Détourner",
-        "trade":"Échanger"
+    "air":{
+        "name":"Air",
+        "artisan":"Raffiner",
+        "social":"Duper",
+        "scholar":"Analyser",
+        "martial":"Feinter",
+        "trade":"Escroquer"
     },
     "void":{
         "name":"Vide",

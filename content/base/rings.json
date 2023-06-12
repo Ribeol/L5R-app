@@ -1,7 +1,8 @@
-{
-    "air":{},
-    "earth":{},
-    "fire":{},
+{    
+    "any":{},
+    "earth":{},    
     "water":{},
+    "fire":{},
+    "air":{},
     "void":{}
 }

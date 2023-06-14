@@ -234,7 +234,6 @@ class DataManager {
             // For each content type, get an object from the corresponding file in directoryPath
             const response = await cache.match(`${directoryPath}/${contentType}.json`);
             const jsonObject = await response.json();
-            console.log(`${directoryPath}/${contentType}.json`);
             // Combine the content that is already stored for this contentType with the data from jsonObject
             if (dataManager.content[contentType] === undefined) {
                 dataManager.content[contentType] = {};

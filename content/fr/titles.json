@@ -1,30 +1,6 @@
 {
-    "Emerald Magistrate [Melee]":{
-        "name":"Magistrat d’Émeraude (corps à corps)",
-        "description":[
-            "Ces agents de la loi de l’Empereur sont des guerriers avisés qui dispensent conseils et justice."
-        ],
-        "finalAbility":{
-            "name":"Voix de l’autorité",
-            "activation":[
-                "Une fois par session de jeu, lorsque vous effectuez un test d’action de Manipulation ou de Soutien en utilisant une compétence sociale, vous pouvez choisir un nombre de cibles supplémentaires égal à votre rang de Gloire. Ces cibles supplémentaires ne peuvent pas avoir une vigilance supérieure à la plus élevée parmi vos cibles initiales."
-            ]
-        }
-    },
-    "Emerald Magistrate [Ranged]":{
-        "name":"Magistrat d’Émeraude (distance)",
-        "description":[
-            "Ces agents de la loi de l’Empereur sont des guerriers avisés qui dispensent conseils et justice."
-        ],
-        "finalAbility":{
-            "name":"Voix de l’autorité",
-            "activation":[
-                "Une fois par session de jeu, lorsque vous effectuez un test d’action de Manipulation ou de Soutien en utilisant une compétence sociale, vous pouvez choisir un nombre de cibles supplémentaires égal à votre rang de Gloire. Ces cibles supplémentaires ne peuvent pas avoir une vigilance supérieure à la plus élevée parmi vos cibles initiales."
-            ]
-        }
-    },
-    "Emerald Magistrate [Unarmed]":{
-        "name":"Magistrat d’Émeraude (mains nues)",
+    "Emerald Magistrate":{
+        "name":"Magistrat d’Émeraude",
         "description":[
             "Ces agents de la loi de l’Empereur sont des guerriers avisés qui dispensent conseils et justice."
         ],

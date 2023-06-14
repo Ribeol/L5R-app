@@ -61,6 +61,18 @@
                 display: flex;
                 flex-direction: column;
             }
+            .spaceBetween {
+                display: flex;
+                justify-content: space-between;
+            }
+            .spaceEvenly {
+                display: flex;
+                justify-content: space-evenly;
+            }
+            .alignCenter {
+                display: flex;
+                align-items: center;
+            }
             .flexGrow {
                 flex-grow: 1;
             }
@@ -90,8 +102,12 @@
                 border: none;
             }
 
-            #navbar {
-                display: flex;
+            .alignCenter button {
+                cursor: pointer;
+                padding-top: 0.25em;
+            }
+            .alignCenter button.currentTab {
+                background-color: #eeeeee;
             }
             #navbar button {
                 flex-grow: 1;
@@ -99,9 +115,7 @@
                 border: none;
                 background-color: #333333;
                 color: white;
-                font-size: 1.5em;
-                cursor: pointer;
-                padding-top: 6px;
+                font-size: 1.5em;                
             }
             #navbar button:hover:not(.currentTab) {
                 background-color: #111111;
@@ -147,7 +161,7 @@
             }
 
             ul {
-                padding-left: 1.5em;
+                padding-left: 1em;
             }
             ul >* {
                 margin: 0.5em;
@@ -331,10 +345,6 @@
                 }
             }
 
-            #viewer .attributes {
-                display: flex;
-                justify-content: space-between;
-            }
             #viewer .title {
                 background-color: #eeeeee;
                 border-top: 1px solid black;
@@ -402,7 +412,7 @@
                     <span onclick="contentManager.confirm(contentManager.increaseRing, 'void')" style="background-color: #dddddd; border: 1px solid #111111; padding: 2px;">Void</span>
                 </div>                   
             </button>
-            <div id="navbar">
+            <div id="navbar" class="alignCenter">
                 <button class="character" onclick="contentManager.changeTab('character')">&#xe903</button>
                 <button class="rings" onclick="contentManager.changeTab('rings')">&#xe924</button>
                 <button class="skills" onclick="contentManager.changeTab('skills')">&#xe91a</button>
@@ -417,37 +427,12 @@
                 <div class="filters">
                     <span>&#xe90f</span>
                     <div>
-                        <select id="skillGroupFilter">
-                            <option value="any">Tout groupe</option>
-                            <option value="artisan">Artisanal</option>
-                            <option value="social">Social</option>
-                            <option value="scholar">Savant</option>
-                            <option value="martial">Martial</option>
-                            <option value="trade">Professionnel</option>
-                        </select>
-                        <select id="skillRankFilter">
-                            <option value="any">Tout rang</option>
-                            <option value="0">Rang 0</option>
-                            <option value="1">Rang 1</option>
-                            <option value="2">Rang 2</option>
-                            <option value="3">Rang 3</option>
-                            <option value="4">Rang 4</option>
-                            <option value="5">Rang 5</option>
-                        </select>
+                        <select id="skillGroupFilter"></select>
+                        <select id="skillRankFilter"></select>
                     </div>
                     <div>
-                        <select id="skillAvailabilityFilter">
-                            <option value="learned">Compétences apprises</option>                            
-                            <option value="upgradable">Améliorable</option>
-                            <option value="all">Liste complète</option>
-                            
-                        </select>
-                        <select id="skillCurriculaFilter">
-                            <option value="any">Toute origine</option>
-                            <option value="excluded">Hors cursus</option>
-                            <option value="included">Cursus</option>
-                            <option value="current">Rang actuel</option>
-                        </select>
+                        <select id="skillAvailabilityFilter"></select>
+                        <select id="skillCurriculaFilter"></select>
                     </div>
                 </div>
                 <ul id="skillsList" class="list">
@@ -457,62 +442,14 @@
                 <div class="filters">
                     <span>&#xe90f</span>
                     <div>
-                        <select id="techRankFilter">
-                            <option value="any">Tout rang</option>
-                            <option value="1">Rang 1</option>
-                            <option value="2">Rang 2</option>
-                            <option value="3">Rang 3</option>
-                            <option value="4">Rang 4</option>
-                            <option value="5">Rang 5</option>
-                            <option value="6">Rang 6</option>
-                        </select>
-                        <select id="techTypeFilter">
-                            <option value="any">Tout type</option>
-                            <option value="kata">Katas</option>
-                            <option value="kihō">Kihō</option>
-                            <option value="invocation">Invocations</option>
-                            <option value="ritual">Rituels</option>
-                            <option value="shūji">Shūji</option>
-                            <option value="mahō">Mahō</option>
-                            <option value="ninjutsu">Ninjutsu</option>
-                            <option value="school ability">Capacité d'école</option>
-                            <option value="mastery ability">Capacité de maîtrise</option>
-                            <option value="title effect">Effets de titre</option>
-                            <option value="title ability">Capacité de titre</option>
-                        </select>
-                        <select id="techActivationFilter">
-                            <option value="any">Toute activation</option>
-                            <option value="action">Action</option>
-                            <option value="downtime">Temps mort</option>
-                            <option value="opportunity">Aubaine</option>
-                            <option value="void">Point de vide</option>
-                            <option value="limited">Limité</option>
-                            <option value="permanent">Permanent</option>
-                        </select>
-                        <select id="techRingFilter">
-                            <option value="any">Tout anneau</option>
-                            <option value="none">Aucun anneau</option>
-                            <option value="air">Air</option>
-                            <option value="earth">Terre</option>
-                            <option value="fire">Feu</option>
-                            <option value="water">Eau</option>
-                            <option value="void">Vide</option>                            
-                        </select>
+                        <select id="techRankFilter"></select>
+                        <select id="techTypeFilter"></select>                        
+                        <select id="techRingFilter"></select>
+                        <select id="techActivationFilter"></select>
                     </div>
                     <div>
-                        <select id="techAvailabilityFilter">
-                            <option value="learned">Techniques apprises</option>
-                            <option value="missable">Techniques manquables</option>
-                            <option value="available">Techniques disponibles</option>                            
-                            <option value="compatible">Techniques compatibles</option>
-                            <option value="all">Liste complète</option>
-                        </select>
-                        <select id="techCurriculaFilter">
-                            <option value="any">Toute origine</option>
-                            <option value="excluded">Hors cursus</option>
-                            <option value="included">Cursus</option>
-                            <option value="current">Rang actuel</option>
-                        </select>
+                        <select id="techAvailabilityFilter"></select>
+                        <select id="techCurriculaFilter"></select>
                     </div>
                 </div>
                 <ul id="techniquesList" class="list">

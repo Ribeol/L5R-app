@@ -1,9 +1,6 @@
 {
-    "characterCreation":{},
-    "user":{},
-    "stats":{},
-    "skills":{
-        "groupFilterOptions":[
+    "filters":{
+        "skillGroupFilter":[
             {"value":"any","text":"Tout groupe"},
             {"value":"artisan","text":"Compétences artisanales"},
             {"value":"social","text":"Compétences sociales"},
@@ -11,7 +8,7 @@
             {"value":"martial","text":"Compétences martiales"},
             {"value":"trade","text":"Compétences professionnelles"}
         ],
-        "rankFilterOptions":[
+        "skillRankFilter":[
             {"value":"any","text":"Tout rang"},
             {"value":"0","text":"Rang 0"},
             {"value":"1","text":"Rang 1"},
@@ -20,20 +17,18 @@
             {"value":"4","text":"Rang 4"},
             {"value":"5","text":"Rang 5"}
         ],
-        "availabilityFilterOptions":[
+        "skillAvailabilityFilter":[
             {"value":"all","text":"Liste complète"},
             {"value":"upgradable","text":"Améliorable"},
             {"value":"learned","text":"Compétences apprises"}
         ],
-        "curriculaFilterOptions":[
+        "skillCurriculaFilter":[
             {"value":"any","text":"Toute origine"},
             {"value":"excluded","text":"Hors cursus"},
             {"value":"included","text":"Cursus"},
             {"value":"current","text":"Rang actuel"}
-        ]
-    },
-    "techniques":{
-        "rankFilterOptions":[
+        ],
+        "techRankFilter":[
             {"value":"any","text":"Tout rang"},
             {"value":"1","text":"Rang 1"},
             {"value":"2","text":"Rang 2"},
@@ -42,7 +37,7 @@
             {"value":"5","text":"Rang 5"},
             {"value":"6","text":"Rang 6"}
         ],
-        "typeFilterOptions":[
+        "techTypeFilter":[
             {"value":"any","text":"Tout type"},
             {"value":"kata","text":"Katas"},
             {"value":"kihō","text":"Kihō"},
@@ -51,12 +46,12 @@
             {"value":"shūji","text":"Shūji"},
             {"value":"mahō","text":"Mahō"},
             {"value":"ninjutsu","text":"Ninjutsu"},            
-            {"value":"school ability","text":"Capa. école"},
-            {"value":"mastery ability","text":"Capa. maîtrise"},
+            {"value":"school ability","text":"Capacités d'école"},
+            {"value":"mastery ability","text":"Capacités de maîtrise"},
             {"value":"title effect","text":"Effets de titre"},
-            {"value":"title ability","text":"Capa. titre"}
+            {"value":"title ability","text":"Capacités titre"}
         ],
-        "ringFilterOptions":[
+        "techRingFilter":[
             {"value":"any","text":"Tout anneau"},
             {"value":"none","text":"Aucun anneau"},
             {"value":"air","text":"Air"},
@@ -65,7 +60,7 @@
             {"value":"water","text":"Eau"},
             {"value":"void","text":"Vide"}            
         ],
-        "activationFilterOptions":[
+        "techActivationFilter":[
             {"value":"any","text":"Toute activation"},
             {"value":"action","text":"Action"},
             {"value":"downtime","text":"Temps mort"},
@@ -74,23 +69,20 @@
             {"value":"limited","text":"Limité"},
             {"value":"permanent","text":"Permanent"}
         ],
-        "availabilityFilterOptions":[
-            {"value":"learned","text":"Techniques apprises"},
-            {"value":"missable","text":"Techniques manquables"},
-            {"value":"available","text":"Techniques disponibles"},
+        "techAvailabilityFilter":[
+            {"value":"all","text":"Liste complète"},
             {"value":"compatible","text":"Techniques compatibles"},
-            {"value":"all","text":"Liste complète"}
+            {"value":"available","text":"Techniques disponibles"},
+            {"value":"missable","text":"Techniques manquables"},
+            {"value":"learned","text":"Techniques apprises"}
         ],
-        "curriculaFilterOptions":[
+        "techCurriculaFilter":[
             {"value":"any","text":"Toute origine"},
             {"value":"excluded","text":"Hors cursus"},
             {"value":"included","text":"Cursus"},
             {"value":"current","text":"Rang actuel"}
         ]
     },
-    "experience":{},
-    "items":{},
-    "notes":{},
     "viewer":{
         "rank":"Rang",
         "newOpportunities":"Nouvelles aubaines",

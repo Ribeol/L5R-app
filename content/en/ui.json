@@ -1,9 +1,6 @@
 {
-    "characterCreation":{},
-    "user":{},
-    "stats":{},
-    "skills":{
-        "groupFilterOptions":[
+    "filters":{
+        "skillGroupFilter":[
             {"value":"any","text":"Any group"},
             {"value":"artisan","text":"Artisan skills"},
             {"value":"social","text":"Social skills"},
@@ -11,7 +8,7 @@
             {"value":"martial","text":"Martial skills"},
             {"value":"trade","text":"Trade skills"}
         ],
-        "rankFilterOptions":[
+        "skillRankFilter":[
             {"value":"any","text":"Any rank"},
             {"value":"0","text":"Rank 0"},
             {"value":"1","text":"Rank 1"},
@@ -20,20 +17,18 @@
             {"value":"4","text":"Rank 4"},
             {"value":"5","text":"Rank 5"}
         ],
-        "availabilityFilterOptions":[
+        "skillAvailabilityFilter":[
             {"value":"all","text":"Full list"},
             {"value":"upgradable","text":"Upgradable skills"},
             {"value":"learned","text":"Learned skills"}
         ],
-        "curriculaFilterOptions":[
+        "skillCurriculaFilter":[
             {"value":"any","text":"Any origin"},
             {"value":"excluded","text":"Extra-curricular"},
             {"value":"included","text":"Curricular"},
             {"value":"current","text":"Current rank"}
-        ]
-    },
-    "techniques":{
-        "rankFilterOptions":[
+        ],
+        "techRankFilter":[
             {"value":"any","text":"Any rank"},
             {"value":"1","text":"Rank 1"},
             {"value":"2","text":"Rank 2"},
@@ -42,7 +37,7 @@
             {"value":"5","text":"Rank 5"},
             {"value":"6","text":"Rank 6"}
         ],
-        "typeFilterOptions":[
+        "techTypeFilter":[
             {"value":"any","text":"Any type"},
             {"value":"kata","text":"Kata"},
             {"value":"kihō","text":"Kihō"},
@@ -56,7 +51,7 @@
             {"value":"title effect","text":"Title Effects"},
             {"value":"title ability","text":"Title Abilities"}
         ],
-        "ringFilterOptions":[
+        "techRingFilter":[
             {"value":"any","text":"Any ring"},
             {"value":"none","text":"No ring"},
             {"value":"air","text":"Air"},
@@ -66,7 +61,7 @@
             {"value":"void","text":"Void"}
             
         ],
-        "activationFilterOptions":[
+        "techActivationFilter":[
             {"value":"any","text":"Any activation"},
             {"value":"action","text":"Action"},
             {"value":"downtime","text":"Downtime"},
@@ -75,23 +70,20 @@
             {"value":"limited","text":"Limited"},
             {"value":"permanent","text":"Permanent"}
         ],
-        "availabilityFilterOptions":[
-            {"value":"learned","text":"Learned techniques"},
-            {"value":"missable","text":"Missable techniques"},            
-            {"value":"available","text":"Available techniques"},
+        "techAvailabilityFilter":[
+            {"value":"all","text":"Full list"},
             {"value":"compatible","text":"Compatible techniques"},
-            {"value":"all","text":"Full list"}            
+            {"value":"available","text":"Available techniques"},
+            {"value":"missable","text":"Missable techniques"},
+            {"value":"learned","text":"Learned techniques"}
         ],
-        "curriculaFilterOptions":[
+        "techCurriculaFilter":[
             {"value":"any","text":"Any origin"},
             {"value":"excluded","text":"Extra-curricular"},
             {"value":"included","text":"Curricular"},
             {"value":"current","text":"Current rank"}
         ]
     },
-    "experience":{},
-    "items":{},
-    "notes":{},
     "viewer":{
         "rank":"Rank",
         "newOpportunities":"New Opportunities",

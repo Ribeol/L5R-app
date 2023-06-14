@@ -3,19 +3,34 @@
 // #region Class definitions ----------------------------------------------------------------------------------------------------
 
 class UserSettings {
-    static languages = ["en", "fr"];
+    constructor(languages) {        
+        // this.cacheUpdate is set through initialize and stores the date of the last cache update
+        this.lastCacheTime = undefined;
 
-    constructor() {
+        // If the browser language is part of languages, it becomes the default language
         const language = (navigator.language || navigator.userLanguage).slice(0,2);
-        if (UserSettings.languages.includes(language)) {
+        if (languages.includes(language)) {
             this.language = language;
         }
+        // Otherwise, choose the first available language, which should be the language that has the most content in its JSON files
         else {
-            this.language = "en";
-        }
-        //this.currentTab = "characterCreation"; // CHANGE?
-        // ADD MORE? IF CHARACTER DETECTED IN CACHE, SET TAB TO CHOOSE CHARACTER, OTHERWISE CREATE CHARACTER
-        // FOR EACH TAB WITH A SCROLLING LIST, ALSO STORE THE FILTER SETTINGS
+            this.language = languages[0];
+        }        
+
+        this.values = {            
+            // IF CHARACTER DETECTED IN CACHE, SET TAB TO CHOOSE CHARACTER, OTHERWISE CREATE CHARACTER
+            currentTabClass: "techniques",
+            skillGroupFilter: undefined,
+            skillRankFilter: undefined,
+            skillAvailabilityFilter: undefined,
+            skillCurriculaFilter: undefined,
+            techRankFilter: undefined,
+            techTypeFilter: undefined,
+            techActivationFilter: undefined,
+            techRingFilter: undefined,
+            techAvailabilityFilter: undefined,
+            techCurriculaFilterFilter: undefined
+        }        
     }
 }
 
@@ -26,16 +41,22 @@ class DataManager {
     static contentTypes = ["clans", "families", "schools", "rings", "skills", "skillGroups", "techniques", "techniqueTypes", "titles", "traditions", "ui"];
 
     constructor() {
-
+        
         // Singleton pattern
         if (DataManager.instance) {
             return DataManager.instance;
         }
         DataManager.instance = this;
 
-        // this.userSettings will get object properties through initialize, and will be used to restore the content to its last state
+        // this.contentInfo is set through initialize
+        this.contentInfo = {
+            languages: undefined,
+            lastContentUpdate: undefined            
+        }
+
+        // this.userSettings gets its object properties through initialize, and will be used to restore the content to its last state
         this.userSettings = undefined;
-        // this.content will get all the game content from cached JSON files through initialize, based on the language from usersettings
+        // this.content gets all the game content from cached JSON files through initialize, based on the language from usersettings
         this.content = {};
 
         // this.characterNames will store the names of all loadable characters in an array
@@ -72,37 +93,49 @@ class DataManager {
         };
     }
 
-    async initialize() {
-
-        // Create an array of all content directory paths
-        const paths = [`./content/base`];
-        UserSettings.languages.forEach(language => {
-            paths.push(`./content/${language}`);
-        });
-      
-        // Create content properties as objects, and an array of urls for all content files
-        const urls = [];
-        DataManager.contentTypes.forEach(contentType => {
-            dataManager.content[contentType] = {};
-            paths.forEach(path => {
-                urls.push(`${path}/${contentType}.json`);
-            });            
-        });
-              
+    async initialize() {              
         if ("caches" in window) {
+
             const cache = await caches.open(DataManager.cacheName);
+            await cache.add(`./content/contentInfo.json`);
 
-            // Cache all JSON files from all languages
-            await cache.addAll(urls);
+            // Get the set of available languages
+            dataManager.contentInfo = await dataManager.getContentInfo(cache);
+            // Get dataManager.userSettings
+            dataManager.userSettings = await dataManager.getUserSettings(cache, dataManager.contentInfo.languages);
+            // Change the page language to reflect userSettings
+            document.documentElement.lang = dataManager.userSettings.language;
 
-            // Get dataManager.userSettings and dataManager.characterNames
-            dataManager.userSettings = await dataManager.getUserSettings(cache);
+            // Get dataManager.characterNames
             dataManager.characterNames = await dataManager.getCharacterNames(cache);
+
+            if (dataManager.contentInfo.lastContentUpdate === undefined || dataManager.userSettings.lastCacheTime === undefined || new Date(dataManager.contentInfo.lastContentUpdate).getTime() > dataManager.userSettings.lastCacheTime) {
+
+                dataManager.userSettings.lastCacheTime = Date.now();
+
+                // Create an array of all content directory paths
+                const paths = [`./content/base`];
+
+                for (const language of dataManager.contentInfo.languages) {
+                    paths.push(`./content/${language}`);
+                };
+      
+                // Create an array of urls for all content files
+                const urls = [];
+                for (const contentType of DataManager.contentTypes) {
+                    for (const path of paths) {
+                        urls.push(`${path}/${contentType}.json`);
+                    };            
+                };
+
+                // Cache all JSON files from all languages
+                await cache.addAll(urls);
+            }
 
             // Complete the content properties by merging data from base and english directories by default, overwriting english data if necessary, then finalizing abilities
             await dataManager.getContent(cache, `./content/base`);
-            await dataManager.getContent(cache, `./content/en`);
-            if (dataManager.userSettings.language !== "en") {
+            await dataManager.getContent(cache, `./content/${dataManager.contentInfo.languages[0]}`);
+            if (dataManager.userSettings.language !== dataManager.contentInfo.languages[0]) {
                 await dataManager.getContent(cache, `./content/${dataManager.userSettings.language}`);
             }
             dataManager.finalizeTechsAndAbilities();
@@ -119,18 +152,27 @@ class DataManager {
         await cache.put("userSettings.json", new Response(JSON.stringify(dataManager.userSettings)));
     }
 
-    async getUserSettings(cache) {
+    async getContentInfo(cache) {
+        const response = await cache.match(`./content/contentInfo.json`);
+        if (response) {
+            const contentInfo = await response.json();
+            return contentInfo;
+        }   
+    }
+
+    async getUserSettings(cache, languages) {
         // If userSettings.json exists in the cache, assign the corresponding object to dataManager.userSettings, otherwise create a new UserSettings
         const response = await cache.match(`./userSettings.json`);
         if (response) {
-            const jsonObject = await response.json();
-            return jsonObject;
+            const userSettings = await response.json();
+            if (!languages.includes(userSettings.language)) {
+                userSettings.language = new UserSettings(languages).language;
+            }
+            return userSettings;
         }
         else {
-            return new UserSettings();
+            return new UserSettings(languages);
         }
-        // Change the page language to reflect userSettings
-        document.documentElement.lang = dataManager.userSettings.language;
     }
 
     async cacheCharacter() {
@@ -141,8 +183,22 @@ class DataManager {
 
     async getCharacterNames(cache) {
         const names = [];
+        const cacheKeys = await cache.keys();
+        for (const cacheKey of cacheKeys) {
+            // for each JSON file in the cache, check if it is in /characters
+            if (cacheKey.url.includes("/characters/")) {
+                // If so, get the character's name from the file name and push it to the names array
+                const nameStartPosition = cacheKey.url.search("/characters/") + "/characters/".length;
+                const characterName = cacheKey.url.slice(nameStartPosition, -5).replace("_", " ");
+                names.push(characterName);
+            }
+        };
+        return names;
+        
+        /* DELETE IF NO PROBLEM WITH THE NEW VERSION
+        const names = [];
         await cache.keys().then(requests => {
-            requests.forEach(request => {
+            for (const request of requests) {
                 // for each JSON file in the cache, check if it is in /characters
                 if (request.url.includes("/characters/")) {
                     // If so, get the character's name from the file name and push it to the names array
@@ -150,15 +206,16 @@ class DataManager {
                     const characterName = request.url.slice(nameStartPosition, -5).replace("_", " ");
                     names.push(characterName);
                 }
-            });
+            };
         });
         return names;
+        */
     }
 
     async loadCharacter(characterName) {
         const cache = await caches.open(DataManager.cacheName);
         // Get the file name from the character's name and try to find it in the cache
-        const jsonName = `${characterName}.json`.replace(" ","_");        
+        const jsonName = `${characterName}.json`.replace(" ","_");
         const response = await cache.match(`./characters/${jsonName}`);
         // If the json file exists in the cache, assign the corresponding object to dataManager.loaded.character
         if (response) {
@@ -177,7 +234,11 @@ class DataManager {
             // For each content type, get an object from the corresponding file in directoryPath
             const response = await cache.match(`${directoryPath}/${contentType}.json`);
             const jsonObject = await response.json();
-            // If content has already been stored for this contentType, combine it with the data from jsonObject
+            console.log(`${directoryPath}/${contentType}.json`);
+            // Combine the content that is already stored for this contentType with the data from jsonObject
+            if (dataManager.content[contentType] === undefined) {
+                dataManager.content[contentType] = {};
+            }
             dataManager.combineContent(dataManager.content[contentType], jsonObject);
         });      
         await Promise.all(promises);
@@ -185,7 +246,7 @@ class DataManager {
 
     combineContent(object, newObject) {
         if (Object.keys(object).length > 0) {
-            Object.keys(newObject).forEach(propertyName => {   
+            for (const propertyName of Object.keys(newObject)) {   
                 // If the property exists and is an object, repeat the process for this object             
                 if (object[propertyName] !== undefined && typeof object[propertyName] === "object") {
                     dataManager.combineContent(object[propertyName], newObject[propertyName]);
@@ -194,7 +255,7 @@ class DataManager {
                 else {
                     object[propertyName] = newObject[propertyName];
                 }
-            });
+            };
         }
         // If content doesn't exist for this contentType, store the corresponding object as a content property
         else {
@@ -649,7 +710,7 @@ class ContentManager {
         this.overlay = document.getElementById("overlay");
         this.viewer = document.getElementById("viewer");
 
-        this.skills = { //ALSO ADD DERIVED STATS AND STANCES/OPPORTUNITIES TO THE PAGE
+        this.skills = {
             list: document.getElementById("skillsList"), 
             expanded: null // [skill, element]
         }
@@ -658,17 +719,38 @@ class ContentManager {
         }
     }
 
+    initialize() {
+        for (const filterName of ["skillGroupFilter", "skillRankFilter", "skillAvailabilityFilter", "skillCurriculaFilter", "techRankFilter", "techTypeFilter", "techRingFilter", "techActivationFilter", "techAvailabilityFilter", "techCurriculaFilter"]) {
+            const selectElement = document.getElementById(filterName);
+            if (selectElement.options.length === 0) {
+                for (const obj of dataManager.content.ui.filters[filterName]) {
+                    const option = document.createElement("option");
+                    Object.assign(option, obj);
+                    selectElement.options.add(option);
+                }                
+                if (dataManager.userSettings.values[filterName] !== undefined) {
+                    document.getElementById(filterName).value = dataManager.userSettings.values[filterName];
+                }
+                else {
+                    document.getElementById(filterName).value = selectElement.options[0].value;
+                }                
+            }
+        }
+    }
+
     filterSkills() {
 
-        // Get the filter settings        
-        const skillGroupRef = document.getElementById("skillGroupFilter").value;
-        const skillRank = document.getElementById("skillRankFilter").value;
-        const availabilitySetting = document.getElementById("skillAvailabilityFilter").value;
-        const curriculaSetting = document.getElementById("skillCurriculaFilter").value;
+        // Get the filter settings and change dataManager.userSettings.values
+        const values = dataManager.userSettings.values;
+        for (const filterName of ["skillGroupFilter", "skillRankFilter", "skillAvailabilityFilter", "skillCurriculaFilter"]) {
+            values[filterName] = document.getElementById(filterName).value;
+        }
+        // Cache userSettings
+        dataManager.cacheUserSettings();
 
         // Get a combinedArray from the intersection of 2 maps, depending on availability and curricula filter settings
         let availabilityMap;
-        switch(availabilitySetting) {
+        switch(values.skillAvailabilityFilter) {
             case "learned":
                 availabilityMap = dataManager.loaded.skillMaps.learned;
                 break;            
@@ -679,7 +761,7 @@ class ContentManager {
                 availabilityMap = dataManager.loaded.skillMaps.all;            
         }
         let combinedArray;
-        switch(curriculaSetting) {
+        switch(values.skillCurriculaFilter) {
             case "any":
                 combinedArray = [...availabilityMap];
                 break;
@@ -695,10 +777,10 @@ class ContentManager {
         
         // Additional filtering based on skill group
         const filteredSkills = combinedArray.filter(pair => {
-            if (skillGroupRef !== "any" && pair[0].groupRef !== skillGroupRef) {
+            if (values.skillGroupFilter !== "any" && pair[0].groupRef !== values.skillGroupFilter) {
                 return false;
             }
-            if (skillRank !== "any" && pair[1] !== parseInt(skillRank)) {
+            if (values.skillRankFilter !== "any" && pair[1] !== parseInt(values.skillRankFilter)) {
                 return false;
             }
             return true;
@@ -810,23 +892,21 @@ class ContentManager {
         contentManager.skills.list.appendChild(fragment);
 
         contentManager.skills.list.scrollTop = 0;
-
-        // ADD INITIATIVE SKILLS, ETC
     }
 
     filterTechniques() {
 
-        // Get the filter settings
-        const techRank = document.getElementById("techRankFilter").value;
-        const techTypeRef = document.getElementById("techTypeFilter").value;
-        const techActivationRef = document.getElementById("techActivationFilter").value;
-        const techRingRef = document.getElementById("techRingFilter").value;
-        const availabilitySetting = document.getElementById("techAvailabilityFilter").value;
-        const curriculaSetting = document.getElementById("techCurriculaFilter").value;
+        // Get the filter settings and change dataManager.userSettings.values
+        const values = dataManager.userSettings.values;
+        for (const filterName of ["techRankFilter", "techTypeFilter", "techActivationFilter", "techRingFilter", "techAvailabilityFilter", "techCurriculaFilter"]) {
+            values[filterName] = document.getElementById(filterName).value;
+        }
+        // Cache userSettings
+        dataManager.cacheUserSettings();
 
         // Get a combinedArray from the intersection of 2 sets, depending on availability and curricula filter settings
         let availabilitySet;
-        switch(availabilitySetting) {
+        switch(values.techAvailabilityFilter) {
             case "learned":
                 availabilitySet = dataManager.loaded.techSets.learned;
                 break;
@@ -850,7 +930,7 @@ class ContentManager {
                 }
         }
         let combinedArray;
-        switch(curriculaSetting) {            
+        switch(values.techCurriculaFilter) {            
             case "any":
                 combinedArray = [...availabilitySet];
                 break;            
@@ -866,19 +946,19 @@ class ContentManager {
 
         // Additional filtering based on rank, type, activation, ring and clan
         const filteredTechniques = combinedArray.filter(technique => {
-            if (techRank !== "any" && technique.rank !== parseInt(techRank)) {
+            if (values.techRankFilter !== "any" && technique.rank !== parseInt(values.techRankFilter)) {
                 return false;
             }
-            if (techTypeRef !== "any" && technique.typeRef !== techTypeRef) {
+            if (values.techTypeFilter !== "any" && technique.typeRef !== values.techTypeFilter) {
                 return false;
             }
-            if (techActivationRef !== "any" && !technique.activationSet.has(techActivationRef)) {
+            if (values.techActivationFilter !== "any" && !technique.activationSet.has(values.techActivationFilter)) {
                 return false;
             }
-            if (techRingRef !== "any" && technique.ringRef !== techRingRef) {
+            if (values.techRingFilter !== "any" && technique.ringRef !== values.techRingFilter) {
                 return false;
             }
-            if (technique.clanRef !== undefined && technique.clanRef !== dataManager.loaded.character.clanRef && availabilitySetting !== "all") {
+            if (technique.clanRef !== undefined && technique.clanRef !== dataManager.loaded.character.clanRef && values.techAvailabilityFilter !== "all") {
                 return false;
             }
             return true;
@@ -1090,6 +1170,14 @@ class ContentManager {
     }
 
     changeTab(newTabClass) {
+        if(newTabClass === undefined) {
+            newTabClass = dataManager.userSettings.values.currentTabClass;
+        }
+        else {
+            dataManager.userSettings.values.currentTabClass = newTabClass;
+            dataManager.cacheUserSettings();
+        }
+
         if (newTabClass !== contentManager.currentTabClass) {
             for (const element of document.getElementsByClassName(contentManager.currentTabClass)) {
                 element.classList.remove("currentTab");
@@ -1097,7 +1185,7 @@ class ContentManager {
             for (const element of document.getElementsByClassName(newTabClass)) {
                 element.classList.add("currentTab");
             }
-            contentManager.currentTabClass = newTabClass;
+            contentManager.currentTabClass = newTabClass;      
         }
     }
 
@@ -1162,11 +1250,13 @@ class ContentManager {
     }
 
     consultSkill(li, skill, rank, ringRef) {
-        document.querySelector(':root').style.setProperty('--liTop', li.getBoundingClientRect().top + "px");
 
-        document.getElementById("main").classList.add("disabled");
-        contentManager.overlay.classList.add("appear");
-        contentManager.viewer.classList.add("appear");
+        if (!contentManager.viewer.classList.contains("visible")) {
+            document.querySelector(':root').style.setProperty('--liTop', li.getBoundingClientRect().top + "px");
+            document.getElementById("main").classList.add("disabled");
+            contentManager.overlay.classList.add("appear");
+            contentManager.viewer.classList.add("appear");
+        }
 
         // Clear the viewer
         contentManager.viewer.innerHTML = "";        
@@ -1178,17 +1268,34 @@ class ContentManager {
 
         const attributes = document.createElement("div");
         const customIcons = dataManager.content.ui.customIcons;
+        const ring = dataManager.content.rings[ringRef];
 
         const groupSpan = document.createElement("span");
         groupSpan.textContent = dataManager.content.skillGroups[skill.groupRef].skillType;
         attributes.appendChild(groupSpan);
-        
-        const diceSpan = document.createElement("span");
-        const ring = dataManager.content.rings[ringRef];
-        diceSpan.textContent = `${dataManager.loaded.ringMaps.all.get(ring)} ${String.fromCharCode(customIcons.ringDieIcon)} ${rank} ${String.fromCharCode(customIcons.skillDieIcon)}`;
-        attributes.appendChild(diceSpan);
 
-        attributes.classList.add("attributes");
+        // Create ring buttons
+        const buttonContainer = document.createElement("div");
+        // The first property ("any") of dataManager.content.rings is not used
+        for (const buttonRingRef of Object.keys(dataManager.content.rings).splice(1, 5)) {
+            const ringButton = document.createElement("button");
+            ringButton.textContent = String.fromCharCode(customIcons[`${buttonRingRef}Icon`]);
+            ringButton.classList.add("largeFontSize");
+            if (buttonRingRef === ringRef) {
+                ringButton.classList.add("currentTab", buttonRingRef);
+            }            
+            ringButton.addEventListener('click', (event) => {                    
+                contentManager.consultSkill(li, skill, rank, buttonRingRef);
+                // When the button is clicked, hideOverlay() will trigger because the event will think we clicked outside of the viewer, as the button has been deleted
+                // To prevent hideOverlay() from running, we need to stop the event from reaching overlay
+                event.stopPropagation();
+            });
+            buttonContainer.classList.add("alignCenter");
+            buttonContainer.appendChild(ringButton);
+        }
+        attributes.appendChild(buttonContainer);
+
+        attributes.classList.add("spaceBetween", "alignCenter");
         fragment.appendChild(attributes);
 
         const namesDiv = document.createElement("div");
@@ -1199,11 +1306,16 @@ class ContentManager {
         namesDiv.appendChild(nameSpan);
 
         const approachSpan = document.createElement("span");
-        approachSpan.textContent = `${String.fromCharCode(customIcons[`${ringRef}Icon`])} ${ring.approachNames[skill.groupRef]} (${ring.name})`;
-        namesDiv.appendChild(approachSpan);
+        approachSpan.textContent = `${ring.approachNames[skill.groupRef]} (${ring.name})`;
+        namesDiv.appendChild(approachSpan);        
 
         namesDiv.classList.add("columnContainer", "title", "largeFontSize");
         fragment.appendChild(namesDiv);
+
+        const diceSpan = document.createElement("span");
+        diceSpan.textContent = `${dataManager.loaded.ringMaps.all.get(ring)} ${String.fromCharCode(customIcons.ringDieIcon)} + ${rank} ${String.fromCharCode(customIcons.skillDieIcon)}`;
+        diceSpan.classList.add("largeFontSize", "spaceEvenly");
+        fragment.appendChild(diceSpan);
 
         /* INCLUDE DESCRIPTION? IF NOT, DELETE IT FROM SKILL CONTENT
 
@@ -1214,23 +1326,7 @@ class ContentManager {
             descriptionDiv.appendChild(paragraph);
         }
         fragment.appendChild(descriptionDiv);
-
-        const approachContainer = document.createElement("p");
-
-        const approach = document.createElement("span");
-        approach.textContent = String.fromCharCode(customIcons[`${ringRef}Icon`]) + " " + ring.approachNames[skill.groupRef];
-        approach.classList.add("largeFontSize");
-        approachContainer.appendChild(approach);
-
-        const uses = document.createElement("ul");
-        for (let string of skill.uses[ringRef]) {
-            const use = document.createElement("li");
-            use.textContent = string;                   
-            uses.appendChild(use);
-        }
-        approachContainer.appendChild(uses);
-        fragment.appendChild(approachContainer);
-        */        
+        */
 
         const uses = document.createElement("ul");
         for (let string of skill.uses[ringRef]) {
@@ -1241,18 +1337,107 @@ class ContentManager {
         fragment.appendChild(uses);
 
         // Add the new viewer content from the completed fragment
-        contentManager.viewer.appendChild(fragment);        
+        contentManager.viewer.appendChild(fragment);
+
+        const stringArraysMap = new Map();
+
+        // Make a shallow copy of dataManager.content.rings.any.opportunities.general to leave the original intact after we push strings
+        const generalArray = [...dataManager.content.rings.any.opportunities.general];
+        for (const string of ring.opportunities.general) {
+            generalArray.push(string);
+        }
+        stringArraysMap.set("general", generalArray);
+
+        const conflictArray = [];
+        if (skill.groupRef === "martial") {
+            for (const string of ring.opportunities.conflict) {
+                conflictArray.push(string);
+            }
+            stringArraysMap.set("conflict", conflictArray);
+        }
+        else {
+            const skillArray = [ring.opportunities.skillGroups[skill.groupRef]];
+            stringArraysMap.set("skill", skillArray);
+        }
+
+        const initiativeArray = [];
+        const initiativeSkills = ["sentiment", "meditation", "tactics", "command"];
+        for (const initiativeSkill of initiativeSkills) {
+            if (dataManager.content.skills[initiativeSkill] === skill) {
+                initiativeArray.push(ring.opportunities.initiative);
+                stringArraysMap.set("initiative", initiativeArray);
+                break;
+            }
+        }
+
+        const downtimeArray = [];
+        for (const string of ring.opportunities.downtime) {
+            downtimeArray.push(string);
+        }
+        stringArraysMap.set("downtime", downtimeArray);
+
+        // Go through everything in stringArraysMap and add the corresponding elements
+        for (const key of stringArraysMap.keys()) {
+            const opportunity = document.createElement("p");
+            opportunity.textContent = dataManager.content.ui.viewer.exampleOpportunities[key];
+            opportunity.classList.add("opportunities", "italic", "largeFontSize");
+            fragment.appendChild(opportunity);
+
+            const container = document.createElement("div");
+            for (let string of stringArraysMap.get(key)) {
+                const paragraph = document.createElement("p");
+                
+                // Isolate the icon references and use String.fromCharCode on the corresponding codes, then reconstruct string
+                // "|" is being used as an icon delimiter in our JSON files
+                if (string.includes("|")) {
+                    let parts = string.split("|");
+                    string = "";
+                    for (let i = 0; i < parts.length; i++) {
+                        if (parts[i].includes("Icon")) {
+                            string += String.fromCharCode(customIcons[parts[i]]);
+                        }
+                        else {
+                            string += parts[i];
+                        }                        
+                    }
+                }
+                
+                // If string includes ":", separate it in two spans after the first ":" and bold the first span
+                // Arbitrary limit on bold part length set at 20 to avoid false positives
+                const splitPosition = string.search(":") + 1;
+                if (splitPosition > 0 && splitPosition < 20) {
+                    
+                    const boldSpan = document.createElement("span");
+                    boldSpan.textContent = string.slice(0, splitPosition);
+                    boldSpan.classList.add("bold");
+                    paragraph.appendChild(boldSpan);
+
+                    const normalSpan = document.createElement("span");
+                    normalSpan.textContent = string.slice(splitPosition, string.length);
+                    paragraph.appendChild(normalSpan);
+                }
+                else {
+                    paragraph.textContent = string;
+                }
+                container.appendChild(paragraph);
+            }
+            fragment.appendChild(container);
+        }
+        // Add the new viewer content from the completed fragment
+        contentManager.viewer.appendChild(fragment);
     }
 
-    consultTechnique(li, tech) {
-        document.querySelector(':root').style.setProperty('--liTop', li.getBoundingClientRect().top + "px");
+    consultTechnique(li, tech, optionalRing) {
 
-        document.getElementById("main").classList.add("disabled");
-        contentManager.overlay.classList.add("appear");
-        contentManager.viewer.classList.add("appear");
+        if (!contentManager.viewer.classList.contains("visible")) {
+            document.querySelector(':root').style.setProperty('--liTop', li.getBoundingClientRect().top + "px");
+            document.getElementById("main").classList.add("disabled");
+            contentManager.overlay.classList.add("appear");
+            contentManager.viewer.classList.add("appear");
+        }
 
         // Clear the viewer
-        contentManager.viewer.innerHTML = "";        
+        contentManager.viewer.innerHTML = "";
 
         // Create the fragment that will contain the new viewer elements
         const fragment = document.createDocumentFragment();
@@ -1288,12 +1473,37 @@ class ContentManager {
             ringSpan.textContent = String.fromCharCode(customIcons[`${tech.ringRef}Icon`]) + " " + techRing.name;
             attributes.appendChild(ringSpan);
         }
+        else if (tech.activationSet.has("tn") && (tech.activationSet.has("action") || tech.activationSet.has("downtime"))) {            
+            // Create ring buttons
+            const buttonContainer = document.createElement("div");
+            // The first property ("any") of dataManager.content.rings is not used
+            for (const buttonRingRef of Object.keys(dataManager.content.rings).splice(1, 5)) {
+                const ring = dataManager.content.rings[buttonRingRef];
+                const ringButton = document.createElement("button");
+                ringButton.textContent = String.fromCharCode(customIcons[`${buttonRingRef}Icon`]);
+                ringButton.classList.add("largeFontSize");
+                if (ring === optionalRing) {
+                    ringButton.classList.add("currentTab", buttonRingRef);
+                    techRing = optionalRing;
+                }
+                ringButton.addEventListener('click', (event) => {                    
+                    contentManager.consultTechnique(li, tech, ring);
+                    // When the button is clicked, hideOverlay() will trigger because the event will think we clicked outside of the viewer, as the button has been deleted
+                    // To prevent hideOverlay() from running, we need to stop the event from reaching overlay
+                    event.stopPropagation();
+                });
+                buttonContainer.classList.add("buttonContainer");
+                buttonContainer.appendChild(ringButton);
+            }
+            attributes.appendChild(buttonContainer);
+        }
+
         if (tech.clanRef !== undefined) {
             const clanSpan = document.createElement("span");
             clanSpan.textContent = String.fromCharCode(customIcons[`${tech.clanRef}Icon`]) + " " + dataManager.content.clans[tech.clanRef].name;
             attributes.appendChild(clanSpan);
         }
-        attributes.classList.add("attributes");
+        attributes.classList.add("spaceBetween", "alignCenter");
         fragment.appendChild(attributes);
 
         const nameSpan = document.createElement("span");        
@@ -1341,81 +1551,73 @@ class ContentManager {
             }
         }
 
-        // The ring is always defined for invocations so we can use the corresponding opportunities
         if (tech.typeRef === "invocation") {
             stringArraysMap.set("invocationOpportunities", techRing.opportunities.invocation);
         }
 
-        const rings = [];
-        if (tech.ringRef === "none") {
-            // The first property ("any") of dataManager.content.rings is not used
-            for (const ring of Object.values(dataManager.content.rings).splice(1, 5)) {
-                rings.push(ring);
-            }
-        }
-        else {
-            rings.push(techRing);
-        }
-
         // Make a shallow copy of dataManager.content.rings.any.opportunities.general to leave the original intact after we push strings
         const generalArray = [...dataManager.content.rings.any.opportunities.general];
-        const conflictArray = [];
-        const skillArray = [];
-        const downtimeArray = [];
-        const stanceArray = [];
-        for (const ring of rings) {
-            for (const string of ring.opportunities.general) {
+        if (tech.activationSet.has("tn")) {
+            stringArraysMap.set("general", generalArray);
+        }
+
+        if (techRing !== undefined) {
+            const conflictArray = [];
+            const skillArray = [];
+            const downtimeArray = [];
+            const stanceArray = [];
+
+            for (const string of techRing.opportunities.general) {
                 generalArray.push(string);
             }            
             if (tech.activationSet.has("tn")) {
                 // If the technique activation involves a check, it is always as an action or downtime activity
-                stringArraysMap.set("general", generalArray);
 
                 if (tech.activationSet.has("action")) {
-                    for (const string of ring.opportunities.conflict) {
+                    for (const string of techRing.opportunities.conflict) {
                         conflictArray.push(string);
                     }
                 }
-
+    
                 if (tech.activationSet.has("action") || tech.activationSet.has("downtime")) {
                     for (const groupRef of Object.keys(dataManager.content.skillGroups)) {
                         if (tech.activationSet.has(groupRef)) {
                             if (groupRef === "martial") {
                                 if (conflictArray.length === 0) {
-                                    for (const string of ring.opportunities.conflict) {
+                                    for (const string of techRing.opportunities.conflict) {
                                         conflictArray.push(string);
                                     }
                                 }
                             }
                             else {
-                                skillArray.push(ring.opportunities[groupRef]);
+                                skillArray.push(techRing.opportunities.skillGroups[groupRef]);
                             }
                         }
                     }
                 }                
-
+    
                 if (tech.activationSet.has("downtime")) {
-                    for (const string of ring.opportunities.downtime) {
+                    for (const string of techRing.opportunities.downtime) {
                         downtimeArray.push(string);
                     }
                 }
             }
             if (tech.activationSet.has("action")) {
-                stanceArray.push(ring.stanceEffect);
+                stanceArray.push(techRing.stanceEffect);
             }
-        }
-        
-        if (conflictArray.length > 0) {
-            stringArraysMap.set("conflict", conflictArray);            
-        }
-        if (skillArray.length > 0) {
-            stringArraysMap.set("skill", skillArray);
-        }
-        if (downtimeArray.length > 0) {
-            stringArraysMap.set("downtime", downtimeArray);
-        }
-        if (stanceArray.length > 0) {
-            stringArraysMap.set("stanceEffect", stanceArray);
+            
+            if (conflictArray.length > 0) {
+                stringArraysMap.set("conflict", conflictArray);            
+            }
+            if (skillArray.length > 0) {
+                stringArraysMap.set("skill", skillArray);
+            }
+            if (downtimeArray.length > 0) {
+                stringArraysMap.set("downtime", downtimeArray);
+            }
+            if (stanceArray.length > 0) {
+                stringArraysMap.set("stanceEffect", stanceArray);
+            }
         }
 
         // Go through everything in stringArraysMap and add the corresponding elements
@@ -1472,23 +1674,9 @@ class ContentManager {
                 container.appendChild(paragraph);
             }
             fragment.appendChild(container);
-        }    
-
-
-
-
-
-
-
-
-
-
-
-
+        }        
         // Add the new viewer content from the completed fragment
         contentManager.viewer.appendChild(fragment);
-
-        // ADD EXTRA OPPORTUNITIES THAT APPLY, LIKE THE ONES FOR INVOCATIONS OR THE EXAMPLES AT THE END OF THE BOOK
     }
 
     toggleVisible() {
@@ -1544,7 +1732,7 @@ class ContentManager {
         }
 
         const emptyCharacter = new Character("", charClanRef, "", charSchoolRef, "", "", "", "", [""], [""], [""], [""], {air:1, earth:1, fire:1, water:1, void:1}, {}, [], [], 0, 0, 0, 0);
-        const titleRef = "Emerald Magistrate [Melee]";
+        const titleRef = "Emerald Magistrate";
         emptyCharacter.progress[titleRef] = [];
         dataManager.loaded.character = emptyCharacter;
         dataManager.updateFilteredSets(emptyCharacter);
@@ -1721,11 +1909,13 @@ class Character {
 const dataManager = new DataManager();
 // Create a contentManager singleton
 const contentManager = new ContentManager(); 
-contentManager.changeTab("techniques"); // CHANGE THIS TO GET INFO FROM USERSETTINGS
 contentManager.viewer.addEventListener("animationend", contentManager.toggleVisible);
 
 // JSON caching and content object creation are done through dataManager.initialize() as an async process
 dataManager.initialize().then(() => {
+
+    contentManager.initialize();
+    contentManager.changeTab();
 
     document.getElementById("skillGroupFilter").addEventListener('change', contentManager.filterSkills);
     document.getElementById("skillRankFilter").addEventListener('change', contentManager.filterSkills);
@@ -1738,14 +1928,6 @@ dataManager.initialize().then(() => {
     document.getElementById("techRingFilter").addEventListener('change', contentManager.filterTechniques);
     document.getElementById("techAvailabilityFilter").addEventListener('change', contentManager.filterTechniques);
     document.getElementById("techCurriculaFilter").addEventListener('change', contentManager.filterTechniques);
-
-
-
-
-    // TO DO: DISPLAY ELEMENTS BASED ON USER SETTINGS: LATEST CHARACTER, TAB AND FILTERS
-
-
-
 
     // TEMPORARY TESTING
     contentManager.selectSchoolTEST(); // CREATE A BAREBONES DEFAULT CHARACTER AND UPDATE FILTERED SETS, THEN DISPLAY THE TECHNIQUES BASED ON DEFAULT FILTER SETTINGS

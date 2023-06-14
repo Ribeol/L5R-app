@@ -37,10 +37,12 @@
                 "Earth |opportunityIcon|opportunityIcon|: Do not apply one of your disadvantages to checks until the end of your next turn."
             ],
             "initiative":"Earth |opportunityIcon|: On an Initiative check, choose another character’s disadvantage you know. They do not apply that disadvantage to their checks this scene.",
-            "artisan":"Earth |opportunityIcon| (Artisan): If you succeed, add the Durable quality to an item that you are restoring.",
-            "social":"Earth |opportunityIcon| (Social): Increase the TN of the next Social check another character makes before the end of the scene by 1.",
-            "scholar":"Earth |opportunityIcon| (Scholar): Remember a place where you can research or study the topic you were attempting to recall.",
-            "trade":"Earth |opportunityIcon| (Trade): Reduce the TN of the next check another character makes with the same skill before the end of the scene by 1.",
+            "skillGroups":{
+                "artisan":"Earth |opportunityIcon| (Artisan): If you succeed, add the Durable quality to an item that you are restoring.",
+                "social":"Earth |opportunityIcon| (Social): Increase the TN of the next Social check another character makes before the end of the scene by 1.",
+                "scholar":"Earth |opportunityIcon| (Scholar): Remember a place where you can research or study the topic you were attempting to recall.",
+                "trade":"Earth |opportunityIcon| (Trade): Reduce the TN of the next check another character makes with the same skill before the end of the scene by 1."
+            },            
             "downtime":[
                 "Earth |opportunityIcon|+: Another character in your company may remove 1 strife or fatigue per |opportunityIcon| spent this way.",
                 "Earth |opportunityIcon|opportunityIcon|: Memorize a small but vital detail from to your activity; you can recall it later without a check."
@@ -76,10 +78,12 @@
                 "Water |opportunityIcon|opportunityIcon|: Move 1 range band."
             ],
             "initiative":"Water |opportunityIcon|: On an Initiative check, assess the qualities of all terrain in the scene.",
-            "artisan":"Water |opportunityIcon| (Artisan): Add a kept |ringDieIcon| set to an |opportunityIcon| result to the next Artisan skill check you make before the end of the game session.",
-            "social":"Water |opportunityIcon| (Social): Add a kept |ringDieIcon| set to an |opportunityIcon| result to your next Social check before the end of the scene.",
-            "scholar":"Water |opportunityIcon| (Scholar): Spot a unique or identifying quality, aspect, or ability of something that you are identifying.",
-            "trade":"Water |opportunityIcon| (Trade): Convince a seller to give you an additional 10% discount for an item you are buying.",
+            "skillGroups":{
+                "artisan":"Water |opportunityIcon| (Artisan): Add a kept |ringDieIcon| set to an |opportunityIcon| result to the next Artisan skill check you make before the end of the game session.",
+                "social":"Water |opportunityIcon| (Social): Add a kept |ringDieIcon| set to an |opportunityIcon| result to your next Social check before the end of the scene.",
+                "scholar":"Water |opportunityIcon| (Scholar): Spot a unique or identifying quality, aspect, or ability of something that you are identifying.",
+                "trade":"Water |opportunityIcon| (Trade): Convince a seller to give you an additional 10% discount for an item you are buying."
+            },
             "downtime":[
                 "Water |opportunityIcon|+: Remove 1 strife or fatigue per |opportunityIcon| spent this way.",
                 "Water |opportunityIcon|opportunityIcon|: Make a new friend while undertaking your downtime activity."
@@ -115,10 +119,12 @@
                 "Fire |opportunityIcon|opportunityIcon|: Other characters must receive 2 strife to choose you as the target of their Attack and Scheme actions until the start of your next turn."
             ],
             "initiative":"Fire |opportunityIcon|: On an Initiative check, use your focus instead of your vigilance for your initiative when surprised.",
-            "artisan":"Fire |opportunityIcon| (Artisan): If you succeed, make one additional copy of the item you are creating.",
-            "social":"Fire |opportunityIcon| (Social): Reduce the TN of the next Social check another character makes before the end of the scene by 1.",
-            "scholar":"Fire |opportunityIcon| (Scholar): Extrapolate the motivations or desires of another character in the scene or wider situation.",
-            "trade":"Fire |opportunityIcon| (Trade): Unusual inspiration strikes; add a kept |ringDieIcon| set to an |opportunityIcon| result to the next check you make with another skill.",
+            "skillGroups":{
+                "artisan":"Fire |opportunityIcon| (Artisan): If you succeed, make one additional copy of the item you are creating.",
+                "social":"Fire |opportunityIcon| (Social): Reduce the TN of the next Social check another character makes before the end of the scene by 1.",
+                "scholar":"Fire |opportunityIcon| (Scholar): Extrapolate the motivations or desires of another character in the scene or wider situation.",
+                "trade":"Fire |opportunityIcon| (Trade): Unusual inspiration strikes; add a kept |ringDieIcon| set to an |opportunityIcon| result to the next check you make with another skill."
+            },
             "downtime":[
                 "Fire |opportunityIcon|+: Assist one other character per |opportunityIcon| spent this way with their next downtime activity check this session.",
                 "Fire |opportunityIcon|opportunityIcon|: Energize another character in your company with your efforts; they may perform 1 additional downtime action this downtime (to a maximum of 2)."
@@ -154,10 +160,12 @@
                 "Air |opportunityIcon|opportunityIcon|: Increase the TN of the next Martial Arts [Ranged] check targeting you before the start of your next turn by 2."
             ],
             "initiative":"Air |opportunityIcon|: On an Initiative check, assess one foe’s weakness. Learn one of their disadvantages of that foe’s choice.",
-            "artisan":"Air |opportunityIcon| (Artisan): If you succeed, add the Resplendent or Subtle quality to an item that you are refining.",
-            "social":"Air |opportunityIcon| (Social): Learn if the honor, glory, or status attribute of a character in the scene is higher, lower, or equal to yours.",
-            "scholar":"Air |opportunityIcon| (Scholar): Learn a something about a character who created or used the item you are studying (such as one of their advantages or disadvantages of the GM’s choice that affected their creation or use of the item).",
-            "trade":"Air |opportunityIcon| (Trade): Convince a buyer to pay an additional 10% for an item you are selling.",
+            "skillGroups":{
+                "artisan":"Air |opportunityIcon| (Artisan): If you succeed, add the Resplendent or Subtle quality to an item that you are refining.",
+                "social":"Air |opportunityIcon| (Social): Learn if the honor, glory, or status attribute of a character in the scene is higher, lower, or equal to yours.",
+                "scholar":"Air |opportunityIcon| (Scholar): Learn a something about a character who created or used the item you are studying (such as one of their advantages or disadvantages of the GM’s choice that affected their creation or use of the item).",
+                "trade":"Air |opportunityIcon| (Trade): Convince a buyer to pay an additional 10% for an item you are selling."
+            },
             "downtime":[
                 "Air |opportunityIcon|+: Learn a detail about one person in your company (such as an advantage or disadvantage of their choice) per |opportunityIcon| spent this way. You can learn only one detail about each person this way in a single downtime scene.",
                 "Air |opportunityIcon|opportunityIcon|: Perform your downtime activity without letting one or more others of your choice know that you did."
@@ -186,10 +194,12 @@
                 "Void |opportunityIcon|opportunityIcon|: Ignore the effects of one condition you are suffering until the end of your next turn."
             ],
             "initiative":"Void |opportunityIcon|: On an Initiative check, sense if there is an Otherworldly being in the scene.",
-            "artisan":"Void |opportunityIcon| (Artisan): Reduce the TN of the next check you make using the item you are attuning yourself to by 1.",
-            "social":"Void |opportunityIcon| (Social): Discern the objective of another character in the scene.",
-            "scholar":"Void |opportunityIcon| (Scholar): Intuit whether you can learn anything of value from your current course of inquiry.",
-            "trade":"Void |opportunityIcon| (Trade): Reduce any effect you have on your environment (and physical traces of your efforts) to a minimum.",
+            "skillGroups":{
+                "artisan":"Void |opportunityIcon| (Artisan): Reduce the TN of the next check you make using the item you are attuning yourself to by 1.",
+                "social":"Void |opportunityIcon| (Social): Discern the objective of another character in the scene.",
+                "scholar":"Void |opportunityIcon| (Scholar): Intuit whether you can learn anything of value from your current course of inquiry.",
+                "trade":"Void |opportunityIcon| (Trade): Reduce any effect you have on your environment (and physical traces of your efforts) to a minimum."
+            },
             "downtime":[
                 "Void |opportunityIcon|+: Reserve 1 dropped die from your check, to a maximum of your ranks in the skill you used. Add that die to your next check with the same skill as a kept die instead of rolling it.",
                 "Void |opportunityIcon|opportunityIcon|: Have a brief premonition of a possible future event while undertaking your downtime activity."

@@ -4,42 +4,52 @@
     },
     "earth":{
         "name":"Terre",
-        "artisan":"Restaurer",
-        "social":"Raisonner",
-        "scholar":"Se remémorer",
-        "martial":"Résister",
-        "trade":"Produire"
+        "approachNames":{
+            "artisan":"Restaurer",
+            "social":"Raisonner",
+            "scholar":"Se remémorer",
+            "martial":"Résister",
+            "trade":"Produire"
+        }
     },    
     "water":{
         "name":"Eau",
-        "artisan":"Adapter",
-        "social":"Charmer",
-        "scholar":"Observer",
-        "martial":"Détourner",
-        "trade":"Échanger"
+        "approachNames":{
+            "artisan":"Adapter",
+            "social":"Charmer",
+            "scholar":"Observer",
+            "martial":"Détourner",
+            "trade":"Échanger"
+        }
     },
     "fire":{
         "name":"Feu",
-        "artisan":"Inventer",
-        "social":"Inciter",
-        "scholar":"Théoriser",
-        "martial":"Submerger",
-        "trade":"Innover"
+        "approachNames":{
+            "artisan":"Inventer",
+            "social":"Inciter",
+            "scholar":"Théoriser",
+            "martial":"Submerger",
+            "trade":"Innover"
+        }
     },
     "air":{
         "name":"Air",
-        "artisan":"Raffiner",
-        "social":"Duper",
-        "scholar":"Analyser",
-        "martial":"Feinter",
-        "trade":"Escroquer"
+        "approachNames":{
+            "artisan":"Raffiner",
+            "social":"Duper",
+            "scholar":"Analyser",
+            "martial":"Feinter",
+            "trade":"Escroquer"
+        }
     },
     "void":{
         "name":"Vide",
-        "artisan":"S’harmoniser",
-        "social":"Illuminer",
-        "scholar":"Ressentir",
-        "martial":"Lâcher prise",
-        "trade":"Subsister"
+        "approachNames":{
+            "artisan":"S’harmoniser",
+            "social":"Illuminer",
+            "scholar":"Ressentir",
+            "martial":"Lâcher prise",
+            "trade":"Subsister"
+        }
     }
 }

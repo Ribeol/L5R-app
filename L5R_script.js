@@ -3,7 +3,10 @@
 // #region Class definitions ----------------------------------------------------------------------------------------------------
 
 class UserSettings {
-    constructor(languages) {        
+    constructor(languages) {
+        
+        this.tempCharacterName = undefined;
+
         // this.cacheUpdate is set through initialize and stores the date of the last cache update
         this.lastCacheTime = undefined;
 
@@ -62,7 +65,7 @@ class DataManager {
         // this.characterNames will store the names of all loadable characters in an array
         this.characterNames = undefined;
         
-        // this.loaded is a container for the loaded character, and data derived from it and this.content
+        // this.loaded is a container for the loaded character, as well as data derived from it and from this.content
         this.loaded = {
             character: undefined,
             school: undefined,
@@ -215,18 +218,21 @@ class DataManager {
     async loadCharacter(characterName) {
         const cache = await caches.open(DataManager.cacheName);
         // Get the file name from the character's name and try to find it in the cache
-        const jsonName = `${characterName}.json`.replace(" ","_");
+        const jsonName = `${characterName}.json`.replace(" ","_"); 
         const response = await cache.match(`./characters/${jsonName}`);
         // If the json file exists in the cache, assign the corresponding object to dataManager.loaded.character
         if (response) {
             const jsonObject = await response.json();
-            dataManager.loaded.character = jsonObject;
+            dataManager.loaded.character = Object.assign(new Character(), jsonObject);
             dataManager.updateFilteredSets(jsonObject);
         }
         else {
             dataManager.loaded = null;
             // RESET DISPLAY?
         }
+        contentManager.loadTab();
+        // TEMPORARY! THE FOLLOWING ONLY WORKS BECAUSE FOR TEMP CHARACTER, SCHOOLREF === FAMILYREF
+        contentManager.updateCharacterHeader(dataManager.loaded.character.familyRef, dataManager.loaded.character.clanRef);
     }
 
     async getContent(cache, directoryPath) {
@@ -302,7 +308,7 @@ class DataManager {
                 completeArray.push(ability);
             }
         }
-        const keywords = dataManager.content.ui.viewer.activationKeywords;
+        const keywords = dataManager.content.ui.activationKeywords;
         for (const techOrAbility of completeArray) {
 
             const checkedString = techOrAbility.activation[0].toLowerCase();
@@ -619,8 +625,8 @@ class DataManager {
         }
         dataManager.loaded.remainingExp = dataManager.loaded.character.receivedExp - totalSpentExp;
 
-        document.getElementById("spentExp").innerHTML = totalSpentExp; // REMOVE AFTER TESTING!
-        document.getElementById("rank").innerHTML = dataManager.loaded.institutionRanks.get(dataManager.loaded.school); // REMOVE AFTER TESTING!
+        document.getElementById("spentExp").innerHTML = totalSpentExp;
+        document.getElementById("schoolExp").innerHTML = progressExp.get(dataManager.loaded.school);
 
         // Utility function that returns a map based on the 1st parameter keys, with rank = 0 except for those from the 2nd parameter
         // Depending on what the map will be used for, upgradeableOnly determines whether rank 5 should be excluded or not
@@ -703,26 +709,38 @@ class ContentManager {
         }
         ContentManager.instance = this;
 
-        // this.currentTabClass will be set by this.changeTab
-        this.currentTabClass = undefined;
-
         this.overlay = document.getElementById("overlay");
         this.viewer = document.getElementById("viewer");
 
+        this.rings = {
+            div: document.getElementById("ringDiv")
+        }
         this.skills = {
-            list: document.getElementById("skillsList"), 
+            list: document.getElementById("skillList"),
             expanded: null // [skill, element]
         }
         this.techniques = {
-            list: document.getElementById("techniquesList"),
+            list: document.getElementById("techniqueList"),
+        }
+
+        // this.unload is used in the loadTab function and specifies which tab's content should be unloaded when switching to another tab
+        this.unload = {
+            character: true,
+            rings: true,
+            skills: false,
+            techniques: false,
+            experience: true,
+            items: true,
+            beginner: true
         }
     }
 
+    // contentManager.initialize sets form content to the last state according to dataManager.userSettings.values
     initialize() {
         for (const filterName of ["skillGroupFilter", "skillRankFilter", "skillAvailabilityFilter", "skillCurriculaFilter", "techRankFilter", "techTypeFilter", "techRingFilter", "techActivationFilter", "techAvailabilityFilter", "techCurriculaFilter"]) {
             const selectElement = document.getElementById(filterName);
             if (selectElement.options.length === 0) {
-                for (const obj of dataManager.content.ui.filters[filterName]) {
+                for (const obj of dataManager.content.ui[filterName]) {
                     const option = document.createElement("option");
                     Object.assign(option, obj);
                     selectElement.options.add(option);
@@ -735,6 +753,181 @@ class ContentManager {
                 }                
             }
         }
+    }
+
+    displayStats() {
+
+        contentManager.rings.div.innerHTML = " ";
+
+        const fragment = document.createDocumentFragment();
+
+        const ringGrid = document.createElement("div");
+        ringGrid.classList.add("ringGrid");
+
+        const divMap = new Map();
+        let i = 0;
+        const keys = ["focus", "air", "vigilance", "fire", "void", "water", "endurance", "earth", "composure"];
+        for (let row = 1; row <= 5; row++) {
+            for (let column = 1; column <= 5; column++) {
+                if ([1, 3, 5].includes(row) && [1, 3, 5].includes(column)) {
+
+                    const div = document.createElement("div");
+                    if (row !== 3 && column !== 3) {
+                        div.style.setProperty("grid-row-start", row);
+                        div.style.setProperty("grid-column-start", column);
+                    }                    
+                    
+                    ringGrid.appendChild(div);
+                    divMap.set(keys[i], div);
+                    i++;
+                }
+                else if ([2, 3, 4].includes(row) && [2, 3, 4].includes(column)) {
+                    continue;
+                }
+                else {
+                    const arrowSpan = document.createElement("span");
+                    arrowSpan.style.setProperty("grid-row-start", row);
+                    arrowSpan.style.setProperty("grid-column-start", column);
+                    if (row === 2 && [1, 5].includes(column)) {
+                        arrowSpan.textContent = "🠝";
+                    }
+                    else if (row === 4 && [1, 5].includes(column)) {
+                        arrowSpan.textContent = "🠟";
+                    }
+                    else if ([1, 5].includes(row) && column === 2) {
+                        arrowSpan.textContent = "🠜";
+                    }
+                    else if ([1, 5].includes(row) && column === 4) {
+                        arrowSpan.textContent = "🠞";
+                    }
+                    arrowSpan.classList.add("veryLargeFontSize");
+                    ringGrid.appendChild(arrowSpan);
+                }                
+            }
+        }
+        // The first property ("any") of dataManager.content.rings is not used
+        for (const ringRef of Object.keys(dataManager.content.rings).splice(1, 5)) {
+
+            if (ringRef === "void") {
+                divMap.get("void").classList.add("columnContainer", "voidDiv");
+
+                const ringDiv = document.createElement("div");
+                divMap.get("void").appendChild(ringDiv);
+
+                const pointSpan = document.createElement("span");
+                pointSpan.textContent = `${dataManager.content.ui.voidPoints} ${dataManager.loaded.character.voidPoints}/${dataManager.loaded.ringMaps.all.get(dataManager.content.rings["void"])}`;
+                divMap.get("void").appendChild(pointSpan);
+
+                const buttonLine = document.createElement("div");
+                divMap.get("void").appendChild(buttonLine);
+
+                const substract = document.createElement("button");
+                substract.textContent = "-";
+                substract.addEventListener('click', () => {
+                    dataManager.loaded.character.changeVoidPoints(-1);
+                });
+                buttonLine.appendChild(substract);
+
+                const add = document.createElement("button");
+                add.textContent = "+";
+                add.addEventListener('click', () => {
+                    dataManager.loaded.character.changeVoidPoints(1);
+                });
+                buttonLine.appendChild(add);
+
+                divMap.set("void", ringDiv);
+            }
+
+            const iconSpan = document.createElement("span");
+            iconSpan.textContent = String.fromCharCode(dataManager.content.ui.customIcons[`${ringRef}Icon`]);
+            iconSpan.classList.add("giantIcon", ringRef);
+            divMap.get(ringRef).appendChild(iconSpan);
+
+            const nameSpan = document.createElement("span");
+            nameSpan.textContent = dataManager.content.rings[ringRef].name;
+            nameSpan.classList.add("largeFontSize");
+            divMap.get(ringRef).appendChild(nameSpan);
+
+            const rankSpan = document.createElement("span");
+            rankSpan.textContent = `${dataManager.content.ui.rank} ${dataManager.loaded.ringMaps.all.get(dataManager.content.rings[ringRef])}`;
+            divMap.get(ringRef).appendChild(rankSpan);
+            
+            divMap.get(ringRef).classList.add("ring");
+            divMap.get(ringRef).addEventListener('click', () => {
+                contentManager.confirm(contentManager.increaseRing, ringRef);
+            });            
+        }
+
+        for (const attributeRef of ["focus", "vigilance"]) {
+            divMap.get(attributeRef).textContent = dataManager.content.ui[attributeRef] + " " + dataManager.loaded.character[attributeRef];
+        }
+        for (const attributeRef of ["endurance", "composure"]) {
+            let extra;
+            if (attributeRef === "endurance") {
+                extra = [dataManager.content.ui["fatigue"], dataManager.loaded.character["fatigue"], "changeFatigue"];
+            }
+            else {
+                extra = [dataManager.content.ui["strife"], dataManager.loaded.character["strife"], "changeStrife"];
+            }
+
+            divMap.get(attributeRef).classList.add("columnContainer");
+
+            const extraSpan = document.createElement("span");
+            extraSpan.textContent =  extra[0] + " " + extra[1];
+            extraSpan.style.setProperty("border-bottom", "1px solid black");
+            divMap.get(attributeRef).appendChild(extraSpan);
+
+            const textSpan = document.createElement("span");
+            textSpan.textContent = dataManager.content.ui[attributeRef] + " " + dataManager.loaded.character[attributeRef];
+            divMap.get(attributeRef).appendChild(textSpan);
+
+            const buttonLine = document.createElement("div");
+            divMap.get(attributeRef).appendChild(buttonLine);
+
+            const substract = document.createElement("button");
+            substract.textContent = "-";
+            substract.addEventListener('click', () => {
+                dataManager.loaded.character[extra[2]](-1);
+            });
+            buttonLine.appendChild(substract);
+
+            const add = document.createElement("button");
+            add.textContent = "+";
+            add.addEventListener('click', () => {
+                dataManager.loaded.character[extra[2]](1);
+            });
+            buttonLine.appendChild(add);
+        }
+        fragment.appendChild(ringGrid);
+
+        const buttonDiv = document.createElement("div");
+        buttonDiv.classList.add("columnContainer");
+        buttonDiv.style.setProperty("width", "50%");
+        buttonDiv.style.setProperty("align-self", "center");
+
+        const endSceneButton = document.createElement("button");
+        endSceneButton.textContent = dataManager.content.ui.endScene;
+        endSceneButton.addEventListener('click', () => {
+            dataManager.loaded.character.endScene();
+        });
+        buttonDiv.appendChild(endSceneButton);
+
+        const restButton = document.createElement("button");
+        restButton.textContent = dataManager.content.ui.rest;
+        restButton.addEventListener('click', () => {
+            dataManager.loaded.character.rest();
+        });
+        buttonDiv.appendChild(restButton);
+
+        const unmaskButton = document.createElement("button");
+        unmaskButton.textContent = dataManager.content.ui.unmask;
+        unmaskButton.addEventListener('click', () => {
+            dataManager.loaded.character.unmask();
+        });
+        buttonDiv.appendChild(unmaskButton);
+
+        fragment.appendChild(buttonDiv);
+        contentManager.rings.div.appendChild(fragment);
     }
 
     filterSkills() {
@@ -759,6 +952,7 @@ class ContentManager {
             case "all":
                 availabilityMap = dataManager.loaded.skillMaps.all;            
         }
+
         let combinedArray;
         switch(values.skillCurriculaFilter) {
             case "any":
@@ -858,7 +1052,7 @@ class ContentManager {
                     }
                 }
                 if (curriculaDiv.firstChild) {
-                    curriculaDiv.classList.add("gridIcons");
+                    curriculaDiv.classList.add("iconGrid");
                     consultDiv.appendChild(curriculaDiv);
                 }
             }
@@ -1065,7 +1259,7 @@ class ContentManager {
                     activationDiv.appendChild(iconSpan);
                 }                
             }            
-            activationDiv.classList.add("gridIcons");
+            activationDiv.classList.add("iconGrid");
             consultDiv.appendChild(activationDiv);
 
             const nameSpan = document.createElement("span");            
@@ -1134,7 +1328,7 @@ class ContentManager {
                     }
                 }
                 if (curriculaDiv.firstChild) {
-                    curriculaDiv.classList.add("gridIcons");
+                    curriculaDiv.classList.add("iconGrid");
                     consultDiv.appendChild(curriculaDiv);
                 }
 
@@ -1168,23 +1362,85 @@ class ContentManager {
         contentManager.techniques.list.scrollTop = 0;
     }
 
-    changeTab(newTabClass) {
-        if(newTabClass === undefined) {
-            newTabClass = dataManager.userSettings.values.currentTabClass;
-        }
-        else {
-            dataManager.userSettings.values.currentTabClass = newTabClass;
-            dataManager.cacheUserSettings();
-        }
+    loadTab(newTabClass) {
 
-        if (newTabClass !== contentManager.currentTabClass) {
-            for (const element of document.getElementsByClassName(contentManager.currentTabClass)) {
+        if (newTabClass !== dataManager.userSettings.values.currentTabClass) {
+
+            // Remove "currentTab" from the previous tab
+            for (const element of document.getElementsByClassName(dataManager.userSettings.values.currentTabClass)) {
                 element.classList.remove("currentTab");
             }
+
+            // If some of the previous tab's elements should be removed, do so
+            if (contentManager.unload[dataManager.userSettings.values.currentTabClass]) {
+                switch(dataManager.userSettings.values.currentTabClass) {
+                    case "character":
+                        
+                        break;            
+                    case "rings":
+                        contentManager.rings.div.innerHTML = "";
+                        break;
+                    case "skills":
+                        contentManager.skills.list.innerHTML = "";
+                        contentManager.skills.expanded = null;
+                        break;
+                    case "techniques":
+                        contentManager.techniques.list.innerHTML = "";
+                        break;
+                    case "experience":
+                        
+                        break;
+                    case "items":
+                        
+                        break;
+                    case "beginner":
+                        
+                }
+            }
+
+            // Depending on whether newTabClass is defined, update currentTabClass and cache it, or update newTabClass
+            if(newTabClass !== undefined) {                
+                dataManager.userSettings.values.currentTabClass = newTabClass; 
+                dataManager.cacheUserSettings();
+            }
+            else {
+                newTabClass = dataManager.userSettings.values.currentTabClass;
+            }
+
+            // If the new tab has elements missing, add them
+            switch(newTabClass) {
+                case "character":
+                    
+                    break;            
+                case "rings":
+                    if (contentManager.rings.div.children.length === 0) {
+                        contentManager.displayStats();
+                    }                    
+                    break;
+                case "skills":
+                    if (contentManager.skills.list.children.length === 0) {
+                        contentManager.filterSkills();
+                    }
+                    break;
+                case "techniques":
+                    if (contentManager.techniques.list.children.length === 0) {
+                        contentManager.filterTechniques();
+                    }
+                    break;
+                case "experience":
+                    
+                    break;
+                case "items":
+                    
+                    break;
+                case "beginner":
+                    
+            }
+
+            // Add "currentTab" to the new tab
             for (const element of document.getElementsByClassName(newTabClass)) {
                 element.classList.add("currentTab");
             }
-            contentManager.currentTabClass = newTabClass;      
         }
     }
 
@@ -1338,25 +1594,25 @@ class ContentManager {
         // Add the new viewer content from the completed fragment
         contentManager.viewer.appendChild(fragment);
 
-        const stringArraysMap = new Map();
+        const stringArrayMap = new Map();
 
         // Make a shallow copy of dataManager.content.rings.any.opportunities.general to leave the original intact after we push strings
         const generalArray = [...dataManager.content.rings.any.opportunities.general];
         for (const string of ring.opportunities.general) {
             generalArray.push(string);
         }
-        stringArraysMap.set("general", generalArray);
+        stringArrayMap.set("general", generalArray);
 
         const conflictArray = [];
         if (skill.groupRef === "martial") {
             for (const string of ring.opportunities.conflict) {
                 conflictArray.push(string);
             }
-            stringArraysMap.set("conflict", conflictArray);
+            stringArrayMap.set("conflict", conflictArray);
         }
         else {
             const skillArray = [ring.opportunities.skillGroups[skill.groupRef]];
-            stringArraysMap.set("skill", skillArray);
+            stringArrayMap.set("skill", skillArray);
         }
 
         const initiativeArray = [];
@@ -1364,7 +1620,7 @@ class ContentManager {
         for (const initiativeSkill of initiativeSkills) {
             if (dataManager.content.skills[initiativeSkill] === skill) {
                 initiativeArray.push(ring.opportunities.initiative);
-                stringArraysMap.set("initiative", initiativeArray);
+                stringArrayMap.set("initiative", initiativeArray);
                 break;
             }
         }
@@ -1373,17 +1629,17 @@ class ContentManager {
         for (const string of ring.opportunities.downtime) {
             downtimeArray.push(string);
         }
-        stringArraysMap.set("downtime", downtimeArray);
+        stringArrayMap.set("downtime", downtimeArray);
 
-        // Go through everything in stringArraysMap and add the corresponding elements
-        for (const key of stringArraysMap.keys()) {
+        // Go through everything in stringArrayMap and add the corresponding elements
+        for (const key of stringArrayMap.keys()) {
             const opportunity = document.createElement("p");
-            opportunity.textContent = dataManager.content.ui.viewer.exampleOpportunities[key];
+            opportunity.textContent = dataManager.content.ui.exampleOpportunities[key];
             opportunity.classList.add("opportunities", "italic", "largeFontSize");
             fragment.appendChild(opportunity);
 
             const container = document.createElement("div");
-            for (let string of stringArraysMap.get(key)) {
+            for (let string of stringArrayMap.get(key)) {
                 const paragraph = document.createElement("p");
                 
                 // Isolate the icon references and use String.fromCharCode on the corresponding codes, then reconstruct string
@@ -1446,7 +1702,7 @@ class ContentManager {
         const attributes = document.createElement("div");
 
         const rankSpan = document.createElement("span");
-        rankSpan.textContent = `${dataManager.content.ui.viewer.rank} ${tech.rank}`;
+        rankSpan.textContent = `${dataManager.content.ui.rank} ${tech.rank}`;
         attributes.appendChild(rankSpan);
 
         const customIcons = dataManager.content.ui.customIcons;
@@ -1541,23 +1797,23 @@ class ContentManager {
         namesDiv.classList.add("title", "largeFontSize", "columnContainer");
         fragment.appendChild(namesDiv);
         
-        const stringArraysMap = new Map();
+        const stringArrayMap = new Map();
 
         const stringArrayNames = ["description", "activation", "effects", "newOpportunities"];
         for (let stringArrayName of stringArrayNames) {
             if (tech[stringArrayName] !== undefined) {
-                stringArraysMap.set(stringArrayName, tech[stringArrayName]);
+                stringArrayMap.set(stringArrayName, tech[stringArrayName]);
             }
         }
 
         if (tech.typeRef === "invocation") {
-            stringArraysMap.set("invocationOpportunities", techRing.opportunities.invocation);
+            stringArrayMap.set("invocationOpportunities", techRing.opportunities.invocation);
         }
 
         // Make a shallow copy of dataManager.content.rings.any.opportunities.general to leave the original intact after we push strings
         const generalArray = [...dataManager.content.rings.any.opportunities.general];
         if (tech.activationSet.has("tn")) {
-            stringArraysMap.set("general", generalArray);
+            stringArrayMap.set("general", generalArray);
         }
 
         if (techRing !== undefined) {
@@ -1606,35 +1862,35 @@ class ContentManager {
             }
             
             if (conflictArray.length > 0) {
-                stringArraysMap.set("conflict", conflictArray);            
+                stringArrayMap.set("conflict", conflictArray);            
             }
             if (skillArray.length > 0) {
-                stringArraysMap.set("skill", skillArray);
+                stringArrayMap.set("skill", skillArray);
             }
             if (downtimeArray.length > 0) {
-                stringArraysMap.set("downtime", downtimeArray);
+                stringArrayMap.set("downtime", downtimeArray);
             }
             if (stanceArray.length > 0) {
-                stringArraysMap.set("stanceEffect", stanceArray);
+                stringArrayMap.set("stanceEffect", stanceArray);
             }
         }
 
-        // Go through everything in stringArraysMap and add the corresponding elements
-        for (const key of stringArraysMap.keys()) {
+        // Go through everything in stringArrayMap and add the corresponding elements
+        for (const key of stringArrayMap.keys()) {
             if (key === "newOpportunities" || key === "invocationOpportunities" || key === "stanceEffect") {
                 const opportunity = document.createElement("p");
-                opportunity.textContent = dataManager.content.ui.viewer[key];
+                opportunity.textContent = dataManager.content.ui[key];
                 opportunity.classList.add("opportunities", "italic", "largeFontSize");
                 fragment.appendChild(opportunity);
             }
             else if (key === "general" || key === "conflict" || key === "skill" || key === "downtime") {
                 const opportunity = document.createElement("p");
-                opportunity.textContent = dataManager.content.ui.viewer.exampleOpportunities[key];
+                opportunity.textContent = dataManager.content.ui.exampleOpportunities[key];
                 opportunity.classList.add("opportunities", "italic", "largeFontSize");
                 fragment.appendChild(opportunity);
             }
             const container = document.createElement("div");
-            for (let string of stringArraysMap.get(key)) {
+            for (let string of stringArrayMap.get(key)) {
                 const paragraph = document.createElement("p");
                 
                 // Isolate the icon references and use String.fromCharCode on the corresponding codes, then reconstruct string
@@ -1662,9 +1918,19 @@ class ContentManager {
                     boldSpan.classList.add("bold");
                     paragraph.appendChild(boldSpan);
 
-                    // MODIFY TO CHECK NORMALSPAN FOR SKILLS
+                    let normalString = string.slice(splitPosition, string.length);
+                    /* FIX OR REMOVE THIS PART. AMONG THE ISSUES: DICEPOSITION IS INCONSISTENT, AND THIS DOESN'T WORK WHEN MARTIAL ART IS NOT SPECIFIED                    
+                    if (key === "activation" && techRing !== "none") {
+                        for (const skill of Object.values(dataManager.content.skills)) {
+                            if (normalString.includes(skill.name)) {
+                                const dicePosition = string.search(skill.name);
+                                normalString = normalString.slice(0, dicePosition) + ` ${dataManager.loaded.ringMaps.all.get(techRing)} ${String.fromCharCode(customIcons.ringDieIcon)} + ${dataManager.loaded.ringMaps.all.get(skill)} ${String.fromCharCode(customIcons.skillDieIcon)}` + normalString.slice(dicePosition, string.length);
+                            }
+                        }
+                    }
+                    */
                     const normalSpan = document.createElement("span");
-                    normalSpan.textContent = string.slice(splitPosition, string.length);
+                    normalSpan.textContent = normalString
                     paragraph.appendChild(normalSpan);
                 }
                 else {
@@ -1712,6 +1978,22 @@ class ContentManager {
         const charSchoolRef = document.getElementById("tempSchoolDropdown").value;
         let charClanRef;
 
+        contentManager.updateCharacterHeader(charSchoolRef, charClanRef);
+
+        const emptyCharacter = new Character("incomplete", charClanRef, charSchoolRef, charSchoolRef, "", "", "", "", [""], [""], [""], [""], {air:1, earth:1, fire:1, water:1, void:1}, {}, [], [], 0, 0, 0, 0);
+        const titleRef = "Emerald Magistrate";
+        emptyCharacter.progress[titleRef] = [];
+        dataManager.loaded.character = emptyCharacter;
+        dataManager.updateFilteredSets(emptyCharacter);
+        contentManager.displayStats();
+        contentManager.filterSkills();
+        contentManager.filterTechniques();
+        dataManager.cacheCharacter();
+        dataManager.userSettings.tempCharacterName = charSchoolRef + " incomplete";
+        contentManager.loadTab();
+    }
+
+    updateCharacterHeader(charSchoolRef, charClanRef) {
         const clanColors = new Map();
         clanColors.set("crab", `hsl(220, 40%, 60%)`);
         clanColors.set("crane",`hsl(195, 60%, 60%)`);
@@ -1725,18 +2007,13 @@ class ContentManager {
             for (const familyRef of dataManager.content.clans[clanRef].familyRefs) {
                 if (familyRef === charSchoolRef) {;
                     charClanRef = clanRef;
-                    document.querySelector(':root').style.setProperty('--customColor', clanColors.get(clanRef));
+                    document.querySelector(':root').style.setProperty('--customColor', clanColors.get(clanRef));                    
+                    document.getElementById("clanIcon").textContent = String.fromCharCode(dataManager.content.ui.customIcons[`${clanRef}Icon`]);
                 }
             }
         }
 
-        const emptyCharacter = new Character("", charClanRef, "", charSchoolRef, "", "", "", "", [""], [""], [""], [""], {air:1, earth:1, fire:1, water:1, void:1}, {}, [], [], 0, 0, 0, 0);
-        const titleRef = "Emerald Magistrate";
-        emptyCharacter.progress[titleRef] = [];
-        dataManager.loaded.character = emptyCharacter;
-        dataManager.updateFilteredSets(emptyCharacter);
-        contentManager.filterSkills();
-        contentManager.filterTechniques();
+        document.getElementById("tempSchoolDropdown").value = charSchoolRef;
     }
 
     confirm(func, param) {
@@ -1782,11 +2059,13 @@ class ContentManager {
             }
             addedString += `R: ${ringRef}`;
             dataManager.loaded.character.progress[schoolRef].push(addedString);
-        }
 
-        dataManager.updateFilteredSets(dataManager.loaded.character);
-        contentManager.filterSkills();
-        contentManager.filterTechniques();
+            dataManager.updateFilteredSets(dataManager.loaded.character);
+            contentManager.displayStats();
+            contentManager.filterSkills();
+            contentManager.filterTechniques();
+            dataManager.cacheCharacter();
+        }
     }
 
     upgradeSkill(skill, free) {
@@ -1799,12 +2078,16 @@ class ContentManager {
                 }
                 addedString += `S: ${skillRef}`;
                 dataManager.loaded.character.progress[schoolRef].push(addedString);
+
+                dataManager.updateFilteredSets(dataManager.loaded.character);
+                contentManager.displayStats();
+                contentManager.filterSkills();
+                contentManager.filterTechniques();
+                dataManager.cacheCharacter();
+
+                break;
             }
-        }
-        
-        dataManager.updateFilteredSets(dataManager.loaded.character);
-        contentManager.filterSkills();
-        contentManager.filterTechniques();
+        }        
     }
 
     learnTechnique(technique, free) {
@@ -1817,15 +2100,17 @@ class ContentManager {
                 }
                 addedString += `T: ${techRef}`;
                 dataManager.loaded.character.progress[schoolRef].push(addedString);
+                
+                dataManager.updateFilteredSets(dataManager.loaded.character);
+                contentManager.displayStats();
+                contentManager.filterSkills();
+                contentManager.filterTechniques();
+                dataManager.cacheCharacter();
+                
+                break;
             }
         }
-        
-        dataManager.updateFilteredSets(dataManager.loaded.character);
-        contentManager.filterSkills();
-        contentManager.filterTechniques();
     }
-
-
 }
 
 class Character {
@@ -1855,7 +2140,9 @@ class Character {
         this._status = status; // int
         this._fatigue = 0; // int
         this._strife = 0; // int
-        this._voidPoints = Math.ceil(startingRingRefs["void"]/2); // int
+        if (startingRingRefs !== undefined) {
+            this._voidPoints = Math.ceil(startingRingRefs["void"]/2); // int
+        }        
     }
 
     get honor() {return this._honor;}
@@ -1868,33 +2155,49 @@ class Character {
     changeHonor(difference) {this._status = Math.min(Math.max(0, this._status += difference), 100);}
 
     get fatigue() {return this._fatigue;}
-    changeFatigue(difference) {this._fatigue = Math.max(0, this._fatigue += difference);}
+    changeFatigue(difference) {
+        this._fatigue = Math.max(0, this._fatigue += difference);
+        contentManager.displayStats();
+        dataManager.cacheCharacter();
+    }
 
     get strife() {return this._strife;}
-    changeStrife(difference) {this._strife = Math.max(0, this._strife += difference);}
+    changeStrife(difference) {
+        this._strife = Math.max(0, this._strife += difference);
+        contentManager.displayStats();
+        dataManager.cacheCharacter();
+    }
 
     get voidPoints() {return this._voidPoints;}
-    changeVoidPoints(difference) {this._voidPoints = Math.min(Math.max(0, this._voidPoints += difference), dataManager.loaded.ringMaps.all["void"]);}
-
-    getEndurance() {return (dataManager.loaded.ringMaps.all["earth"] + dataManager.loaded.ringMaps.all["fire"])*2;}
-    getComposure() {return (dataManager.loaded.ringMaps.all["earth"] + dataManager.loaded.ringMaps.all["water"])*2;}
-    getFocus() {return dataManager.loaded.ringMaps.all["fire"] + dataManager.loaded.ringMaps.all["air"];}
-    getVigilance() {return (dataManager.loaded.ringMaps.all["air"] + dataManager.loaded.ringMaps.all["water"])/2;}
-
-    endOfScene() {
-        this._fatigue = Math.ceil(Math.min(this._fatigue, this.getEndurance()/2));
-        this._strife = Math.ceil(Math.min(this._strife, this.getComposure()/2));
-        //UPDATE DISPLAY
+    changeVoidPoints(difference) {
+        this._voidPoints = Math.min(Math.max(0, this._voidPoints += difference), dataManager.loaded.ringMaps.all.get(dataManager.content.rings["void"]));
+        contentManager.displayStats();
+        dataManager.cacheCharacter();
     }
 
+    get endurance() {return (dataManager.loaded.ringMaps.all.get(dataManager.content.rings["earth"]) + dataManager.loaded.ringMaps.all.get(dataManager.content.rings["fire"]))*2;}
+    get composure() {return (dataManager.loaded.ringMaps.all.get(dataManager.content.rings["earth"]) + dataManager.loaded.ringMaps.all.get(dataManager.content.rings["water"]))*2;}
+    get focus() {return dataManager.loaded.ringMaps.all.get(dataManager.content.rings["fire"]) + dataManager.loaded.ringMaps.all.get(dataManager.content.rings["air"]);}
+    get vigilance() {return Math.floor((dataManager.loaded.ringMaps.all.get(dataManager.content.rings["air"]) + dataManager.loaded.ringMaps.all.get(dataManager.content.rings["water"]))/2);}
+
+    endScene() {
+        this._fatigue = Math.ceil(Math.min(this._fatigue, this.endurance/2));
+        this._strife = Math.ceil(Math.min(this._strife, this.composure/2));
+        contentManager.displayStats();
+        dataManager.cacheCharacter();
+    }
+    // The rest function also applies the effects of endScene before the full night's rest
     rest() {
-        changeFatigue(-dataManager.loaded.ringMaps.all["water"]*2);
-        //UPDATE DISPLAY
+        this._fatigue = Math.ceil(Math.min(this._fatigue, this.endurance/2));
+        this._strife = Math.ceil(Math.min(this._strife, this.composure/2));
+        this._fatigue = Math.max(0, this._fatigue - 2 * dataManager.loaded.ringMaps.all.get(dataManager.content.rings["water"]));
+        contentManager.displayStats();
+        dataManager.cacheCharacter();
     }
-
-    unmasking() {
+    unmask() {
         this._strife = 0;
-        //UPDATE DISPLAY
+        contentManager.displayStats();
+        dataManager.cacheCharacter();
     }
 
     // CREATE A METHOD TO ADD TITLES
@@ -1914,7 +2217,14 @@ contentManager.viewer.addEventListener("animationend", contentManager.toggleVisi
 dataManager.initialize().then(() => {
 
     contentManager.initialize();
-    contentManager.changeTab();
+
+    // TEMPORARY TESTING, LOADTAB IS USED AT THE END OF BOTH FUNCTIONS
+    if (dataManager.userSettings.tempCharacterName !== undefined) {
+        dataManager.loadCharacter(dataManager.userSettings.tempCharacterName);        
+    }
+    else {
+        contentManager.selectSchoolTEST(); // CREATE A BAREBONES DEFAULT CHARACTER AND UPDATE FILTERED SETS, THEN DISPLAY THE TECHNIQUES BASED ON DEFAULT FILTER SETTINGS
+    }
 
     document.getElementById("skillGroupFilter").addEventListener('change', contentManager.filterSkills);
     document.getElementById("skillRankFilter").addEventListener('change', contentManager.filterSkills);
@@ -1928,13 +2238,8 @@ dataManager.initialize().then(() => {
     document.getElementById("techAvailabilityFilter").addEventListener('change', contentManager.filterTechniques);
     document.getElementById("techCurriculaFilter").addEventListener('change', contentManager.filterTechniques);
 
-    // TEMPORARY TESTING
-    contentManager.selectSchoolTEST(); // CREATE A BAREBONES DEFAULT CHARACTER AND UPDATE FILTERED SETS, THEN DISPLAY THE TECHNIQUES BASED ON DEFAULT FILTER SETTINGS
-
     // ALLOW THE USER TO REPEAT THE PREVIOUS STEP WITH A NEW CHARACTER FROM ANOTHER SCHOOL, OR TO CHANGE FILTERS
     document.getElementById("tempSchoolDropdown").addEventListener('change', contentManager.selectSchoolTEST);
-
-    
 });
 
 // #endregion ----------------------------------------------------------------------------------------------------

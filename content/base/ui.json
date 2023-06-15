@@ -1,12 +1,4 @@
 {
-    "characterCreation":{},
-    "user":{},
-    "stats":{},
-    "skills":{},
-    "techniques":{},
-    "experience":{},
-    "items":{},
-    "notes":{},
     "customIcons":{
         "airIcon":"0xe900",
         "actionIcon":"0xe902",

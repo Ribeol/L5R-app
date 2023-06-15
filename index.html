@@ -41,6 +41,9 @@
             .largeFontSize {
                 font-size: 1.25em;
             }
+            .veryLargeFontSize {
+                font-size: 1.5em;
+            }
             .rounded {
                 border-radius: 25px;
             }
@@ -129,6 +132,43 @@
             }
             .page:not(.currentTab) {
                 display: none;
+            }
+
+            .ringGrid {
+                display: grid;
+                grid-template-rows: auto auto auto auto auto;
+                grid-template-columns: auto auto auto auto auto;
+                align-self: center;
+                text-align: center;
+                justify-content: space-between;
+                align-items: center;
+                padding: 1em;
+            }
+            .ringGrid :not(.ring)>span {                
+                padding: 0.25em;
+            }
+            .ringGrid .voidDiv {
+                grid-area: 2/2/5/5;                
+                margin-top: 1.5em;
+                margin-bottom: 0.5em;
+            }
+            .ringGrid .ring {
+                display: grid;
+                grid-template-rows: 1.25em 1em;
+                grid-template-columns: auto auto;
+                align-items: center;
+                border: 1px solid black;
+                border-radius: 25px;
+                padding: 0.4em;
+                background-color: #eeeeee;
+                width: 6em;
+                align-self: center;
+            }
+            .ringGrid .ring span {
+                justify-self: flex-start;
+            }
+            .ringGrid .ring :first-child {
+                grid-row: span 2;
             }
 
             .filters {
@@ -249,22 +289,26 @@
                 font-weight: bold;
                 width: 0.75em;
             }
-            .list .largeIcon {
+            .smallIcon {
+                font-size: 1.25em;
+                padding-top: 2px;
+            }
+            .largeIcon {
                 width: 1em;
                 font-size: 1.5em;
                 padding-top: 4px;
             }
-            .list .smallIcon {
-                font-size: 1.25em;
-                padding-top: 2px;
-            }
-            .list .gridIcons {
+            .giantIcon {
+                font-size: 1.75em;
+                padding-top: 4px;
+            } 
+            .list .iconGrid {
                 display: grid;
                 grid-template-rows: 1.25em 1.25em;
                 grid-auto-flow: column;
                 padding-top: 4px;
             }
-            .gridIcons :last-child:nth-child(odd) {
+            .iconGrid :last-child:nth-child(odd) {
                 grid-row: span 2;
                 align-self: center;
             }
@@ -364,8 +408,10 @@
     </head>
     <body class="normalFontSize">
         <div id="main" class="columnContainer">
-            <button id="characterHeader" class="customColor">
-                <div style="display: flex; justify-content: space-evenly;">School:
+            <button id="characterHeader" class="customColor" style="display: flex; justify-content:space-evenly; align-items: center;">
+                <span id="clanIcon" style="font-size: 35px; padding-top: 7px;"></span>
+                <div style="display: flex; flex-direction: column; width: 40%; gap: 0.25em;">
+                    <span>New character / reset:</span>
                     <select id="tempSchoolDropdown">
                         <option value="Hida">Hida</option>
                         <option value="Hiruma">Hiruma</option>
@@ -399,30 +445,27 @@
                         <option value="Utaku">Utaku</option>
                         <option value="ronin">ronin</option>
                     </select>
-                    <span>/ Spent EXP:</span>
-                    <span id="spentExp"></span>
-                    <span>/ Rank:</span>
-                    <span id="rank"></span>
-                </div>             
-                <div style="display: flex; justify-content: space-evenly;">
-                    <span onclick="contentManager.confirm(contentManager.increaseRing, 'air')" style="background-color: #dddddd; border: 1px solid #111111; padding: 2px;">Air</span>                    
-                    <span onclick="contentManager.confirm(contentManager.increaseRing, 'earth')" style="background-color: #dddddd; border: 1px solid #111111; padding: 2px;">Earth</span>
-                    <span onclick="contentManager.confirm(contentManager.increaseRing, 'fire')" style="background-color: #dddddd; border: 1px solid #111111; padding: 2px;">Fire</span>
-                    <span onclick="contentManager.confirm(contentManager.increaseRing, 'water')" style="background-color: #dddddd; border: 1px solid #111111; padding: 2px;">Water</span>
-                    <span onclick="contentManager.confirm(contentManager.increaseRing, 'void')" style="background-color: #dddddd; border: 1px solid #111111; padding: 2px;">Void</span>
-                </div>                   
+                </div>
+                <div style="display: flex; flex-direction: column; gap: 0.25em;">
+                    <div>Spent Exp: 
+                        <span id="spentExp"></span>
+                    </div>
+                    <div>School Exp: 
+                        <span id="schoolExp"></span>
+                    </div>                    
+                </div>
             </button>
             <div id="navbar" class="alignCenter">
-                <button class="character" onclick="contentManager.changeTab('character')">&#xe903</button>
-                <button class="rings" onclick="contentManager.changeTab('rings')">&#xe924</button>
-                <button class="skills" onclick="contentManager.changeTab('skills')">&#xe91a</button>
-                <button class="techniques" onclick="contentManager.changeTab('techniques')">&#xe921</button>
-                <button class="experience" onclick="contentManager.changeTab('experience')">&#xe926</button>
-                <button class="items" onclick="contentManager.changeTab('items')">&#xe928</button>
-                <button class="beginner" onclick="contentManager.changeTab('beginner')">&#xe901</button>
+                <button class="character" onclick="contentManager.loadTab('character')">&#xe903</button>
+                <button class="rings" onclick="contentManager.loadTab('rings')">&#xe924</button>
+                <button class="skills" onclick="contentManager.loadTab('skills')">&#xe91a</button>
+                <button class="techniques" onclick="contentManager.loadTab('techniques')">&#xe921</button>
+                <button class="experience" onclick="contentManager.loadTab('experience')">&#xe926</button>
+                <button class="items" onclick="contentManager.loadTab('items')">&#xe928</button>
+                <button class="beginner" onclick="contentManager.loadTab('beginner')">&#xe901</button>
             </div>
             <div class="page character columnContainer">WIP</div>
-            <div class="page rings columnContainer">WIP</div>
+            <div id="ringDiv" class="page rings columnContainer"></div>
             <div class="page skills columnContainer">
                 <div class="filters">
                     <span>&#xe90f</span>
@@ -435,8 +478,7 @@
                         <select id="skillCurriculaFilter"></select>
                     </div>
                 </div>
-                <ul id="skillsList" class="list">
-                </ul>
+                <ul id="skillList" class="list"></ul>
             </div>
             <div class="page techniques columnContainer">
                 <div class="filters">
@@ -452,8 +494,7 @@
                         <select id="techCurriculaFilter"></select>
                     </div>
                 </div>
-                <ul id="techniquesList" class="list">
-                </ul>
+                <ul id="techniqueList" class="list"></ul>
             </div>
             <div class="page experience columnContainer">WIP</div>
             <div class="page items columnContainer">WIP</div>

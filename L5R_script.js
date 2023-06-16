@@ -106,8 +106,14 @@ class DataManager {
             dataManager.contentInfo = await dataManager.getContentInfo(cache);
             // Get dataManager.userSettings
             dataManager.userSettings = await dataManager.getUserSettings(cache, dataManager.contentInfo.languages);
-            // Change the page language to reflect userSettings
-            document.documentElement.lang = dataManager.userSettings.language;
+            // Set language options for languageSelect (this part is unaffected by the chosen language, so we can set this here instead of contentManager)
+            for (const language of dataManager.contentInfo.languages) {
+                const option = document.createElement("option");
+                option.value = language;
+                option.text = language;
+                document.getElementById("languageSelect").options.add(option);
+                document.getElementById("languageSelect").value = dataManager.userSettings.language;
+            }
 
             // Get dataManager.characterNames
             dataManager.characterNames = await dataManager.getCharacterNames(cache);
@@ -398,6 +404,20 @@ class DataManager {
             }
         }
     }
+    
+    async changeLanguage() {
+        const cache = await caches.open(DataManager.cacheName);
+        dataManager.userSettings.language = document.getElementById("languageSelect").value;
+        dataManager.cacheUserSettings();
+        await dataManager.getContent(cache, `./content/${dataManager.userSettings.language}`);
+        dataManager.finalizeTechsAndAbilities();
+        contentManager.initialize(true);
+        contentManager.clearContent();
+        contentManager.loadTab(dataManager.userSettings.currentTabClass);
+        
+        // Change the page language to reflect userSettings
+        document.documentElement.lang = dataManager.userSettings.language;
+    }
 
     updateFilteredSets(character) {
         // MAKE A DIFFERENT FUNCTION FOR LEARNING SKILLS/TECHS, RANK UPS, NEW TITLES
@@ -627,6 +647,7 @@ class DataManager {
 
         document.getElementById("spentExp").innerHTML = totalSpentExp;
         document.getElementById("schoolExp").innerHTML = progressExp.get(dataManager.loaded.school);
+        document.getElementById("schoolRank").innerHTML = dataManager.loaded.institutionRanks.get(dataManager.loaded.school);
 
         // Utility function that returns a map based on the 1st parameter keys, with rank = 0 except for those from the 2nd parameter
         // Depending on what the map will be used for, upgradeableOnly determines whether rank 5 should be excluded or not
@@ -736,21 +757,30 @@ class ContentManager {
     }
 
     // contentManager.initialize sets form content to the last state according to dataManager.userSettings.values
-    initialize() {
+    initialize(languageChanged) {
         for (const filterName of ["skillGroupFilter", "skillRankFilter", "skillAvailabilityFilter", "skillCurriculaFilter", "techRankFilter", "techTypeFilter", "techRingFilter", "techActivationFilter", "techAvailabilityFilter", "techCurriculaFilter"]) {
             const selectElement = document.getElementById(filterName);
-            if (selectElement.options.length === 0) {
+            // If languageChanged, replace existing options for each filter
+            if (languageChanged) {
+                let i = 0;
+                for (const option of selectElement.options) {
+                    Object.assign(option, dataManager.content.ui[filterName][i]);
+                    i++;
+                }
+            }
+            // Otherwise, create new options and set filter values
+            else {
                 for (const obj of dataManager.content.ui[filterName]) {
                     const option = document.createElement("option");
                     Object.assign(option, obj);
                     selectElement.options.add(option);
-                }                
+                }
                 if (dataManager.userSettings.values[filterName] !== undefined) {
                     document.getElementById(filterName).value = dataManager.userSettings.values[filterName];
                 }
                 else {
                     document.getElementById(filterName).value = selectElement.options[0].value;
-                }                
+                }
             }
         }
     }
@@ -1362,70 +1392,29 @@ class ContentManager {
         contentManager.techniques.list.scrollTop = 0;
     }
 
-    loadTab(newTabClass) {
+    clearContent(tabClass) {
+        let tabClasses;
+        if (tabClass !== undefined) {
+            tabClasses = [tabClass];
+        }
+        else {
+            tabClasses = Object.keys(contentManager.unload);
+        }
 
-        if (newTabClass !== dataManager.userSettings.values.currentTabClass) {
-
-            // Remove "currentTab" from the previous tab
-            for (const element of document.getElementsByClassName(dataManager.userSettings.values.currentTabClass)) {
-                element.classList.remove("currentTab");
-            }
-
-            // If some of the previous tab's elements should be removed, do so
-            if (contentManager.unload[dataManager.userSettings.values.currentTabClass]) {
-                switch(dataManager.userSettings.values.currentTabClass) {
-                    case "character":
-                        
-                        break;            
-                    case "rings":
-                        contentManager.rings.div.innerHTML = "";
-                        break;
-                    case "skills":
-                        contentManager.skills.list.innerHTML = "";
-                        contentManager.skills.expanded = null;
-                        break;
-                    case "techniques":
-                        contentManager.techniques.list.innerHTML = "";
-                        break;
-                    case "experience":
-                        
-                        break;
-                    case "items":
-                        
-                        break;
-                    case "beginner":
-                        
-                }
-            }
-
-            // Depending on whether newTabClass is defined, update currentTabClass and cache it, or update newTabClass
-            if(newTabClass !== undefined) {                
-                dataManager.userSettings.values.currentTabClass = newTabClass; 
-                dataManager.cacheUserSettings();
-            }
-            else {
-                newTabClass = dataManager.userSettings.values.currentTabClass;
-            }
-
-            // If the new tab has elements missing, add them
-            switch(newTabClass) {
+        for (const tabClass of tabClasses) {
+            switch(tabClass) {
                 case "character":
                     
                     break;            
                 case "rings":
-                    if (contentManager.rings.div.children.length === 0) {
-                        contentManager.displayStats();
-                    }                    
+                    contentManager.rings.div.innerHTML = "";
                     break;
                 case "skills":
-                    if (contentManager.skills.list.children.length === 0) {
-                        contentManager.filterSkills();
-                    }
+                    contentManager.skills.list.innerHTML = "";
+                    contentManager.skills.expanded = null;
                     break;
                 case "techniques":
-                    if (contentManager.techniques.list.children.length === 0) {
-                        contentManager.filterTechniques();
-                    }
+                    contentManager.techniques.list.innerHTML = "";
                     break;
                 case "experience":
                     
@@ -1436,11 +1425,62 @@ class ContentManager {
                 case "beginner":
                     
             }
+        }        
+    }
 
+    loadTab(newTabClass) {
+        if (newTabClass !== dataManager.userSettings.values.currentTabClass) {
+            // Remove "currentTab" from the previous tab
+            for (const element of document.getElementsByClassName(dataManager.userSettings.values.currentTabClass)) {
+                element.classList.remove("currentTab");
+            }
+
+            // If some of the previous tab's elements should be removed, do so
+            if (contentManager.unload[dataManager.userSettings.values.currentTabClass]) {
+                contentManager.clearContent(dataManager.userSettings.values.currentTabClass);
+            }
+
+            // Depending on whether newTabClass is defined, update currentTabClass and cache it, or update newTabClass
+            if(newTabClass !== undefined) {                
+                dataManager.userSettings.values.currentTabClass = newTabClass; 
+                dataManager.cacheUserSettings();
+            }
+            else {
+                newTabClass = dataManager.userSettings.values.currentTabClass;
+            }
             // Add "currentTab" to the new tab
             for (const element of document.getElementsByClassName(newTabClass)) {
                 element.classList.add("currentTab");
             }
+        }
+        // If the new tab has elements missing, add them
+        switch(newTabClass) {
+            case "character":
+                
+                break;            
+            case "rings":
+                if (contentManager.rings.div.children.length === 0) {
+                    contentManager.displayStats();
+                }                    
+                break;
+            case "skills":
+                if (contentManager.skills.list.children.length === 0) {
+                    contentManager.filterSkills();
+                }
+                break;
+            case "techniques":
+                if (contentManager.techniques.list.children.length === 0) {
+                    contentManager.filterTechniques();
+                }
+                break;
+            case "experience":
+                
+                break;
+            case "items":
+                
+                break;
+            case "beginner":
+                
         }
     }
 
@@ -2216,7 +2256,7 @@ contentManager.viewer.addEventListener("animationend", contentManager.toggleVisi
 // JSON caching and content object creation are done through dataManager.initialize() as an async process
 dataManager.initialize().then(() => {
 
-    contentManager.initialize();
+    contentManager.initialize(false);
 
     // TEMPORARY TESTING, LOADTAB IS USED AT THE END OF BOTH FUNCTIONS
     if (dataManager.userSettings.tempCharacterName !== undefined) {
@@ -2225,6 +2265,7 @@ dataManager.initialize().then(() => {
     else {
         contentManager.selectSchoolTEST(); // CREATE A BAREBONES DEFAULT CHARACTER AND UPDATE FILTERED SETS, THEN DISPLAY THE TECHNIQUES BASED ON DEFAULT FILTER SETTINGS
     }
+    document.getElementById("languageSelect").addEventListener('change', dataManager.changeLanguage);    
 
     document.getElementById("skillGroupFilter").addEventListener('change', contentManager.filterSkills);
     document.getElementById("skillRankFilter").addEventListener('change', contentManager.filterSkills);

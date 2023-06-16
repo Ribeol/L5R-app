@@ -410,8 +410,8 @@
         <div id="main" class="columnContainer">
             <button id="characterHeader" class="customColor" style="display: flex; justify-content:space-evenly; align-items: center;">
                 <span id="clanIcon" style="font-size: 35px; padding-top: 7px;"></span>
-                <div style="display: flex; flex-direction: column; width: 40%; gap: 0.25em;">
-                    <span>New character / reset:</span>
+                <div style="display: flex; flex-direction: column; gap: 0.25em;">
+                    <span>Character reset:</span>
                     <select id="tempSchoolDropdown">
                         <option value="Hida">Hida</option>
                         <option value="Hiruma">Hiruma</option>
@@ -446,14 +446,18 @@
                         <option value="ronin">ronin</option>
                     </select>
                 </div>
-                <div style="display: flex; flex-direction: column; gap: 0.25em;">
+                <div style="display: flex; flex-direction: column;">
                     <div>Spent Exp: 
                         <span id="spentExp"></span>
                     </div>
                     <div>School Exp: 
                         <span id="schoolExp"></span>
-                    </div>                    
+                    </div>
+                    <div>School Rank: 
+                        <span id="schoolRank"></span>
+                    </div>
                 </div>
+                <select id="languageSelect"></select>
             </button>
             <div id="navbar" class="alignCenter">
                 <button class="character" onclick="contentManager.loadTab('character')">&#xe903</button>

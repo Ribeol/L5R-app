@@ -819,16 +819,16 @@ class ContentManager {
                     arrowSpan.style.setProperty("grid-row-start", row);
                     arrowSpan.style.setProperty("grid-column-start", column);
                     if (row === 2 && [1, 5].includes(column)) {
-                        arrowSpan.textContent = "🠝";
+                        arrowSpan.textContent = "⇧";
                     }
                     else if (row === 4 && [1, 5].includes(column)) {
-                        arrowSpan.textContent = "🠟";
+                        arrowSpan.textContent = "⇩";
                     }
                     else if ([1, 5].includes(row) && column === 2) {
-                        arrowSpan.textContent = "🠜";
+                        arrowSpan.textContent = "⇦";
                     }
                     else if ([1, 5].includes(row) && column === 4) {
-                        arrowSpan.textContent = "🠞";
+                        arrowSpan.textContent = "⇨";
                     }
                     arrowSpan.classList.add("veryLargeFontSize");
                     ringGrid.appendChild(arrowSpan);

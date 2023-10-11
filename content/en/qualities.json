@@ -1,0 +1,128 @@
+{
+    "ceremonial":{
+        "name":"Ceremonial",
+        "description":[
+            "Ceremonial equipment is indicative of the wearer’s rank. It can be brought into many contexts in which similar items might not be allowed. Rarely, a character might be loaned a Ceremonial item to provide them with authority during a task.",
+            "While wearing one or more Ceremonial items openly, reduce TN of checks to convince others of your real or assumed identity as the known owner of that item (or one of their allies) by 1.",
+            "At the end of any scene in which you use a Ceremonial item of a character with higher status without their permission, you must forfeit 3 honor."
+        ]
+    },
+    "concealable":{
+        "name":"Concealable",
+        "description":[
+            "Some weapons and armor are easy to hide on one’s person, due to size or deliberate design.",
+            "Unless explicitly worn openly or revealed for use, a Concealable item is assumed to be hidden. When observing the wearer of a hidden item, a character must succeed at a TN 3 Design (Air) or Smithing (Air) check to discern that the wearer is armed or armored. If the onlooker succeeds with two or more bonus successes, they also determine the type of the hidden item.",
+            "Concealable armor can be worn under loose-fitting clothes, but you can only benefit from the resistance and qualities of one set of armor at a time.",
+            "Concealable weapons can also be drawn more quickly in combat. As part of an Attack action, you may ready or sheathe one Concealable weapon."
+        ]
+    },
+    "cumbersome":{
+        "name":"Cumbersome",
+        "description":[
+            "This item is heavy or unwieldy, and impossible to conceal on one’s person.",
+            "While wearing Cumbersome armor, increase the TN of your checks to maneuver in your environment (such as Movement action checks) by 1.",
+            "If you moved this turn, increase the TN of Attack action checks using a Cumbersome weapon by 1."
+        ]
+    },
+    "damaged":{
+        "name":"Damaged",
+        "description":[
+            "Samurai must carefully maintain their kit in the field, for routine wear and tear will eventually ruin nearly any tool.",
+            "While many samurai have staff to assist with such matters, most battle-tested samurai have learned at least the basics needed to keep their equipment functional.",
+            "If a weapon or tool becomes Damaged, increase the TN of checks to use it by 1.",
+            "If armor becomes Damaged, reduce all resistances it provides by 2 (to a minimum of 0).",
+            "If a Damaged item becomes Damaged again, it loses Damaged and becomes Destroyed instead. If it becomes Destroyed for any other reason, it also loses Damaged."
+        ]
+    },
+    "destroyed":{
+        "name":"Destroyed",
+        "description":[
+            "Extreme events or long use without maintenance can shatter, tear, or otherwise render an item nonfunctional.",
+            "Such an item is broken and cannot be used for its intended function. It might still be usable as an improvised weapon or tool, at the GM’s discretion."
+        ]
+    },
+    "durable":{
+        "name":"Durable",
+        "description":[
+            "Items crafted to last can endure damage that would destroy less well-made works.",
+            "If a Durable item would become Damaged, it loses Durable instead. If a Durable item would be Destroyed, it loses Durable and becomes Damaged instead."
+        ]
+    },
+    "forbidden":{
+        "name":"Forbidden",
+        "description":[
+            "Rokugani laws are unforgiving, and many things are contraband. This includes many illicit substances, heretical art or literature, and foreign items that have not been transported through strictly regulated trade routes.",
+            "At the end of any scene in which you used a Forbidden item openly in public, you must forfeit 3 glory."
+        ]
+    },
+    "mundane":{
+        "name":"Mundane",
+        "description":[
+            "Mundane items are objects that are found in all contexts of daily life, and are permitted to anyone in most social contexts (within reason). After all, people in many walks of life need tools like knives, walking sticks, and wheat threshers, even if these items can be utilized to deadly effect by someone sufficiently determined.",
+            "Wearing a Mundane item openly has no additional effects, though onlookers still take note of the fact that you are armed if the item could be used as a weapon."
+        ]
+    },
+    "prepare":{
+        "name":"Prepare",
+        "description":[
+            "This item must be reloaded, reset, or otherwise prepared after use.",
+            "After you use this item, you cannot use it again until it has been prepared. As a Support action, while it is readied, you may prepare this item for use."
+        ]
+    },
+    "razor-Edged":{
+        "name":"Razor-Edged",
+        "description":[
+            "Some weapons are particularly sharp, and thus brittle, and must be carefully honed to keep functioning at their best. The traditional Rokugani katana is one such weapon—its keen edge lets it hew off limbs more easily than other swords, but it is also more susceptible to damage if swung carelessly at armored foes.",
+            "When you succeed at an Attack action check that deals damage to a target using a Razor-Edged item, if the damage dealt is reduced to 0 before they defend, this item becomes Damaged.",
+            "When you make an Attack action check with a Razor-Edged weapon, you may spend  as follows:",
+            "|opportunityIcon|+: Treat the deadliness of this weapon as 1 higher per |opportunityIcon| spent this way."
+        ]
+    },
+    "resplendent":{
+        "name":"Resplendent",
+        "description":[
+            "An item with the Resplendent quality is embellished to attract attention to its presenter or wearer.",
+            "While wearing one or more Resplendent items, if you would be awarded 1 or more glory, you receive that amount of glory plus 1 instead."
+        ]
+    },
+    "sacred":{
+        "name":"Sacred",
+        "description":[
+            "Items with the Sacred quality are imbued with purifying power—often in the form of jade, the mystical stone said to be the tears shed by Amaterasu, the goddess of the sun and protector against the terror of the night. Such items are anathema to the denizens of the Shadowlands and other horrors that prey upon humanity.",
+            "When an Otherworldly being makes an Attack or Intrigue action check targeting the wearer of one or more Sacred items, increase the TN by 1.",
+            "While you are carrying one or more Sacred items, if you would gain the Afflicted condition, you must choose one of those items to become Damaged instead.",
+            "Sacred weapons ignore all resistances possessed by Otherworldly and Tainted beings."
+        ]
+    },
+    "snaring":{
+        "name":"Snaring",
+        "description":[
+            "Flexible or, in some cases, harshly curved weapons are excellent for snaring, grabbing, and disarming.",
+            "When performing an Attack action with a Snaring weapon, you may spend |opportunityIcon| as follows:",
+            "|opportunityIcon|+: One target of the attack with vigilance lower than or equal to the |opportunityIcon| spent this way suffers the Immobilized condition."
+        ]
+    },
+    "subtle":{
+        "name":"Subtle",
+        "description":[
+            "An item with the Subtle quality is made to not stand out, and people tend to overlook it.",
+            "Increase the TN of checks to ascertain information about the item by 1. At the GM’s discretion, this also applies to checks to discern what the creator or wearer of the piece intends by presenting it, or to learn anything of value about that person from it."
+        ]
+    },
+    "unholy":{
+        "name":"Unholy",
+        "description":[
+            "Some physical artifacts carry a dreadful miasma. They may have been tainted by direct exposure to the power of the Shadowlands or by foul rituals, but some are made with obsidian, said to be the shed blood of Onnotangu, the god of the moon and ancient foe of the Kami.",
+            "After a character suffers a critical strike from an Unholy weapon, they suffer the Afflicted condition.",
+            "At the end of each scene in which you use an Unholy item, you suffer the Afflicted condition.",
+            "Unholy weapons ignore all resistances possessed by Otherworldly beings."
+        ]
+    },
+    "wargear":{
+        "name":"Wargear",
+        "description":[
+            "Implements seen in battle and few other contexts— items with the Wargear quality—are decidedly inappropriate for most social contexts. Wargear makes people nervous, which impedes efforts at diplomacy.",
+            "Whenever another character suffers 1 or more strife due to the actions of someone wearing one or more Wargear items, they suffer that amount plus 1 instead."
+        ]
+    }
+}

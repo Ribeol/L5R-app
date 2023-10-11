@@ -1,0 +1,459 @@
+{
+    "colon":": ",
+    "name":"Name",
+    "effects":"Effects",
+    "types":"Types",
+    "clan":"Clan",
+    "family":"Family",
+    "school":"School",
+    "titles":"Titles",
+    "appearance":"Appearance",
+    "giri":"Giri",
+    "ninjō":"Ninjō",
+    "relationships":"Relationships",
+    "personality":"Personality",
+    "ring":"Ring",
+    "rings":"Rings",
+    "skill":"Skill",
+    "skills":"Skills",
+    "technique":"Technique",
+    "techniques":"Techniques",
+    "traits":"Advantages and Disadvantages",
+    "wealth":"Wealth",
+    "equipment":"Equipment",
+    "rank":"Rank",
+    "voidPoints":"Void points",
+    "focus":"Focus",
+    "vigilance":"Vigilance",
+    "endurance":"Endurance",
+    "composure":"Composure",
+    "fatigue":"Fatigue",
+    "strife":"Strife",
+    "honor":"Honor",
+    "glory":"Glory",
+    "status":"Status",
+    "endScene":"End of scene",
+    "rest":"Full night’s rest",
+    "unmask":"Unmask",
+    "characterChoice":{
+        "new":"New character",
+        "change":"Change character",
+        "delete":"Delete character"
+    },
+    "skillGroups":{
+        "artisan":{
+            "name":"Artisan",
+            "skill":"Artisan skill",
+            "approaches":"Artisan approaches"
+        },
+        "social":{
+            "name":"Social",
+            "skill":"Social skill",
+            "approaches":"Social approaches"
+        },
+        "scholar":{
+            "name":"Scholar",
+            "skill":"Scholar skill",
+            "approaches":"Scholar approaches"
+        },
+        "martial":{
+            "name":"Martial",
+            "skill":"Martial skill",
+            "approaches":"Martial approaches"
+        },
+        "trade":{
+            "name":"Trade",
+            "skill":"Trade skill",
+            "approaches":"Trade approaches"
+        }
+    },
+    "techniqueGroupNames":{    
+        "schoolAbility":"School Ability",
+        "kata":"Kata",
+        "kihō":"Kihō",
+        "invocation":"Invocation",
+        "ritual":"Ritual",
+        "shūji":"Shūji",
+        "mahō":"Mahō",
+        "ninjutsu":"Ninjutsu",
+        "masteryAbility":"Mastery Ability",
+        "titleEffect":"Title Effect",
+        "titleAbility":"Title Ability"
+    },
+    "traditionNames":{    
+        "alchemy":"Alchemy",
+        "ancestral":"Ancestral",
+        "elemental":"Elemental",
+        "foreign":"Foreign",
+        "fortunist":"Fortunist"
+    },
+    "traitGroupNames":{
+        "distinction":"Distinction",
+        "passion":"Passion",
+        "adversity":"Adversity",
+        "anxiety":"Anxiety"
+    },
+    "traitTypeNames":{
+        "curse":"Curse",
+        "fame":"Fame",
+        "flaw":"Flaw",
+        "infamy":"Infamy",
+        "interpersonal":"Interpersonal",
+        "mental":"Mental",
+        "physical":"Physical",
+        "scar":"Scar",
+        "spiritual":"Spiritual",
+        "virtue":"Virtue"
+    },
+    "equipmentGroupNames":{
+        "weapon":"Weapon",
+        "armor":"Armor",
+        "item":"Other Item",
+        "animal":"Animal",
+        "property":"Boat or Estate"
+    },
+    "characterCreation":{
+        "cancel":"Cancel character creation",
+        "previousQuestion":"Previous question",
+        "nextQuestion":"Next question",
+        "finalize":"Create this character",
+        "Q1":{
+            "question":"What clan does your character belong to?",
+            "extraParts":["Bushidō", "Culture", "Knowledge"]
+        },
+        "Q2":{
+            "question":"What family does your character belong to?",
+            "showOtherFamilies":"Choose a family from another clan"
+        },
+        "Q3":{
+            "question":"What is your character’s school, and what roles does that school fall into?",
+            "showOtherSchools":"Choose a school from another clan",
+            "techniquesAvailable":"Techniques Available"
+        },
+        "Q4":{
+            "question":"How does your character stand out within their school?",
+            "ringOptions":{
+                "earth":{
+                    "optionText":"Thoroughness, patience, or calm",
+                    "description":"Stoicism is a trait valued greatly in Rokugan, and your character bears challenges and hardships without complaint. Your character’s teachers might have come to rely upon them as an assistant instructor, while their peers are likely to see them as a source of wisdom and stability."
+                },
+                "water":{
+                    "optionText":"Adaptability, friendliness, or awareness",
+                    "description":"Your character’s willingness to roll with the punches, gregariousness, or understanding of their environment stands out among their peers. Your character tends not to get stuck in mental ruts the same way many people do, or at least they have ways to get out of them."
+                },
+                "fire":{
+                    "optionText":"Creativity, passion, or drive",
+                    "description":"Your character is recognized by their teachers and peers for their inventive ideas, their sincere love for the craft of their school, or their intense and irrepressible desire to succeed in their field. Their energy and enthusiasm inspire fellow students and galvanize rivals to put forth their best as well."
+                },
+                "air":{
+                    "optionText":"Grace, eloquence, or empathy",
+                    "description":"Your character stands out in their school for their finesse, the refinement with which they express themself in social situations, or their sensitivity to the feelings of others. To other students, their successes often appear effortless, but the truth of the matter is that their innate attention to detail means that they work as hard as anyone else, if not harder."
+                }, 
+                "void":{
+                    "optionText":"Self-awareness, insight, or mysticism",
+                    "description":"At a certain point, all arts become a study of the universe, oneself, and the relationship between the two, and your character is more adept at seeing things within both than most of their peers are. They might even seem to have a supernatural sense of things, and to act based on hunches about what is to come in addition to possessing insight about their place in the wider universe."
+                }
+            }
+        },
+        "Q5":{
+            "question":"Who is your lord and what is your character’s duty to them?"
+        },
+        "Q6":{
+            "question":"What does your character long for, and how might this impede their duty?"
+        },
+        "Q7":{
+            "question":"What is your character’s relationship with their clan?",
+            "instruction":"Choose one of the following:",
+            "options":[
+                "If your character believes firmly in the precepts of their clan and the values it holds dear, gain +5 glory based on their reputation as an upstanding member of their community.",
+                "If your character has a fundamental disagreement with their clan’s beliefs, policies, or practices and has defied these in the past, gain 1 rank in a skill in which you have 0 ranks. Consider why this skill represents a divergence from the clan’s training or values."
+            ]
+        },
+        "Q8":{
+            "question":"What does your character think of Bushidō?",
+            "instruction":"Choose one of the following:",
+            "options":[
+                "If your character’s belief in living by an orthodox interpretation of Bushidō is very staunch, gain +10 honor.",
+                "If your character diverges from some or all common beliefs about how samurai should behave honorably, gain 1 rank in one of the following skills to reflect past behavior that was unbefitting of a samurai or deeply defied the norm."
+            ]
+        },
+        "Q9":{
+            "question":"What is your character’s greatest accomplishment so far?",
+            "instruction":"Choose one distinction advantage that was key to accomplishing this success, or that your character developed as a result of it."
+        },
+        "Q10":{
+            "question":"What holds your character back the most in life?",
+            "instruction":"Choose one adversity disadvantage."
+        },
+        "Q11":{
+            "question":"What activity most makes your character feel at peace?",
+            "instruction":"Choose one passion advantage related to your character’s interests or hobbies."
+        },
+        "Q12":{
+            "question":"What concern, fear, or foible troubles your character the most?",
+            "instruction":"Choose one anxiety disadvantage."
+        },
+        "Q13":{
+            "question":"Who has your character learned the most from during their life?",
+            "instruction":"Choose one of the following:",
+            "options":{
+                "advantage":"One advantage related to your character’s mentor and their relationship.",
+                "disadvantage":"One disadvantage related to your character’s mentor and their relationship, and 1 rank in a skill that your character developed as a result of your character’s closest confidante and their relationship."
+            },
+            "custom":["Custom distinction", "Custom adversity", "Custom passion", "Custom anxiety"]
+        },
+        "Q14":{
+            "question":"What do people notice first upon encountering your character?"
+        },
+        "Q15":{
+            "question":"How does your character react to stressful situations?"
+        },
+        "Q16":{
+            "question":"What are your character’s preexisting relationships with other clans, families, organizations, and traditions?",
+            "instruction":"Choose one item of rarity 7 or lower that your character received as a gift from one such group, took in battle fighting against them, or that otherwise relates to or symbolizes the character’s past and ongoing relationship with them."
+        },
+        "Q17":{
+            "question":"How would your character’s parents describe them?",
+            "instruction":"Gain one rank of one skill in which your character has 0 ranks, and determine whether your character’s parents approve of this extracurricular interest or see it as a regrettable deviation, and why."
+        },
+        "Q18":{
+            "question":"Who was your character named to honor?",
+            "instruction":"Roll a ten-sided die twice to determine two potential famous relatives from the last few generations. Choose one of those two options as the relative for whom your character is named. Then, roll a ten-sided die again to determine the effects of this heritage.",
+            "options":[
+                [
+                    "Famous Deed",
+                    "One of your ancestors won a great victory for their clan or even the Emperor, and was rewarded with an item of incredible quality.",
+                    "Increase your glory by 3.",
+                    "Roll a ten-sided die again and add the resulting family heirloom to your starting items. You choose one quality and the GM chooses one quality from the list of item qualities; these are applied to the item."
+                ],
+                [
+                    "Glorious Sacrifice",
+                    "One of your ancestors perished nobly in battle, and one of their signature items vanished with them or was lost in the subsequent years.",
+                    "Increase your honor by 5 and your glory by 5.",
+                    "Roll a ten-sided die again to determine your lost family heirloom, which exists somewhere in the world. You choose one quality and the GM chooses one quality; these are applied to the item. You do not know where the heirloom is, but you could later reclaim it during the campaign."
+                ],
+                [
+                    "Wondrous Work",
+                    "One of your ancestors crafted a piece of great beauty that won renown for your family, and others expect you to live up to that legacy.",
+                    "Increase your glory by 5.",
+                    "Roll a ten-sided die again to determine an Artisan skill; gain +1 rank in that skill."
+                ],
+                [
+                    "Dynasty Builder",
+                    "One of your ancestors was instrumental in the rise of a powerful lord, using cunning stratagems and shrewd advice to secure their ascension. You have heard this story many times and know the importance of power subtly wielded.",
+                    "Decrease your glory by 3.",
+                    "Roll a ten-sided die again to determine a Social skill; gain +1 rank in that skill."
+                ],
+                [
+                    "Discovery",
+                    "One of your ancestors made an incredible discovery, invented something of great importance, or uncovered an ancient secret. Thanks to family lore, you have at least a rudimentary understanding of the subject of their discovery.",
+                    "Increase your glory by 3.",
+                    "Roll a ten-sided die again to determine a Scholar skill; gain +1 rank in that skill."
+                ],
+                [
+                    "Ruthless Victor",
+                    "One of your ancestors claimed a bloody victory over a rival, smashing their forces with a cunning maneuver or seizing their domain after vanquishing them in battle. From this relative or their story, you learned well the importance of brute force.",
+                    "Decrease your honor by 5.",
+                    "Roll a ten-sided die again to determine a Martial skill; gain +1 rank in that skill."
+                ],
+                [
+                    "Elevated for Service",
+                    "One of your ancestors was a jizamurai or even a commoner who served with such distinction that their position was elevated to that of a Great Clan samurai by marriage or mandate of a daimyō. As a child, you learned the basics of the skills for which they won their esteem.",
+                    "Decrease your glory by 3 and increase your honor by 3.",
+                    "Roll a ten-sided die again to determine a Trade skill; gain +1 rank in that skill."
+                ],
+                [
+                    "Stolen Knowledge",
+                    "One of your ancestors learned a secret of another school and clandestinely passed it down through the ages; now, it has reached you.",
+                    "Decrease your honor by 5.",
+                    "You know one additional technique. Roll a ten-sided die again to determine the category, and then select one technique with a prerequisite of school rank 1 and learn that technique. You can perform that technique even if it is not normally allowed by your school."
+                ],
+                [
+                    "Imperial Heritage",
+                    "You can trace your lineage back to the Imperial line.",
+                    "Increase your status by 10.",
+                    "You gain the Blessed Lineage advantage (this can be assigned in excess of the normal limitations on advantages at character creation)."
+                ],
+                [
+                    "Unusual Name Origin",
+                    "Your character was not named for an ancestor—perhaps they were named for an outsider who did a great service to the clan, perhaps their name was bestowed upon them for a unique deed, or perhaps someone was trying to send a specific message in the selection of their name.",
+                    "Decrease your glory by 3.",
+                    "Choose two of your character’s rings; you may reduce the value of one of these rings by 1 to increase the value of the other by 1 (this still cannot raise a ring above 3). If you do not do so, choose one item of rarity 6 or lower and assign it to your starting outfit."
+                ]
+            ],
+            "reroll": "Reroll",
+            "playerItemQuality":"Heirloom quality (player)",
+            "gmItemQuality":"Heirloom quality (GM)",
+            "mahōNinjutsu": "Mahō or Ninjutsu",
+            "change rings": "Change Rings",
+            "item": "Item"
+        },
+        "Q19":{
+            "question":"What is your character’s personal name?"
+        },
+        "Q20":{
+            "question":"How should your character die?"
+        },
+        "summary":{
+            "title":"Summary",
+            "excessRanks":"excess ranks",
+            "rankLimit":"You cannot raise a ring or skill above rank 3 during character creation. Please assign the excess ranks to other rings or skills."
+        }
+    },
+    "skillGroupFilter":[
+        {"value":"any","text":"Any group"},
+        {"value":"artisan","text":"Artisan skills"},
+        {"value":"social","text":"Social skills"},
+        {"value":"scholar","text":"Scholar skills"},
+        {"value":"martial","text":"Martial skills"},
+        {"value":"trade","text":"Trade skills"}
+    ],
+    "skillRankFilter":[
+        {"value":"any","text":"Any rank"},
+        {"value":"0","text":"Rank 0"},
+        {"value":"1","text":"Rank 1"},
+        {"value":"2","text":"Rank 2"},
+        {"value":"3","text":"Rank 3"},
+        {"value":"4","text":"Rank 4"},
+        {"value":"5","text":"Rank 5"}
+    ],
+    "skillAvailabilityFilter":[
+        {"value":"all","text":"Full list"},
+        {"value":"upgradable","text":"Upgradable skills"},
+        {"value":"learned","text":"Learned skills"}
+    ],
+    "skillCurriculaFilter":[
+        {"value":"any","text":"Any origin"},
+        {"value":"excluded","text":"Extra-curricular"},
+        {"value":"included","text":"Curricular"},
+        {"value":"rank","text":"Current rank"}
+    ],
+    "techRankFilter":[
+        {"value":"any","text":"Any rank"},
+        {"value":"1","text":"Rank 1"},
+        {"value":"2","text":"Rank 2"},
+        {"value":"3","text":"Rank 3"},
+        {"value":"4","text":"Rank 4"},
+        {"value":"5","text":"Rank 5"},
+        {"value":"6","text":"Rank 6"}
+    ],
+    "techGroupFilter":[
+        {"value":"any","text":"Any group"},
+        {"value":"kata","text":"Kata"},
+        {"value":"kihō","text":"Kihō"},
+        {"value":"invocation","text":"Invocations"},
+        {"value":"ritual","text":"Rituals"},
+        {"value":"shūji","text":"Shūji"},
+        {"value":"mahō","text":"Mahō"},
+        {"value":"ninjutsu","text":"Ninjutsu"},
+        {"value":"school ability","text":"School Abilities"},
+        {"value":"mastery ability","text":"Mastery abilities"},
+        {"value":"title effect","text":"Title Effects"},
+        {"value":"title ability","text":"Title Abilities"}
+    ],
+    "techRingFilter":[
+        {"value":"any","text":"Any ring"},
+        {"value":"none","text":"No ring"},
+        {"value":"air","text":"Air"},
+        {"value":"earth","text":"Earth"},
+        {"value":"fire","text":"Fire"},
+        {"value":"water","text":"Water"},
+        {"value":"void","text":"Void"}
+        
+    ],
+    "techActivationFilter":[
+        {"value":"any","text":"Any activation"},
+        {"value":"action","text":"Action"},
+        {"value":"downtime","text":"Downtime"},
+        {"value":"opportunity","text":"Opportunity"},
+        {"value":"void","text":"Void point"},
+        {"value":"limited","text":"Limited"},
+        {"value":"permanent","text":"Permanent"}
+    ],
+    "techAvailabilityFilter":[
+        {"value":"all","text":"Full list"},
+        {"value":"compatible","text":"Compatible techniques"},
+        {"value":"available","text":"Available techniques"},
+        {"value":"missable","text":"Missable techniques"},
+        {"value":"learned","text":"Learned techniques"}
+    ],
+    "techCurriculaFilter":[
+        {"value":"any","text":"Any origin"},
+        {"value":"excluded","text":"Extra-curricular"},
+        {"value":"included","text":"Curricular"},
+        {"value":"rank","text":"Current rank"}
+    ],
+    "traitGroupFilter":[
+        {"value":"any", "text":"Any group"},
+        {"value":"distinction", "text":"Distinctions"},
+        {"value":"passion", "text":"Passions"},
+        {"value":"adversity", "text":"Adversities"},
+        {"value":"anxiety", "text":"Anxieties"}
+    ],    
+    "traitRingFilter":[
+        {"value":"any","text":"Any ring"},
+        {"value":"air","text":"Air"},
+        {"value":"earth","text":"Earth"},
+        {"value":"fire","text":"Fire"},
+        {"value":"water","text":"Water"},
+        {"value":"void","text":"Void"}
+    ],
+    "traitTypeFilter":[
+        {"value":"any", "text":"Any type"},
+        {"value":"curse", "text":"Curses"},
+        {"value":"fame", "text":"Fame"},
+        {"value":"flaw", "text":"Flaws"},
+        {"value":"infamy", "text":"Infamy"},
+        {"value":"interpersonal", "text":"Interpersonal"},
+        {"value":"mental", "text":"Mental"},
+        {"value":"physical", "text":"Physical"},
+        {"value":"scar", "text":"Scars"},
+        {"value":"spiritual", "text":"Spiritual"},
+        {"value":"virtue", "text":"Virtues"}
+    ],
+    "traitAvailabilityFilter":[
+        {"value":"all","text":"Full list"},
+        {"value":"character","text":"Character"}
+    ],
+    "upgradeText":{
+        "upgradeRing":"Upgrade this ring",
+        "learnSkill":"Learn this skill",
+        "upgradeSkill":"Upgrade this skill",
+        "maxRank":"Maximum rank",
+        "learnTechnique":"Learn this technique",
+        "learnedTechnique":"Learned technique",
+        "unavailableTechnique":"Insufficient school rank",
+        "incompatibleTechnique":"School incompatibility",
+        "addTrait":"Add this character trait",
+        "removeTrait":"Remove this character trait",
+        "ignoreRestriction":"Learn despite the restriction",
+        "for":"for",
+        "progress":"These points will contribute to the following curriculum",
+        "free":"This upgrade will not contribute to any curriculum",
+        "forceContribution":"Force a full contribution",
+        "notEnoughXp":"Not enough XP",
+        "confirm":"Confirm (irrevocable)"
+    },
+    "activationKeywords":{
+        "ring":[" ring"],
+        "cost":["as a"],
+        "action":[" action"],
+        "downtime":[" downtime activity"],
+        "tn":[" tn "],
+        "opportunity":["|opportunityicon|"],
+        "voidPoint":[" void point"],
+        "timesPer":["once per "," times per "]
+    },
+    "consultTitles":{
+        "approachExamples":"Examples of checks for this approach",
+        "opportunities":"Opportunities",
+        "newOpportunities":"New Opportunities",
+        "invocation":"Invocations",
+        "general":"General",
+        "conflict":"Conflicts and Martial skills",
+        "initiative":"Initiative",
+        "skillGroup":"Skill group",
+        "downtime":"Downtime",
+        "stanceEffect":"Stance Effect"     
+    }    
+}

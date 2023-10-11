@@ -1,0 +1,453 @@
+{
+    "colon":" : ",
+    "name":"Nom",
+    "effects":"Effets",
+    "types":"Types",
+    "clan":"Clan",
+    "family":"Famille",
+    "school":"École",
+    "titles":"Titres",
+    "appearance":"Apparence",
+    "giri":"Giri",
+    "ninjō":"Ninjō",    
+    "relationships":"Relations",
+    "personality":"Personnalité",
+    "ring":"Anneau",
+    "rings":"Anneaux",
+    "skill":"Compétence",
+    "skills":"Compétences",
+    "technique":"Technique",
+    "techniques":"Techniques",
+    "traits":"Avantages et désavantages",
+    "wealth":"Fortune",
+    "equipment":"Équipement",
+    "rank":"Rang",
+    "voidPoints":"Points de vide",
+    "focus":"Attention",
+    "vigilance":"Vigilance",
+    "endurance":"Endurance",
+    "composure":"Sang-froid",
+    "fatigue":"Fatigue",
+    "strife":"Conflit",    
+    "honor":"Honneur",
+    "glory":"Gloire",
+    "status":"Statut",
+    "endScene":"Fin de scène",
+    "rest":"Nuit de sommeil",
+    "unmask":"Tomber le masque",    
+    "characterChoice":{
+        "new":"Nouveau personnage",    
+        "change":"Changer de personnage",
+        "delete":"Supprimer ce personnage"
+    },
+    "skillGroups":{
+        "artisan":{
+            "name":"Artisan",
+            "skill":"Compétence artisanale",
+            "approaches":"Approches artisanales"
+        },
+        "social":{
+            "name":"Social",
+            "skill":"Compétence sociale",
+            "approaches":"Approches sociales"
+        },
+        "scholar":{
+            "name":"Savant",
+            "skill":"Compétence savante",
+            "approaches":"Approches savantes"
+        },
+        "martial":{
+            "name":"Martial",
+            "skill":"Compétence martiale",
+            "approaches":"Approches martiales"
+        },
+        "trade":{
+            "name":"Professionnel",
+            "skill":"Compétence professionnelle",
+            "approaches":"Approches professionnelles"
+        }
+    },
+    "techniqueGroupNames":{    
+        "schoolAbility":"Capacité d’école",
+        "kata":"Kata",
+        "kihō":"Kihō",
+        "invocation":"Invocation",
+        "ritual":"Rituel",
+        "shūji":"Shūji",
+        "mahō":"Mahō",
+        "ninjutsu":"Ninjutsu",
+        "masteryAbility":"Capacité de maîtrise",
+        "titleEffect":"Effet de titre",
+        "titleAbility":"Capacité de titre"
+    },
+    "traditionNames":{    
+        "alchemy":"Alchimie",
+        "ancestral":"Ancestral",
+        "elemental":"Élémentaire",
+        "foreign":"Étranger",
+        "fortunist":"Fortunistes"
+    },
+    "traitGroupNames":{
+        "distinction":"Aptitude",
+        "passion":"Passion",
+        "adversity":"Coup du sort",
+        "anxiety":"Défaillance"
+    },
+    "traitTypeNames":{
+        "curse":"Malédiction",
+        "fame":"Renommée",
+        "flaw":"Défaut",
+        "infamy":"Infamie",
+        "interpersonal":"Relations",
+        "mental":"Mental",
+        "physical":"Physique",
+        "scar":"Séquelle",
+        "spiritual":"Spiritualité",
+        "virtue":"Vertu"
+    },
+    "equipmentGroupNames":{
+        "weapon":"Arme",
+        "armor":"Armure",
+        "item":"Autre objet",
+        "animal":"Animal",
+        "property":"Bateau ou domaine"
+    },
+    "characterCreation":{
+        "cancel":"Annuler la création de personnage",
+        "previousQuestion":"Question précédente",
+        "nextQuestion":"Question suivante",
+        "finalize":"Créer ce personnage",
+        "Q1":{
+            "question":"À quel clan appartient votre personnage ?",
+            "extraParts":["Bushido", "Culture", "Connaissances"]
+        },
+        "Q2":{
+            "question":"À quelle famille appartient votre personnage ?",
+            "showOtherFamilies":"Choisir une famille d’un autre clan"
+        },
+        "Q3":{
+            "question":"Quelle est l’école de votre personnage, et quel rôle remplit-elle ?",
+            "showOtherSchools":"Choisir une école d’un autre clan",
+            "techniquesAvailable":"Techniques accessibles"
+        },
+        "Q4":{
+            "question":"De quelle manière votre personnage se démarque-t-il au sein de son école ?",
+            "ringOptions":{
+                "earth":{
+                    "optionText":"Minutie, patience ou calme",
+                    "description":"L’impassibilité est un trait de caractère très apprécié à Rokugan, et votre personnage supporte défis et épreuves sans broncher. Ses maîtres l’ont peut-être recruté comme aide-instructeur, tandis que ses compagnons le voient probablement comme une source de sagesse et de stabilité."
+                },
+                "water":{
+                    "optionText":"Faculté d’adaptation, attitude amicale ou perspicacité",
+                    "description":"Votre personnage se distingue par sa volonté d’encaisser les coups, sa convivialité ou sa compréhension de son environnement. Il a tendance à ne pas s’installer dans les mêmes routines mentales que les autres, ou du moins à disposer des moyens de s’en extraire."
+                },
+                "fire":{
+                    "optionText":"Créativité, passion ou détermination",
+                    "description":"Les professeurs et les camarades de votre personnage reconnaissent ses idées inventives, son amour sincère des domaines enseignés par son école ou son désir intense et irrépressible de réussir sa carrière. Son énergie et son enthousiasme inspirent ses condisciples et encouragent ses rivaux à faire eux aussi de leur mieux."
+                },
+                "air":{
+                    "optionText":"Grâce, éloquence ou empathie",
+                    "description":"Votre personnage se fait remarquer par sa finesse, le raffinement avec lequel il s’exprime en société ou sa sensibilité vis-à-vis des sentiments d’autrui. Aux yeux de ses camarades, il semble réussir sans effort, mais en réalité, son perfectionnisme inné le pousse à travailler aussi dur (si ce n’est davantage) que n’importe qui."
+                }, 
+                "void":{
+                    "optionText":"Conscience de soi, intuition ou mysticisme",
+                    "description":"Tous les arts deviennent à partir d’un certain point une étude de l’univers, de soi ou de la relation entre les deux. Votre personnage est plus doué que la plupart de ses camarades pour l’introspection et la perception du monde qui l’entoure. Il peut même donner l’impression d’avoir une conscience surnaturelle de son environnement, d’agir en suivant des prémonitions, et de comprendre intuitivement sa place dans l’univers."
+                }
+            }
+        },
+        "Q5":{
+            "question":"Qui est le seigneur de votre personnage et quel est le devoir de votre personnage envers lui ?"
+        },
+        "Q6":{
+            "question":"Que désire votre personnage, et en quoi ce désir risque-t-il de l’empêcher d’accomplir son devoir ?"
+        },
+        "Q7":{
+            "question":"Quelle relation votre personnage entretient-il avec son clan ?",
+            "instruction":"Choisissez l’une des options suivantes :",
+            "options":[
+                "Si votre personnage adhère sans réserve aux préceptes de son clan et aux valeurs qu’il prône, vous gagnez 5 points de Gloire. Vous êtes réputé pour votre intégrité parmi votre communauté.",
+                "S’il est en profond désaccord avec les croyances, la politique ou les pratiques de son clan et s’il les a déjà bravées auparavant, augmentez de 1 le rang d’une de vos compétences de rang 0. Réfléchissez à la raison pour laquelle cette compétence s’écarte de la formation dispensée par votre clan ou de ses valeurs."
+            ]
+        },
+        "Q8":{
+            "question":"Que pense votre personnage du bushido?"
+        },
+        "Q9":{
+            "question":"Quelle est à ce jour la plus belle réussite de votre personnage ?",
+            "instruction":"Sélectionnez un avantage de type aptitude qui a été la clef de cette prouesse, ou que votre personnage a développé par la suite."
+        },
+        "Q10":{
+            "question":"Quel est le frein principal dans la vie de votre personnage ?",
+            "instruction":"Choisissez un désavantage de type coup du sort."
+        },
+        "Q11":{
+            "question":"Quelle activité apaise le plus votre personnage ?",
+            "instruction":"Choisissez un avantage de type passion associé aux intérêts ou aux loisirs de votre personnage."
+        },
+        "Q12":{
+            "question":"Quelle inquiétude, crainte ou manie tracasse le plus votre personnage ?",
+            "instruction":"Choisissez un désavantage de type défaillance."
+        },
+        "Q13":{
+            "question":"De qui votre personnage a-t-il le plus appris au cours de sa vie ?",
+            "instruction":"Choisissez l’une des options suivantes et gagnez le trait indiqué :",
+            "options":{
+                "advantage":"Un avantage lié au mentor de votre personnage et à leur relation.",
+                "disadvantage":"Un désavantage lié au mentor de votre personnage et à leur relation, et augmentez de 1 le rang d’une compétence que votre personnage a développée grâce à lui et à ce lien."
+            },
+            "custom":["Aptitude personnalisée", "Coup du sort personnalisé", "Passion personnalisée", "Défaillance personnalisée"]
+        },
+        "Q14":{
+            "question":"Que remarque-t-on en premier chez votre personnage ?"
+        },
+        "Q15":{
+            "question":"Comment votre personnage réagit-il aux situations stressantes ?"
+        },
+        "Q16":{
+            "question":"Quelles relations votre personnage entretient-il avec des familles, des organisations, des traditions et des clans différents ?",
+            "instruction":"Choisissez un objet dont la rareté est inférieure ou égale à 7. C’est un cadeau, une prise de guerre ou le symbole de ses rapports passés ou présents avec cette organisation."
+        },
+        "Q17":{
+            "question":"Comment les parents de votre personnage le décriraient-ils ?",
+            "instruction":"Passez au rang 1 dans une compétence où vous êtes de rang 0. Déterminez si les parents de votre personnage approuvent cet intérêt pour un domaine sans rapport avec sa formation ou s’ils le considèrent comme un écart regrettable et, si tel est le cas, pour quelles raisons."
+        },
+        "Q18":{
+            "question":"En l’honneur de qui votre personnage a-t-il été prénommé ?",
+            "instruction":"Commencez par lancer un dé à dix faces pour obtenir deux propositions d’ancêtres célèbres issus des dernières générations. Choisissez l’un d’entre eux. Il deviendra le parent qui a donné son nom à votre personnage. Ensuite, lancez à nouveau un dé à dix faces pour déterminer les effets de cet héritage.",
+            "options":[
+                [
+                    "Exploit célèbre",
+                    "Un de vos ancêtres a remporté une grande victoire pour son clan ou même pour l’Empereur, et il a obtenu un objet d’une qualité extraordinaire en récompense.",
+                    "Vous gagnez 3 points de Gloire.",
+                    "Lancez un dé à dix faces et ajoutez l’héritage familial indiqué à votre équipement de départ. Le MJ et vous choisissez chacun une propriété d’équipement, et elles s’appliqueront toutes deux à l’objet."
+                ],
+                [
+                    "Glorieux sacrifice",
+                    "L’un de vos ancêtres a péri noblement à la bataille, et un de ses objets emblématiques a disparu avec lui ou a été égaré dans les années qui ont suivi.",
+                    "Vous gagnez 5 points de Gloire et 5 points d’Honneur.",
+                    "Lancez un dé à dix faces pour déterminer la nature de l’héritage familial perdu, qui existe bel et bien en un lieu inconnu. Le MJ et vous choisissez chacun une propriété d’équipement, et elles s’appliqueront toutes deux à l’objet. Vous ne savez pas où se trouve l’objet dont vous avez hérité, mais vous pourrez le retrouver au cours de la campagne."
+                ],
+                [
+                    "Oeuvre extraordinaire",
+                    "L’un de vos ancêtres a créé une oeuvre d’art de toute beauté qui a apporté un grand prestige à sa famille. Tout le monde espère que vous serez à la hauteur de cet héritage.",
+                    "Vous gagnez 5 points de Gloire.",
+                    "Lancez un dé à dix faces pour désigner une compétence artisanale. Vous augmentez de 1 votre rang dans la compétence indiquée."
+                ],
+                [
+                    "Fondateur de dynastie",
+                    "Par ses stratagèmes astucieux et ses conseils avisés, l’un de vos ancêtres a joué un rôle prépondérant dans l’arrivée et le maintien au pouvoir d’un puissant seigneur. Vous avez entendu cette histoire à maintes reprises et connaissez l’importance de la subtilité dans l’exercice du pouvoir.",
+                    "Vous perdez 3 points de Gloire.",
+                    "Lancez un dé à dix faces pour désigner une compétence sociale. Vous augmentez de 1 votre rang dans la compétence indiquée."
+                ],
+                [
+                    "Découverte",
+                    "L’un de vos ancêtres a fait une incroyable découverte, mis au point une invention capitale ou exhumé un antique secret. Grâce aux histoires de votre famille, vous avez acquis une connaissance rudimentaire de cette découverte.",
+                    "Vous gagnez 3 points de Gloire.",
+                    "Lancez un dé à dix faces pour désigner une compétence savante. Vous augmentez de 1 votre rang dans la compétence indiquée."
+                ],
+                [
+                    "Conquérant impitoyable",
+                    "L’un de vos ancêtres a remporté une sanglante victoire sur un rival, en écrasant son armée grâce à une manoeuvre astucieuse ou en s’emparant de son domaine après l’avoir vaincu au cours d’une bataille. Ce parent ou son histoire vous a enseigné l’importance de la force brute.",
+                    "Vous perdez 5 points d’Honneur.",
+                    "Lancez un dé à dix faces pour désigner une compétence martiale. Vous augmentez de 1 votre rang dans la compétence indiquée."
+                ],
+                [
+                    "Promu pour services rendus",
+                    "L’un de vos ancêtres était un ji-samouraï, ou même un heimin, mais il a si bien servi son seigneur qu’il a gagné le statut de samouraï de clan majeur, grâce à un mariage ou par décret d’un daimyō. Enfant, vous avez appris les bases des compétences qui lui ont permis de gagner l’estime de son seigneur.",
+                    "Vous perdez 3 points de Gloire et gagnez 3 points d’Honneur.",
+                    "Lancez un dé à dix faces pour désigner une compétence professionnelle. Vous augmentez de 1 votre rang dans la compétence indiquée."
+                ],
+                [
+                    "Savoir dérobé",
+                    "L’un de vos ancêtres a appris un secret d’une autre école et l’a transmis clandestinement aux générations suivantes. Vous en êtes à présent le dépositaire.",
+                    "Vous perdez 5 points d’Honneur.",
+                    "Vous connaissez une technique supplémentaire. Lancez un dé à dix faces pour déterminer sa catégorie. Sélectionnez ensuite une technique dont le prérequis est le rang d’école 1 ; vous l’apprenez. Vous pouvez utiliser cette technique même si votre école ne vous y autorise pas en temps normal."
+                ],
+                [
+                    "Héritage impérial",
+                    "Votre famille descend de la lignée impériale.",
+                    "Vous gagnez 10 points de Statut.",
+                    "Vous gagnez l’avantage Lignée prestigieuse. Vous en bénéficiez même si vous avez déjà atteint le nombre maximal d’avantages à la création."
+                ],
+                [
+                    "Nom insolite",
+                    "Vous ne portez pas le nom d’un de vos ancêtres. Vous portez peut-être celui d’un étranger qui a rendu un grand service à votre clan, à moins qu’on ne vous en ait attribué un après un exploit unique, ou encore que quelqu’un ne l’ait choisi pour faire passer un message.",
+                    "Vous perdez 3 points de Gloire.",
+                    "Choisissez deux anneaux de votre personnage : vous pouvez transférer 1 point de l’un à l’autre (ce qui ne vous per met toujours pas de dépasser 3). Si vous ne souhaitez pas le faire, ajoutez à votre équipement de départ un objet dont la rareté est inférieure ou égale à 6."
+                ]
+            ],
+            "reroll": "Relancer",
+            "playerItemQuality":"Propriété de l’héritage (joueur)",
+            "gmItemQuality":"Propriété de l’héritage (MJ)",
+            "mahōNinjutsu": "Mahō ou ninjutsu",
+            "change rings": "Changer deux anneaux",
+            "item": "Objet"
+        },
+        "Q19":{
+            "question":"Quel est le prénom de votre personnage ?"
+        },
+        "Q20":{
+            "question":"Comment envisagez-vous la mort de votre personnage ?"
+        },
+        "summary":{
+            "title":"Résumé",
+            "excessRanks":"Rangs excédentaires",
+            "rankLimit":"Le rang des anneaux et des compétences ne peut pas dépasser 3 à la création. Veuillez réattribuer les rangs excédentaires à d’autres anneaux ou compétences."
+        }
+    },
+    "skillGroupFilter":[
+        {"value":"any","text":"Tout groupe"},
+        {"value":"artisan","text":"Compétences artisanales"},
+        {"value":"social","text":"Compétences sociales"},
+        {"value":"scholar","text":"Compétences savantes"},
+        {"value":"martial","text":"Compétences martiales"},
+        {"value":"trade","text":"Compétences professionnelles"}
+    ],
+    "skillRankFilter":[
+        {"value":"any","text":"Tout rang"},
+        {"value":"0","text":"Rang 0"},
+        {"value":"1","text":"Rang 1"},
+        {"value":"2","text":"Rang 2"},
+        {"value":"3","text":"Rang 3"},
+        {"value":"4","text":"Rang 4"},
+        {"value":"5","text":"Rang 5"}
+    ],
+    "skillAvailabilityFilter":[
+        {"value":"all","text":"Liste complète"},
+        {"value":"upgradable","text":"Améliorable"},
+        {"value":"learned","text":"Compétences apprises"}
+    ],
+    "skillCurriculaFilter":[
+        {"value":"any","text":"Toute origine"},
+        {"value":"excluded","text":"Hors cursus"},
+        {"value":"included","text":"Cursus"},
+        {"value":"rank","text":"Rang actuel"}
+    ],
+    "techRankFilter":[
+        {"value":"any","text":"Tout rang"},
+        {"value":"1","text":"Rang 1"},
+        {"value":"2","text":"Rang 2"},
+        {"value":"3","text":"Rang 3"},
+        {"value":"4","text":"Rang 4"},
+        {"value":"5","text":"Rang 5"},
+        {"value":"6","text":"Rang 6"}
+    ],
+    "techGroupFilter":[
+        {"value":"any","text":"Tout groupe"},
+        {"value":"kata","text":"Katas"},
+        {"value":"kihō","text":"Kihō"},
+        {"value":"invocation","text":"Invocations"},
+        {"value":"ritual","text":"Rituels"},
+        {"value":"shūji","text":"Shūji"},
+        {"value":"mahō","text":"Mahō"},
+        {"value":"ninjutsu","text":"Ninjutsu"},            
+        {"value":"school ability","text":"Capacités d’école"},
+        {"value":"mastery ability","text":"Capacités de maîtrise"},
+        {"value":"title effect","text":"Effets de titre"},
+        {"value":"title ability","text":"Capacités titre"}
+    ],
+    "techRingFilter":[
+        {"value":"any","text":"Tout anneau"},
+        {"value":"none","text":"Aucun anneau"},
+        {"value":"air","text":"Air"},
+        {"value":"earth","text":"Terre"},
+        {"value":"fire","text":"Feu"},
+        {"value":"water","text":"Eau"},
+        {"value":"void","text":"Vide"}
+    ],
+    "techActivationFilter":[
+        {"value":"any","text":"Toute activation"},
+        {"value":"action","text":"Action"},
+        {"value":"downtime","text":"Temps mort"},
+        {"value":"opportunity","text":"Aubaine"},
+        {"value":"void","text":"Point de vide"},
+        {"value":"limited","text":"Limité"},
+        {"value":"permanent","text":"Permanent"}
+    ],
+    "techAvailabilityFilter":[
+        {"value":"all","text":"Liste complète"},
+        {"value":"compatible","text":"Techniques compatibles"},
+        {"value":"available","text":"Techniques disponibles"},
+        {"value":"missable","text":"Techniques manquables"},
+        {"value":"learned","text":"Techniques apprises"}
+    ],
+    "techCurriculaFilter":[
+        {"value":"any","text":"Toute origine"},
+        {"value":"excluded","text":"Hors cursus"},
+        {"value":"included","text":"Cursus"},
+        {"value":"rank","text":"Rang actuel"}
+    ],    
+    "traitGroupFilter":[
+        {"value":"any", "text":"Tout groupe"},
+        {"value":"distinction","text":"Aptitudes"},
+        {"value":"passion","text":"Passions"},
+        {"value":"adversity","text":"Coups du sort"},
+        {"value":"anxiety","text":"Défaillances"}
+    ],    
+    "traitRingFilter":[
+        {"value":"any","text":"Tout anneau"},
+        {"value":"air","text":"Air"},
+        {"value":"earth","text":"Terre"},
+        {"value":"fire","text":"Feu"},
+        {"value":"water","text":"Eau"},
+        {"value":"void","text":"Vide"}
+    ],
+    "traitTypeFilter":[
+        {"value":"any", "text":"Tout type"},
+        {"value":"curse","text":"Malédictions"},
+        {"value":"fame","text":"Renommée"},
+        {"value":"flaw","text":"Défauts"},
+        {"value":"infamy","text":"Infamie"},
+        {"value":"interpersonal","text":"Relations"},
+        {"value":"mental","text":"Mental"},
+        {"value":"physical","text":"Physique"},
+        {"value":"scar","text":"Séquelles"},
+        {"value":"spiritual","text":"Spiritualité"},
+        {"value":"virtue","text":"Vertus"}
+    ],
+    "traitAvailabilityFilter":[
+        {"value":"all","text":"Liste complète"},
+        {"value":"character","text":"Personnage"}
+    ],
+    "upgradeText":{
+        "upgradeRing":"Améliorer cet anneau",
+        "learnSkill":"Apprendre cette compétence",
+        "upgradeSkill":"Améliorer cette compétence",        
+        "maxRank":"Rang maximal",
+        "learnTechnique":"Apprendre cette technique",
+        "learnedTechnique":"Technique apprise",        
+        "unavailableTechnique":"Rang d’école insuffisant",
+        "incompatibleTechnique":"Incompatible avec l’école",
+        "addTrait":"Ajouter ce trait",
+        "removeTrait":"Retirer ce trait",
+        "ignoreRestriction":"Apprendre malgré la restriction",
+        "for":"pour",
+        "progress":"Ces points contribueront au cursus suivant",
+        "free":"Cette amélioration ne contribuera à aucun cursus",
+        "forceContribution":"Forcer une pleine contribution",
+        "notEnoughXp":"Pas assez d’XP",
+        "confirm":"Confirmer (irrévocable)"
+    },
+    "activationKeywords":{
+        "ring":["anneau d"],
+        "cost":["au prix d"],
+        "action":["action"],
+        "downtime":["activité de temps mort"],
+        "tn":[" nd "],
+        "opportunity":["|opportunityicon| comme suit :", "|opportunityicon| de la façon suivante :"],
+        "voidPoint":[" point de vide", "points de vide"],
+        "timesPer":["une fois par ", "un nombre de fois "]
+    },
+    "consultTitles":{        
+        "approachExamples":"Exemples de tests pour cette approche",
+        "opportunities":"Aubaines",
+        "newOpportunities":"Nouvelles aubaines",
+        "invocation":"Invocations",
+        "general":"Général",
+        "conflict":"Confrontations et compétences martiales",
+        "initiative":"Initiative",
+        "skillGroup":"Groupe de compétences",
+        "downtime":"Temps mort",
+        "stanceEffect":"Effet de la posture"
+    }
+}

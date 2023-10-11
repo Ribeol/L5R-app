@@ -1,0 +1,616 @@
+{
+    "Hida":{
+        "name":"Hida Defender School",
+        "types":["Bushi"],
+        "description":[
+            "Producing the most stalwart protectors of Rokugan against the horrors that mass beyond the Kaiu Wall, the Hida Defender School teaches its disciples fortitude, courage, and practicality in equal measure. Goblins, demons, and the unliving are not honorable foes, and Hida Defenders cannot afford to behave as though the fight against these creatures is fair. While any warrior with a strong will can attempt to slay a stone-skinned oni or die in the attempt, the Hida Defenders know their duty is to endure. From their heavily plated armor to their techniques for shattering iron hides with mighty hammer blows, Hida Defenders have developed an armory and fighting style that gives them the utmost advantage and greatest chance of not just victory, but survival."
+        ],
+        "initialAbility":{
+            "name":"Way of the Crab",
+            "activation":[
+                "Ignore the Cumbersome quality of armor you wear.",
+                "Once per round, before making a check to resist a critical strike, you may reduce the severity of that critical strike by the physical resistance of your armor plus your school rank (to a minimum of 0)."
+            ]
+        },
+        "finalAbility":{
+            "name":"The Mountain Does Not Fall",
+            "activation":[
+                "At the beginning of your turn, you may spend 1 Void point. If you do, ignore all of your conditions, terrain, and negative persistent effects of techniques and abilities. Do not apply your disadvantages to checks. If you would die, you cling to life for a few moments longer instead (but still die when the effect ends). This effect persists until the end of your next turn."
+            ]
+        }
+    },
+    "Hiruma":{
+        "name":"Hiruma Scout School",
+        "types":["Bushi","Shinobi"],
+        "description":[
+            "The Shadowlands never sleep and neither can those who watch them. Scouting the Shadowlands is a dangerous task and one that requires intense preparation. The Hiruma saw their lands swallowed by the forces of demons, and they will die before seeing more of the Empire lost beneath their shadow. Trained to observe and get out, only striking when the reward exceeds the risk, samurai of the Hiruma School are about patience and endurance above all. They are masters of survival and mobility. When a Hiruma Scout is rotated out to serve within the borders of the Empire, their haunted look and wary demeanor marks them as a veteran."
+        ],
+        "initialAbility":{
+            "name":"Flickering Flame Skirmisher",
+            "activation":[
+                "After performing an Attack action, you may change your stance. If you do, increase the TN of Attack checks by creatures of silhouette 3 or larger targeting you by your school rank until the start of your next turn."
+            ]
+        },
+        "finalAbility":{
+            "name":"Slayer’s Slash",
+            "activation":[
+                "Increase the severity of critical strikes you inflict on targets of silhouette 3 or larger by your ranks in Survival."
+            ]
+        }
+    },
+    "Kaiu":{
+        "name":"Kaiu Engineer School",
+        "types":["Artisan","Bushi"],
+        "description":[
+            "Since the Crab Clan’s founding, the Kaiu’s duty has been to arm the clan’s samurai to defeat their enemies, be it with weapons, siege engines, or insight. As the inventive arm of the Crab, the Kaiu Engineer supplies all of these things. Trained in logistics, versed in tactics, and filled with ingenuity, the Kaiu dōjō is not only a warrior college, but also the foremost engineering school in the Empire. It is the Kaiu engineers who support the foot soldiers of the Crab, building bridges over inhospitable terrain, crafting armor strong enough to withstand even an oni’s blow, and forging the rare Kaiu blades, which are among the greatest swords in the Empire. If the situation is bleak, and there is no clear path to victory, then the Kaiu Engineer will forge one!"
+        ],
+        "initialAbility":{
+            "name":"Masterful Builder",
+            "activation":[
+                "Once per scene,when making a check to use an item you personally crafted, you may add a number of kept |ringDieIcon| set to |opportunityIcon| results equal to your school rank."
+            ]
+        },
+        "finalAbility":{
+            "name":"Ingenious Design",
+            "activation":[
+                "When you construct an item, you may add or remove one quality from the item. You must describe to the GM how the item possesses (or lacks) the usual quality, and the GM is the final arbiter of whether an addition (or subtraction) is appropriate."
+            ]
+        }
+    },
+    "Kuni":{
+        "name":"Kuni Purifier School",
+        "types":["Shugenja","Bushi"],
+        "description":[
+            "The Kuni Purifiers master knowledge and prayers to deny the Shadowlands forces any foothold inside the Empire. To this end, they have specialized in invocations to the earth kami to strike down or banish the evil servants of Fu Leng. From the time of their school’s founding, the Kuni Purifiers have sought to understand the nature of the threat the Crab fight against. This has led them down dangerous paths, and no small number have fallen to the very corruption they study. The Kuni Purifiers paint their faces in stylized Kabuki-like patterns to protect their true identities from the insidious tendrils of the Shadowlands. Eternal vigilance, shading into unending paranoia, is the lot of the Kuni Purifiers."
+        ],
+        "initialAbility":{
+            "name":"Gaze into Shadow",
+            "activation":[
+                "Once per round, when you make a check targeting or involving a Tainted being, you may choose a number of your kept dice up to your school rank containing |strifeIcon| symbols. Set each of these dice to a |successIcon| result. You cannot use this ability if you are unsure if a being is Tainted or not."
+            ]
+        },
+        "finalAbility":{
+            "name":"Purge the Wicked",
+            "activation":[
+                "Once per game session, you may spend 1 Void point to wield an invocation against all the wicked in your sight. Instead of affecting its usual targets, the next invocation technique you perform targets each Tainted being in range."
+            ]
+        }
+    },
+    "Yasuki":{
+        "name":"Yasuki Merchant School",
+        "types":["Courtier"],
+        "description":[
+            "Enemies of the Crab say the Yasuki are little more than merchants—the Yasuki would counter that they are much more. They are masters of the arts of commerce and the flow of commodities, considered an uncouth and deplorable set of skills in Rokugan. The Yasuki can acquire goods and services, even ones that a person may not yet know they need, in exchange for promises of assistance for their family and clan in the future. The Yasuki always keep their bargains, and they ensure that their partners do the same."
+        ],
+        "initialAbility":{
+            "name":"Way of the Carp",
+            "activation":[
+                "As a downtime activity, if you have access to a market, you may acquire a number of items up to your school rank of rarity 4 or lower, or a single item of up to rarity 4 plus your school rank. You do not need to make a check or expend money to acquire these items, nor do you need to forfeit or stake honor or glory for the act of acquiring them, even if they are not befitting of your station or Forbidden (though displaying them openly later is a different matter). The GM can still apply rarity adjustments as usual based on the specifics of the market available."
+            ]
+        },
+        "finalAbility":{
+            "name":"Treasures of the Carp",
+            "activation":[
+                "Once per game session, you may give away one item in your possession to reduce the TN of the next Social skill check you make targeting the recipient by an amount equal to the rarity of the item. For each point by which this would reduce the TN below 1, add a kept |ringDieIcon| set to an |opportunityIcon| result to your check."
+            ]
+        }
+    },
+    "Asahina":{
+        "name":"Asahina Artificer School",
+        "types":["Shugenja","Artisan"],
+        "description":[
+            "Art and religion intertwine for the Asahina, for to them, faith, beauty, and peace are all aspects of the same truth. The Asahina take any opportunity to teach their philosophy and try to improve harmony in the Empire. Their focus on the creation of beautiful things is simply another aspect of their attempt to spread art and peace throughout Rokugan. Many a conflict has been defused by an Asahina religious ritual that presented a peaceful path forward. The Asahina do their utmost to live their pacifistic ideals in a world fraught with conflict. It is arduous, but they persevere, secure in their beliefs."
+        ],
+        "initialAbility":{
+            "name":"Spiritual Artisan",
+            "activation":[
+                "When making a check to mystically summon an illusion or to summon, augment, or awaken an object, you may add a number of kept |ringDieIcon| set to |opportunityIcon| results equal to your school rank."
+            ]
+        },
+        "finalAbility":{
+            "name":"Stir the Slumbering Spirit",
+            "activation":[
+                "Once per game session as a downtime activity, you may make a TN 4 Artisan (Void) check to awaken an item’s spirit. If you succeed, until the end of the game session, it becomes a nemuranai with a sealed invocation of your choice based on the item’s history. The GM is the final arbiter of the appropriateness of any invocation selected this way."
+            ]
+        }
+    },
+    "Daidoji":{
+        "name":"Daidoji Iron Warrior School",
+        "types":["Bushi"],
+        "description":[
+            "The warriors from the Daidoji dōjō form the core of their clan’s small standing army. They are highly trained heavy infantry who can hold the line and delay the advance of any foe. Many enemies have broken on the unwavering spears and iron discipline of the Daidoji Iron Warriors. When there are no wars to fight, many are assigned as protectors of Crane castles or as yōjimbō (bodyguards) to traveling Crane courtiers. Their watchfulness and solidarity have prevented countless heated moments from getting out of hand, though it is said that most Daidoji prefer the honesty of the battlefield."
+        ],
+        "initialAbility":{
+            "name":"Vigilance of Mind",
+            "activation":[
+                "Once per round, when another character within range of one of your readied melee weapons would suffer physical damage, you may intercept. If you do, you may suffer fatigue up to your school rank to reduce the damage the target suffers by twice that amount."
+            ]
+        },
+        "finalAbility":{
+            "name":"To Tread the Sword",
+            "activation":[
+                "When you use the Guard action, instead of guarding one character, you may choose to guard a number of other characters in range up to your ranks in Martial Arts [Melee]."
+            ]
+        }
+    },
+    "Doji":{
+        "name":"Doji Diplomat School",
+        "types":["Courtier"],
+        "description":[
+            "No one plays the game of court better than the Crane—after all, their clan wrote the rules. The Doji Diplomats choreograph the courtly dance of favors exchanged, gifts given, and the right people invited to private gatherings. The Doji are always on the leading edge of fashion and culture, and Doji Diplomats need never use an unkind word: their silence speaks volumes, and a simple gesture says even more. Their networks of favors, gifts, and invitations allow them to weigh the ebb and flow of the social side of the Empire and adjust the scales to their benefit."
+        ],
+        "initialAbility":{
+            "name":"Speaking in Silence",
+            "activation":[
+                "Once per scene when making a check to persuade or influence someone, you may add a number of kept |ringDieIcon| set to |opportunityIcon| results equal to your school rank."
+            ]
+        },
+        "finalAbility":{
+            "name":"The Lady’s Grace",
+            "activation":[
+                "Once per scene, you may spend 1 Void point to reduce your strife to 0. When you do, each friendly character in the scene may reduce their strife by your honor rank."
+            ]
+        }
+    },
+    "Kakita":{
+        "name":"Kakita Duelist School",
+        "types":["Bushi","Artisan"],
+        "description":[
+            "The Kakita Duelist School emphasizes “one strike, one kill,” seeking for its students to master the one perfect strike performed in an iaijutsu duel. For the Kakita Duelists, such is the pinnacle of all martial skills. While other martial skills are not neglected, neither are they the focus of the Kakita Dueling Academy in Tsuma. Although some might critique such single-minded dedication, the Kakita Duelists are the best in the Empire. Their skill with the katana in this arena complements the Doji mastery of court, and reinforces the Crane hold on the political flow of the Empire."
+        ],
+        "initialAbility":{
+            "name":"Way of the Crane",
+            "activation":[
+                "Once per round, you may increase or decrease the severity of a critical strike you inflict by an amount up to your school rank."
+            ]
+        },
+        "finalAbility":{
+            "name":"Strike with No Thought",
+            "activation":[
+                "Once per scene, as an Attack and Movement action, you may make a Martial Arts [Melee] (Void) check targeting one character at range 2–3 using a sheathed katana or wakizashi. The TN of this check is equal to your target’s vigilance.",
+                "You immediately move to range 1 of your target and draw the weapon you used. If you succeed, your target suffers a critical strike with severity equal to the deadliness of your weapon plus your bonus successes.",
+                "|opportunityIcon|+: One character of your choice at range 0–2 of your target per |opportunityIcon| spent this way suffers the Dazed and Disoriented conditions.",
+                "|opportunityIcon|opportunityIcon|+: Treat the maximum range of this technique as 1 higher per |opportunityIcon|opportunityIcon| spent this way."
+            ]
+        }
+    },
+    "Agasha":{
+        "name":"Agasha Mystic School",
+        "types":["Shugenja"],
+        "description":[
+            "The Agasha Mystics mix practical arts with their invocations, using alchemical items and metallurgy as foci for their mystical arts. Through this, they have learned that all of the Elements are linked, and there is great power to be found in the changing of their states. They make chemical mixtures that enhance or are enhanced by their magic, which are used for everything from simple entertainment to warfare. The Agasha weave their prayers into every item they create, from swords to medicine, seeking to push the limits of their understanding. Agasha Mystics are used to venturing out into the world, looking for inspiration from nature in all its multitude of forms."
+        ],
+        "initialAbility":{
+            "name":"Elemental Transmutation",
+            "activation":[
+                "When performing an invocation, you may choose a different ring with which to make the check. While using this school ability, you cannot activate |opportunityIcon| of the original Element of the invocation, but you can activate |opportunityIcon| for the new Element. You can use this school ability a number of times per game session up to your school rank."
+            ]
+        },
+        "finalAbility":{
+            "name":"Experiment and Adapt",
+            "activation":[
+                "Increase your supernatural resistance against Air, Earth, Fire, and Water invocations by your ranks in Theology. After another character performs an Air, Earth, Fire, or Water invocation targeting you, you may spend 1 Void Point to immediately perform that invocation, even if you have not learned it."
+            ]
+        }
+    },
+    "Kitsuki":{
+        "name":"Kitsuki Investigator School",
+        "types":["Courtier","Bushi"],
+        "description":[
+            "The Kitsuki Investigator School is a recent school, founded when Agasha Kitsuki saved the life of the Mirumoto daimyō by use of evidence. The Kitsuki Investigators use their methods of observation, experimentation, logic, and reason to understand the truth, which puts them outside the norm of the Rokugani testimony-based judiciary system. The Kitsuki Investigators gravitate toward legal work as magistrates and justiciars, in addition to serving as courtiers and representatives of the Dragon Clan."
+        ],
+        "initialAbility":{
+            "name":"Kitsuki’s Method",
+            "activation":[
+                "When performing a check to investigate with any skill, you may treat your ranks in the skill you are using as being equal to your school rank. If your ranks in the skill are equal to or higher than your school rank, or if you have 5 ranks in the skill, you may add a kept |ringDieIcon| set to an |opportunityIcon| result instead."
+            ]
+        },
+        "finalAbility":{
+            "name":"The Eyes Betray the Heart",
+            "activation":[
+                "Once per scene when performing a skill check to investigate, you may spend |opportunityIcon| as follows:",            
+                "|opportunityIcon|+: You may reserve up to one dropped die per |opportunityIcon| spent this way. The next time you perform a check to interact with the person or thing you were investigating (such as a check targeting that person or a check to use that object), you may add any number of these reserved dice as kept dice. Then, remove any unused reserved dice."
+            ]
+        }
+    },
+    "Mirumoto":{
+        "name":"Mirumoto Two-Heavens Adept School",
+        "types":["Bushi"],
+        "description":[
+            "The Mirumoto dōjō’s unique two-sword style, niten (or Two-Heavens), is only one component of their mastery of swords and combat. Its students follow the Tao of Shinsei and use it to guide them in war and peace, seeking to apply its practical lessons to all things. Like all of the Dragon, they are used to physical hardship and can persevere under great stress."
+        ],
+        "initialAbility":{
+            "name":"Way of the Dragon",
+            "activation":[
+                "Once per round during a duel or skirmish when you are targeted by an Attack check with a melee weapon, you may use one of your weapons readied in a one-handed grip (or one of your hands, if it is empty) to ward or trap.",
+                "If you ward, the attacker must reroll dice containing |successIcon| or |explosiveSuccessIcon| up to your school rank.",
+                "If you trap, reduce the TN of your next Attack check against the attacker this scene by your school rank (to a minimum of 1).",
+                "You cannot choose this weapon for Attack actions until the end of your next turn."
+            ]
+        },
+        "finalAbility":{
+            "name":"Heart of the Dragon",
+            "activation":[
+                "Once per round, when performing an Attack action check, you may spend |opportunityIcon| as follows:",
+                "|opportunityIcon|: Perform a Strike action with a readied weapon you have not used for an Attack action this turn."
+            ]
+        }
+    },
+    "Togashi":{
+        "name":"Togashi Tattooed Order",
+        "types":["Monk"],
+        "description":[
+            "The monks of the Togashi Order have dedicated themselves to discovering and fulfilling their soul’s destiny, believing that to be their individual path to achieving Enlightenment. They are aided in this by the prophetic visions of their leader, the Dragon Clan Champion, as well as the mystic tattoos that bind them to their order; the tattoos’ artistry is matched only by their unusual powers. Only those who become true ise zumi know that the tattoos’ power flows from the blood of Togashi, the Dragon Clan Kami, which is mixed into the tattooing inks."
+        ],
+        "initialAbility":{
+            "name":"Blood of the Kami",
+            "activation":[
+                "You have one mystical tattoo that empowers your kihō, and gain more as your school rank increases. When you make a check to activate a kihō linked to one of your mystical tattoos, if you succeed, add additional bonus successes equal to your school rank.",
+                "Select a natural motif for your first tattoo and choose one kihō for which you meet the prerequisites that are linked to the tattoo. If you have not learned it, you learn that kihō (without paying its XP cost). You cannot choose the same kihō multiple times this way.",
+                "Each time your school rank increases, you gain one additional tattoo this way."
+            ]
+        },
+        "finalAbility":{
+            "name":"Blood of the Dragon",
+            "activation":[
+                "Once per scene, while you are benefiting from the enhancement effect of a kihō linked to one of your tattoos, when you activate a different kihō, you may spend 1 Void point. If you do, you may maintain both enhancement effects until the end of the scene or until you activate another kihō."
+            ]
+        }
+    },
+    "Akodo":{
+        "name":"Akodo Commander School",
+        "types":["Bushi"],
+        "description":[
+            "The Akodo War College’s curriculum is focused on control: of one’s weapons, of the battlefield, over the flow of conflict, and ultimately, over oneself. Its students study the advice of Akodo’s Leadership, which was written by the Lion Clan Kami himself. In addition to training as warriors, Akodo Commanders are educated to be battlefield leaders. They often treat war as a game of Go, to be decided by exact moves. Akodo Commanders strike precisely and without hesitation with sword and army alike. Their goal is the pinnacle of the art of war: to minimize losses while achieving their objectives."
+        ],
+        "initialAbility":{
+            "name":"Way of the Lion",
+            "activation":[
+                "When you succeed at an Attack or Support action check, you may remove an amount of strife from yourself up to your school rank. For each strife you remove this way, add that one bonus success to the check and receive 1 fatigue."
+            ]
+        },
+        "finalAbility":{
+            "name":"Akodo’s Final Lesson",
+            "activation":[
+                "Once per game session during a skirmish or mass battle, after you fail a check, you may attempt the check again, treating the TN as 1."
+            ]
+        }
+    },
+    "Ikoma":{
+        "name":"Ikoma Bard School",
+        "types":["Courtier"],
+        "description":[
+            "In the end—after trials, sacrifices, and death—all that truly remains of a samurai is their story. The Ikoma Bard School trains its students as historians, bards, and tale-spinners; not just to preserve the stories of old, but to inspire the warriors of the Lion Clan to equal and exceed the achievements of their ancient ancestors. Ikoma Bards are no less warlike than the other scions of the Lion Clan. However, their most important duty lies in supporting each Lion’s drive to seize glory no matter the danger—and to fight against any odds with the confidence that no hero will die unsung."
+        ],
+        "initialAbility":{
+            "name":"Heart of the Lion",
+            "activation":[
+                "Once per scene, after you perform a check using a Social skill that targets one or more characters, you may agitate or console:",
+                "If you agitate, transfer strife up to twice your school rank from yourself to your targets (divided among them as you choose).",
+                "If you console, transfer strife up to twice your school rank from your targets (divided among them as you choose) to yourself."
+            ]
+        },
+        "finalAbility":{
+            "name":"Lion’s Pride",
+            "activation":[
+                "Once per game session as a Support action, you may attempt to convince everyone in the scene of the glorious reputation of one character, embellishing the truth as needed, by making a TN 5 Performance (Fire) check targeting one character. The TN of this check is 6 if you target yourself, and 4 if you target another Lion Clan character.",
+                "If you succeed, reduce the TN of all of the character’s Social skill checks by 3 until the end of the scene, and the TN of all of the character’s other checks by 1."
+            ]
+        }
+    },
+    "Kitsu":{
+        "name":"Kitsu Medium School",
+        "types":["Shugenja"],
+        "description":[
+            "The smallest of the shugenja schools of the Great Clans, the Kitsu Medium School maintains an esoteric focus on the ancestors, which requires unique training and at least a trace of the original Kitsu bloodline. This mystical connection to their forebears allows them to perform magic that no others can. The Kitsu Mediums are the living bridge between the Lion Clan’s past and the present, acting as the voice of the ancestors in the present day. As traditionalists, they use the ancestral names for prayers to honor those who first mastered them."
+        ],
+        "initialAbility":{
+            "name":"Favor of the Ancestors",
+            "activation":[
+                "Once per scene, you may importune one invocation with a school rank prerequisite up to your school rank without making the sacrifices usually required and without the usual TN increase."
+            ]
+        },
+        "finalAbility":{
+            "name":"Strength of a Thousand Ancestors",
+            "activation":[
+                "Once per game session, as a Support action, you may summon the spirit of an ancestor to possess you until the end of the scene. While possessed, you count as an Otherworldly being and use the profile of the ancestor (a non-specific human NPC profile, or, at the GM’s discretion, a PC with up to 180 XP that you have created in advance). Your character does not remember any time they spend possessed."
+            ]
+        }
+    },
+    "Matsu":{
+        "name":"Matsu Berserker School",
+        "types":["Bushi"],
+        "description":[
+            "The Matsu’s soldiers are the front line and main strength of the Lion armies. Their bravery and zeal for battle are unquestioned. The Matsu warrior dōjō teaches the primacy of offense and the necessity of seizing the initiative in all things. Aggression is the hallmark of the Matsu style; direct action is their watchword. This bellicose attitude often puts them at odds with the careful strategies of the Akodo, but the Matsu serve the Lion and the Empire with unquestioned loyalty."
+        ],
+        "initialAbility":{
+            "name":"Matsu’s Fury",
+            "activation":[
+                "After you suffer a critical strike or unmask, you may suffer the Enraged condition to remove an amount of fatigue from yourself equal to your school rank."
+            ]
+        },
+        "finalAbility":{
+            "name":"Rending Jaws of the Lion",
+            "activation":[
+                "Once per round, when performing an Attack action check while Enraged, you may spend 1 Void point to alter each kept die containing |successIcon| to a result containing |explosiveSuccessIcon|."
+            ]
+        }
+    },
+    "Asako":{
+        "name":"Asako Loremaster School",
+        "types":["Courtier"],
+        "description":[
+            "The Asako Loremasters study widely, and from that broad and firm base, they develop their specialties. It is rare for a Loremaster not to have at least passing knowledge of a subject, no matter how obscure. Acting as the courtiers of the Phoenix, the Asako Loremasters marshal arguments based on their expertise in the revered knowledge of the past. One should look for an Asako first in the library and then in court, usually deep in discussion. Few care to challenge an Asako Loremaster on the field of knowledge, but such disputations are often one of the highlights of court."
+        ],
+        "initialAbility":{
+            "name":"Wisdom of the Ages",
+            "activation":[
+                "When performing a Scholar skill check, you may treat your ranks in the skill as being equal to your school rank. If your ranks in that Scholar skill are equal to or higher than your school rank, or if you have 5 ranks in the skill, you may add one kept |ringDieIcon| set to an |opportunityIcon| result instead."
+            ]
+        },
+        "finalAbility":{
+            "name":"Insufferable Genius",
+            "activation":[
+                "After you succeed at a check to acquire or remember information, you may spend 1 Void point and choose any number of characters with whom you can communicate. You must describe how the knowledge you acquired helps each character you choose. Each of those characters reduces the TN of their next check by 1 (to a minimum of 1) and suffers 1 strife."
+            ]
+        }
+    },
+    "Isawa":{
+        "name":"Isawa Elementalist School",
+        "types":["Shugenja"],
+        "description":[
+            "No tradition has a more complete mastery of the way of the spirits than that of the Isawa Elementalist School. Since the time before the Kami fell to earth, the priests of the Isawa have sought knowledge and understanding of the kami, the Fortunes, and the very elements themselves. Over the centuries, they have perfected the rituals and supplications to request great boons on behalf of the Phoenix Clan and terrible banes for casting down their enemies. Yet, they know that the spirits require service in exchange for their blessings, making the Isawa Elementalists hesitant to call upon the kami except in times of great need. To do so without cause is to risk upsetting the delicate balance of the natural world—or bring the wrath of the spirits upon them."
+        ],
+        "initialAbility":{
+            "name":"One with the Elements",
+            "activation":[
+                "Once per scene when making the check to activate an invocation technique, before rolling dice, you may reduce the TN of the check by your school rank."
+            ]
+        },
+        "finalAbility":{
+            "name":"Master of Elements",
+            "activation":[
+                "Once per round, after you perform an invocation, you may spend 1 Void point to switch to any other stance and perform another invocation that shares no action types with the first invocation (Attack, Support, etc.)."
+            ]
+        }
+    },
+    "Shiba":{
+        "name":"Shiba Guardian School",
+        "types":["Bushi","Courtier"],
+        "description":[
+            "As Shiba swore to protect Isawa, so the Shiba Guardian School emphasizes the defense of and cooperation with the Isawa; its members complement and protect priests, shrine keepers, and shugenja. The Shiba Guardians are broadly trained, often as much scholars as warriors, and they approach conflict as a problem to be solved without bloodshed if possible. Those who underestimate them due to their reluctance to take a life usually only do so once: the Shiba Guardians are as devoted to the perfection of the martial arts as any samurai. Their commitment to theological study and long hours of meditation have taught the Shiba Guardians how to dance in harmony with elemental kami called forth by the invocations of the shugenja."
+        ],
+        "initialAbility":{
+            "name":"Way of the Phoenix",
+            "activation":[
+                "Once per scene, when a character at range 0–3 makes a check that contains 1 or more |strifeIcon| symbols, you may negate all of those |strifeIcon| symbols. Then, that character removes strife and fatigue equal to your school rank."
+            ]
+        },
+        "finalAbility":{
+            "name":"Stand of Honor",
+            "activation":[
+                "At the end of your turn, you may spend 1 Void point to prepare to fend off advancing foes; this effect persists until the start of your next turn. When an enemy enters the range of one of your readied weapons, you may immediately make a Strike action using that weapon and targeting that enemy; if you succeed, the target suffers the Immobilized condition in addition to any other effects."
+            ]
+        }
+    },
+    "Kaito":{
+        "name":"Kaito Shrine Keeper School",
+        "types":["Monk"],
+        "description":[
+            "Kaito Shrine Keepers work alongside priests to protect temples across Phoenix lands, or keep smaller shrines on their own. The Kaito learn mystical arts to propitiate the kami—sometimes even serving as vessels for them—and practical ones to maintain the shrines. Shrine Keepers make use of protective magic—such as ofuda, paper charms—and spiritually enhanced archery to defend shrines against threats both mystical and mundane."
+        ],
+        "initialAbility":{
+            "name":"Sacred Arrows",
+            "activation":[
+                "As an action, you may augment one of your arrows with a prayer to the kami. Make the check to perform one invocation you know, reducing the TN by your school rank, and record the result. The arrow gains the Sacred quality, and remains infused with the invocation until the end of the scene.",
+                "After you perform an Attack action using the arrow (or fire it at a location, at the GM’s discretion), you may resolve the effects of the invocation from the place the arrow landed. You may spend |opportunityIcon|+ to delay resolving the effects of the invocation for 1 round per |opportunityIcon| spent this way, and may spend |opportunityIcon|opportunityIcon| from a failed check to affect one target of the attack that you missed."
+            ]
+        },
+        "finalAbility":{
+            "name":"Demon, Begone!",
+            "activation":[
+                "As an action, you may make a TN 3 Meditation (Void) check by plucking the string of a bow you are wielding, targeting each Otherworldly being within a number of range bands equal to your ranks in Meditation.",
+                "If you succeed, each target suffers strife equal to your ranks in Meditation plus your bonus successes.",
+                "|opportunityIcon|: Each target must resist with a TN 3 Meditation (Void) check or treat its physical and supernatural resistances as 0. This effect persists until the end of the scene."
+            ]
+        }
+    },
+    "Bayushi":{
+        "name":"Bayushi Manipulator School",
+        "types":["Courtier"],
+        "description":[
+            "Through the adept use of deception, temptation, and espionage, Bayushi-trained courtiers are the masters of finding and exploiting the weaknesses of others. No method is too dishonorable as long as it is effective and untraceable. The Bayushi Manipulators are the shadow to the Doji Diplomats’ light, and they are justly feared by all. Yet, no court is complete without its Scorpion scoundrel. The Bayushi Manipulators accept their roles as villains in the play that is Rokugan, and in doing so, they help ensure that no true villains rise to threaten the Emperor."
+        ],
+        "initialAbility":{
+            "name":"Weakness Is My Strength",
+            "activation":[
+                "When you exploit a target’s disadvantage as part of a Scheme action, you do not need to spend a Void point, and you may reroll additional dice up to your school rank."
+            ]
+        },
+        "finalAbility":{
+            "name":"Little Truths",
+            "activation":[
+                "When you perform a check targeting another character to which one of your advantages or disadvantages applies, you may choose another advantage or disadvantage that shares a type with it. Unless they have clear evidence to the contrary, the target comes to believe that you have the advantage or disadvantage you chose instead of the one you actually have.If the target attempts to seize or exploit this false advantage or disadvantage, their check automatically counts as failing with a shortfall of 3. They suffer 3 strife and the Disoriented condition."
+            ]
+        }
+    },
+    "Shosuro":{
+        "name":"Shosuro Infiltrator School",
+        "types":["Shinobi","Courtier"],
+        "description":[
+            "The Shosuro Infiltrators have perfected the art of deception. With their well-honed abilities in acrobatics, disguise, and stealth, these Scorpion agents encounter very few places to which they cannot gain access. As agents of surprise and disruption, they do not stand and fight, but instead sow chaos and vanish—usually to disguise what their mission actually was. Many a yōjimbō has thwarted an apparent assassination attempt that was merely a distraction from the target the Shosuro Infiltrators truly sought. Such infiltrators can vanish into shadows or, with equal skill, mingle with peasants to become invisible to the eyes of samurai."
+        ],
+        "initialAbility":{
+            "name":"The Path of Shadows",
+            "activation":[
+                "While performing an Attack action against a target who is Compromised, Incapacitated, Unconscious, or unaware of your presence, treat the damage and deadliness of your weapon as being increased by your school rank."
+            ]
+        },
+        "finalAbility":{
+            "name":"The Final Silence",
+            "activation":[
+                "As an Attack and Movement action, you may make a TN 4 Martial Arts [Unarmed] (Air) check targeting any number of minion NPCsat range 0–4.",
+                "If you succeed during a narrative scene, you silently kill all targets over the course of a few minutes. If you succeed during a conflict scene, at the end of each of your turns, you may silently kill one of these targets at range 0–2 (in addition to your other actions)."
+            ]
+        }
+    },
+    "Soshi":{
+        "name":"Soshi Illusionist School",
+        "types":["Shugenja","Courtier","Shinobi"],
+        "description":[
+            "The Soshi Illusionist School is the school of whispers and shadows. “Subtlety” is the illusionists’ watchword as they go about their tasks. Even their religious rituals and duties tend to be understated, though they are no less faithfully executed. When the Scorpion need spiritual aid in court, their subtle invocations and keen understanding of the kami allow them to work their prayers unseen and unheard. The Soshi Illusionists are among the most practical shugenja in the Empire, preferring discriminating and effective use of invocation over pomp and ceremony."
+        ],
+        "initialAbility":{
+            "name":"The Kami’s Whisper",
+            "activation":[
+                "While you are performing an invocation technique or channeling, characters with a vigilance lower than or equal to your school rank plus one cannot detect any physical sign that you are in the act of invoking the spirits. They can still observe effects of the invocation, however.",
+                "Increase the TN of Theology checks to detect or study your supernatural activities by your school rank."
+            ]
+        },
+        "finalAbility":{
+            "name":"World of Shadows",
+            "activation":[
+                "You may spend 1 Void point to attempt to establish that something in the scene has been an illusion all along. This could be an object, image of a person, or other illusory phenomenon you could summon with an invocation. You must make the check to summon this illusion using an invocation, with adjustments to the TN for plausibility determined by the GM. If you succeed, you reveal that the thing you chose is in fact an illusion you wove, and has been for at least a few moments. If you fail, your character clearly did not think to set up an illusion—the object is as it appears. As with all matters, the GM has final say over acceptable uses of this ability."
+            ]
+        }
+    },
+    "Yogo":{
+        "name":"Yogo Wardmaster School",
+        "types":["Shugenja"],
+        "description":[
+            "Founded by Asako Yogo when he joined the Scorpion clan, the Yogo Wardmaster dōjō is the Empire’s foremost school of gyosetsudō, the art of supernatural warding through mystical calligraphy. Entrusted with the protection of the twelve Black Scrolls, the Yogo developed their founder’s techniques to prevent the scrolls’ detection by dark forces and contain their corrupting power. By inscribing sigils of power onto slips of paper imbued with their ki, masters of this school can erect invisible barriers, bind spirits, and foil incantations. For the Yogo, an ounce of preparation is more than enough."
+        ],
+        "initialAbility":{
+            "name":"Mystical Script",
+            "activation":[
+                "You can have a number of additional wards with prepared invocations up to your school rank. Decoding or using one of your wards requires any other character to make a Theology (Void) check with TN equal to your school rank."
+            ]
+        },
+        "finalAbility":{
+            "name":"Bound in Ink",
+            "activation":[
+                "Once per scene, when you are targeted by an invocation or mahō technique, you may resist with a TN 4 Composition check. If you succeed, you absorb the invocation or mahō, nullifying all of its effects and creating a ward containing it."
+            ]
+        }
+    },
+    "Ide":{
+        "name":"Ide Trader School",
+        "types":["Courtier"],
+        "description":[
+            "The ever-friendly face of the Unicorn is the Ide. Ide Traders always attempt to solve problems with negotiation first and foremost, as they know any business dealings between friends and equals forge bonds as strong as steel. While some of the other clans think of the Ide as soft, none can point to when they were able to take advantage of this perceived weakness. The Ide Traders ignore insults and politely welcome compliments in equal measure. They have a vast knowledge of cultures, both Rokugani and foreign, which allows them to tailor their dealings with precision."
+        ],
+        "initialAbility":{
+            "name":"Vendor of Strange Wares",
+            "activation":[
+                "Ignore the Forbidden quality when acquiring and handling items.",
+                "When acquiring, selling, or gifting an item, you may treat its rarity as reduced or increased by your school rank."
+            ]
+        },
+        "finalAbility":{
+            "name":"A Friend in Every City",
+            "activation":[
+                "As a downtime activity in any place of human habitation, you may make a TN 4 Commerce (Water) check to find a merchant with whom you (or your relatives) have done business.",
+                "If you succeed, you find this individual and gain the Ally advantage for them, which predisposes them to assist you in various ways."
+            ]
+        }
+    },
+    "Iuchi":{
+        "name":"Iuchi Meishōdō Master School",
+        "types":["Shugenja","Artisan"],
+        "description":[
+            "The Unicorn understanding of magic and the spirits has been greatly influenced by their years exploring outside the Empire, and the making of magical talismans remains the focus of their craft, meishōdō. The Iuchi Meishōdō Masters’ magic is unique among Rokugan’s shugenja; using words of power taught to them by foreign sorcerers, they bind the spirits into talismans, which can then be gifted to others to use. Their heritage makes the Iuchi one of the most open-minded of the shugenja families."
+        ],
+        "initialAbility":{
+            "name":"The Way of Names",
+            "activation":[
+                "As a downtime activity, you may make a TN 2 Design check using anyring to bind a spirit to an inanimate vessel, creating a meishōdō talisman for one invocation of that Element that you have learned. While you have the talisman in your possession, reduce the TN of checks to activate that invocation by 1. You can give the talisman to another shugenja, allowing them to perform that invocation even if they have not learned it and reducing the TN to activate it by 1, but the talisman ceases to function after a number of uses equal to your school rank.",
+                "You can sustain a number of meishōdō talismans up to your school rank. You can only have one meishōdō talisman for any single invocation."
+            ]
+        },
+        "finalAbility":{
+            "name":"The Spirits Unbound",
+            "activation":[
+                "At the end of your turn, you may spend 1 or more Void points to unleash the powers within an equal number of your meishōdō talismans, destroying these talismans and freeing the entities within. You may immediately perform each of the invocations for which the talismans were created, reducing the TN by 3."
+            ]
+        }
+    },
+    "Moto":{
+        "name":"Moto Conqueror School",
+        "types":["Bushi"],
+        "description":[
+            "While most Unicorn dōjō focus on swift and complex techniques, the martial style of the Moto Conquerors favors straightforward, unrelenting force. They fight loudly, use sweeping movements, and wield weapons many Rokugani do not recognize. As a result, few samurai know how to react to the Moto style, let alone defend against it. Other clans consider the Moto to be barbarians, and the horde uses this to their advantage. If the Empire will not make an effort to understand the Moto’s ways, then how can they stand against them?"
+        ],
+        "initialAbility":{
+            "name":"Swirling Desert Wind",
+            "activation":[
+                "When performing an Attack action during a skirmish or mass battle, you may spend |opportunityIcon| as follows:",
+                "|opportunityIcon|: Choose an enemy other than your target whom you can perceive. Increase the TN of that enemy’s Attack checks targeting you by your school rank until the start of your next turn."
+            ]
+        },
+        "finalAbility":{
+            "name":"Scouring Sirocco",
+            "activation":[
+                "Once per round, after you inflict the Incapacitated condition on a target (or defeat a minion NPC), you may perform a Strike action against a different target."
+            ]
+        }
+    },
+    "Shinjo":{
+        "name":"Shinjo Outrider School",
+        "types":["Bushi","Courtier"],
+        "description":[
+            "The core of the Unicorn military, the Shinjo Outriders emphasize speed and flexibility. All Shinjo Outriders learn the art of reconnaissance and how to get the most out of their horses. No samurai is more mobile than a mounted Shinjo Outrider. Their preferred weapon is the Shinjo horsebow, which they use with great accuracy even while riding at a gallop. Trained to live off the land, the Shinjo Outriders thoroughly learn the terrain of each potential battlefield before having to fight over it."
+        ],
+        "initialAbility":{
+            "name":"Born in the Saddle",
+            "activation":[
+                "Once per scene, before rolling dice, you may declare that you are directing your horse (who must be present) to aid in a task and describe how its efforts help in those circumstances. Reduce the TN of the check by your school rank."
+            ]
+        },
+        "finalAbility":{
+            "name":"I Will Always Return",
+            "activation":[
+                "Once per game session, you may call out for your steed. At the beginning of the following round, your horse arrives, regardless of any barriers that might normally have prevented it from reaching your location. If your steed has recently been slain, its spirit will possess the closest horse to you and come to your aid regardless, such is its loyalty to you."
+            ]
+        }
+    },
+    "Utaku":{
+        "name":"Utaku Battle Maiden School",
+        "types":["Bushi"],
+        "description":[
+            "The most traditional and prestigious of the Unicorn Clan’s schools, the Shiotome, or “Battle Maidens,” are revered as legendary cavalry. The dōjō only accepts women who carry the Utaku name, and even then prospective students must meet stringent standards of prowess and honor. This is the only school in the Empire that teaches the secrets required to tame the powerful Utaku steeds, massive warhorses that refuse all other riders. In battle, graceful, continuous movements mark their style, as does their unnerving serenity. Even when charging into the fray, Battle Maidens often move in utter silence."
+        ],
+        "initialAbility":{
+            "name":"Heroic Charge",
+            "activation":[
+                "When you succeed at an Attack action check, add bonus successes equal to the number of range bands you have moved this round, to a maximum of your school rank.",
+                "During a duel or mass battle, if you are mounted on your steed, you always count as having moved a number of range bands equal to your school rank this turn."
+            ]
+        },
+        "finalAbility":{
+            "name":"Sensing the Breeze",
+            "activation":[
+                "Once per round, after you defend against damage, you may move 1 range band and you may switch to a different stance."
+            ]
+        }
+    },
+    "ronin":{
+        "name":"Worldly Rōnin Path",
+        "types":["Bushi","Courtier"],
+        "description":[
+            "Individuals may come to walk the rōnin’s path for many reasons. These “wave men” adrift upon the sea of fate may be former clan samurai fallen from grace, unlucky samurai whose master was killed or demoted, or even children born to samurai parents out of wedlock or under other contentious circumstances. Many do not have a formal sensei anymore—if they ever did—and so the world itself is their teacher. As they must adapt to survive, many rōnin rely on a particular skill to make their way in the world, whether that be as mercenaries, as traveling merchants or performers, or as guides or guardians for specific roads, rivers, or mountain passes."
+        ],
+        "initialAbility":{
+            "name":"School of Waves",
+            "activation":[
+                "Choose one bonus curriculum skill; this skill henceforth counts as part of the Worldly Rōnin Path curriculum for you at all ranks. Each time your school rank increases, choose one additional bonus curriculum skill this way.",
+                "When you make a check using one of your bonus curriculum skills, you may negate 1 |strifeIcon| symbol."
+            ]
+        },
+        "finalAbility":{
+            "name":"A Bottomless Ocean",
+            "activation":[
+                "You can increase your bonus curriculum skills to rank 6 (paying 12 XP per skill raised from rank 5 to rank 6 this way)."
+            ]
+        }
+    }
+}

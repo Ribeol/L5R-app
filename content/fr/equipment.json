@@ -1,0 +1,296 @@
+{
+    "bokken":{
+        "name":"Bokken"
+    },
+    "chokutō":{
+        "name":"Chokutō"
+    },
+    "dao":{
+        "name":"Dao"
+    },
+    "gao":{
+        "name":"Gao"
+    },
+    "jian":{
+        "name":"Jian"
+    },
+    "katana":{
+        "name":"Katana"
+    },
+    "nodachi":{
+        "name":"Nodachi"
+    },
+    "scimitar":{
+        "name":"Cimeterre"
+    },
+    "wakizashi":{
+        "name":"Wakizashi"
+    },
+    "zanbatō":{
+        "name":"Zanbatō"
+    },
+    "masakari":{
+        "name":"Masakari"
+    },
+    "ono":{
+        "name":"Ono"
+    },
+    "club":{
+        "name":"Gourdin"
+    },
+    "hammer":{
+        "name":"Marteau"
+    },
+    "kiseru":{
+        "name":"Kiseru"
+    },
+    "ōtsuchi":{
+        "name":"Ōtsuchi"
+    },
+    "tetsubō":{
+        "name":"Tetsubō"
+    },
+    "jitte":{
+        "name":"Jitte"
+    },
+    "knife":{
+        "name":"Couteau"
+    },
+    "nunchaku":{
+        "name":"Nunchaku"
+    },
+    "tessen":{
+        "name":"Tessen"
+    },
+    "bisentō":{
+        "name":"Bisentō"
+    },
+    "bō":{
+        "name":"Bō"
+    },
+    "ji":{
+        "name":"Ji"
+    },
+    "naginata":{
+        "name":"Naginata"
+    },
+    "trident":{
+        "name":"Trident"
+    },
+    "yari":{
+        "name":"Yari"
+    },
+    "daikyū":{
+        "name":"Daikyū"
+    },
+    "horsebow":{
+        "name":"Arc de cavalerie Shinjo"
+    },
+    "yumi":{
+        "name":"Yumi"
+    },
+    "oyumi":{
+        "name":"Oyumi"
+    },
+    "blowgun":{
+        "name":"Sarbacane"
+    },
+    "kama":{
+        "name":"Kama"
+    },
+    "kusari-gama":{
+        "name":"Kusari-gama"
+    },
+    "shuriken":{
+        "name":"Shuriken"
+    },
+    "punch":{
+        "name":"Coup de poing"
+    },
+    "kick":{
+        "name":"Coup de pied"
+    },
+    "bite":{
+        "name":"Morsure"
+    },
+    "inconspicuous garb":{
+        "name":"Tenue discrète"
+    },
+    "sleeping garb":{
+        "name":"Vêtements de nuit"
+    },
+    "common clothes":{
+        "name":"Vêtements ordinaires"
+    },
+    "ceremonial clothes":{
+        "name":"Tenue de cérémonie"
+    },
+    "sanctified robes":{
+        "name":"Tunique sanctifiée"
+    },
+    "concealed armor":{
+        "name":"Armure dissimulée"
+    },
+    "traveling clothes":{
+        "name":"Vêtements de voyage"
+    },
+    "ashigaru armor":{
+        "name":"Armure d’ashigaru"
+    },
+    "lacquered armor":{
+        "name":"Armure laquée"
+    },
+    "plated armor":{
+        "name":"Armure de plates"
+    },
+    "blanket":{
+        "name":"Couverture"
+    },
+    "bottle of sake":{
+        "name":"Cruche de saké"
+    },
+    "bowl":{
+        "name":"Bol"
+    },
+    "bowyer’s kit":{
+        "name":"Nécessaire d’archer"
+    },
+    "calligraphy set":{
+        "name":"Nécessaire de calligraphie"
+    },
+    "chopsticks":{
+        "name":"Baguettes"
+    },
+    "daishō stand":{
+        "name":"Présentoir de daishō"
+    },
+    "dice and cup":{
+        "name":"Dés et gobelet"
+    },
+    "divination kit":{
+        "name":"Nécessaire de divination"
+    },
+    "finger of jade":{
+        "name":"Doigt de Jade"
+    },
+    "flint and tinder":{
+        "name":"Silex et allume-feu"
+    },
+    "games":{
+        "name":"Jeux"
+    },
+    "journal":{
+        "name":"Journal"
+    },
+    "kubi bukuro":{
+        "name":"Kubi bukuro"
+    },
+    "lucky cricket":{
+        "name":"Criquet porte-bonheur"
+    },
+    "makeup kit":{
+        "name":"Nécessaire de maquillage"
+    },
+    "medicine kit":{
+        "name":"Nécessaire médical"
+    },
+    "musical instrument":{
+        "name":"Instrument de musique"
+    },
+    "omamori (boon of bukurokujin)":{
+        "name":"Omamori (Bienfait de Fukurokujin)"
+    },
+    "omamori (boon of bishamon)":{
+        "name":"Omamori (Bienfait de Bishamon)"
+    },
+    "omamori (boon of benten)":{
+        "name":"Omamori (Bienfait de Benten)"
+    },
+    "personal seal or chop":{
+        "name":"Sceau ou tampon personnel"
+    },
+    "pillow book":{
+        "name":"Livre de chevet"
+    },
+    "noxious poison (one vial)":{
+        "name":"Toxine (une dose)"
+    },
+    "fire biter (one vial)":{
+        "name":"Morsure brûlante (une dose)"
+    },
+    "night milk (one vial)":{
+        "name":"Lait de la nuit (une dose)"
+    },
+    "quiver":{
+        "name":"Carquois"
+    },
+    "rope (by the foot)":{
+        "name":"Corde (par 30 centimètres)"
+    },
+    "sake cup":{
+        "name":"Coupe à saké"
+    },
+    "set of glass vials":{
+        "name":"Ensemble de fioles de verre"
+    },
+    "scroll satchel":{
+        "name":"Sacoche à rouleaux de papier"
+    },
+    "spices":{
+        "name":"Épices"
+    },
+    "sweets (four servings)":{
+        "name":"Douceurs (4 portions)"
+    },
+    "tattoo needles":{
+        "name":"Aiguilles de tatoueur"
+    },
+    "tea set (portable)":{
+        "name":"Service à thé (portatif)"
+    },
+    "tent (chomchong)":{
+        "name":"Tente (chomchong)"
+    },
+    "tent (small)":{
+        "name":"Tente (petite)"
+    },
+    "tent (yurt)":{
+        "name":"Tente (yourte)"
+    },
+    "traveling ration":{
+        "name":"Ration de voyage"
+    },
+    "umbrella":{
+        "name":"Ombrelle"
+    },
+    "whetstone":{
+        "name":"Pierre à aiguiser"
+    },
+    "attendant":{
+        "name":"Suivant"
+    },
+    "rokugani pony":{
+        "name":"Poney rokugani"
+    },
+    "unicorn warhorse":{
+        "name":"Cheval de guerre du Clan de la Licorne"
+    },
+    "utaku steed":{
+        "name":"Destrier Utaku"
+    },
+    "boat":{
+        "name":"Bateau"
+    },
+    "estate":{
+        "name":"Domaine"
+    },
+    "koku":{
+        "name":"Koku"
+    },
+    "bu":{
+        "name":"Bu"
+    },
+    "zeni":{
+        "name":"Zeni"
+    }
+}

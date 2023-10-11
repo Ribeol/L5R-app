@@ -1,0 +1,12 @@
+{
+    "Emerald Magistrate":{
+        "status":{
+            "change":15,
+            "minimum":null,
+            "maximum":40
+        },
+        "curriculum":[
+            {"list":["SG: trade","S: fitness","S: martial arts [melee]","S: martial arts [ranged]","S: martial arts [unarmed]","S: performance","TG: kata 2","T: Open Hand Style","T: Shallow Waters"],"rankUpCost":30}
+        ]
+    }
+}

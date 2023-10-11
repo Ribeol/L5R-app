@@ -1,0 +1,833 @@
+{
+    "Battle in the Mind":{
+        "groupRef":"kata",
+        "rank":3
+    },
+    "Breath of Wind Style":{
+        "groupRef":"kata",
+        "rank":4  
+    },
+    "Crashing Wave Style":{
+        "groupRef":"kata",
+        "rank":4
+    },
+    "Crescent Moon Style":{
+        "groupRef":"kata",
+        "rank":2
+    },
+    "Crimson Leaves Strike":{
+        "groupRef":"kata",
+        "rank":3
+    },
+    "Disappearing World Style":{
+        "groupRef":"kata",
+        "rank":4
+    },
+    "Flowing Water Strike":{
+        "groupRef":"kata",
+        "rank":3
+    },
+    "Heartpiercing Strike":{
+        "groupRef":"kata",
+        "rank":3
+    },
+    "Iron in the Mountains Style":{
+        "groupRef":"kata",
+        "rank":4
+    },
+    "Lord Hida’s Grip":{
+        "groupRef":"kata",
+        "clanRef":"crab",
+        "rank":2
+    },
+    "Lord Shiba’s Valor":{
+        "groupRef":"kata",
+        "clanRef":"phoenix",
+        "rank":2
+    },
+    "Soaring Slice":{
+        "groupRef":"kata",
+        "rank":1
+    },
+    "Soul Sunder":{
+        "groupRef":"kata",
+        "rank":5
+    },
+    "Striking as Air":{
+        "groupRef":"kata",
+        "rank":1
+    },
+    "Striking as Earth":{
+        "groupRef":"kata",
+        "rank":1
+    },
+    "Striking as Fire":{
+        "groupRef":"kata",
+        "rank":1
+    },
+    "Striking as Void":{
+        "groupRef":"kata",
+        "rank":5
+    },
+    "Striking as Water":{
+        "groupRef":"kata",
+        "rank":1
+    },
+    "Tactical Assessment":{
+        "groupRef":"kata",
+        "rank":2
+    },
+    "Warrior’s Resolve":{
+        "groupRef":"kata",
+        "rank":1
+    },
+    "Coiling Serpent Style":{
+        "groupRef":"kata",
+        "rank":2
+    },
+    "Iaijutsu Cut: Crossing Blade":{
+        "groupRef":"kata",
+        "rank":2
+    },
+    "Iaijutsu Cut: Rising Blade":{
+        "groupRef":"kata",
+        "rank":2
+    },
+    "Iron Forest Style":{
+        "groupRef":"kata",
+        "rank":2
+    },
+    "Open Hand Style":{
+        "groupRef":"kata",
+        "rank":2
+    },
+    "Rushing Avalanche Style":{
+        "groupRef":"kata",
+        "rank":2
+    },
+    "Spinning Blades Style":{
+        "groupRef":"kata",
+        "rank":2
+    },
+    "Thunderclap Strike":{
+        "groupRef":"kata",
+        "rank":3
+    },
+    "Veiled Menace Style":{
+        "groupRef":"kata",
+        "rank":2
+    },
+    "Hawk’s Precision":{
+        "groupRef":"kata",
+        "rank":1
+    },
+    "Pelting Hail Style":{
+        "groupRef":"kata",
+        "rank":2
+    },
+    "Pin the Fan":{
+        "groupRef":"kata",
+        "rank":5
+    },
+    "Cleansing Spirit":{
+        "groupRef":"kihō",
+        "ringRef":"earth",
+        "rank":1
+    },
+    "Earth Needs No Eyes":{
+        "groupRef":"kihō",
+        "ringRef":"earth",
+        "rank":1
+    },
+    "Earthen Fist":{
+        "groupRef":"kihō",
+        "ringRef":"earth",
+        "rank":1
+    },
+    "Grasp the Earth Dragon":{
+        "groupRef":"kihō",
+        "ringRef":"earth",
+        "rank":3
+    },
+    "Way of the Earthquake":{
+        "groupRef":"kihō",
+        "ringRef":"earth",
+        "rank":2
+    },
+    "Air Fist":{
+        "groupRef":"kihō",
+        "ringRef":"air",
+        "rank":1
+    },
+    "Riding the Clouds":{
+        "groupRef":"kihō",
+        "ringRef":"air",
+        "rank":2
+    },
+    "The Great Silence":{
+        "groupRef":"kihō",
+        "ringRef":"air",
+        "rank":1
+    },
+    "Way of the Willow":{
+        "groupRef":"kihō",
+        "ringRef":"air",
+        "rank":3
+    },
+    "Breaking Blow":{
+        "groupRef":"kihō",
+        "ringRef":"fire",
+        "rank":1
+    },
+    "Channel the Fire Dragon":{
+        "groupRef":"kihō",
+        "ringRef":"fire",
+        "rank":2
+    },
+    "Flame Fist":{
+        "groupRef":"kihō",
+        "ringRef":"fire",
+        "rank":1
+    },
+    "The Body Is an Anvil":{
+        "groupRef":"kihō",
+        "ringRef":"fire",
+        "rank":1
+    },
+    "Way of the Falling Star":{
+        "groupRef":"kihō",
+        "ringRef":"fire",
+        "rank":3
+    },
+    "Freezing the Lifeblood":{
+        "groupRef":"kihō",
+        "ringRef":"water",
+        "rank":2
+    },
+    "Ki Protection":{
+        "groupRef":"kihō",
+        "ringRef":"water",
+        "rank":1
+    },
+    "Ride the Water Dragon":{
+        "groupRef":"kihō",
+        "ringRef":"water",
+        "rank":3
+    },
+    "Water Fist":{
+        "groupRef":"kihō",
+        "ringRef":"water",
+        "rank":1
+    },
+    "Way of the Seafoam":{
+        "groupRef":"kihō",
+        "ringRef":"water",
+        "rank":1
+    },
+    "Death Touch":{
+        "groupRef":"kihō",
+        "ringRef":"void",
+        "rank":4
+    },
+    "Still the Elements":{
+        "groupRef":"kihō",
+        "ringRef":"void",
+        "rank":3
+    },
+    "Touch the Void Dragon":{
+        "groupRef":"kihō",
+        "ringRef":"void",
+        "rank":5
+    },
+    "Way of the Edgeless Sword":{
+        "groupRef":"kihō",
+        "ringRef":"void",
+        "rank":5
+    },
+    "Blessed Wind":{
+        "groupRef":"invocation",
+        "ringRef":"air",
+        "rank":1
+    },
+    "By the Light of the Lord Moon":{
+        "groupRef":"invocation",
+        "ringRef":"air",
+        "rank":1
+    },
+    "Call Upon the Wind":{
+        "groupRef":"invocation",
+        "ringRef":"air",
+        "rank":2
+    },
+    "Cloak of Night":{
+        "groupRef":"invocation",
+        "ringRef":"air",
+        "rank":1
+    },
+    "False Realm of the Fox Spirits":{
+        "groupRef":"invocation",
+        "ringRef":"air",
+        "rank":4
+    },
+    "Grasp of the Air Dragon":{
+        "groupRef":"invocation",
+        "ringRef":"air",
+        "rank":3
+    },
+    "Mask of Wind":{
+        "groupRef":"invocation",
+        "ringRef":"air",
+        "rank":2
+    },
+    "Nature’s Touch":{
+        "groupRef":"invocation",
+        "ringRef":"air",
+        "rank":1
+    },
+    "Rise, Air":{
+        "groupRef":"invocation",
+        "ringRef":"air",
+        "rank":4
+    },
+    "Secrets on the Wind":{
+        "groupRef":"invocation",
+        "ringRef":"air",
+        "rank":2
+    },
+    "Summon Fog":{
+        "groupRef":"invocation",
+        "ringRef":"air",
+        "rank":2
+    },
+    "Tempest of Air":{
+        "groupRef":"invocation",
+        "ringRef":"air",
+        "rank":1
+    },
+    "Token of Memory":{
+        "groupRef":"invocation",
+        "ringRef":"air",
+        "rank":1
+    },
+    "Vapor of Nightmares":{
+        "groupRef":"invocation",
+        "ringRef":"air",
+        "rank":3
+    },
+    "Wrath of Kaze-no-Kami":{
+        "groupRef":"invocation",
+        "ringRef":"air",
+        "rank":5
+    },
+    "Yari of Air":{
+        "groupRef":"invocation",
+        "ringRef":"air",
+        "rank":1
+    },
+    "Armor of Earth":{
+        "groupRef":"invocation",
+        "ringRef":"earth",
+        "rank":1
+    },
+    "Bind the Shadow":{
+        "groupRef":"invocation",
+        "ringRef":"earth",
+        "rank":2
+    },
+    "Caress of Earth":{
+        "groupRef":"invocation",
+        "ringRef":"earth",
+        "rank":1
+    },
+    "Courage of Seven Thunders":{
+        "groupRef":"invocation",
+        "ringRef":"earth",
+        "rank":1
+    },
+    "Earthquake":{
+        "groupRef":"invocation",
+        "ringRef":"earth",
+        "rank":4
+    },
+    "Earth Becomes Sky":{
+        "groupRef":"invocation",
+        "ringRef":"earth",
+        "rank":3
+    },
+    "Embrace of Kenro-Ji-Jin":{
+        "groupRef":"invocation",
+        "ringRef":"earth",
+        "rank":2
+    },
+    "Grasp of Earth":{
+        "groupRef":"invocation",
+        "ringRef":"earth",
+        "rank":1
+    },
+    "Jade Strike":{
+        "groupRef":"invocation",
+        "ringRef":"earth",
+        "rank":1
+    },
+    "Jurōjin’s Balm":{
+        "groupRef":"invocation",
+        "ringRef":"earth",
+        "rank":1
+    },
+    "Power of the Earth Dragon":{
+        "groupRef":"invocation",
+        "ringRef":"earth",
+        "rank":3
+    },
+    "Rise, Earth":{
+        "groupRef":"invocation",
+        "ringRef":"earth",
+        "rank":4
+    },
+    "Symbol of Earth":{
+        "groupRef":"invocation",
+        "ringRef":"earth",
+        "rank":2
+    },
+    "Tetsubō of Earth":{
+        "groupRef":"invocation",
+        "ringRef":"earth",
+        "rank":1
+    },
+    "Tomb of Jade":{
+        "groupRef":"invocation",
+        "ringRef":"earth",
+        "rank":5
+    },
+    "Wall of Earth":{
+        "groupRef":"invocation",
+        "ringRef":"earth",
+        "rank":1
+    },
+    "Armor of Radiance":{
+        "groupRef":"invocation",
+        "ringRef":"fire",
+        "rank":2
+    },
+    "Biting Steel":{
+        "groupRef":"invocation",
+        "ringRef":"fire",
+        "rank":1
+    },
+    "Breath of the Fire Dragon":{
+        "groupRef":"invocation",
+        "ringRef":"fire",
+        "rank":3
+    },
+    "Extinguish":{
+        "groupRef":"invocation",
+        "ringRef":"fire",
+        "rank":1
+    },
+    "Fukurokujin’s Wit":{
+        "groupRef":"invocation",
+        "ringRef":"fire",
+        "rank":1
+    },
+    "Fury of Osano-wo":{
+        "groupRef":"invocation",
+        "ringRef":"fire",
+        "rank":3
+    },
+    "Katana of Fire":{
+        "groupRef":"invocation",
+        "ringRef":"fire",
+        "rank":1
+    },
+    "Matsu’s Battlecry":{
+        "groupRef":"invocation",
+        "ringRef":"fire",
+        "rank":1
+    },
+    "Ravenous Swarms":{
+        "groupRef":"invocation",
+        "ringRef":"fire",
+        "rank":3
+    },
+    "Rise, Flame":{
+        "groupRef":"invocation",
+        "ringRef":"fire",
+        "rank":4
+    },
+    "The Cleansing Fire":{
+        "groupRef":"invocation",
+        "ringRef":"fire",
+        "rank":1
+    },
+    "The Fires from Within":{
+        "groupRef":"invocation",
+        "ringRef":"fire",
+        "rank":1
+    },
+    "The Soul’s Blade":{
+        "groupRef":"invocation",
+        "ringRef":"fire",
+        "rank":5
+    },
+    "Wall of Fire":{
+        "groupRef":"invocation",
+        "ringRef":"fire",
+        "rank":2
+    },
+    "Wings of the Phoenix":{
+        "groupRef":"invocation",
+        "ringRef":"fire",
+        "rank":4
+    },
+    "Bō of Water":{
+        "groupRef":"invocation",
+        "ringRef":"water",
+        "rank":1
+    },
+    "Dance of Seasons":{
+        "groupRef":"invocation",
+        "ringRef":"water",
+        "rank":2
+    },
+    "Dominion of Suijin":{
+        "groupRef":"invocation",
+        "ringRef":"water",
+        "rank":1
+    },
+    "Ever-Changing Waves":{
+        "groupRef":"invocation",
+        "ringRef":"water",
+        "rank":5
+    },
+    "Hands of the Tides":{
+        "groupRef":"invocation",
+        "ringRef":"water",
+        "rank":3
+    },
+    "Heart of the Water Dragon":{
+        "groupRef":"invocation",
+        "ringRef":"water",
+        "rank":2
+    },
+    "Inari’s Blessing":{
+        "groupRef":"invocation",
+        "ringRef":"water",
+        "rank":1
+    },
+    "Path to Inner Peace":{
+        "groupRef":"invocation",
+        "ringRef":"water",
+        "rank":1
+    },
+    "Reflections of P’an Ku":{
+        "groupRef":"invocation",
+        "ringRef":"water",
+        "rank":1
+    },
+    "Rise, Water":{
+        "groupRef":"invocation",
+        "ringRef":"water",
+        "rank":4
+    },
+    "Stride the Waves":{
+        "groupRef":"invocation",
+        "ringRef":"water",
+        "rank":2
+    },
+    "Strike the Tsunami":{
+        "groupRef":"invocation",
+        "ringRef":"water",
+        "rank":3
+    },
+    "Suijin’s Embrace":{
+        "groupRef":"invocation",
+        "ringRef":"water",
+        "rank":4
+    },
+    "Sympathetic Energies":{
+        "groupRef":"invocation",
+        "ringRef":"water",
+        "rank":2
+    },
+    "The Rushing Wave":{
+        "groupRef":"invocation",
+        "ringRef":"water",
+        "rank":1
+    },
+    "Cleansing Rite":{
+        "groupRef":"ritual",
+        "rank":1
+    },
+    "Commune with the Spirits":{
+        "groupRef":"ritual",
+        "rank":1
+    },
+    "Divination":{
+        "groupRef":"ritual",
+        "rank":1
+    },
+    "Tea Ceremony":{
+        "groupRef":"ritual",
+        "rank":2
+    },
+    "Threshold Barrier":{
+        "groupRef":"ritual",
+        "rank":1
+    },
+    "Artisan’s Appraisal":{
+        "groupRef":"shūji",
+        "ringRef":"air",
+        "rank":2
+    },
+    "Bend with the Storm":{
+        "groupRef":"shūji",
+        "ringRef":"air",
+        "rank":5
+    },
+    "Cadence":{
+        "groupRef":"shūji",
+        "ringRef":"air",
+        "rank":1
+    },
+    "Feigned Opening":{
+        "groupRef":"shūji",
+        "ringRef":"air",
+        "rank":2
+    },
+    "Prey on the Weak":{
+        "groupRef":"shūji",
+        "ringRef":"air",
+        "rank":2
+    },
+    "Rustling of Leaves":{
+        "groupRef":"shūji",
+        "ringRef":"air",
+        "rank":1
+    },
+    "The Wind Blows Both Ways":{
+        "groupRef":"shūji",
+        "ringRef":"air",
+        "rank":3
+    },
+    "Whispers of Court":{
+        "groupRef":"shūji",
+        "ringRef":"air",
+        "rank":1
+    },
+    "Wolf’s Proposal":{
+        "groupRef":"shūji",
+        "ringRef":"air",
+        "rank":4
+    },
+    "Ancestry Unearthed":{
+        "groupRef":"shūji",
+        "ringRef":"earth",
+        "rank":1
+    },
+    "Civility Foremost":{
+        "groupRef":"shūji",
+        "ringRef":"earth",
+        "rank":2
+    },
+    "Honest Assessment":{
+        "groupRef":"shūji",
+        "ringRef":"earth",
+        "rank":1
+    },
+    "Pillar of Calm":{
+        "groupRef":"shūji",
+        "ringRef":"earth",
+        "rank":4
+    },
+    "Stonewall Tactics":{
+        "groupRef":"shūji",
+        "ringRef":"earth",
+        "rank":1
+    },
+    "Touchstone of Courage":{
+        "groupRef":"shūji",
+        "ringRef":"earth",
+        "rank":3
+    },
+    "The Immovable Hand of Peace":{
+        "groupRef":"shūji",
+        "ringRef":"earth",
+        "rank":5
+    },
+    "Weight of Duty":{
+        "groupRef":"shūji",
+        "ringRef":"earth",
+        "rank":1
+    },
+    "Bravado":{
+        "groupRef":"shūji",
+        "ringRef":"fire",
+        "rank":4
+    },
+    "Dazzling Performance":{
+        "groupRef":"shūji",
+        "ringRef":"fire",
+        "rank":3
+    },
+    "Fanning the Flames":{
+        "groupRef":"shūji",
+        "ringRef":"fire",
+        "rank":2
+    },
+    "Lightning Raid":{
+        "groupRef":"shūji",
+        "ringRef":"fire",
+        "rank":2
+    },
+    "Rallying Cry":{
+        "groupRef":"shūji",
+        "ringRef":"fire",
+        "rank":3
+    },
+    "Sear the Wound":{
+        "groupRef":"shūji",
+        "ringRef":"fire",
+        "rank":5
+    },
+    "Sensational Distraction":{
+        "groupRef":"shūji",
+        "ringRef":"fire",
+        "rank":1
+    },
+    "Stirring the Embers":{
+        "groupRef":"shūji",
+        "ringRef":"fire",
+        "rank":1
+    },
+    "Truth Burns through Lies":{
+        "groupRef":"shūji",
+        "ringRef":"fire",
+        "rank":1
+    },
+    "All in Jest":{
+        "groupRef":"shūji",
+        "ringRef":"water",
+        "rank":1
+    },
+    "Buoyant Arrival":{
+        "groupRef":"shūji",
+        "ringRef":"water",
+        "rank":5
+    },
+    "Ebb and Flow":{
+        "groupRef":"shūji",
+        "ringRef":"water",
+        "rank":3
+    },
+    "Regal Bearing":{
+        "groupRef":"shūji",
+        "ringRef":"water",
+        "rank":4
+    },
+    "Shallow Waters":{
+        "groupRef":"shūji",
+        "ringRef":"water",
+        "rank":1
+    },
+    "Slippery Maneuvers":{
+        "groupRef":"shūji",
+        "ringRef":"water",
+        "rank":2
+    },
+    "Tributaries of Trade":{
+        "groupRef":"shūji",
+        "ringRef":"water",
+        "rank":2
+    },
+    "Well of Desire":{
+        "groupRef":"shūji",
+        "ringRef":"water",
+        "rank":1
+    },
+    "All Arts Are One":{
+        "groupRef":"shūji",
+        "ringRef":"void",
+        "rank":3
+    },
+    "A Samurai’s Fate":{
+        "groupRef":"shūji",
+        "ringRef":"void",
+        "rank":4
+    },
+    "Courtier’s Resolve":{
+        "groupRef":"shūji",
+        "ringRef":"void",
+        "rank":1
+    },
+    "Lady Doji’s Decree":{
+        "groupRef":"shūji",
+        "ringRef":"void",
+        "clanRef":"crane",
+        "rank":2
+    },
+    "Lady Shinjo’s Speed":{
+        "groupRef":"shūji",
+        "ringRef":"void",
+        "clanRef":"unicorn",
+        "rank":2
+    },
+    "Lord Akodo’s Roar":{
+        "groupRef":"shūji",
+        "ringRef":"void",
+        "clanRef":"lion",
+        "rank":2
+    },
+    "Lord Bayushi’s Whispers":{
+        "groupRef":"shūji",
+        "ringRef":"void",
+        "clanRef":"scorpion",
+        "rank":2
+    },
+    "Lord Togashi’s Insight":{
+        "groupRef":"shūji",
+        "ringRef":"void",
+        "clanRef":"dragon",
+        "rank":2
+    },
+    "Rouse the Soul":{
+        "groupRef":"shūji",
+        "ringRef":"void",
+        "rank":5
+    },
+    "Incite Haunting":{
+        "groupRef":"mahō",
+        "rank":1
+    },
+    "Grip of Anguish":{
+        "groupRef":"mahō",
+        "rank":1
+    },
+    "Mark of Desecration":{
+        "groupRef":"mahō",
+        "rank":1
+    },
+    "Sinful Whispers":{
+        "groupRef":"mahō",
+        "rank":1
+    },
+    "Unholy Fervor":{
+        "groupRef":"mahō",
+        "rank":1
+    },
+    "Skulk":{
+        "groupRef":"ninjutsu",
+        "rank":1
+    },
+    "Deadly Sting":{
+        "groupRef":"ninjutsu",
+        "rank":2
+    },
+    "Noxious Cloud":{
+        "groupRef":"ninjutsu",
+        "rank":3
+    },
+    "Silencing Stroke":{
+        "groupRef":"ninjutsu",
+        "rank":4
+    }
+}

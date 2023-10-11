@@ -1,0 +1,250 @@
+{    
+    "any":{
+        "name":"Tout anneau",
+        "opportunities":{
+            "general":[
+                "|opportunityIcon|: si vous avez échoué, déterminez la manière la plus facile d’accomplir la tâche entreprise (compétence et approche).",
+                "|opportunityIcon|+: éliminez 1 point de Conflit gagné à la suite de ce test par |opportunityIcon| ainsi dépensé.",
+                "|opportunityIcon|opportunityIcon|: portez assistance au prochain personnage qui entreprend un test similaire."
+            ]
+        }
+    },
+    "earth":{
+        "name":"Terre",
+        "description":[
+            "L’anneau de la Terre représente la capacité d’un personnage à recourir à une approche directe, pragmatique et rigoureuse. Il exploite la prudence et la raison, dans la mesure où celui qui l’emploie évite de prendre des risques inconsidérés pour mener à bien ses projets sans subir la moindre perte. Un personnage doté d’une bonne valeur de Terre sera probablement résistant, physiquement comme mentalement, sérieux et fiable. En fonction du domaine, l’approche de la Terre permet de se livrer aux activités suivantes :",
+            "Dans l’art, l’approche de la Terre permet à un personnage de restaurer des objets abîmés. Elle consiste à réparer et à entretenir des biens matériels, et elle englobe également des tâches annexes telles que l’archivage et le stockage.",
+            "Lorsqu’il étudie ou apprend, l’approche de la Terre permet à un personnage de se remémorer des informations. Elle n’est pas utile pour imaginer des notions extravagantes ou exprimer une intuition, mais sert à rassembler les faits connus et à s’appuyer sur ces solides prémisses pour en tirer des conclusions.",
+            "Lorsqu’il communique, l’approche de la Terre permet à un personnage de raisonner autrui, afin de l’amener à adopter une pensée rationnelle, à juguler ses émotions et à se rappeler son devoir et ses responsabilités. On utilise aussi cette approche pour donner des instructions, pour ramener ses subordonnés dans le rang et pour maintenir l’ordre.",
+            "Au combat, l’approche de la Terre permet à un personnage de résister aux attaques et d’attendre le moment idéal pour riposter. Elle part du principe que tout vient à point à qui sait faire preuve de ténacité et de mesure. Souvent circonspecte, l’approche de la Terre vis-à-vis d’une tâche martiale consiste à se déplacer avec lenteur pour éviter les pièges et l’épuisement.",
+            "Lors des transactions, l’approche de la Terre permet à un personnage de produire ce dont il a besoin à la sueur de son front. C’est le réflexe de celui qui récolte des ressources dans son environnement, se constitue un inventaire, gère des biens et les entrepose en toute sécurité."
+        ],
+        "approachNames":{
+            "artisan":"Restaurer",
+            "social":"Raisonner",
+            "scholar":"Se remémorer",
+            "martial":"Résister",
+            "trade":"Produire"
+        },
+        "opportunities":{
+            "invocation":[
+                "|opportunityIcon| de la Terre : votre Résistance physique augmente de 1. Cet effet persiste jusqu’à la fin de votre prochain tour.",
+                "|opportunityIcon|+ de la Terre : si cette technique peut prendre pour cible d’autres personnages que vous, désignez une cible supplémentaire par |opportunityIcon| dépensé de cette façon.",
+                "|opportunityIcon|+ de la Terre : la portée maximale de cette technique augmente de 1 niveau par |opportunityIcon| dépensé de cette façon.",
+                "|opportunityIcon| de la Terre : les dégâts infligés sont considérés comme des dégâts physiques (et non surnaturels).",
+                "|opportunityIcon| de la Terre : les dégâts infligés par cette technique reçoivent la propriété Sacré."
+            ],
+            "general":[
+                "|opportunityIcon| de la Terre : rassurez par votre présence un autre personnage dans la scène, ce qui lui permet d’éliminer 2 points de Conflit.",
+                "|opportunityIcon|+ de la Terre : vous exécutez la tâche de manière très prudente, maintenez votre équilibre et restez à bonne distance des sources de danger. Plus vous dépensez de |opportunityIcon|, plus vous êtes prudent.",
+                "|opportunityIcon|opportunityIcon| de la Terre : vous vous souvenez soudain d’une information importante, mais sans lien direct avec votre test. Avec l’accord du MJ, vous pouvez avoir effectué une petite action préparatoire au préalable (apporter un outil commun utile pour ce que vous entreprenez, par exemple)."
+            ],
+            "conflict":[
+                "|opportunityIcon| de la Terre : pendant une action de Déplacement, ignorez une propriété du terrain de votre choix.",
+                "|opportunityIcon|+ de la Terre : diminuez la gravité du prochain coup critique que vous subirez avant le début de votre prochain tour de 1 par |opportunityIcon| dépensé ainsi.",
+                "|opportunityIcon|opportunityIcon| de la Terre : n’appliquez pas l’un de vos désavantages à vos tests jusqu’à la fin de votre prochain tour."
+            ],
+            "initiative":"|opportunityIcon| de la Terre : lorsque vous effectuez un test d’initiative, choisissez un désavantage que vous connaissez chez un autre personnage. Il ne s’appliquera pas à ses tests pendant cette scène.",
+            "skillGroups":{
+                "artisan":"|opportunityIcon| de la Terre (artisanal) : si vous réussissez, ajoutez la propriété Solide à un objet que vous êtes en train de restaurer.",
+                "social":"|opportunityIcon| de la Terre (social) : augmentez de 1 le ND du prochain test de compétence sociale effectué par un autre personnage avant la fin de la scène.",
+                "scholar":"|opportunityIcon| de la Terre (savant) : rappelez-vous un endroit où vous pouvez effectuer des recherches ou étudier le sujet dont vous tentez de vous souvenir.",
+                "trade":"|opportunityIcon| de la Terre (professionnel) : réduisez de 1 le ND du prochain test effectué par un autre personnage avec la même compétence avant la fin de la scène."
+            },            
+            "downtime":[
+                "|opportunityIcon|+ de la Terre : un autre personnage qui vous accompagne élimine 1 point de Conflit ou de Fatigue par |opportunityIcon| ainsi dépensé",
+                "|opportunityIcon|opportunityIcon| de la Terre : mémorisez un détail petit mais important grâce à votre activité, vous pourrez vous en souvenir plus tard sans avoir besoin d’effectuer de test."
+            ]
+        },
+        "stanceEffect":"Terre : Lorsqu’ils effectuent des tests d’Attaque ou de Manipulation contre vous, les autres personnages ne peuvent pas dépenser de |opportunityIcon| pour vous infliger des coups critiques ou des états."
+    },    
+    "water":{
+        "name":"Eau",
+        "description":[
+            "L’anneau de l’Eau correspond aux individus robustes, perspicaces et dotés d’un bon sens de l’adaptation. Cette approche est équilibrée et fluide; un personnage qui l’adopte évitera de s’épuiser, mais ne se ménagera pas excessivement pour autant. Plus la valeur liée à l’anneau de l’Eau est élevée, plus le personnage sera aimable de nature, d’une grande souplesse physique, observateur et facile à vivre. En fonction du domaine, l’approche de l’Eau permet de se livrer aux activités suivantes :",
+            "Dans l’art, l’approche de l’Eau permet à un personnage d’adapter une œuvre, afin de transformer des objets pour leur conférer une autre fonction, de traduire des œuvres littéraires et artistiques dans d’autres langues ou d’autres formes d’expression, mais aussi de démonter un objet pour en recycler les matériaux.",
+            "Lorsqu’il étudie ou apprend, l’approche de l’Eau permet à un personnage d’observer les alentours, afin de repérer diverses informations dans son environnement et de comprendre les circonstances dans lesquelles il est plongé. Cette approche peut servir à identifier des choses et des concepts appartenant à une certaine spécialité, à détecter des modes et des tendances plus générales, ou à comprendre le fonctionnement pratique de quelque chose.",
+            "Lorsqu’il communique, l’approche de l’Eau consiste pour le personnage à charmer autrui afin de construire une relation ou un rapport de confiance. Elle lui permet de susciter des désirs et des émotions chez les autres, de révéler leurs envies et de s’attirer leur sympathie.",
+            "Au combat, l’approche de l’Eau permet à un personnage de détourner les forces négatives pour retourner les circonstances et l’environnement à son avantage. Elle consiste à trouver la voie qui opposera le moins de résistance afin de s’y engouffrer. Celui qui adopte l’approche de l’Eau lors d’un combat s’efforce de dévier les énergies adverses plutôt que de puiser dans la sienne.",
+            "Lors des transactions, l’approche de l’Eau permet à un personnage d’échanger des ressources ou un type de labeur contre un autre. Ainsi, le personnage peut acquérir efficacement des articles ou des services à un coût réduit."
+        ],
+        "approachNames":{
+            "artisan":"Adapter",
+            "social":"Charmer",
+            "scholar":"Observer",
+            "martial":"Détourner",
+            "trade":"Échanger"
+        },
+        "opportunities":{
+            "invocation":[
+                "|opportunityIcon| de l’Eau : votre Résistance surnaturelle augmente de 1 jusqu’à la fin de votre prochain tour.",
+                "|opportunityIcon|+ de l’Eau : si cette technique peut prendre pour cible d’autres personnages que vous, désignez une cible supplémentaire par |opportunityIcon| dépensé de cette façon.",
+                "|opportunityIcon|opportunityIcon|+ de l’Eau : la portée minimale ou maximale de cette technique augmente ou diminue de 1 niveau par |opportunityIcon|opportunityIcon| dépensés de cette façon.",
+                "|opportunityIcon|opportunityIcon| de l’Eau : éliminez 1 point de Fatigue de la cible ou de votre propre personnage.",
+                "|opportunityIcon| de l’Eau : le ND de votre prochaine action de Soutien diminue de 1. Cet effet persiste jusqu’à la fin de votre prochain tour."
+            ],
+            "general":[
+                "|opportunityIcon| de l’Eau : éliminez 2 de vos points de Conflit.",
+                "|opportunityIcon|+ de l’Eau : vous exécutez la tâche de manière très efficace, la terminez plus rapidement et économisez les ressources nécessaires. Plus vous dépensez de |opportunityIcon|, plus vous réduisez le temps et les ressources nécessaires.",
+                "|opportunityIcon|opportunityIcon| de l’Eau : vous remarquez un détail physique intéressant de votre environnement sans lien direct avec votre test. Avec l’accord du MJ, vous pouvez ajouter à la scène une portion de terrain ou un objet commun que personne n’avait remarqué jusqu’alors."
+            ],
+            "conflict":[
+                "|opportunityIcon| de l’Eau : éliminez 1 point de Fatigue.",
+                "|opportunityIcon|+ de l’Eau : au cours d’un test d’action d’Attaque, ignorez 1 point de Résistance physique de votre cible par |opportunityIcon| ainsi dépensé.",
+                "|opportunityIcon|opportunityIcon| de l’Eau : déplacez-vous de 1 niveau de portée."
+            ],
+            "initiative":"|opportunityIcon| de l’Eau : lorsque vous effectuez un test d’initiative, estimez les propriétés de tous les terrains alentour.",
+            "skillGroups":{
+                "artisan":"|opportunityIcon| de l’Eau (artisanal) : ajoutez un |ringDieIcon| gardé affichant |opportunityIcon| au résultat de votre prochain test de compétence artisanale effectué avant la fin de la session de jeu.",
+                "social":"|opportunityIcon| de l’Eau (social) : ajoutez un |ringDieIcon| gardé affichant |opportunityIcon| au résultat de votre prochain test de compétence sociale effectué avant la fin de la scène.",
+                "scholar":"|opportunityIcon| de l’Eau (savant) : repérez ou identifiez une propriété, un aspect ou une capacité unique sur quelque chose que vous êtes en train d’identifier.",
+                "trade":"|opportunityIcon| de l’Eau (professionnel) : convainquez un fournisseur de vous accorder une ristourne supplémentaire de 10 % sur le prix d’un objet que vous êtes en train d’acheter."
+            },
+            "downtime":[
+                "|opportunityIcon|+ de l’Eau : éliminez 1 point de Conflit ou de Fatigue par |opportunityIcon| dépensé ainsi.",
+                "|opportunityIcon|opportunityIcon| de l’Eau : faites-vous un nouvel ami au cours de votre activité de temps mort."
+            ]
+        },
+        "stanceEffect":"Eau : Pendant votre tour, vous pouvez effectuer une action supplémentaire qui ne nécessite pas de test, mais qui doit être d’un type différent de celles que vous avez déjà entreprises à ce tour."
+    },
+    "fire":{
+        "name":"Feu",
+        "description":[
+            "L’anneau du Feu est lié à une personnalité farouche, franche et inventive. Cette approche est vive et explosive : le personnage fera tout ce qui est en son pouvoir pour arriver à ses fins, quel que soit le prix à payer pour lui-même ou pour les autres. Un personnage doté d’une valeur d’anneau du Feu élevée sera probablement passionné, curieux, preste et parfois brusque. Il apprendra vite. En fonction du domaine, l’approche du Feu permet de se livrer aux activités suivantes :",
+            "Dans l’art, l’approche du Feu permet à un personnage d’inventer de nouvelles choses en imaginant et en fabriquant des objets, afin de transformer les matières premières en des œuvres d’art inédites.",
+            "Lorsqu’il étudie ou apprend, l’approche du Feu permet à un personnage de théoriser sur un sujet donné. Il s’attaque aux problèmes d’une façon créative et énergique, pour imaginer des solutions qui sortent des sentiers battus. Cette approche permet à un personnage de lancer des hypothèses sur une situation actuelle ou future, de recouper des indices, d’identifier les lacunes d’un argument ou d’une idée, ou encore de repérer ce qui fait défaut dans un lieu.",
+            "Lorsqu’il communique, l’approche du Feu consiste pour le personnage à inciter autrui à se laisser aller à ses émotions, à suivre ses aspirations et ses désirs plutôt que la logique. L’approche du Feu peut mener les autres à agir de façon impulsive et inconsidérée, au mépris du risque et de craintes pourtant justifiées.",
+            "Au combat, l’approche du Feu permet à un personnage de submerger son adversaire pour réussir un défi du premier coup, que ce soit par la force, la vitesse ou l’agilité. Cette tactique agressive repose sur une démonstration de force sans retenue, qui écrase les défenses et effraie les spectateurs. Au cœur de la bataille, l’approche du Feu représente la poussée d’adrénaline qui lance une personne en combat ou la pousse à s’enfuir, le kiai (le cri qui accompagne certains mouvements offensifs en arts martiaux), ou encore les hurlements guerriers d’une horde de berserkers Matsu.",
+            "Lors des transactions, l’approche du Feu permet à un personnage d’innover afin de développer de nouvelles technologies et de nouvelles méthodes, d’imaginer de nouveaux produits et services, ainsi que d’obtenir des ressources en recourant à des stratégies peu communes."
+        ],
+        "approachNames":{
+            "artisan":"Inventer",
+            "social":"Inciter",
+            "scholar":"Théoriser",
+            "martial":"Submerger",
+            "trade":"Innover"
+        },
+        "opportunities":{
+            "invocation":[
+                "|opportunityIcon|+ du Feu : la portée maximale de cette technique augmente de 1 niveau par |opportunityIcon| dépensé de cette façon.",
+                "|opportunityIcon|+ du Feu : si cette technique peut prendre pour cible d’autres personnages que vous, désignez une cible supplémentaire par |opportunityIcon| dépensé de cette façon.",
+                "|opportunityIcon| du Feu : le ND de vos prochains tests d’action d’Attaque diminue de 1. Cet effet persiste jusqu’à la fin de votre prochain tour.",
+                "|opportunityIcon|+ du Feu : le ND des tests de résistance à cet effet augmente de 1 par |opportunityIcon| dépensé de cette façon.",
+                "|opportunityIcon|opportunityIcon|+ du Feu : par |opportunityIcon|opportunityIcon| dépensés de cette façon, une cible doit résister à l’aide d’un test de Forme (Air 4, Eau 1) ND 3 ou subir l’état En feu."
+            ],
+            "general":[
+                "|opportunityIcon| du Feu : enflammez par votre présence un autre personnage dans la scène, ce qui lui fait subir 2 points de Conflit.",
+                "|opportunityIcon|+ du Feu : vous exécutez la tâche de manière très voyante et vous attirez l’attention de tous les observateurs. Plus vous dépensez de |opportunityIcon|, plus on vous remarque.",
+                "|opportunityIcon|opportunityIcon| du Feu : vous remarquez l’absence flagrante ou l’emplacement incongru d’un élément de la scène sans lien direct avec votre test. Avec l’accord du MJ, vous pouvez indiquer l’absence d’un élément de la scène (comme l’absence d’une paire de chaussures qui indique que l’occupant de la maison n’est pas présent)."
+            ],
+            "conflict":[
+                "|opportunityIcon| du Feu : choisissez un autre personnage présent dans la scène ; augmentez le ND du prochain test qu’il effectue avant le début de votre prochain tour de 1, à condition que vous ne fassiez pas partie des cibles du test.",
+                "|opportunityIcon|+ du Feu : au cours d’un test d’action d’Attaque, augmentez de 1 par |opportunityIcon| dépensé ainsi le ND du prochain test effectué par votre cible pour résister à un coup critique, et ce, avant le début de votre prochain tour.",
+                "|opportunityIcon|opportunityIcon| du Feu : les autres personnages doivent subir 2 points de Conflit s’ils veulent vous choisir comme cible de leurs prochaines actions d’Attaque et de Manipulation, et ce, jusqu’au début de votre prochain tour."
+            ],
+            "initiative":"|opportunityIcon| du Feu : lorsque vous effectuez un test d’initiative, utilisez votre Attention à la place de votre Vigilance pour évaluer votre initiative lorsque vous êtes surpris.",
+            "skillGroups":{
+                "artisan":"|opportunityIcon| du Feu (artisanal) : si vous réussissez, fabriquez une copie supplémentaire de l’objet que vous êtes en train de créer.",
+                "social":"|opportunityIcon| du Feu (social) : réduisez de 1 le ND du prochain test social effectué par un autre personnage avant la fin de la scène.",
+                "scholar":"|opportunityIcon| du Feu (savant) : extrapolez les motivations ou les désirs d’un autre personnage dans la scène ou dans une perspective plus large.",
+                "trade":"|opportunityIcon| du Feu (professionnel) : une inspiration étrange vous saisit; ajoutez un |ringDieIcon| gardé affichant |opportunityIcon| au résultat de votre prochain test effectué avec une compétence différente."
+            },
+            "downtime":[
+                "|opportunityIcon|+ du Feu : assistez un autre personnage par |opportunityIcon| dépensé ainsi au cours du prochain test d’activité de temps mort qu’il effectuera pendant cette session.",
+                "|opportunityIcon|opportunityIcon| du Feu : stimulez grâce à vos efforts un personnage qui vous accompagne; celui-ci pourra effectuer une action de temps mort supplémentaire au cours de cette période de temps mort (maximum 2)."
+            ]
+        },
+        "stanceEffect":"Feu : Lorsque vous réussissez un test contre un ennemi, chaque |strifeIcon| obtenu sur les dés gardés compte comme un succès bonus."
+    },
+    "air":{
+        "name":"Air",
+        "description":[
+            "L’anneau de l’Air représente une personnalité astucieuse, dotée d’une grande élégance et d’un excellent souci du détail. L’approche associée est rapide et pleine de nuances: le personnage se déplace trop vivement ou parle par sous-entendus, ce qui empêche de le cerner ou de le coincer. Un personnage qui dispose d’une valeur élevée dans l’anneau de l’Air est éloquent, astucieux, adroit et à l’aise en société. En fonction du domaine, l’approche de l’Air permet de se livrer aux activités suivantes :",
+            "Dans l’art, l’approche de l’Air permet à un personnage de raffiner une œuvre, afin d’améliorer ses atouts et ses détails les plus subtils ou d’aller à l’essentiel en retirant le superflu.",
+            "Lorsqu’il étudie et apprend, l’approche de l’Air permet à un personnage d’analyser des informations, afin d’observer et de comprendre des détails, de détecter des nuances subtiles et de repérer des sous-entendus et des intentions cachées.",
+            "Lorsqu’il communique, l’approche de l’Air permet à un personnage de duper autrui en usant d’intelligence et de subtilité pour insuffler plusieurs sens à ses paroles ou escamoter la vérité. Elle permet à un personnage d’affirmer et de convaincre, de tromper (par franche malhonnêteté ou par omission), de communiquer des intentions secondaires et de contrôler les informations détenues par ses interlocuteurs. Si cette approche n’est pas forcément malveillante, elle repose toujours sur la manipulation.",
+            "Au combat, l’approche de l’Air permet à un personnage de feinter, afin d’exploiter les faiblesses des attaques ou des défenses adverses avec précision et grâce. Grâce à elle, il maîtrise entièrement son corps, en permanence. Renonçant à écraser l’op position, l’approche de l’Air consiste à chercher des ouvertures qui, au prix d’un positionnement et d’un minutage parfaits, permettent de surpasser l’adversaire ou de décrocher un avantage.",
+            "Lors des transactions, l’approche de l’Air permet à un personnage d’escroquer son interlocuteur afin d’obtenir quelque chose sans rien donner en retour. Elle a pour but de gonfler les prix des objets à vendre, de voler ou de convaincre autrui de céder ses ressources."
+        ],
+        "approachNames":{
+            "artisan":"Raffiner",
+            "social":"Duper",
+            "scholar":"Analyser",
+            "martial":"Feinter",
+            "trade":"Escroquer"
+        },
+        "opportunities":{
+            "invocation":[
+                "|opportunityIcon|opportunityIcon|+ de l’Air : désignez une cible supplémentaire par |opportunityIcon|opportunityIcon| dépensés de cette façon.",
+                "|opportunityIcon|+ de l’Air : la portée maximale de cette technique augmente de 1 niveau par |opportunityIcon| dépensé de cette façon.",
+                "|opportunityIcon| de l’Air : le ND de votre prochain test d’action de Déplacement diminue de 1. Cet effet persiste jusqu’à la fin de votre prochain tour.",
+                "|opportunityIcon|opportunityIcon|+ de l’Air : si cette technique peut cibler d’autres personnages que vous, désignez une cible supplémentaire par |opportunityIcon|opportunityIcon| dépensés de cette façon.",
+                "|opportunityIcon|opportunityIcon|+ de l’Air : si cette technique cible tous les personnages de la zone, choisissez un personnage à portée qui sera épargné par |opportunityIcon|opportunityIcon| dépensés de cette façon."
+            ],
+            "general":[
+                "|opportunityIcon|opportunityIcon| de l’Air : découvrez l’attitude d’un autre personnage (PNJ) dans la scène, ainsi que son nombre actuel de points de Conflit.",
+                "|opportunityIcon|+ de l’Air : agissez avec subtilité pour attirer le moins d’attention possible sur vos efforts. Les |opportunityIcon| supplémentaires ainsi dépensés rendent votre tentative encore plus subtile.",
+                "|opportunityIcon|opportunityIcon| de l’Air : vous remarquez un détail intéressant au sujet d’un personnage présent. Avec l’accord du MJ, vous pouvez ajouter un détail auparavant inexistant et lié à un PNJ présent (un avantage ou un désavantage, par exemple)."
+            ],
+            "conflict":[
+                "|opportunityIcon| de l’Air : ajoutez un |ringDieIcon| gardé affichant |opportunityIcon| au résultat de votre prochain test d’Arts martiaux.",
+                "|opportunityIcon|+ de l’Air : pendant un test d’action de Déplacement, vous pouvez parcourir sur une surface verticale jusqu’à 1 niveau de portée par |opportunityIcon| dépensé ainsi.",
+                "|opportunityIcon|opportunityIcon| de l’Air : augmentez de 2 le ND du prochain test d’Arts martiaux (distance) qui vous prend pour cible avant le début de votre prochain tour"
+            ],
+            "initiative":"|opportunityIcon| de l’Air : lorsque vous effectuez un test d’initiative, évaluez la faiblesse d’un adversaire. Découvrez l’un de ses désavantages, au choix de cet adversaire.",
+            "skillGroups":{
+                "artisan":"|opportunityIcon| de l’Air (artisanal) : si vous réussissez, ajoutez la propriété Magnifique ou Subtil à un objet que vous êtes en train d’améliorer.",
+                "social":"|opportunityIcon| de l’Air (social) : découvrez si l’Honneur, la Gloire ou le Statut d’un personnage dans la scène est supérieur, inférieur ou égal au votre.",
+                "scholar":"|opportunityIcon| de l’Air (savant) : apprenez quelque chose sur un personnage qui a créé ou utilisé l’objet que vous êtes en train d’étudier (comme un avantage ou un désavantage, au choix du MJ, qui a influencé la création ou l’utilisation de cet objet).",
+                "trade":"|opportunityIcon| de l’Air (professionnel) : convainquez un client de payer 10% de plus un objet que vous êtes en train de vendre."
+            },
+            "downtime":[
+                "|opportunityIcon|+ de l’Air : apprenez un détail sur une personne qui vous accompagne (comme un avantage ou un désavantage au choix de cette personne) par |opportunityIcon| ainsi dépensé. Vous ne pouvez apprendre de la sorte qu’un seul détail à propos de chacune de vos cibles au cours d’une scène de temps mort.",
+                "|opportunityIcon|opportunityIcon| de l’Air : effectuez votre activité de temps mort sans que la ou les personnes de votre choix ne l’apprennent."
+            ]
+        },
+        "stanceEffect":"Air : Le ND des tests d’Attaque et de Manipulation qui vous prennent pour cible augmente de 1. Si votre rang d’école est supérieur ou égal à 4, il augmente de 2 à la place."
+    },
+    "void":{
+        "name":"Vide",
+        "description":[
+            "L’anneau du Vide symbolise une personnalité inébranlable et concentrée, et représente aussi un état de réceptivité et d’efficacité optimales. En renonçant aux souffrances liées aux désirs issus de l’ego, le samouraï peut espérer s’affranchir de ses limites terrestres. C’est l’approche de l’illumination, qui englobe la nature de tous les éléments sans qu’aucun d’eux ne prenne le dessus sur les autres. Un personnage disposant d’une valeur élevée dans l’anneau du Vide est généralement sage, introspectif et éveillé à la spiritualité. En fonction du domaine, l’approche du Vide permet de se livrer aux activités suivantes :",
+            "Dans l’art, l’approche du Vide permet à un personnage de s’harmoniser avec une œuvre, de comprendre son but, de savoir pourquoi celle-ci s’est présentée sur son chemin, mais aussi de percevoir les éventuelles propriétés surnaturelles d’un objet.",
+            "Lorsqu’il étudie ou apprend, l’approche du Vide permet à un personnage de ressentir dans son environnement de subtiles perturbations qui passeraient inaperçues pour la plupart des gens. Il s’agit d’une sorte de sixième sens, un pressentiment qui révèle les phénomènes surnaturels et parfois l’avenir.",
+            "Lorsqu’il communique, l’approche du Vide consiste pour le personnage à illuminer autrui afin de remettre en question ses croyances les plus profondes et de l’amener à reconsidérer aussi bien ses décisions que ses actes. Il s’agit de guider une autre personne pour l’aider à réévaluer ses désirs ou à se libérer d’un état émotionnel prégnant, voire d’une emprise d’origine mystique.",
+            "Au combat, l’approche du Vide permet à un personnage de lâcher prise et d’abandonner des mécanismes de défense ou une position de sécurité, voire, pourquoi pas, de subir des blessures physiques pour arriver à ses fins. Le personnage se déplace à l’instinct, s’alignant avec le rythme du cosmos. L’esprit vidé de toute pensée consciente, il se contente de faire le nécessaire pour réussir, quel qu’en soit le prix.",
+            "Lors des transactions, l’approche du Vide permet à un personnage de subsister, c’est-à-dire de vivre avec peu de choses, en harmonie avec son environnement, et en n’y prélevant rien de plus que le nécessaire, sans y créer de déséquilibre."
+        ],
+        "approachNames":{
+            "artisan":"S’harmoniser",
+            "social":"Illuminer",
+            "scholar":"Ressentir",
+            "martial":"Lâcher prise",
+            "trade":"Subsister"
+        },
+        "opportunities":{
+            "general":[
+                "|opportunityIcon| du Vide : choisissez un autre anneau que le Vide. Réduisez de 1 le ND de votre prochain test effectué avec cet anneau.",
+                "|opportunityIcon|+ du Vide : un frisson vous parcourt ; vous remarquez un silence soudain ou un autre signe de la présence d’un phénomène surnaturel. Plus vous dépensez de |opportunityIcon|, plus vous êtes précis quant à la localisation du phénomène.",
+                "|opportunityIcon|opportunityIcon| du Vide : vous obtenez une révélation spirituelle sur la nature de l’univers ou de votre âme. Avec l’accord du MJ, vous pouvez révéler un fait inédit au sujet de votre personnage et plus ou moins en lien avec la situation."
+            ],
+            "conflict":[
+                "|opportunityIcon| du Vide : au cours du prochain test d’action d’Attaque que vous effectuez avant la fin de votre prochain tour, ignorez une propriété de terrain de votre choix.",
+                "|opportunityIcon|+ du Vide : au cours d’un test d’action de Soutien, augmentez votre valeur d’initiative de 1 par |opportunityIcon| dépensé ainsi.",
+                "|opportunityIcon|opportunityIcon| du Vide : jusqu’à la fin de votre prochain tour, ignorez les effets d’un état que vous subissez."
+            ],
+            "initiative":"|opportunityIcon| du Vide : lorsque vous effectuez un test d’initiative, ressentez si une créature Extérieure est présente au cours de la scène.",
+            "skillGroups":{
+                "artisan":"|opportunityIcon| du Vide (artisanal) : réduisez de 1 le ND du prochain test que vous effectuerez en utilisant l’objet avec lequel vous êtes en train de vous Harmoniser.",
+                "social":"|opportunityIcon| du Vide (social) : devinez l’objectif d’un autre personnage dans la scène.",
+                "scholar":"|opportunityIcon| du Vide (savant) : devinez si vous pouvez apprendre quelque chose d’important de votre champ de recherche actuel.",
+                "trade":"|opportunityIcon| du Vide (professionnel) : réduisez au minimum l’effet que vous produisez sur votre environnement (et les traces physiques de vos efforts)."
+            },
+            "downtime":[
+                "|opportunityIcon|+ du Vide : choisissez autant de dés abandonnés lors du test que de dépensés pour cet effet et réservez-les. Le maximum de dés que vous pouvez réserver de la sorte est égal à votre rang dans la compétence utilisée. Ajoutez ce(s) dé(s) réservé(s) à votre prochain test effectué avec la même compétence; vous conservez les résultats affichés sans relancer ce(s) dé(s).",
+                "|opportunityIcon|opportunityIcon| du Vide : recevez une brève prémonition sur un événement possible pendant que vous effectuez votre activité de temps mort."
+            ]
+        },
+        "stanceEffect":"Vide : Vous ne recevez aucun point de Conflit en cas de |strifeIcon| sur les dés que vous gardez. Vous recevez toujours les points de Conflit qui ont une autre origine."
+    }
+}

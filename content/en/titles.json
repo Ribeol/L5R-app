@@ -1,0 +1,14 @@
+{
+    "Emerald Magistrate":{
+        "name":"Emerald Magistrate",
+        "description":[
+            "Emerald Magistrates are agents of the Emperor’s Law, warrior-sages who dispense wisdom and justice."
+        ],
+        "finalAbility":{
+            "name":"Voice of Authority",
+            "activation":[
+                "Once per game session when making a Scheme or Support action check using a Social skill, you may choose additional targets equal to your Glory rank. You cannot choose any additional target with vigilance higher than the highest among your initial targets."
+            ]
+        }
+    }
+}

@@ -10,11 +10,18 @@
 
             :root {
                 --customColor: grey;
-                --liTop: 0;
+                --lastSelected: lightgrey;
+
+                --primaryViewerOrigin: 0;
+                --primaryViewerHeight: 0;
+                --primaryViewerWidth: 0;
+
+                --secondaryViewerOrigin: 0;
+                --secondaryViewerHeight: 0;
+                --secondaryViewerWidth: 0;
             }
             span.customColor {color: var(--customColor);}
             li.customColor {border: 3px solid var(--customColor);}
-            button.customColor {background-color: var(--customColor);}
 
             .air {color: hsl(290, 40%, 60%);}
             .earth {color: hsl(140, 40%, 50%);}
@@ -44,8 +51,14 @@
             .veryLargeFontSize {
                 font-size: 1.5em;
             }
+            
             .rounded {
                 border-radius: 25px;
+            }
+
+            .frame {
+                border: 1px solid black;
+                padding: 0.5em;
             }
 
             @media screen and (min-width: 400px) {
@@ -64,23 +77,56 @@
                 display: flex;
                 flex-direction: column;
             }
-            .spaceBetween {
+            .textAlignCenter {
+                text-align: center;
+            }
+            .justifyCenter {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+            .justifyBetween {
                 display: flex;
                 justify-content: space-between;
             }
-            .spaceEvenly {
+            .justifyEvenly {
                 display: flex;
                 justify-content: space-evenly;
+                flex-wrap: wrap;
             }
             .alignCenter {
                 display: flex;
                 align-items: center;
             }
-            .flexGrow {
+            .grow {
                 flex-grow: 1;
+            }
+            .gap {
+                gap: 0.5em;
+            }
+
+            .lineGrid {
+                display: grid;
+                grid-auto-rows: 1.5em;
+            }
+            .lineGrid >* {
+                display: flex;
+                align-items: center;
+                gap: 0.5em;
             }
 
             .pointer {
+                cursor: pointer;
+            }
+            div.disabled {
+                pointer-events: none;
+                filter: blur(5px);
+            }
+
+            select, button, .textInput {                
+                font-size: 1em;
+            }
+            select:not(.disabled), button:not(.disabled), input:not(.disabled,.textInput) {
                 cursor: pointer;
             }
 
@@ -90,23 +136,37 @@
                 margin: auto;
             }
 
-            #main {
+            .main {
+                display: flex;
+                flex-direction: column;
                 height: 100vh;
                 width: 100vw;
                 max-width: 768px;
             }
-            #main.disabled {
-                pointer-events: none;
-                filter: blur(5px);
-            }            
+            
+            #intro {
+                position: fixed;
+                background-color: white;
+                justify-content: center;
+                align-items: center;
+            }
 
             #characterHeader {
-                min-height: 50px;
-                border: none;
+                display: flex;
+                justify-content: space-between;                
+                align-items: center;
+                padding: 0.5em;
+                background-color: var(--customColor);
+            }
+            #characterHeader div {
+                display: grid;
+                margin-left: 3.8em;
+                grid-template-columns: 1fr auto;
+                align-items: center;
+                flex-grow: 1;
             }
 
             .alignCenter button {
-                cursor: pointer;
                 padding-top: 0.25em;
             }
             .alignCenter button.currentTab {
@@ -114,7 +174,7 @@
             }
             #navbar button {
                 flex-grow: 1;
-                min-height: 50px;
+                min-height: 2em;
                 border: none;
                 background-color: #333333;
                 color: white;
@@ -134,13 +194,93 @@
                 display: none;
             }
 
+            /*
+            button.question {
+                height: calc(3.8vh - 0.2em);
+                width: calc(3.8vh - 0.2em);
+                transform: rotate(45deg);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            div.question {
+                transform: rotate(315deg);
+            }
+            */
+            .questionButton {
+                margin: 0;
+            }
+
+            textarea {
+                box-sizing: border-box;
+                width: 100%;
+                resize: none;
+            }
+
+            .radioGrid {
+                display: grid;
+                grid-template-columns: auto 1fr;
+                gap: 0.5em;
+            }
+
+            .summaryGrid {
+                display: grid;                
+                grid-auto-flow: column;
+                grid-template-rows: repeat(6, auto);
+                gap: 0.1em;
+            }
+            
+            @media screen and (min-width: 600px) {
+                .summaryGrid {
+                    grid-template-rows: repeat(5, auto);
+                }
+                .rowSpan2 {
+                    grid-row: span 2;
+                }
+                .rowSpan3 {
+                    grid-row: span 3;
+                }
+                .columnSpan2 {
+                    grid-column: span 2;
+                }
+            }
+            .summaryGrid * {
+                display: flex;
+                gap: 0.5em;
+            }
+            .summaryGrid >:first-child{
+                display: grid;                
+                grid-auto-flow: column;
+                grid-template-rows: auto auto auto;
+                grid-template-columns: 4em 1fr;
+                padding: 0.5em;
+                border: 1px solid black;
+            }            
+            .summaryGrid span {
+                align-items: center;
+            }
+
+            .giantIcon.rowSpan3 {
+                grid-row: span 3;
+            }
+
+            .summaryListGrid {
+                display: grid;
+            }
+            .summaryListGrid.double {
+                grid-template-columns: auto 1fr;
+            }
+            .summaryListGrid.triple {
+                grid-template-columns: auto 1fr auto;
+            }
+
             .ringGrid {
                 display: grid;
-                grid-template-rows: auto auto auto auto auto;
-                grid-template-columns: auto auto auto auto auto;
+                grid-template-rows: 1fr 0.5fr 1fr 0.5fr 1fr;
+                grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
                 align-self: center;
                 text-align: center;
-                justify-content: space-between;
+                /*justify-content: space-between;*/
                 align-items: center;
                 padding: 1em;
             }
@@ -193,11 +333,9 @@
                 gap: 0.25em;
             }
             .filters select{
-                font-size: 1em;
                 flex-grow: 1;
                 padding-top: 1px;
                 padding-bottom: 1px;
-                cursor: pointer;
             }
 
             ul {
@@ -206,37 +344,31 @@
             ul >* {
                 margin: 0.5em;
             }
-            .list {
+            .scrollingList {
                 list-style-type:none;
                 margin: 0;
                 padding: 0;
                 overflow: auto;
             }
-            .list >* {
+            .scrollingList >* {
                 margin: 0.3em;
             }
-            .list li {
+            .scrollingList li {
                 background-color: #eeeeee;
                 padding-left: 0.5em;
                 padding-right: 0.5em;
-                gap: 0.25em;
                 min-height: calc(2.5em + 4px);
                 display: flex;
-            }
-            .list li:hover {
-                background-color: #dddddd;
-            }
-            .list li * {
-                display: flex;
-                justify-content: center;
                 align-items: center;
                 text-align: center;
-            }
-            .list li >:first-child {
-                flex-grow: 1;
                 gap: 0.25em;
+            }            
+            .selectable:hover {
+                background-color: #dddddd;
             }
-            
+            .selectable.lastSelected {
+                background-color: var(--lastSelected);
+            }
             .approachGrid {
                 display: grid;
                 grid-template-columns: auto auto;
@@ -252,7 +384,7 @@
                 border-bottom-left-radius: 25px;
                 border-bottom-right-radius: 25px;
                 overflow: hidden;
-                animation: skillExpand 0.2s;
+                animation: skillExpand 0.3s;
                 animation-fill-mode: forwards;               
             }
             /* ADD A SHRINKING ANIMATION? */
@@ -276,7 +408,7 @@
             }            
             .approachLine {
                 display: flex;
-                gap: 10px;
+                gap: 0.75em;
                 align-items: center;
                 min-height: 2em;
                 white-space: nowrap;
@@ -285,42 +417,43 @@
                 background-color: #dddddd;
             }
 
-            .list .rank {
+            .scrollingList .rank {
                 font-weight: bold;
                 width: 0.75em;
             }
             .smallIcon {
                 font-size: 1.25em;
-                padding-top: 2px;
+                padding-top: 0.1em;
             }
-            .largeIcon {
+            .mediumIcon {
                 width: 1em;
                 font-size: 1.5em;
-                padding-top: 4px;
+                padding-top: 0.2em;
             }
             .giantIcon {
+                font-size: 3em;
+                padding-top: 0.2em;
+            }
+            .largeIcon {
                 font-size: 1.75em;
-                padding-top: 4px;
-            } 
-            .list .iconGrid {
+                padding-top: 0.2em;
+            }
+            .scrollingList .iconGrid {
                 display: grid;
-                grid-template-rows: 1.25em 1.25em;
+                grid-template-rows: 1em 1em;
                 grid-auto-flow: column;
-                padding-top: 4px;
+                align-items: center;
+                padding-top: 0.25em;
             }
             .iconGrid :last-child:nth-child(odd) {
                 grid-row: span 2;
                 align-self: center;
             }
-            .list .addSymbol {
-                font-size: 1.75em;
-                padding-top: 1px;
-            }
             
-            .list .available {border: 1px solid black;}
-            .list .incompatible * {color: #AAAAAA;}
+            .scrollingList .available {border: 1px solid black;}
+            .scrollingList .incompatible * {color: #AAAAAA;}
 
-            #overlay {
+            .background {
                 display: none;
                 pointer-events: none;
                 position: fixed;
@@ -328,20 +461,21 @@
                 left: 0;
                 width: 100%;
                 height: 100%;
-                z-index: 1;
                 justify-content: center;
             }
-            #overlay.appear {
+            .background.appear {
                 display: flex;
-                animation: darken 0.2s;                
+                align-items: center;
+                animation: darken 0.3s;                
             }
-            #overlay.visible {
+            .background.visible {
                 display: flex;
+                align-items: center;
                 pointer-events: auto;
                 background-color: rgba(0, 0, 0, 0.5);
             }
-            #overlay.disappear {
-                animation: darken 0.2s reverse;
+            .background.disappear {
+                animation: darken 0.3s reverse;
                 pointer-events: none;
             }
             @keyframes darken {
@@ -352,54 +486,103 @@
                     background-color: rgba(0, 0, 0, 0.5);
                 }
             }
-            
-            #viewer {
+
+            #primaryViewer {
+                width: var(--primaryViewerWidth);
+            }
+            #primaryViewer.appear {
+                animation: expandPrimaryViewer 0.3s;
+            }
+            #primaryViewer.visible {
+                height: var(--primaryViewerHeight);
+            }
+            #primaryViewer.disappear {                
+                animation: expandPrimaryViewer 0.3s reverse;
+            }
+            @keyframes expandPrimaryViewer {
+                from {
+                    top: var(--primaryViewerOrigin);
+                    height: 0;
+                }
+                to {
+                    top: calc((100% - var(--primaryViewerHeight)) / 2);
+                    height: var(--primaryViewerHeight);
+                }
+            }
+
+            #secondaryViewer {
+                width: var(--secondaryViewerWidth);
+            }
+            #secondaryViewer.appear {
+                animation: expandSecondaryViewer 0.3s;
+            }
+            #secondaryViewer.visible {
+                height: var(--secondaryViewerHeight);
+            }
+            #secondaryViewer.disappear {                
+                animation: expandSecondaryViewer 0.3s reverse;
+            }
+            @keyframes expandSecondaryViewer {
+                from {
+                    top: var(--secondaryViewerOrigin);
+                    height: 0;
+                }
+                to {
+                    top: calc((100% - var(--secondaryViewerHeight)) / 2);
+                    height: var(--secondaryViewerHeight);
+                }
+            }
+
+            .viewer {
                 position: fixed;
-                width: 98%;
                 max-width: 768px;
                 box-sizing: border-box;
-                z-index: 2;
                 background-color: white;
-                border: 5px solid black;
-                border-radius: 25px;
                 padding-top: 1.5em;
                 padding-bottom: 1.5em;
                 padding-left: 1em;
                 padding-right: 1em;
                 overflow: auto;
             }
-            #viewer.appear {
-                animation: viewerExpand 0.2s;
+            .viewer.create {
+                padding-top: 0.5em;
+            }        
+            .viewer.consult {
+                border: 5px solid black;
+                border-radius: 25px;
             }
-            #viewer.visible {
-                top: 10%;
-                height: 80%;
+            .viewer.confirm {
+                border-top: 5px solid var(--customColor);
+                border-bottom: 5px solid var(--customColor);
+                justify-content: space-evenly;
+                align-items: center;
+            }            
+            /*
+            .viewer select {
+                align-self: start;
             }
-            #viewer.disappear {                
-                animation: viewerExpand 0.2s reverse;
-            }
-            @keyframes viewerExpand {
-                from {
-                    top: var(--liTop);
-                    height: 0;
-                }
-                to {
-                    top: 10%;
-                    height: 80%;
-                }
-            }
-
-            #viewer .title {
+            */
+            .viewer .title {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
                 background-color: #eeeeee;
                 border-top: 1px solid black;
                 border-bottom: 1px solid black;
                 padding-top: 0.3em;
-                padding-bottom: 0.2em;
+                padding-bottom: 0.15em;
                 margin-top: 1em;
-                margin-bottom: 0.8em;
-                text-align: center;
             }
-            #viewer .opportunities {
+            .viewer .upgradeLine {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                gap: 0.5em;
+                font-size: 1em;
+            }
+            .viewer .consultCategory {
                 border-top: 1px solid black;
                 border-bottom: 1px solid black;
             }
@@ -407,72 +590,30 @@
         </style>
     </head>
     <body class="normalFontSize">
-        <div id="main" class="columnContainer">
-            <button id="characterHeader" class="customColor" style="display: flex; justify-content:space-evenly; align-items: center;">
-                <span id="clanIcon" style="font-size: 35px; padding-top: 7px;"></span>
-                <div style="display: flex; flex-direction: column; gap: 0.25em;">
-                    <span>Character reset:</span>
-                    <select id="tempSchoolDropdown">
-                        <option value="Hida">Hida</option>
-                        <option value="Hiruma">Hiruma</option>
-                        <option value="Kaiu">Kaiu</option>
-                        <option value="Kuni">Kuni</option>
-                        <option value="Yasuki">Yasuki</option>
-                        <option value="Asahina">Asahina</option>
-                        <option value="Daidoji">Daidoji</option>
-                        <option value="Doji">Doji</option>
-                        <option value="Kakita">Kakita</option>
-                        <option value="Agasha">Agasha</option>
-                        <option value="Kitsuki">Kitsuki</option>
-                        <option value="Mirumoto">Mirumoto</option>
-                        <option value="Togashi">Togashi</option>
-                        <option value="Akodo">Akodo</option>
-                        <option value="Ikoma">Ikoma</option>
-                        <option value="Kitsu">Kitsu</option>
-                        <option value="Matsu">Matsu</option>
-                        <option value="Asako">Asako</option>
-                        <option value="Isawa">Isawa</option>
-                        <option value="Shiba">Shiba</option>
-                        <option value="Kaito">Kaito</option>
-                        <option value="Bayushi">Bayushi</option>
-                        <option value="Shosuro">Shosuro</option>
-                        <option value="Soshi">Soshi</option>
-                        <option value="Yogo">Yogo</option>
-                        <option value="Ide">Ide</option>
-                        <option value="Iuchi">Iuchi</option>
-                        <option value="Moto">Moto</option>
-                        <option value="Shinjo">Shinjo</option>
-                        <option value="Utaku">Utaku</option>
-                        <option value="ronin">ronin</option>
-                    </select>
-                </div>
-                <div style="display: flex; flex-direction: column;">
-                    <div>Spent Exp: 
-                        <span id="spentExp"></span>
-                    </div>
-                    <div>School Exp: 
-                        <span id="schoolExp"></span>
-                    </div>
-                    <div>School Rank: 
-                        <span id="schoolRank"></span>
-                    </div>
-                </div>
-                <select id="languageSelect"></select>
-            </button>
-            <div id="navbar" class="alignCenter">
-                <button class="character" onclick="contentManager.loadTab('character')">&#xe903</button>
-                <button class="rings" onclick="contentManager.loadTab('rings')">&#xe924</button>
-                <button class="skills" onclick="contentManager.loadTab('skills')">&#xe91a</button>
-                <button class="techniques" onclick="contentManager.loadTab('techniques')">&#xe921</button>
-                <button class="experience" onclick="contentManager.loadTab('experience')">&#xe926</button>
-                <button class="items" onclick="contentManager.loadTab('items')">&#xe928</button>
-                <button class="beginner" onclick="contentManager.loadTab('beginner')">&#xe901</button>
+        <div id="main" class="main">
+            <div id="characterHeader" class="customColor">
+                <span id="clanIcon" style="position: absolute; font-size: 3em; padding-top: 0.2em;"></span>
+                <div>
+                    <span id="name" style="font-weight: bold; cursor: pointer;" onclick="displayManager.characterChoice()"></span>
+                    <select id="language" style="z-index: 1;"></select>
+                    <span id="school" style="grid-column: span 2;"></span>
+                </div>                
             </div>
-            <div class="page character columnContainer">WIP</div>
-            <div id="ringDiv" class="page rings columnContainer"></div>
+            <div id="navbar" class="alignCenter">
+                <button class="profile" onclick="displayManager.loadTab('profile')">&#xe91c</button>
+                <button class="rings" onclick="displayManager.loadTab('rings')">&#xe925</button>
+                <button class="skills" onclick="displayManager.loadTab('skills')">&#xe919</button>
+                <button class="techniques" onclick="displayManager.loadTab('techniques')">&#xe922</button>
+                <button class="traits" onclick="displayManager.loadTab('traits')">&#xe901</button>
+                <button class="equipment" onclick="displayManager.loadTab('equipment')">&#xe929</button>
+                <button class="progress" onclick="displayManager.loadTab('progress')">&#xe927</button>
+                
+            </div>
+            <div id="profilePage" class="page profile columnContainer" style="padding: 1em; gap: 1em; overflow: auto;"></div>
+            <div id="ringPage" class="page rings columnContainer grow" style="overflow: auto;"></div>
             <div class="page skills columnContainer">
                 <div class="filters">
-                    <span>&#xe90f</span>
+                    <span>&#xe90e</span>
                     <div>
                         <select id="skillGroupFilter"></select>
                         <select id="skillRankFilter"></select>
@@ -482,14 +623,14 @@
                         <select id="skillCurriculaFilter"></select>
                     </div>
                 </div>
-                <ul id="skillList" class="list"></ul>
+                <ul id="skillList" class="scrollingList"></ul>
             </div>
             <div class="page techniques columnContainer">
                 <div class="filters">
-                    <span>&#xe90f</span>
+                    <span>&#xe90e</span>
                     <div>
                         <select id="techRankFilter"></select>
-                        <select id="techTypeFilter"></select>                        
+                        <select id="techGroupFilter"></select>
                         <select id="techRingFilter"></select>
                         <select id="techActivationFilter"></select>
                     </div>
@@ -498,17 +639,38 @@
                         <select id="techCurriculaFilter"></select>
                     </div>
                 </div>
-                <ul id="techniqueList" class="list"></ul>
+                <ul id="techniqueList" class="scrollingList"></ul>
+            </div>            
+            <div class="page traits columnContainer">
+                <div class="filters">
+                    <span>&#xe90e</span>
+                    <div>
+                        <select id="traitGroupFilter"></select>
+                        <select id="traitRingFilter"></select>
+                    </div>
+                    <div>
+                        <select id="traitTypeFilter"></select>
+                        <select id="traitAvailabilityFilter"></select>
+                    </div>
+                </div>
+                <ul id="traitList" class="scrollingList"></ul>
             </div>
-            <div class="page experience columnContainer">WIP</div>
-            <div class="page items columnContainer">WIP</div>
-            <div class="page beginner columnContainer">WIP</div>
+            <div class="page equipment columnContainer">
+                <span>WIP</span>
+                <ul id="equipmentList" class="scrollingList"></ul>
+            </div>
+            <div id="progressPage" class="page progress columnContainer" style="padding: 1em; gap: 1em; overflow: auto;"></div>
         </div>
-        <div id="overlay" onclick="contentManager.hideOverlay(event.target)">
-            <div id="viewer" class="columnContainer">
-            </div>
+        <div id="intro" class="main">
+            <span style="font-size: 15em;" class="pointer" onclick="displayManager.createCharacter(null)">&#xe91e</span>
+        </div>
+        <div id="primaryBackground" class="background" onclick="displayManager.hideOverlay(event.target)">
+            <div id="primaryViewer" class="viewer columnContainer"></div>
+        </div>
+        <div id="secondaryBackground" class="background" onclick="displayManager.hideOverlay(event.target)">
+            <div id="secondaryViewer" class="viewer columnContainer"></div>
         </div>
 
-        <script defer src="L5R_script.js"></script>
+        <script defer src="script.js"></script>
     </body>
 </html>

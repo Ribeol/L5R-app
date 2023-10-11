@@ -1,0 +1,907 @@
+{
+    "aesthetics":{
+        "name":"Aesthetics",
+        "description":[
+            "Art has been expected to be half of a samurai’s pursuits since the founding of the Empire. An appreciation and understanding of art is so ingrained in a samurai’s training that to look upon a work and not be moved is, to the samurai, a sure sign of barbarianism, a charge that bestows great shame upon those who bear it. The more martial clans understand that art is essential for clearing a warrior’s mind and reminding them of life while so often surrounded by death.",
+            "The Aesthetics skill covers activities that create non-utilitarian visual art, such as bonsai (trimming plants to encourage their growth in an artistic fashion), ikebana (flower arrangement), origami, painting, and rock gardening. Such arts serve a deeply important role in the courts of Rokugan, and any courtier is expected to have an understanding of their principles, techniques, and guiding philosophies. By understanding a work of art, one can gain insight into its creator, and that insight can be invaluable in pursuing political agendas and court intrigue alike."
+        ],
+        "uses":{
+            "earth":[
+                "Restoring a damaged piece",
+                "Maintaining something’s beauty",
+                "Safely transporting a piece"
+            ],
+            "water":[
+                "Altering an existing work",
+                "Completely reworking or rebuilding an existing piece",
+                "Finding inspiration for new works"
+            ],
+            "fire":[
+                "Creating a new work",
+                "Brainstorming new possible works",
+                "Developing new methods and techniques for creating art"
+            ],
+            "air":[
+                "Finding a flaw in a piece and removing it",
+                "Adding a detail that enhances a piece",
+                "Hiding a subtle message within a work"
+            ],
+            "void":[
+                "Learning a work’s purpose",
+                "Discerning whether a work has any supernatural qualities or features and awakening those features within it"
+            ]
+        }
+    },
+    "composition":{
+        "name":"Composition",
+        "description":[
+            "Almost all samurai are literate, for holding nearly any office, bureaucratic or military, requires the ability to read and write. Thus, while not all samurai explore the finer points of wordsmithing, literature is an elevated art in Rokugan. Courtly samurai are expected to know dozens of classic poems by heart and grasp literary allusions that can provide important subtext in conversation. The best poets compose in the moment, with every sentence they speak layered with meaning.",
+            "Haiku, a three-line poem with five syllables in the first line, seven in the second, then five in the last, is one of the most popular forms of poetry in Rokugan. Writers often use it to describe a moment in time, from the first snowflake seen in winter to a moment of tranquility by a pond. Others practice different forms of poetry, including longer poems and competitions of linked poems traded back and forth, or write prose in the form of travel diaries, philosophical essays, and even fantastical tales.",
+            "Literature allows a character to create powerful compositions that sway readers and to understand the literary devices and allusions that underlie such influential works. Additionally, the aesthetics of calligraphy are important to many writers in Rokugan, so Composition also governs the act of putting words on a surface in ink in a pleasing way."
+        ],
+        "uses":{
+            "earth":[
+                "Restoring an old text that has been damaged by time or exposure",
+                "Annotating a difficult text with references that make it easier for readers to understand",
+                "Transcribing a work without errors"
+            ],
+            "water":[
+                "Translating a text from another language",
+                "Adapting a work for a new medium",
+                "Using an old quote in a new context that reframes its meaning",
+                "Combining visual elements with textual elements"
+            ],
+            "fire":[
+                "Writing a first draft of a new text",
+                "Filling in the missing gaps of an incomplete text",
+                "Brainstorming ideas for new written works"
+            ],
+            "air":[
+                "Correcting errors in a work",
+                "Removing excessive and unnecessary verbiage from a work to make it read more cleanly and quickly",
+                "Adding a nuanced allusion or reference",
+                "Introducing implications and subtext"
+            ],
+            "void":[
+                "Understanding a writer’s deeper purpose behind a work",
+                "Discerning whether a work has any supernatural qualities or features",
+                "Learning about oneself from a text"
+            ]
+        }
+    },
+    "design":{
+        "name":"Design",
+        "description":[
+            "Presentation matters. At court, it is often said that beautiful looks reflect a beautiful soul, and also whispered that one whose soul is corrupt will display physical signs of that corruption. Despite wiser words on the subject by Shinsei and other sages, a skilled samurai who dresses shabbily will often be seen as lesser than the barely competent one who is well dressed.",
+            "Design covers the act of making clothes for times of peace and formal occasions. After all, arms and armor are not appropriate for all situations in a samurai’s life, much as some individuals might lament this reality. However, that does not mean that a samurai attending court can afford to choose their garments with any less care than when they take to the battlefield. Carefully selected clothes and adornments are vital weapons and armor to courtiers, allowing them to send subtle signals to others and avoid humiliation at the hands of enemies. Thus, the creation, maintenance, and assessment of clothing is an important field of expertise, allowing a character to create and improve on items worn in many formal situations."
+        ],
+        "uses":{
+            "earth":[
+                "Stitching up a tear in a damaged piece of clothing",
+                "Storing a piece of clothing such that it will not degrade",
+                "Replacing lost parts of a piece of clothing"
+            ],
+            "water":[
+                "Repurposing an old piece of clothing to serve a new function",
+                "Adding a new element to an outfit to let it function in different circumstances",
+                "Turning an old piece of clothing into raw materials for a new project"
+            ],
+            "fire":[
+                "Sewing a new piece of clothing",
+                "Inventing a new style, crafting a new accessory",
+                "Conjecturing about possible new trends in clothing"
+            ],
+            "air":[
+                "Improving an existing piece of clothing with embellishment",
+                "Choosing clothes that send a specific message",
+                "Adding filigree to a piece of jewelry that enhances its beauty"
+            ],
+            "void":[
+                "Learning the deeper purpose for which a piece of clothing was made",
+                "Discerning whether a worn item has any supernatural features",
+                "Awakening the supernatural properties slumbering in an object of power"
+            ]
+        }
+    },
+    "smithing":{
+        "name":"Smithing",
+        "description":[
+            "Samurai are warriors, and even their arts are influenced by war. The Smithing skill covers the creation of arms and armor for ceremonial and battlefield use. Many samurai go into battle wielding armor and weaponry that are stunning works of art in their own right.",
+            "The finest armor and weapons—especially the daishō—are created with an eye toward both use and aesthetic, as they will be in service for centuries. They must reflect the influence and wealth of the family that owns them, for the sword is said to be the outward manifestation of the samurai’s soul. Ruling families have weapons hundreds of years old, displayed in a place of honor as a living reminder of each family’s history. The Phoenix and Crane are famous for the beauty of their work, while the Crab blades are known for durability and effectiveness. Those rare creations worked by a Kakita smith are widely acknowledged to be the greatest of all."
+        ],
+        "uses":{
+            "earth":[
+                "Repairing a damaged weapon or piece of armor",
+                "Performing routine upkeep and cleaning on a weapon or piece of armor",
+                "Treating a weapon or piece of armor to prevent rust and corrosion"
+            ],
+            "water":[
+                "Improving an existing weapon or piece of armor",
+                "Reshaping a mundane item into a weapon",
+                "Sizing a weapon for a new wielder",
+                "Salvaging a destroyed sword to reforge it"
+            ],
+            "fire":[
+                "Forging a new blade",
+                "Crafting a new piece of armor",
+                "Inventing a new weapon or piece of armor",
+                "Conjecturing about possible new weapons and armor technologies"
+            ],
+            "air":[
+                "Polishing a blade to hone its edge",
+                "Improving a spear’s grip",
+                "Adding embellishments to a naginata to accent the beautiful wave pattern of the steel"
+            ],
+            "void":[
+                "Learning the purpose for which a weapon or piece of armor was forged",
+                "Discerning whether a weapon or piece of armor has any supernatural features",
+                "Unlocking supernatural potential within a forged item"
+            ]
+        }
+    },
+    "command":{
+        "name":"Command",
+        "description":[
+            "The ability to speak authoritatively is as imperative for the courtier—who guide their charges through complicated ceremonies and social events—as it is for the bushi—who shepherds their soldiers through battles and wars. Lives hang in the balance, and one word can inspire victory or lead to disaster. When chaos arises, it is the duty of those in command to take charge and to instill order, and they will be the ones judged on the success or failure of the operation, not their underlings.",
+            "The Command skill is used to instill obedience, whether in court or on the battlefield. It is generally most effective when used to motivate subordinates rather than peers, or in the context of a clear command structure, as it revolves around telling others what to do (and, usually, expecting them to do it)."
+        ],
+        "uses":{
+            "earth":[
+                "Verbally reprimanding a group of soldiers who have grown lax in their duties",
+                "Establishing order on a chaotic battlefield",
+                "Making someone afraid of the consequences of their actions"
+            ],
+            "water":[
+                "Cultivating loyalty from troops under your command",
+                "Motivating troops with a promised reward",
+                "Getting a mixed force to stop squabbling",
+                "Making someone afraid of letting you down"
+            ],
+            "fire":[
+                "Restoring morale to weary troops",
+                "Stoking an old grudge",
+                "Getting others to follow you despite danger to life and limb",
+                "Making someone afraid of you personally"
+            ],
+            "air":[
+                "Giving an assignment without letting on to the dangers it entails",
+                "Misleading your own troops to confuse your enemy",
+                "Communicating in code with your troops"
+            ],
+            "void":[
+                "Convincing troops embroiled in a battle to see its pointlessness",
+                "Persuading enemy soldiers that their cause is not just",
+                "Snapping someone out of shock or a rage in battle"
+            ]
+        }
+    },
+    "courtesy":{
+        "name":"Courtesy",
+        "description":[
+            "The essential Social skill of Rokugan’s highest circles of power, the Courtesy skill represents a character’s ability to influence others’ opinions, persuade others to a course of action, outmaneuver their opponents, win arguments, steer a conversation in a desired direction, and deliver cunning put-downs—all without ever openly giving offense or stepping beyond the complex rules of Rokugani etiquette.",
+            "In the vicious world of court politics, politeness is a deadly weapon in a courtier’s arsenal. Baiting someone to an outburst of emotion can destroy their reputation and earn their enmity for life, while deflecting someone’s wrath onto oneself, taking the blame for a mistake, can put them in one’s debt and foster new alliances. Courtesy is also needed when one wishes to influence the perceived truth of a matter that may be in question, regardless of the actual truth."
+        ],
+        "uses":{
+            "earth":[
+                "Convincing someone to listen to reason rather than their emotions",
+                "Reminding someone of their duties",
+                "Convincing someone to wait rather than acting and suffering potential consequences"
+            ],
+            "water":[
+                "Getting someone to like or trust you",
+                "Fostering desire for something or someone in a person",
+                "Altering someone’s current desires",
+                "Efficiently making your way through the complex bureaucracy of a court by being pleasant and gregarious"
+            ],
+            "fire":[
+                "Convincing someone to listen to their emotions rather than reason",
+                "Reminding someone of their desires",
+                "Drawing attention to yourself",
+                "Getting someone to ignore risks before them",
+                "Insulting someone openly"
+            ],
+            "air":[
+                "Convincing someone of something untrue (or incomplete)",
+                "Deflecting attention from yourself onto others",
+                "Spreading a rumor about someone",
+                "Leading someone to an idea to convince them it is their own",
+                "Insulting someone subtly and deniably"
+            ],
+            "void":[
+                "Using well-chosen words to get someone to question a truth they held as absolute",
+                "Getting someone to remember their true self when they are acting out of fear, despair, rage, or supernatural influence"
+            ]
+        }
+    },
+    "games":{
+        "name":"Games",
+        "description":[
+            "Games are an important tool at court, serving as a vital outlet for the rivalries that develop in the highest circles of power and as a crucial opportunity to maintain and develop relationships, especially outside of the strict confines that one’s station would usually dictate.",
+            "As a result, success at games is one way a new arrival at court can earn distinction and get access to people of much higher rank, whom they would otherwise be unable to approach. However, only the truly naïve overlook the fact that games are merely one more means to an end in the shifting world of court politics.",
+            "The games of Rokugan are as varied as the clans, but first among them is Go, a game played with black and white stones and a wooden board. Played by peasant and Emperor, young and old, bushi and monk, it can be found in all walks of life in Rokugan. The rules are simple, but mastering the game requires years of dedication; proficiency is always worthy of respect.",
+            "Other games include Fortunes and Winds, a dice game many samurai see as a pastime for the lower classes; Sadane, a game of biting insults that courtiers enjoy; Karuta, a card game of trick taking using both illustrations and lines of poetry; and Shōgi, a tactical game of generals, cavalry, and assorted soldiers."
+        ],
+        "uses":{
+            "earth":[
+                "Playing without upsetting your opponent",
+                "Playing cautiously",
+                "Instructing someone else in the basics of a game",
+                "Minimizing your losses"
+            ],
+            "water":[
+                "Using a game to build a rapport with your opponent (or someone else present)",
+                "Playing casually",
+                "Using a game to get your opponent to trust you"
+            ],
+            "fire":[
+                "Using a game to make your opponent angry or afraid",
+                "Playing aggressively",
+                "Spurring your opponent to wager more",
+                "Developing new tactics in a game"
+            ],
+            "air":[
+                "Using a game to uncover your opponent’s strengths and weaknesses",
+                "Playing deceptively",
+                "Cheating",
+                "Losing deliberately (without being obvious)",
+                "Sending a subtle message through your play"
+            ],
+            "void":[
+                "Using a game to shock your opponent into seeing something clearly",
+                "Playing minimally",
+                "Leaving the fate of the game to pure chance"
+            ]
+        }
+    },
+    "performance":{
+        "name":"Performance",
+        "description":[
+            "The Performance skill pertains to the act of entertaining others with active arts, from song to dance to storytelling. Performances of sufficient caliber can help to bridge political divides, influence people to rethink their lives, or even set off artistic or political movements. Performance is also used for impersonating others, though obviously doing so would be dishonorable.",
+            "Performers occupy an unusual place in Rokugan. Commoners who practice the performing arts are treated poorly by the upper classes and are considered unworthy of the status of craftspeople or farmers. However, every court features musicians, dancers, and artists who are of common birth but are allowed to bring entertainment to those of high station. Their dishonorable status is tolerably ignored—as long as they entertain their betters. Meanwhile, samurai performers are praised by their peers for having an “expressive nature,” or a “poetic soul.”"
+        ],
+        "uses":{
+            "earth":[
+                "Transmitting some moral lesson to your audience",
+                "Soothing your audience",
+                "Educating your audience on a particular matter",
+                "Setting your audience members’ minds at ease"
+            ],
+            "water":[
+                "Gaining your audience’s sympathy",
+                "Causing your audience to desire something",
+                "Building a positive rapport with your audience"
+            ],
+            "fire":[
+                "Rousing your audience into a state of excitement",
+                "Intentionally needling your audience",
+                "Stirring your audience to immediate action"
+            ],
+            "air":[
+                "Giving an extremely convincing performance",
+                "Getting your audience to come to a particular conclusion without stating it outright",
+                "Impersonating others convincingly"
+            ],
+            "void":[
+                "Causing your audience to reevaluate something in their lives",
+                "Breaking your audience out of an emotional rut such as sorrow or rage",
+                "Delivering a message to your audience in spite of supernatural interference"
+            ]
+        }
+    },
+    "culture":{
+        "name":"Culture",
+        "description":[
+            "Like most countries, the Emerald Empire has a wealth of ceremonies, festivals, social trends, and local practices that locals largely internalize. The Culture skill can be used to procure knowledge of these traditions and practices, even when a character is far from home.",
+            "The Culture skill covers knowledge of the Emerald Empire’s customs, traditions, families, trends, geography, and practices. This includes recent goings-on, historical events, and persons of significance, as well as staying current with the fashions that hold sway over the courts of provincial lords and the Emperor.",
+            "While such knowledge might seem trivial, it can allow a character to learn where to meet people of importance in a new place, how to interact comfortably with the locals, and what recent news to avoid mentioning while making pleasant conversation."
+        ],
+        "uses":{
+            "earth":[
+                "Remembering the names of the most influential members of a particular court",
+                "Knowing the particular customs of a region",
+                "Remembering the geographical features of an area"
+            ],
+            "water":[
+                "Identifying a fellow samurai using their clan, family, and personal mon (crest)",
+                "Identifying an object’s region of origin",
+                "Identifying a samurai’s general status by their manner of dress",
+                "Identifying which cultures have influenced a location",
+                "Determining one’s location in an unfamiliar city based on common architectural patterns"
+            ],
+            "fire":[
+                "Guessing where an influential person might go in an unfamiliar city",
+                "Conjecturing about the proper decorum for an unusual social situation",
+                "Anticipating social trends in different regions"
+            ],
+            "air":[
+                "Detecting traces of a regional accent in a character’s speech",
+                "Noticing slight imperfections in a mon or personal chop that reveal it to be a forgery",
+                "Assessing the way a practice differs in a specific region"
+            ],
+            "void":[
+                "Identifying the purpose traditions fulfill in society",
+                "Identifying the rising stars at a particular court",
+                "Intuiting the supernatural underpinnings of a cultural practice"
+            ]
+        }
+    },
+    "government":{
+        "name":"Government",
+        "description":[
+            "The daimyō of the samurai clans, who rule the various provinces of the Emerald Empire in the Emperor’s name, must serve in many capacities. Each of these individuals must be part warlord, part courtier, and part bureaucrat, and they must act effectively in each of these spheres to maintain their rule. This encompasses a strong understanding of political machinations, a solid foundation in logistics, and a familiarity with Rokugan’s strict and sometimes arcane legal system, which favors status rather than testimony and propriety over evidence. Most daimyō keep a number of valued retainers who are experts in these fields close to them for consultation."
+        ],
+        "uses":{
+            "earth":[
+                "Knowing the letter of the law",
+                "Knowing the explicit structure of government",
+                "Knowing about past events and legal precedents",
+                "Knowing political history and precedent in detail",
+                "Knowing past scholars of history and law and quoting their works"
+            ],
+            "water":[
+                "Identifying an illegal act",
+                "Reading the tacit structure of power",
+                "Determining who to ask to get something done within a bureaucracy",
+                "Noticing classic bureaucratic schemes and ploys put into play by one’s opponents"
+            ],
+            "fire":[
+                "Understanding the various ways the law could be applied in an unprecedented case",
+                "Framing an argument about why the law should be applied differently in a particular instance",
+                "Guessing the political ramifications of a new ruler’s ascension"
+            ],
+            "air":[
+                "Finding a contradiction or loophole in a system or the law",
+                "Assessing the strengths and weaknesses of a legal argument",
+                "Studying a system in detail to find the places where pressure can be applied to get specific results"
+            ],
+            "void":[
+                "Knowing how likely a given verdict is in a particular case",
+                "Identifying the candidate most likely to hold a position next",
+                "Knowing the likelihood of success for a particular ploy or scheme"
+            ]
+        }
+    },
+    "medicine":{
+        "name":"Medicine",
+        "description":[
+            "The healers of Rokugan, epitomized by Lady Asako herself, have dedicated themselves to understanding the mystical underpinnings of wellness and disease, and to rebalance the body’s natural ability to heal itself using a combination of pressure points, correspondences, and herbal remedies. The Medicine skill encompasses all of these elements.",
+            "Prospective healers must first understand the systems of the body, and then gain the practical knowledge of how to apply their knowledge to properly diagnose and treat their patients. Of course, some dishonorable characters use their medicinal knowledge to cause harm instead of to heal, meddling with doses to create deleterious or even deadly side effects, or selecting toxic herbs with which to poison a rival.",
+            "More practical in its application than some other Scholar skills, Medicine covers knowledge of the human body and its functions. However, Medicine is also a practiced art, so it often behaves like an Artisan skill when used to heal injuries or create medicines. While any skill can operate with another skill group’s approaches, it is fairly common for the Medicine skill to do so. Thus, several examples of when it uses Artisan skill approaches are noted in the following text."
+        ],
+        "uses":{
+            "earth":[
+                "Studying and recalling existing remedies",
+                "Creating bandages and medical supplies (Restore)",
+                "Stanching blood loss (Restore)",
+                "Mending other minor harm (Restore)"
+            ],
+            "water":[
+                "Identifying helpful and harmful herbs",
+                "Gathering ingredients",
+                "Finding hazards and contaminants in an environment",
+                "Brewing remedies (Adapt)",
+                "Relieving exhaustion and pain (Adapt)",
+                "Speeding patients’ recovery from long-term illness and injury (Adapt)"
+            ],
+            "fire":[
+                "Studying new medicines and treatments",
+                "Treating unknown ailments",
+                "Experimenting with unknown ingredients (Invent)",
+                "Brewing poisons (Invent)",
+                "Instilling patients with energy (Invent)"
+            ],
+            "air":[
+                "Recognizing symptoms",
+                "Diagnosing diseases and ailments in patients",
+                "Performing surgery in the field or a place of healing (Refine)",
+                "Administering medicines and poisons in the proper dosage for the desired effect (Refine)"
+            ],
+            "void":[
+                "Detecting spiritual ailments",
+                "Working entirely without ingredients",
+                "Realigning the energy in others (Attune)",
+                "Treating spiritual ailments (Attune)"
+            ]
+        }
+    },
+    "sentiment":{
+        "name":"Sentiment",
+        "description":[
+            "The Sentiment skill reflects a character’s ability to understand the psychology and emotions of others. It is used to spot emotions like hostility and fear in others, to empathize, and to know how people will behave based on their emotional state. It is also used to see through lies—and understand why those lies are being told."
+        ],
+        "uses":{
+            "earth":[
+                "Detecting inconsistencies between someone’s current and past behavior",
+                "Understanding someone’s fears and responsibilities",
+                "Determining how best to set someone at ease"
+            ],
+            "water":[
+                "Discerning someone’s personal feelings about a person or subject (and whether they are positive, negative, or neutral)",
+                "Detecting whether someone’s intentions are hostile",
+                "Understanding someone’s desires",
+                "Determining how best to win someone’s approval or support"
+            ],
+            "fire":[
+                "Determining whether someone has left out important details or told you a lie of omission",
+                "Catching that someone has left out something important",
+                "Understanding someone’s convictions and ideals",
+                "Determining how best to excite or enrage someone"
+            ],
+            "air":[
+                "Knowing whether someone is lying to you directly",
+                "Knowing how a choice or action will make someone feel",
+                "Understanding someone’s self-perceptions and vulnerabilities",
+                "Determining how best to get someone to do something you want"
+            ],
+            "void":[
+                "Determining whether someone is under the effects of supernatural persuasion or a supernatural being",
+                "Studying and understanding one’s own emotions",
+                "Determining whether someone is acting in opposition to their own desires or is suppressing their emotions",
+                "Knowing the purpose behind someone’s words"
+            ]
+        }
+    },
+    "theology":{
+        "name":"Theology",
+        "description":[
+            "Theology covers knowledge of religious philosophy, doctrine, and practice. Rokugan is often called the Land of Ten Thousand Fortunes, and a proper grounding in Theology is required to know of even a portion of them. A character can use Theology to know about kami, the Fortunes, and the powers and deities associated with Shinseism and other religious traditions, as well as to make supplications to these powers. A character versed in Theology is also versed in religious history and associated knowledge, including astronomy (for the study of portents) and the related fields of metaphysics and science with mystical implications.",
+            "Theology is also the skill used for most invocations— the powerful appeals to the kami that shugenja make to wield astonishing elemental powers. However, for most characters, Theology does not involve such flashy displays, dealing more in the doctrines and histories of the various spiritual traditions of Rokugan. It usually entails knowledge of rituals of philosophical and religious significance, as well as of communion with the forces of the universe on a more subtle level. Not everyone has the potential to become a shugenja—and perhaps more importantly, the shugenja schools guard their secrets jealously—so most priests in the Emerald Empire are humble keepers of the faith, serving the kami via proper veneration and performing social and religious functions for their communities. Monks, courtiers, and even bushi are also likely to study Theology, for a variety of personal and societal reasons."
+        ],
+        "uses":{
+            "earth":[
+                "Knowing facts about the formal doctrines of religious traditions of the Emerald Empire",
+                "Knowing about historical occurrences of supernatural events",
+                "Correctly reciting scripture",
+                "Remembering the weaknesses of a supernatural being from folklore",
+                "Communing with earth kami"
+            ],
+            "water":[
+                "Identifying religious artifacts and supernatural phenomena",
+                "Knowing how the average person of a given walk of life interacts with spiritual traditions",
+                "Researching a piece of scripture to learn its meaning",
+                "Communing with water kami"
+            ],
+            "fire":[
+                "Guessing what supernatural forces might be at work based on secondary evidence",
+                "Reconciling two contradictory pieces of religious doctrine",
+                "Offering a novel explanation of the meaning of a piece of scripture",
+                "Communing with fire kami"
+            ],
+            "air":[
+                "Determining how religious or spiritual a person is and what traditions they follow",
+                "Finding and untangling subtle nuance or apparent contradictions in scripture",
+                "Noticing the telltale signs of a supernatural creature walking among humans",
+                "Communing with air kami"
+            ],
+            "void":[
+                "Performing divinations",
+                "Determining the veracity of a supernatural occurrence",
+                "Predicting the behavior of supernatural entities",
+                "Knowing the philosophical ramifications of a decision",
+                "Communing with the root of the universe"
+            ]
+        }
+    },
+    "fitness":{
+        "name":"Fitness",
+        "description":[
+            "Fitness is a reflection of a samurai’s capacity to perform feats of physical prowess and grace. It governs activities such as running, leaping, lifting heavy objects, marching long distances, swimming quickly, and other such physical feats that rely on quick bursts of power and precision or sustained physical effort. Additionally, the Fitness skill governs a character’s ability to avoid lethal harm when struck, resist the Shadowlands Taint, and recover from poison and disease. Finally, Fitness can be used to resist, withstand, or otherwise take a hit on the battlefield."
+        ],
+        "uses":{
+            "earth":[
+                "Moving cautiously",
+                "Pushing one’s body to the breaking point without suffering permanent harm",
+                "Marching long distances",
+                "Holding up heavy objects for long periods of time",
+                "Hiding by standing still",
+                "Taking a hit"
+            ],
+            "water":[
+                "Moving around obstacles and through crowds without slowing",
+                "Fitting through small spaces",
+                "Performing exercises to speed recovery from injury",
+                "Losing pursuers in a crowd",
+                "Rolling with the punches"
+            ],
+            "fire":[
+                "Moving without heed for obstacles",
+                "Leaping long distances",
+                "Pushing and lifting heavy objects quickly",
+                "Breaking things",
+                "Catching someone in a footrace",
+                "Meeting incoming attacks with equal opposing force"
+            ],
+            "air":[
+                "Moving stealthily",
+                "Maintaining balance",
+                "Trailing someone without their realizing it",
+                "Falling safely and landing gracefully",
+                "Evading someone in a footrace",
+                "Controlling where hits land on your body"
+            ],
+            "void":[
+                "Acting on sheer instinct",
+                "Pushing one’s body beyond the breaking point to achieve a goal",
+                "Overcoming physical limitations with sheer will",
+                "Taking hits directly"
+            ]
+        }
+    },
+    "martial arts [melee]":{
+        "name":"Martial Arts [Melee]",
+        "description":[
+            "Whatever other arts they practice, a bushi’s foremost art is always the art of battle, and even samurai who rarely take the field often train extensively in the martial arts as an exercise in self-mastery. Nearly all of them receive some training in use of a melee weapon, even if they prefer a weapon such as a bow. While many samurai believe sword fighting to be the most refined of martial arts, there are numerous schools that are more renowned for their use of other melee weapons. Samurai in Rokugan use the great clubs known as tetsubō, spears, naginata and other polearms, and even staves, depending on the teachings of their school and their own personal preferences.",
+            "Martial Arts [Melee] covers combat with close-quarters weapons in both practice and theory."
+        ],
+        "uses":{
+            "earth":[
+                "Fighting defensively",
+                "Blocking carefully",
+                "Exhausting your opponent",
+                "Practicing techniques that rely on stamina"
+            ],
+            "water":[
+                "Fighting reactively",
+                "Redirecting force",
+                "Drawing out your opponent",
+                "Practicing techniques that rely on fluidity of motion and flexibility"
+            ],
+            "fire":[
+                "Fighting aggressively",
+                "Attacking directly",
+                "Unnerving your opponent",
+                "Practicing techniques that rely on bursts of speed and power"
+            ],
+            "air":[
+                "Fighting subtly",
+                "Attacking indirectly",
+                "Outmaneuvering your opponent",
+                "Evading attacks",
+                "Practicing techniques that rely on grace and poise",
+                "Reading your opponent’s moves"
+            ],
+            "void":[
+                "Fighting instinctively or without regard for your life",
+                "Attacking without regard for anything else",
+                "Putting mind over matter"
+            ]
+        }
+    },
+    "martial arts [ranged]":{
+        "name":"Martial Arts [Ranged]",
+        "description":[
+            "Any warrior who takes the battlefield regularly knows well the value of the bow—and the risks of underestimating it. While armor can often turn an arrow at range and it is no replacement for a melee weapon once battle lines close, the effect of a well-coordinated volley can be staggering, as each wounded warrior removes not just one enemy from the field, but any other combatants who move to retrieve them. A master archer is terrifying to behold, capable of slaying foes from considerable distances. Even humble ranged weapons, such as slings and hurled projectiles, can be quite deadly in a fight, removing combatants from the battle. On the other end of the spectrum, the Crab Clan has constructed numerous siege-scale ranged weapons meant to engage large demons and other supernatural horrors from high atop the Kaiu Wall.",
+            "Martial Arts [Ranged] covers combat with thrown and projectile weapons in both practice and theory."
+        ],
+        "uses":{
+            "earth":[
+                "Maintaining a consistent field of fire",
+                "Suppressing targets",
+                "Firing to keep targets from overtaking a position",
+                "Properly stowing ranged weapons"
+            ],
+            "water":[
+                "Fighting reactively",
+                "Redirecting force",
+                "Drawing out your opponent",
+                "Firing to create openings to reposition"
+            ],
+            "fire":[
+                "Firing to deplete enemy forces",
+                "Firing to allow allies to advance",
+                "Firing to terrify the enemy"
+            ],
+            "air":[
+                "Firing without giving away your position",
+                "Hitting specific parts of your target",
+                "Firing to create vulnerabilities in the target’s defenses"
+            ],
+            "void":[
+                "Exposing yourself to get a shot on your target",
+                "Putting your faith in the universe that your shot will find its mark"
+            ]
+        }
+    },
+    "martial arts [unarmed]":{
+        "name":"Martial Arts [Unarmed]",
+        "description":[
+            "Most samurai practice unarmed fighting. It is an important element of many armed combat styles, as in actual practice, armed and unarmed combat are deeply intertwined. Some schools, however, teach it exclusively, for philosophical or practical reasons. Monks, for instance, cannot legally wield daishō, and thus are often practitioners of advanced unarmed techniques.",
+            "As with other martial arts, traditions spring up and vanish frequently over the centuries, and when visiting a monastery, it is not uncommon to discover that its members practice arts rarely seen outside its walls.",
+            "Martial Arts [Unarmed] covers combat with the body as one’s primary weapon in both practice and theory, as well as the use of some improvised weapons."
+        ],
+        "uses":{
+            "earth":[
+                "Fighting defensively",
+                "Blocking forcefully, exhausting your opponent",
+                "Practicing techniques that rely on stamina"
+            ],
+            "water":[
+                "Fighting reactively",
+                "Redirecting force",
+                "Drawing out your opponent",
+                "Practicing techniques that rely on fluidity of motion and flexibility"
+            ],
+            "fire":[
+                "Fighting aggressively",
+                "Attacking directly",
+                "Unnerving your opponent",
+                "Practicing techniques that rely on bursts of speed and power"
+            ],
+            "air":[
+                "Fighting subtly",
+                "Attacking indirectly",
+                "Outmaneuvering your opponent",
+                "Evading attacks",
+                "Practicing techniques that rely on grace and poise"
+            ],
+            "void":[
+                "Attacking without regard for anything else, including your life",
+                "Putting mind over matter"
+            ]
+        }
+    },
+    "meditation":{
+        "name":"Meditation",
+        "description":[
+            "The life of a samurai is one of stress and turmoil. Meditation helps a samurai look past worries about tomorrow, missed opportunities of the past, and even the insistence of the world of now to find peace within themself.",
+            "Martial skills are defined by struggle, and for many warriors, the greatest struggle is the one within. Meditation is the skill that covers the battles fought in one’s own mind. It is the skill used to process one’s own emotions, to recover mental control when shocked, and to resist confusion and supernatural influence of the mind. War might be a samurai’s pursuit, but a human being at war must face the steady erosion of the soul or risk succumbing completely to brutality. Most samurai train in Meditation both to ready their minds for the terrors of battle and to seek greater cosmic knowledge within themselves."
+        ],
+        "uses":{
+            "earth":[
+                "Using logic to overcome your personal feelings",
+                "Reflecting on the nature of your responsibilities",
+                "Maintaining a level head despite challenges and provocation",
+                "Resisting temptation"
+            ],
+            "water":[
+                "Understanding your own emotions and desires",
+                "Reflecting on the nature of your desires",
+                "Understanding how to align your goals with your desires",
+                "Resisting rage"
+            ],
+            "fire":[
+                "Using your emotions to reject a seemingly inevitable conclusion before you",
+                "Maintaining concentration on a single topic",
+                "Staying in an emotional state for long periods of time",
+                "Resisting fear"
+            ],
+            "air":[
+                "Convincing yourself of the truth of something",
+                "Finding weaknesses in your viewpoints and ideologies",
+                "Understanding how to align your goals with your ideals",
+                "Resisting despair"
+            ],
+            "void":[
+                "Understanding your place in the universe",
+                "Understanding the role fate has provided for you",
+                "Knowing what you are willing to give up to achieve your goals",
+                "Seeing glimpses of your own future",
+                "Resisting supernatural mental interference"
+            ]
+        }
+    },
+    "tactics":{
+        "name":"Tactics",
+        "description":[
+            "Leadership is not just charisma and force of will—a samurai who takes the battlefield must also make wise decisions. Battles are not won without casualties, and every commander spends the lives of their soldiers to achieve victory, but this does not mean that they value these lives any less.",
+            "Samurai learn many arts, but the practice of war is among their core functions. While it may be true that every battle’s outcome is decided before the first soldier moves, it falls to battlefield leaders, from generals to squad sergeants, to make that outcome a reality. Tactics governs battlefield leadership, from the general’s tent to the front line. It reflects a character’s awareness of the flow of battle and their ability to both stick to their orders and seize the opportunities that arise to greatest effect. While the Command skill is used to motivate soldiers, restore morale, and maintain order, the Tactics skill is used to effectively manage troops who are already obedient. Whereas the Government skill handles logistics in the lead-up to battle, the Tactics skill governs a character’s ability to think and react once the battle is joined."
+        ],
+        "uses":{
+            "earth":[
+                "Resisting a head-on assault",
+                "Holding a point at all costs",
+                "Mitigating losses during a retreat",
+                "Overseeing the construction of siege weapons"
+            ],
+            "water":[
+                "Executing a counterattack",
+                "Repositioning swiftly after an attack",
+                "Taking full advantage of useful terrain",
+                "Moving and operating siege weapons"
+            ],
+            "fire":[
+                "Executing a head-on assault",
+                "Overrunning the enemy",
+                "Breaking enemy morale with terrifying tactics",
+                "Designing siege weapons"
+            ],
+            "air":[
+                "Executing a feigned retreat",
+                "Flanking the enemy",
+                "Discerning weaknesses in the enemy’s defenses and targets of interest"
+            ],
+            "void":[
+                "Sending a unit to die to create a strategic opening",
+                "Commanding a force without revealing one’s identity to the enemy"
+            ]
+        }
+    },
+    "commerce":{
+        "name":"Commerce",
+        "description":[
+            "The Commerce skill covers the buying and selling of goods for a profit, as well as related activities. At its heart, commerce is not about negotiating for a better price (it is unseemly to give someone less than their work is worth, after all) but of knowing how to play the market to exchange more goods for less work. To operate any sort of business successfully, a character must have at least a cursory proficiency in this skill, for without it, they are sure to see their fortunes collapse.",
+            "Most samurai view money as a societal necessity, but a “dirty” one—after all, their lords provide them with the tools and equipment they require. In Rokugan, skill with money is the skill that no one values but everyone needs. Further, they see merchants as creating nothing, and so most of Rokugan puts merchants below peasants in the social order. However, in many cities, merchants are as powerful as samurai, and far wealthier."
+        ],
+        "uses":{
+            "earth":[
+                "Balancing accounts",
+                "Storing and maintaining merchandise",
+                "Moving merchandise safely"
+            ],
+            "water":[
+                "Buying goods from wholesalers",
+                "Finding a good deal on items and services",
+                "Bartering on favorable terms",
+                "Getting an item as cheaply as possible"
+            ],
+            "fire":[
+                "Finding ways to make your product or service distinctive",
+                "Creating new incentives for customers",
+                "Inventing a new product or service",
+                "Finding a new market to serve"
+            ],
+            "air":[
+                "Convincing someone your goods are of the highest quality or best price",
+                "Determining a product’s monetary value",
+                "Getting as much money out of a customer as possible",
+                "Assessing the competition’s progress and possible weaknesses"
+            ],
+            "void":[
+                "Operating with minimal expenditures",
+                "Stretching supplies as far as possible",
+                "Knowing how product values will change in the future"
+            ]
+        }
+    },
+    "labor":{
+        "name":"Labor",
+        "description":[
+            "Shinsei spoke highly of the simple virtues of manual work, and while most samurai (and most peasants, for that matter) disagree with his glowing assessment, none can deny that society’s existence requires a great deal of backbreaking labor on somebody’s part. From farming to construction to simple ditch-digging, countless tasks must be completed for the Emerald Empire to continue functioning.",
+            "The skills in the Labor skill group are all complicated areas of expertise in their own right, even if samurai tend to look askance at them as fields of study. Farmers know a great deal of their fields, potters of their art, and smiths of metallurgy, even if they are not revered by the ruling class for the mastery they achieve. Those skilled in labor are those who know the most efficient ways of performing their duties, as well as how to effectively use the tools of their trade."
+        ],
+        "uses":{
+            "earth":[
+                "Mass-producing items",
+                "Laying groundwork and foundations",
+                "Maintaining tools",
+                "Plowing fields",
+                "Planting seeds",
+                "Harvesting crops"
+            ],
+            "water":[
+                "Acquiring items and tools",
+                "Negotiating with tax collectors",
+                "Fermenting harvested goods",
+                "Cooking food"
+            ],
+            "fire":[
+                "Developing tools to make your work easier",
+                "Drafting new plans and designs",
+                "Experimenting with new methods",
+                "Creating new recipes"
+            ],
+            "air":[
+                "Organizing the work of others on a project",
+                "Covering over flaws in one’s work",
+                "Disguising one sort of object as another",
+                "Pretending to work"
+            ],
+            "void":[
+                "Knowing how to expend minimal supplies in your work",
+                "Using the natural landscape to do your work for you",
+                "Knowing when to let a field lie fallow",
+                "Knowing the best location to build"
+            ]
+        }
+    },
+    "seafaring":{
+        "name":"Seafaring",
+        "description":[
+            "Though many Rokugani live their whole lives without seeing the ocean, it has an enormous impact on the entire country. A great deal of Rokugan’s food and staples such as salt come from the sea. Further, despite Rokugan’s inhospitable policy toward foreigners, foreign trade does occur in numerous port cities, both under the sanction of the Empire and clandestinely.",
+            "The sailors who steer these vessels comprehend the arts of navigation, knot-tying, sail-setting, and a thousand odd jobs, and they must understand how these disparate duties fit together or risk being lost on the open seas. The Seafaring skill also handles river travel. Rivers are often the fastest roads in the Emerald Empire, and barges are a key element as travel and trade alike. Grain, tea, sake, logs, mineral wealth, and other supplies are often moved from city to city by river, or to the coast where larger ships move them to major ports. An expert seafarer can be the difference between a force arriving on time for a battle or a day behind, and keeping those armies fed."
+        ],
+        "uses":{
+            "earth":[
+                "Maintaining boats",
+                "Maintaining ship logs and records",
+                "Knowing facts about historical routes",
+                "Knowing how long supplies will last",
+                "Filtering out salt to create potable water"
+            ],
+            "water":[
+                "Navigating on the ocean",
+                "Knowing which routes are the fastest",
+                "Determining your current location on a body of water",
+                "Operating a boat"
+            ],
+            "fire":[
+                "Building new boats",
+                "Map-making",
+                "Pioneering new routes"
+            ],
+            "air":[
+                "Convincing someone to hire your ship instead",
+                "Managing sailors during a voyage",
+                "Trailing another ship without being noticed",
+                "Escaping a pursuing vessel",
+                "Finding signs of the passage of another ship"
+            ],
+            "void":[
+                "Sensing storms before they descend",
+                "Placating ocean and wind kami with sailors’ traditions"
+            ]
+        }
+    },
+    "skulduggery":{
+        "name":"Skulduggery",
+        "description":[
+            "The rule of law is not absolute in the Emerald Empire, no matter how harsh the consequences for breaking the law often are. Criminal elements exist everywhere, primarily in the form of bandits and dispossessed individuals. While brigands and thieves usually turn to this path out of necessity and almost invariably struggle to survive, some criminals are tremendously successful, creating massive cartels and criminal operations that spread across numerous cities. Skulduggery also includes the craft of spies, as many of the tricks they use are similar to those of criminals. Sleight of hand, stealth, disguise, lockpicking, and trapmaking are just as important to the criminal and spymaster’s portfolio as is deception, dissembling, and misdirection."
+        ],
+        "uses":{
+            "earth":[
+                "Securing a location",
+                "Constructing locks and other security measures",
+                "Memorizing maps and codes",
+                "Dividing spoils in an organized manner"
+            ],
+            "water":[
+                "Finding a fence to sell stolen items to",
+                "Knowing how to move freely through a city while avoiding law enforcement",
+                "Determining the fastest way to break into a secure facility"
+            ],
+            "fire":[
+                "Creating secret codes",
+                "Creating new tools for criminal activities",
+                "Concocting complex plots to slip past security measures",
+                "Picking an unfamiliar lock"
+            ],
+            "air":[
+                "Picking someone’s pocket",
+                "Shadowing a mark without being noticed",
+                "Organizing a group of thieves on a job",
+                "Tracking someone through a city",
+                "Knowing the right bribe to secure a corrupt official’s cooperation"
+            ],
+            "void":[
+                "Erasing all trace of your presence",
+                "Blending into a crowd",
+                "Placating spirits and other supernatural beings who might punish you for your sins"
+            ]
+        }
+    },
+    "survival":{
+        "name":"Survival",
+        "description":[
+            "Whether this means hunting, fishing, gathering plants, or even engaging in small operations such as prospecting for ore or acquiring other valuable goods for trade, it is crucial to the survival of many people in Rokugan. Scouts and wayfinders take this a step further to be able to navigate and conceal their paths through the wilderness, as well as to cross large distances by foot or on horseback in the shortest possible amount of time. Hunting dogs and birds, riding steeds, and beasts of burden go a long way to ensure survival in the roughest of terrain and climates, and so these creatures must be properly cared for and trained.",
+            "Most samurai tend to have only a passing familiarity with this sort of subsistence living, though some clans and schools encourage their members to learn basic proficiency at survival in the wild; especially if they rule a domain far from larger cities."
+        ],
+        "uses":{
+            "earth":[
+                "Creating shelter",
+                "Storing food",
+                "Calming animals"
+            ],
+            "water":[
+                "Foraging for food and potable water",
+                "Fishing",
+                "Befriending animals",
+                "Cooking familiar ingredients"
+            ],
+            "fire":[
+                "Finding ways to cook unfamiliar ingredients",
+                "Building makeshift weapons",
+                "Spurring animals to move quickly"
+            ],
+            "air":[
+                "Making and using traps",
+                "Tracking people and animals in the wild",
+                "Training animals to perform new tasks (often using food as an incentive)"
+            ],
+            "void":[
+                "Rationing food and water",
+                "Sensing natural disasters before they occur",
+                "Placating mountain and forest kami"
+            ]
+        }
+    }
+}

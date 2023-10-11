@@ -1,0 +1,250 @@
+{
+    "any":{
+        "name":"Any ring",
+        "opportunities":{
+            "general":[
+                "|opportunityIcon|: If you failed, determine the easiest way to accomplish the task you were attempting (skill and approach).",
+                "|opportunityIcon|+: Remove 1 strife you gained from this check per |opportunityIcon| spent this way.",
+                "|opportunityIcon|opportunityIcon|: Provide assistance to the next character to attempt a check to accomplish something similar."
+            ]
+        }
+    },
+    "earth":{
+        "name":"Earth",
+        "description":[
+            "The Earth Ring represents a character’s aptitude for taking a steady, thorough, and grounded approach to problems. This approach is cautious and considerate, as the character works to get results without suffering losses or taking unneeded risks. A character with a high Earth Ring value is likely to be physically tough, mentally resilient, and reliable. Depending on the task, characters can use an Earth approach as follows:",
+            "When making art, an Earth approach lets a character restore damaged items. This governs the character’s ability to repair items and perform upkeep. It also covers related tasks, such as archival and storage.",
+            "When learning and studying, an Earth approach lets a character recall information from memory. An Earth approach is not useful for wild leaps of logic or intuition, but it is necessary for creating a solid foundation of known factors and facts upon which to build conclusions.",
+            "When communicating, an Earth approach helps a character reason with other people, getting them to think rationally, set aside their emotions, and remember duties and responsibilities. It is also used for instruction, keeping subordinates in line, and maintaining order.",
+            "When fighting, an Earth approach lets a character withstand attacks until the perfect moment to strike back. Any task can be accomplished with tenacity in sufficient measure. An Earth approach to a martial task is often cautious, moving slowly to avoid pitfalls or exhaustion.",
+            "When engaging in a trade, an Earth approach lets a character produce what they need via physical toil. It can also let a character harvest resources from their environment, create an inventory, manage goods, and store them safely."
+        ],
+        "approachNames":{
+            "artisan":"Restore",
+            "social":"Reason",
+            "scholar":"Recall",
+            "martial":"Withstand",
+            "trade":"Produce"
+        },
+        "opportunities":{
+            "invocation":[
+                "Earth |opportunityIcon|: Increase your physical resistance by 1. This effect persists until the end of the beginning of your next turn.",
+                "Earth |opportunityIcon|+: If this technique can target characters other than you, choose additional target per |opportunityIcon| spent this way.",
+                "Earth |opportunityIcon|+: Treat the maximum range of this technique as 1 higher per |opportunityIcon| spent this way.",
+                "Earth |opportunityIcon|: This effect inflicts physical damage instead of supernatural damage.",
+                "Earth |opportunityIcon|: The damage inflicted by this technique has the Sacred quality."
+            ],
+            "general":[
+                "Earth |opportunityIcon|: Reassure another character in the scene with your presence, allowing them to remove 2 strife.",
+                "Earth |opportunityIcon|+: Act carefully to minimize consequences of failure or other dangers that could arise from the task. Extra |opportunityIcon| makes the attempt even safer.",
+                "Earth |opportunityIcon|opportunityIcon|: Suddenly recall an important piece of information not directly related to the task. At the GM’s discretion, you may establish a small preparatory action you took earlier, such as bringing along a common useful item."
+            ],
+            "conflict":[
+                "Earth |opportunityIcon|: During a Movement action, ignore one terrain quality of your choice.",
+                "Earth |opportunityIcon|+: Reduce the severity of the next critical strike you suffer before the start of your next turn by 1 per |opportunityIcon| spent this way.",
+                "Earth |opportunityIcon|opportunityIcon|: Do not apply one of your disadvantages to checks until the end of your next turn."
+            ],
+            "initiative":"Earth |opportunityIcon|: On an Initiative check, choose another character’s disadvantage you know. They do not apply that disadvantage to their checks this scene.",
+            "skillGroups":{
+                "artisan":"Earth |opportunityIcon| (Artisan): If you succeed, add the Durable quality to an item that you are restoring.",
+                "social":"Earth |opportunityIcon| (Social): Increase the TN of the next Social check another character makes before the end of the scene by 1.",
+                "scholar":"Earth |opportunityIcon| (Scholar): Remember a place where you can research or study the topic you were attempting to recall.",
+                "trade":"Earth |opportunityIcon| (Trade): Reduce the TN of the next check another character makes with the same skill before the end of the scene by 1."
+            },            
+            "downtime":[
+                "Earth |opportunityIcon|+: Another character in your company may remove 1 strife or fatigue per |opportunityIcon| spent this way.",
+                "Earth |opportunityIcon|opportunityIcon|: Memorize a small but vital detail from to your activity; you can recall it later without a check."
+            ]
+        },
+        "stanceEffect":"Earth: When other characters make Attack action checks and Scheme action checks that target you, they cannot spend |opportunityIcon| to inflict critical strikes or conditions on you."
+    },
+    "water":{
+        "name":"Water",
+        "description":[
+            "The Water Ring represents an adaptable, powerful, and perceptive personality. The approach is balanced and reversible, as the character works to achieve results without overextending themself or underperforming. A character with a high Water Ring value is naturally affable, physically flexible, observant, and easygoing. Depending on the task, characters can use a Water approach as follows:",
+            "When making art, a Water approach helps a character adapt a work—making works function in new ways by transforming them, translating works of literature and art into other languages or media, and reducing works to their component parts to serve as raw materials for a new piece.",
+            "When studying and learning, a Water approach allows a character to survey their surroundings, giving them character information about their environment and wider circumstances. It can be used to identify things within an area of expertise, detect broad trends and currents, or find out how things work in a practical sense.",
+            "When communicating, a Water approach helps a character charm others, gregariously building a rapport with them. It allows a character to instill desires and emotions in others, uncover the existing desires of others, and win people’s sympathy.",
+            "When fighting, a Water approach lets the character shift to make the circumstances and surroundings work for them. It seeks the path of least resistance for greatest efficacy. Those taking a Water approach in battle seek to redirect incoming energy rather than expending energy of their own.",
+            "When engaging in a trade, a Water approach allows a character to exchange resources or labor of one type for another. This helps the character acquire items and services efficiently and at a low cost."
+        ],
+        "approachNames":{
+            "artisan":"Adapt",
+            "social":"Charm",
+            "scholar":"Survey",
+            "martial":"Shift",
+            "trade":"Exchange"
+        },
+        "opportunities":{
+            "invocation":[
+                "Water |opportunityIcon|: Increase your supernatural resistance by 1 until the end of your next turn.",
+                "Water |opportunityIcon|+: If this technique can target characters other than you, choose additional target per |opportunityIcon| spent this way.",
+                "Water |opportunityIcon|opportunityIcon|+: Treat the maximum or minimum range of this technique as 1 higher or lower per |opportunityIcon|opportunityIcon| spent this way.",
+                "Water |opportunityIcon|opportunityIcon|: Remove 1 fatigue from the target or yourself.",
+                "Water |opportunityIcon|: Reduce the TN of the next Support action check you make by 1. This effect persists until the end of your next turn."
+            ],
+            "general":[
+                "Water |opportunityIcon|: Remove 2 strife from yourself.",
+                "Water |opportunityIcon|+: Perform the task efficiently, completing it more quickly or saving supplies. Extra |opportunityIcon| further reduces the time or materials expended.",
+                "Water |opportunityIcon|opportunityIcon|: Spot an interesting physical detail present in your environment not directly related to your check. At the GM’s discretion, you may establish a piece of terrain or a mundane object nearby."
+            ],
+            "conflict":[
+                "Water |opportunityIcon|: Remove 1 fatigue.",
+                "Water |opportunityIcon|+: During an Attack action check, ignore 1 point of target’s physical resistance per |opportunityIcon| spent this way.",
+                "Water |opportunityIcon|opportunityIcon|: Move 1 range band."
+            ],
+            "initiative":"Water |opportunityIcon|: On an Initiative check, assess the qualities of all terrain in the scene.",
+            "skillGroups":{
+                "artisan":"Water |opportunityIcon| (Artisan): Add a kept |ringDieIcon| set to an |opportunityIcon| result to the next Artisan skill check you make before the end of the game session.",
+                "social":"Water |opportunityIcon| (Social): Add a kept |ringDieIcon| set to an |opportunityIcon| result to your next Social check before the end of the scene.",
+                "scholar":"Water |opportunityIcon| (Scholar): Spot a unique or identifying quality, aspect, or ability of something that you are identifying.",
+                "trade":"Water |opportunityIcon| (Trade): Convince a seller to give you an additional 10% discount for an item you are buying."
+            },
+            "downtime":[
+                "Water |opportunityIcon|+: Remove 1 strife or fatigue per |opportunityIcon| spent this way.",
+                "Water |opportunityIcon|opportunityIcon|: Make a new friend while undertaking your downtime activity."
+            ]
+        },
+        "stanceEffect":"Water: During your turn, you may perform one additional action that does not require a check. This action cannot share a type with another action you perform this turn."
+    },
+    "fire":{
+        "name":"Fire",
+        "description":[
+            "The Fire Ring represents a ferocious, direct, and inventive personality. This approach is explosive and intense, as the character works to get results no matter the cost to themself or others. A character with a high Fire Ring value is likely to be passionate, curious, physically quick, occasionally brusque, and a fast learner. Depending on the task, characters can use a Fire approach as follows:",
+            "When making art, a Fire approach allows a character to invent new things by drafting and creating wholly new works, turning raw materials into novel pieces of art.",
+            "When studying and learning, a Fire approach lets a character theorize on the subject, creatively and energetically attacking the problem to come up with solutions none have considered before. It allows a character to extrapolate how things might be currently and in the future, connect the dots, and identify absences in an argument, idea, or environment.",
+            "When communicating, a Fire approach lets a character incite others, engaging with their existing emotions and desires rather than their raw logic. The Fire approach can also be used to induce others to act on those emotions and desires in spite of obvious pitfalls or justified fears.",
+            "When fighting, a Fire approach relies on a burst of power, speed, or agility to overwhelm a challenge in one fell swoop. Such tactics are aggressive, no-holds-barred displays of force that crush defenses and frighten onlookers. A Fire approach to battle can be observed in the burst of adrenaline to fight or flee, the kiai of an attack move in the martial arts, or the battle cries of a host of Matsu Berserkers.",
+            "When engaging in a trade, a Fire approach allows a character to innovate so that they can develop new technologies and methods, create new products and services, and obtain resources in new ways."
+        ],
+        "approachNames":{
+            "artisan":"Invent",
+            "social":"Incite",
+            "scholar":"Theorize",
+            "martial":"Overwhelm",
+            "trade":"Innovate"
+        },
+        "opportunities":{
+            "invocation":[
+                "Fire |opportunityIcon|+: Treat the maximum range of this technique as 1 higher per |opportunityIcon| spent this way.",
+                "Fire |opportunityIcon|+: If this technique can target characters other than you, choose additional target per |opportunityIcon| spent this way.",
+                "Fire |opportunityIcon|: Reduce the TN of the next Attack action check you make by 1. This effect persists until the end of your next turn.",
+                "Fire |opportunityIcon|+: Increase the TN of checks to resist this effect by 1 per |opportunityIcon| spent this way.",
+                "Fire |opportunityIcon|opportunityIcon|+: One target per |opportunityIcon|opportunityIcon| spent this way must resist with a TN 3 Fitness check (Air 4, Water 1) or suffer the Burning condition."
+            ],
+            "general":[
+                "Fire |opportunityIcon|: Inflame another character in the scene with your presence, causing them to receive 2 strife.",
+                "Fire |opportunityIcon|+: Perform the task in a flashy way, drawing attention to yourself. Extra |opportunityIcon| attracts even more notice.",
+                "Fire |opportunityIcon|opportunityIcon|: Notice something missing or out of place in the vicinity that is not directly related to the task. At the GM’s discretion, you may establish an absence, such as a lack of shoes outside indicating the occupant’s absence."
+            ],
+            "conflict":[
+                "Fire |opportunityIcon|: Choose another character in the scene; increase the TN of the next check they make before the start of your next turn by 1 if it does not include you as a target.",
+                "Fire |opportunityIcon|+: During an Attack action check, increase the TN of the next check the target makes to resist a critical strike they suffer before the start of your next turn by 1 per |opportunityIcon| spent this way.",
+                "Fire |opportunityIcon|opportunityIcon|: Other characters must receive 2 strife to choose you as the target of their Attack and Scheme actions until the start of your next turn."
+            ],
+            "initiative":"Fire |opportunityIcon|: On an Initiative check, use your focus instead of your vigilance for your initiative when surprised.",
+            "skillGroups":{
+                "artisan":"Fire |opportunityIcon| (Artisan): If you succeed, make one additional copy of the item you are creating.",
+                "social":"Fire |opportunityIcon| (Social): Reduce the TN of the next Social check another character makes before the end of the scene by 1.",
+                "scholar":"Fire |opportunityIcon| (Scholar): Extrapolate the motivations or desires of another character in the scene or wider situation.",
+                "trade":"Fire |opportunityIcon| (Trade): Unusual inspiration strikes; add a kept |ringDieIcon| set to an |opportunityIcon| result to the next check you make with another skill."
+            },
+            "downtime":[
+                "Fire |opportunityIcon|+: Assist one other character per |opportunityIcon| spent this way with their next downtime activity check this session.",
+                "Fire |opportunityIcon|opportunityIcon|: Energize another character in your company with your efforts; they may perform 1 additional downtime action this downtime (to a maximum of 2)."
+            ]
+        },
+        "stanceEffect":"Fire: When you succeed on a check, you count as having one additional bonus success for each |strifeIcon| symbol on your kept dice."
+    },
+    "air":{
+        "name":"Air",
+        "description":[
+            "The Air Ring represents a graceful, cunning, and precise personality. This approach is subtle or layered with nuance, as the character moves too nimbly or speaks too obliquely to be pinned down. A character with a high Air Ring value is eloquent, physically and socially deft, and shrewd. Depending on the task, characters can use an Air approach as follows:",
+            "When making art, an Air approach can allow a character to refine a work of art, improving its finer points, honing a piece’s details, or stripping away unnecessary things to enhance the work.",
+            "When studying and learning, an Air approach can help a character to analyze information so that they can observe and understand details, detect subtle nuances, and unravel layered implications and hidden meanings.",
+            "When communicating, an Air approach can enable a character to trick others by using subtlety and cleverness to imbue their words with multiple meanings or obscure the truth. It allows a character to convince others of a statement, deceive (by direct dishonesty or omission), imply secondary intentions, and control what information others have. While not always malicious, it is always manipulative on a certain level.",
+            "When fighting, an Air approach allows a character to feint, using their precision and grace to exploit flaws in their foe’s attacks and defenses. It focuses on maintaining control over the character’s body at every turn. Rather than trying to crush opposition head-on, it seeks opportunities to excel or gain an advantage that demand exact positioning and timing.",
+            "When engaging in a trade, an Air approach allows a character to con others, getting something for nothing. It lets a character inflate the prices of items they are selling, convince others to trust them with resources, and steal."
+        ],
+        "approachNames":{
+            "artisan":"Refine",
+            "social":"Trick",
+            "scholar":"Analyze",
+            "martial":"Feint",
+            "trade":"Con"
+        },
+        "opportunities":{
+            "invocation":[
+                "Air |opportunityIcon|opportunityIcon|+: Choose one additional target per |opportunityIcon|opportunityIcon| spent this way.",
+                "Air |opportunityIcon|+: Treat the maximum range of this technique as 1 higher per |opportunityIcon| spent this way.",
+                "Air |opportunityIcon|: Reduce the TN of the next Movement action check you make by 1. This effect persists until the end of your next turn.",
+                "Air |opportunityIcon|opportunityIcon|+: If this technique can target characters other than you, choose additional target per |opportunityIcon|opportunityIcon| spent this way.",
+                "Air |opportunityIcon|opportunityIcon|+: If this technique targets all characters in an area, choose 1 character in range to exclude as a target per |opportunityIcon|opportunityIcon| spent this way."
+            ],
+            "general":[
+                "Air |opportunityIcon|opportunityIcon|: Learn another character in the scene’s demeanor (if an NPC) and current strife.",
+                "Air |opportunityIcon|+: Act subtly to attract minimal attention in your efforts. Extra |opportunityIcon| makes the attempt even subtler.",
+                "Air |opportunityIcon|opportunityIcon|: Notice an interesting detail about a character in the scene, such as an advantage or disadvantage. At the GM’s discretion, you may establish a new detail for an NPC."
+            ],
+            "conflict":[
+                "Air |opportunityIcon|: Add a kept |ringDieIcon| set to an |opportunityIcon| result to your next Martial skill check.",
+                "Air |opportunityIcon|+: During a Movement action check, up to 1 range band of any distance you move per |opportunityIcon| spent this way may be along a vertical surface.",
+                "Air |opportunityIcon|opportunityIcon|: Increase the TN of the next Martial Arts [Ranged] check targeting you before the start of your next turn by 2."
+            ],
+            "initiative":"Air |opportunityIcon|: On an Initiative check, assess one foe’s weakness. Learn one of their disadvantages of that foe’s choice.",
+            "skillGroups":{
+                "artisan":"Air |opportunityIcon| (Artisan): If you succeed, add the Resplendent or Subtle quality to an item that you are refining.",
+                "social":"Air |opportunityIcon| (Social): Learn if the honor, glory, or status attribute of a character in the scene is higher, lower, or equal to yours.",
+                "scholar":"Air |opportunityIcon| (Scholar): Learn a something about a character who created or used the item you are studying (such as one of their advantages or disadvantages of the GM’s choice that affected their creation or use of the item).",
+                "trade":"Air |opportunityIcon| (Trade): Convince a buyer to pay an additional 10% for an item you are selling."
+            },
+            "downtime":[
+                "Air |opportunityIcon|+: Learn a detail about one person in your company (such as an advantage or disadvantage of their choice) per |opportunityIcon| spent this way. You can learn only one detail about each person this way in a single downtime scene.",
+                "Air |opportunityIcon|opportunityIcon|: Perform your downtime activity without letting one or more others of your choice know that you did."
+            ]
+        },
+        "stanceEffect":"Air: Increase the TN of Attack and Scheme action checks targeting you by 1. If your school rank is 4 or higher, increase the TN by 2 instead."
+    },
+    "void":{
+        "name":"Void",
+        "description":[
+            "The Void Ring represents a centered, unflinching personality; it can also represent the “flow state.” By letting go of the suffering inherent in one’s ego-driven desires, the samurai can transcend earthly limitations. It is the enlightened approach, accepting the nature of all Elements, yet allowing no one Element to dominate. A character with a high Void Ring value is likely to be spiritually sensitive, wise, and introspective. Depending on the task, characters can use a Void approach as follows:",
+            "When making art, a Void approach enables a character to attune themselves to a work, understand the purpose of a work, know why the work has appeared before them, and sense the work’s supernatural qualities, if it has any.",
+            "When studying and learning, a Void approach allows a character to sense disturbances in their surroundings that would be imperceptible to most. This represents a character’s “sixth sense,” giving them hunches about supernatural phenomena and even future events.",
+            "When communicating, a Void approach lets a character enlighten others, challenging their core beliefs, causing them to reassess their decisions and actions. It can be used to get others to reconsider desires or break free from powerful emotional states or mystical manipulation.",
+            "When fighting, a Void approach enables a character to sacrifice their defenses, safety, or even intentionally suffer physical harm to accomplish their goals. The character moves instinctively, in tune with the rhythm of the cosmos. Without direction by any conscious thought, they do what is necessary for success, no matter the cost.",
+            "When engaging in trade, a Void approach allows a character to subsist, living in harmony with their environment and finding ways to make the most out of very little without disturbing their surroundings."
+        ],
+        "approachNames":{
+            "artisan":"Attune",
+            "social":"Enlighten",
+            "scholar":"Sense",
+            "martial":"Sacrifice",
+            "trade":"Subsist"
+        },
+        "opportunities":{
+            "general":[
+                "Void |opportunityIcon|: Choose a ring other than Void. Reduce the TN of your next check by 1 if it uses that ring.",
+                "Void |opportunityIcon|+: Feel a chill down your spine, notice a sudden silence, or detect another sign of the supernatural if there is a spiritual disturbance in the scene. Extra |opportunityIcon| gives an increasingly precise location for the supernatural occurrence.",
+                "Void |opportunityIcon|opportunityIcon|: Gain spiritual insight into the nature of the universe or your own heart. At the GM’s discretion, you may establish a fact about your character that has not been previously revealed but relates to the situation."
+            ],
+            "conflict":[
+                "Void |opportunityIcon|: During the next Attack action check you make before the end of your next turn, ignore one terrain quality of your choice.",
+                "Void |opportunityIcon|+: During a Support action check, increase your Initiative value by 1 per |opportunityIcon| spent this way.",
+                "Void |opportunityIcon|opportunityIcon|: Ignore the effects of one condition you are suffering until the end of your next turn."
+            ],
+            "initiative":"Void |opportunityIcon|: On an Initiative check, sense if there is an Otherworldly being in the scene.",
+            "skillGroups":{
+                "artisan":"Void |opportunityIcon| (Artisan): Reduce the TN of the next check you make using the item you are attuning yourself to by 1.",
+                "social":"Void |opportunityIcon| (Social): Discern the objective of another character in the scene.",
+                "scholar":"Void |opportunityIcon| (Scholar): Intuit whether you can learn anything of value from your current course of inquiry.",
+                "trade":"Void |opportunityIcon| (Trade): Reduce any effect you have on your environment (and physical traces of your efforts) to a minimum."
+            },
+            "downtime":[
+                "Void |opportunityIcon|+: Reserve 1 dropped die from your check, to a maximum of your ranks in the skill you used. Add that die to your next check with the same skill as a kept die instead of rolling it.",
+                "Void |opportunityIcon|opportunityIcon|: Have a brief premonition of a possible future event while undertaking your downtime activity."
+            ]
+        },
+        "stanceEffect":"Void: You do not receive strife from |strifeIcon| symbols on your kept dice. You can still receive strife from other sources."
+    }
+}

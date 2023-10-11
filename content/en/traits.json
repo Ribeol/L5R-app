@@ -1,0 +1,912 @@
+{
+    "Ally":{
+        "name":"Ally",
+        "effects":[
+            "You have proven yourself to a someone, who is willing to help you (within reason). They are open to sharing what they know about most topics, whether via a face-to-face meeting or written correspondence. They are also willing to arrange introductions for you with people they know.",
+            "When performing a check that benefits from your close relationship with the character (such as a Courtesy [Water] check to requisition an item through them or a Sentiment [Water] check to read their emotions), you may reroll up to two dice."
+        ]
+    },
+    "Ambidexterity":{
+        "name":"Ambidexterity",
+        "effects":[
+            "As you have no dominant hand, you can compensate if your right hand is injured or lost.",
+            "When making a check for which your equal skill with both hands is a benefit (such as a Martial Arts [Melee] [Air] check to strike an unexpected blow with a weapon in your left hand or a Skulduggery [Air] check to stealthily pick someone’s pocket), you may reroll up to two dice."
+        ]
+    },
+    "Benten’s Blessing":{
+        "name":"Benten’s Blessing",
+        "effects":[
+            "After interacting with a character for one or more scenes, you know with certainty whether they are open to your romantic aspirations or if they are categorically uninterested.",
+            "When performing a check for which the favor of the Fortune Benten is a benefit (such as an Aesthetics [Air] check to say something insightful about a piece of art or a Courtesy [Air] check to convince someone of your positive qualities), you may reroll up to two dice."
+        ]
+    },
+    "Bishamon’s Blessing":{
+        "name":"Bishamon’s Blessing",
+        "effects":[
+            "You recover from physical exhaustion twice as quickly as others.",
+            "When performing a check for which the favor of this Fortune is a benefit (such as a Fitness [Water] check to recover from exhaustion or a Martial Arts [Unarmed] [Water] check to subdue a foe), you may reroll up to two dice."
+        ]
+    },
+    "Blackmail":{
+        "name":"Blackmail",
+        "effects":[
+            "You have incriminating information on an individual, which you use to force them to help you even when doing so may damage their reputation. They will share what knowledge they have about a given person, item, location, or situation, whether through a face-to-face meeting or through written correspondence. They will also arrange for introductions with exclusive members of society or places of business. Confer with the GM to select a campaign-appropriate NPC when choosing this advantage.",
+            "When performing a check to demand favors of the chosen individual (such as a Courtesy [Fire] check to remind them of the consequences of their disobeying you or a Command [Fire] check to order them to risk themself on your behalf), you may reroll up to two dice."
+        ]
+    },
+    "Blessed Lineage":{
+        "name":"Blessed Lineage",
+        "effects":[
+            "Characters with status of 50 or higher understand that they might suffer a loss of prestige if they harm you, and thus do not choose to kill you as their first option, even if you are a political obstacle they would otherwise eliminate without hesitation.",
+            "When performing a check for which your esteemed lineage is a benefit (such as a Command [Void] check to challenge someone’s perception of a situation or a Government [Void] check to know the likelihood of a political eventuality), you may reroll up to two dice."
+        ]
+    },
+    "Blissful Betrothal":{
+        "name":"Blissful Betrothal",
+        "effects":[
+            "Your spouse fulfills certain social duties in your name when you are absent (such as attending events or caring for family members), provides assistance in their areas of expertise, and offers counsel when you face a difficult decision.",
+            "When performing a check for which your good relationship with your betrothed or spouse is a benefit (such as a Courtesy [Water] check to persuade someone from their family or clan to assist you), you may reroll up to two dice."
+        ]
+    },
+    "Daikoku’s Blessing":{
+        "name":"Daikoku’s Blessing",
+        "effects":[
+            "After spending one or more scenes in a relevant market, you can always discern whether a given commodity or service’s value is going to rise or fall in the next month.",
+            "When performing a check for which your strong financial knowledge benefits (such as a Government [Water] check to know where to acquire goods), you may reroll up to two dice."
+        ]
+    },
+    "Dangerous Allure":{
+        "name":"Dangerous Allure",
+        "effects":[
+            "You always make an impression, and NPCs remember your name and face after interacting with you for one or more scenes (unless you take pains to disguise yourself).",
+            "When performing a check for which your good looks are a benefit (such as a Command [Fire] check to get someone to act in spite of the possible consequences or a Performance [Fire] check to incite emotion in someone), you may reroll up to two dice."
+        ]
+    },
+    "Ebisu’s Blessing":{
+        "name":"Ebisu’s Blessing",
+        "effects":[
+            "Laborers recognize you as a kindred spirit, and characters with status 30 or lower are innately trusting of you unless you give them reason not to be.",
+            "When performing a check for which the blessing of this Fortune is useful (such as a Commerce [Earth] check to safely transport goods or a Labor [Earth] check to plow a field), you may reroll up to two dice."
+        ]
+    },
+    "Famously Honest":{
+        "name":"Famously Honest",
+        "effects":[
+            "Other people have heard of you for your honesty, and they believe you by default unless given evidence to the contrary.",
+            "When performing a check for which you can leverage your reputation for telling the truth (such as a Command [Air] check to convince someone of a statement’s veracity, or a Commerce [Air] check to sell an item at an inflated price), you may reroll up to two dice."
+        ]
+    },
+    "Famously Lucky":{
+        "name":"Famously Lucky",
+        "effects":[
+            "Other people have heard of you for your good fortune, and they believe it by default unless given evidence to the contrary.",
+            "When performing a check for which you need to leverage your reputation for having things turn out your way (such as a Command [Void] check to get your troops to put their faith in you utterly or a Games [Void] check to let fate decide the match), you may reroll up to two dice."
+        ]
+    },
+    "Famously Reliable":{
+        "name":"Famously Reliable",
+        "effects":[
+            "Other people have heard of you for your remarkable adherence to your oaths and responsibilities, even over and above most samurai, and they believe it by default unless given evidence to the contrary.",
+            "When performing a check for which you need to leverage your reputation for keeping your oaths and bargains (such as a Command [Earth] check to calm a panicked soldier or a Performance [Earth] check to relate a tale that inspires patience), you may reroll up to two dice."
+        ]
+    },
+    "Famously Successful":{
+        "name":"Famously Successful",
+        "effects":[
+            "Other people have heard of you for your ability to get results at any cost, and they believe it by default unless given evidence to the contrary.",
+            "When performing a check for which you need to leverage your reputation for efficiency (such as a Courtesy [Fire] check to convince your lord to give you a position or a Tactics [Fire] check to get enemy troops to withdraw in the face of a show of force), you may reroll up to two dice."
+        ]
+    },
+    "Famously Wealthy":{
+        "name":"Famously Wealthy",
+        "effects":[
+            "Other people have heard of you for your riches or ability to procure wealth, and they believe it by default unless given evidence to the contrary.",
+            "When performing a check for which you need to leverage your reputation for access to resources (such as a Commerce [Water] check to buy goods on credit or a Courtesy [Water] check to win over a group of people), you may reroll up to two dice."
+        ]
+    },
+    "Flexibility":{
+        "name":"Flexibility",
+        "effects":[
+            "You can fit through spaces too tight for most people, allowing you access to places others cannot reach.",
+            "When performing a check for which your physical flexibility is a benefit (such as a Performance [Water] check to perform a dance or a Martial Arts [Unarmed] [Water] check to grapple another person), you may reroll up to two dice."
+        ]
+    },
+    "Fukurokujin’s Blessing":{
+        "name":"Fukurokujin’s Blessing",
+        "effects":[
+            "You always know the nearest location where you can undertake research on a given subject, and can complete research in half the time it would take another character.",
+            "When performing a check for which the blessing of this Fortune is a benefit (such as a Medicine [Fire] check to experiment with a cure for a strange new malady or a Survival [Fire] check to speculate on a creature’s possible qualities based on its physiology), you may reroll up to two dice."
+        ]
+    },
+    "Indomitable Will":{
+        "name":"Indomitable Will",
+        "effects":[
+            "You can always choose to stand your ground, even when faced with untenable odds, supernatural terrors, or sorcerous powers that bend the minds of lesser souls.",
+            "When performing a check for which you need to keep your cool when dealing with danger (such as a Command [Earth] check to give orders under pressure or a Meditation [Earth] check to resist the effects of fear), you may reroll up to two dice."
+        ]
+    },
+    "Jurojin’s Blessing":{
+        "name":"Jurojin’s Blessing",
+        "effects":[
+            "You do not contract mundane diseases, and you recover from poisons and supernatural maladies in half the time it would take someone else.",
+            "When performing a check for which you need to survive and remain vital (such as a Fitness [Void] check to resist spiritual contamination or a Survival [Void] check to get by on bare minimum supplies), you may reroll up to two dice."
+        ]
+    },
+    "Keen Balance":{
+        "name":"Keen Balance",
+        "effects":[
+            "When moving across treacherous terrain (such as rooftops or the rigging of a ship), as long as nobody is hindering you, you do not fall.",
+            "When performing a check for which your balance is a benefit (such as a Fitness [Earth] check to resist being knocked down or moved or a Seafaring [Earth] check to withstand getting seasick during a storm), you may reroll up to two dice."
+        ]
+    },
+    "Keen Hearing":{
+        "name":"Keen Hearing",
+        "effects":[
+            "You can hear noises that others do not detect, and you can assess your environment by sound alone. Even in darkness, you can accurately pinpoint the location of people and other moving objects in your immediate vicinity.",
+            "When performing a check for which you need to hear soft, distant, or subtle noises (such as a Courtesy [Air] check to eavesdrop at a distance where you are not noticed or a Survival [Air] check to listen to an animal’s movement before springing a trap), you may reroll up to two dice."
+        ]
+    },
+    "Keen Sight":{
+        "name":"Keen Sight",
+        "effects":[
+            "You can spot details of objects at a much greater distance than others can, and you pick up on small visual details that others might overlook.",
+            "When performing a check for which you need to spot details or see things at a distance (such as an Aesthetics [Water] check to spot minor details in an art piece or a Martial Arts [Ranged] [Water] check to hit a faraway target), you may reroll up to two dice."
+        ]
+    },
+    "Keen Smell":{
+        "name":"Keen Smell",
+        "effects":[
+            "You always remember scents you have experienced before, and you can identify by smell things that others would certainly overlook.",
+            "When performing a check for which you need to use your sense of smell (such as a Labor [Fire] check to experiment with a new recipe or a Survival [Fire] check to determine if a plant is poisonous based on its smell), you may reroll up to two dice."
+        ]
+    },
+    "Karmic Tie":{
+        "name":"Karmic Tie",
+        "effects":[
+            "You have a supernatural tie with another character of your choosing, and as if you had a sixth sense, you can tell when the character to whom you are karmically tied is in danger or has died. You always know the general direction they are located in, even if they are separated from you by thousands of li.",
+            "When performing a check to act on behalf of the one with whom you share a bond (such as a Composition [Void] check to express your truest feelings in a poem or a Martial Arts [Melee] [Void] check to fight on their behalf), you may reroll up to two dice."
+        ]
+    },
+    "Kisshōten’s Blessing":{
+        "name":"Kisshōten’s Blessing",
+        "effects":[
+            "Children enjoy being around you and are much more receptive to your demands. Your own children (if you have any) are particularly blessed with health, beauty, happiness, and luck.",
+            "When performing a check for which you need to communicate with children (such as a Command [Water] check to order them around or a Performance [Water] check to entertain them), you may reroll up to two dice."
+        ]
+    },
+    "Large Stature":{
+        "name":"Large Stature",
+        "effects":[
+            "You can easily reach objects on high shelves, are easy to spot in a crowd, can see over other people, and tend to hit your head on doorways.",
+            "When performing a check for which you can take advantage of your size (such as a Fitness [Earth] check to hold up a heavy object or a Labor [Earth] check to build the frame of a house), you may reroll up to two dice."
+        ]
+    },
+    "Paragon of Compassion":{
+        "name":"Paragon of Compassion",
+        "effects":[
+            "You believe utterly in Compassion, and others instinctively discern that your actions are genuine when you act in accordance with it.",
+            "When performing a check for which you need to convince others of, or leverage your faith in, Compassion (such as a Performance check to recount a tale that impresses its importance upon others or a Martial Arts [Melee] check to take up arms for this cause), you may reroll up to two dice."
+        ]
+    },
+    "Paragon of Courage":{
+        "name":"Paragon of Courage",
+        "effects":[
+            "You believe utterly in Courage, and others instinctively discern that your actions are genuine when you act in accordance with it.",
+            "When performing a check for which you need to convince others of, or leverage your faith in, Courage (such as a Performance check to recount a tale that impresses its importance upon others or a Martial Arts [Melee] check to take up arms for this cause), you may reroll up to two dice."
+        ]
+    },
+    "Paragon of Courtesy":{
+        "name":"Paragon of Courtesy",
+        "effects":[
+            "You believe utterly in Courtesy, and others instinctively discern that your actions are genuine when you act in accordance with it.",
+            "When performing a check for which you need to convince others of, or leverage your faith in, Courtesy (such as a Performance check to recount a tale that impresses its importance upon others or a Martial Arts [Melee] check to take up arms for this cause), you may reroll up to two dice."
+        ]
+    },
+    "Paragon of Duty and Loyalty":{
+        "name":"Paragon of Duty and Loyalty",
+        "effects":[
+            "You believe utterly in Duty and Loyalty, and others instinctively discern that your actions are genuine when you act in accordance with it.",
+            "When performing a check for which you need to convince others of, or leverage your faith in, Duty and Loyalty (such as a Performance check to recount a tale that impresses its importance upon others or a Martial Arts [Melee] check to take up arms for this cause), you may reroll up to two dice."
+        ]
+    },
+    "Paragon of Honor":{
+        "name":"Paragon of Honor",
+        "effects":[
+            "You believe utterly in Honor, and others instinctively discern that your actions are genuine when you act in accordance with it.",
+            "When performing a check for which you need to convince others of, or leverage your faith in, Honor (such as a Performance check to recount a tale that impresses its importance upon others or a Martial Arts [Melee] check to take up arms for this cause), you may reroll up to two dice."
+        ]
+    },
+    "Paragon of Righteousness":{
+        "name":"Paragon of Righteousness",
+        "effects":[
+            "You believe utterly in Righteousness, and others instinctively discern that your actions are genuine when you act in accordance with it.",
+            "When performing a check for which you need to convince others of, or leverage your faith in, Righteousness (such as a Performance check to recount a tale that impresses its importance upon others or a Martial Arts [Melee] check to take up arms for this cause), you may reroll up to two dice."
+        ]
+    },
+    "Paragon of Sincerity":{
+        "name":"Paragon of Sincerity",
+        "effects":[
+            "You believe utterly in Sincerity, and others instinctively discern that your actions are genuine when you act in accordance with it.",
+            "When performing a check for which you need to convince others of, or leverage your faith in, Sincerity (such as a Performance check to recount a tale that impresses its importance upon others or a Martial Arts [Melee] check to take up arms for this cause), you may reroll up to two dice."
+        ]
+    },
+    "Precise Memory":{
+        "name":"Precise Memory",
+        "effects":[
+            "You can recall anything you have read or heard within the current game session exactly, and you often dredge up older facts with much greater ease than others.",
+            "When performing a check for which you must recall details precisely (such as a Games [Earth] check to recall the opening moves of a classic defensive strategy in shōgi or a Government [Earth] check to remember the specifics of a historical event), you may reroll up to two dice."
+        ]
+    },
+    "Quick Reflexes":{
+        "name":"Quick Reflexes",
+        "effects":[
+            "At the start of each scene, you can always grab an item within reach or reposition it a few paces within your environment. The GM is the final arbiter of how much you can prepare or how much distance you can achieve before the rest of the scene begins.",
+            "When performing a check for which you must act swiftly (such as a Meditation [Fire] check to generate initiative during a duel or a Survival [Fire] check to put together a makeshift weapon), you may reroll up to two dice."
+        ]
+    },
+    "Seasoned":{
+        "name":"Seasoned",
+        "effects":[
+            "You are older and more worldly than most of your fellows and have learned a few things along the way. While you do not start with additional experience, your experience expenditures might reflect “revealing” aspects of yourself you have held back to avoid overshadowing your younger companions. You have met members of many cultures and organizations, and you know how to properly behave in almost any city in Rokugan—and perhaps even beyond. You also know many other older people, and the number and variety of your acquaintances often surprises your younger companions.",
+            "When performing a check for which your hardearned wisdom is an advantage (such as a Courtesy [Void] check to impart wisdom to an impetuous comrade or a Theology [Void] check to intuit whether a spirit will appreciate your offering), you may reroll up to two dice."
+        ]
+    },
+    "Sixth Sense":{
+        "name":"Sixth Sense",
+        "effects":[
+            "You have an instinctive sense of supernatural beings, and you can feel the presence of spirits and similar entities even when they have not chosen to reveal themselves. This feeling is ominous in the presence of beings with evil intentions and neutral when the beings are simply going about their business as usual.",
+            "When performing a check for which you need to follow your hunches (such as a Meditation [Void] check to generate initiative during a duel or a Theology [Void] check to detect a snarl in the invisible threads of the universe), you may reroll up to two dice."
+        ]
+    },
+    "Small Stature":{
+        "name":"Small Stature",
+        "effects":[
+            "You can fit into small spaces, can hide behind other people, are hard to spot in a crowd, and sometimes need assistance reaching objects on high shelves.",
+            "When performing a check for which being small is helpful (such as a Fitness [Air] check to resist a critical strike by evading or a Skulduggery [Air] check to pick someone’s pocket), you may reroll up to two dice."
+        ]
+    },
+    "Subtle Observer":{
+        "name":"Subtle Observer",
+        "effects":[
+            "You can understand the cues that people give off while speaking, and you can read people’s lips and facial expressions to understand what they are saying, even if you cannot hear them.",
+            "When performing a check for which you need to spot or use small details of other people nearby (such as a Courtesy [Air] check to reveal an unpleasant truth pleasantly or a Sentiment [Air] check to detect someone else’s weaknesses), you may reroll up to two dice."
+        ]
+    },
+    "Support":{
+        "name":"Support",
+        "effects":[
+            "You have proven yourself to a particular group, which is willing to help you when doing so will not damage its reputation. Its members will offer you their hospitality, including meals, a place to rest, and medical attention if they have a healer. They will also grant you access to their other facilities, such as libraries, smithies, or stables. Confer with the GM to select a campaign-appropriate group when choosing this advantage.",
+            "When performing a check to interact with the members of the chosen group that relies on your rapport (such as a Command [Water] check to issue them orders or a Performance [Water] check to cause an audience of them to desire something), you may reroll up to two dice."
+        ]
+    },
+    "Animal Bond":{
+        "name":"Animal Bond",
+        "effects":[
+            "Reciprocating your interest, a small, mundane animal of some kind has attached itself to you. Choose one silhouette 0 or 1 animal; it follows you around wherever you go and generally acts as your companion. It can be cajoled to do what you want, but it might need incentives (usually food) to perform difficult tasks on demand. If you are granted an animal as part of your starting outfit, that animal can be your companion (regardless of the usual size restrictions).",
+            "After performing a check to interact with an animal (such as a Medicine [Earth] check to mend its injuries or a Survival [Earth] check to calm it), you remove 3 strife."
+        ]
+    },
+    "Armament":{
+        "name":"Armament",
+        "effects":[
+            "Unless the piece comes from outside of the Emerald Empire, you know the name of any weapon or piece of armor you encounter, are aware of its function, and have a rudimentary understanding of how to equip and wield it.",
+            "After performing a check to make or study arms or armor (such as a Smithing [Earth] check to polish a suit of armor or a Tactics [Earth] check to know how to arrange a proper spear formation), you remove 3 strife."
+        ]
+    },
+    "Brushwork":{
+        "name":"Brushwork",
+        "effects":[
+            "You can identify the signature styles of numerous different schools and individual artists, as well as common motifs and techniques.",
+            "After performing a check to study or practice brushwork (such as an Aesthetics [Air] check to assess a painting’s qualities and artist or a Composition [Air] check to add the finishing touches to a letter written in calligraphy), you remove 3 strife."
+        ]
+    },
+    "Curiosity":{
+        "name":"Curiosity",
+        "effects":[
+            "The first time you attempt a new task and fail, you always think of another route you could take to try to overcome or learn more about the problem.",
+            "After performing a check to seek answers to an intriguing question (such as a Medicine [Fire] check to create a new chemical concoction or a Theology [Fire] check to try to determine the metaphysical underpinnings of a particular kami’s behavior), you remove 3 strife."
+        ]
+    },
+    "Daredevil":{
+        "name":"Daredevil",
+        "effects":[
+            "You can risk your life without consideration or hesitation, even if the potential consequences are obvious and dire.",
+            "After performing a check to risk your life (such as a Fitness [Fire] check to resist a critical strike or a Games [Fire] check to win a contest in a flashy and physically risky way), you remove 3 strife."
+        ]
+    },
+    "Enlightenment":{
+        "name":"Enlightenment",
+        "effects":[
+            "You feel no attachment to mundane items and earthly titles; you cannot be tempted with material wealth or the promise of power.",
+            "After performing a check to detach yourself from material concerns (such as a Meditation [Void] check to contemplate your place in the universe or a Survival [Void] check to exist in harmony with your environment), you remove 3 strife."
+        ]
+    },
+    "Fashion":{
+        "name":"Fashion",
+        "effects":[
+            "You always know the current trends in your home region, and you can identify what is in vogue (and how to take advantage of that fact) in a new place after spending one or more scenes there.",
+            "After performing a check to interact with clothes, jewelry, or other worn works of art (such as a Culture [Fire] check to theorize about what others might wear at the next Winter Court or a Design [Fire] check to create a stunning work), you remove 3 strife."
+        ]
+    },
+    "Fortune-Telling":{
+        "name":"Fortune-Telling",
+        "effects":[
+            "You can identify any common portents (such as constellations and other stellar phenomena, the cracks in oracle bones, the appearance of certain animals, and various other signs of things to come), along with their implications for the future.",
+            "After performing a check to discern the future (such as a Survival [Void] check to look for small omens in your earthly environs or a Theology [Void] check to perform a divination by reading the stars), you remove 3 strife."
+        ]
+    },
+    "Generosity":{
+        "name":"Generosity",
+        "effects":[
+            "You can always identify a proper gift for a particular person that does not risk giving offense or slighting them publicly.",
+            "After performing a check to acquire or give a gift (such as a Design [Water] check to select an item that complements someone’s wardrobe or a Commerce [Water] check to find and select a gift at a market), you remove 3 strife."
+        ]
+    },
+    "Gossip":{
+        "name":"Gossip",
+        "effects":[
+            "At the start of each scene, you can always identify the character present who will know the juiciest rumors (besides yourself, obviously).",
+            "After performing a check to spread or receive rumors (such as a Courtesy [Air] check to cast someone in a certain light when telling a story about them or a Culture [Air] check to read people’s current anxieties from the subtle ways they obey or break etiquette), you remove 3 strife."
+        ]
+    },
+    "History":{
+        "name":"History",
+        "effects":[
+            "After a short time spent studying it, you can discern the era and context of any object, structure, or text you encounter—or else you know for certain that no chronicler of the Emerald Empire has encountered this thing before.",
+            "After performing a check to remember a historical anecdote (such as a Government [Earth] check to draw parallels to past events or a Smithing [Earth] check to know about past uses of and trends in the creation of tools and artifacts), you remove 3 strife."
+        ]
+    },
+    "Ikebana":{
+        "name":"Ikebana",
+        "effects":[
+            "You can always identify a plant by any of its parts, and you know its physical properties and its hanakotoba (“language of flowers”) meaning.",
+            "After performing a check related to flower arrangement (such as an Aesthetics [Water] check to rearrange or improve an ikebana piece or a Survival [Water] check to acquire flowers from a marketplace), you remove 3 strife."
+        ]
+    },
+    "Playfulness":{
+        "name":"Playfulness",
+        "effects":[
+            "When you say something untoward to someone of lower or equal status, they write it off as your playful nature instead of being significantly angered or saddened by it.",
+            "After performing a check to gently mock or chide someone (such as a Composition [Air] check to find the parts of a rival’s poem that you can echo with parody in your next piece or a Courtesy [Air] check to tease someone with a clever pun on their name), you remove 3 strife."
+        ]
+    },
+    "Provocation":{
+        "name":"Provocation",
+        "effects":[
+            "You can always identify a point of sensitivity that you can push upon in another person— though not whether they will take your comment as slightly aggressive banter or a grave insult.",
+            "After performing a check to get a rise out of someone (such as a Courtesy [Fire] check to call someone by an aggravating nickname or a Command [Fire] check to get a group of soldiers passionate and angry enough to storm an enemy position), you remove 3 strife."
+        ]
+    },
+    "Sake":{
+        "name":"Sake",
+        "effects":[
+            "You can identify regional variations in sake and other alcohol, and you know a great deal about the various processes involved in making sake. It takes you twice as much alcohol as it does anyone else to become intoxicated.",
+            "After performing a check to interact with the fine art of fermented beverages (such as a Courtesy [Water] check to serve alcohol according to proper procedure in a social setting or a Labor [Water] check to ferment rice), you remove 3 strife."
+        ]
+    },
+    "Secrets":{
+        "name":"Secrets",
+        "effects":[
+            "You never forget a secret you have heard, and you instinctively know if something you have heard is common knowledge or information someone wants concealed (even if you do not know who or why).",
+            "After performing a check to acquire or preserve a secret (such as a Meditation [Void] check to resist efforts to pry a secret from you or a Sentiment [Void] check to have a hunch about whether someone is concealing a dreadful secret), you remove 3 strife."
+        ]
+    },
+    "Stories":{
+        "name":"Stories",
+        "effects":[
+            "You can recall any story you have been told, including the details that others would gloss over or forget.",
+            "After performing a check to recall or tell a story (such as a Performance [Earth] check to spin a tale to hearten comrades or a Theology [Earth] check to recite a passage from the Tao of Shinsei or Akodo’s Leadership that is applicable to your situation), you remove 3 strife."
+        ]
+    },
+    "Tea":{
+        "name":"Tea",
+        "effects":[
+            "You can identify regional variations in tea, and you know a great deal about the process of preparing and drying leaves. In the wilderness, you can acquire the natural ingredients required to make rustic teas of various sorts with relative ease.",
+            "After performing a check to interact with tea (such as a Medicine [Void] check to brew a tea with ingredients that help the body recover from illness or a Performance [Void] check to perform a tea ceremony that helps the recipients contemplate their state in life), you remove 3 strife."
+        ]
+    },
+    "Travel":{
+        "name":"Travel",
+        "effects":[
+            "You are not unsettled by foreign customs, and you can comfortably fit in even in strange environments.",
+            "After performing a check to travel to a new location or interact with a novel thing (such as a Survival [Water] check to try to identify a new plant, animal, or phenomenon, or a Seafaring [Water] check to travel by boat), you remove 3 strife."
+        ]
+    },
+    "Wordplay":{
+        "name":"Wordplay",
+        "effects":[
+            "You can always identify rhetorical and literary patterns in the works of others when reading or listening to them.",
+            "After performing a check to interpret or create a play on words (such as a Composition [Air] check to write a poem with a perfectly executed poetic pun or a Performance [Air] check to subtly imply something to your audience via a double meaning), you remove 3 strife."
+        ]
+    },
+    "Benten’s Curse":{
+        "name":"Benten’s Curse",
+        "effects":[
+            "Your romantic efforts are always stymied by circumstances, and your gestures to get the romantic attention of others are usually misinterpreted.",
+            "When you make a check to express your admiration to someone (such as an Aesthetics [Air] check to find the right poem to read to express your feelings or a Courtesy [Air] check to tell someone your feelings without exceeding propriety), you must choose and reroll two dice containing |successIcon| or |explosiveSuccessIcon|. After resolving the check, if you failed, you gain 1 Void point."
+        ]
+    },
+    "Bishamon’s Curse":{
+        "name":"Bishamon’s Curse",
+        "effects":[
+            "You find it very difficult to lift heavy objects, and it takes you twice as long as others to regain your stamina after hard labor.",
+            "When you make a check that relies on recovering quickly (such as a Fitness [Water] check to recover from exhaustion or the Gravely Wounded condition or a Martial Arts [Unarmed] [Water] check to train for an extended period of time), you must choose and reroll two dice containing |successIcon| or |explosiveSuccessIcon|. After resolving the check, if you failed, you gain 1 Void point."
+        ]
+    },
+    "Bitter Betrothal":{
+        "name":"Bitter Betrothal",
+        "effects":[
+            "Something significantly complicates your relationship with your betrothed or spouse. As a result, they often undermine your efforts, whether out of malice, negligence, or an incompatible set of goals.",
+            "When you make a check that requires the collaboration of your betrothed or spouse (such as a Courtesy [Water] check to make a polite request to their family for political backing or a Culture [Water] check to know the proper thing to do at a social function involving their relatives), you must choose and reroll two dice containing |successIcon| or |explosiveSuccessIcon|. After resolving the check, if you failed, you gain 1 Void point."
+        ]
+    },
+    "Blackmailed":{
+        "name":"Blackmailed",
+        "effects":[
+            "Someone has incriminating information on you, which they use to try and force you to help them even when doing so may damage your reputation. You must share with them what knowledge you have about a given person, item, location, or situation, whether through a face-to-face meeting or through written correspondence. You must also arrange for introductions on their behalf with exclusive members of society or places of business.",
+            "When performing a check to evade complying with the character who is blackmailing you (such as a Courtesy [Air] check to nominally tell them what they want without giving away key pieces of information or a Performance [Air] check to pretend as though you will go through with something they have demanded of you), you must choose and reroll two dice containing |successIcon| or |explosiveSuccessIcon|. After resolving the check, if you failed, you gain 1 Void point."
+        ]
+    },
+    "Blindness":{
+        "name":"Blindness",
+        "effects":[
+            "You are unable to see out of either eye. Your lack of sight does not mean you cannot perceive your surroundings (using your other senses), but you cannot observe things that can be perceived only by sight.",
+            "When you make a check for which sight is an asset that cannot easily be replaced by other senses (such as a Sentiment [Water] check to identify someone’s hostile intentions from across a noisy room or a Martial Arts [Ranged] [Water] check to hit a moving target with an arrow), you must choose and reroll two dice containing |successIcon| or |explosiveSuccessIcon|. After resolving the check, if you failed, you gain 1 Void point."
+        ]
+    },
+    "Bluntness":{
+        "name":"Bluntness",
+        "effects":[
+            "You have difficulty expressing things indirectly, and you overlook insinuations and implications in the statements of others unless they are pointed out to you directly.",
+            "When you make a check to create or interpret subtext (such as a Design [Air] check to select a wardrobe that conveys the proper subtle message to your intended recipient or a Sentiment [Air] check to read someone’s unstated feelings), you must choose and reroll two dice containing |successIcon| or |explosiveSuccessIcon|. After resolving the check, if you failed, you gain 1 Void point."
+        ]
+    },
+    "Clumsiness":{
+        "name":"Clumsiness",
+        "effects":[
+            "You are physically imprecise when dealing with tasks that require notable dexterity (or any physical task, really). At the GM’s discretion, you periodically drop items, make a mess of precise crafting efforts, or slip and fall onto people.",
+            "When you make a check that requires precise motor skills (such as a Fitness [Fire] check to vault over an obstacle or a Design [Fire] check to create an intricate piece of jewelry), you must choose and reroll two dice containing |successIcon| or |explosiveSuccessIcon|. After resolving the check, if you failed, you gain 1 Void point."
+        ]
+    },
+    "Cognitive Lapses":{
+        "name":"Cognitive Lapses",
+        "effects":[
+            "At the GM’s discretion, you sometimes lose your ability to focus or think consciously. Your body continues to act during these times according to your general instincts, and it does not undertake actions you would not consciously perform, but you do not form coherent memories of these times. After you suffer such a lapse that lasts for more than a few brief moments at the GM’s choice, you gain 1 Void point.",
+            "When you make a check for which you must recall anything that happened during a period of cognitive lapse (such as a Meditation [Void] check to understand your past decisions or a Sentiment [Void] check to guess what you might have said to someone based on their reaction to you), you must choose and reroll two dice containing |successIcon| or |explosiveSuccessIcon|. After resolving the check, if you failed, you gain 1 Void point."
+        ]
+    },
+    "Daikoku’s Curse":{
+        "name":"Daikoku’s Curse",
+        "effects":[
+            "When you gamble or speculate on the value of goods, even if you receive short-term gains, events conspire such that you always end up as poor (if not poorer) as when you started.",
+            "When you make a check to gain or preserve wealth (such as a Commerce [Water] check to haggle for a good price on an item or a Skulduggery [Water] check to find a fence for stolen items), you must choose and reroll two dice containing |successIcon| or |explosiveSuccessIcon|. After resolving the check, if you failed, you gain 1 Void point."
+        ]
+    },
+    "Damaged Heart or Organ":{
+        "name":"Damaged Heart or Organ",
+        "effects":[
+            "Your heart or another vital organ is weak due to physical trauma or illness, and you can only engage in strenuous activity for half as long as other characters before needing to rest.",
+            "When you make a check to undertake strenuous activity over a long period of time (such as a Fitness [Earth] check to march for a long time or a Smithing [Earth] check to hammer plates back onto a damaged piece of armor), you must choose and reroll two dice containing |successIcon| or |explosiveSuccessIcon|. After resolving the check, if you failed, you gain 1 Void point."
+        ]
+    },
+    "Deafness":{
+        "name":"Deafness",
+        "effects":[
+            "You are unable to hear, although you can perceive your surroundings through other senses.",
+            "When you make a check for which auditory cues are very useful (such as a Sentiment [Air] check to discern if someone is being sincere or a Courtesy [Air] check to pick up rumors via eavesdropping on someone’s faraway conversation), you must choose and reroll two dice containing |successIcon| or |explosiveSuccessIcon|. After resolving the check, you gain 1 Void point."
+        ]
+    },
+    "Discomfiting Countenance":{
+        "name":"Discomfiting Countenance",
+        "effects":[
+            "Characters of lower status must generally be respectful of you to your face, but characters of higher status might try to use your looks as a way of attacking your character. Additionally, you are extremely memorable, and you find it difficult to act subtly without being remembered.",
+            "When you make a check to get someone to trust your word (such as a Courtesy [Air] check to make someone believe a lie or a Performance [Air] check to present a story as genuine) you must choose and reroll two dice containing |successIcon| or |explosiveSuccessIcon|. After resolving the check, if you failed, you gain 1 Void point."
+        ]
+    },
+    "Disdain for Compassion":{
+        "name":"Disdain for Compassion",
+        "effects":[
+            "You no longer believe in this tenet of Bushidō, though you still lose honor for disobeying it. When you act in accordance with this tenet of Bushidō, others can sometimes sense your insincerity.",
+            "When you make a check to pay lip service to this tenet of Bushidō or to uphold it (such as a Courtesy check to express its importance or a Meditation check to use a belief in this tenet to your advantage), you must choose and reroll two dice containing |successIcon| or |explosiveSuccessIcon|. After resolving the check, if you failed, you gain 1 Void point."
+        ]
+    },
+    "Disdain for Courage":{
+        "name":"Disdain for Courage",
+        "effects":[
+            "You no longer believe in this tenet of Bushidō, though you still lose honor for disobeying it. When you act in accordance with this tenet of Bushidō, others can sometimes sense your insincerity.",
+            "When you make a check to pay lip service to this tenet of Bushidō or to uphold it (such as a Courtesy check to express its importance or a Meditation check to use a belief in this tenet to your advantage), you must choose and reroll two dice containing |successIcon| or |explosiveSuccessIcon|. After resolving the check, if you failed, you gain 1 Void point."
+        ]
+    },
+    "Disdain for Courtesy":{
+        "name":"Disdain for Courtesy",
+        "effects":[
+            "You no longer believe in this tenet of Bushidō, though you still lose honor for disobeying it. When you act in accordance with this tenet of Bushidō, others can sometimes sense your insincerity.",
+            "When you make a check to pay lip service to this tenet of Bushidō or to uphold it (such as a Courtesy check to express its importance or a Meditation check to use a belief in this tenet to your advantage), you must choose and reroll two dice containing |successIcon| or |explosiveSuccessIcon|. After resolving the check, if you failed, you gain 1 Void point."
+        ]
+    },
+    "Disdain for Duty and Loyalty":{
+        "name":"Disdain for Duty and Loyalty",
+        "effects":[
+            "You no longer believe in this tenet of Bushidō, though you still lose honor for disobeying it. When you act in accordance with this tenet of Bushidō, others can sometimes sense your insincerity.",
+            "When you make a check to pay lip service to this tenet of Bushidō or to uphold it (such as a Courtesy check to express its importance or a Meditation check to use a belief in this tenet to your advantage), you must choose and reroll two dice containing |successIcon| or |explosiveSuccessIcon|. After resolving the check, if you failed, you gain 1 Void point."
+        ]
+    },
+    "Disdain for Honor":{
+        "name":"Disdain for Honor",
+        "effects":[
+            "You no longer believe in this tenet of Bushidō, though you still lose honor for disobeying it. When you act in accordance with this tenet of Bushidō, others can sometimes sense your insincerity.",
+            "When you make a check to pay lip service to this tenet of Bushidō or to uphold it (such as a Courtesy check to express its importance or a Meditation check to use a belief in this tenet to your advantage), you must choose and reroll two dice containing |successIcon| or |explosiveSuccessIcon|. After resolving the check, if you failed, you gain 1 Void point."
+        ]
+    },
+    "Disdain for Righteousness":{
+        "name":"Disdain for Righteousness",
+        "effects":[
+            "You no longer believe in this tenet of Bushidō, though you still lose honor for disobeying it. When you act in accordance with this tenet of Bushidō, others can sometimes sense your insincerity.",
+            "When you make a check to pay lip service to this tenet of Bushidō or to uphold it (such as a Courtesy check to express its importance or a Meditation check to use a belief in this tenet to your advantage), you must choose and reroll two dice containing |successIcon| or |explosiveSuccessIcon|. After resolving the check, if you failed, you gain 1 Void point."
+        ]
+    },
+    "Disdain for Sincerity":{
+        "name":"Disdain for Sincerity",
+        "effects":[
+            "You no longer believe in this tenet of Bushidō, though you still lose honor for disobeying it. When you act in accordance with this tenet of Bushidō, others can sometimes sense your insincerity.",
+            "When you make a check to pay lip service to this tenet of Bushidō or to uphold it (such as a Courtesy check to express its importance or a Meditation check to use a belief in this tenet to your advantage), you must choose and reroll two dice containing |successIcon| or |explosiveSuccessIcon|. After resolving the check, if you failed, you gain 1 Void point."
+        ]
+    },
+    "Ebisu’s Curse":{
+        "name":"Ebisu’s Curse",
+        "effects":[
+            "Characters of lower status automatically distrust you, viewing you as a distant overlord who cannot possibly be competent at practical labor or understand their daily struggles (whether or not either of these is a fair assessment).",
+            "When you make a check to interact with laborers or partake in their work (such as a Commerce [Earth] check to mass produce items or a Labor [Earth] check to dig a ditch), you must choose and reroll two dice containing |successIcon| or |explosiveSuccessIcon|. After resolving the check, if you failed, you gain 1 Void point."
+        ]
+    },
+    "Fractured Spine":{
+        "name":"Fractured Spine",
+        "effects":[
+            "You have suffered major trauma to the spine, and harsh impacts cause you to be shot through with agonizing pain. You can lift and carry only half the weight that someone of your strength normally could.",
+            "When you make a check to resist harm or exhaustion (such as a Fitness [Earth] check to shrug off further injury or a Labor [Earth] check to carry heavy objects as part of building a structure), you must choose and reroll two dice containing |successIcon| or |explosiveSuccessIcon|. After resolving the check, if you failed, you gain 1 Void point."
+        ]
+    },
+    "Fukurokujin’s Curse":{
+        "name":"Fukurokujin’s Curse",
+        "effects":[
+            "It takes you twice as long to gain a grasp of an academic field of study as it does another character.",
+            "When you make a check to extrapolate how to do something in a field of study (such as a Medicine [Fire] check to guess how to treat an unfamiliar aliment based on its symptoms or a Survival [Fire] check to guess an unknown creature’s qualities based on its physiology), you must choose and reroll two dice containing |successIcon| or |explosiveSuccessIcon|. After resolving the check, if you failed, you gain 1 Void point."
+        ]
+    },
+    "Gaijin Name":{
+        "name":"Gaijin Name",
+        "effects":[
+            "People of higher and equal status tend to assume that you are uneducated at best and a barbarian at worst, while people of lower status respond to you with fear.",
+            "When you make a check to inspire others who do not share your culture or background (such as a Command [Fire] check to rally troops or a Commerce [Fire] check to create a product that people desire), you must choose and reroll two dice containing |successIcon| or |explosiveSuccessIcon|. After resolving the check, if you failed, you gain 1 Void point."
+        ]
+    },
+    "Gaijin Culture":{
+        "name":"Gaijin Culture",
+        "effects":[
+            "People of higher and equal status tend to assume that you are uneducated at best and a barbarian at worst, while people of lower status respond to you with fear.",
+            "When you make a check to inspire others who do not share your culture or background (such as a Command [Fire] check to rally troops or a Commerce [Fire] check to create a product that people desire), you must choose and reroll two dice containing |successIcon| or |explosiveSuccessIcon|. After resolving the check, if you failed, you gain 1 Void point."
+        ]
+    },
+    "Gaijin Appearance":{
+        "name":"Gaijin Appearance",
+        "effects":[
+            "People of higher and equal status tend to assume that you are uneducated at best and a barbarian at worst, while people of lower status respond to you with fear.",
+            "When you make a check to inspire others who do not share your culture or background (such as a Command [Fire] check to rally troops or a Commerce [Fire] check to create a product that people desire), you must choose and reroll two dice containing |successIcon| or |explosiveSuccessIcon|. After resolving the check, if you failed, you gain 1 Void point."
+        ]
+    },
+    "Haunting":{
+        "name":"Haunting",
+        "effects":[
+            "The spirit has their own agenda (determined by the GM), which interferes with yours at inopportune times.",
+            "When you make a check to defy the will of the spirit haunting you (such as a Meditation [Void] check to find solace in meditation or a Skulduggery [Void] check to perform disreputable acts to survive), you must choose and reroll two dice containing |successIcon| or |explosiveSuccessIcon|. After resolving the check, if you failed, you gain 1 Void point."
+        ]
+    },
+    "Incurable Illness":{
+        "name":"Incurable Illness",
+        "effects":[
+            "Periodically, if you push yourself too hard, you are afflicted by especially violent fits that significantly restrict your activity for a brief period of time.",
+            "When you make a check to remain active for long periods of time (such as a Labor [Earth] check to plow a field or a Survival [Earth] check to build a shelter), you must choose and reroll two dice containing |successIcon| or |explosiveSuccessIcon|. After resolving the check, if you failed, you gain 1 Void point."
+        ]
+    },
+    "Jurōjin’s Curse":{
+        "name":"Jurōjin’s Curse",
+        "effects":[
+            "Poison and disease seem to strike you more easily, and it takes you twice as long as normal to recover from disease and injury.",
+            "When you make a check to sustain yourself (such as a Fitness [Void] check to resist a critical injury or a Survival [Void] check to live in harmony with a natural environment), you must choose and reroll two dice containing |successIcon| or |explosiveSuccessIcon|. After resolving the check, if you failed, you gain 1 Void point."
+        ]
+    },
+    "Kisshōten’s Curse":{
+        "name":"Kisshōten’s Curse",
+        "effects":[
+            "Children instinctively dislike you and are obstinate in the face of your demands. Your own children (if you have any) are unlucky in matters of health, beauty, and happiness.",
+            "When performing a check for which you need to communicate with children (such as a Command [Water] check to order them around or a Performance [Water] check to entertain them), you must choose and reroll two dice containing |successIcon| or |explosiveSuccessIcon|. After resolving the check, if you failed, you gain 1 Void point."
+        ]
+    },
+    "Lost Arm or Lost Hand":{
+        "name":"Lost Arm or Lost Hand",
+        "effects":[
+            "You have only one usable hand or arm. You cannot wield weapons in a two-handed grip or hold anything in your missing hand. If you are missing only the hand, you can strap items to the arm for use.",
+            "When you make a check for which having two hands is very valuable (such as a Martial Arts [Unarmed] [Fire] check to grapple a foe into submission or a Survival [Fire] check to leap onto a galloping horse’s back), you must choose and reroll two dice containing |successIcon| or |explosiveSuccessIcon|. After resolving the check, if you failed, you gain 1 Void point."
+        ]
+    },
+    "Lost Eye":{
+        "name":"Lost Eye",
+        "effects":[
+            "You have only one eye. Your field of vision is narrower, and your depth perception is somewhat diminished.",
+            "When you make a check for which your reduced ability to observe a wide field or discern the exact distance to faraway objects would cause difficulties (such as a Tactics [Water] check to spot incoming threats or a Martial Arts [Ranged] [Water] check to hit targets while moving), you must choose and reroll two dice containing |successIcon| or |explosiveSuccessIcon|. After resolving the check, if you failed, you gain 1 Void point."
+        ]
+    },
+    "Lost Fingers":{
+        "name":"Lost Fingers",
+        "effects":[
+            "You have fewer functional digits on one of your hands than most people. Checks to craft new items take you twice as long as they would take a character with their full complement of fingers.",
+            "When you make a check for which you must maintain a precise grip with both hands at once (such as a Design [Fire] check to weave cloth or a Martial Arts [Fire] check to draw your blade quickly), you must choose and reroll two dice containing |successIcon| or |explosiveSuccessIcon|. After resolving the check, if you failed, you gain 1 Void point."
+        ]
+    },
+    "Lost Leg":{
+        "name":"Lost Leg",
+        "effects":[
+            "You have one fewer leg than most people. You use a crutch, cane, or other support to walk, and standing takes more effort than it does for people with two legs. Traveling by walking takes you twice as long as it does others without some form of compensatory tool.",
+            "When you make a check for which you must reposition yourself quickly or maintain your balance (such as a Fitness [Water] check to move across difficult ground quickly or a Seafaring [Water] check to operate a boat in difficult conditions such as a storm), you must choose and reroll two dice containing |successIcon| or |explosiveSuccessIcon|. After resolving the check, if you failed, you gain 1 Void point."
+        ]
+    },
+    "Lost Memories":{
+        "name":"Lost Memories",
+        "effects":[
+            "There is a period of your life that you cannot remember at all. The less important this period is to your identity, the longer it should be (for example, a single day lost might be sufficient if the character committed a terrible act during that time and struggles to understand how or why, whereas a full decade of lost memories might be insufficient if they are not especially foundational to who the character is). The player and GM should work together to determine the amount and importance of memories lost. Skills and abilities acquired during the lost time are largely retained, even if the character does not remember the act of developing them.",
+            "When you make a check for which you must recall information you learned during the period of lost memories (such as a Culture [Void] check to intuit how to behave in a particular situation similar or related to one you encountered during that time or a Meditation [Void] check to understand your past decisions), you must choose and reroll two dice containing |successIcon| or |explosiveSuccessIcon|. After resolving the check, if you failed, you gain 1 Void point."
+        ]
+    },
+    "Maimed Arm":{
+        "name":"Maimed Arm",
+        "effects":[
+            "Your right or left arm is injured (your choice at the time the disadvantage is assigned), making it much harder to perform activities that involve use of that arm. You can use the arm, but gripping anything tightly causes you pain, and you might need a sling to help the arm heal properly.",
+            "When you make a check for which you need to use two hands at once (such as a Design [Fire] check to sew a new kimono or a Martial Arts [Melee] [Fire] check to overwhelm a foe with a powerful overhead slice), you must choose and reroll two dice containing |successIcon| or |explosiveSuccessIcon|. After resolving the check, if you failed, you gain 1 Void point."
+        ]
+    },
+    "Maimed Visage":{
+        "name":"Maimed Visage",
+        "effects":[
+            "You have been struck in the face, causing a very noticeable and difficult-to-disguise sign of your altercation. Your injury is disquieting to many, and speaking causes you some pain, hampering your social endeavors that hinge on subtle implication and manipulation.",
+            "When you make a check to subtly convince others of something or speak an implication (such as a Commerce [Air] check to sell an item at a higher price than usual or a Courtesy [Air] check to insult someone by implication), you must choose and reroll two dice containing |successIcon| or |explosiveSuccessIcon|. After resolving the check, if you failed, you gain 1 Void point."
+        ]
+    },
+    "Momoku":{
+        "name":"Momoku",
+        "effects":[
+            "You do not detect supernatural presences even when they make themselves evident to everyone else, and you are blissfully unaware of the ripples in reality such entities and phenomena create. You can still discern effects they have on the physical world, but only when they become quite obvious.",
+            "When you make a check to understand or appeal to otherworldly powers (such as a Games [Void] check to put your faith in the power of the universe or a Theology [Void] check to call upon the cosmic energy around you), you must choose and reroll two dice containing |successIcon| or |explosiveSuccessIcon|. After resolving the check, if you failed, you gain 1 Void point."
+        ]
+    },
+    "Muteness":{
+        "name":"Muteness",
+        "effects":[
+            "You are physically or psychologically unable to produce intelligible spoken words. You can still make yourself understood through signing, gestures, and meaningful looks.",
+            "When you make a check for which you must make your tone of voice understood by others (such as a Command [Air] check to convey nuanced information to others or a Performance [Air] check to impersonate someone convincingly), you must choose and reroll two dice containing |successIcon| or |explosiveSuccessIcon|. After resolving the check, if you failed, you gain 1 Void point."
+        ]
+    },
+    "Nerve Damage":{
+        "name":"Nerve Damage",
+        "effects":[
+            "You have no feeling in certain parts of your body.",
+            "When you make a check for which physical sensitivity is helpful (such as an Aesthetics [Air] check to delicately paint glaze onto a ceramic piece or a Fitness [Air] check to maintain your posture exactly while moving), you must choose and reroll two dice containing |successIcon| or |explosiveSuccessIcon|. After resolving the check, if you failed, you gain 1 Void point."
+        ]
+    },
+    "Scorn":{
+        "name":"Scorn",
+        "effects":[
+            "You have earned the ire of a particular group, which has seriously damaged your ability to work with its members or enlist their help. You have been barred from entering their facilities, and they refuse to meet or communicate with you directly. Confer with the GM to select a campaign-appropriate group when choosing this disadvantage.",
+            "When performing a check to interact with the chosen group that relies on your rapport with its members (such as a Courtesy [Water] check to persuade them to do something or a Performance [Water] check to impress a group of them), you must choose and reroll two dice containing |successIcon| or |explosiveSuccessIcon|. After resolving the check, if you failed, you gain 1 Void point."
+        ]
+    },
+    "Shadowlands Taint (Air)":{
+        "name":"Shadowlands Taint (Air)",
+        "effects":[
+            "You are a Tainted being. You have trouble sympathizing with other humans, but you can understand the emotions of corrupted beings easily.",
+            "When you make a check to show compassion for other human beings (such as a Composition [Air] check to edit a work for emotional refinement or a Courtesy [Air] check to say something difficult without harming the recipient’s feelings), you must choose and reroll two dice containing |successIcon| or |explosiveSuccessIcon|. After resolving the check, if you failed, you gain 1 Void point."
+        ]
+    },
+    "Shadowlands Taint (Earth)":{
+        "name":"Shadowlands Taint (Earth)",
+        "effects":[
+            "You are a Tainted being. Your ability to feel physical sensations is significantly diminished, and when you perish, your body rises as a Zombie Peasant, which pursues your last goal with bestial purpose before turning on anyone else nearby.",
+            "When you make a check that relies upon physical sensitivity (such as a Design [Earth] check to repair a damaged item or a Martial Arts [Unarmed] [Earth] check to grapple with a foe), you must choose and reroll two dice containing |successIcon| or |explosiveSuccessIcon|. After resolving the check, if you failed, you gain 1 Void point."
+        ]
+    },
+    "Shadowlands Taint (Fire)":{
+        "name":"Shadowlands Taint (Fire)",
+        "effects":[
+            "You are a Tainted being. You can identify Shadowlands creatures and forces, you know how to turn them to destructive ends, and you are drawn inexorably to such forbidden powers.",
+            "When you make a check to foresee possible negative outcomes of your actions (such as a Government [Fire] check to extrapolate whether your actions could lead to great destruction or a Theology [Fire] check to know whether the powers you are dealing with are likely to destroy you in the end), you must choose and reroll two dice containing |successIcon| or |explosiveSuccessIcon|. After resolving the check, if you failed, you gain 1 Void point."
+        ]
+    },
+    "Shadowlands Taint (Void)":{
+        "name":"Shadowlands Taint (Void)",
+        "effects":[
+            "You are a Tainted being. Each time you spend your last Void point, someone near you suffers a misfortune as the woven cord of fate frays.",
+            "When you make a check to discern your future (such as a Government [Void] check to know whether a course of action is likely to end in tragedy or a Seafaring [Void] check to detect the arrival of a storm before it hits), you must choose and reroll two dice containing |successIcon| or |explosiveSuccessIcon|. After resolving the check, if you failed, you gain 1 Void point."
+        ]
+    },
+    "Shadowlands Taint (Water)":{
+        "name":"Shadowlands Taint (Water)",
+        "effects":[
+            "You are a Tainted being. When your blood is spilled (such as after you suffer the Bleeding condition), foulness spills forth. Anyone who touches it suffers the Afflicted condition.",
+            "When you make a check to heal others or deal with food (such as a Medicine [Water] check to prepare treatments for a disease or a Survival [Water] check to forage for food), you must choose and reroll two dice containing |successIcon| or |explosiveSuccessIcon|. After resolving the check, if you failed, you gain 1 Void point."
+        ]
+    },
+    "Sworn Enemy":{
+        "name":"Sworn Enemy",
+        "effects":[
+            "You and the GM should select or create a character to be your sworn enemy. Your sworn enemy exists within the world and periodically meddles in your affairs, directly or indirectly, at the GM’s discretion. If your sworn enemy perishes, you must either remove this disadvantage, acquire a new sworn enemy (perhaps someone who hates you because of your role in the demise of the previous one), or find a way for your deceased foe to continue playing a role in your life.",
+            "When you make a check to remain rational in the presence of this person you hate (such as a Courtesy [Earth] check to interact with this person without being provocative or a Meditation [Earth] check to stay stoic in the face of their insults), you must choose and reroll two dice containing |successIcon| or |explosiveSuccessIcon|. After resolving the check, if you failed, you gain 1 Void point."
+        ]
+    },
+    "Whispers of Cruelty":{
+        "name":"Whispers of Cruelty",
+        "effects":[
+            "You are well-known, but not for the right reasons. Characters who do not know you personally always assume that you will act in a ruthless and destructive manner, and they act accordingly.",
+            "When you make a check to attempt to calm others (such as a Courtesy [Earth] check to convince someone to cooperate with you or a Command [Earth] check to get someone to accept your authority calmly), you must choose and reroll two dice containing |successIcon| or |explosiveSuccessIcon|. After resolving the check, if you failed, you gain 1 Void point."
+        ]
+    },
+    "Whispers of Doom":{
+        "name":"Whispers of Doom",
+        "effects":[
+            "You are well-known, but not for the right reasons. Characters who do not know you personally always assume that those around you will perish or meet bad ends, even if you survive to spread your ill fortune further.",
+            "When you make a check to dispel someone’s false preconceptions (such as a Courtesy [Void] check to get someone to question their decision or a Command [Void] check to get someone to see the pointlessness of their position), you must choose and reroll two dice containing |successIcon| or |explosiveSuccessIcon|. After resolving the check, if you failed, you gain 1 Void point."
+        ]
+    },
+    "Whispers of Failure":{
+        "name":"Whispers of Failure",
+        "effects":[
+            "You are well-known, but not for the right reasons. Characters who do not know you personally always assume that you are incompetent, and they do not trust you with important tasks.",
+            "When you make a check to get others to follow your lead (such as a Command [Fire] check to lead a charge or a Performance [Fire] check to inspire others), you must choose and reroll two dice containing |successIcon| or |explosiveSuccessIcon|. After resolving the check, if you failed, you gain 1 Void point."
+        ]
+    },
+    "Whispers of Poverty":{
+        "name":"Whispers of Poverty",
+        "effects":[
+            "You are well-known, but not for the right reasons. Characters who do not know you personally always assume that you don’t have financial solvency and won’t be able to muster resources quickly.",
+            "When you make a check to acquire items quickly or make trade deals (such as a Command [Water] check to win over troops under your command with the promise of rewards or a Commerce [Water] check to secure a large supply of a commodity or service), you must choose and reroll two dice containing |successIcon| or |explosiveSuccessIcon|. After resolving the check, if you failed, you gain 1 Void point."
+        ]
+    },
+    "Whispers of Treachery":{
+        "name":"Whispers of Treachery",
+        "effects":[
+            "You are well-known, but not for the right reasons. Characters who do not know you personally always assume that you will plant poison in their tea or a knife in their back at the first opportunity.",
+            "When you make a check to get others to trust you (such as a Courtesy [Air] check to convince someone of your sincerity or a Skulduggery [Air] check to steal from someone who is aware of your presence), you must choose and reroll two dice containing |successIcon| or |explosiveSuccessIcon|. After resolving the check, if you failed, you gain 1 Void point."
+        ]
+    },
+    "Addiction":{
+        "name":"Addiction",
+        "effects":[
+            "Choose an addictive substance or experience; deprivation from this substance or experience for more than three days causes shakes, chills, distraction, or even more violent physical symptoms that become increasingly difficult to conceal.",
+            "After performing a check to resist the substance or experience (such as a Fitness [Earth] check to suppress signs of your addiction during long absences of the substance (or experience) or a Meditation [Earth] check to resist pursuing the experience or substance), you receive 3 strife. If this is the first time this has occurred this scene, gain 1 Void point."
+        ]
+    },
+    "Battle Trauma":{
+        "name":"Battle Trauma",
+        "effects":[
+            "At the start of a duel, skirmish, or mass battle, your hands shake, your body tenses up, or your mind might even lock down. You can act normally, but your unsettled state is obvious to everyone around you, and others may try to exploit it.",
+            "After performing a check related to battle (such as a Martial Arts [Melee] [Fire] check to strike down a foe or a Tactics [Fire] check to generate initiative), you receive 3 strife. (Your GM can choose not to inflict this strife after the you have taken a few turns and thematically overcome your trauma.) If this is the first time this has occurred this scene, gain 1 Void point."
+        ]
+    },
+    "Cynicism":{
+        "name":"Cynicism",
+        "effects":[
+            "When faced with a truly novel or unconventional idea, you always look for ways it can fail, and others must persuade you that it could work before you will try it (even if it is your idea).",
+            "After performing a check to think unconventionally (such as a Performance [Fire] check to improvise during a performance or a Tactics [Fire] check to develop a new strategy on the fly), you receive 3 strife. If this is the first time this has occurred this scene, gain 1 Void point."
+        ]
+    },
+    "Dark Secret":{
+        "name":"Dark Secret",
+        "effects":[
+            "You have a dark secret that, if exposed, could bring ruin upon your house and disgrace your ancestors and descendants alike. If the details of this secret become public, your glory value decreases dramatically, as if you had lost staked glory (by 10 to 20). Depending on the secret, your status value might also decrease considerably (by 5 to 10), as if you had lost staked status.",
+            "After performing a check to assert your will over yourself or others (such as a Command [Void] check to order troops to fight to the bitter end or a Meditation [Void] check to find inner peace), you receive 3 strife. If this is the first time this has occurred this scene, gain 1 Void point."
+        ]
+    },
+    "Delusions of Grandeur":{
+        "name":"Delusions of Grandeur",
+        "effects":[
+            "You believe yourself destined for greatness, and nothing will dissuade you from your fixation upon this goal. When you are presented with a chance to advance your glory, you must attempt to pursue it.",
+            "After performing a check that requires facing your humble place in an uncaring universe (such as a Labor [Void] check to eke out a living in the fields or a Meditation [Void] check to contemplate your place in the cosmos), you receive 3 strife. If this is the first time this has occurred this scene, gain 1 Void point."
+        ]
+    },
+    "Fear of Death":{
+        "name":"Fear of Death",
+        "effects":[
+            "You cannot voluntarily choose to die or sacrifice your life (including committing seppuku when honor demands it), and if there is a chance you could live, you must always pursue it.",
+            "After performing a check to risk your life or accept your mortality (such as a Meditation [Earth] check to find inner tranquility before battle or a Tactics [Earth] check to hold a position against long odds), you receive 3 strife. If this is the first time t"
+        ]
+    },
+    "Ferocity":{
+        "name":"Ferocity",
+        "effects":[
+            "When you strike, you have trouble holding back your power, and you tend to lash out even when a subtler approach would be more appropriate. When you defeat a minion NPC, the minion is always killed, even if you would prefer to incapacitate them.",
+            "After performing a check to intentionally hold back or apply force subtly (such as a Games [Air] check to manipulate your opponent or a Martial Arts [Melee] [Air] check to strike a precise blow), you receive 3 strife. If this is the first time this has occurred this scene, gain 1 Void point."
+        ]
+    },
+    "Impatience":{
+        "name":"Impatience",
+        "effects":[
+            "You find it difficult to repress yourself, and when you are forced to wait, it causes you palpable discomfort. If given the choice between seizing an opportunity and waiting for a better moment, you strive to seize the opportunity despite risks that might be mitigated if you act later.",
+            "After performing a check to strategically weigh your options (such as a Government [Earth] check to think of a historical anecdote related to your situation or a Tactics [Earth] check to identify the right moment to strike), you receive 3 strife. If this is the first time this has occurred this scene, gain 1 Void point."
+        ]
+    },
+    "Intolerance":{
+        "name":"Intolerance",
+        "effects":[
+            "A particular hate festers within you for a group of people (or even supernatural beings), and it overwhelms your better judgment when you are faced with members or representatives of this group. Choose one group of people or supernatural beings to be your hated enemies. When you are in the presence of these beings (and even when they are mentioned), your enmity is evident to all who observe you.",
+            "After performing a check to interact with a member of the chosen group (such as a Commerce [Water] check to bargain with someone from a family that once wronged your own or a Composition [Water] check to translate from the language of a group of foreigners you dislike due to a battle you fought against their people), you receive 3 strife. If this is the first time this has occurred this scene, gain 1 Void point."
+        ]
+    },
+    "Irrepressible Flirtation":{
+        "name":"Irrepressible Flirtation",
+        "effects":[
+            "You find it difficult to pass up the chance to flirt with people you find attractive, and when someone you find attractive flirts with you, you cannot help but return their advances with your own flirtation. Your interest is obvious to all onlookers.",
+            "After performing a check to interact with (or ignore) someone you are interested in without exceeding propriety (such as a Courtesy [Earth] check to make appropriate small talk or a Sentiment [Earth] check to know how to tread cautiously in a social scene), you receive 3 strife. If this is the first time this has occurred this scene, gain 1 Void point."
+        ]
+    },
+    "Jealousy":{
+        "name":"Jealousy",
+        "effects":[
+            "You cannot voluntarily pass up an opportunity to one-up a rival or demonstrate your superiority over someone in the eyes of others.",
+            "After performing a check to compete with someone to demonstrate your excellence (such as a Performance [Air] check to convince an audience of something before a rival can or a Smithing [Air] check to refine a weapon to perfection before presenting it as a gift to your lord), you receive 3 strife. If this is the first time this has occurred this scene, gain 1 Void point."
+        ]
+    },
+    "Materialism":{
+        "name":"Materialism",
+        "effects":[
+            "You are obsessed with physical possessions and objects, despite what the Tao of Shinsei says about such material earthly bonds. You cannot refuse gifts of rarity 3 or higher.",
+            "After performing a check to give up a physical object in your possession or other thing of value (such as a Government [Void] check to find a way to sacrifice a holding to gain a political advantage over a rival), you suffer 3 strife. If this is the first time this has occurred this scene, you gain 1 Void point."
+        ]
+    },
+    "Meekness":{
+        "name":"Meekness",
+        "effects":[
+            "You are extremely shy, and you struggle to stand up for yourself. You cannot interrupt people of higher status, and you find it very hard to assert yourself over anyone, including people of lower status.",
+            "After performing a check to stand out or get what you need (such as a Command [Fire] check to inspire troops under your command or a Government [Fire] check to assess your rights on a matter), you receive 3 strife. If this is the first time this has occurred this scene, gain 1 Void point."
+        ]
+    },
+    "Painful Honesty":{
+        "name":"Painful Honesty",
+        "effects":[
+            "You are tormented by internal conflict when you lie or allow a lie to pass. You cannot make claims you know to be false, although you can say technically truthful things that imply untruths, if politeness or circumstances demand it.",
+            "After you make a check to mislead someone else (such as a Courtesy [Air] check to falsely besmirch someone’s reputation or a Command [Air] check to manipulate an underling), you receive 3 strife. If this is the first time this has occurred this scene, gain 1 Void point."
+        ]
+    },
+    "Paranoia":{
+        "name":"Paranoia",
+        "effects":[
+            "In every shadow, you see assassins, and in every smile, you see a rival in pursuit of your undoing. This fear makes it very hard for you to rely upon others, and it might distract you from real threats. You cannot relax unless you have confirmed vital information (such as your current safety) for yourself.",
+            "After performing a check to identify danger in your environment (such as a Government [Water] check to know the political currents in a court or a Sentiment [Water] check to sense if someone’s intentions toward you are hostile), you receive 3 strife. If this is the first time this has occurred this scene, gain 1 Void point."
+        ]
+    },
+    "Perfectionism":{
+        "name":"Perfectionism",
+        "effects":[
+            "Anything short of perfection in your work is unacceptable to you, and you have been known to create works of beauty only to cast them aside over some perceived flaw. You cannot help but try to improve any work in which you identify a flaw, even if it means informing someone of higher status of an error they have made.",
+            "After performing a check in which you must interact with an imperfect or unfinished work (such as an Aesthetics [Water] check to improve an existing piece of art or a Composition [Water] check to translate a work without losing any of the nuance present in the original language), you receive 3 strife. If this is the first time this has occurred this scene, gain 1 Void point."
+        ]
+    },
+    "Phobia":{
+        "name":"Phobia",
+        "effects":[
+            "Choose something mundane. You have a debilitating fear of this thing. You cannot speak its name. In its presence, you cannot hide your fear, and you attempt to flee if at all possible.",
+            "After performing a check to deal with your phobia (such as a Courtesy [Water] check to talk pleasantly about the subject or a Survival [Water] check to identify it as the thing you fear), you receive 3 strife. If this is the first time this has occurred this scene, gain 1 Void point."
+        ]
+    },
+    "Softheartedness":{
+        "name":"Softheartedness",
+        "effects":[
+            "If given the choice to kill someone or show mercy, you always spare their life, even if it is not in your interest to let them live.",
+            "After performing a check that addresses or involves killing others or letting them die (such as a Government [Fire] check to estimate the burden a war would place on the common people or a Martial Arts [Ranged] [Fire] check to shoot to kill), you receive 3 strife. If this is the first time this has occurred this scene, gain 1 Void point."
+        ]
+    },
+    "Superstition":{
+        "name":"Superstition",
+        "effects":[
+            "When faced with signs of the supernatural, you become visibly agitated, and you attempt to leave the scene, appease the being or phenomenon in question, or acquire supernatural protection of some kind.",
+            "After performing a check to interact with or learn about a supernatural being or phenomenon (such as a Meditation [Void] check to perceive the presence of a supernatural being or a Theology [Void] check to know a supernatural being’s designs or desires), you receive 3 strife. If this is the first time this has occurred this scene, gain 1 Void point."
+        ]
+    }
+}

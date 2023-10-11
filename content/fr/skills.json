@@ -1,0 +1,906 @@
+{
+    "aesthetics":{
+        "name":"Esthétique",
+        "description":[
+            "Depuis la fondation de l’Empire, on attend des samouraïs qu’ils consacrent à l’art autant d’ambition qu’à leurs autres activités. L’appréciation et la compréhension de l’art font partie intégrante de l’entraînement d’un samouraï, à tel point que rester de marbre devant une œuvre est un véritable signe de barbarie, couvrant de honte l’observateur insensible. Même les clans à tendance martiale comprennent l’importance de l’art pour vider l’esprit du guerrier, et pour rappeler la beauté de la vie à celui qui est si souvent entouré par la mort.",
+            "La compétence Esthétique englobe toutes les formes d’art décoratif non utilitaire, comme le bonsaï (taille d’arbustes dans le but d’influencer leur croissance de façon artistique), l’ikebana (l’arrangement floral), l’origami, la peinture ou encore l’art paysager et l’arrangement de jardins de rocaille. Ces disciplines revêtent une importance remarquable dans les cours de Rokugan, et tout courtisan qui se respecte est censé en comprendre les principes de base, les techniques et la philosophie. Si l’on est capable d’analyser une œuvre d’art, on comprend mieux son créateur : cette connaissance peut se révéler extrêmement utile pour mener à bien des programmes politiques et des intrigues de cour."
+        ],
+        "uses":{
+            "earth":[
+                "Réparer un objet détérioré",
+                "Préserver la beauté d’une œuvre",
+                "Transporter un objet en toute sécurité"
+            ],
+            "water":[
+                "Modifier une œuvre existante",
+                "Retravailler ou remodeler intégralement un objet",
+                "Chercher l’inspiration pour de nouvelles œuvres"
+            ],
+            "fire":[
+                "Créer une œuvre d’art",
+                "Lancer des idées pour concevoir de futurs projets",
+                "Développer de nouvelles méthodes et des techniques de création inédites"
+            ],
+            "air":[
+                "Repérer un défaut sur une œuvre d’art et l’éliminer",
+                "Ajouter un détail pour améliorer un objet",
+                "Dissimuler un message subtil dans une œuvre"
+            ],
+            "void":[
+                "Découvrir le but d’une œuvre d’art",
+                "Déterminer si un objet présente des propriétés ou des fonctions surnaturelles et éveiller ses capacités latentes"
+            ]
+        }
+    },
+    "composition":{
+        "name":"Composition",
+        "description":[
+            "Presque tous les samouraïs savent lire et écrire, car ces compétences sont requises pour occuper un poste à responsabilités bureaucratique ou militaire. En vérité, si tous les nobles ne s’entraînent pas forcément à manier le verbe à la perfection, la littérature n’en est pas moins hautement appréciée à Rokugan. À la cour, les samouraïs sont supposés connaître par cœur des dizaines de poèmes classiques et être à même de saisir des allusions littéraires, sous peine de passer à côté des sous-entendus cruciaux d’une conversation. Les poètes de talent ne cessent jamais de composer, et chaque phrase qu’ils prononcent évoque de multiples sens.",
+            "Le haiku, l’art d’écrire des poèmes en trois lignes (5 syllabes à la première ligne, 7 à la deuxième ligne et 5 à la dernière), est l’une des formes de poésie les plus populaires à Rokugan. Les écrivains se servent des haikus pour décrire un instant fugace, comme le premier flocon de l’hiver ou un moment de tranquillité au bord d’un étang. Certains lui préfèrent d’autres formes de poésie, comme les longs poèmes égrenés les uns après les autres lors de compétitions d’écriture. D’autres encore sont friands de prose et rédigent des carnets de voyage, des essais philosophiques, voire des récits fantaisistes.",
+            "Certains individus sont capables de créer des compositions remarquables qui passionnent leurs lecteurs, mais aussi de comprendre les artifices littéraires et les allusions sur lesquels s’appuient les œuvres influentes. La Composition permet également de tracer des mots à l’encre de façon élégante, comme dans la discipline de la calligraphie dont l’esthétique inspire tant d’artistes à Rokugan."
+        ],
+        "uses":{
+            "earth":[
+                "Restaurer un texte ancien qui a vieilli ou s’est décoloré au soleil",
+                "Annoter une œuvre compliquée pour en faciliter la compréhension",
+                "Transcrire un texte sans erreur"
+            ],
+            "water":[
+                "Traduire un texte depuis une autre langue",
+                "Adapter une œuvre en empruntant un moyen d’expression différent",
+                "Utiliser une citation ancienne dans un nouveau contexte qui lui prête un sens inédit",
+                "Combiner des éléments visuels et textuels"
+            ],
+            "fire":[
+                "Rédiger le premier jet d’un texte",
+                "Compléter un écrit dont il manque des passages",
+                "Lancer des idées pour concevoir de nouveaux projets d’écriture"
+            ],
+            "air":[
+                "Corriger une œuvre",
+                "Écrémer un texte pour en retirer les fioritures et le rendre plus clair et facile à lire",
+                "Ajouter une allusion ou une référence nuancée",
+                "Introduire des sous-entendus et un sens caché dans un texte"
+            ],
+            "void":[
+                "Comprendre les intentions qui sous-tendent une œuvre",
+                "Déterminer si un texte présente des propriétés surnaturelles",
+                "En apprendre plus sur soi-même par la lecture"
+            ]
+        }
+    },
+    "design":{
+        "name":"Stylisme",
+        "description":[
+            "Nul ne peut négliger son apparence. À la cour, on dit souvent que l’aspect physique reflète la beauté de l’âme ; à l’inverse, celui dont l’âme est empoisonnée affiche forcément des signes extérieurs de corruption. Malgré les avertissements avisés de Shinsei et d’autres sages, il semblerait que l’on considère encore trop souvent un samouraï qualifié mais à l’apparence négligée comme inférieur à un individu bien habillé mais à peine compétent.",
+            "La création de vêtements qui seront portés en temps de paix et lors d’occasions formelles relève du Stylisme. Il faut savoir que le port d’armes et d’armures n’est pas opportun dans toutes les situations de la vie d’un samouraï, même si certains individus s’en plaignent. Le samouraï ne doit donc pas pas négliger le soin apporté au choix des vêtements qu’il porte en dehors des champs de bataille. Les plus belles étoffes et les ornements les plus exquis constituent les armes et l’armure des courtisans : leur vie dépend de ce qu’ils choisissent de porter. À travers leur apparence, ils envoient de subtils messages à leur entourage et s’épargnent l’humiliation face à leurs ennemis."
+        ],
+        "uses":{
+            "earth":[
+                "Recoudre une déchirure dans un vêtement",
+                "Ranger un vêtement de manière appropriée pour éviter qu’il ne se détériore",
+                "Remplacer des éléments perdus d’un vêtement"
+            ],
+            "water":[
+                "Modifier un vêtement pour qu’il assure une nouvelle fonction",
+                "Ajouter un élément à une tenue pour l’adapter à de nouvelles circonstances",
+                "Recycler un vieux vêtement et récupérer les matières premières pour un nouveau projet"
+            ],
+            "fire":[
+                "Coudre un nouveau vêtement",
+                "Inventer une mode",
+                "Fabriquer un accessoire",
+                "Avancer des conjectures sur les prochaines tendances vestimentaires"
+            ],
+            "air":[
+                "Ajouter des ornements à un vêtement",
+                "Choisir une tenue dans le but de transmettre un message particulier",
+                "Ajouter un filigrane à un bijou pour souligner sa beauté"
+            ],
+            "void":[
+                "Comprendre la véritable raison d’être d’un vêtement et pourquoi il a été fabriqué",
+                "Déterminer si un vêtement ou un accessoire présente des propriétés ou des fonctions surnaturelles et en éveiller les capacités latentes"
+            ]
+        }
+    },
+    "smithing":{
+        "name":"Forge",
+        "description":[
+            "Les samouraïs sont des guerriers, et leur art est influencé par la guerre. Forge est la compétence requise pour fabriquer des armes et des armures, qu’il s’agisse d’articles d’apparat ou destinés au champ de bataille. La plupart des samouraïs se lancent au combat munis d’armes et armures si majestueuses qu’elles peuvent être considérées comme des œuvres d’art.",
+            "Les armes et les armures les plus sophistiquées (le daishō, en particulier) sont prévues pour concilier l’esthétique et l’usage pratique, car elles seront portées pendant plusieurs siècles. Elles doivent refléter l’influence et la richesse de la famille qui les détient, dans la mesure où le sabre symbolise l’expression de l’âme du samouraï. Les familles dirigeantes possèdent des armes vieilles de plusieurs siècles qui, exposées en évidence, offrent un témoignage vivace de l’histoire familiale. Les Clans du Phénix et de la Grue sont admirés pour la beauté de leur travail, tandis que les lames du Clan du Crabe sont reconnues pour leur solidité et leur efficacité. Les quelques rares créations élaborées par les forgerons Kakita sont considérées comme des références absolues."
+        ],
+        "uses":{
+            "earth":[
+                "Réparer une arme ou une armure détériorée",
+                "La nettoyer ou l’entretenir",
+                "La traiter pour prévenir la rouille et la corrosion"
+            ],
+            "water":[
+                "Améliorer une arme ou une armure",
+                "Transformer un objet du quotidien en arme",
+                "Ajuster une arme pour son nouveau porteur",
+                "Fondre un sabre détérioré pour forger une nouvelle lame"
+            ],
+            "fire":[
+                "Forger une lame",
+                "Fabriquer une armure",
+                "Inventer une arme ou une protection inédite",
+                "Imaginer des projets d’armes ou des technologies de protection jamais vus"
+            ],
+            "air":[
+                "Polir une lame pour en affiner le tranchant",
+                "Améliorer la maniabilité d’une lance",
+                "Ajouter des ornements à une naginata pour souligner les subtils motifs en forme de vague présents dans l’acier"
+            ],
+            "void":[
+                "Comprendre la véritable raison d’être d’une arme ou d’une armure et pourquoi elle a été forgée",
+                "Déterminer si une arme ou une armure présente des propriétés ou des fonctions surnaturelles",
+                "Éveiller les capacités latentes d’un objet forgé"
+            ]
+        }
+    },
+    "command":{
+        "name":"Commandement",
+        "description":[
+            "Être capable de parler avec autorité est un impératif pour le courtisan dans l’exercice de ses fonctions (pour mener ses suivants lors de cérémonies compliquées, par exemple), comme pour le bushi, qui guide ses soldats au fil des batailles. Des vies sont en jeu, et un simple mot peut mener à la victoire ou précipiter un désastre. Lorsque le chaos émerge, il est du devoir de ceux qui détiennent le pouvoir de restaurer l’ordre, car c’est sur leurs épaules que repose la responsabilité des opérations.",
+            "La compétence Commandement est utilisée pour imposer l’ordre, que ce soit à la cour ou sur le champ de bataille. Elle intervient généralement vis-à-vis des subordonnés ou dans le cadre d’une hiérarchie, car elle consiste à dicter sa conduite à l’interlocuteur (qui est censé obtem- pérer dans la plupart des cas)."
+        ],
+        "uses":{
+            "earth":[
+                "Réprimander un groupe de soldats qui négligent visiblement leur devoir",
+                "Ramener l’ordre sur un champ de bataille chaotique",
+                "Attirer l’attention d’un personnage sur les conséquences de ses actes afin de l’intimider"
+            ],
+            "water":[
+                "Entretenir la loyauté des troupes sous votre commandement",
+                "Motiver les troupes en leur promettant une récompense",
+                "Interrompre les querelles qui font rage dans une unité constituée de membres très différents",
+                "Convaincre quelqu’un de ne pas vous laisser tomber"
+            ],
+            "fire":[
+                "Restaurer le moral des troupes exténuées",
+                "Désamorcer de vieilles rancœurs",
+                "Convaincre les autres de vous suivre malgré un danger manifeste",
+                "Intimider quelqu’un afin de lui inspirer de la crainte"
+            ],
+            "air":[
+                "Assigner des missions sans préciser les dangers encourus",
+                "Induire en erreur vos unités pour semer la confusion chez l’ennemi",
+                "Communiquer avec vos troupes par le biais de messages codés"
+            ],
+            "void":[
+                "Convaincre des troupes embourbées dans un conflit d’en voir l’absurdité",
+                "Persuader les soldats ennemis que leur cause n’est pas légitime",
+                "Calmer un individu en état de choc ou en plein accès de rage lors d’une bataille"
+            ]
+        }
+    },
+    "courtesy":{
+        "name":"Courtoisie",
+        "description":[
+            "La compétence sociale la plus importante dans les hautes sphères du pouvoir à Rokugan est la Courtoisie : elle symbolise la capacité d’influencer l’opinion de l’interlocuteur, de le persuader d’agir d’une façon particulière, de damer le pion à ses adversaires, d’avoir le dernier mot lors d’une dispute, de diriger une conversation dans la direction souhaitée et de railler son interlocuteur en toute subtilité, sans jamais l’offenser ouvertement ni enfreindre les règles complexes de l’étiquette.",
+            "Dans le monde impitoyable de la politique de cour, la politesse est une arme létale de l’arsenal du courtisan. Amener quelqu’un à perdre son sang-froid peut détruire sa réputation et en faire un ennemi juré. À l’inverse, rediriger la colère d’un individu sur soi-même ou prendre la responsabilité d’une erreur peut rendre quelqu’un redevable envers vous et générer une alliance. La Courtoisie est également de rigueur lorsqu’on souhaite influencer la perception d’un sujet sensible, même s’il faut s’éloigner de la vérité pour cela."
+        ],
+        "uses":{
+            "earth":[
+                "Convaincre une personne d’entendre raison plutôt que de se laisser emporter par les sentiments",
+                "Rappeler ses devoirs à une personne",
+                "Enjoindre une personne à patienter plutôt qu’à agir de façon inconsidérée et en subir les conséquences"
+            ],
+            "water":[
+                "Amener quelqu’un à vous apprécier ou à vous faire confiance",
+                "Provoquer du désir pour une personne ou de la convoitise pour un objet",
+                "Influencer les envies d’une personne",
+                "Vous frayer un chemin à travers la bureaucratie complexe de la cour grâce à une attitude affable et sociable"
+            ],
+            "fire":[
+                "Persuader une personne de se laisser guider par ses émotions plutôt que par la raison",
+                "Faire ressurgir les désirs d’autrui",
+                "Attirer l’attention sur vous",
+                "Enjoindre une personne à ignorer les risques qu’elle encourt",
+                "Insulter quelqu’un sans vergogne"
+            ],
+            "air":[
+                "Confondre quelqu’un à l’aide de fausses informations ou de renseignements incomplets",
+                "Détourner vers autrui l’attention que l’on vous porte",
+                "Répandre une rumeur à propos d’un individu",
+                "Amener quelqu’un à croire qu’une idée vient de lui",
+                "Insulter quelqu’un de façon aussi subtile qu’outrageuse"
+            ],
+            "void":[
+                "Remettre en question les convictions les mieux ancrées d’une personne à l’aide de paroles soigneusement choisies",
+                "Enjoindre quelqu’un à se recentrer sur ce qu’il est vraiment pour lutter contre la peur, le désespoir, la rage ou une influence surnaturelle"
+            ]
+        }
+    },
+    "games":{
+        "name":"Jeux",
+        "description":[
+            "Les jeux représentent un outil non négligeable à la cour : ils servent de soupape de sécurité aux rivalités qui couvent dans les hautes sphères du pouvoir, mais permettent aussi d’installer et de développer des relations entre des individus de rangs parfois très différents.",
+            "Un nouvel arrivant à la cour peut se distinguer et accéder à des personnes de rang largement supérieur en faisant preuve d’une grande adresse dans la pratique des jeux. Bien entendu, il serait naïf d’oublier que les jeux ne sont jamais qu’un outil pour parvenir à une fin dans l’univers insaisissable des politiques de cour.",
+            "A Rokugan, les jeux sont aussi différents que les clans, mais le plus largement apprécié est sans aucun doute le go, que l’on pratique à l’aide de petits galets noirs et blancs sur un plateau de bois. Du modeste paysan jusqu’à l’Empereur, des plus jeunes jusqu’aux aînés et des bushi jusqu’aux moines, le go fait partie intégrante de la vie à Rokugan. Les règles sont simples, mais il faut de nombreuses années de pratique pour en maîtriser les subtilités : ceux qui en sont capables sont toujours dignes de respect.",
+            "Parmi les autres jeux, on retrouve les vents et fortunes, un jeu de dés perçu par beaucoup de samourais comme un passe-temps caractéristique des classes inférieures, le sadane, une joute oratoire pratiquée par les courtisans, le karuta, un jeu de plis mâtiné d’images et de poésie, ainsi que le shōgi, un jeu de stratégie où s’affrontent des généraux, des régiments de cavalerie et les soldats assortis."
+        ],
+        "uses":{
+            "earth":[
+                "Jouer une partie sans fâcher votre adversaire",
+                "Jouer de façon circonspecte",
+                "Enseigner les bases d’un jeu",
+                "Perdre sans se faire battre à plate couture"
+            ],
+            "water":[
+                "Utiliser le jeu comme un vecteur pour susciter un certain sentiment à votre égard (ou envers une autre personne présente)",
+                "Jouer de manière décontractée",
+                "Amener un personnage à vous faire confiance au fur et à mesure de la partie"
+            ],
+            "fire":[
+                "Vous servir d’un jeu pour intimider ou fâcher votre adversaire",
+                "Jouer de façon agressive",
+                "Pousser votre adversaire à augmenter sa mise",
+                "Développer de nouvelles tactiques en cours de jeu"
+            ],
+            "air":[
+                "Mettre au jour les forces et les faiblesses de votre adversaire grâce au jeu",
+                "Tenter de tromper votre adversaire",
+                "Tricher",
+                "Perdre délibérément sans que l’adversaire s’aperçoive de la supercherie",
+                "Lancer de subtiles insinuations au travers de votre tactique de jeu"
+            ],
+            "void":[
+                "Ébranler un adversaire par le biais d’un jeu pour l’aider à y voir plus clair sur un certain sujet",
+                "Jouer avec sobriété et détachement",
+                "Laisser l’issue du jeu entre les mains de la chance"
+            ]
+        }
+    },
+    "performance":{
+        "name":"Représentations",
+        "description":[
+            "La compétence Représentations permet de divertir à l’aide de différentes formes d’art, depuis le chant jusqu’à la danse en passant par la narration de légendes. Certaines performances exceptionnelles permettent parfois de combler un fossé politique, d’influencer les spectateurs au point qu’ils se remettent entièrement en question, ou encore de lancer des modes artistiques ou politiques. On utilise aussi la compétence Représentations pour se faire passer pour quelqu’un d’autre... même si le déshonneur attend celui ou celle qui s’y fait prendre.",
+            "Les acteurs occupent une place bien curieuse à Rokugan. Les gens du commun qui pratiquent les arts de la scène sont traités avec mépris par les classes supérieures, et sont considérés comme indignes du statut des artisans et des fermiers. Chaque cour accueille pourtant son lot de musiciens, de danseurs et d’artistes qui sont autorisés à divertir la haute société malgré leurs origines modestes. Cette engeance de saltimbanques est tolérée, tant que la performance s’avère plaisante. En revanche, les samouraïs qui se prêtent à l’exercice sont salués par leurs pairs pour leur remarquable faconde ou leurs qualités de poète."
+        ],
+        "uses":{
+            "earth":[
+                "Transmettre une morale à l’auditoire",
+                "Détendre l’auditoire",
+                "Informer l’auditoire sur un sujet particulier",
+                "Apaiser les soucis de vos spectateurs"
+            ],
+            "water":[
+                "Vous attirer la sympathie de votre auditoire",
+                "Faire naître un désir chez vos spectateurs",
+                "Construire un rapport positif avec vos spectateurs"
+            ],
+            "fire":[
+                "Mener votre auditoire vers un état d’excitation",
+                "Piquer au vif votre auditoire de façon intentionnelle",
+                "Enjoindre votre auditoire à agir sur-le-champ"
+            ],
+            "air":[
+                "Offrir une performance extraordinairement convaincante",
+                "Mener votre auditoire vers une conclusion évidente sans la prononcer à voix haute",
+                "Imiter quelqu’un avec brio"
+            ],
+            "void":[
+                "Inviter vos spectateurs à réfléchir sur un aspect de leur vie",
+                "Calmer les effusions sentimentales de votre public (le chagrin ou la rage, par exemple)",
+                "Transmettre un message en dépit d’interférences surnaturelles"
+            ]
+        }
+    },
+    "culture":{
+        "name":"Culture",
+        "description":[
+            "À l’instar de nombreux pays, l’Empire d’Émeraude jouit d’une culture riche en cérémonies, festivals et autres pratiques sociales que les autochtones considèrent comme acquises et faisant partie de leur identité. Pour l’intéressé, la compétence Culture permet de centraliser et de partager la connaissance de ses traditions, même s’il se trouve loin de chez lui.",
+            "La Culture d’un personnage englobe les connaissances relatives à la géographie et aux coutumes de l’Empire d’Émeraude, à ses traditions, à ses familles, à ses pratiques et à ses modes. Ces connaissances incluent l’actualité, les événements historiques et les personnes d’influence, ainsi que les modes et les tendances qui régissent les cours, impériale comme de province.",
+            "Une telle connaissance peut sembler triviale, mais elle permet de savoir où rencontrer des personnes importantes dans un lieu inconnu, comment interagir sans peine avec les habitants de la région, et quels sujets brûlants il vaut mieux éviter d’aborder lors d’une conversation décontractée."
+        ],
+        "uses":{
+            "earth":[
+                "Retrouver les noms des membres les plus influents d’une cour",
+                "Être au courant des coutumes régionales",
+                "Se rappeler les caractéristiques géographiques d’une région"
+            ],
+            "water":[
+                "Reconnaître un samouraï à son symbole personnel ou grâce au mon de son clan ou de sa famille",
+                "Deviner la région d’origine d’un objet",
+                "Évaluer le statut d’un samouraï en fonction de son accoutrement",
+                "Identifier les cultures qui ont exercé une certaine influence sur un endroit",
+                "Repérer des motifs architecturaux familiers pour déterminer dans quel quartier d’une ville inconnue vous vous trouvez"
+            ],
+            "fire":[
+                "Deviner où une personne influente pourrait se rendre dans une ville peu familière",
+                "Imaginer le décorum qui convient à une situation sociale inhabituelle",
+                "Garder une longueur d’avance sur la mode de différentes régions"
+            ],
+            "air":[
+                "Détecter les restes d’un accent régional dans le discours d’un personnage",
+                "Repérer les légères imperfections d’un mon ou d’un sceau contrefait",
+                "Évaluer les différences de pratique dans une autre région"
+            ],
+            "void":[
+                "Identifier le rôle des traditions dans la société",
+                "Repérer les talents prometteurs au sein d’une cour",
+                "Déceler les aspects surnaturels d’une pratique culturelle"
+            ]
+        }
+    },
+    "government":{
+        "name":"Gouvernement",
+        "description":[
+            "Les daimyō des clans de samouraïs, qui dirigent les différentes provinces de l’Empire d’Émeraude au nom de l’Empereur, sont à la fois des seigneurs de guerre, des courtisans et des bureaucrates, qui doivent évoluer habilement dans chaque sphère de pouvoir pour maintenir leur autorité. Cela implique de comprendre en profondeur les rouages de la politique, d’avoir de solides bases en logistique et d’être familiarisé avec le système juridique strict et parfois nébuleux de Rokugan, qui accorde davantage de poids au statut des individus et aux convenances qu’aux témoignages et aux preuves. La plupart des daimyō s’entourent de conseillers dignes de confiance pour bénéficier de leur expertise dans certains domaines spécifiques."
+        ],
+        "uses":{
+            "earth":[
+                "Connaître la loi",
+                "Connaître la structure officielle du gouvernement",                
+                "Connaître les événements passés et la jurisprudence",
+                "Connaître l’histoire politique et les précédents juridiques dans leurs moindres détails",
+                "Être informé du travail des historiens et juristes d’antan afin de pouvoir les citer"
+            ],
+            "water":[
+                "Déterminer si un acte est illégal",
+                "Comprendre la structure tacite du pouvoir",
+                "Savoir à qui adresser une requête dans une administration",
+                "Repérer les astuces et les manœuvres bureaucratiques mises en œuvre par un adversaire"
+            ],
+            "fire":[
+                "comprendre les différentes façons dont la loi peut être appliquée dans un cas sans précédent",
+                "Monter un argument en faveur d’une application différente de la loi dans un cas particulier",
+                "Deviner les ramifications politiques de la montée au pouvoir de quelqu’un"
+            ],
+            "air":[
+                "Dénicher une contradiction ou une lacune dans un système ou dans une loi",
+                "Jauger les forces et les faiblesses d’un argument d’ordre légal",
+                "Étudier un système en profondeur pour savoir où appliquer une pression ciblée afin d’obtenir des résultats concrets"
+            ],
+            "void":[
+                "Déterminer la probabilité d’un verdict dans une affaire spécifique",
+                "Identifier le candidat le plus à même d’accéder à une position donnée",
+                "Connaître les chances de réussite d’un projet ou d’un stratagème"
+            ]
+        }
+    },
+    "medicine":{
+        "name":"Médecine",
+        "description":[
+            "Les guérisseurs de Rokugan, dont Dame Asako elle-même est le symbole, ont consacré leur vie à la compréhension des aspects mystiques du bien-être et de la maladie, s’attachant à restaurer l’équilibre naturel du corps et sa capacité à se soigner de lui-même grâce à l’acupuncture, à l’harmonie élémentaire et aux remèdes naturels. Tous ces aspects se retrouvent dans la compétence Médecine.",
+            "Les aspirants guérisseurs doivent tout d’abord comprendre le fonctionnement du corps humain, avant de savoir comment mettre en pratique ces connaissances pour diagnostiquer sans erreur les maladies et traiter correctement leurs patients. Bien sûr, certains personnages peu honorables préfèrent mettre à profit leurs connaissances médicales pour causer du tort plutôt que pour soigner, en modifiant les doses d’une substance active afin d’induire des effets délétères, voire létaux, ou en sélectionnant des plantes toxiques destinées à empoisonner un rival.",
+            "Plus concrète que la plupart des autres compétences savantes, la Médecine se rapporte à la connaissance du corps humain et de ses fonctions. La médecine s’exerce parfois sur le terrain et fonctionne donc, à ces occasions, comme une compétence artisanale pour prodiguer des soins ou concocter des remèdes. On peut utiliser n’importe quelle compétence avec les approches d’un autre groupe, et c’est particulièrement courant dans le cas de la médecine. Vous trouverez parmi les exemples ci-dessous quelques approches empruntées au groupe de compétences artisanales."
+        ],
+        "uses":{
+            "earth":[
+                "Étudier les remèdes et vous en souvenir",
+                "Fabriquer des bandages et du matériel médical (Restaurer)",
+                "Enrayer une hémorragie (Restaurer)",
+                "Soigner des blessures bénignes (Restaurer)"
+            ],
+            "water":[
+                "Reconnaître les plantes bénéfiques et dangereuses",
+                "Rassembler des ingrédients",
+                "Repérer les éventuelles substances dangereuses et les contaminants présents dans l’environnement",
+                "Concocter des remèdes (Adapter)",
+                "Soulager l’épuisement et la douleur (Adapter)",
+                "Accélérer la longue guérison d’une blessure grave ou d’une pathologie chronique (Adapter)"
+            ],
+            "fire":[
+                "Étudier de nouveaux remèdes et des traitements inédits",
+                "Soigner des affections inconnues",
+                "Expérimenter avec des ingrédients inconnus (Inventer)",
+                "Concocter des poisons (Inventer)",
+                "Revigorer un patient (Inventer)"
+            ],
+            "air":[
+                "Reconnaître des symptômes",
+                "Diagnostiquer des maladies et des affections",
+                "Effectuer des opérations chirurgicales sur le terrain ou dans un établissement de soins (Raffiner)",
+                "Administrer des médicaments et des poisons avec le dosage idéal pour obtenir l’effet attendu (Raffiner)"
+            ],
+            "void":[
+                "Détecter les affections spirituelles",
+                "Pratiquer la médecine sans le moindre ingrédient ou substance",
+                "Réaligner l’énergie d’une personne (s’Harmoniser)",
+                "Traiter les affections spirituelles (s’Harmoniser)"
+            ]
+        }
+    },
+    "sentiment":{
+        "name":"Sentiments",
+        "description":[
+            "La compétence Sentiments reflète les capacités d’un personnage à comprendre la psychologie et les émotions d’autrui. Elle est utile pour reconnaître des émotions comme l’hostilité ou la peur, pour montrer de l’empathie et pour anticiper le comportement des gens en fonction de leur état émotionnel. Elle permet également de détecter un mensonge et de percevoir les raisons qui l’ont motivé."
+        ],
+        "uses":{
+            "earth":[
+                "Repérer les différences dans le comportement d’un personnage par rapport à ses habitudes",
+                "Comprendre les peurs et les responsabilités de quelqu’un",
+                "Deviner comment mettre à l’aise votre interlocuteur"
+            ],
+            "water":[
+                "Discerner les sentiments de quelqu’un vis-à-vis d’un sujet (ainsi que leur caractère positif, négatif ou neutre)",
+                "Déterminer si les intentions de quelqu’un sont hostiles",
+                "Comprendre les désirs d’une personne",
+                "Deviner la meilleure façon de vous attirer l’approbation ou le soutien de quelqu’un"
+            ],
+            "fire":[
+                "Deviner si quelqu’un a omis de préciser des détails cruciaux ou a menti par omission",
+                "Repérer si un interlocuteur a oublié de préciser quelque chose d’important",
+                "Comprendre les convictions ou les idéaux d’autrui",
+                "Déterminer la meilleure façon d’exciter ou d’enrager quelqu’un"
+            ],
+            "air":[
+                "Comprendre que quelqu’un vous ment directement",
+                "Deviner les conséquences d’un choix ou d’une action sur les sentiments d’une personne",
+                "Déchiffrer la perception qu’une personne a d’elle-même et déceler ses points faibles",
+                "Déterminer comment amener quelqu’un à agir selon votre volonté"
+            ],
+            "void":[
+                "Percevoir les influences et les tentatives de persuasion d’origine surnaturelle où la présence d’un être de l’au-delà",
+                "S’ouvrir à vos propres émotions afin de mieux les comprendre",
+                "Déterminer si quelqu’un agit en contradiction avec ses désirs ou s’efforce de juguler ses émotions",
+                "Comprendre les sous-entendus des paroles d’autrui"
+            ]
+        }
+    },
+    "theology":{
+        "name":"Théologie",
+        "description":[
+            "La Théologie désigne la connaissance des philosophies, des doctrines et des pratiques religieuses. Ce n’est pas pour rien que l’on appelle Rokugan le Pays des Dix Mille Fortunes : de solides bases en Théologie ne permettent d’en connaître qu’une infime partie. Un personnage peut exploiter la Théologie pour se renseigner sur les kamis, les fortunes, ainsi que sur les puissances et êtres divins associés au shinséisme et à d’autres traditions religieuses. Il peut également s’en servir pour les prier et leur présenter ses requêtes. Un personnage versé en Théologie l’est aussi dans l’histoire des religions et les connaissances connexes telles que l’astronomie (pour l’étude des présages), la métaphysique et la science (assortie de considérations mystiques).",
+            "La Théologie est également la compétence utilisée dans la plupart des invocations, ces appels aux kamis dont les shugenja se servent pour bénéficier de stupéfiants pouvoirs élémentaires. Cependant, pour la plupart des personnages, la Théologie n’implique aucune démonstration spectaculaire : elle se rapporte davantage à la connaissance des doctrines et de l’histoire des diverses traditions spirituelles. Cette discipline inclut généralement la connaissance de rituels à portée philosophique et religieuse, ainsi que la communion avec les forces de l’univers à un niveau plus personnel. Il n’est pas donné à tout le monde de devenir shugenja, et les écoles de shugenja conservent jalousement leurs secrets. La plupart des prêtres de l’Empire d’Émeraude ne sont donc que d’humbles gardiens de la foi voués au service des kamis — qu’ils vénèrent comme il se doit —, des fonctionnaires responsables des pratiques religieuses et sociales au sein de leur communauté. Les moines, les courtisans et même les bushi étudient fréquemment la théologie pour diverses raisons personnelles et sociétales."
+        ],
+        "uses":{
+            "earth":[
+                "Connaître des informations sur les doctrines des traditions religieuses de l’Empire d’Émeraude",
+                "Être au fait des événements surnaturels qui sont survenus dans le passé",
+                "Réciter des textes sacrés par cœur",
+                "Vous inspirer du folklore pour trouver les faiblesses d’un être surnaturel",
+                "Communier avec les kamis de la Terre"
+            ],
+            "water":[
+                "Identifier les artefacts religieux et les phénomènes surnaturels",
+                "Deviner les pratiques spirituelles d’une personne en fonction de sa position sociale et de ses choix de vie",
+                "Étudier des textes sacrés pour en apprendre le sens",
+                "Communier avec les kamis de l’Eau"
+            ],
+            "fire":[
+                "Démasquer les forces sumaturelles à l’œuvre grâce à des indices indirects",
+                "Associer deux éléments irréconciliables d’une doctrine religieuse",
+                "Interpréter le sens d’un texte sacré de façon originale",
+                "Communier avec les kamis du Feu"
+            ],
+            "air":[
+                "Évaluer la force des convictions religieuses et spirituelles d’une personne et déterminer ses traditions",
+                "Trouver et démêler des nuances subtiles et des contradictions dans des textes sacrés",
+                "Remarquer les signes qui révèlent la présence d’une créature surnaturelle parmi les humains",
+                "Communier avec les kamis de l’Air"
+            ],
+            "void":[
+                "Vous adonner à la divination",
+                "Établir si une manifestation surnaturelle est une supercherie ou un événement authentique",
+                "Prédire le comportement des entités surnaturelles",
+                "Comprendre les ramifications philosophiques d’une décision",
+                "Communier avec les puissances fondamentales de l’univers"
+            ]
+        }
+    },
+    "fitness":{
+        "name":"Forme",
+        "description":[
+            "La compétence Forme reflète la capacité d’un samouraï à réaliser des prouesses de force et d’agilité. Elle permet de courir, de bondir, de soulever des objets lourds, de marcher sur de longues distances, de nager rapidement... En somme, elle regroupe tous les exploits physiques qui reposent sur un brusque déploiement de puissance et de précision, ou sur un effort intense. En outre, la compétence Forme englobe la capacité d’un personnage à survivre à des coups potentiellement mortels, à résister à la Souillure de l’Outremonde et à guérir des poisons et des maladies. Enfin, la Forme permet de résister à un assaut, de tenir une position ou d’encaisser des blessures sur le champ de bataille."
+        ],
+        "uses":{
+            "earth":[
+                "Vous mouvoir avec prudence",
+                "Pousser votre corps dans ses derniers retranchements sans risquer de séquelles",
+                "Marcher sur de longues distances",
+                "Lever des objets lourds pendant de longues périodes",
+                "Vous cacher sans faire le moindre mouvement",
+                "Encaisser des coups"
+            ],
+            "water":[
+                "Contourner les obstacles et vous frayer un chemin dans une foule sans ralentir",
+                "Vous glisser dans des espaces exigus",
+                "Effectuer des exercices pour récupérer d’une blessure",
+                "Perdre des poursuivants au milieu d’une foule",
+                "Accompagner les coups de l’adversaire"
+            ],
+            "fire":[
+                "Vous mouvoir sans tenir compte des obstacles",
+                "Bondir sur de longues distances",
+                "Pousser et soulever des objets lourds en un éclair",
+                "Briser des objets",
+                "Rattraper quelqu’un à la course",
+                "Faire face à une attaque avec la même force que l’adversaire"
+            ],
+            "air":[
+                "Vous déplacer en toute discrétion",
+                "Conserver votre équilibre",
+                "Traquer une proie à son insu",
+                "Tomber sans heurts et atterrir avec grâce",
+                "Échapper à un poursuivant",
+                "Faire en sorte que les coups reçus ne touchent le corps qu’à certains endroits"
+            ],
+            "void":[
+                "Agir en n’écoutant que votre instinct",
+                "Pousser votre corps au-delà de ses limites pour atteindre un but",
+                "Dépasser toutes les barrières physiques par la force de la volonté",
+                "Encaisser des coups directs"
+            ]
+        }
+    },
+    "martial arts [melee]":{
+        "name":"Arts Martiaux (corps à corps)",
+        "description":[
+            "Quelles que soient les autres disciplines pratiquées par les bushi, l’art du combat reste leur spécialité. Même les samouraïs rarement amenés à se rendre sur le terrain s’entraînent soigneusement aux arts martiaux dans une perspective de développement personnel. Tous, ou presque, reçoivent un entraînement pour manier une arme de corps à corps, même si certains préfèrent d’autres disciplines comme le tir à l’arc. Si la plupart des samourais considèrent le combat au sabre comme le plus noble des arts martiaux, de nombreuses écoles sont plus connues pour leur usage d’autres armes de corps à corps. Les samouraïs de Rokugan manient également de larges massues appelées tetsubo, des lances, des naginata et autres armes d’hast, ou encore des bâtons en fonction de leurs préférences et des techniques enseignées dans les écoles.",
+            "La compétence Arts martiaux (corps à corps) concerne le combat rapproché faisant intervenir des armes, en théorie comme en pratique."
+        ],
+        "uses":{
+            "earth":[
+                "Combattre sur la défensive",
+                "Parer prudemment",
+                "Épuiser l’adversaire",
+                "Pratiquer des techniques qui reposent sur l’endurance"
+            ],
+            "water":[
+                "Vous battre de manière réactive",
+                "Rediriger la force de l’adversaire",
+                "Amener l’adversaire à révéler sa stratégie",
+                "Pratiquer des techniques qui reposent sur la souplesse et la fluidité du mouvement"
+            ],
+            "fire":[
+                "Attaquer avec agressivité et de façon directe",
+                "Mener l’adversaire à bout de nerfs",
+                "Pratiquer des techniques qui reposent sur un déploiement rapide de vitesse et de puissance"
+            ],
+            "air":[
+                "Vous battre avec subtilité",
+                "Attaquer de façon indirecte",
+                "Utiliser des manœuvres plus efficaces que l’adversaire",
+                "Esquiver les attaques",
+                "Pratiquer des techniques reposant sur la grâce et l’élégance",
+                "Interpréter et comprendre les mouvements de l’adversaire"
+            ],
+            "void":[
+                "Vous battre à l’instinct ou au mépris de votre propre vie",
+                "Attaquer sans considération particulière",
+                "Privilégier l’esprit à la matière"
+            ]
+        }
+    },
+    "martial arts [ranged]":{
+        "name":"Arts Martiaux (distance)",
+        "description":[
+            "Tout guerrier qui arpente régulièrement le champ de bataille connaît bien l’importance de l’arc, et sait combien il serait risqué de le sous-estimer. Si les flèches décochées de loin rebondissent parfois sur les armures, et si rien ne remplace une arme de corps à corps lorsque le front se rapproche, il faut souligner l’efficacité stupéfiante d’une volée bien coordonnée. En effet, chaque blessé représente un individu de moins dans les rangs adverses, sans oublier les autres combattants qui partent évacuer ceux que les tirs ont touchés. La simple vue d’un maître archer est terrifiante, car il est capable de tuer ses ennemis à une distance considérable. Même les armes à distance plus modestes, comme la fronde ou les projectiles, peuvent se révéler utiles pour éclaircir les rangs adverses. À l’extrême inverse, le Clan du Crabe a élaboré des engins de siège variés, capables de repousser des démons imposants et d’autres horreurs surnaturelles sans que les combattants doivent descendre de la Grande Muraille Kaiu.",
+            "La compétence Arts martiaux (distance) désigne le combat à l’aide d’armes de jet ou à projectiles, en théorie comme en pratique."
+        ],
+        "uses":{
+            "earth":[
+                "Maintenir un périmètre de tir",
+                "Éliminer des cibles petit à petit",
+                "Tirer pour défendre une position",
+                "Entreposer correctement des armes de tir"
+            ],
+            "water":[
+                "Vous battre de manière réactive",
+                "Rediriger la force de l’adversaire",
+                "Amener l’adversaire à révéler sa stratégie",
+                "Tirer dans le but de créer des ouvertures afin de repositionner les troupes"
+            ],
+            "fire":[
+                "Attaquer dans le but de clairsemer les forces adverses",
+                "Tirer pour permettre aux alliés d’avancer",
+                "Tirer dans le but de terrifier l’ennemi"
+            ],
+            "air":[
+                "Tirer sans révéler votre position",
+                "Toucher la cible à des endroits spécifiques",
+                "Tirer pour ouvrir des failles dans les défenses adverses"
+            ],
+            "void":[
+                "Vous placer à découvert pour atteindre la cible",
+                "Vous en remettre aux forces de l’univers dans l’espoir qu’un tir atteigne sa cible"
+            ]
+        }
+    },
+    "martial arts [unarmed]":{
+        "name":"Arts Martiaux (mains nues)",
+        "description":[
+            "La plupart des samourais s’entraînent au combat à mains nues. C’est un aspect que l’on ne peut négliger dans de nombreux styles de combat armé, car en pratique, les combats avec et sans arme sont indissociables. En revanche, certaines écoles l’enseignent à l’exclusion de tout autre pour des raisons philosophiques ou pratiques. Les moines, par exemple, ne peuvent pas légalement manier le daishō, et acquièrent donc souvent des techniques avancées de combat à mains nues.",
+            "Comme pour les autres arts martiaux, certaines traditions fleurissent avant de s’étioler au fil des siècles ; lorsqu’on visite un monastère, on réalise bien souvent que les disciplines pratiquées par ses occupants sortent rarement de l’enceinte.",
+            "La compétence Arts martiaux (mains nues) consiste à utiliser le corps comme une arme, aussi bien en théorie qu’en pratique. Cette compétence inclut également certaines armes improvisées."
+        ],
+        "uses":{
+            "earth":[
+                "Combattre sur la défensive",
+                "Parer prudemment",
+                "Épuiser l’adversaire et pratiquer des techniques qui reposent sur l’endurance"
+            ],
+            "water":[
+                "Vous battre de manière réactive",
+                "Rediriger la force de l’adversaire",
+                "Amener l’adversaire à révéler sa stratégie",
+                "Pratiquer des techniques qui reposent sur la souplesse et la fluidité du mouvement"
+            ],
+            "fire":[
+                "Attaquer avec agressivité et de façon directe",
+                "Mener l’adversaire à bout de nerfs",
+                "Pratiquer des techniques qui reposent sur un déploiement de vitesse et de puissance"
+            ],
+            "air":[
+                "Vous battre avec subtilité",
+                "Attaquer de façon indirecte",
+                "Utiliser des manœuvres plus efficaces que l’adversaire",
+                "Esquiver les attaques",
+                "Pratiquer des techniques reposant sur la grâce et l’élégance"
+            ],
+            "void":[
+                "Vous battre à l’instinct ou au mépris de votre propre vie",
+                "Attaquer sans considération particulière",
+                "Privilégier l’esprit à la matière"
+            ]
+        }
+    },
+    "meditation":{
+        "name":"Méditation",
+        "description":[
+            "La vie d’un samouraï est jalonnée de tensions et de dilemmes. La Méditation aide le samouraï à faire abstraction de ses inquiétudes quant à l’avenir, à se détacher des occasions manquées par le passé et à ignorer le bouillonnement du présent pour trouver la paix en son for intérieur.",
+            "Les arts martiaux se définissent en termes de lutte et, pour bien des guerriers, il n’est de lutte plus noble que celle qu’on se livre à soi-même. La Méditation est la compétence qui permet au personnage de livrer de véritables batailles à l’intérieur de son esprit, d’apaiser ses émotions, de se reprendre après un choc, mais aussi de résister à la confusion et aux influences surnaturelles. La guerre fait partie intégrante de la vie des samouraïs, mais tout être humain qui s’y retrouve confronté doit lutter pour ne pas y perdre une partie de son âme ou succomber à une brutalité aveugle. La plupart des samouraïs s’entraînent à la Méditation pour préparer leur esprit aux horreurs du combat et pour s’ouvrir aux connaissances infinies du cosmos."
+        ],
+        "uses":{
+            "earth":[
+                "En appeler à la logique pour écarter vos sentiments",
+                "Réfléchir sur la nature de vos responsabilités",
+                "Garder la tête froide en dépit des problèmes et de la provocation",
+                "Résister à la tentation"
+            ],
+            "water":[
+                "Comprendre vos émotions et vos désirs",
+                "Réfléchir sur la nature de vos envies",
+                "Réconcilier vos objectifs et vos désirs",
+                "Ne pas céder à la colère"
+            ],
+            "fire":[
+                "Écouter vos émotions et rejeter une conclusion qui semblait pourtant inévitable",
+                "Maintenir votre concentration sur un sujet particulier",
+                "Garder le même état émotionnel pendant de longues périodes",
+                "Résister à la peur"
+            ],
+            "air":[
+                "Vous convaincre de la véracité d’une information",
+                "Repérer les faiblesses de vos points de vue et de vos idéologies",
+                "Réconcilier vos objectifs et vos idéaux",
+                "Résister au désespoir"
+            ],
+            "void":[
+                "Comprendre votre place dans l’univers",
+                "Interpréter le rôle assigné par le destin",
+                "Prendre conscience de ce que vous êtes prêt à sacrifier pour atteindre un objectif",
+                "Aperce-voir des bribes de votre propre avenir",
+                "Résister aux interférences surnaturelles d’ordre psychique"
+            ]
+        }
+    },
+    "tactics":{
+        "name":"Tactique",
+        "description":[
+            "La capacité à diriger ne repose pas que sur le charisme et la volonté : un samouraï qui s’engage sur le champ de bataille doit également être capable de prendre de sages décisions. On ne peut gagner une bataille sans sacrifier des vies humaines ; si chaque commandant est amene à perdre des soldats pour atteindre la victoire, cela ne signifie pas pour autant que leur vie n’a aucune valeur à ses yeux.",
+            "Les samouraïs apprennent de nombreuses disciplines mais la pratique de la guerre figure parmi les plus importantes. D’aucuns estiment que l’issue d’une bataille est déjà fixée avant que les soldats ne fassent le moindre pas, mais c’est aux chefs militaires, depuis les généraux jusqu’au simple sergent, qu’il revient de concrétiser une victoire. Depuis la tente du général jusqu’au cœur de la mêlée, la Tactique reflète la compréhension du fonctionnement et du rythme d’une bataille, mais aussi la capacite du personnage à respecter les ordres de son supérieur et à exploiter les occasions qui se présentent. Si la compétence Commandement permet de motiver les soldats, de restaurer le moral des troupes et de maintenir l’ordre, la Tactique, quant à elle, a pour but de diriger des troupes déjà obéissantes. Contrairement à la compétence Gouvernement dont dépendent la logistique et la préparation des batailles, la Tactique porte sur la capacité d’un personnage à réfléchir et à réagir au cœur de la bataille."
+        ],
+        "uses":{
+            "earth":[
+                "Résister à un assaut frontal",
+                "Maintenir une position à tout prix",
+                "Réduire les pertes lors d’une retraite",
+                "Superviser la construction d’engins de siège"
+            ],
+            "water":[
+                "Exécuter une riposte",
+                "Repositionner rapidement vos troupes après une attaque",
+                "Exploiter brillamment la topographie et le terrain",
+                "Déplacer et actionner des engins de siège"
+            ],
+            "fire":[
+                "Lancer un assaut frontal",
+                "Submerger l’ennemi",
+                "Briser le moral des troupes ennemies grâce à des tactiques visant à semer la terreur",
+                "Concevoir des engins de siège"
+            ],
+            "air":[
+                "Faire croire à l’ennemi que vos troupes se retirent",
+                "Encercler l’ennemi",
+                "Repérer des faiblesses dans les défenses adverses et des cibles idéales"
+            ],
+            "void":[
+                "Envoyer un commando suicide pour créer une ouverture stratégique",
+                "Prendre la tête d’une force armée sans révéler son identité à l’ennemi"
+            ]
+        }
+    },
+    "commerce":{
+        "name":"Commerce",
+        "description":[
+            "La compétence Commerce englobe l’achat et la vente de biens pour générer un profit, ainsi que toutes les activités qui y sont liées. Dans l’absolu, le commerce ne repose pas tant sur l’art de négocier pour obtenir un meilleur prix (après tout, il serait inconvenant d’offrir une maigre compensation pour un honnête travail), mais sur la capacité à jongler avec le marché pour échanger davantage de biens en optimisant le travail effectué. Pour mener toutes sortes d’affaires, un personnage doit jouir de quelques connaissances de base dans cette compétence au risque de voir sa fortune fondre comme neige au soleil.",
+            "La plupart des samouraïs considèrent l’argent comme une sorte de « mal nécessaire » pour le reste de la société : après tout, en ce qui les concerne, leur suzerain leur procure déjà les outils et les équipements dont ils ont besoin. A Rokugan, savoir jouer avec l’argent est une compétence que personne ne glorifie mais dont on ne peut se passer. Enfin, dans la mesure où les marchands ne créent rien de leurs propres mains, ils sont considérés par la plupart des habitants de Rokugan comme moins respectables que les paysans sur l’échelle sociale. Pour autant, dans de nombreuses villes, ils sont aussi puissants que les samouraïs, et bien plus aisés."
+        ],
+        "uses":{
+            "earth":[
+                "Équilibrer des comptes",
+                "Entreposer et entretenir des marchandises",
+                "Déplacer des biens en toute sécurité"
+            ],
+            "water":[
+                "Acheter des marchandises chez un grossiste",
+                "Dénicher une bonne affaire pour vous procurer des articles ou des services",
+                "Prendre le dessus lors d’une négociation",
+                "Obtenir un objet au meilleur prix"
+            ],
+            "fire":[
+                "Trouver des astuces pour distinguer vos produits ou vos services",
+                "Proposer des avantages originaux pour inciter les clients à l’achat",
+                "Inventer un nouveau produit ou service",
+                "Trouver un nouveau marché à desservir"
+            ],
+            "air":[
+                "Convaincre autrui que vos produits sont de la plus haute qualité ou au meilleur prix",
+                "Déterminer la valeur marchande d’un produit",
+                "Soutirer le plus d’argent possible à un client",
+                "Surveiller les progrès et les faiblesses potentielles de la concurrence"
+            ],
+            "void":[
+                "Réduire drastiquement vos dépenses",
+                "Tirer le meilleur parti des matières premières et les faire durer le plus longtemps possible",
+                "Prévoir les fluctuations de la valeur des produits"
+            ]
+        }
+    },
+    "labor":{
+        "name":"Travail manuel",
+        "description":[
+            "Shinsei tenait en haute estime les valeurs simples du travail manuel, et si l’opinion de la plupart des samouraïs (voire des paysans, si on leur demandait leurs avis) diffère de cette vision radieuse, nul ne peut nier que l’existence de la société doit bien reposer sur le dur labeur de quelqu’un. Travailler à la ferme, construire des bâtiments ou creuser de vulgaires fossés... voici quelques-unes des innombrables besognes dont les habitants de l’Empire doivent s’acquitter pour le bien de tous.",
+            "Les savoirs et les savoir-faire que regroupe la compétence Travail manuel représentent des domaines d’expertise complexes, dont l’étude est pourtant dépréciée par certains samouraïs. Il ne fait aucun doute que les fermiers en savent long sur le fonctionnement de leurs champs, et que les potiers et les forgerons font preuve d’un grand savoir-faire, même si cette maîtrise n’est pas reconnue à sa juste valeur par la classe dirigeante. Les gens qui travaillent de leurs mains savent mieux que quiconque mener à bien leurs tâches avec efficacité, et utiliser leurs outils avec brio."
+        ],
+        "uses":{
+            "earth":[
+                "Fabriquer des objets en grande quantité",
+                "Poser les fondations d’une construction",
+                "Entretenir des outils",
+                "Labourer des champs",
+                "Planter des semences",
+                "Récolter des plantations"
+            ],
+            "water":[
+                "Acquérir des outils et des objets",
+                "Négocier avec les collecteurs des impôts",
+                "Faire fermenter des céréales",
+                "Préparer des repas"
+            ],
+            "fire":[
+                "Développer des outils pour faciliter le travail",
+                "Ébaucher des plans et des concepts novateurs",
+                "Expérimenter de nouvelles méthodes",
+                "Inventer des recettes de cuisine"
+            ],
+            "air":[
+                "Organiser le travail d’autres personnes dans le cadre d’un projet",
+                "Dissimuler les défauts du projet de quelqu’un d’autre",
+                "Contrefaire un article en imitant un autre type d’objets",
+                "Faire semblant de travailler"
+            ],
+            "void":[
+                "Savoir comment dépenser le moins de ressources possible dans le cadre de votre travail",
+                "Tirer parti de l’environnement à votre avantage",
+                "Savoir quand il vaut mieux laisser un champ en jachère",
+                "Trouver l’endroit idéal pour construire"
+            ]
+        }
+    },
+    "seafaring":{
+        "name":"Navigation",
+        "description":[
+            "Même si la plupart des habitants de Rokugan n’ont jamais vu l’océan, celui-ci joue un rôle crucial. Une grande partie des biens couramment consommés à Rokugan, comme le sel, sont issus de la mer. En outre, malgré la politique peu hospitalière de Rokugan vis-à-vis des étrangers, de nom- breuses cités portuaires s’adonnent au commerce avec les gaijin, que ce soit clandestinement ou avec l’accord de l’Empire.",
+            "Les marins aux commandes d’un navire comprennent les subtilités de la navigation, des noeuds ou de la voilure, et s’acquittent efficacement de tâches sans nombre. Ils doivent saisir le rôle et l’importance de toutes ces besognes disparates au risque de se perdre en haute mer. La compétence Navigation englobe également la navigation sur les cours d’eau. Les fleuves constituent en général le chemin le plus rapide pour parcourir l’Empire, et les barges jouent un rôle important pour la plaisance comme pour le commerce. On transporte souvent le grain, le thé, le saké, le bois, les richesses minérales et toutes sortes de biens d’une ville à l’autre en passant par les voies fluviales — et parfois par la côte, quand des navires plus grands les emportent vers les ports majeurs. Un expert en Navigation peut permettre à une force armée d’arriver à temps pour la bataille, et c’est parfois de lui que dépend l’acheminement des vivres pour les soldats."
+        ],
+        "uses":{
+            "earth":[
+                "Entretenir des navires",
+                "Tenir des registres et des journaux de bord",
+                "Connaître l’histoire des itinéraires de navigation",
+                "Estimer combien de temps dureront les vivres",
+                "Filtrer le sel pour obtenir de l’eau potable"
+            ],
+            "water":[
+                "Vaviguer sur les océans",
+                "Repérer l’itinéraire le plus rapide",
+                "Déterminer la localisation d’un navire sur une étendue d’eau",
+                "Manoeuvrer un navire"
+            ],
+            "fire":[
+                "Construire des embarcations",
+                "Tracer des cartes",
+                "Emprunter de nouveaux itinéraires"
+            ],
+            "air":[
+                "Convaincre quelqu’un de louer votre bateau plutôt qu’un autre",
+                "Gérer une équipe de marins pendant la traversée",
+                "Filer le train à un autre navire sans vous faire remarquer",
+                "Échapper à un vaisseau engagé dans une poursuite",
+                "Repérer les indices du passage d’un autre vaisseau"
+            ],
+            "void":[
+                "Prévoir l’approche d’une tempête",
+                "Apaiser les kamis de l’océan et du vent en recourant à des traditions de marins"
+            ]
+        }
+    },
+    "skulduggery":{
+        "name":"Magouilles",
+        "description":[
+            "A Rokugan, le respect de la loi n’est pas absolu, en dépit des rudes conséquences qui guettent les renégats. Partout, des bandits et des individus dépossédés s’adonnent à des activités criminelles. Les brigands et les voleurs empruntent généralement cette voie par nécessité, car ils luttent pour leur survie, mais certains criminels ambitieux rencontrent un succès remarquable, créant de larges cartels et étendant leurs activités à de nombreuses cités. Le travail des espions relève également de Magouilles, puisque les artifices qu’ils emploient sont similaires à ceux des malfrats. Les tours de passe-passe, la furtivité, le déguisement, l’art de crocheter les serrures et de poser des pièges sont tout aussi importants dans l’arsenal des criminels et des maîtres-espions que la tromperie, la dissimulation et le détournement."
+        ],
+        "uses":{
+            "earth":[
+                "Sécuriser un lieu",
+                "Élaborer des verrous et mettre en place d’autres mesures de sécurité",
+                "Mémoriser des cartes et des codes",
+                "Répartir un butin dans le calme"
+            ],
+            "water":[
+                "Trouver un receleur à qui revendre des objets volés",
+                "Se déplacer librement dans une ville en évitant les forces de l’ordre",
+                "Déterminer le moyen le plus rapide de vous introduire dans un lieu protégé"
+            ],
+            "fire":[
+                "Générer des codes secrets",
+                "Élaborer de nouveaux outils utiles aux activités criminelles",
+                "Élaborer des plans complexes pour faire fi des mesures de sécurité",
+                "Crocheter une serrure inconnue"
+            ],
+            "air":[
+                "Faire les poches d’un individu",
+                "Prendre une cible en filature sans vous faire remarquer",
+                "Diriger un groupe de voleurs pour mener à bien un travail",
+                "Traquer quelqu’un à travers une cité",
+                "Deviner quel pot-de-vin permet de s’assurer la coopération d’un fonctionnaire corrompu"
+            ],
+            "void":[
+                "Effacer toute trace de votre présence",
+                "Vous fondre dans la foule",
+                "Apaiser les esprits et les autres êtres surnaturels susceptibles de punir les péchés que vous avez commis"
+            ]
+        }
+    },
+    "survival":{
+        "name":"Survie",
+        "description":[
+            "Depuis la chasse, la pêche et la cueillette, en passant par la prospection minière et jusqu’à la recherche de marchandises à vendre, cette compétence permet d’assurer la subsistance de nombreuses personnes à Rokugan. Les éclaireurs approfondissent leurs techniques de survie afin de trouver leur route dans la nature la plus sauvage et de dissimuler leurs traces, ou encore de couvrir de longues distances à pied ou à cheval en un temps record. Les oiseaux et les chiens de chasse, les montures et les bêtes de somme se révèlent extrêmement utiles pour améliorer les chances de survie d’un individu dans les zones et les climats les plus inhospitaliers, mais il faut savoir prendre soin de telles créatures et les entraîner.",
+            "Peu de samourais sont amenés à subsister par leurs propres moyens, même si certains clans et écoles encouragent leurs membres à apprendre quelques compétences de base pour survivre dans la nature, tout particulièrement s’ils gèrent un domaine éloigné des grandes villes."
+        ],
+        "uses":{
+            "earth":[
+                "Construire un abri",
+                "Entreposer de la nourriture",
+                "Calmer des animaux"
+            ],
+            "water":[
+                "Rechercher de la nourriture et de l’eau potable",
+                "Pêcher",
+                "S’attirer la sympathie des animaux",
+                "Cuisiner avec des ingrédients familiers"
+            ],
+            "fire":[
+                "Trouver comment préparer des ingrédients peu familiers",
+                "Fabriquer des armes improvisées",
+                "Talonner une monture ou enjoindre un animal à se mouvoir plus vite"
+            ],
+            "air":[
+                "Fabriquer et utiliser des pièges",
+                "Traquer des gens et des animaux dans la nature",
+                "Dresser des animaux pour qu’ils apprennent à effectuer des tâches (souvent en utilisant de la nourriture comme récompense)"
+            ],
+            "void":[
+                "Rationner la nourriture et l’eau",
+                "Pressentir l’arrivée imminente de catastrophes naturelles",
+                "Apaiser les kamis des montagnes et des bois"
+            ]
+        }
+    }
+}

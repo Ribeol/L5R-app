@@ -170,7 +170,12 @@
             ]
         },
         "Q8":{
-            "question":"Que pense votre personnage du bushido?"
+            "question":"Que pense votre personnage du bushido?",
+            "instruction":"Choisissez l'une des options suivantes :",
+            "options":[
+                "Si votre personnage croit fermement en une vie guidée par une interprétation orthodoxe du bushido, gagnez 10 points d'honneur.",
+                "S'il s'écarte en partie ou totalement du comportement honorable habituel d'un samouraï, augmentez de 1 le rang d'une des compétences suivantes :"
+            ]
         },
         "Q9":{
             "question":"Quelle est à ce jour la plus belle réussite de votre personnage ?",

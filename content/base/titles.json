@@ -1,8 +1,0 @@
-{
-    "Emerald Magistrate":{
-        "statusAward":[null,15,40],
-        "curriculum":[
-            {"list":["SG: trade","S: fitness","S: martial arts [melee]","S: martial arts [ranged]","S: martial arts [unarmed]","S: performance","TG: kata 2","T: Open Hand Style","T: Shallow Waters"],"exp":30}
-        ]
-    }
-}

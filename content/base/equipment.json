@@ -10,7 +10,9 @@
         "deadliness":3,
         "grips":{
             "1-hand":null,
-            "2-hand":["damage",2]
+            "2-hand":{
+                "damage":2
+            }
         },
         "qualityRefs":[
             "mundane"
@@ -49,7 +51,7 @@
         ],
         "range":1,
         "damage":3,
-        "deadliness":5,
+        "deadliness":6,
         "grips":{
             "1-hand":null
         },
@@ -89,7 +91,10 @@
         "deadliness":4,
         "grips":{
             "1-hand":null,
-            "2-hand":["deadliness",1]
+            "2-hand":{
+                "deadliness":1,
+                "qualityRefs":"razor-edged"
+            }
         },
         "rarity":7,
         "price":{
@@ -107,7 +112,9 @@
         "deadliness":5,
         "grips":{
             "1-hand":null,
-            "2-hand":["deadliness",2]
+            "2-hand":{
+                "deadliness":2
+            }
         },
         "qualityRefs":[
             "ceremonial",
@@ -171,7 +178,9 @@
         "deadliness":5,
         "grips":{
             "1-hand":null,
-            "2-hand":["deadliness",2]
+            "2-hand":{
+                "deadliness":2
+            }
         },
         "qualityRefs":[
             "ceremonial",
@@ -214,7 +223,9 @@
         "deadliness":4,
         "grips":{
             "1-hand":null,
-            "2-hand":["deadliness",2]
+            "2-hand":{
+                "deadliness":2
+            }
         },
         "qualityRefs":[
             "mundane"
@@ -255,7 +266,9 @@
         "deadliness":2,
         "grips":{
             "1-hand":null,
-            "2-hand":["damage",1]
+            "2-hand":{
+                "damage":1
+            }
         },
         "qualityRefs":[
             "mundane"
@@ -276,7 +289,9 @@
         "deadliness":2,
         "grips":{
             "1-hand":null,
-            "2-hand":["damage",2]
+            "2-hand":{
+                "damage":2
+            }
         },
         "qualityRefs":[
             "mundane"
@@ -382,7 +397,9 @@
         "deadliness":4,
         "grips":{
             "1-hand":null,
-            "2-hand":["deadliness",2]
+            "2-hand":{
+                "deadliness":2
+            }
         },
         "qualityRefs":[
             "concealable",
@@ -405,7 +422,9 @@
         "deadliness":2,
         "grips":{
             "1-hand":null,
-            "2-hand":"snaring"
+            "2-hand":{
+                "qualityRefs":"snaring"
+            }
         },
         "rarity":6,
         "price":{
@@ -443,8 +462,12 @@
         "damage":4,
         "deadliness":6,
         "grips":{
-            "1-hand":["range",1],
-            "2-hand":["damage",2]
+            "1-hand":{
+                "range":1
+            },
+            "2-hand":{
+                "damage":2
+            }
         },
         "qualityRefs":[
             "cumbersome",
@@ -689,7 +712,9 @@
         "deadliness":3,
         "grips":{
             "1-hand":null,
-            "2-hand":["range",[2,3]]
+            "2-hand":{
+                "range":[2,3]
+            }
         },
         "qualityRefs":[
             "concealable",

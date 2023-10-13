@@ -1400,7 +1400,7 @@ class DisplayManager {
     // Create and return a clickable icon to consult content
     createConsultIcon(parentElementOrArray, refOrObj, contentGroup) {
 
-        const consultIcon =  displayManager.createTextElement(parentElementOrArray, "span", "🕮", ["alignCenter", "largeFontSize", "pointer"]);
+        const consultIcon =  displayManager.createTextElement(parentElementOrArray, "span", String.fromCharCode(dataManager.content.ui.customIcons.consultIcon), ["alignCenter", "largeFontSize", "pointer"]);
         consultIcon.onclick = () => displayManager.consultContent(consultIcon, refOrObj, contentGroup, null, true);
         return consultIcon;
     }
@@ -2461,7 +2461,7 @@ class DisplayManager {
                         }
                     }
 
-                    const consultIcon =  displayManager.createTextElement(selectLine, "span", "🕮", ["alignCenter", "largeFontSize", "pointer"]);
+                    const consultIcon =  displayManager.createTextElement(selectLine, "span", String.fromCharCode(dataManager.content.ui.customIcons.consultIcon), ["alignCenter", "largeFontSize", "pointer"]);
                     if (traitSelect.value !== "custom") {
                         consultIcon.onclick = () => displayManager.consultContent(consultIcon, traitSelect.value, "traits", null, true);
                         consultIcon.style.setProperty("visibility", "visible");
@@ -2518,7 +2518,7 @@ class DisplayManager {
                         }
                         advantageSelect.options.add(option);
                     }
-                    const advantageConsultIcon = displayManager.createTextElement(undefined, "span", "🕮", ["alignCenter", "largeFontSize", "pointer"]);
+                    const advantageConsultIcon = displayManager.createTextElement(undefined, "span", String.fromCharCode(dataManager.content.ui.customIcons.consultIcon), ["alignCenter", "largeFontSize", "pointer"]);
                     const customAdvantageContainer = displayManager.createContainer(undefined, "div", [["display", "none"], ["flex-direction", "column"], ["gap", "0.5em"]]);
                     
                     let disadvantageRefs = [];
@@ -2546,7 +2546,7 @@ class DisplayManager {
                         }
                         disadvantageSelect.options.add(option);
                     }
-                    const disadvantageConsultIcon = displayManager.createTextElement(undefined, "span", "🕮", ["alignCenter", "largeFontSize", "pointer"]);
+                    const disadvantageConsultIcon = displayManager.createTextElement(undefined, "span", String.fromCharCode(dataManager.content.ui.customIcons.consultIcon), ["alignCenter", "largeFontSize", "pointer"]);
                     const customDisadvantageContainer = displayManager.createContainer(undefined, "div", [["display", "none"], ["flex-direction", "column"], ["gap", "0.5em"]]);
 
                     const skillSelect = displayManager.createSelect(undefined, Object.keys(dataManager.content.skills), dataManager.content.skills, "name");
@@ -2921,7 +2921,7 @@ class DisplayManager {
                                 effectSelect.value = effectRef;
 
                                 const effectSelectLine = displayManager.createFlexLineContainer(effectContainer);
-                                const effectConsultIcon =  displayManager.createTextElement(effectSelectLine, "span", "🕮", ["alignCenter", "largeFontSize", "pointer"]);
+                                const effectConsultIcon =  displayManager.createTextElement(effectSelectLine, "span", String.fromCharCode(dataManager.content.ui.customIcons.consultIcon), ["alignCenter", "largeFontSize", "pointer"]);
                                 if ([3, 4, 5, 6, 7].includes(ancestorRollValue)) {
                                     effectConsultIcon.onclick = () => displayManager.consultContent(effectConsultIcon, effectSelect.value, "skills", null, true);
                                 }
@@ -2962,7 +2962,7 @@ class DisplayManager {
                                                 extraSelect.options.add(option);
                                             }                                        
                                         }
-                                        const extraConsultIcon =  displayManager.createTextElement(extraSelectLine, "span", "🕮", ["alignCenter", "largeFontSize", "pointer"]);
+                                        const extraConsultIcon =  displayManager.createTextElement(extraSelectLine, "span", String.fromCharCode(dataManager.content.ui.customIcons.consultIcon), ["alignCenter", "largeFontSize", "pointer"]);
                                         if (ancestorRollValue === 1) {
                                             extraConsultIcon.onclick = () => displayManager.consultContent(extraConsultIcon, extraSelect.value, "equipment", null, true);
                                         }else {
@@ -3040,7 +3040,7 @@ class DisplayManager {
                                 effectContainer.appendChild(effectSelect);
 
                                 const extraSelectLine = displayManager.createFlexLineContainer(effectContainer);
-                                const extraConsultIcon =  displayManager.createTextElement(extraSelectLine, "span", "🕮", ["alignCenter", "largeFontSize", "pointer"]);
+                                const extraConsultIcon =  displayManager.createTextElement(extraSelectLine, "span", String.fromCharCode(dataManager.content.ui.customIcons.consultIcon), ["alignCenter", "largeFontSize", "pointer"]);
                                 if (effectSelect.value === "change rings") {
                                     extraConsultIcon.style.setProperty("display", "none");
                                 }else {

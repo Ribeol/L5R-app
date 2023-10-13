@@ -169,9 +169,7 @@
             .alignCenter button {
                 padding-top: 0.25em;
             }
-            .alignCenter button.currentTab {
-                background-color: #eeeeee;
-            }
+            
             #navbar button {
                 flex-grow: 1;
                 min-height: 2em;
@@ -369,52 +367,13 @@
             .selectable.lastSelected {
                 background-color: var(--lastSelected);
             }
-            .approachGrid {
-                display: grid;
-                grid-template-columns: auto auto;
-                box-sizing: border-box;
-                width: 90%;
-                margin-left: 5%;
+
+            .ringBar button {
+                font-size: 1.25em;
                 padding-top: 0.25em;
-                padding-bottom: 0.25em;
-                padding-right: 1em;
-                border-left: 1px solid black;
-                border-right: 1px solid black;
-                border-bottom: 1px solid black;
-                border-bottom-left-radius: 25px;
-                border-bottom-right-radius: 25px;
-                overflow: hidden;
-                animation: skillExpand 0.3s;
-                animation-fill-mode: forwards;               
             }
-            /* ADD A SHRINKING ANIMATION? */
-            @keyframes skillExpand {
-                from {
-                    max-height: 0;
-                }
-                to {
-                    max-height: 200px;
-                }
-            }
-            .approachGrid >:first-child {
-                display: flex;
-                grid-row: span 5;
-                margin-right: 1em;
-                padding: 0.5em;
-                justify-content: center;
-                text-align: center;
-                align-items: center;
-                border-right: 1px solid black;
-            }            
-            .approachLine {
-                display: flex;
-                gap: 0.75em;
-                align-items: center;
-                min-height: 2em;
-                white-space: nowrap;
-            }
-            .approachLine:hover {
-                background-color: #dddddd;
+            .ringBar .currentTab {
+                border: 2px solid black;
             }
 
             .scrollingList .rank {

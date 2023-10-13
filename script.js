@@ -531,17 +531,22 @@ class DataManager {
     }
 
     // Get the cost in XP to learn or upgrade content
-    getUpgradeCost(content) {
+    getUpgradeCost(content, alreadyAcquired) {
 
         const ringCostPerRank = 3;
         const skillCostPerRank = 2;
         const defaultTechCost = 3;
 
+        let modifier = 1;
+        if (alreadyAcquired) {
+            modifier = 0;
+        }
+
         if (Object.values(dataManager.content.rings).includes(content)) {
-            return ringCostPerRank * (dataManager.current.ringPairMaps.all.get(content) + 1);
+            return ringCostPerRank * (dataManager.current.ringPairMaps.all.get(content) + modifier);
         }
         else if (Object.values(dataManager.content.skills).includes(content)) {
-            return skillCostPerRank * (dataManager.current.skillPairMaps.all.get(content) + 1);
+            return skillCostPerRank * (dataManager.current.skillPairMaps.all.get(content) + modifier);
         }
         else if(content.xpCost === undefined) {
             return defaultTechCost;
@@ -835,7 +840,7 @@ class DataManager {
                     
                     // If the upgrade is not free, calculate its XP cost and the associated institution progress
                     if (!F) {
-                        const cost = dataManager.getUpgradeCost(content);
+                        const cost = dataManager.getUpgradeCost(content, true);
                         dataManager.current.spentXp += cost;
                         if (isPartOfCurriculum || C) {
                             institutionProgress.get(institutionRef).progressXp += cost;
@@ -970,7 +975,6 @@ class DisplayManager {
         this.skills = {
             container: document.getElementById("skillList"),
             last: null, // li element
-            approachGrid: null // div element
         };
         this.techniques = {
             container: document.getElementById("techniqueList"),
@@ -1059,9 +1063,6 @@ class DisplayManager {
 
         for (const tabClass of tabClassArray) {
             displayManager[tabClass].container.innerHTML = "";
-            if (tabClass === "skills") {
-                displayManager.skills.approachGrid = null;
-            }
         }        
     }
 
@@ -2054,9 +2055,9 @@ class DisplayManager {
                         displayManager.createTextElement(honorLine, "span", dataManager.content.ui.honor + dataManager.content.ui.colon, ["bold"]);
                         displayManager.createTextElement(honorLine, "span", school.honor);
 
-                        const techGroupsLine = displayManager.createFlexLineContainer(schoolInfo, "p");
-                        displayManager.createTextElement(techGroupsLine, "span", dataManager.content.ui.characterCreation.Q3.techniquesAvailable + dataManager.content.ui.colon, ["bold"]);
-                        const techGroups = displayManager.createTextElement(techGroupsLine, "span");
+                        const techGroupsContainer = displayManager.createGridContainer(schoolInfo, "p", [["grid-auto-rows", "1.5em"]]);
+                        displayManager.createTextElement(techGroupsContainer, "span", dataManager.content.ui.characterCreation.Q3.techniquesAvailable + dataManager.content.ui.colon, ["bold"]);
+                        const techGroups = displayManager.createTextElement(techGroupsContainer, "span");
                         for (let i = 0; i < school.techniqueGroupRefs.length; i++) {
                             for (const object of dataManager.content.ui.techGroupFilter) {
                                 if (object.value === school.techniqueGroupRefs[i]) {
@@ -2145,8 +2146,9 @@ class DisplayManager {
                             }
                         }
                         
-                        const schoolAbilityLine = displayManager.createFlexLineContainer(schoolInfo, "p");
-                        displayManager.createTextElement(schoolAbilityLine, "span", dataManager.content.ui.techniqueGroupNames.schoolAbility + dataManager.content.ui.colon, ["bold"]);
+                        const schoolAbilityContainer = displayManager.createGridContainer(schoolInfo, "p", [["grid-auto-rows", "1.5em"]]);                        
+                        displayManager.createTextElement(schoolAbilityContainer, "span", dataManager.content.ui.techniqueGroupNames.schoolAbility + dataManager.content.ui.colon, ["bold"]);
+                        const schoolAbilityLine = displayManager.createFlexLineContainer(schoolAbilityContainer);
                         displayManager.createConsultIcon(schoolAbilityLine, school.initialAbility, "techniques");
                         displayManager.createTextElement(schoolAbilityLine, "span", school.initialAbility.name);
 
@@ -2177,6 +2179,7 @@ class DisplayManager {
                                             "any item of rarity 4 or lower"
                                         ];
                                         getEquipment(container, packContents, savedArray, equipmentIndex);
+                                        equipmentIndex += packContents.length;
                                     }
                                     else {
                                         const equipmentLine = displayManager.createFlexLineContainer(container);                                        
@@ -2261,14 +2264,13 @@ class DisplayManager {
                                         if (savedArray[radioIndex].chosenIndex === i) {
                                             radioButton.checked = true;
                                         }
-
                                         if (savedArray[radioIndex].displayed[i] === undefined) {
                                             savedArray[radioIndex].displayed[i] = [];
                                         }
                                         if (typeof choiceArray[i] !== "string" && typeof choiceArray[i][0] !== "string") {
                                             equipmentLine.style.setProperty("grid-row", `span ${choiceArray[i][0].length}`);
                                         }
-                                        getEquipment(displayManager.createGridContainer(equipmentLine, "div", [["grid-auto-rows", "1.5em"]]), [choiceArray[i]], savedArray[radioIndex].displayed[i], 0);
+                                        getEquipment(displayManager.createGridContainer(equipmentLine, "div", [["grid-auto-rows", "1.5em"]]), [choiceArray[i]], savedArray[radioIndex].displayed[i], radioIndex);
                                     }
                                 }
                             }
@@ -3770,9 +3772,9 @@ class DisplayManager {
             }
 
             function createRingButtons() {
-                const buttonContainer = displayManager.createFlexContainer(attributesAppendQueue, "div", [["align-center", "center"]]);
+                const buttonContainer = displayManager.createFlexContainer(attributesAppendQueue, "div", ["ringBar"]);
                 for (const buttonRingRef of dataManager.individualRingRefs) {
-                    const button = displayManager.createButton(buttonContainer, String.fromCharCode(customIcons[`${buttonRingRef}Icon`]), () => displayManager.consultContent(originElement, content, contentGroup, buttonRingRef, noCharacter, true), ["largeFontSize"]);
+                    const button = displayManager.createButton(buttonContainer, String.fromCharCode(customIcons[`${buttonRingRef}Icon`]), () => displayManager.consultContent(originElement, content, contentGroup, buttonRingRef, noCharacter, true));
                     if (dataManager.content.rings[buttonRingRef] === displayedRing) {
                         button.classList.add("currentTab", buttonRingRef);
                     }
@@ -3785,7 +3787,7 @@ class DisplayManager {
             }
         }
 
-        const nameContainer = displayManager.createContainer(fragmentAppendQueue, "div", ["title", "largeFontSize"]);
+        const nameContainer = displayManager.createContainer(fragmentAppendQueue, "p", ["title", "largeFontSize"]);
         const nameAppendQueue = [];
 
         const nameBold = displayManager.createTextElement(undefined, "span", content.name, ["bold"]);
@@ -3836,7 +3838,7 @@ class DisplayManager {
         }
 
         if (!noCharacter) {
-            const upgradeLine = displayManager.createFlexLineContainer(fragmentAppendQueue, "p", [["justify-content", "center"], ["flex-wrap", "wrap"], ["font-size", "1em"]]);
+            const upgradeLine = displayManager.createFlexLineContainer(fragmentAppendQueue, "div", [["justify-content", "center"], ["flex-wrap", "wrap"], ["font-size", "1em"]]);
             displayManager.getUpgradeLine(upgradeLine, content, displayedRing);
         }        
 
@@ -4295,10 +4297,9 @@ class DisplayManager {
             const skill = pair[0];
             const skillRank = pair[1];
 
-            const container = displayManager.createContainer(fragment);
-            const li = displayManager.createFlexLineContainer(container, "li", ["pointer", "selectable", "rounded"]);
+            const li = displayManager.createFlexLineContainer(fragment, "li", ["pointer", "selectable", "rounded"]);
             li.addEventListener("click", () => {
-                displayManager.expandSkill(li, container, skill);
+                displayManager.consultContent(li, skill, "skills", null);
             });
 
             if (dataManager.userSettings.latestCharacterName != null) {
@@ -4349,54 +4350,6 @@ class DisplayManager {
         displayManager.skills.container.appendChild(fragment);
 
         displayManager.skills.container.scrollTop = 0;
-    }    
-
-    // INCLUDE IN displaySkills IF NOT USED ANYWHERE ELSE
-    expandSkill(li, container, skill) {
-
-        if (displayManager.skills.approachGrid !== null) {
-            displayManager.skills.approachGrid.remove();
-            displayManager.skills.approachGrid = null;
-            if (displayManager.skills.last === li) {
-                return;
-            }
-        }        
-        if (displayManager.skills.last !== li && displayManager.skills.last !== null) {
-            displayManager.skills.last.classList.remove("lastSelected");
-        }
-        // Change the li color to lastSelected
-        li.classList.add("lastSelected");
-
-        // Create the fragment that will contain the skill approach elements
-        const fragment = document.createDocumentFragment();
-
-        // Create elements to display, each with the proper content and classes for styling
-
-        const approachGrid = displayManager.createContainer(fragment, "div", ["approachGrid"]);
-        displayManager.skills.last = li;
-        displayManager.skills.approachGrid = approachGrid;
-
-        displayManager.createTextElement(approachGrid, "span", dataManager.content.ui.skillGroups[skill.groupRef].approaches);
-
-        // Create a line for each possible approach
-        const customIcons = dataManager.content.ui.customIcons;
-        for (const ringRef of dataManager.individualRingRefs) {
-            const ring = dataManager.content.rings[ringRef];            
-    
-            const approachLine = displayManager.createContainer(approachGrid, "div", ["approachLine", "pointer"]);
-            approachLine.onclick = () => {
-                displayManager.consultContent(container.firstChild, skill, "skills", ringRef);
-            };
-
-            if (dataManager.userSettings.latestCharacterName != null) {
-                displayManager.createTextElement(approachLine, "span", `${dataManager.current.ringPairMaps.all.get(ring)} ${String.fromCharCode(customIcons.ringDieIcon)}`, ["bold"]);
-            }            
-            displayManager.createTextElement(approachLine, "span", String.fromCharCode(customIcons[`${ringRef}Icon`]), [ringRef, "smallIcon"]);
-            displayManager.createTextElement(approachLine, "span", `${ring.approachNames[skill.groupRef]} (${ring.name})`);
-        }
-
-        // Create the new elements
-        container.appendChild(fragment);
     }
 
     displayTechniques() {
@@ -4853,7 +4806,11 @@ class DisplayManager {
 
             const rank = dataManager.current.skillPairMaps.all.get(content);
             // We make use of the optional parameter skillRing to also display ring dice, not just skill dice
-            diceSpan.textContent = `${dataManager.current.ringPairMaps.all.get(skillRing)} ${String.fromCharCode(customIcons.ringDieIcon)} + ${rank} ${String.fromCharCode(customIcons.skillDieIcon)}`;
+            let ringDice = "";
+            if (skillRing != null) {
+                ringDice = `${dataManager.current.ringPairMaps.all.get(skillRing)} ${String.fromCharCode(customIcons.ringDieIcon)} + `;
+            }
+            diceSpan.textContent = ringDice + `${rank} ${String.fromCharCode(customIcons.skillDieIcon)}`;
             upgradeLine.appendChild(diceSpan);
             
             if (rank === 0) {
@@ -5109,7 +5066,6 @@ class DisplayManager {
 
             displayManager.createButton(curriculumProgressContainer, dataManager.content.ui.upgradeText.confirm, () => {
                 displayManager.learnContent(upgradeLine, content, skillRing, selectedInstitutionRef, extraLetter);
-                dataManager.current.spentXp += parseFloat(costSelect.value);
                 displayManager.hideOverlay(currentOverlay);
             });
         }
@@ -5161,7 +5117,7 @@ class DisplayManager {
         }
         newLearningLists[selectedInstitutionRef] = [prefixRefString];
         dataManager.updateFilteredCollections(newLearningLists);
-        // Modify character.learningLists AFTER using updateFilteredCollections
+        
         dataManager.current.character.learningLists[selectedInstitutionRef].push(prefixRefString);
         dataManager.cacheCharacter(dataManager.current.character);
 

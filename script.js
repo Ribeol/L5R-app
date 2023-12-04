@@ -558,63 +558,63 @@ class DataManager {
 
     // Update character userSettings, current character, and collections in dataManager.current
     // Update the display (header and tabs)
+    // Without a parameter, this resets the current character progress to creation state with all XP unspent
     // This also needs to run when a new title is added
-    async loadCharacter(characterObjOrName) {
-
-        /*
-        if (characterObjOrName == null) {
-            dataManager.userSettings.latestCharacterName = null;
-            displayManager.loadTab("profile");
-            dataManager.cacheUserSettings();
-            displayManager.updateLayout(null);
-            return;
-        }
-        */
+    async loadOrResetCharacter(characterObjOrName) {
 
         let character;
-        if (typeof characterObjOrName === "string") {
-            const cache = await caches.open(DataManager.cacheName);
-            // Get the file name from the character's name and try to find it in the cache
-            const jsonName = `${characterObjOrName}.json`.replace(" ","_"); 
-            const response = await cache.match(`./characters/${jsonName}`);
-            // If the json file exists in the cache, assign the corresponding object to dataManager.current.character
-            if (response) {
-                const jsonObject = await response.json();
-                character = new Character();
-    
-                // If jsonObject is missing a property, delete the character and load the next one, or open character creation
-                for (const characterProperty of Object.keys(character)) {
-                    if (!Object.keys(jsonObject).includes(characterProperty)) {
-                        deleteCharacter(characterObjOrName);
-                        // TRY TO LOAD OTHER EXISTING CHARACTERS BEFORE ASKING FOR CHARACTER CREATION
-                        displayManager.createCharacter();
-                        return;
+        if (characterObjOrName != null) {
+            if (typeof characterObjOrName === "string") {
+                const cache = await caches.open(DataManager.cacheName);
+                // Get the file name from the character's name and try to find it in the cache
+                const jsonName = `${characterObjOrName}.json`.replace(" ","_"); 
+                const response = await cache.match(`./characters/${jsonName}`);
+                // If the json file exists in the cache, assign the corresponding object to dataManager.current.character
+                if (response) {
+                    const jsonObject = await response.json();
+                    character = new Character();
+        
+                    // If jsonObject is missing a property, delete the character and load the next one, or open character creation
+                    for (const characterProperty of Object.keys(character)) {
+                        if (!Object.keys(jsonObject).includes(characterProperty)) {
+                            deleteCharacter(characterObjOrName);
+                            // TRY TO LOAD OTHER EXISTING CHARACTERS BEFORE ASKING FOR CHARACTER CREATION
+                            displayManager.createCharacter();
+                            return;
+                        }
                     }
-                }
-    
-                // If jsonObject has an extra property, delete it
-                const expectedProperties = Object.keys(character);
-                expectedProperties.push("_voidPoints");                
-                for (const jsonProperty of Object.keys(jsonObject)) {
-                    if (!expectedProperties.includes(jsonProperty)) {
-                        delete jsonObject.jsonProperty;
-                        console.log(jsonProperty + " property deleted");
+        
+                    // If jsonObject has an extra property, delete it
+                    const expectedProperties = Object.keys(character);
+                    expectedProperties.push("_voidPoints");                
+                    for (const jsonProperty of Object.keys(jsonObject)) {
+                        if (!expectedProperties.includes(jsonProperty)) {
+                            delete jsonObject.jsonProperty;
+                            console.log(jsonProperty + " property deleted");
+                        }
                     }
+                    Object.assign(character, jsonObject);
                 }
-                Object.assign(character, jsonObject);
+                else {
+                    // ERROR MESSAGE?
+                }
             }
             else {
-                // ERROR MESSAGE?
+                character = characterObjOrName;
             }
+
+            const characterName = dataManager.content.families[character.familyRef].name + " " + character.personalName;
+            dataManager.userSettings.latestCharacterName = characterName;        
+            dataManager.cacheUserSettings();
+            dataManager.current.character = character;
         }
         else {
-            character = characterObjOrName;
+            character = dataManager.current.character;
+            const schoolRef = Object.keys(character.learningLists)[0];
+            character.learningLists = {};
+            character.learningLists[schoolRef] = [];
+            dataManager.cacheCharacter(dataManager.current.character);
         }
-        
-        const characterName = dataManager.content.families[character.familyRef].name + " " + character.personalName;
-        dataManager.userSettings.latestCharacterName = characterName;        
-        dataManager.cacheUserSettings();
-        dataManager.current.character = character;
 
         // Spent XP and progress XP start from 0 and will change automatically based on character.learningLists
         dataManager.current.spentXp = 0;
@@ -625,7 +625,7 @@ class DataManager {
         dataManager.current.institutionTechs = new Map(); // Values will be arrays of technique Sets
         dataManager.current.institutionProgress = new Map(); // Values will be objects defined below
 
-        // Go through every institutionRef key of institutionRefArray
+        // Go through every institutionRef key of character.learningLists
         for (const institutionRef of Object.keys(character.learningLists)) {
             
             // Complete the various Maps
@@ -1006,6 +1006,11 @@ class DisplayManager {
 
     // This function sets form content to the last state according to dataManager.userSettings.values
     initialize(languageChanged) {
+        
+        if (languageChanged) {
+            document.getElementById("school").textContent = dataManager.content.schools[Object.keys(dataManager.current.character.learningLists)[0]].name;
+        }
+        
         for (const filterName of [
             "skillGroupFilter",
             "skillRankFilter",
@@ -1434,7 +1439,7 @@ class DisplayManager {
             characterSelect.value = characterSelect.options[0].value;
 
             displayManager.createButton(container, dataManager.content.ui.characterChoice.change, () => {
-                dataManager.loadCharacter(characterSelect.value);
+                dataManager.loadOrResetCharacter(characterSelect.value);
                 displayManager.hideOverlay(currentOverlay);
             });
 
@@ -3569,7 +3574,7 @@ class DisplayManager {
 
                     dataManager.cacheCharacter(newCharacter);
                     dataManager.changeCharacterAvailability(dataManager.content.families[newCharacter.familyRef].name + " " + newCharacter.personalName);
-                    dataManager.loadCharacter(newCharacter);
+                    dataManager.loadOrResetCharacter(newCharacter);
                 }
             }
 
@@ -4070,7 +4075,7 @@ class DisplayManager {
                         }
                     }
                     dataManager.cacheCharacter(dataManager.current.character).then(() => {
-                        dataManager.loadCharacter(dataManager.userSettings.latestCharacterName);
+                        dataManager.loadOrResetCharacter(dataManager.userSettings.latestCharacterName);
                     });
                 });
             }            
@@ -4769,6 +4774,8 @@ class DisplayManager {
             }            
         }
 
+        displayManager.createButton(fragment, "⚠ RESET ALL PROGRESS (IRREVOCABLE) ⚠", () => dataManager.loadOrResetCharacter(), ["bold", ["position", "absolute"], ["top", "90%"]]);
+
         displayManager.progress.container.appendChild(fragment);
     }
 
@@ -5274,7 +5281,7 @@ dataManager.initialize().then(() => {
 
     // TEMPORARY TESTING, LOADTAB IS USED AT THE END OF BOTH FUNCTIONS
     if (dataManager.userSettings.latestCharacterName !== undefined) {
-        dataManager.loadCharacter(dataManager.userSettings.latestCharacterName);
+        dataManager.loadOrResetCharacter(dataManager.userSettings.latestCharacterName);
     }
 
     document.getElementById("language").onchange = dataManager.changeLanguage;    

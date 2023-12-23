@@ -523,8 +523,10 @@ class DataManager {
 
         // Update the display
         displayManager.initialize(true);
-        displayManager.clearContent();
-        displayManager.loadTab(dataManager.userSettings.currentTabClass);
+        if (dataManager.current.character !== undefined) {
+            displayManager.clearContent();
+            displayManager.loadTab(dataManager.userSettings.currentTabClass);
+        }        
         
         // Change the page language to reflect userSettings
         document.documentElement.lang = dataManager.userSettings.language;
@@ -556,6 +558,34 @@ class DataManager {
         }
     }
 
+    getCharacterFromJsonObject(jsonObject) {
+
+        const character = new Character();
+        
+        // If jsonObject is missing a property, delete the character and load the next one, or open character creation
+        for (const characterProperty of Object.keys(character)) {
+            if (!Object.keys(jsonObject).includes(characterProperty)) {
+                deleteCharacter(characterObjOrName);
+                // TRY TO LOAD OTHER EXISTING CHARACTERS BEFORE ASKING FOR CHARACTER CREATION
+                displayManager.createCharacter();
+                return;
+            }
+        }
+        
+        // If jsonObject has an extra property, delete it
+        const expectedProperties = Object.keys(character);
+        expectedProperties.push("_voidPoints");                
+        for (const jsonProperty of Object.keys(jsonObject)) {
+            if (!expectedProperties.includes(jsonProperty)) {
+                delete jsonObject.jsonProperty;
+                console.log(jsonProperty + " property deleted");
+            }
+        }
+
+        Object.assign(character, jsonObject);
+        return character;
+    }
+
     // Update character userSettings, current character, and collections in dataManager.current
     // Update the display (header and tabs)
     // Without a parameter, this resets the current character progress to creation state with all XP unspent
@@ -571,29 +601,20 @@ class DataManager {
                 const response = await cache.match(`./characters/${jsonName}`);
                 // If the json file exists in the cache, assign the corresponding object to dataManager.current.character
                 if (response) {
-                    const jsonObject = await response.json();
-                    character = new Character();
-        
-                    // If jsonObject is missing a property, delete the character and load the next one, or open character creation
-                    for (const characterProperty of Object.keys(character)) {
-                        if (!Object.keys(jsonObject).includes(characterProperty)) {
-                            deleteCharacter(characterObjOrName);
-                            // TRY TO LOAD OTHER EXISTING CHARACTERS BEFORE ASKING FOR CHARACTER CREATION
-                            displayManager.createCharacter();
-                            return;
+
+                    // TEMPORARY TO REMOVE UPPERCASE IN OLD SAVES. DELETE THIS PART THEN RESTORE TRUE JSONOBJECT LINE
+                    let responseString = await response.text();
+                    const contentCategories = ["families", "techniques", "titles", "traits"];
+                    for (const categoryName of contentCategories) {
+                        for (const propertyName of Object.keys(dataManager.content[categoryName])) {
+                            const regex = new RegExp(propertyName, 'gi');
+                            responseString = responseString.replace(regex, propertyName);
                         }
                     }
-        
-                    // If jsonObject has an extra property, delete it
-                    const expectedProperties = Object.keys(character);
-                    expectedProperties.push("_voidPoints");                
-                    for (const jsonProperty of Object.keys(jsonObject)) {
-                        if (!expectedProperties.includes(jsonProperty)) {
-                            delete jsonObject.jsonProperty;
-                            console.log(jsonProperty + " property deleted");
-                        }
-                    }
-                    Object.assign(character, jsonObject);
+                    const jsonObject = JSON.parse(responseString);
+
+                    //const jsonObject = await response.json();
+                    character = dataManager.getCharacterFromJsonObject(jsonObject);
                 }
                 else {
                     // ERROR MESSAGE?
@@ -960,7 +981,7 @@ class DisplayManager {
             styles: {
                 create: {heightString: "100%", widthString: "100%", class: "create"},
                 consult: {heightString: "80%", widthString: "98%", class: "consult"},
-                confirm: {heightString: "30%", widthString: "100%", class: "confirm"}
+                confirm: {heightString: "35%", widthString: "100%", class: "confirm"}
             },
             // The following array contains none, one or both of the overlays, from bottom to top
             visible: []
@@ -1007,7 +1028,7 @@ class DisplayManager {
     // This function sets form content to the last state according to dataManager.userSettings.values
     initialize(languageChanged) {
         
-        if (languageChanged) {
+        if (languageChanged && dataManager.current.character !== undefined) {
             document.getElementById("school").textContent = dataManager.content.schools[Object.keys(dataManager.current.character.learningLists)[0]].name;
         }
         
@@ -1179,7 +1200,7 @@ class DisplayManager {
         if (overlay === displayManager.overlays.primary) {
             document.querySelector(":root").style.setProperty("--primaryViewerHeight", style.heightString);
             document.querySelector(":root").style.setProperty("--primaryViewerWidth", style.widthString);
-            if (optionalOriginElement !== null) {
+            if (optionalOriginElement != null) {
                 document.querySelector(":root").style.setProperty("--primaryViewerOrigin", optionalOriginElement.getBoundingClientRect().top + "px");
             }
             else {
@@ -1189,7 +1210,7 @@ class DisplayManager {
         else {
             document.querySelector(":root").style.setProperty("--secondaryViewerHeight", style.heightString);
             document.querySelector(":root").style.setProperty("--secondaryViewerWidth", style.widthString);
-            if (optionalOriginElement !== null) {
+            if (optionalOriginElement != null) {
                 document.querySelector(":root").style.setProperty("--secondaryViewerOrigin", optionalOriginElement.getBoundingClientRect().top + "px");
             }
             else {
@@ -1418,11 +1439,61 @@ class DisplayManager {
         // Create the fragment that will contain the new viewer elements
         const fragment = document.createDocumentFragment();
         
-        const newButton = displayManager.createButton(fragment, dataManager.content.ui.characterChoice.new, () => {
+        const characterDataContainer = displayManager.createGridContainer(fragment, "div", [["gap", "0.5em"], ["grid-template-columns", "auto auto"]]);
+
+        const newButton = displayManager.createButton(characterDataContainer, dataManager.content.ui.characterChoice.new, () => {
             displayManager.createCharacter(newButton);
+        }, [["grid-column", "span 2"]]);        
+
+        const fileInput = document.createElement("input");        
+        characterDataContainer.appendChild(fileInput);
+        fileInput.type = "file";
+        fileInput.accept = ".json";
+        fileInput.onchange = () => {
+
+            const file = fileInput.files[0];
+            if (!file) {
+                return;
+            }  
+
+            const reader = new FileReader();
+            reader.readAsText(file);
+            reader.onload = (event) => {
+                const content = event.target.result;            
+                const jsonObject = JSON.parse(content);
+                const character = dataManager.getCharacterFromJsonObject(jsonObject);                
+                dataManager.cacheCharacter(character);
+                dataManager.changeCharacterAvailability(dataManager.content.families[character.familyRef].name + " " + character.personalName);
+                dataManager.loadOrResetCharacter(character);
+                displayManager.hideOverlay(currentOverlay);
+            };              
+        }        
+        fileInput.style.setProperty("display", "none");
+        const importButton = displayManager.createButton(characterDataContainer, dataManager.content.ui.characterChoice.import, () => {
+            fileInput.click();
         });
 
-        const container = displayManager.createContainer(fragment, "div", [["display", "none"], ["gap", "0.5em"], ["grid-template-columns", "auto auto"]]);
+        if (dataManager.current.character != null) {
+            displayManager.createButton(characterDataContainer, dataManager.content.ui.characterChoice.export, () => {
+                const character = dataManager.current.character;    
+                // Convert JSON to string
+                var jsonString = JSON.stringify(character);    
+                // Create a Blob containing the JSON data
+                var blob = new Blob([jsonString]);    
+                // Create and trigger a link element
+                var link = document.createElement('a');
+                link.href = window.URL.createObjectURL(blob);
+                link.download = `${dataManager.content.families[character.familyRef].name}_${character.personalName}.json`;
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+            });
+        }
+        else {
+            importButton.style.setProperty("grid-column", "span 2");
+        }       
+
+        const characterSelectionContainer = displayManager.createContainer(fragment, "div", [["display", "none"], ["gap", "0.5em"], ["grid-template-columns", "auto auto"]]);
 
         const characterSelect = document.createElement("select");
         for (const option of dataManager.availableCharacterOptions) {
@@ -1432,18 +1503,18 @@ class DisplayManager {
         }
 
         if (characterSelect.options[0] !== undefined) {
-            container.style.setProperty("display", "grid");
+            characterSelectionContainer.style.setProperty("display", "grid");
             
             characterSelect.style.setProperty("grid-column", "span 2");
-            container.appendChild(characterSelect);
+            characterSelectionContainer.appendChild(characterSelect);
             characterSelect.value = characterSelect.options[0].value;
 
-            displayManager.createButton(container, dataManager.content.ui.characterChoice.change, () => {
+            displayManager.createButton(characterSelectionContainer, dataManager.content.ui.characterChoice.change, () => {
                 dataManager.loadOrResetCharacter(characterSelect.value);
                 displayManager.hideOverlay(currentOverlay);
-            });
+            });            
 
-            displayManager.createButton(container, dataManager.content.ui.characterChoice.delete, () => {
+            displayManager.createButton(characterSelectionContainer, dataManager.content.ui.characterChoice.delete, () => {
                 // ADD CONFIRMATION QUESTION
                 dataManager.deleteCharacter(characterSelect.value);
                 displayManager.hideOverlay(currentOverlay);
@@ -1471,7 +1542,7 @@ class DisplayManager {
             radioButton.disabled = true;
             radioButton.onclick = () => askQuestion(i);
             questionBar.appendChild(radioButton);
-            questionBarArray.push(radioButton); 
+            questionBarArray.push(radioButton);
         }
 
         const questionResults = {};
@@ -1807,7 +1878,7 @@ class DisplayManager {
 
                         const wealthDiv = displayManager.createFlexLineContainer(increaseContainer);
                         displayManager.createTextElement(wealthDiv, "span", dataManager.content.ui.wealth + dataManager.content.ui.colon, ["bold"]);
-                        displayManager.createTextElement(wealthDiv, "span", family.koku);
+                        displayManager.createTextElement(wealthDiv, "span", family.koku + " " + dataManager.content.equipment.koku.name.toLowerCase());
 
                         const skillsDiv = displayManager.createFlexLineContainer(increaseContainer);
                         displayManager.createTextElement(skillsDiv, "span", dataManager.content.ui.skills + dataManager.content.ui.colon, ["bold"]);
@@ -2275,7 +2346,7 @@ class DisplayManager {
                                         if (typeof choiceArray[i] !== "string" && typeof choiceArray[i][0] !== "string") {
                                             equipmentLine.style.setProperty("grid-row", `span ${choiceArray[i][0].length}`);
                                         }
-                                        getEquipment(displayManager.createGridContainer(equipmentLine, "div", [["grid-auto-rows", "1.5em"]]), [choiceArray[i]], savedArray[radioIndex].displayed[i], radioIndex);
+                                        getEquipment(displayManager.createGridContainer(equipmentLine, "div", [["grid-auto-rows", "1.5em"]]), [choiceArray[i]], savedArray[radioIndex].displayed[i], 0);
                                     }
                                 }
                             }
@@ -3267,11 +3338,10 @@ class DisplayManager {
                                 existingObj.amount += amount;
                             }
                         }
-
                         if (typeof equipmentRefData === "string") {
                             createOrIncrease(equipmentRefData, 1)
                         }
-                        else if (typeof equipmentRefData[0] === "string") {
+                        else if (Array.isArray(equipmentRefData)) {
                             createOrIncrease(equipmentRefData[0], equipmentRefData[1])
                         }
                         else {
@@ -3654,9 +3724,6 @@ class DisplayManager {
 
             if (questionNumber === 1) {
                 previousQuestionButton.textContent = dataManager.content.ui.characterCreation.cancel;
-                if (dataManager.userSettings.latestCharacterName == null) {
-                    previousQuestionButton.style.setProperty("display", "none");
-                }
             }
             else {
                 previousQuestionButton.textContent = `< ${dataManager.content.ui.characterCreation.previousQuestion}`;

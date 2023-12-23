@@ -1,12 +1,12 @@
 {
-    "Hida":{
+    "hida":{
         "ringRefs":["earth","water"],
         "startingSkillRefs":[["fitness","martial arts [melee]","martial arts [ranged]","martial arts [unarmed]","meditation","survival","tactics"],5],
         "honor":40,
         "techniqueGroupRefs":["kata","ritual","shūji"],
         "startingTechniqueRefs":[
-            "Lord Hida’s Grip",
-            [["Striking as Earth","Striking as Water"],1]
+            "lord hida’s grip",
+            [["striking as earth","striking as water"],1]
         ],
         "startingEquipmentRefData":[
             "lacquered armor",
@@ -19,21 +19,21 @@
             "traveling pack"
         ],
         "curriculum":[
-            {"list":["SG: martial","S: command","S: medicine","S: survival","TG: kata 1","T: Rushing Avalanche Style","T: Honest Assessment"],"rankUpCost":20},
-            {"list":["SG: martial","S: command","S: labor","S: theology","TG: kata 2","T: Touchstone of Courage","T: Slippery Maneuvers"],"rankUpCost":24},
-            {"list":["SG: trade","S: fitness","S: martial arts [melee]","S: meditation","TG: kata 3","T: Iron in the Mountains Style","T: Rallying Cry"],"rankUpCost":32},
-            {"list":["SG: scholar","S: fitness","S: martial arts [melee]","S: meditation","TG: kata 4","T: Striking as Void","T: A Samurai’s Fate"],"rankUpCost":44},
-            {"list":["SG: martial","S: command","S: survival","S: theology","TG: kata 5","T: Rouse the Soul","T: The Immovable Hand of Peace"],"rankUpCost":60}
+            {"list":["SG: martial","S: command","S: medicine","S: survival","TG: kata 1","T: rushing avalanche style","T: honest assessment"],"rankUpCost":20},
+            {"list":["SG: martial","S: command","S: labor","S: theology","TG: kata 2","T: touchstone of courage","T: slippery maneuvers"],"rankUpCost":24},
+            {"list":["SG: trade","S: fitness","S: martial arts [melee]","S: meditation","TG: kata 3","T: iron in the mountains style","T: rallying cry"],"rankUpCost":32},
+            {"list":["SG: scholar","S: fitness","S: martial arts [melee]","S: meditation","TG: kata 4","T: striking as void","T: a samurai’s fate"],"rankUpCost":44},
+            {"list":["SG: martial","S: command","S: survival","S: theology","TG: kata 5","T: rouse the soul","T: the immovable hand of peace"],"rankUpCost":60}
         ]
     },
-    "Hiruma":{
+    "hiruma":{
         "ringRefs":["air","water"],
         "startingSkillRefs":[["fitness","martial arts [melee]","martial arts [ranged]","skulduggery","survival","tactics","theology"],5],
         "honor":35,
         "techniqueGroupRefs":["kata","ritual","shūji"],
         "startingTechniqueRefs":[
-            [["Pelting Hail Style","Rushing Avalanche Style"],1],
-            [["Striking as Air","Striking as Water"],1]
+            [["pelting hail style","rushing avalanche style"],1],
+            [["striking as air","striking as water"],1]
         ],
         "startingEquipmentRefData":[
             "traveling clothes",
@@ -46,22 +46,22 @@
             "finger of jade"
         ],
         "curriculum":[
-            {"list":["SG: martial","S: medicine","S: survival","S: theology","TG: kata 1","T: Threshold Barrier","T: Slippery Maneuvers"],"rankUpCost":20},
-            {"list":["SG: trade","S: martial arts [unarmed]","S: martial arts [ranged]","S: smithing","TG: water shūji 2","T: Skulk","T: Lord Hida’s Grip"],"rankUpCost":24},
-            {"list":["SG: martial","S: command","S: skulduggery","S: survival","TG: kata 3","T: Deadly Sting","T: Touchstone of Courage"],"rankUpCost":32},
-            {"list":["SG: scholar","S: command","S: martial arts [ranged]","S: tactics","TG: air shūji 4","T: Noxious Cloud","T: Crashing Wave Style"],"rankUpCost":44},
-            {"list":["SG: martial","S: command","S: smithing","S: survival","TG: kata 5","T: Rouse the Soul","T: Silencing Stroke"],"rankUpCost":60}
+            {"list":["SG: martial","S: medicine","S: survival","S: theology","TG: kata 1","T: threshold barrier","T: slippery maneuvers"],"rankUpCost":20},
+            {"list":["SG: trade","S: martial arts [unarmed]","S: martial arts [ranged]","S: smithing","TG: water shūji 2","T: skulk","T: lord hida’s grip"],"rankUpCost":24},
+            {"list":["SG: martial","S: command","S: skulduggery","S: survival","TG: kata 3","T: deadly sting","T: touchstone of courage"],"rankUpCost":32},
+            {"list":["SG: scholar","S: command","S: martial arts [ranged]","S: tactics","TG: air shūji 4","T: noxious cloud","T: crashing wave style"],"rankUpCost":44},
+            {"list":["SG: martial","S: command","S: smithing","S: survival","TG: kata 5","T: rouse the soul","T: silencing stroke"],"rankUpCost":60}
         ]
     },
-    "Kaiu":{
+    "kaiu":{
         "ringRefs":["earth","fire"],
         "startingSkillRefs":[["command","design","labor","martial arts [ranged]","medicine","smithing","theology"],5],
         "honor":40,
         "techniqueGroupRefs":["kata","ritual","shūji"],
         "startingTechniqueRefs":[
-            "Tactical Assessment",
-            "Stirring the Embers",
-            "Stonewall Tactics"
+            "tactical assessment",
+            "stirring the embers",
+            "stonewall tactics"
         ],
         "startingEquipmentRefData":[
             "traveling clothes",
@@ -75,24 +75,24 @@
             "traveling pack"
         ],
         "curriculum":[
-            {"list":["SG: trade","S: martial arts [ranged]","S: smithing","S: tactics","TG: earth shūji 1","T: Pelting Hail Style","T: Hawk’s Precision"],"rankUpCost":20},
-            {"list":["SG: martial","S: command","S: medicine","S: smithing","TG: kata 2","T: Battle in the Mind","T: Noxious Cloud"],"rankUpCost":24},
-            {"list":["SG: social","S: government","S: martial arts [ranged]","S: smithing","TG: water shūji 3","T: Pillar of Calm","T: Flowing Water Strike"],"rankUpCost":32},
-            {"list":["SG: artisan","S: command","S: labor","S: tactics","TG: fire shūji 4","T: Soul Sunder","T: Iron in the Mountains Style"],"rankUpCost":44},
-            {"list":["SG: scholar","S: command","S: smithing","S: tactics","TG: earth shūji 5","T: Sear the Wound","T: Pin the Fan"],"rankUpCost":60}
+            {"list":["SG: trade","S: martial arts [ranged]","S: smithing","S: tactics","TG: earth shūji 1","T: pelting hail style","T: hawk’s precision"],"rankUpCost":20},
+            {"list":["SG: martial","S: command","S: medicine","S: smithing","TG: kata 2","T: battle in the mind","T: noxious cloud"],"rankUpCost":24},
+            {"list":["SG: social","S: government","S: martial arts [ranged]","S: smithing","TG: water shūji 3","T: pillar of calm","T: flowing water strike"],"rankUpCost":32},
+            {"list":["SG: artisan","S: command","S: labor","S: tactics","TG: fire shūji 4","T: soul sunder","T: iron in the mountains style"],"rankUpCost":44},
+            {"list":["SG: scholar","S: command","S: smithing","S: tactics","TG: earth shūji 5","T: sear the wound","T: pin the fan"],"rankUpCost":60}
         ]
     },
-    "Kuni":{
+    "kuni":{
         "ringRefs":["earth","fire"],
         "startingSkillRefs":[["martial arts [melee]","medicine","sentiment","skulduggery","survival","theology"],3],
         "honor":35,
         "techniqueGroupRefs":["invocation","kata","ritual"],
         "startingTechniqueRefs":[
-            [["Striking as Earth","Striking as Fire"],1],
-            "Armor of Earth",
-            "Jade Strike",
-            "Commune with the Spirits",
-            "Threshold Barrier"
+            [["striking as earth","striking as fire"],1],
+            "armor of earth",
+            "jade strike",
+            "commune with the spirits",
+            "threshold barrier"
         ],
         "startingEquipmentRefData":[
             "sanctified robes",
@@ -103,21 +103,21 @@
             "traveling pack"
         ],
         "curriculum":[
-            {"list":["SG: martial","S: skulduggery","S: survival","S: theology","TG: earth invocation 1","T: Bind the Shadow","T: Biting Steel"],"rankUpCost":20},
-            {"list":["SG: scholar","S: command","S: performance","S: skulduggery","TG: water invocation 2","T: Crimson Leaves Strike","T: Symbol of Earth"],"rankUpCost":24},
-            {"list":["SG: trade","S: martial arts [unarmed]","S: sentiment","S: theology","TG: fire invocation 3","T: Rise, Earth","T: Open Hand Style"],"rankUpCost":32},
-            {"list":["SG: martial","S: medicine","S: survival","S: theology","TG: earth invocation 4","T: Tomb of Jade","T: Flowing Water Strike"],"rankUpCost":44},
-            {"list":["SG: social","S: government","S: theology","S: tactics","TG: air invocation 5","T: Earthquake","T: Soul Sunder"],"rankUpCost":60}
+            {"list":["SG: martial","S: skulduggery","S: survival","S: theology","TG: earth invocation 1","T: bind the shadow","T: biting steel"],"rankUpCost":20},
+            {"list":["SG: scholar","S: command","S: performance","S: skulduggery","TG: water invocation 2","T: crimson leaves strike","T: symbol of earth"],"rankUpCost":24},
+            {"list":["SG: trade","S: martial arts [unarmed]","S: sentiment","S: theology","TG: fire invocation 3","T: rise, earth","T: open hand style"],"rankUpCost":32},
+            {"list":["SG: martial","S: medicine","S: survival","S: theology","TG: earth invocation 4","T: tomb of jade","T: flowing water strike"],"rankUpCost":44},
+            {"list":["SG: social","S: government","S: theology","S: tactics","TG: air invocation 5","T: earthquake","T: soul sunder"],"rankUpCost":60}
         ]
     },
-    "Yasuki":{
+    "yasuki":{
         "ringRefs":["air","earth"],
         "startingSkillRefs":[["commerce","composition","courtesy","culture","design","government","martial arts [ranged]"],5],
         "honor":40,
         "techniqueGroupRefs":["kata","ritual","shūji"],
         "startingTechniqueRefs":[
-            "Artisan’s Appraisal",
-            [["Rustling of Leaves","Well of Desire"],1]
+            "artisan’s appraisal",
+            [["rustling of leaves","well of desire"],1]
         ],
         "startingEquipmentRefData":[
             "traveling clothes",
@@ -130,23 +130,23 @@
             "traveling pack"
         ],
         "curriculum":[
-            {"list":["SG: trade","S: command","S: design","S: government","TG: earth shūji 1","T: Tributaries of Trade","T: All in Jest"],"rankUpCost":20},
-            {"list":["SG: social","S: commerce","S: composition","S: culture","TG: fire shūji 2","T: Ebb and Flow","T: Slippery Maneuvers"],"rankUpCost":24},
-            {"list":["SG: scholar","S: commerce","S: martial arts [ranged]","S: seafaring","TG: air shūji 3","T: Pillar of Calm","T: Lord Hida’s Grip"],"rankUpCost":32},
-            {"list":["SG: trade","S: command","S: government","S: sentiment","TG: water shūji 4","T: Buoyant Arrival","T: Bravado"],"rankUpCost":44},
-            {"list":["SG: social","S: commerce","S: culture","S: design","TG: void shūji 5","T: The Immovable Hand of Peace","T: Lady Doji’s Decree"],"rankUpCost":60}
+            {"list":["SG: trade","S: command","S: design","S: government","TG: earth shūji 1","T: tributaries of trade","T: all in jest"],"rankUpCost":20},
+            {"list":["SG: social","S: commerce","S: composition","S: culture","TG: fire shūji 2","T: ebb and flow","T: slippery maneuvers"],"rankUpCost":24},
+            {"list":["SG: scholar","S: commerce","S: martial arts [ranged]","S: seafaring","TG: air shūji 3","T: pillar of calm","T: lord hida’s grip"],"rankUpCost":32},
+            {"list":["SG: trade","S: command","S: government","S: sentiment","TG: water shūji 4","T: buoyant arrival","T: bravado"],"rankUpCost":44},
+            {"list":["SG: social","S: commerce","S: culture","S: design","TG: void shūji 5","T: the immovable hand of peace","T: lady doji’s decree"],"rankUpCost":60}
         ]
     },
-    "Asahina":{
+    "asahina":{
         "ringRefs":["air","fire"],
         "startingSkillRefs":[["aesthetics","courtesy","culture","design","games","theology"],3],
         "honor":50,
         "techniqueGroupRefs":["invocation","ritual","shūji"],
         "traditionRef":"elemental",
         "startingTechniqueRefs":[
-            [["Blessed Wind","Armor of Radiance","Inari’s Blessing","Reflections of P’an Ku","Token of Memory"],3],
-            "Commune with the Spirits",
-            "Cleansing Rite"
+            [["blessed wind","armor of radiance","inari’s blessing","reflections of p’an ku","token of memory"],3],
+            "commune with the spirits",
+            "cleansing rite"
         ],
         "startingEquipmentRefData":[
             "sanctified robes",
@@ -158,21 +158,21 @@
             "traveling pack"
         ],
         "curriculum":[
-            {"list":["SG: artisan","S: courtesy","S: culture","S: theology","TG: air invocation 1","T: Path to Inner Peace","T: Artisan’s Appraisal"],"rankUpCost":20},
-            {"list":["SG: scholar","S: aesthetics","S: design","S: performance","TG: water invocation 2","T: Grasp of the Air Dragon","T: Tea Ceremony"],"rankUpCost":24},
-            {"list":["SG: social","S: aesthetics","S: design","S: theology","TG: fire invocation 3","T: Wings of the Phoenix","T: Vapor of Nightmares"],"rankUpCost":32},
-            {"list":["SG: artisan","S: fitness","S: performance","S: theology","TG: water invocation 4","T: Bend with the Storm","T: Rise, Air"],"rankUpCost":44},
-            {"list":["SG: scholar","S: aesthetics","S: design","S: performance","TG: air invocation 5","T: Ever-Changing Waves","T: Buoyant Arrival"],"rankUpCost":60}
+            {"list":["SG: artisan","S: courtesy","S: culture","S: theology","TG: air invocation 1","T: path to inner peace","T: artisan’s appraisal"],"rankUpCost":20},
+            {"list":["SG: scholar","S: aesthetics","S: design","S: performance","TG: water invocation 2","T: grasp of the air dragon","T: tea ceremony"],"rankUpCost":24},
+            {"list":["SG: social","S: aesthetics","S: design","S: theology","TG: fire invocation 3","T: wings of the phoenix","T: vapor of nightmares"],"rankUpCost":32},
+            {"list":["SG: artisan","S: fitness","S: performance","S: theology","TG: water invocation 4","T: bend with the storm","T: rise, air"],"rankUpCost":44},
+            {"list":["SG: scholar","S: aesthetics","S: design","S: performance","TG: air invocation 5","T: ever-changing waves","T: buoyant arrival"],"rankUpCost":60}
         ]
     },
-    "Daidoji":{
+    "daidoji":{
         "ringRefs":["earth","water"],
         "startingSkillRefs":[["command","courtesy","culture","fitness","government","martial arts [melee]","tactics"],5],
         "honor":55,
         "techniqueGroupRefs":["kata","ritual","shūji"],
         "startingTechniqueRefs":[
-            "Iron Forest Style",
-            [["Striking as Earth","Striking as Water"],1]
+            "iron forest style",
+            [["striking as earth","striking as water"],1]
         ],
         "startingEquipmentRefData":[
             "lacquered armor",
@@ -187,21 +187,21 @@
             "traveling pack"
         ],
         "curriculum":[
-            {"list":["SG: martial","S: courtesy","S: government","S: sentiment","TG: kata 1","T: Crescent Moon Style","T: Stonewall Tactics"],"rankUpCost":20},
-            {"list":["SG: scholar","S: courtesy","S: martial arts [melee]","S: tactics","TG: earth shūji 2","T: Flowing Water Strike","T: Lady Doji’s Decree"],"rankUpCost":24},
-            {"list":["SG: martial","S: command","S: courtesy","S: sentiment","TG: kata 3","T: Crashing Wave Style","T: Ebb and Flow"],"rankUpCost":32},
-            {"list":["SG: social","S: fitness","S: martial arts [melee]","S: tactics","TG: air shūji 4","T: Striking as Void","T: A Samurai’s Fate"],"rankUpCost":44},
-            {"list":["SG: martial","S: aesthetics","S: culture","S: government","TG: kata 5","T: The Immovable Hand of Peace","T: Rouse the Soul"],"rankUpCost":60}
+            {"list":["SG: martial","S: courtesy","S: government","S: sentiment","TG: kata 1","T: crescent moon style","T: stonewall tactics"],"rankUpCost":20},
+            {"list":["SG: scholar","S: courtesy","S: martial arts [melee]","S: tactics","TG: earth shūji 2","T: flowing water strike","T: lady doji’s decree"],"rankUpCost":24},
+            {"list":["SG: martial","S: command","S: courtesy","S: sentiment","TG: kata 3","T: crashing wave style","T: ebb and flow"],"rankUpCost":32},
+            {"list":["SG: social","S: fitness","S: martial arts [melee]","S: tactics","TG: air shūji 4","T: striking as void","T: a samurai’s fate"],"rankUpCost":44},
+            {"list":["SG: martial","S: aesthetics","S: culture","S: government","TG: kata 5","T: the immovable hand of peace","T: rouse the soul"],"rankUpCost":60}
         ]
     },
-    "Doji":{
+    "doji":{
         "ringRefs":["air","water"],
         "startingSkillRefs":[["aesthetics","composition","courtesy","culture","design","government","martial arts [ranged]"],5],
         "honor":50,
         "techniqueGroupRefs":["kata","ritual","shūji"],
         "startingTechniqueRefs":[
-            [["Cadence","Shallow Waters","Whispers of Court"],1],
-            "Lady Doji’s Decree"
+            [["cadence","shallow waters","whispers of court"],1],
+            "lady doji’s decree"
         ],
         "startingEquipmentRefData":[
             "ceremonial clothes",
@@ -212,21 +212,21 @@
             [["attendant","rokugani pony"],"or"]
         ],
         "curriculum":[
-            {"list":["SG: social","S: aesthetics","S: culture","S: composition","TG: air shūji 1","T: Civility Foremost","T: Tea Ceremony"],"rankUpCost":20},
-            {"list":["SG: scholar","S: command","S: courtesy","S: tactics","TG: water shūji 2","T: The Wind Blows Both Ways","T: Artisan’s Appraisal"],"rankUpCost":24},
-            {"list":["SG: artisan","S: courtesy","S: games","S: performance","TG: earth shūji 3","T: Regal Bearing","T: Ebb and Flow"],"rankUpCost":32},
-            {"list":["SG: social","S: government","S: composition","S: tactics","TG: air shūji 4","T: Bend with the Storm","T: Pillar of Calm"],"rankUpCost":44},
-            {"list":["SG: scholar","S: aesthetics","S: courtesy","S: command","TG: void shūji 5","T: Buoyant Arrival","T: The Immovable Hand of Peace"],"rankUpCost":60}
+            {"list":["SG: social","S: aesthetics","S: culture","S: composition","TG: air shūji 1","T: civility foremost","T: tea ceremony"],"rankUpCost":20},
+            {"list":["SG: scholar","S: command","S: courtesy","S: tactics","TG: water shūji 2","T: the wind blows both ways","T: artisan’s appraisal"],"rankUpCost":24},
+            {"list":["SG: artisan","S: courtesy","S: games","S: performance","TG: earth shūji 3","T: regal bearing","T: ebb and flow"],"rankUpCost":32},
+            {"list":["SG: social","S: government","S: composition","S: tactics","TG: air shūji 4","T: bend with the storm","T: pillar of calm"],"rankUpCost":44},
+            {"list":["SG: scholar","S: aesthetics","S: courtesy","S: command","TG: void shūji 5","T: buoyant arrival","T: the immovable hand of peace"],"rankUpCost":60}
         ]
     },
-    "Kakita":{
+    "kakita":{
         "ringRefs":["air","earth"],
         "startingSkillRefs":[["courtesy","design","fitness","martial arts [melee]","meditation","sentiment","smithing"],5],
         "honor":50,
         "techniqueGroupRefs":["kata","ritual","shūji"],
         "startingTechniqueRefs":[
-            "Iaijutsu Cut: Rising Blade",
-            [["Shallow Waters","Weight of Duty"],1]
+            "iaijutsu cut: rising blade",
+            [["shallow waters","weight of duty"],1]
         ],
         "startingEquipmentRefData":[
             "traveling clothes",
@@ -239,25 +239,25 @@
             [["attendant","rokugani pony"],"or"]
         ],
         "curriculum":[
-            {"list":["SG: martial","S: aesthetics","S: courtesy","S: sentiment","TG: kata 1","T: Iaijutsu Cut: Crossing Blade","T: Cadence"],"rankUpCost":20},
-            {"list":["SG: scholar","S: martial arts [melee]","S: martial arts [ranged]","S: smithing","TG: kata 2","T: All Arts Are One","T: Thunderclap Strike"],"rankUpCost":24},
-            {"list":["SG: artisan","S: martial arts [melee]","S: meditation","S: survival","TG: air shūji 3","T: A Samurai’s Fate","T: Heartpiercing Strike"],"rankUpCost":32},
-            {"list":["SG: social","S: fitness","S: tactics","S: martial arts [melee]","TG: kata 4","T: Striking as Void","T: Pillar of Calm"],"rankUpCost":44},
-            {"list":["SG: martial","S: aesthetics","S: survival","S: theology","TG: fire shūji 5","T: Soul Sunder","T: Rouse the Soul"],"rankUpCost":60}
+            {"list":["SG: martial","S: aesthetics","S: courtesy","S: sentiment","TG: kata 1","T: iaijutsu cut: crossing blade","T: cadence"],"rankUpCost":20},
+            {"list":["SG: scholar","S: martial arts [melee]","S: martial arts [ranged]","S: smithing","TG: kata 2","T: all arts are one","T: thunderclap strike"],"rankUpCost":24},
+            {"list":["SG: artisan","S: martial arts [melee]","S: meditation","S: survival","TG: air shūji 3","T: a samurai’s fate","T: heartpiercing strike"],"rankUpCost":32},
+            {"list":["SG: social","S: fitness","S: tactics","S: martial arts [melee]","TG: kata 4","T: striking as void","T: pillar of calm"],"rankUpCost":44},
+            {"list":["SG: martial","S: aesthetics","S: survival","S: theology","TG: fire shūji 5","T: soul sunder","T: rouse the soul"],"rankUpCost":60}
         ]
     },
-    "Agasha":{
+    "agasha":{
         "ringRefs":["earth","water"],
         "startingSkillRefs":[["fitness","martial arts [unarmed]","medicine","meditation","smithing","theology"],3],
         "honor":40,
         "techniqueGroupRefs":["invocation","ritual","shūji"],
         "traditionRef":"alchemy",
         "startingTechniqueRefs":[
-            [["The Fires from Within","Tetsubō of Earth"],1],
-            "Path to Inner Peace",
-            "Jurōjin’s Balm",
-            "Cleansing Rite",
-            "Commune with the Spirits"
+            [["the fires from within","tetsubō of earth"],1],
+            "path to inner peace",
+            "jurōjin’s balm",
+            "cleansing rite",
+            "commune with the spirits"
         ],
         "startingEquipmentRefData":[
             "sanctified robes",
@@ -270,21 +270,21 @@
             "journal"
         ],
         "curriculum":[
-            {"list":["SG: scholar","S: fitness","S: meditation","S: smithing","TG: earth invocation 1","T: Heart of the Water Dragon","T: Divination"],"rankUpCost":20},
-            {"list":["SG: trade","S: fitness","S: medicine","S: theology","TG: water invocation 2","T: Power of the Earth Dragon","T: Touchstone of Courage"],"rankUpCost":24},
-            {"list":["SG: martial","S: command","S: medicine","S: theology","TG: fire invocation 3","T: Rise, Earth","T: Earth Becomes Sky"],"rankUpCost":32},
-            {"list":["SG: scholar","S: meditation","S: smithing","S: survival","TG: earth invocation 4","T: Ever-Changing Waves","T: Rise, Water"],"rankUpCost":44},
-            {"list":["SG: martial","S: command","S: medicine","S: theology","TG: water invocation 5","T: Earthquake","T: Sear the Wound"],"rankUpCost":60}
+            {"list":["SG: scholar","S: fitness","S: meditation","S: smithing","TG: earth invocation 1","T: heart of the water dragon","T: divination"],"rankUpCost":20},
+            {"list":["SG: trade","S: fitness","S: medicine","S: theology","TG: water invocation 2","T: power of the earth dragon","T: touchstone of courage"],"rankUpCost":24},
+            {"list":["SG: martial","S: command","S: medicine","S: theology","TG: fire invocation 3","T: rise, earth","T: earth becomes sky"],"rankUpCost":32},
+            {"list":["SG: scholar","S: meditation","S: smithing","S: survival","TG: earth invocation 4","T: ever-changing waves","T: rise, water"],"rankUpCost":44},
+            {"list":["SG: martial","S: command","S: medicine","S: theology","TG: water invocation 5","T: earthquake","T: sear the wound"],"rankUpCost":60}
         ]
     },
-    "Kitsuki":{
+    "kitsuki":{
         "ringRefs":["air","earth"],
         "startingSkillRefs":[["culture","government","martial arts [melee]","medicine","sentiment","skulduggery","survival"],5],
         "honor":45,
         "techniqueGroupRefs":["kata","ritual","shūji"],
         "startingTechniqueRefs":[
-            [["Striking as Air","Tactical Assessment"],1],
-            "Shallow Waters"
+            [["striking as air","tactical assessment"],1],
+            "shallow waters"
         ],
         "startingEquipmentRefData":[
             "traveling clothes",
@@ -296,21 +296,21 @@
             "journal"
         ],
         "curriculum":[
-            {"list":["SG: scholar","S: fitness","S: martial arts [melee]","S: skulduggery","TG: fire shūji 1","T: Slippery Maneuvers","T: Honest Assessment"],"rankUpCost":20},
-            {"list":["SG: martial","S: command","S: sentiment","S: survival","TG: kata 2","T: All Arts Are One","T: Feigned Opening"],"rankUpCost":24},
-            {"list":["SG: scholar","S: martial arts [melee]","S: meditation","S: survival","TG: earth shūji 3","T: Regal Bearing","T: Battle in the Mind"],"rankUpCost":32},
-            {"list":["SG: martial","S: sentiment","S: medicine","S: skulduggery","TG: kata 4","T: Sear the Wound","T: Bravado"],"rankUpCost":44},
-            {"list":["SG: social","S: sentiment","S: martial arts [melee]","S: skulduggery","TG: fire shūji 5","T: Wolf’s Proposal","T: Crashing Wave Style"],"rankUpCost":60}
+            {"list":["SG: scholar","S: fitness","S: martial arts [melee]","S: skulduggery","TG: fire shūji 1","T: slippery maneuvers","T: honest assessment"],"rankUpCost":20},
+            {"list":["SG: martial","S: command","S: sentiment","S: survival","TG: kata 2","T: all arts are one","T: feigned opening"],"rankUpCost":24},
+            {"list":["SG: scholar","S: martial arts [melee]","S: meditation","S: survival","TG: earth shūji 3","T: regal bearing","T: battle in the mind"],"rankUpCost":32},
+            {"list":["SG: martial","S: sentiment","S: medicine","S: skulduggery","TG: kata 4","T: sear the wound","T: bravado"],"rankUpCost":44},
+            {"list":["SG: social","S: sentiment","S: martial arts [melee]","S: skulduggery","TG: fire shūji 5","T: wolf’s proposal","T: crashing wave style"],"rankUpCost":60}
         ]
     },
-    "Mirumoto":{
+    "mirumoto":{
         "ringRefs":["earth","fire"],
         "startingSkillRefs":[["command","composition","fitness","martial arts [melee]","meditation","tactics","theology"],5],
         "honor":50,
         "techniqueGroupRefs":["kata","ritual","shūji"],
         "startingTechniqueRefs":[
-            [["Striking as Fire","Striking as Water","Striking as Earth"],1],
-            "Dazzling Performance"
+            [["striking as fire","striking as water","striking as earth"],1],
+            "dazzling performance"
         ],
         "startingEquipmentRefData":[
             "traveling clothes",
@@ -321,20 +321,20 @@
             "traveling pack"
         ],
         "curriculum":[
-            {"list":["SG: martial","S: composition","S: labor","S: medicine","TG: kata 1","T: Iaijutsu Cut: Rising Blade","T: Stirring the Embers"],"rankUpCost":20},
-            {"list":["SG: trade","S: command","S: martial arts [melee]","S: meditation","TG: kata 2","T: Heartpiercing Strike","T: Slippery Maneuvers"],"rankUpCost":24},
-            {"list":["SG: martial","S: composition","S: smithing","S: theology","TG: kata 3","T: Pillar of Calm","T: Commune with the Spirits"],"rankUpCost":32},
-            {"list":["SG: scholar","S: command","S: martial arts [melee]","S: meditation","TG: earth shūji 4","T: Striking as Void","T: Crashing Wave Style"],"rankUpCost":44},
-            {"list":["SG: martial","S: composition","S: medicine","S: survival","TG: kata 5","T: Sear the Wound","T: Rouse the Soul"],"rankUpCost":60}
+            {"list":["SG: martial","S: composition","S: labor","S: medicine","TG: kata 1","T: iaijutsu cut: rising blade","T: stirring the embers"],"rankUpCost":20},
+            {"list":["SG: trade","S: command","S: martial arts [melee]","S: meditation","TG: kata 2","T: heartpiercing strike","T: slippery maneuvers"],"rankUpCost":24},
+            {"list":["SG: martial","S: composition","S: smithing","S: theology","TG: kata 3","T: pillar of calm","T: commune with the spirits"],"rankUpCost":32},
+            {"list":["SG: scholar","S: command","S: martial arts [melee]","S: meditation","TG: earth shūji 4","T: striking as void","T: crashing wave style"],"rankUpCost":44},
+            {"list":["SG: martial","S: composition","S: medicine","S: survival","TG: kata 5","T: sear the wound","T: rouse the soul"],"rankUpCost":60}
         ]
     },
-    "Togashi":{
+    "togashi":{
         "ringRefs":["earth","void"],
         "startingSkillRefs":[["fitness","martial arts [melee]","martial arts [unarmed]","meditation","survival","theology"],4],
         "honor":40,
         "techniqueGroupRefs":["kihō","shūji","ritual"],
         "startingTechniqueRefs":[
-            [["Earthen Fist","Earth Needs No Eyes","Flame Fist","Ki Protection","Water Fist"],1],
+            [["earthen fist","earth needs no eyes","flame fist","ki protection","water fist"],1],
             "Lord Togashi’s Insight"
         ],
         "startingEquipmentRefData":[
@@ -343,21 +343,21 @@
             "traveling pack"
         ],
         "curriculum":[
-            {"list":["SG: scholar","S: martial arts [unarmed]","S: fitness","S: survival","TG: fire kihō 1","T: Way of the Earthquake","T: Honest Assessment"],"rankUpCost":20},
-            {"list":["SG: martial","S: command","S: composition","S: survival","TG: water kihō 2","T: Open Hand Style","T: Stirring the Embers"],"rankUpCost":24},
-            {"list":["SG: scholar","S: martial arts [unarmed]","S: labor","S: meditation","TG: air kihō 3","T: Death Touch","T: All Arts Are One"],"rankUpCost":32},
-            {"list":["SG: martial","S: labor","S: medicine","S: survival","TG: earth kihō 4","T: Touch the Void Dragon","T: Pillar of Calm"],"rankUpCost":44},
-            {"list":["SG: scholar","S: meditation","S: martial arts [unarmed]","S: survival","TG: void kihō 5","TG: ritual 5","T: Rouse the Soul"],"rankUpCost":60}
+            {"list":["SG: scholar","S: martial arts [unarmed]","S: fitness","S: survival","TG: fire kihō 1","T: way of the earthquake","T: honest assessment"],"rankUpCost":20},
+            {"list":["SG: martial","S: command","S: composition","S: survival","TG: water kihō 2","T: open hand style","T: stirring the embers"],"rankUpCost":24},
+            {"list":["SG: scholar","S: martial arts [unarmed]","S: labor","S: meditation","TG: air kihō 3","T: death touch","T: all arts are one"],"rankUpCost":32},
+            {"list":["SG: martial","S: labor","S: medicine","S: survival","TG: earth kihō 4","T: touch the void dragon","T: pillar of calm"],"rankUpCost":44},
+            {"list":["SG: scholar","S: meditation","S: martial arts [unarmed]","S: survival","TG: void kihō 5","TG: ritual 5","T: rouse the soul"],"rankUpCost":60}
         ]
     },
-    "Akodo":{
+    "akodo":{
         "ringRefs":["earth","water"],
         "startingSkillRefs":[["command","fitness","government","martial arts [melee]","martial arts [ranged]","meditation","tactics"],5],
         "honor":50,
         "techniqueGroupRefs":["kata","ritual","shūji"],
         "startingTechniqueRefs":[
-            [["Striking as Earth","Striking as Water"],1],
-            "Lord Akodo’s Roar"
+            [["striking as earth","striking as water"],1],
+            "lord akodo’s roar"
         ],
         "startingEquipmentRefData":[
             "ashigaru armor",
@@ -372,22 +372,22 @@
             "traveling pack"
         ],
         "curriculum":[
-            {"list":["SG: martial","S: government","S: command","S: performance","TG: kata 1","T: Iron Forest Style","T: Honest Assessment"],"rankUpCost":20},
-            {"list":["SG: martial","S: command","S: medicine","S: survival","TG: kata 2","T: Rallying Cry","T: Lightning Raid"],"rankUpCost":24},
-            {"list":["SG: martial","S: government","S: composition","S: sentiment","TG: kata 3","T: A Samurai’s Fate","T: Touchstone of Courage"],"rankUpCost":32},
-            {"list":["SG: social","S: government","S: martial arts [melee]","S: tactics","TG: fire shūji 4","T: Rouse the Soul","T: Disappearing World Style"],"rankUpCost":44},
-            {"list":["SG: scholar","S: martial arts [melee]","S: meditation","S: tactics","TG: earth shūji 5","T: Bend with the Storm","T: Striking as Void"],"rankUpCost":60}
+            {"list":["SG: martial","S: government","S: command","S: performance","TG: kata 1","T: iron forest style","T: honest assessment"],"rankUpCost":20},
+            {"list":["SG: martial","S: command","S: medicine","S: survival","TG: kata 2","T: rallying cry","T: lightning raid"],"rankUpCost":24},
+            {"list":["SG: martial","S: government","S: composition","S: sentiment","TG: kata 3","T: a samurai’s fate","T: touchstone of courage"],"rankUpCost":32},
+            {"list":["SG: social","S: government","S: martial arts [melee]","S: tactics","TG: fire shūji 4","T: rouse the soul","T: disappearing world style"],"rankUpCost":44},
+            {"list":["SG: scholar","S: martial arts [melee]","S: meditation","S: tactics","TG: earth shūji 5","T: bend with the storm","T: striking as void"],"rankUpCost":60}
         ]
     },
-    "Ikoma":{
+    "ikoma":{
         "ringRefs":["fire","water"],
         "startingSkillRefs":[["composition","courtesy","culture","martial arts [ranged]","performance","sentiment","tactics"],5],
         "honor":45,
         "techniqueGroupRefs":["kata","ritual","shūji"],
         "startingTechniqueRefs":[
-            "Warrior’s Resolve",
-            "Fanning the Flames",
-            "Tributaries of Trade"
+            "warrior’s resolve",
+            "fanning the flames",
+            "tributaries of trade"
         ],
         "startingEquipmentRefData":[
             "traveling clothes",
@@ -400,24 +400,24 @@
             "journal"
         ],
         "curriculum":[
-            {"list":["SG: social","S: composition","S: culture","S: martial arts [melee]","TG: fire shūji 1","T: Slippery Maneuvers","T: Soaring Slice"],"rankUpCost":20},
-            {"list":["SG: martial","S: command","S: performance","S: sentiment","TG: water shūji 2","T: Dazzling Performance","T: Spinning Blades Style"],"rankUpCost":24},
-            {"list":["SG: scholar","S: composition","S: performance","S: survival","TG: earth shūji 3","T: Rallying Cry","T: Regal Bearing"],"rankUpCost":32},
-            {"list":["SG: social","S: government","S: sentiment","S: martial arts [ranged]","TG: air shūji 4","T: Sear the Wound","T: Pillar of Calm"],"rankUpCost":44},
-            {"list":["SG: scholar","S: command","S: performance","S: meditation","TG: void shūji 5","T: Bend with the Storm","T: Buoyant Arrival"],"rankUpCost":60}
+            {"list":["SG: social","S: composition","S: culture","S: martial arts [melee]","TG: fire shūji 1","T: slippery maneuvers","T: soaring slice"],"rankUpCost":20},
+            {"list":["SG: martial","S: command","S: performance","S: sentiment","TG: water shūji 2","T: dazzling performance","T: spinning blades style"],"rankUpCost":24},
+            {"list":["SG: scholar","S: composition","S: performance","S: survival","TG: earth shūji 3","T: rallying cry","T: regal bearing"],"rankUpCost":32},
+            {"list":["SG: social","S: government","S: sentiment","S: martial arts [ranged]","TG: air shūji 4","T: sear the wound","T: pillar of calm"],"rankUpCost":44},
+            {"list":["SG: scholar","S: command","S: performance","S: meditation","TG: void shūji 5","T: bend with the storm","T: buoyant arrival"],"rankUpCost":60}
         ]
     },
-    "Kitsu":{
+    "kitsu":{
         "ringRefs":["void","water"],
         "startingSkillRefs":[["courtesy","government","meditation","performance","survival","theology"],3],
         "honor":50,
         "techniqueGroupRefs":["invocation","ritual","shūji"],
         "traditionRef":"ancestral",
         "startingTechniqueRefs":[
-            [["The Rushing Wave","Path to Inner Peace","Biting Steel"],2],
-            "Commune with the Spirits",
-            "Cleansing Rite",
-            "Ancestry Unearthed"
+            [["the rushing wave","path to inner peace","biting steel"],2],
+            "commune with the spirits",
+            "cleansing rite",
+            "ancestry unearthed"
         ],
         "startingEquipmentRefData":[
             "sanctified robes",
@@ -429,21 +429,21 @@
             "traveling pack"
         ],
         "curriculum":[
-            {"list":["SG: scholar","S: command","S: meditation","S: performance","TG: water invocation 1","T: Courage of Seven Thunders","T: Heart of the Water Dragon"],"rankUpCost":20},
-            {"list":["SG: social","S: government","S: fitness","S: theology","TG: air invocation 2","T: Hands of the Tides","T: Fanning the Flames"],"rankUpCost":24},
-            {"list":["SG: martial","S: government","S: survival","S: theology","TG: earth invocation 3","T: Rise, Earth","T: Ebb and Flow"],"rankUpCost":32},
-            {"list":["SG: scholar","S: command","S: meditation","S: performance","TG: ritual 4","T: Wrath of Kaze-no-Kami","T: Bravado"],"rankUpCost":44},
-            {"list":["SG: social","S: government","S: sentiment","S: theology","TG: fire invocation 5","T: Sear the Wound","T: Buoyant Arrival"],"rankUpCost":60}
+            {"list":["SG: scholar","S: command","S: meditation","S: performance","TG: water invocation 1","T: courage of seven thunders","T: heart of the water dragon"],"rankUpCost":20},
+            {"list":["SG: social","S: government","S: fitness","S: theology","TG: air invocation 2","T: hands of the tides","T: fanning the flames"],"rankUpCost":24},
+            {"list":["SG: martial","S: government","S: survival","S: theology","TG: earth invocation 3","T: rise, earth","T: ebb and flow"],"rankUpCost":32},
+            {"list":["SG: scholar","S: command","S: meditation","S: performance","TG: ritual 4","T: wrath of kaze-no-kami","T: bravado"],"rankUpCost":44},
+            {"list":["SG: social","S: government","S: sentiment","S: theology","TG: fire invocation 5","T: sear the wound","T: buoyant arrival"],"rankUpCost":60}
         ]
     },
-    "Matsu":{
+    "matsu":{
         "ringRefs":["earth","fire"],
         "startingSkillRefs":[["command","fitness","labor","martial arts [melee]","martial arts [ranged]","martial arts [unarmed]","survival"],5],
         "honor":55,
         "techniqueGroupRefs":["kata","ritual","shūji"],
         "startingTechniqueRefs":[
-            [["Rushing Avalanche Style","Spinning Blades Style"],1],
-            "Stirring the Embers"
+            [["rushing avalanche style","spinning blades style"],1],
+            "stirring the embers"
         ],
         "startingEquipmentRefData":[
             "ashigaru armor",
@@ -457,21 +457,21 @@
             "traveling pack"
         ],
         "curriculum":[
-            {"list":["SG: martial","S: command","S: labor","S: survival","TG: kata 1","T: Lord Akodo’s Roar","T: Stonewall Tactics"],"rankUpCost":20},
-            {"list":["SG: martial","S: command","S: medicine","S: smithing","TG: kata 2","T: Heartpiercing Strike","T: Fanning the Flames"],"rankUpCost":24},
-            {"list":["SG: martial","S: composition","S: government","S: theology","TG: kata 3","T: Disappearing World Style","T: Rallying Cry"],"rankUpCost":32},
-            {"list":["SG: martial","S: command","S: courtesy","S: culture","TG: kata 4","T: Striking as Void","T: Bravado"],"rankUpCost":44},
-            {"list":["SG: martial","S: labor","S: medicine","S: smithing","TG: kata 5","T: Rouse the Soul","T: Sear the Wound"],"rankUpCost":60}
+            {"list":["SG: martial","S: command","S: labor","S: survival","TG: kata 1","T: lord akodo’s roar","T: stonewall tactics"],"rankUpCost":20},
+            {"list":["SG: martial","S: command","S: medicine","S: smithing","TG: kata 2","T: heartpiercing strike","T: fanning the flames"],"rankUpCost":24},
+            {"list":["SG: martial","S: composition","S: government","S: theology","TG: kata 3","T: disappearing world style","T: rallying cry"],"rankUpCost":32},
+            {"list":["SG: martial","S: command","S: courtesy","S: culture","TG: kata 4","T: striking as void","T: bravado"],"rankUpCost":44},
+            {"list":["SG: martial","S: labor","S: medicine","S: smithing","TG: kata 5","T: rouse the soul","T: sear the wound"],"rankUpCost":60}
         ]
     },
-    "Asako":{
+    "asako":{
         "ringRefs":["air","earth"],
         "startingSkillRefs":[["culture","government","martial arts [unarmed]","medicine","performance","sentiment","theology"],5],
         "honor":45,
         "techniqueGroupRefs":["kata","ritual","shūji"],
         "startingTechniqueRefs":[
-            "Civility Foremost",
-            [["Ancestry Unearthed","Cadence"],1]
+            "civility foremost",
+            [["ancestry unearthed","cadence"],1]
         ],
         "startingEquipmentRefData":[
             "ceremonial clothes",
@@ -484,23 +484,23 @@
             "traveling pack"
         ],
         "curriculum":[
-            {"list":["SG: scholar","S: courtesy","S: games","S: martial arts [unarmed]","TG: earth shūji 1","T: Open Hand Style","T: Divination"],"rankUpCost":20},
-            {"list":["SG: social","S: government","S: medicine","S: sentiment","TG: air shūji 2","T: All Arts Are One","T: Tea Ceremony"],"rankUpCost":24},
-            {"list":["SG: scholar","S: courtesy","S: performance","S: meditation","TG: fire shūji 3","T: Pillar of Calm","T: Ebb and Flow"],"rankUpCost":32},
-            {"list":["SG: social","S: culture","S: medicine","S: theology","TG: earth shūji 4","T: Cleansing Spirit","T: Wolf’s Proposal"],"rankUpCost":44},
-            {"list":["SG: scholar","S: courtesy","S: performance","S: meditation","TG: water shūji 5","T: Still the Elements","T: Bend with the Storm"],"rankUpCost":60}
+            {"list":["SG: scholar","S: courtesy","S: games","S: martial arts [unarmed]","TG: earth shūji 1","T: open hand style","T: divination"],"rankUpCost":20},
+            {"list":["SG: social","S: government","S: medicine","S: sentiment","TG: air shūji 2","T: all arts are one","T: tea ceremony"],"rankUpCost":24},
+            {"list":["SG: scholar","S: courtesy","S: performance","S: meditation","TG: fire shūji 3","T: pillar of calm","T: ebb and flow"],"rankUpCost":32},
+            {"list":["SG: social","S: culture","S: medicine","S: theology","TG: earth shūji 4","T: cleansing spirit","T: wolf’s proposal"],"rankUpCost":44},
+            {"list":["SG: scholar","S: courtesy","S: performance","S: meditation","TG: water shūji 5","T: still the elements","T: bend with the storm"],"rankUpCost":60}
         ]
     },
-    "Isawa":{
+    "isawa":{
         "ringRefs":"Any two different rings",
         "startingSkillRefs":[["composition","courtesy","medicine","meditation","performance","theology"],3],
         "honor":40,
         "techniqueGroupRefs":["invocation","ritual","shūji"],
         "traditionRef":"elemental",
         "startingTechniqueRefs":[
-            [["Extinguish","Grasp of Earth","Path to Inner Peace","Tempest of Air"],3],
-            "Commune with the Spirits",
-            "Divination"
+            [["extinguish","grasp of earth","path to inner peace","tempest of air"],3],
+            "commune with the spirits",
+            "divination"
         ],
         "startingEquipmentRefData":[
             "sanctified robes",
@@ -510,21 +510,21 @@
             "traveling pack"
         ],
         "curriculum":[
-            {"list":["SG: scholar","S: composition","S: command","S: meditation","TG: fire invocation 1","T: Dance of Seasons","T: Cleansing Rite"],"rankUpCost":20},
-            {"list":["SG: scholar","S: courtesy","S: meditation","S: performance","TG: water invocation 2","T: Fury of Osano-wo","T: Fanning the Flames"],"rankUpCost":24},
-            {"list":["SG: scholar","S: composition","S: meditation","S: survival","TG: air invocation 3","T: Wings of the Phoenix","T: Strike the Tsunami"],"rankUpCost":32},
-            {"list":["SG: martial","S: government","S: sentiment","S: theology","TG: earth invocation 4","T: Wrath of Kaze-no-Kami","T: Rise, Flame"],"rankUpCost":44},
-            {"list":["SG: social","S: composition","S: sentiment","S: theology","TG: fire invocation 5","T: Earthquake","T: Rouse the Soul"],"rankUpCost":60}
+            {"list":["SG: scholar","S: composition","S: command","S: meditation","TG: fire invocation 1","T: dance of seasons","T: cleansing rite"],"rankUpCost":20},
+            {"list":["SG: scholar","S: courtesy","S: meditation","S: performance","TG: water invocation 2","T: fury of osano-wo","T: fanning the flames"],"rankUpCost":24},
+            {"list":["SG: scholar","S: composition","S: meditation","S: survival","TG: air invocation 3","T: wings of the phoenix","T: strike the tsunami"],"rankUpCost":32},
+            {"list":["SG: martial","S: government","S: sentiment","S: theology","TG: earth invocation 4","T: wrath of kaze-no-kami","T: rise, flame"],"rankUpCost":44},
+            {"list":["SG: social","S: composition","S: sentiment","S: theology","TG: fire invocation 5","T: earthquake","T: rouse the soul"],"rankUpCost":60}
         ]
     },
-    "Shiba":{
+    "shiba":{
         "ringRefs":["earth","water"],
         "startingSkillRefs":[["courtesy","fitness","martial arts [melee]","meditation","survival","tactics","theology"],5],
         "honor":45,
         "techniqueGroupRefs":["kata","ritual","shūji"],
         "startingTechniqueRefs":[
-            "Lord Shiba’s Valor",
-            [["Striking as Earth","Striking as Water"],1]
+            "lord shiba’s valor",
+            [["striking as earth","striking as water"],1]
         ],
         "startingEquipmentRefData":[
             "ashigaru armor",
@@ -535,23 +535,23 @@
             "traveling pack"
         ],
         "curriculum":[
-            {"list":["SG: martial","S: courtesy","S: sentiment","S: survival","TG: kata 1","T: Civility Foremost","T: Stirring the Embers"],"rankUpCost":20},
-            {"list":["SG: scholar","S: fitness","S: meditation","S: martial arts [melee]","TG: kata 2","T: Rallying Cry","T: Slippery Maneuvers"],"rankUpCost":24},
-            {"list":["SG: social","S: culture","S: meditation","S: martial arts [melee]","TG: water shūji 3","T: A Samurai’s Fate","T: Touchstone of Courage"],"rankUpCost":32},
-            {"list":["SG: scholar","S: command","S: martial arts [melee]","S: tactics","TG: kata 4","T: The Immovable Hand of Peace","T: Touch the Void Dragon"],"rankUpCost":44},
-            {"list":["SG: martial","S: sentiment","S: survival","S: theology","TG: earth shūji 5","T: Way of the Edgeless Sword","T: Rouse the Soul"],"rankUpCost":60}
+            {"list":["SG: martial","S: courtesy","S: sentiment","S: survival","TG: kata 1","T: civility foremost","T: stirring the embers"],"rankUpCost":20},
+            {"list":["SG: scholar","S: fitness","S: meditation","S: martial arts [melee]","TG: kata 2","T: rallying cry","T: slippery maneuvers"],"rankUpCost":24},
+            {"list":["SG: social","S: culture","S: meditation","S: martial arts [melee]","TG: water shūji 3","T: a samurai’s fate","T: touchstone of courage"],"rankUpCost":32},
+            {"list":["SG: scholar","S: command","S: martial arts [melee]","S: tactics","TG: kata 4","T: the immovable hand of peace","T: touch the void dragon"],"rankUpCost":44},
+            {"list":["SG: martial","S: sentiment","S: survival","S: theology","TG: earth shūji 5","T: way of the edgeless sword","T: rouse the soul"],"rankUpCost":60}
         ]
     },
-    "Kaito":{
+    "kaito":{
         "ringRefs":["air","water"],
         "startingSkillRefs":[["fitness","martial arts [ranged]","meditation","performance","smithing","theology"],4],
         "honor":45,
         "techniqueGroupRefs":["kata","ritual","shūji"],
         "traditionRef":"fortunist",
         "startingTechniqueRefs":[
-            "Hawk’s Precision",
-            "Tempest of Air",
-            [["Cleansing Rite","Commune with the Spirits","Threshold Barrier"],2]
+            "hawk’s precision",
+            "tempest of air",
+            [["cleansing rite","commune with the spirits","threshold barrier"],2]
         ],
         "startingEquipmentRefData":[
             "sanctified robes",
@@ -563,21 +563,21 @@
             "traveling pack"
         ],
         "curriculum":[
-            {"list":["SG: scholar","S: fitness","S: martial arts [ranged]","S: meditation","TG: air invocation 1","T: Bind the Shadow","T: Striking as Air"],"rankUpCost":20},
-            {"list":["SG: martial","S: performance","S: theology","S: smithing","TG: kata 2","T: Grasp of the Air Dragon","T: Divination"],"rankUpCost":24},
-            {"list":["SG: social","S: labor","S: medicine","S: survival","TG: water invocation 3","T: Breath of Wind Style","T: Flowing Water Strike"],"rankUpCost":32},
-            {"list":["SG: scholar","S: fitness","S: martial arts [ranged]","S: meditation","TG: kata 4","T: Rise, Air","T: Soul Sunder"],"rankUpCost":44},
-            {"list":["SG: martial","S: command","S: sentiment","S: theology","TG: fire invocation 5","T: Tomb of Jade","T: Pin the Fan"],"rankUpCost":60}
+            {"list":["SG: scholar","S: fitness","S: martial arts [ranged]","S: meditation","TG: air invocation 1","T: bind the shadow","T: striking as air"],"rankUpCost":20},
+            {"list":["SG: martial","S: performance","S: theology","S: smithing","TG: kata 2","T: grasp of the air dragon","T: divination"],"rankUpCost":24},
+            {"list":["SG: social","S: labor","S: medicine","S: survival","TG: water invocation 3","T: breath of wind style","T: flowing water strike"],"rankUpCost":32},
+            {"list":["SG: scholar","S: fitness","S: martial arts [ranged]","S: meditation","TG: kata 4","T: rise, air","T: soul sunder"],"rankUpCost":44},
+            {"list":["SG: martial","S: command","S: sentiment","S: theology","TG: fire invocation 5","T: tomb of jade","T: pin the fan"],"rankUpCost":60}
         ]
     },
-    "Bayushi":{
+    "bayushi":{
         "ringRefs":["air","fire"],
         "startingSkillRefs":[["command","courtesy","design","martial arts [unarmed]","performance","sentiment","skulduggery"],5],
         "honor":35,
         "techniqueGroupRefs":["kata","ritual","shūji"],
         "startingTechniqueRefs":[
-            "Lord Bayushi’s Whispers",
-            [["Cadence","Rustling of Leaves"],1]
+            "lord bayushi’s whispers",
+            [["cadence","rustling of leaves"],1]
         ],
         "startingEquipmentRefData":[
             "ceremonial clothes",
@@ -589,21 +589,21 @@
             "traveling pack"
         ],
         "curriculum":[
-            {"list":["SG: social","S: sentiment","S: martial arts [unarmed]","S: skulduggery","TG: air shūji 1","T: Fanning the Flames","T: Weight of Duty"],"rankUpCost":20},
-            {"list":["SG: scholar","S: courtesy","S: skulduggery","S: martial arts [melee]","TG: fire shūji 2","T: Dazzling Performance","T: Veiled Menace Style"],"rankUpCost":24},
-            {"list":["SG: trade","S: courtesy","S: culture","S: sentiment","TG: water shūji 3","T: Wolf’s Proposal","T: Skulk"],"rankUpCost":32},
-            {"list":["SG: social","S: aesthetics","S: sentiment","S: medicine","TG: earth shūji 4","T: Buoyant Arrival","T: Deadly Sting"],"rankUpCost":44},
-            {"list":["SG: scholar","S: courtesy","S: performance","S: martial arts [ranged]","TG: void shūji 5","T: Bend with the Storm","T: Sear the Wound"],"rankUpCost":60}
+            {"list":["SG: social","S: sentiment","S: martial arts [unarmed]","S: skulduggery","TG: air shūji 1","T: fanning the flames","T: weight of duty"],"rankUpCost":20},
+            {"list":["SG: scholar","S: courtesy","S: skulduggery","S: martial arts [melee]","TG: fire shūji 2","T: dazzling performance","T: veiled menace style"],"rankUpCost":24},
+            {"list":["SG: trade","S: courtesy","S: culture","S: sentiment","TG: water shūji 3","T: wolf’s proposal","T: skulk"],"rankUpCost":32},
+            {"list":["SG: social","S: aesthetics","S: sentiment","S: medicine","TG: earth shūji 4","T: buoyant arrival","T: deadly sting"],"rankUpCost":44},
+            {"list":["SG: scholar","S: courtesy","S: performance","S: martial arts [ranged]","TG: void shūji 5","T: bend with the storm","T: sear the wound"],"rankUpCost":60}
         ]
     },
-    "Shosuro":{
+    "shosuro":{
         "ringRefs":["air","fire"],
         "startingSkillRefs":[["courtesy","fitness","games","martial arts [melee]","martial arts [unarmed]","performance","skulduggery"],5],
         "honor":30,
         "techniqueGroupRefs":["kata","ritual","shūji"],
         "startingTechniqueRefs":[
-            "Deadly Sting",
-            [["Whispers of Court","Sensational Distraction"],1]
+            "deadly sting",
+            [["whispers of court","sensational distraction"],1]
         ],
         "startingEquipmentRefData":[
             "ceremonial clothes",
@@ -617,23 +617,23 @@
             "traveling pack"
         ],
         "curriculum":[
-            {"list":["SG: martial","S: courtesy","S: performance","S: skulduggery","TG: kata 1","T: Veiled Menace Style","T: Skulk"],"rankUpCost":20},
-            {"list":["SG: trade","S: fitness","S: performance","S: martial arts [unarmed]","TG: air shūji 2","T: Lord Bayushi’s Whispers","T: Noxious Cloud"],"rankUpCost":24},
-            {"list":["SG: martial","S: sentiment","S: performance","S: skulduggery","TG: kata 3","T: Bravado","T: Dazzling Performance"],"rankUpCost":32},
-            {"list":["SG: social","S: sentiment","S: martial arts [melee]","S: skulduggery","TG: air shūji 4","T: Silencing Stroke","T: A Samurai’s Fate"],"rankUpCost":44},
-            {"list":["SG: martial","S: courtesy","S: performance","S: skulduggery","TG: kata 5","T: Buoyant Arrival","T: Sear the Wound"],"rankUpCost":60}
+            {"list":["SG: martial","S: courtesy","S: performance","S: skulduggery","TG: kata 1","T: veiled menace style","T: skulk"],"rankUpCost":20},
+            {"list":["SG: trade","S: fitness","S: performance","S: martial arts [unarmed]","TG: air shūji 2","T: lord bayushi’s whispers","T: noxious cloud"],"rankUpCost":24},
+            {"list":["SG: martial","S: sentiment","S: performance","S: skulduggery","TG: kata 3","T: bravado","T: dazzling performance"],"rankUpCost":32},
+            {"list":["SG: social","S: sentiment","S: martial arts [melee]","S: skulduggery","TG: air shūji 4","T: silencing stroke","T: a samurai’s fate"],"rankUpCost":44},
+            {"list":["SG: martial","S: courtesy","S: performance","S: skulduggery","TG: kata 5","T: buoyant arrival","T: sear the wound"],"rankUpCost":60}
         ]
     },
-    "Soshi":{
+    "soshi":{
         "ringRefs":["air","water"],
         "startingSkillRefs":[["courtesy","fitness","games","performance","skulduggery","theology"],3],
         "honor":30,
         "techniqueGroupRefs":["invocation","ritual","shūji"],
         "traditionRef":"fortunist",
         "startingTechniqueRefs":[
-            [["Bō of Water","Cloak of Night","Nature’s Touch","Token of Memory"],3],
-            "Commune with the Spirits",
-            "All in Jest"
+            [["bō of water","cloak of night","nature’s touch","token of memory"],3],
+            "commune with the spirits",
+            "all in jest"
         ],
         "startingEquipmentRefData":[
             "sanctified robes",
@@ -644,24 +644,24 @@
             "traveling pack"
         ],
         "curriculum":[
-            {"list":["SG: trade","S: courtesy","S: fitness","S: theology","TG: air invocation 1","T: Mask of Wind","T: Skulk"],"rankUpCost":20},
-            {"list":["SG: social","S: medicine","S: sentiment","S: theology","TG: water invocation 2","T: Vapor of Nightmares","T: Lord Bayushi’s Whispers"],"rankUpCost":24},
-            {"list":["SG: scholar","S: games","S: courtesy","S: skulduggery","TG: air invocation 3","T: False Realm of the Fox Spirits","T: Noxious Cloud"],"rankUpCost":32},
-            {"list":["SG: martial","S: performance","S: sentiment","S: theology","TG: earth invocation 4","T: Deadly Sting","T: Rise, Air"],"rankUpCost":44},
-            {"list":["SG: scholar","S: courtesy","S: fitness","S: skulduggery","TG: air invocation 5","T: Buoyant Arrival","T: Silencing Stroke"],"rankUpCost":60}
+            {"list":["SG: trade","S: courtesy","S: fitness","S: theology","TG: air invocation 1","T: mask of wind","T: skulk"],"rankUpCost":20},
+            {"list":["SG: social","S: medicine","S: sentiment","S: theology","TG: water invocation 2","T: vapor of nightmares","T: lord bayushi’s whispers"],"rankUpCost":24},
+            {"list":["SG: scholar","S: games","S: courtesy","S: skulduggery","TG: air invocation 3","T: false realm of the fox spirits","T: noxious cloud"],"rankUpCost":32},
+            {"list":["SG: martial","S: performance","S: sentiment","S: theology","TG: earth invocation 4","T: deadly sting","T: rise, air"],"rankUpCost":44},
+            {"list":["SG: scholar","S: courtesy","S: fitness","S: skulduggery","TG: air invocation 5","T: buoyant arrival","T: silencing stroke"],"rankUpCost":60}
         ]
     },
-    "Yogo":{
+    "yogo":{
         "ringRefs":["earth","water"],
         "startingSkillRefs":[["composition","fitness","martial arts [melee]","martial arts [unarmed]","meditation","theology"],3],
         "honor":40,
         "techniqueGroupRefs":["invocation","ritual","shūji"],
         "traditionRef":"elemental",
         "startingTechniqueRefs":[
-            [["Jade Strike","Grasp of Earth","The Rushing Wave"],2],
-            "Shallow Waters",
-            "Commune with the Spirits",
-            "Threshold Barrier"
+            [["jade strike","grasp of earth","the rushing wave"],2],
+            "shallow waters",
+            "commune with the spirits",
+            "threshold barrier"
         ],
         "startingEquipmentRefData":[
             "sanctified robes",
@@ -674,21 +674,21 @@
             "traveling pack"
         ],
         "curriculum":[
-            {"list":["SG: scholar","S: composition","S: martial arts [unarmed]","S: skulduggery","TG: earth invocation 1","T: Civility Foremost","T: Path to Inner Peace"],"rankUpCost":20},
-            {"list":["SG: martial","S: composition","S: skulduggery","S: theology","TG: water invocation 2","T: Ebb and Flow","T: Embrace of Kenro-Ji-Jin"],"rankUpCost":24},
-            {"list":["SG: artisan","S: martial arts [unarmed]","S: performance","S: theology","TG: fire invocation 3","T: Open Hand Style","T: Earth Becomes Sky"],"rankUpCost":32},
-            {"list":["SG: scholar","S: composition","S: martial arts [unarmed]","S: skulduggery","TG: air invocation 4","T: Skulk","T: Rise, Water"],"rankUpCost":44},
-            {"list":["SG: martial","S: composition","S: performance","S: theology","TG: earth shūji 5","T: Deadly Sting","T: Tomb of Jade"],"rankUpCost":60}
+            {"list":["SG: scholar","S: composition","S: martial arts [unarmed]","S: skulduggery","TG: earth invocation 1","T: civility foremost","T: path to inner peace"],"rankUpCost":20},
+            {"list":["SG: martial","S: composition","S: skulduggery","S: theology","TG: water invocation 2","T: ebb and flow","T: embrace of kenro-ji-jin"],"rankUpCost":24},
+            {"list":["SG: artisan","S: martial arts [unarmed]","S: performance","S: theology","TG: fire invocation 3","T: open hand style","T: earth becomes sky"],"rankUpCost":32},
+            {"list":["SG: scholar","S: composition","S: martial arts [unarmed]","S: skulduggery","TG: air invocation 4","T: skulk","T: rise, water"],"rankUpCost":44},
+            {"list":["SG: martial","S: composition","S: performance","S: theology","TG: earth shūji 5","T: deadly sting","T: tomb of jade"],"rankUpCost":60}
         ]
     },
-    "Ide":{
+    "ide":{
         "ringRefs":["air","water"],
         "startingSkillRefs":[["commerce","courtesy","games","labor","martial arts [ranged]","medicine","survival"],5],
         "honor":45,
         "techniqueGroupRefs":["kata","ritual","shūji"],
         "startingTechniqueRefs":[
-            "Tributaries of Trade",
-            [["Cadence","Shallow Waters"],1]
+            "tributaries of trade",
+            [["cadence","shallow waters"],1]
         ],
         "startingEquipmentRefData":[
             "traveling clothes",
@@ -701,23 +701,23 @@
             "journal"
         ],
         "curriculum":[
-            {"list":["SG: trade","S: courtesy","S: fitness","S: martial arts [ranged]","TG: air shūji 1","T: Feigned Opening","T: Hawk’s Precision"],"rankUpCost":20},
-            {"list":["SG: social","S: commerce","S: martial arts [ranged]","S: survival","TG: water shūji 2","T: Ebb and Flow","T: Lady Shinjo’s Speed"],"rankUpCost":24},
-            {"list":["SG: martial","S: aesthetics","S: commerce","S: games","TG: earth shūji 3","T: Pillar of Calm","T: All Arts Are One"],"rankUpCost":32},
-            {"list":["SG: social","S: aesthetics","S: martial arts [ranged]","S: sentiment","TG: fire shūji 4","T: Sear the Wound","T: Regal Bearing"],"rankUpCost":44},
-            {"list":["SG: trade","S: command","S: fitness","S: games","TG: void shūji 5","T: Bend with the Storm","T: The Immovable Hand of Peace"],"rankUpCost":60}
+            {"list":["SG: trade","S: courtesy","S: fitness","S: martial arts [ranged]","TG: air shūji 1","T: feigned opening","T: hawk’s precision"],"rankUpCost":20},
+            {"list":["SG: social","S: commerce","S: martial arts [ranged]","S: survival","TG: water shūji 2","T: ebb and flow","T: lady shinjo’s speed"],"rankUpCost":24},
+            {"list":["SG: martial","S: aesthetics","S: commerce","S: games","TG: earth shūji 3","T: pillar of calm","T: all arts are one"],"rankUpCost":32},
+            {"list":["SG: social","S: aesthetics","S: martial arts [ranged]","S: sentiment","TG: fire shūji 4","T: sear the wound","T: regal bearing"],"rankUpCost":44},
+            {"list":["SG: trade","S: command","S: fitness","S: games","TG: void shūji 5","T: bend with the storm","T: the immovable hand of peace"],"rankUpCost":60}
         ]
     },
-    "Iuchi":{
+    "iuchi":{
         "ringRefs":["earth","water"],
         "startingSkillRefs":[["aesthetics","design","martial arts [melee]","meditation","survival","theology"],3],
         "honor":40,
         "techniqueGroupRefs":["invocation","ritual","shūji"],
         "traditionRef":"foreign",
         "startingTechniqueRefs":[
-            [["Grasp of Earth","Jurōjin’s Balm","The Rushing Wave"],2],
-            "Commune with the Spirits",
-            [["Ancestry Unearthed","Well of Desire"],1]
+            [["grasp of earth","jurōjin’s balm","the rushing wave"],2],
+            "commune with the spirits",
+            [["ancestry unearthed","well of desire"],1]
         ],
         "startingEquipmentRefData":[
             "traveling clothes",
@@ -729,21 +729,21 @@
             "unicorn warhorse"
         ],
         "curriculum":[
-            {"list":["SG: scholar","S: courtesy","S: design","S: survival","TG: water invocation 1","T: Sympathetic Energies","T: Cleansing Rite"],"rankUpCost":20},
-            {"list":["SG: martial","S: design","S: theology","S: survival","TG: earth invocation 2","T: Hands of the Tides","T: Artisan’s Appraisal"],"rankUpCost":24},
-            {"list":["SG: artisan","S: performance","S: survival","S: theology","TG: ritual 3","T: Rise, Earth","T: Dazzling Performance"],"rankUpCost":32},
-            {"list":["SG: social","S: medicine","S: survival","S: theology","TG: air invocation 4","T: Rouse the Soul","T: A Samurai’s Fate"],"rankUpCost":44},
-            {"list":["SG: artisan","S: culture","S: survival","S: theology","TG: earth shūji 5","T: The Soul’s Blade","T: Ever-Changing Waves"],"rankUpCost":60}
+            {"list":["SG: scholar","S: courtesy","S: design","S: survival","TG: water invocation 1","T: sympathetic energies","T: cleansing rite"],"rankUpCost":20},
+            {"list":["SG: martial","S: design","S: theology","S: survival","TG: earth invocation 2","T: hands of the tides","T: artisan’s appraisal"],"rankUpCost":24},
+            {"list":["SG: artisan","S: performance","S: survival","S: theology","TG: ritual 3","T: rise, earth","T: dazzling performance"],"rankUpCost":32},
+            {"list":["SG: social","S: medicine","S: survival","S: theology","TG: air invocation 4","T: rouse the soul","T: a samurai’s fate"],"rankUpCost":44},
+            {"list":["SG: artisan","S: culture","S: survival","S: theology","TG: earth shūji 5","T: the soul’s blade","T: ever-changing waves"],"rankUpCost":60}
         ]
     },
-    "Moto":{
+    "moto":{
         "ringRefs":["fire","water"],
         "startingSkillRefs":[["command","fitness","performance","martial arts [melee]","martial arts [unarmed]","survival","tactics"],5],
         "honor":35,
         "techniqueGroupRefs":["kata","ritual","shūji"],
         "startingTechniqueRefs":[
-            [["Lightning Raid","Slippery Maneuvers"],1],
-            "All in Jest"
+            [["lightning raid","slippery maneuvers"],1],
+            "all in jest"
         ],
         "startingEquipmentRefData":[
             "traveling clothes",
@@ -757,21 +757,21 @@
             "unicorn warhorse"
         ],
         "curriculum":[
-            {"list":["SG: martial","S: command","S: performance","S: survival","TG: kata 1","T: Crescent Moon Style","T: Stirring the Embers"],"rankUpCost":20},
-            {"list":["SG: trade","S: performance","S: martial arts [melee]","S: martial arts [unarmed]","TG: fire shūji 2","T: Heartpiercing Strike","T: Veiled Menace Style"],"rankUpCost":24},
-            {"list":["SG: social","S: fitness","S: martial arts [melee]","S: tactics","TG: kata 3","T: Bravado","T: Dazzling Performance"],"rankUpCost":32},
-            {"list":["SG: trade","S: command","S: martial arts [ranged]","S: tactics","TG: water shūji 4","T: Striking as Void","T: Crashing Wave Style"],"rankUpCost":44},
-            {"list":["SG: martial","S: command","S: government","S: survival","TG: kata 5","T: Sear the Wound","T: Buoyant Arrival"],"rankUpCost":60}
+            {"list":["SG: martial","S: command","S: performance","S: survival","TG: kata 1","T: crescent moon style","T: stirring the embers"],"rankUpCost":20},
+            {"list":["SG: trade","S: performance","S: martial arts [melee]","S: martial arts [unarmed]","TG: fire shūji 2","T: heartpiercing strike","T: veiled menace style"],"rankUpCost":24},
+            {"list":["SG: social","S: fitness","S: martial arts [melee]","S: tactics","TG: kata 3","T: bravado","T: dazzling performance"],"rankUpCost":32},
+            {"list":["SG: trade","S: command","S: martial arts [ranged]","S: tactics","TG: water shūji 4","T: striking as void","T: crashing wave style"],"rankUpCost":44},
+            {"list":["SG: martial","S: command","S: government","S: survival","TG: kata 5","T: sear the wound","T: buoyant arrival"],"rankUpCost":60}
         ]
     },
-    "Shinjo":{
+    "shinjo":{
         "ringRefs":["earth","fire"],
         "startingSkillRefs":[["commerce","martial arts [melee]","martial arts [ranged]","medicine","skulduggery","survival","tactics"],5],
         "honor":40,
         "techniqueGroupRefs":["kata","ritual","shūji"],
         "startingTechniqueRefs":[
-            [["Striking as Fire","Striking as Water"],1],
-            "Lady Shinjo’s Speed"
+            [["striking as fire","striking as water"],1],
+            "lady shinjo’s speed"
         ],
         "startingEquipmentRefData":[
             "ashigaru armor",
@@ -785,21 +785,21 @@
             "unicorn warhorse"
         ],
         "curriculum":[
-            {"list":["SG: martial","S: commerce","S: courtesy","S: survival","TG: earth shūji 1","T: Pelting Hail Style","T: Cadence"],"rankUpCost":20},
-            {"list":["SG: trade","S: courtesy","S: martial arts [melee]","S: martial arts [ranged]","TG: kata 2","T: Flowing Water Strike","T: Dazzling Performance"],"rankUpCost":24},
-            {"list":["SG: scholar","S: martial arts [ranged]","S: performance","S: survival","TG: water shūji 3","T: Crashing Wave Style","T: Crimson Leaves Strike"],"rankUpCost":32},
-            {"list":["SG: martial","S: command","S: skulduggery","S: survival","TG: kata 4","T: Bend with the Storm","T: Bravado"],"rankUpCost":44},
-            {"list":["SG: social","S: government","S: meditation","S: survival","TG: fire shūji 5","T: Pin the Fan","T: Rouse the Soul"],"rankUpCost":60}
+            {"list":["SG: martial","S: commerce","S: courtesy","S: survival","TG: earth shūji 1","T: pelting hail style","T: cadence"],"rankUpCost":20},
+            {"list":["SG: trade","S: courtesy","S: martial arts [melee]","S: martial arts [ranged]","TG: kata 2","T: flowing water strike","T: dazzling performance"],"rankUpCost":24},
+            {"list":["SG: scholar","S: martial arts [ranged]","S: performance","S: survival","TG: water shūji 3","T: crashing wave style","T: crimson leaves strike"],"rankUpCost":32},
+            {"list":["SG: martial","S: command","S: skulduggery","S: survival","TG: kata 4","T: bend with the storm","T: bravado"],"rankUpCost":44},
+            {"list":["SG: social","S: government","S: meditation","S: survival","TG: fire shūji 5","T: pin the fan","T: rouse the soul"],"rankUpCost":60}
         ]
     },
-    "Utaku":{
+    "utaku":{
         "ringRefs":["air","earth"],
         "startingSkillRefs":[["command","fitness","government","martial arts [melee]","meditation","smithing","survival"],5],
         "honor":50,
         "techniqueGroupRefs":["kata","ritual","shūji"],
         "startingTechniqueRefs":[
-            [["Crescent Moon Style","Iron Forest Style"],1],
-            "Warrior’s Resolve"
+            [["crescent moon style","iron forest style"],1],
+            "warrior’s resolve"
         ],
         "startingEquipmentRefData":[
             "lacquered armor",
@@ -814,11 +814,11 @@
             "utaku steed"
         ],
         "curriculum":[
-            {"list":["SG: martial","S: command","S: smithing","S: survival","TG: kata 1","T: Lady Shinjo’s Speed","T: Courtier’s Resolve"],"rankUpCost":20},
-            {"list":["SG: artisan","S: fitness","S: martial arts [melee]","S: tactics","TG: earth shūji 2","T: Thunderclap Strike","T: Rushing Avalanche Style"],"rankUpCost":24},
-            {"list":["SG: martial","S: medicine","S: survival","S: theology","TG: kata 3","T: Pillar of Calm","T: Touchstone of Courage"],"rankUpCost":32},
-            {"list":["SG: scholar","S: command","S: fitness","S: martial arts [melee]","TG: air shūji 4","T: Soul Sunder","T: Breath of Wind Style"],"rankUpCost":44},
-            {"list":["SG: martial","S: command","S: culture","S: survival","TG: kata 5","T: Rouse the Soul","T: Bend with the Storm"],"rankUpCost":60}
+            {"list":["SG: martial","S: command","S: smithing","S: survival","TG: kata 1","T: lady shinjo’s speed","T: courtier’s resolve"],"rankUpCost":20},
+            {"list":["SG: artisan","S: fitness","S: martial arts [melee]","S: tactics","TG: earth shūji 2","T: thunderclap strike","T: rushing avalanche style"],"rankUpCost":24},
+            {"list":["SG: martial","S: medicine","S: survival","S: theology","TG: kata 3","T: pillar of calm","T: touchstone of courage"],"rankUpCost":32},
+            {"list":["SG: scholar","S: command","S: fitness","S: martial arts [melee]","TG: air shūji 4","T: soul sunder","T: breath of wind style"],"rankUpCost":44},
+            {"list":["SG: martial","S: command","S: culture","S: survival","TG: kata 5","T: rouse the soul","T: bend with the storm"],"rankUpCost":60}
         ]
     },
     "ronin":{
@@ -827,8 +827,8 @@
         "honor":30,
         "techniqueGroupRefs":["kata","ritual","shūji"],
         "startingTechniqueRefs":[
-            [["Pelting Hail Style","Crescent Moon Style"],1],
-            [["All in Jest","Honest Assessment","Stirring the Embers","Rustling of Leaves"],1]
+            [["pelting hail style","crescent moon style"],1],
+            [["all in jest","honest assessment","stirring the embers","rustling of leaves"],1]
         ],
         "startingEquipmentRefData":[
             "traveling clothes",
@@ -839,11 +839,11 @@
             "any item of rarity 4 or lower"
         ],
         "curriculum":[
-            {"list":["SG: trade","S: fitness","martial arts [Choose One]","S: performance","TG: kata 1","T: Open Hand Style","T: Shallow Waters"],"rankUpCost":20},
-            {"list":["SG: martial","S: command","S: labor","S: medicine","TG: shūji","T: All Arts Are One","T: Iron Forest Style"],"rankUpCost":24},
-            {"list":["SG: social","martial arts [Choose One]","S: sentiment","S: skulduggery","TG: kata 3","T: A Samurai’s Fate","T: Dazzling Performance"],"rankUpCost":32},
-            {"list":["SG: artisan","S: labor","martial arts [Choose One]","S: survival","TG: shūji 4","T: Striking as Void","T: Crimson Leaves Strike"],"rankUpCost":44},
-            {"list":["SG: scholar","S: composition","martial arts [Choose One]","S: meditation","TG: kata 5","T: Buoyant Arrival","T: Sear the Wound"],"rankUpCost":60}
+            {"list":["SG: trade","S: fitness","martial arts [Choose One]","S: performance","TG: kata 1","T: open hand style","T: shallow waters"],"rankUpCost":20},
+            {"list":["SG: martial","S: command","S: labor","S: medicine","TG: shūji","T: all arts are one","T: iron forest style"],"rankUpCost":24},
+            {"list":["SG: social","martial arts [Choose One]","S: sentiment","S: skulduggery","TG: kata 3","T: a samurai’s fate","T: dazzling performance"],"rankUpCost":32},
+            {"list":["SG: artisan","S: labor","martial arts [Choose One]","S: survival","TG: shūji 4","T: striking as void","T: crimson leaves strike"],"rankUpCost":44},
+            {"list":["SG: scholar","S: composition","martial arts [Choose One]","S: meditation","TG: kata 5","T: buoyant arrival","T: sear the wound"],"rankUpCost":60}
         ]
     }
 }

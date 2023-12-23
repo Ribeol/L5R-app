@@ -1,19 +1,19 @@
 {
-    "Ally":{
+    "ally":{
         "groupRef":"distinction",
         "ringRef":"water",
         "typeRefs":[
             "interpersonal"
         ]
     },
-    "Ambidexterity":{
+    "ambidexterity":{
         "groupRef":"distinction",
         "ringRef":"air",
         "typeRefs":[
             "physical"
         ]
     },
-    "Benten’s Blessing":{
+    "benten’s blessing":{
         "groupRef":"distinction",
         "ringRef":"air",
         "typeRefs":[
@@ -21,7 +21,7 @@
             "spiritual"
         ]
     },
-    "Bishamon’s Blessing":{
+    "bishamon’s blessing":{
         "groupRef":"distinction",
         "ringRef":"water",
         "typeRefs":[
@@ -29,14 +29,14 @@
             "spiritual"
         ]
     },
-    "Blackmail":{
+    "blackmail":{
         "groupRef":"distinction",
         "ringRef":"fire",
         "typeRefs":[
             "interpersonal"
         ]
     },
-    "Blessed Lineage":{
+    "blessed lineage":{
         "groupRef":"distinction",
         "ringRef":"void",
         "typeRefs":[
@@ -44,21 +44,21 @@
             "spiritual"
         ]
     },
-    "Blissful Betrothal":{
+    "blissful betrothal":{
         "groupRef":"distinction",
         "ringRef":"water",
         "typeRefs":[
             "interpersonal"
         ]
     },
-    "Daikoku’s Blessing":{
+    "daikoku’s blessing":{
         "groupRef":"distinction",
         "ringRef":"water",
         "typeRefs":[
             "spiritual"
         ]
     },
-    "Dangerous Allure":{
+    "dangerous allure":{
         "groupRef":"distinction",
         "ringRef":"fire",
         "typeRefs":[
@@ -66,7 +66,7 @@
             "interpersonal"
         ]
     },
-    "Ebisu’s Blessing":{
+    "ebisu’s blessing":{
         "groupRef":"distinction",
         "ringRef":"earth",
         "typeRefs":[
@@ -74,7 +74,7 @@
             "spiritual"
         ]
     },
-    "Famously Honest":{
+    "famously honest":{
         "groupRef":"distinction",
         "ringRef":"air",
         "typeRefs":[
@@ -82,7 +82,7 @@
             "interpersonal"
         ]
     },
-    "Famously Lucky":{
+    "famously lucky":{
         "groupRef":"distinction",
         "ringRef":"void",
         "typeRefs":[
@@ -90,7 +90,7 @@
             "interpersonal"
         ]
     },
-    "Famously Reliable":{
+    "famously reliable":{
         "groupRef":"distinction",
         "ringRef":"earth",
         "typeRefs":[
@@ -98,7 +98,7 @@
             "interpersonal"
         ]
     },
-    "Famously Successful":{
+    "famously successful":{
         "groupRef":"distinction",
         "ringRef":"fire",
         "typeRefs":[
@@ -106,7 +106,7 @@
             "interpersonal"
         ]
     },
-    "Famously Wealthy":{
+    "famously wealthy":{
         "groupRef":"distinction",
         "ringRef":"water",
         "typeRefs":[
@@ -114,14 +114,14 @@
             "interpersonal"
         ]
     },
-    "Flexibility":{
+    "flexibility":{
         "groupRef":"distinction",
         "ringRef":"water",
         "typeRefs":[
             "physical"
         ]
     },
-    "Fukurokujin’s Blessing":{
+    "fukurokujin’s blessing":{
         "groupRef":"distinction",
         "ringRef":"fire",
         "typeRefs":[
@@ -129,7 +129,7 @@
             "spiritual"
         ]
     },
-    "Indomitable Will":{
+    "indomitable will":{
         "groupRef":"distinction",
         "ringRef":"earth",
         "typeRefs":[
@@ -137,7 +137,7 @@
             "interpersonal"
         ]
     },
-    "Jurojin’s Blessing":{
+    "jurojin’s blessing":{
         "groupRef":"distinction",
         "ringRef":"void",
         "typeRefs":[
@@ -145,7 +145,7 @@
             "spiritual"
         ]
     },
-    "Keen Balance":{
+    "keen balance":{
         "groupRef":"distinction",
         "ringRef":"earth",
         "typeRefs":[
@@ -153,7 +153,7 @@
             "physical"
         ]
     },
-    "Keen Hearing":{
+    "keen hearing":{
         "groupRef":"distinction",
         "ringRef":"air",
         "typeRefs":[
@@ -161,7 +161,7 @@
             "mental"
         ]
     },
-    "Keen Sight":{
+    "keen sight":{
         "groupRef":"distinction",
         "ringRef":"water",
         "typeRefs":[
@@ -169,7 +169,7 @@
             "mental"
         ]
     },
-    "Keen Smell":{
+    "keen smell":{
         "groupRef":"distinction",
         "ringRef":"fire",
         "typeRefs":[
@@ -177,7 +177,7 @@
             "mental"
         ]
     },
-    "Karmic Tie":{
+    "karmic tie":{
         "groupRef":"distinction",
         "ringRef":"void",
         "typeRefs":[
@@ -185,7 +185,7 @@
             "spiritual"
         ]
     },
-    "Kisshōten’s Blessing":{
+    "kisshōten’s blessing":{
         "groupRef":"distinction",
         "ringRef":"water",
         "typeRefs":[
@@ -193,14 +193,14 @@
             "spiritual"
         ]
     },
-    "Large Stature":{
+    "large stature":{
         "groupRef":"distinction",
         "ringRef":"earth",
         "typeRefs":[
             "physical"
         ]
     },
-    "Paragon of Compassion":{
+    "paragon of compassion":{
         "groupRef":"distinction",
         "ringRef":"water",
         "typeRefs":[
@@ -208,7 +208,7 @@
             "virtue"
         ]
     },
-    "Paragon of Courage":{
+    "paragon of courage":{
         "groupRef":"distinction",
         "ringRef":"fire",
         "typeRefs":[
@@ -216,7 +216,7 @@
             "virtue"
         ]
     },
-    "Paragon of Courtesy":{
+    "paragon of courtesy":{
         "groupRef":"distinction",
         "ringRef":"air",
         "typeRefs":[
@@ -224,7 +224,7 @@
             "virtue"
         ]
     },
-    "Paragon of Duty and Loyalty":{
+    "paragon of duty and loyalty":{
         "groupRef":"distinction",
         "ringRef":"earth",
         "typeRefs":[
@@ -232,7 +232,7 @@
             "virtue"
         ]
     },
-    "Paragon of Honor":{
+    "paragon of honor":{
         "groupRef":"distinction",
         "ringRef":"void",
         "typeRefs":[
@@ -240,7 +240,7 @@
             "virtue"
         ]
     },
-    "Paragon of Righteousness":{
+    "paragon of righteousness":{
         "groupRef":"distinction",
         "ringRef":"void",
         "typeRefs":[
@@ -248,7 +248,7 @@
             "virtue"
         ]
     },
-    "Paragon of Sincerity":{
+    "paragon of sincerity":{
         "groupRef":"distinction",
         "ringRef":"void",
         "typeRefs":[
@@ -256,14 +256,14 @@
             "virtue"
         ]
     },
-    "Precise Memory":{
+    "precise memory":{
         "groupRef":"distinction",
         "ringRef":"earth",
         "typeRefs":[
             "mental"
         ]
     },
-    "Quick Reflexes":{
+    "quick reflexes":{
         "groupRef":"distinction",
         "ringRef":"fire",
         "typeRefs":[
@@ -271,28 +271,28 @@
             "interpersonal"
         ]
     },
-    "Seasoned":{
+    "seasoned":{
         "groupRef":"distinction",
         "ringRef":"void",
         "typeRefs":[
             "interpersonal"
         ]
     },
-    "Sixth Sense":{
+    "sixth sense":{
         "groupRef":"distinction",
         "ringRef":"void",
         "typeRefs":[
             "spiritual"
         ]
     },
-    "Small Stature":{
+    "small stature":{
         "groupRef":"distinction",
         "ringRef":"air",
         "typeRefs":[
             "physical"
         ]
     },
-    "Subtle Observer":{
+    "subtle observer":{
         "groupRef":"distinction",
         "ringRef":"air",
         "typeRefs":[
@@ -300,14 +300,14 @@
             "mental"
         ]
     },
-    "Support":{
+    "support":{
         "groupRef":"distinction",
         "ringRef":"water",
         "typeRefs":[
             "interpersonal"
         ]
     },
-    "Animal Bond":{
+    "animal bond":{
         "groupRef":"passion",
         "ringRef":"earth",
         "typeRefs":[
@@ -315,14 +315,14 @@
             "mental"
         ]
     },
-    "Armament":{
+    "armament":{
         "groupRef":"passion",
         "ringRef":"earth",
         "typeRefs":[
             "mental"
         ]
     },
-    "Brushwork":{
+    "brushwork":{
         "groupRef":"passion",
         "ringRef":"air",
         "typeRefs":[
@@ -330,14 +330,14 @@
             "physical"
         ]
     },
-    "Curiosity":{
+    "curiosity":{
         "groupRef":"passion",
         "ringRef":"fire",
         "typeRefs":[
             "mental"
         ]
     },
-    "Daredevil":{
+    "daredevil":{
         "groupRef":"passion",
         "ringRef":"fire",
         "typeRefs":[
@@ -345,14 +345,14 @@
             "physical"
         ]
     },
-    "Enlightenment":{
+    "enlightenment":{
         "groupRef":"passion",
         "ringRef":"void",
         "typeRefs":[
             "spiritual"
         ]
     },
-    "Fashion":{
+    "fashion":{
         "groupRef":"passion",
         "ringRef":"fire",
         "typeRefs":[
@@ -360,7 +360,7 @@
             "mental"
         ]
     },
-    "Fortune-Telling":{
+    "fortune-telling":{
         "groupRef":"passion",
         "ringRef":"void",
         "typeRefs":[
@@ -368,56 +368,56 @@
             "spiritual"
         ]
     },
-    "Generosity":{
+    "generosity":{
         "groupRef":"passion",
         "ringRef":"water",
         "typeRefs":[
             "interpersonal"
         ]
     },
-    "Gossip":{
+    "gossip":{
         "groupRef":"passion",
         "ringRef":"air",
         "typeRefs":[
             "interpersonal"
         ]
     },
-    "History":{
+    "history":{
         "groupRef":"passion",
         "ringRef":"earth",
         "typeRefs":[
             "mental"
         ]
     },
-    "Ikebana":{
+    "ikebana":{
         "groupRef":"passion",
         "ringRef":"water",
         "typeRefs":[
             "mental"
         ]
     },
-    "Playfulness":{
+    "playfulness":{
         "groupRef":"passion",
         "ringRef":"air",
         "typeRefs":[
             "interpersonal"
         ]
     },
-    "Provocation":{
+    "provocation":{
         "groupRef":"passion",
         "ringRef":"fire",
         "typeRefs":[
             "interpersonal"
         ]
     },
-    "Sake":{
+    "sake":{
         "groupRef":"passion",
         "ringRef":"water",
         "typeRefs":[
             "mental"
         ]
     },
-    "Secrets":{
+    "secrets":{
         "groupRef":"passion",
         "ringRef":"void",
         "typeRefs":[
@@ -425,7 +425,7 @@
             "interpersonal"
         ]
     },
-    "Stories":{
+    "stories":{
         "groupRef":"passion",
         "ringRef":"earth",
         "typeRefs":[
@@ -433,7 +433,7 @@
             "interpersonal"
         ]
     },
-    "Tea":{
+    "tea":{
         "groupRef":"passion",
         "ringRef":"void",
         "typeRefs":[
@@ -441,7 +441,7 @@
             "spiritual"
         ]
     },
-    "Travel":{
+    "travel":{
         "groupRef":"passion",
         "ringRef":"water",
         "typeRefs":[
@@ -449,7 +449,7 @@
             "physical"
         ]
     },
-    "Wordplay":{
+    "wordplay":{
         "groupRef":"passion",
         "ringRef":"air",
         "typeRefs":[
@@ -457,7 +457,7 @@
             "mental"
         ]
     },
-    "Benten’s Curse":{
+    "benten’s curse":{
         "groupRef":"adversity",
         "ringRef":"air",
         "typeRefs":[
@@ -465,7 +465,7 @@
             "spiritual"
         ]
     },
-    "Bishamon’s Curse":{
+    "bishamon’s curse":{
         "groupRef":"adversity",
         "ringRef":"water",
         "typeRefs":[
@@ -473,21 +473,21 @@
             "spiritual"
         ]
     },
-    "Bitter Betrothal":{
+    "bitter betrothal":{
         "groupRef":"adversity",
         "ringRef":"water",
         "typeRefs":[
             "interpersonal"
         ]
     },
-    "Blackmailed":{
+    "blackmailed":{
         "groupRef":"adversity",
         "ringRef":"air",
         "typeRefs":[
             "interpersonal"
         ]
     },
-    "Blindness":{
+    "blindness":{
         "groupRef":"adversity",
         "ringRef":"water",
         "typeRefs":[
@@ -495,21 +495,21 @@
             "scar"
         ]
     },
-    "Bluntness":{
+    "bluntness":{
         "groupRef":"adversity",
         "ringRef":"air",
         "typeRefs":[
             "interpersonal"
         ]
     },
-    "Clumsiness":{
+    "clumsiness":{
         "groupRef":"adversity",
         "ringRef":"fire",
         "typeRefs":[
             "physical"
         ]
     },
-    "Cognitive Lapses":{
+    "cognitive lapses":{
         "groupRef":"adversity",
         "ringRef":"void",
         "typeRefs":[
@@ -517,14 +517,14 @@
             "scar"
         ]
     },
-    "Daikoku’s Curse":{
+    "daikoku’s curse":{
         "groupRef":"adversity",
         "ringRef":"water",
         "typeRefs":[
             "interpersonal"
         ]
     },
-    "Damaged Heart or Organ":{
+    "damaged heart or organ":{
         "groupRef":"adversity",
         "ringRef":"earth",
         "typeRefs":[
@@ -532,7 +532,7 @@
             "scar"
         ]
     },
-    "Deafness":{
+    "deafness":{
         "groupRef":"adversity",
         "ringRef":"air",
         "typeRefs":[
@@ -540,7 +540,7 @@
             "scar"
         ]
     },
-    "Discomfiting Countenance":{
+    "discomfiting countenance":{
         "groupRef":"adversity",
         "ringRef":"air",
         "typeRefs":[
@@ -548,7 +548,7 @@
             "physical"
         ]
     },
-    "Disdain for Compassion":{
+    "disdain for compassion":{
         "groupRef":"adversity",
         "ringRef":"water",
         "typeRefs":[
@@ -556,7 +556,7 @@
             "mental"
         ]
     },
-    "Disdain for Courage":{
+    "disdain for courage":{
         "groupRef":"adversity",
         "ringRef":"fire",
         "typeRefs":[
@@ -564,7 +564,7 @@
             "mental"
         ]
     },
-    "Disdain for Courtesy":{
+    "disdain for courtesy":{
         "groupRef":"adversity",
         "ringRef":"air",
         "typeRefs":[
@@ -572,7 +572,7 @@
             "mental"
         ]
     },
-    "Disdain for Duty and Loyalty":{
+    "disdain for duty and loyalty":{
         "groupRef":"adversity",
         "ringRef":"earth",
         "typeRefs":[
@@ -580,7 +580,7 @@
             "mental"
         ]
     },
-    "Disdain for Honor":{
+    "disdain for honor":{
         "groupRef":"adversity",
         "ringRef":"void",
         "typeRefs":[
@@ -588,7 +588,7 @@
             "mental"
         ]
     },
-    "Disdain for Righteousness":{
+    "disdain for righteousness":{
         "groupRef":"adversity",
         "ringRef":"void",
         "typeRefs":[
@@ -596,7 +596,7 @@
             "mental"
         ]
     },
-    "Disdain for Sincerity":{
+    "disdain for sincerity":{
         "groupRef":"adversity",
         "ringRef":"void",
         "typeRefs":[
@@ -604,7 +604,7 @@
             "mental"
         ]
     },
-    "Ebisu’s Curse":{
+    "ebisu’s curse":{
         "groupRef":"adversity",
         "ringRef":"earth",
         "typeRefs":[
@@ -612,7 +612,7 @@
             "spiritual"
         ]
     },
-    "Fractured Spine":{
+    "fractured spine":{
         "groupRef":"adversity",
         "ringRef":"earth",
         "typeRefs":[
@@ -620,7 +620,7 @@
             "scar"
         ]
     },
-    "Fukurokujin’s Curse":{
+    "fukurokujin’s curse":{
         "groupRef":"adversity",
         "ringRef":"fire",
         "typeRefs":[
@@ -628,14 +628,14 @@
             "spiritual"
         ]
     },
-    "Gaijin Name":{
+    "gaijin name":{
         "groupRef":"adversity",
         "ringRef":"fire",
         "typeRefs":[
             "interpersonal"
         ]
     },
-    "Gaijin Culture":{
+    "gaijin culture":{
         "groupRef":"adversity",
         "ringRef":"fire",
         "typeRefs":[
@@ -643,14 +643,14 @@
             "interpersonal"            
         ]
     },
-    "Gaijin Appearance":{
+    "gaijin appearance":{
         "groupRef":"adversity",
         "ringRef":"fire",
         "typeRefs":[
             "physical"            
         ]
     },
-    "Haunting":{
+    "haunting":{
         "groupRef":"adversity",
         "ringRef":"void",
         "typeRefs":[
@@ -658,14 +658,14 @@
             "spiritual"            
         ]
     },
-    "Incurable Illness":{
+    "incurable illness":{
         "groupRef":"adversity",
         "ringRef":"earth",
         "typeRefs":[
             "physical"            
         ]
     },
-    "Jurōjin’s Curse":{
+    "jurōjin’s curse":{
         "groupRef":"adversity",
         "ringRef":"void",
         "typeRefs":[
@@ -673,7 +673,7 @@
             "spiritual"            
         ]
     },
-    "Kisshōten’s Curse":{
+    "kisshōten’s curse":{
         "groupRef":"adversity",
         "ringRef":"water",
         "typeRefs":[
@@ -681,7 +681,7 @@
             "spiritual"            
         ]
     },
-    "Lost Arm or Lost Hand":{
+    "lost arm or lost hand":{
         "groupRef":"adversity",
         "ringRef":"fire",
         "typeRefs":[
@@ -689,7 +689,7 @@
             "scar"            
         ]
     },
-    "Lost Eye":{
+    "lost eye":{
         "groupRef":"adversity",
         "ringRef":"water",
         "typeRefs":[
@@ -697,7 +697,7 @@
             "scar"            
         ]
     },
-    "Lost Fingers":{
+    "lost fingers":{
         "groupRef":"adversity",
         "ringRef":"fire",
         "typeRefs":[
@@ -705,7 +705,7 @@
             "scar"            
         ]
     },
-    "Lost Leg":{
+    "lost leg":{
         "groupRef":"adversity",
         "ringRef":"water",
         "typeRefs":[
@@ -713,7 +713,7 @@
             "scar"            
         ]
     },
-    "Lost Memories":{
+    "lost memories":{
         "groupRef":"adversity",
         "ringRef":"void",
         "typeRefs":[
@@ -721,7 +721,7 @@
             "scar"            
         ]
     },
-    "Maimed Arm":{
+    "maimed arm":{
         "groupRef":"adversity",
         "ringRef":"fire",
         "typeRefs":[
@@ -729,7 +729,7 @@
             "scar"            
         ]
     },
-    "Maimed Visage":{
+    "maimed visage":{
         "groupRef":"adversity",
         "ringRef":"air",
         "typeRefs":[
@@ -738,14 +738,14 @@
             "scar"            
         ]
     },
-    "Momoku":{
+    "momoku":{
         "groupRef":"adversity",
         "ringRef":"void",
         "typeRefs":[
             "spiritual"            
         ]
     },
-    "Muteness":{
+    "muteness":{
         "groupRef":"adversity",
         "ringRef":"air",
         "typeRefs":[
@@ -755,7 +755,7 @@
             "scar"            
         ]
     },
-    "Nerve Damage":{
+    "nerve damage":{
         "groupRef":"adversity",
         "ringRef":"air",
         "typeRefs":[
@@ -763,14 +763,14 @@
             "scar"            
         ]
     },
-    "Scorn":{
+    "scorn":{
         "groupRef":"adversity",
         "ringRef":"water",
         "typeRefs":[
             "interpersonal"            
         ]
     },
-    "Shadowlands Taint (Air)":{
+    "shadowlands taint (air)":{
         "groupRef":"adversity",
         "ringRef":"air",
         "typeRefs":[
@@ -779,7 +779,7 @@
             "spiritual"            
         ]
     },
-    "Shadowlands Taint (Earth)":{
+    "shadowlands taint (earth)":{
         "groupRef":"adversity",
         "ringRef":"earth",
         "typeRefs":[
@@ -788,7 +788,7 @@
             "spiritual"            
         ]
     },
-    "Shadowlands Taint (Fire)":{
+    "shadowlands taint (fire)":{
         "groupRef":"adversity",
         "ringRef":"fire",
         "typeRefs":[
@@ -797,7 +797,7 @@
             "spiritual"            
         ]
     },
-    "Shadowlands Taint (Void)":{
+    "shadowlands taint (void)":{
         "groupRef":"adversity",
         "ringRef":"void",
         "typeRefs":[
@@ -805,7 +805,7 @@
             "spiritual"            
         ]
     },
-    "Shadowlands Taint (Water)":{
+    "shadowlands taint (water)":{
         "groupRef":"adversity",
         "ringRef":"water",
         "typeRefs":[
@@ -814,14 +814,14 @@
             "spiritual"            
         ]
     },
-    "Sworn Enemy":{
+    "sworn enemy":{
         "groupRef":"adversity",
         "ringRef":"earth",
         "typeRefs":[
             "interpersonal"            
         ]
     },
-    "Whispers of Cruelty":{
+    "whispers of cruelty":{
         "groupRef":"adversity",
         "ringRef":"earth",
         "typeRefs":[
@@ -829,7 +829,7 @@
             "infamy"
         ]
     },
-    "Whispers of Doom":{
+    "whispers of doom":{
         "groupRef":"adversity",
         "ringRef":"void",
         "typeRefs":[
@@ -837,7 +837,7 @@
             "infamy"            
         ]
     },
-    "Whispers of Failure":{
+    "whispers of failure":{
         "groupRef":"adversity",
         "ringRef":"fire",
         "typeRefs":[
@@ -845,7 +845,7 @@
             "infamy"            
         ]
     },
-    "Whispers of Poverty":{
+    "whispers of poverty":{
         "groupRef":"adversity",
         "ringRef":"water",
         "typeRefs":[
@@ -853,7 +853,7 @@
             "infamy"            
         ]
     },
-    "Whispers of Treachery":{
+    "whispers of treachery":{
         "groupRef":"adversity",
         "ringRef":"air",
         "typeRefs":[
@@ -861,7 +861,7 @@
             "infamy"            
         ]
     },
-    "Addiction":{
+    "addiction":{
         "groupRef":"anxiety",
         "ringRef":"earth",
         "typeRefs":[
@@ -869,7 +869,7 @@
             "physical"            
         ]
     },
-    "Battle Trauma":{
+    "battle trauma":{
         "groupRef":"anxiety",
         "ringRef":"fire",
         "typeRefs":[
@@ -877,7 +877,7 @@
             "physical"            
         ]
     },
-    "Cynicism":{
+    "cynicism":{
         "groupRef":"anxiety",
         "ringRef":"fire",
         "typeRefs":[
@@ -885,14 +885,14 @@
             "mental"            
         ]
     },
-    "Dark Secret":{
+    "dark secret":{
         "groupRef":"anxiety",
         "ringRef":"void",
         "typeRefs":[
             "interpersonal"            
         ]
     },
-    "Delusions of Grandeur":{
+    "delusions of grandeur":{
         "groupRef":"anxiety",
         "ringRef":"void",
         "typeRefs":[
@@ -900,7 +900,7 @@
             "interpersonal"            
         ]
     },
-    "Fear of Death":{
+    "fear of death":{
         "groupRef":"anxiety",
         "ringRef":"earth",
         "typeRefs":[
@@ -908,7 +908,7 @@
             "physical"            
         ]
     },
-    "Ferocity":{
+    "ferocity":{
         "groupRef":"anxiety",
         "ringRef":"air",
         "typeRefs":[
@@ -916,28 +916,28 @@
             "mental"            
         ]
     },
-    "Impatience":{
+    "impatience":{
         "groupRef":"anxiety",
         "ringRef":"earth",
         "typeRefs":[
             "mental"            
         ]
     },
-    "Intolerance":{
+    "intolerance":{
         "groupRef":"anxiety",
         "ringRef":"water",
         "typeRefs":[
             "interpersonal"            
         ]
     },
-    "Irrepressible Flirtation":{
+    "irrepressible flirtation":{
         "groupRef":"anxiety",
         "ringRef":"earth",
         "typeRefs":[
             "interpersonal"            
         ]
     },
-    "Jealousy":{
+    "jealousy":{
         "groupRef":"anxiety",
         "ringRef":"air",
         "typeRefs":[
@@ -945,28 +945,28 @@
             "mental"            
         ]
     },
-    "Materialism":{
+    "materialism":{
         "groupRef":"anxiety",
         "ringRef":"void",
         "typeRefs":[
             "mental"            
         ]
     },
-    "Meekness":{
+    "meekness":{
         "groupRef":"anxiety",
         "ringRef":"fire",
         "typeRefs":[
             "interpersonal"            
         ]
     },
-    "Painful Honesty":{
+    "painful honesty":{
         "groupRef":"anxiety",
         "ringRef":"air",
         "typeRefs":[
             "interpersonal"            
         ]
     },
-    "Paranoia":{
+    "paranoia":{
         "groupRef":"anxiety",
         "ringRef":"water",
         "typeRefs":[
@@ -974,7 +974,7 @@
             "mental"            
         ]
     },
-    "Perfectionism":{
+    "perfectionism":{
         "groupRef":"anxiety",
         "ringRef":"water",
         "typeRefs":[
@@ -982,7 +982,7 @@
             "mental"            
         ]
     },
-    "Phobia":{
+    "phobia":{
         "groupRef":"anxiety",
         "ringRef":"water",
         "typeRefs":[
@@ -990,7 +990,7 @@
             "mental"            
         ]
     },
-    "Softheartedness":{
+    "softheartedness":{
         "groupRef":"anxiety",
         "ringRef":"fire",
         "typeRefs":[
@@ -998,7 +998,7 @@
             "mental"            
         ]
     },
-    "Superstition":{
+    "superstition":{
         "groupRef":"anxiety",
         "ringRef":"void",
         "typeRefs":[

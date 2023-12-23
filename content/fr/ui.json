@@ -36,9 +36,11 @@
     "rest":"Nuit de sommeil",
     "unmask":"Tomber le masque",    
     "characterChoice":{
-        "new":"Nouveau personnage",    
-        "change":"Changer de personnage",
-        "delete":"Supprimer ce personnage"
+        "new":"Nouveau personnage",
+        "import":"Importer",
+        "export":"Exporter",
+        "change":"Changer",
+        "delete":"Supprimer"
     },
     "skillGroups":{
         "artisan":{
@@ -431,7 +433,7 @@
         "free":"Cette amélioration ne contribuera à aucun cursus",
         "forceContribution":"Forcer une pleine contribution",
         "notEnoughXp":"Pas assez d’XP",
-        "confirm":"Confirmer (irrévocable)"
+        "confirm":"Confirmer"
     },
     "activationKeywords":{
         "ring":["anneau d"],

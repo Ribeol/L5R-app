@@ -1,5 +1,5 @@
 {
-    "Hida":{
+    "hida":{
         "name":"Hida Defender School",
         "types":["Bushi"],
         "description":[
@@ -19,7 +19,7 @@
             ]
         }
     },
-    "Hiruma":{
+    "hiruma":{
         "name":"Hiruma Scout School",
         "types":["Bushi","Shinobi"],
         "description":[
@@ -38,7 +38,7 @@
             ]
         }
     },
-    "Kaiu":{
+    "kaiu":{
         "name":"Kaiu Engineer School",
         "types":["Artisan","Bushi"],
         "description":[
@@ -57,7 +57,7 @@
             ]
         }
     },
-    "Kuni":{
+    "kuni":{
         "name":"Kuni Purifier School",
         "types":["Shugenja","Bushi"],
         "description":[
@@ -76,7 +76,7 @@
             ]
         }
     },
-    "Yasuki":{
+    "yasuki":{
         "name":"Yasuki Merchant School",
         "types":["Courtier"],
         "description":[
@@ -95,7 +95,7 @@
             ]
         }
     },
-    "Asahina":{
+    "asahina":{
         "name":"Asahina Artificer School",
         "types":["Shugenja","Artisan"],
         "description":[
@@ -114,7 +114,7 @@
             ]
         }
     },
-    "Daidoji":{
+    "daidoji":{
         "name":"Daidoji Iron Warrior School",
         "types":["Bushi"],
         "description":[
@@ -133,7 +133,7 @@
             ]
         }
     },
-    "Doji":{
+    "doji":{
         "name":"Doji Diplomat School",
         "types":["Courtier"],
         "description":[
@@ -152,7 +152,7 @@
             ]
         }
     },
-    "Kakita":{
+    "kakita":{
         "name":"Kakita Duelist School",
         "types":["Bushi","Artisan"],
         "description":[
@@ -174,7 +174,7 @@
             ]
         }
     },
-    "Agasha":{
+    "agasha":{
         "name":"Agasha Mystic School",
         "types":["Shugenja"],
         "description":[
@@ -193,7 +193,7 @@
             ]
         }
     },
-    "Kitsuki":{
+    "kitsuki":{
         "name":"Kitsuki Investigator School",
         "types":["Courtier","Bushi"],
         "description":[
@@ -213,7 +213,7 @@
             ]
         }
     },
-    "Mirumoto":{
+    "mirumoto":{
         "name":"Mirumoto Two-Heavens Adept School",
         "types":["Bushi"],
         "description":[
@@ -236,7 +236,7 @@
             ]
         }
     },
-    "Togashi":{
+    "togashi":{
         "name":"Togashi Tattooed Order",
         "types":["Monk"],
         "description":[
@@ -257,7 +257,7 @@
             ]
         }
     },
-    "Akodo":{
+    "akodo":{
         "name":"Akodo Commander School",
         "types":["Bushi"],
         "description":[
@@ -276,7 +276,7 @@
             ]
         }
     },
-    "Ikoma":{
+    "ikoma":{
         "name":"Ikoma Bard School",
         "types":["Courtier"],
         "description":[
@@ -298,7 +298,7 @@
             ]
         }
     },
-    "Kitsu":{
+    "kitsu":{
         "name":"Kitsu Medium School",
         "types":["Shugenja"],
         "description":[
@@ -317,7 +317,7 @@
             ]
         }
     },
-    "Matsu":{
+    "matsu":{
         "name":"Matsu Berserker School",
         "types":["Bushi"],
         "description":[
@@ -336,7 +336,7 @@
             ]
         }
     },
-    "Asako":{
+    "asako":{
         "name":"Asako Loremaster School",
         "types":["Courtier"],
         "description":[
@@ -355,7 +355,7 @@
             ]
         }
     },
-    "Isawa":{
+    "isawa":{
         "name":"Isawa Elementalist School",
         "types":["Shugenja"],
         "description":[
@@ -374,7 +374,7 @@
             ]
         }
     },
-    "Shiba":{
+    "shiba":{
         "name":"Shiba Guardian School",
         "types":["Bushi","Courtier"],
         "description":[
@@ -393,7 +393,7 @@
             ]
         }
     },
-    "Kaito":{
+    "kaito":{
         "name":"Kaito Shrine Keeper School",
         "types":["Monk"],
         "description":[
@@ -415,7 +415,7 @@
             ]
         }
     },
-    "Bayushi":{
+    "bayushi":{
         "name":"Bayushi Manipulator School",
         "types":["Courtier"],
         "description":[
@@ -434,7 +434,7 @@
             ]
         }
     },
-    "Shosuro":{
+    "shosuro":{
         "name":"Shosuro Infiltrator School",
         "types":["Shinobi","Courtier"],
         "description":[
@@ -454,7 +454,7 @@
             ]
         }
     },
-    "Soshi":{
+    "soshi":{
         "name":"Soshi Illusionist School",
         "types":["Shugenja","Courtier","Shinobi"],
         "description":[
@@ -474,7 +474,7 @@
             ]
         }
     },
-    "Yogo":{
+    "yogo":{
         "name":"Yogo Wardmaster School",
         "types":["Shugenja"],
         "description":[
@@ -493,7 +493,7 @@
             ]
         }
     },
-    "Ide":{
+    "ide":{
         "name":"Ide Trader School",
         "types":["Courtier"],
         "description":[
@@ -514,7 +514,7 @@
             ]
         }
     },
-    "Iuchi":{
+    "iuchi":{
         "name":"Iuchi Meishōdō Master School",
         "types":["Shugenja","Artisan"],
         "description":[
@@ -534,7 +534,7 @@
             ]
         }
     },
-    "Moto":{
+    "moto":{
         "name":"Moto Conqueror School",
         "types":["Bushi"],
         "description":[
@@ -554,7 +554,7 @@
             ]
         }
     },
-    "Shinjo":{
+    "shinjo":{
         "name":"Shinjo Outrider School",
         "types":["Bushi","Courtier"],
         "description":[
@@ -573,7 +573,7 @@
             ]
         }
     },
-    "Utaku":{
+    "utaku":{
         "name":"Utaku Battle Maiden School",
         "types":["Bushi"],
         "description":[

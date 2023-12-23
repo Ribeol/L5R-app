@@ -1,5 +1,5 @@
 {
-    "Battle in the Mind":{
+    "battle in the mind":{
         "name":"Bataille mentale",
         "description":[
             "Lorsque deux maitres en arts martiaux se font face au début d’un duel, chacun s’efforce de prévoir l’angle d’attaque et la stratégie de son adversaire, et la façon dont ses prévisions pourraient être contrecarrées."
@@ -10,7 +10,7 @@
             "|opportunityIcon|+ du Vide : choisissez une catégorie de techniques (kata, kiho, etc). Une des techniques connues par votre adversaire dans cette catégorie (et choisie par l’adversaire), vous est révélée par |opportunityIcon| dépensé de cette façon."
         ]
     },
-    "Breath of Wind Style":{
+    "breath of wind style":{
         "name":"Style du souffle du vent",
         "description":[
             "Un coup rapide à la gorge ou au plexus solaire peut faire chanceler l’ennemi ; un bushi expérimenté peut couper le souffle de son adversaire d’un seul geste tout en lançant une autre attaque."
@@ -20,7 +20,7 @@
             "|opportunityIcon|+ de l’Air : l’une des cibles de votre action doit résister à l’aide d’un test de Forme (Terre 4, Feu 1) ND 3 ou subir l’état Désorienté et un nombre de points de Fatigue égal à son degré d’échec. Le ND du test de résistance augmente de 1 par |opportunityIcon| dépensé de cette façon."
         ]
     },
-    "Crashing Wave Style":{
+    "crashing wave style":{
         "name":"Style de la vague déferlante",
         "description":[
             "Le ressac finit toujours par user la pierre ; ainsi, l’arme du bushi entame la chair de son adversaire, laissant une estafilade qui le ralentit même si le coup n’est pas fatal."
@@ -30,7 +30,7 @@
             "|opportunityIcon|+ de l’Eau : l’une des cibles de votre action doit résister à l’aide d’un test de Forme (Terre 1, Feu 4) ND 3 ou subir l’état En sang et un nombre de points de Fatigue égal à son degré d’échec. Le ND du test de résistance augmente de 1 par |opportunityIcon| dépensé de cette façon."
         ]
     },
-    "Crescent Moon Style":{
+    "crescent moon style":{
         "name":"Style du croissant de lune",
         "description":[
             "Il est appréciable d’attaquer en premier, mais survivre est plus important que tout. Pour se défendre sans que ses capacités offensives n’en pâtissent, un bushi doit être prêt à riposter rapidement après avoir paré ou esquivé. D’un geste vif, le guerrier abandonne sa posture de défense pour frapper l’ennemi de toutes ses forces."
@@ -40,7 +40,7 @@
             "|opportunityIcon| : après qu’un personnage à portée de 1-2 a effectué une action d’Attaque contre vous ou un personnage sous votre protection, vous pouvez utiliser l’action Frapper avec une arme d’Arts martiaux (Corps à corps ou Mains nues) apprêtée ciblant l’attaquant (à condition qu’il se tienne à portée de votre arme). Cet effet persiste jusqu’au début de votre prochain tour jusqu’à ce que vous réalisiez l’action Frapper comme indiqué ici."
         ]
     },
-    "Crimson Leaves Strike":{
+    "crimson leaves strike":{
         "name":"Assaut des feuilles pourpres",
         "description":[
             "Abattant sa lame en arc de cercle, le bushi assène un coup sur l’arme de l’ennemi, la lui arrachant comme le vent arrache les feuilles des arbres en automne."
@@ -55,7 +55,7 @@
             "|opportunityIcon| de la Terre : si vous désarmez votre adversaire, vous pouvez prendre le contrôle de son arme plutôt que de la projeter au loin."
         ]
     },
-    "Disappearing World Style":{
+    "disappearing world style":{
         "name":"Style de la disparition du monde",
         "description":[
             "Extrêmement concentré, le bushi fond sur son adversaire en lançant une succession de coups rapides pour atteindre les yeux, la tempe ou d’autres points faibles. Le coup, étourdissant, peut désorienter l’ennemi, ce qui permet au guerrier de mettre un terme au combat avec l’offensive suivante."
@@ -65,7 +65,7 @@
             "|opportunityIcon|+ du Feu : l’une des cibles de votre action doit résister à l’aide d’un test de Forme (Air 4, Eau 1) ND 3 ou subit l’état Hébété et un nombre de points de Fatigue égal à son degré d’échec. Le ND du test de résistance augmente de 1 par |opportunityIcon| dépensé de cette façon."
         ]
     },
-    "Flowing Water Strike":{
+    "flowing water strike":{
         "name":"Assaut de l’eau courante",
         "description":[
             "Un combattant expérimenté n’est pas limité par la portée optimale de son arme ; il peut jouer avec la distance pour compenser une position désavantageuse."
@@ -80,7 +80,7 @@
             "|opportunityIcon| de l’Eau : si vous souffrez de l’état Hébété, Désorienté, Immobilisé ou A terre, vous pouvez l’éliminer."
         ]
     },
-    "Heartpiercing Strike":{
+    "heartpiercing strike":{
         "name":"Assaut en plein cœur",
         "description":[
             "Le combat repose sur l’art de tuer : malheur au guerrier qui l’oublie ! Dans un rugissement, le bushi s’élance, tentant d’empaler son ennemi. Si l’adversaire a la chance de survivre, il en ressort toutefois terriblement affaibli."
@@ -96,7 +96,7 @@
            "|opportunityIcon| du Feu : avant de résoudre l’effet, déplacez-vous de 1 niveau de portée en direction de la cible."
         ]
     },
-    "Iron in the Mountains Style":{
+    "iron in the mountains style":{
         "name":"Style du fer dans les montagnes",
         "description":[
             "Le bushi attaque avec une force écrasante, bousculant brutalement son adversaire ou balayant ses jambes d’un coup de pied pour l’envoyer au tapis."
@@ -106,7 +106,7 @@
             "|opportunityIcon|+ de la Terre : l’une des cibles de votre action doit résister à l’aide d’un test de Forme (Air 1, Eau 4) ND 3 pour ne pas subir l’état A terre ainsi qu’un nombre de points de Fatigue égal à son degré d’échec. Le ND du test de résistance augmente de 1 par |opportunityIcon| dépensé de cette façon."
         ]
     },
-    "Lord Hida’s Grip":{
+    "lord hida’s grip":{
         "name":"Poigne de Sire Hida",
         "description":[
             "Le Kami Hida, du Clan du Crabe, était un légendaire pourfendeur de monstres. Il trancha jadis la tête de l’immense démon qui menaçait le palais de marbre rose, et arracha l’un des crânes de Kabuto no Oni avant de s’en servir pour fracasser le second. Cependant, Hida n’était pas une simple brute : il était astucieux et venait à bout des monstres en exploitant leurs faiblesses. Les guerriers du Clan du Crabe s’entrainent pour développer des techniques similaires. Ils retournent le poids de leurs adversaires contre eux en immobilisant ou en blessant de manière stratégique certaines parties de leur corps."
@@ -122,7 +122,7 @@
             "|opportunityIcon| du Vide : votre cible doit résister à l’aide d’un test de Forme ou subir l’état A terre ainsi qu’un nombre de points de dégâts physiques égal à son gabarit, sans tenir compte de la Résistance ou de ses protections. Le ND de ce test est égal à votre rang d’école."
         ]
     },
-    "Lord Shiba’s Valor":{
+    "lord shiba’s valor":{
         "name":"Bravoure de Sire Shiba",
         "description":[
             "Jadis, dans l’Outremonde, le Kami Shiba affronta seul une baste horde de créatures corrompues, protégeant la retraite du dernier des Sept Tonnerres après leur victoire contre Fu Leng. A l’aide du sabre légendaire Ofushikai, Shiba se fraya un chemin à travers l’armée jusqu’au Premier des oni. La légende raconte que leurs lames frappèrent cent jours durant, tranchant des montagnes et creusant de profondes vallées. Enfin, les combattants se portèrent mutuellement un coup fatal, mais Shiba tomba sans faillir à son serment de gardien."
@@ -137,7 +137,7 @@
             "|opportunityIcon| du Vide : en cas de réussite, augmentez de 1 le ND des tests d’Attaque et de Manipulation qui vous prennent pour cible. Cet effet persiste jusqu’à la fin de votre tour suivant."
         ]
     },
-    "Soaring Slice":{
+    "soaring slice":{
         "name":"Mortelle envolée",
         "description":[
             "D’un geste vif, le bushi projette son arme sur l’ennemi, espérant le prendre par surprise ou percer une brèche dans ses défenses."
@@ -154,7 +154,7 @@
             "|opportunityIcon| : le ND de la prochaine action d’Attaque entreprise contre la cible diminue de 1. Cet effet prend fin au terme de votre prochain tour."
         ]
     },
-    "Soul Sunder":{
+    "soul sunder":{
         "name":"Destruction de l’âme",
         "description":[
             "Si les bushi sont généralement moins préparés aux menaces surnaturelles que les shugenja, la maitrise d’un art révèle les liens qui relient toutes les choses. Les guerriers qui se sont impliqués dans les mystères de l’acier peuvent ressentir l’écho de lames disparues, et calquer leurs gestes sur un savoir-faire ancestral pour trancher la chair éthérée des êtres qui marchent entre les mondes... des êtres qui ignorent pourtant la morsure de l’acier."
@@ -171,7 +171,7 @@
             "|opportunityIcon|opportunityIcon| du Vide : vous pouvez immédiatement effectuer l’action Frapper à l’aide de cette arme apprêtée."
         ]
     },
-    "Striking as Air":{
+    "striking as air":{
         "name":"Offensive de l’Air",
         "description":[
             "Au combat, tous les coups n’ont pas vocation à tuer, même s’ils tendent vers cet objectif. Un guerrier expérimenté est capable de déterminer quand une attaque ne portera pas et de passer à une autre forme d’assaut pour rester les défenses de l’adversaire ou déséquilibrer sa garde. En enchainant soigneusement les coups, un maitre d’armes peut réduire les options de son opposant à une peau de chagrin, jusqu’à ce qu’il ne reste qu’une seule issue : la mort."
@@ -181,7 +181,7 @@
             "|opportunityIcon|+ de l’Air : réservez l’un des dés lancés, ainsi que 1 dé supplémentaire par |opportunityIcon|opportunityIcon| dépensés de cette façon. Lorsque vous effectuez un autre test avec la même compétence avant la fin de votre prochain tour, vous avez la possibilité de lancer un |ringDieIcon| de moins par |ringDieIcon| préalablement réservé, ainsi qu’un |skillDieIcon| par |skillDieIcon| réservé, afin de les remplacer par les dés réservés lors de votre lancer précédent. Ces dés sont considérés comme des dés lancés, mais on les ajoute au résultat en les positionnant sur le résultat qu’ils affichaient lorsqu’ils ont été réservés."
         ]
     },
-    "Striking as Earth":{
+    "striking as earth":{
         "name":"Offensive de la Terre",
         "description":[
             "Après avoir frappé, le bushi raffermit sa posture et se plante solidement dans le sol, s’assurant que son armure absorbera les chocs ou dressant son arme en position de garde afin d’encaisser des dégâts."
@@ -191,7 +191,7 @@
             "|opportunityIcon|+ de la Terre : jusqu’au début de votre prochain tour, augmentez votre Résistance physique de 1 point par |opportunityIcon| dépensé de cette façon."
         ]
     },
-    "Striking as Fire":{
+    "striking as fire":{
         "name":"Offensive du Feu",
         "description":[
             "La défense ne suffit pas pour arracher la victoire, et la priorité du combattant consiste à écraser son adversaire ! Celui qui perd de vue ce simple objectif est un piètre apprenti. Oublieux des circonstances, le bushi se lance à l’attaque, tentant de pousser son ennemi à la faute ou de créer une ouverture pour l’achever."
@@ -201,7 +201,7 @@
             "|opportunityIcon|+ du Feu : la gravité du prochain coup critique infligé à votre cible augmente de 1 point par |opportunityIcon| dépensé de cette façon. L’effet persiste jusqu’à la fin de votre prochain tour."
         ]
     },
-    "Striking as Void":{
+    "striking as void":{
         "name":"Offensive du Vide",
         "description":[
             "Composé de possibilités infinies et d’une profondeur insondable, l’avenir fait partie du domaine du Vide. En raison de son caractère fluctuant, nul ne peut espérer modifier un futur incertain. Mais à l’instant précis où celui-ci prend forme, il devient envisageable de le contrecarrer. Le bushi attend donc l’ultime seconde pour donner forme à l’énergie potentielle de son attaque, empêchant ainsi l’ennemi de l’anticiper et de réagir."
@@ -212,7 +212,7 @@
             "|opportunityIcon| du Vide : en cas d’échec, vous pouvez effectuer une autre action, que vous n’avez pas encore réalisée ce tour-ci. Cette aubaine ne peut être activée qu’une fois par round."
         ]
     },
-    "Striking as Water":{
+    "striking as water":{
         "name":"Offensive de l’Eau",
         "description":[
             "La meilleure des armures est inutile contre un guerrier capable de glisser une arme entre ses protections, ou d’asséner un coup franc afin de créer une ouverture. Au moment d’attaquer, le bushi tente de passer outre les défenses de la cible pour lui porter un coup fatal."
@@ -222,7 +222,7 @@
             "|opportunityIcon|+ de l’Eau : diminuez la Résistance physique de la cible de 1 point par |opportunityIcon| dépensé de cette façon. L’effet persiste jusqu’à la fin de votre prochain tour."
         ]
     },
-    "Tactical Assessment":{
+    "tactical assessment":{
         "name":"Évaluation tactique",
         "description":[
             "Le Commandement d’Akodo et Les Mensonges de Bayushi se rejoignent sur certains aspects. En effet, les deux stratèges privilégiaient une attitude pragmatique jusqu’à un certain point, même si Akodo vouait un mépris notoire à la plupart des méthodes de Bayushi. Comme l’a mentionné l’érudite Hida Fuyuko dans son commentaire révélateur sur les leçons à tirer du Commandement pour les chefs militaires de la Grande Muraille de Kaiu, ces deux grands esprits s’accordaient essentiellement sur la préparation : les batailles ne se remportent pas sur le terrain, mais grâce à la planification tactique du conflit. Même dans le cadre d’une simple escarmouche, le guerrier qui analyse le plus finement les alentours, ses propres atouts et la composition des forces ennemies ressort généralement victorieux."
@@ -235,7 +235,7 @@
             "|opportunityIcon| du Feu : choisissez un personnage impliqué dans la confrontation et l’un des avantages que vous savez qu’il possède. Jusqu’à la fin de son premier tour, cet avantage est impliqué à chacun de ses tests."
         ]
     },
-    "Warrior’s Resolve":{
+    "warrior’s resolve":{
         "name":"Détermination du guerrier",
         "description":[
             "Le bushi prend une profonde inspiration et souffle en se relevant. Tant qu’il a un devoir à accomplir, il peut maitriser sa douleur. On raconte que l’honneur est plus fort que l’acier, et c’est au samurai de le prouver."
@@ -247,7 +247,7 @@
             "Effets : éliminez un nombre de ponts de Fatigue égal à votre rang d’Honneur."
         ]
     },
-    "Coiling Serpent Style":{
+    "coiling serpent style":{
         "name":"Style du serpent constricteur",
         "description":[
             "Diverses armes permettent d’agripper l’ennemi, depuis les kusari-gama des brigands jusqu’aux lances ouvragées et surmontées d’un crochet utilisés par les plus grands maitres du Clan du Phénix."
@@ -258,7 +258,7 @@
             "|opportunityIcon|opportunityIcon|+ : immobilisez une cible de votre action par |opportunityIcon|opportunityIcon| dépensés de cette façon."
         ]
     },
-    "Iaijutsu Cut: Crossing Blade":{
+    "iaijutsu cut: crossing blade":{
         "name":"Attaque de iaijutsu : lame horizontale",
         "description":[
             "Le bushi oriente son fourreau vers l’extérieur et tire son katana dans un large mouvement horizontal pour accroître sa portée."
@@ -274,7 +274,7 @@
             "|opportunityIcon| : apprêtez immédiatement une autre arme Acérée rengainée."
         ]
     },
-    "Iaijutsu Cut: Rising Blade":{
+    "iaijutsu cut: rising blade":{
         "name":"Attaque de iaijutsu : lame ascendante",
         "description":[
             "Le bushi tient fermement le fourreau contre sa hanche avant de tirer son katana dans un mouvement de bas en haut, afin de toucher un ennemi qui s’avance à l’attaque tout en évitant de prendre un mauvais coup."
@@ -290,7 +290,7 @@
             "|opportunityIcon| : apprêtez immédiatement une autre arme Acérée rengainée."
         ]
     },
-    "Iron Forest Style":{
+    "iron forest style":{
         "name":"Style de la foret de fer",
         "description":[
             "Un bushi entrainé au combat à la lance peut contrôler la lance distance qui le sépare de son adversaire. A chaque pas, ce dernier risque de s’empaler sur la pique, d’y laisser un pan de sa tenue ou de récolter une estafilade à la moindre imprudence. Le Commandement d’Akodo fait référence à cette technique sous le nom de Style de la forêt de fer, qui transforme une simple lance en un obstacle insurmontable."
@@ -300,7 +300,7 @@
             "|opportunityIcon|+ : la zone située à portée de votre arme est considérée comme un terrain Dangereux pour une cible de votre action par |opportunityIcon| dépensé de cette façon. Lorsqu’un personnage affecté tente de se rapprocher de vous, il doit effectuer un test de Forme (Air 2, Eau 5) ND 4 ; en cas d’échec, il ne parvient pas à s’approcher. Cet effet persiste jusqu’au début de votre prochain tour."
         ]
     },
-    "Open Hand Style":{
+    "open hand style":{
         "name":"Style de la main ouverte",
         "description":[
             "La puissance repose sur la vitesse, mais en partie seulement. Un maitre en arts martiaux peut projeter sa force avec une efficacité redoutable, transformant de simples gestes en parades et en frappes dévastatrices. Avec suffisamment d’expérience, un spécialiste des arts martiaux peut même contrôler la posture de son adversaire."
@@ -310,7 +310,7 @@
             "|opportunityIcon|opportunityIcon|+ : par tranche de |opportunityIcon|opportunityIcon| dépensée de cette façon, une cible de votre action doit abandonner sa posture actuelle et en adopter une autre de votre choix. Les cibles de gabarit 3 ou plus ont la capacité de résister à l’aide d’un test de Forme ND 3, et ignorent cet effet en cas de succès."
         ]
     },
-    "Rushing Avalanche Style":{
+    "rushing avalanche style":{
         "name":"Style de l’avalanche meurtrière",
         "description":[
             "Un bushi qui adopte ce style frappe encore et encore, au mépris de toute prudence, à l’aide d’une arme lourde. Grâce au poids de son arme et à la férocité de ses coups, même le rebond d’un coup peut causer de sérieux dégâts, tandis qu’une frappe directe met généralement fin au combat"
@@ -321,7 +321,7 @@
             "|opportunityIcon| : si vous réussissez et que votre cible est A terre, ajoutez aux dégâts infligés l’équivalent de votre rang en Forme."
         ]
     },
-    "Spinning Blades Style":{
+    "spinning blades style":{
         "name":"Style des lames tournoyantes",
         "description":[
             "Lorsqu’un bushi utilise deux sabres, ce n’est généralement pas pour frapper avec les deux en même temps : c’est extrêmement difficile ! En revanche, il n’est pas obligé de sacrifier sa défense pendant une attaque, ni ses capacités offensives pendant une parade. L’arme secondaire peut dévier les coups et représenter une menace quand la lame principale est utilisée pour l’attaque ; le bushi peut frapper avec la lame secondaire alors que l’autre est verrouillée dans une parade. Chacune des lames peut apporter la mort, et l’ennemi ne peut en quitter aucune des yeux."
@@ -331,7 +331,7 @@
             "|opportunityIcon|+ : pour activer cette technique, vous devez dépenser un nombre de |opportunityIcon| égal à la Vigilance de la cible. Vous utilisez alors votre seconde arme apprêtée contre elle pour lui infliger un nombre de points de dégâts physiques égal à la valeur de dégâts de base de l’arme. Si la cible est Hébétée, ajoutez votre rang dans la compétence utilisée pour ce test aux dégâts infligés."
         ]
     },
-    "Thunderclap Strike":{
+    "thunderclap strike":{
         "name":"Assaut du coup de tonnerre",
         "description":[
             "Effectuant un balayage à l’aide de son arme, le bushi lacère ses ennemis, les oblige à reculer et crée ainsi une ouverture pour son prochain mouvement."
@@ -346,7 +346,7 @@
             "|opportunityIcon|+ de l’Air : le ND du test de résistance augmente de 1 par |opportunityIcon| dépensé de cette façon."
         ]
     },
-    "Veiled Menace Style":{
+    "veiled menace style":{
         "name":"Style de la menace voilée",
         "description":[
             "L’assassinat et les tactiques clandestines sont mal considérées par de nombreux samouraïs. Cela dit, nul ne peut nier l’efficacité de telles techniques. Un bushi confronté à un adversaire plus puissant peut toujours tenter de détourner son attention loin de la véritable menace, et faire ainsi pencher la balance en sa faveur."
@@ -356,7 +356,7 @@
             "|opportunityIcon|+ : en cas de réussite, choisissez une cible Désorientée ou Inconsciente de votre attaque. Elle subit un coup critique dont la gravité est égale à la dangerosité de l’arme augmentée de 1 point par |opportunityIcon| dépensé en plus du premier."
         ]
     },
-    "Hawk’s Precision":{
+    "hawk’s precision":{
         "name":"Précision du faucon",
         "description":[
             "Si la plupart des bushi sont censés être capable de manier l’arc, certains font preuve d’une précision terrifiante et peuvent atteindre des cibles situées bien au-delà de la portée habituelle de leur arme."
@@ -366,7 +366,7 @@
             "|opportunityIcon|+ : la portée de l’arme augmente de 1 niveau par |opportunityIcon| dépensé de cette façon, jusqu’à un niveau de portée maximal de 6."
         ]
     },
-    "Pelting Hail Style":{
+    "pelting hail style":{
         "name":"Style de l’averse de grêle",
         "description":[
             "Sur le champ de bataille, une volée de flèches peut signer l’arrêt de mort de certains combattants ; plus grave encore, elle est terriblement intimidante, même pour les vétérans les plus endurcis. D’un point de vue stratégique, même si un tir sur dix fait mouche, la volée de flèches entame la bravoure des soldats et les enjoint à la prudence."
@@ -376,7 +376,7 @@
             "|opportunityIcon|+ : choisissez un personnage situé à portée 0-2 de votre cible par |opportunityIcon| dépensé lors de ce test. Chaque personnage désigné reçoit un nombre de points de Conflit égal aux dégâts de base de l’arme."
         ]
     },
-    "Pin the Fan":{
+    "pin the fan":{
         "name":"Clouer l’éventail",
         "description":[
             "S’il est remarquablement difficile de tuer une cible avec une seule flèche, ce n’est pas impossible ; les maitres archers accomplissent des exploits de cet acabit depuis l’aube des temps à Rokugan. Des traits célèbres d’Hantei Genji jusqu’à la flèche tirée par Doji Hotaru pour abattre Akodo Arasou, des tirs mortels ont influencé l’histoire de l’Empire d’Émeraude à plusieurs reprises."
@@ -391,7 +391,7 @@
             "|opportunityIcon| : si la cible est mise Hors de combat par les dégâts de cette action, elle subit un coup critique d’une gravité égale au double de la dangerosité de l’arme, plus 1 par succès bonus."
         ]
     },
-    "Cleansing Spirit":{
+    "cleansing spirit":{
         "name":"Esprit purificateur",
         "description":[
             "Le moine recentre son ki avant de toucher un autre personnage, apaisant les énergies qui bouillonnent dans le corps de ce dernier grâce à sa propre sérénité. L’esprit de la cible en sort revigoré, débarrassé du poison, de la maladie ou encore de l’emprise des esprits maléfiques (à condition qu’ils n’aient pas encore pris le contrôle de son âme)."
@@ -404,7 +404,7 @@
             "Décharge : si vous avez obtenu au moins deux succès bonus, votre cible élimine l’un des états suivants : Tourmenté, En sang, Hébété, Désorienté, Mourant, Épuisé ou Ivre."
         ]
     },
-    "Earth Needs No Eyes":{
+    "earth needs no eyes":{
         "name":"La Terre voit sans yeux",
         "description":[
             "Un moine qui prend le temps d’écouter peut percevoir son entourage sans ouvrir les yeux. Il déploie son énergie autour de lui et observe les reflux du ki à travers le sol. Ainsi, le moine ressent les vibrations de tout ce qui bouge autour de lui, depuis la respiration bruyante d’un guerrier au combat jusqu’au pas des minuscules fourmis."
@@ -417,7 +417,7 @@
             "Décharge : si vous obtenez au moins trois succès bonus, vous prenez instantanément conscience de tous les objets et de toutes les créatures vivantes en contact avec le sol, dans toutes les directions et sur un nombre de niveaux de portée égal à votre anneau de Terre, plus 1 par succès bonus."
         ]
     },
-    "Earthen Fist":{
+    "earthen fist":{
         "name":"Poing de terre",
         "description":[
             "Le moine pose une paume sur le sol et absorbe la force de la Terre, soulevant des mottes de terre et des rochers qui s’agglomèrent pour le protéger, ou qui confèrent à ses os et à ses muscles la solidité du granit."
@@ -430,7 +430,7 @@
             "Décharge : en cas de réussite avec au moins deux succès bonus, vous infligez à la cible un nombre de points de dégâts physiques égal à votre valeur de la Terre. Votre cible doit résister à l’aide d’un test de Forme (Air 2, Eau 5) ND 4 pour ne pas subir l’état À terre."
         ]
     },
-    "Grasp the Earth Dragon":{
+    "grasp the earth dragon":{
         "name":"Étreindre le Dragon de la Terre",
         "description":[
             "Le moine se campe sur place, pieds écartés, puis frappe le sol pour projeter son ki dans les profondeurs de la Terre. Quelques instants plus tard, il a adopté la résistance de la pierre ; des roches se mettent à tournoyer autour de son corps pour dévier les attaques, des écailles de pierre recouvrent sa peau comme une carapace ou son épiderme devient aussi dur que le granit."
@@ -444,7 +444,7 @@
             "Décharge : si vous avez obtenu au moins trois succès bonus, tous les dégâts physiques que vous recevez sont réduits à 1 point. Dès qu’un personnage vous inflige des dégâts physiques, il reçoit l’état À terre. Cet effet persiste jusqu’à la fin de votre prochain tour."
         ]
     },
-    "Way of the Earthquake":{
+    "way of the earthquake":{
         "name":"La voie du séisme",
         "description":[
             "Le moine abat la paume de la main ou la plante du pied sur le sol, qui se met à trembler sous l’impact et l’afflux de ki. Les ennemis proches tombent à la renverse et peinent à se relever tant la terre vibre et se dérobe sous leurs pieds."
@@ -457,7 +457,7 @@
             "Décharge : si vous avez obtenu au moins deux succès bonus, chaque cible subit un nombre de points de dégâts physiques égal à votre anneau de Terre. Dans le cas d’une cible À terre, celle-ci subit à la place l’état Immobilisé, ainsi qu’un nombre de points de dégâts physiques égal à votre anneau de Terre, plus 1 par succès bonus."
         ]
     },
-    "Air Fist":{
+    "air fist":{
         "name":"Poing de vent",
         "description":[
             "Le moine fait tournoyer ses mains en un ballet complexe. Ce faisant, il concentre son ki dans les airs et transforme la plus douce des brises en une véritable tornade. Chacun des coups du moine s’accompagne d’un brusque courant d’air, qui force ses ennemis à reculer en les projetant contre les objets environnants."
@@ -470,7 +470,7 @@
             "Décharge : si vous avez obtenu au moins deux succès bonus, la cible subit un nombre de points de dégâts physiques égal à votre anneau de l’Air. Elle doit effectuer un test de Forme (Terre 5, Feu 2) ND 4 pour éviter d’être projetée à 1 niveau de portée, plus 1 par degré d’échec."
         ]
     },
-    "Riding the Clouds":{
+    "riding the clouds":{
         "name":"Chevaucher les nuages",
         "description":[
             "Le moine prend une profonde inspiration et abandonne ses attaches terrestres pour s’élever vers les cieux. Lévitant sur une tornade localisée, un courant d’air invisible ou même un nuage, le moine peut parcourir de longues distances avec une grande liberté. Même si le coussin d’air n’annule pas entièrement les effets de la gravité, il permet à l’utilisateur de traverser un terrain impraticable ou d’améliorer nettement ses capacités athlétiques."
@@ -484,7 +484,7 @@
             "Décharge : si vous avez obtenu au moins un succès bonus, vous pouvez vous déplacer immédiatement de 1 niveau de portée, plus 1 par succès bonus. Vous pouvez effectuer ce déplacement spécial verticalement ou horizontalement, tout en ignorant les effets négatifs du terrain que vous survolez."
         ]
     },
-    "The Great Silence":{
+    "the great silence":{
         "name":"Silence absolu",
         "description":[
             "Le moine trace une spirale avec ses mains, aspirant tous les bruits alentour et dérobant jusqu’à l’écho des sons. Les mensonges s’étiolent avant d’avoir été prononcés et les prières n’atteignent jamais les esprits auxquels elles étaient destinées. Les moines les plus expérimentés parviennent à maintenir cette technique un certain temps, en faisant tourbillonner le vent autour d’eux pour étouffer les paroles pernicieuses et les invocations blasphématoires."
@@ -497,7 +497,7 @@
             "Décharge : si vous avez obtenu au moins deux succès bonus, les personnages situés à portée 0-3 subissent l’état Aphone et se retrouvent incapables d’entendre le moindre bruit. Cet effet persiste jusqu’au début de votre prochain tour."
         ]
     },
-    "Way of the Willow":{
+    "way of the willow":{
         "name":"La voie du saule",
         "description":[
             "Le chêne ne peut braver la tempête sans risquer de se briser ; le saule, en revanche, ploie sous les rafales. Tel le saule, le moine ondule dans la brise, ressentant les courants de ki et esquivant sans effort."
@@ -510,7 +510,7 @@
             "Décharge : si vous avez obtenu au moins deux succès bonus, ajoutez votre rang en Méditation au ND des tests d’Attaque qui vous prennent pour cible jusqu’au début de votre prochain tour."
         ]
     },
-    "Breaking Blow":{
+    "breaking blow":{
         "name":"Ki destructeur",
         "description":[
             "Une personne capable de pratiquer les kihō et d’aligner son énergie avec le Feu peut introduire une étincelle de ki à l’intérieur d’un objet en lui portant un coup. L’impact ravive l’énergie latente de l’objet, qui se brise ou explose sous le choc."
@@ -524,7 +524,7 @@
             "Si vous avez obtenu au moins quatre succès bonus, l’objet choisi reçoit directement la propriété Détruit. À la discrétion du MJ, cette technique peut être utilisée pour détruire des objets du quotidien, même renforcés : des portes en fer ou des murs de pierre, entre autres choses."
         ]
     },
-    "Channel the Fire Dragon":{
+    "channel the fire dragon":{
         "name":"Dompter le Dragon du Feu",
         "description":[
             "Le feu n’apporte pas que la destruction ; il porte également la vie. Le moine inspire profondément et enflamme son ki pour se revigorer. Tant que ce feu de vie brûle dans ses poumons, le moine est immunisé contre la morsure des flammes et du froid. Les moines particulièrement versés dans cet art sont capables de cracher des jets de flamme."
@@ -538,7 +538,7 @@
             "Décharge : si vous avez obtenu au moins deux succès bonus, chaque cible doit résister par un test de Forme (Air 5, Eau 2) ND 4 ou subir l’état En feu, ainsi qu’un nombre de points de dégâts physiques égal à votre anneau de Feu. À la discrétion du MJ, les objets inflammables s’embrasent, ce qui transforme les alentours en terrain Dangereux."
         ]
     },
-    "Flame Fist":{
+    "flame fist":{
         "name":"Poing de flamme",
         "description":[
             "Le moine porte un coup rapide et téméraire ; des flammes surgissent et enveloppent tout ce qu’il touche. Tant que le kiho est actif, les mains et les pieds du moine sont entourés d’une traînée de flammes, qui renforce ses coups."
@@ -551,7 +551,7 @@
             "Décharge : si vous avez obtenu au moins deux succès bonus, votre cible subit un nombre de points de dégâts physiques égal à votre anneau de Feu et doit effectuer un test de Forme ND 4 (Air 5, Eau 2) pour éviter de subir l’état Hébété."
         ]
     },
-    "The Body Is an Anvil":{
+    "the body Is an anvil":{
         "name":"Le corps est une enclume",
         "description":[
             "Le moine concentre son ki à l’endroit où il s’attend à recevoir le coup de son adversaire et expulse son énergie pour contrer la frappe. On raconte que des armes se sont brisées sous l’impact dans des gerbes d’étincelles, détruites par l’énergie intérieure du lanceur."
@@ -564,7 +564,7 @@
             "Décharge : si vous avez obtenu au moins deux succès bonus avant de vous défendre contre les dégâts occasionnés par la cible, retranchez votre valeur d’anneau du Feu à ces dégâts. Si vous avez réussi à vous défendre, l’une des armes utilisées par la cible reçoit la propriété Détérioré, et la cible subit l’état En feu."
         ]
     },
-    "Way of the Falling Star":{
+    "way of the falling star":{
         "name":"La voie de l’étoile filante",
         "description":[
             "Le moine enchaîne une rapide série de coups. Chaque fois, une langue de feu ou de chaleur brûlante émerge de sa paume, de ses coudes, de ses pieds ou de toute partie du corps utilisée, pour brûler la cible."
@@ -577,7 +577,7 @@
             "Décharge : si vous avez obtenu au moins trois succès bonus, une cible subit un nombre de points de dégâts surnaturels égal à votre anneau de Feu, plus votre rang en Forme. La cible doit résister avec un test de Forme (Air 6, Eau 3) ND 5 ou subir les états En feu et Hébété."
         ]
     },
-    "Freezing the Lifeblood":{
+    "freezing the lifeblood":{
         "name":"Gel de l’énergie vitale",
         "description":[
             "Le moine touche un point du corps de l’adversaire et lui jette un regard glacial, figeant le ki et contractant les muscles avant de leur ôter tout leur tonus."
@@ -591,7 +591,7 @@
             "Si vous avez obtenu au moins quatre succès bonus, la cible subit un coup critique d’une gravité égale à votre anneau d’Eau, plus votre rang en Médecine."
         ]
     },
-    "Ki Protection":{
+    "ki protection":{
         "name":"Ki protecteur",
         "description":[
             "Le moine appose ses mains sur le blessé, ressent l’afflux de ki et puise dans ses propres réserves pour corriger toute irrégularité qu’il perçoit dans le courant d’énergie. Tant que le lanceur maintient ce kiho, son contact conserve des propriétés guérisseuses ; en revanche, il sera épuisé s’il répète cette opération à plusieurs reprises."
@@ -605,7 +605,7 @@
             "Décharge : si vous avez obtenu au moins deux succès bonus, votre cible élimine un nombre de points de Fatigue égal à votre rang en Médecine, plus 1 par succès bonus. Chaque cible affectée par cet effet ne peut plus en bénéficier jusqu’à la fin de la scène."
         ]
     },
-    "Ride the Water Dragon":{
+    "ride the water dragon":{
         "name":"Chevaucher le Dragon de l’Eau",
         "description":[
             "Les gestes du moine sont fluides, inexorables, portés par un ki mouvant sur lequel les énergies mystiques glissent comme d’inoffensives gouttes d’eau."
@@ -620,7 +620,7 @@
             "Si vous avez obtenu au moins quatre succès bonus, retirez tous les effets persistants d’ordre surnaturel (par exemple, les effets d’invocations, de maho ou de kiho) qui affectent tous les personnages situés à portée 0-2."
         ]
     },
-    "Water Fist":{
+    "water fist":{
         "name":"Poing d’eau",
         "description":[
             "Le moine porte un coup léger à un objet proche et projette son ki comme de l’eau pour contourner les objets ou les traverser, se jouant des obstacles pour atteindre sa destination. L’onde de choc traverse toutes les surfaces jusqu’à atteindre n’importe quelle cible contiguë, même si celle-ci se trouve de l’autre côté d’une porte en bois, d’un mur de pierre ou d’une barrière physique quelconque."
@@ -634,7 +634,7 @@
             "Décharge : en cas de réussite, infligez à la cible un nombre de points de dégâts physiques égal à la valeur de votre anneau d’Eau."
         ]
     },
-    "Way of the Seafoam":{
+    "way of the seafoam":{
         "name":"La voie de l’écume",
         "description":[
             "Le moine se déplace en adaptant ses mouvements à son environnement, adoptant une démarche fluide et l’aisance d’un cygne qui fend la surface d’un étang. Dans cet état, il peut évoluer sur les flots, maintenu au-dessus des vagues par son ki."
@@ -647,7 +647,7 @@
             "Décharge : si vous avez obtenu au moins deux succès bonus, éliminez les états Immobilisé et À terre. Ensuite, vous pouvez adopter une autre posture et parcourir jusqu’à 2 niveaux de portée."
         ]
     },
-    "Death Touch":{
+    "death touch":{
         "name":"Caresse de la mort",
         "description":[
             "Le moine porte un coup d’une précision chirurgicale, et qui laisse présager du pire. Les plus chanceux s’en tirent avec une simple blessure, mais les maîtres qui ont pris le temps de perfectionner cette technique sont capables de tuer d’un simple geste."
@@ -661,7 +661,7 @@
             "Si vous avez obtenu au moins quatre succès bonus et que la cible est un PNJ sous-fifre, celui-ci meurt sur le coup."
         ]
     },
-    "Still the Elements":{
+    "still the elements":{
         "name":"Figer les éléments",
         "description":[
             "Le moine s’immerge dans le vide infini de son être, plongeant dans ses réserves de ki et repoussant les entités spirituelles. Ce faisant, il fait pencher l’équilibre des éléments comme il le souhaite. Les kansen, les kamis et les autres puissances spirituelles — et parfois, même les humains — reculent face au néant insondable qu’ils sentent en lui."
@@ -675,7 +675,7 @@
             "Décharge : si vous avez obtenu au moins deux succès bonus, la zone située à portée 0-3 est considérée comme un terrain Déséquilibré (de l’élément sélectionné) jusqu’à la fin de la scène."
         ]
     },
-    "Touch the Void Dragon":{
+    "touch the void dragon":{
         "name":"Effleurer le Dragon du Vide",
         "description":[
             "L’univers prend sa source dans le Vide et dans le Tout. Le moine qui en prend conscience peut s’enfoncer dans une spirale cosmique pour y puiser une énergie qui défie l’entendement. Tant qu’il parvient à maintenir ce kiho, le moine observe plusieurs réalités tourbillonner autour de lui avant de prendre forme et de se concrétiser dans le présent. Il peut dès lors repérer des possibilités insoupçonnables."
@@ -689,7 +689,7 @@
             "Décharge : si vous avez obtenu au moins deux succès bonus, recevez 1 point de Vide. Vous ne pouvez gagner un point de Vide de cette façon qu’une seule fois par scène."
         ]
     },
-    "Way of the Edgeless Sword":{
+    "way of the edgeless sword":{
         "name":"La voie du sabre sans tranchant",
         "description":[
             "Le sage sait pertinemment que ce n’est pas la lame qui tranche les chairs : c’est le maître. Après tout, le Tao de Shinsei enseigne que les armes ne sont que des outils, aussi banals qu’un battoir à grain ou une charrue. Le moine effleure un objet, l’imprègne de son ki et le transforme en arme effilée, même s’il s’agit d’un vulgaire bâton, d’un sabre de bois ou du tranchant de la main."
@@ -702,7 +702,7 @@
             "Décharge : si vous avez obtenu au moins deux succès bonus, chaque cible subit un coup critique d’une dangerosité égale à la somme de votre anneau du Vide et de votre rang en Arts martiaux (mains nues)."
         ]
     },
-    "Blessed Wind":{
+    "blessed wind":{
         "name":"Vent béni",
         "extraNames":{
             "alchemy":"Tempête de sable en flacon",
@@ -722,7 +722,7 @@
             "|opportunityIcon| de l’Air : cet effet persiste jusqu’à la fin de la scène."
         ]
     },
-    "By the Light of the Lord Moon":{
+    "by the light of the lord moon":{
         "name":"Par la lumière de Sire Lune",
         "extraNames":{
             "ancestral":"Les yeux de Kitsuki",
@@ -743,7 +743,7 @@
             "|opportunityIcon|opportunityIcon|+ de l’Air : désignez un autre personnage à portée 0-1 par |opportunityIcon|opportunityIcon| dépensés de cette façon. Le ou les personnages choisis sont également capables de voir les objets cachés."
         ]
     },
-    "Call Upon the Wind":{
+    "call upon the wind":{
         "name":"L’appel du vent",
         "extraNames":{
             "alchemy":"Les douces ailes du Wren",
@@ -763,7 +763,7 @@
             "|opportunityIcon|opportunityIcon|+ de l’Air : lorsque vous êtes en vol, vous pouvez emporter dans les airs un personnage consentant situé à portée 0-2 par |opportunityIcon|opportunityIcon| dépensés de cette façon."
         ]
     },
-    "Cloak of Night":{
+    "cloak of night":{
         "name":"Manteau de nuit",
         "extraNames":{
             "alchemy":"Fumée de lumière volée",
@@ -783,7 +783,7 @@
             "|opportunityIcon|opportunityIcon|+ de l’Air : désignez une cible supplémentaire de gabarit inférieur ou égal à la première par |opportunityIcon|opportunityIcon| dépensés de cette façon."
         ]
     },
-    "False Realm of the Fox Spirits":{
+    "false realm of the fox spirits":{
         "name":"Royaume factice des esprits renards",
         "extraNames":{
             "ancestral":"Ikoma se rappelle une histoire",
@@ -804,7 +804,7 @@
             "|opportunityIcon|+ de l’Air : le terrain illusoire que vous avez invoqué reçoit l’une des propriétés suivantes par |opportunityIcon| dépensé de cette façon : Dangereux, Handicapant ou Voilé."
         ]
     },
-    "Grasp of the Air Dragon":{
+    "grasp of the air dragon":{
         "name":"Étreinte du Dragon de l’Air",
         "extraNames":{
             "ancestral":"Bond de Shikajin",
@@ -825,7 +825,7 @@
             "|opportunityIcon|opportunityIcon|+ de l’Air : la hauteur de la chute augmente de 1 niveau de portée par |opportunityIcon| dépensés de cette façon."
         ]
     },
-    "Mask of Wind":{
+    "mask of wind":{
         "name":"Masque du vent",
         "extraNames":{
             "alchemy":"Traits d’argile mouvants",
@@ -846,7 +846,7 @@
             "|opportunityIcon|opportunityIcon|+ de l’Air : cet effet persiste une scène supplémentaire par |opportunityIcon|opportunityIcon| dépensés de cette façon."
         ]
     },
-    "Nature’s Touch":{
+    "nature’s touch":{
         "name":"Caresse de la nature",
         "extraNames":{
             "ancestral":"Murmures de Shinjo",
@@ -868,7 +868,7 @@
             "|opportunityIcon|opportunityIcon| de l’Air : en cas de réussite, vous êtes capable de communiquer avec une créature Extérieure, à condition que celle-ci ait quelque chose à vous dire."
         ]
     },
-    "Rise, Air":{
+    "rise, air":{
         "name":"Air, incarne-toi",
         "extraNames":{
             "alchemy":"Poussière de l’incarnation",
@@ -888,7 +888,7 @@
             "|opportunityIcon| de l’Air : l’incarnation du kami de l’Air apparaît dans un cyclone qui emporte tout aux alentours. Chaque personnage situé à portée 0-2 de la position visée doit résister à l’aide d’un test de Forme (Terre 5, Feu 2) ND 4 pour éviter de subir un nombre de points de dégâts surnaturels égal à votre anneau de l’Air et être éjecté à 2 niveaux de portée du cyclone."
         ]
     },
-    "Secrets on the Wind":{
+    "secrets on the wind":{
         "name":"Des secrets dans le vent",
         "extraNames":{
             "ancestral":"Murmure à l’oreille de Bayushi",
@@ -910,7 +910,7 @@
             "|opportunityIcon|opportunityIcon|+ de l’Air : l’effet persiste 24 heures supplémentaires par |opportunityIcon|opportunityIcon| dépensés de cette façon."
         ]
     },
-    "Summon Fog":{
+    "summon fog":{
         "name":"Nappe de brouillard",
         "extraNames":{
             "ancestral":"Fuite de Soshi",
@@ -932,7 +932,7 @@
             "|opportunityIcon|opportunityIcon| de l’Air : la nappe de brouillard se transforme en un blizzard glacé, ce qui rend également le terrain affecté Dangereux."
         ]
     },
-    "Tempest of Air":{
+    "tempest of air":{
         "name":"Tornade",
         "extraNames":{
             "alchemy":"Fiole de tempête",
@@ -952,7 +952,7 @@
             "|opportunityIcon|+ de l’Air : chaque cible qui échoue à son test de résistance (Forme) est également éloignée de vous de 1 niveau de portée par |opportunityIcon| dépensé de cette façon."
         ]
     },
-    "Token of Memory":{
+    "token of memory":{
         "name":"Fragment de souvenir",
         "extraNames":{
             "ancestral":"Énigme d’Agasha",
@@ -974,7 +974,7 @@
             "|opportunityIcon|opportunityIcon| de l’Air : les objets invoqués par ce biais disposent d’une masse et peuvent être utilisés comme s’ils étaient réels (ils sont cependant toujours inanimés et incapables de se mouvoir indépendamment). Quoi qu’il en soit, ils disparaissent à l’issue de l’invocation."
         ]
     },
-    "Vapor of Nightmares":{
+    "vapor of nightmares":{
         "name":"Émanation de cauchemar",
         "extraNames":{
             "ancestral":"Togashi parle avec douceur",
@@ -995,7 +995,7 @@
             "|opportunityIcon| de l’Air : la vision persiste jusqu’à la fin de la scène."
         ]
     },
-    "Wrath of Kaze-no-Kami":{
+    "wrath of kaze-no-kami":{
         "name":"Courroux de Kaze no kami",
         "extraNames":{
             "alchemy":"Fiole de typhon",
@@ -1017,7 +1017,7 @@
             "|opportunityIcon|opportunityIcon| de l’Air : tant que l’ouragan fait rage, vous pouvez vous déplacer verticalement en volant et ignorer les effets du terrain."
         ]
     },
-    "Yari of Air":{
+    "yari of air":{
         "name":"Yari de l’air",
         "extraNames":{
             "alchemy":"Manche du yari du vent",
@@ -1039,7 +1039,7 @@
             "|opportunityIcon|opportunityIcon| de l’Air : vous pouvez invoquer une paire d’armes."
         ]
     },
-    "Armor of Earth":{
+    "armor of earth":{
         "name":"Armure de la Terre",
         "extraNames":{
             "ancestral":"Carapace de Hida",
@@ -1061,7 +1061,7 @@
             "|opportunityIcon|opportunityIcon| de la Terre : l’armure invoquée reçoit la propriété Sacré."
         ]
     },
-    "Bind the Shadow":{
+    "bind the shadow":{
         "name":"Enchaîner les ténèbres",
         "extraNames":{
             "alchemy":"Cercle de Cendres et de Sel",
@@ -1084,7 +1084,7 @@
             "|opportunityIcon|opportunityIcon|opportunityIcon|opportunityIcon| de la Terre : l’effet infligé aux cibles qui échouent au test dure un siècle."
         ]
     },
-    "Caress of Earth":{
+    "caress of earth":{
         "name":"Caresse de la Terre",
         "extraNames":{
             "alchemy":"Baume du kami de la pierre",
@@ -1104,7 +1104,7 @@
             "|opportunityIcon| de la Terre : l’une des cibles reçoit la propriété Solide jusqu’à la fin de la scène."
         ]
     },
-    "Courage of Seven Thunders":{
+    "courage of seven thunders":{
         "name":"Courage des Sept Tonnerres",
         "extraNames":{
             "ancestral":"La position inébranlable d’Akodo",
@@ -1126,7 +1126,7 @@
             "|opportunityIcon|opportunityIcon| de la Terre : cette technique prend pour cible l’ensemble des alliés situés à portée."
         ]
     },
-    "Earthquake":{
+    "earthquake":{
         "name":"Séisme",
         "extraNames":{
             "ancestral":"Le rugissement d’Akodo",
@@ -1148,7 +1148,7 @@
             "|opportunityIcon|opportunityIcon|+ de la Terre : en cas de réussite, vous pouvez détruire un bâtiment ou une fortification à portée par tranche de |opportunityIcon|opportunityIcon| dépensée de cette façon. Tout personnage situé à l’intérieur de la construction doit résister à l’aide d’un test de Forme (Air 1, Eau 4) ND 3 pour tenter de s’échapper de l’édifice avant qu’il ne s’écroule. Dans le cas contraire, il subit un coup critique de gravité 10."
         ]
     },
-    "Earth Becomes Sky":{
+    "earth becomes sky":{
         "name":"La terre devient le ciel",
         "extraNames":{
             "alchemy":"Fiole de terre explosive",
@@ -1165,7 +1165,7 @@
             "Effets : en cas de réussite, vous invoquez un rocher pour frapper votre cible. Celle-ci subit un nombre de points de dégâts surnaturels égal à votre anneau de la Terre, plus 1 par succès bonus, et doit résister à l’aide d’un test de Forme (Air 1, Eau 4) ND 3 pour éviter de subir l’état À terre. Si votre cible est déjà À terre, les points de dégâts infligés sont doublés."
         ]
     },
-    "Embrace of Kenro-Ji-Jin":{
+    "embrace of kenro-ji-jin":{
         "name":"Étreinte de Kenro-ji-jin",
         "extraNames":{
             "alchemy":"Baume de l’araignée terrestre",
@@ -1187,7 +1187,7 @@
             "|opportunityIcon|opportunityIcon| de la Terre : les effets mentionnés s’appliquent également au métal. Vous jouissez d’une Résistance physique égale à votre anneau de la Terre contre les dégâts des armes en métal."
         ]
     },
-    "Grasp of Earth":{
+    "grasp of earth":{
         "name":"Étreinte de la Terre",
         "extraNames":{
             "alchemy":"Potion de cristallisation",
@@ -1208,7 +1208,7 @@
             "|opportunityIcon| de la Terre : ramenez à 0 les dégâts subis par chaque cible."
         ]
     },
-    "Jade Strike":{
+    "jade strike":{
         "name":"Assaut de jade",
         "extraNames":{
             "ancestral":"Larmes de la déesse Soleil",
@@ -1229,7 +1229,7 @@
             "|opportunityIcon| de la Terre : en cas de réussite, chaque créature extérieure ciblée subit l’état Aphone et ne peut utiliser aucune technique de maho jusqu’à la fin de votre prochain tour."
         ]
     },
-    "Jurōjin’s Balm":{
+    "jurōjin’s balm":{
         "name":"Baume de Jurōjin",
         "extraNames":{
             "elemental":"Sang des kamis de la Terre",
@@ -1251,7 +1251,7 @@
             "|opportunityIcon|opportunityIcon| de la Terre : en cas de réussite, vous restaurez également votre cible, la soignant de tout poison qui l’intoxique, de l’état Mourant et de tout symptôme de maladie jusqu’à la fin de la scène."
         ]
     },
-    "Power of the Earth Dragon":{
+    "power of the earth dragon":{
         "name":"Puissance du Dragon de la Terre",
         "extraNames":{
             "alchemy":"Fiole de pierre fortifiante",
@@ -1272,7 +1272,7 @@
             "|opportunityIcon| de la Terre : cet effet persiste jusqu’à la fin de la scène."
         ]
     },
-    "Rise, Earth":{
+    "rise, earth":{
         "name":"Terre, incarne-toi",
         "extraNames":{
             "ancestral":"Gardien de la Terre",
@@ -1294,7 +1294,7 @@
             "|opportunityIcon| de la Terre : au moment où elle émerge du sol, l’incarnation du kami de la Terre génère une onde de choc et projette des rochers aux alentours. Chaque personnage situé à portée 0-2 doit résister à l’aide d’un test de Forme (Air 2, Eau 5) ND 4 pour éviter de recevoir l’état À terre et de subir un nombre de points de dégâts physiques ou surnaturels égal à votre anneau de la Terre."
         ]
     },
-    "Symbol of Earth":{
+    "symbol of earth":{
         "name":"Symbole de la Terre",
         "extraNames":{
             "alchemy":"Marque de Cristal et de Jade",
@@ -1315,7 +1315,7 @@
             "|opportunityIcon|opportunityIcon| de la Terre : cet effet persiste pendant 24 heures."
         ]
     },
-    "Tetsubō of Earth":{
+    "tetsubō of earth":{
         "name":"Tetsubō de la Terre",
         "extraNames":{
             "alchemy":"Le marteau du forgeron",
@@ -1337,7 +1337,7 @@
             "|opportunityIcon|opportunityIcon| de la Terre : l’arme invoquée jouit de la propriété Sacré."
         ]
     },
-    "Tomb of Jade":{
+    "tomb of jade":{
         "name":"Tombe de jade",
         "extraNames":{
             "ancestral":"Miséricorde de la déesse Soleil",
@@ -1360,7 +1360,7 @@
             "|opportunityIcon|+ de la Terre : choisissez l’un des états suivants pour chaque symbole |opportunityIcon| dépensé de cette façon : Hébété, Désorienté, Immobilisé ou À terre. Si la cible est une créature Extérieure, elle subit le ou les états choisis."
         ]
     },
-    "Wall of Earth":{
+    "wall of earth":{
         "name":"Muraille de terre",
         "extraNames":{
             "alchemy":"Poudre de cristallisation",
@@ -1384,7 +1384,7 @@
             "|opportunityIcon|opportunityIcon|opportunityIcon|opportunityIcon| de la Terre : plutôt que de générer un mur, vous pouvez invoquer une fortification de type Château."
         ]
     },
-    "Armor of Radiance":{
+    "armor of radiance":{
         "name":"Armure rayonnante",
         "extraNames":{
             "alchemy":"L’huile pour attiser le feu",
@@ -1405,7 +1405,7 @@
             "|opportunityIcon|opportunityIcon| du Feu : cet effet persiste jusqu’à la fin de la scène."
         ]
     },
-    "Biting Steel":{
+    "biting steel":{
         "name":"Morsure de l’acier",
         "extraNames":{
             "alchemy":"Baume du métal impitoyable",
@@ -1427,7 +1427,7 @@
             "|opportunityIcon|opportunityIcon| du Feu : cet effet persiste jusqu’à la fin de la scène."
         ]
     },
-    "Breath of the Fire Dragon":{
+    "breath of the fire dragon":{
         "name":"Souffle du Dragon du Feu",
         "extraNames":{
             "alchemy":"Saké d’oni",
@@ -1444,7 +1444,7 @@
             "Effets : en cas de réussite, vous crachez des flammes qui frappent la cible et tous les personnages qui se tiennent à proximité. La cible subit l’état En feu, ainsi qu’un nombre de points de dégâts surnaturels égal à votre anneau du Feu, plus 2 par succès bonus. Chaque personnage situé à portée 0-1 de la cible doit effectuer un test de Forme (Air 4, Eau 1) ND 3 pour éviter de subir un nombre de points de dégâts surnaturels égal à votre anneau du Feu."
         ]
     },
-    "Extinguish":{
+    "extinguish":{
         "name":"Extinction",
         "description":[
             "Tout shugenja qui communie avec les esprits du Feu doit être capable de les apaiser ; sinon, les flammes risquent de se retourner contre lui et de le consumer. L’astuce consiste à savoir attiser la fureur du kami sur un intervalle de temps très court, afin de l’épuiser en un temps record. En prononçant quelques mots et en levant les bras au ciel, le shugenja inspire, renforçant les flammes qui se mettent à briller intensément, puis expire alors que celles-ci disparaissent pour laisser la place à des braises rougeoyantes."
@@ -1459,7 +1459,7 @@
             "|opportunityIcon|opportunityIcon| du Feu : en cas de réussite, vous pouvez également mettre un terme à tous les effets persistants dus à des invocations du Feu et à tous les effets surnaturels liés au feu à portée de cette invocation."
         ]
     },
-    "Fukurokujin’s Wit":{
+    "fukurokujin’s wit":{
         "name":"Esprit de Fukurokujin",
         "extraNames":{
             "ancestral":"Sagesse des Kitsu",
@@ -1479,7 +1479,7 @@
             "|opportunityIcon| du Feu : vous pouvez cibler un autre personnage situé à portée 0-2 plutôt que vous-même."
         ]
     },
-    "Fury of Osano-wo":{
+    "fury of osano-wo":{
         "name":"Fureur d’Osano-wo",
         "extraNames":{
             "alchemy":"Orbe de feu céleste",
@@ -1500,7 +1500,7 @@
             "|opportunityIcon|+ du Feu : la gravité de tout coup critique infligé dans le cadre de cette action augmente de 2 points par |opportunityIcon| dépensé de cette façon."
         ]
     },
-    "Katana of Fire":{
+    "katana of fire":{
         "name":"Katana du Feu",
         "extraNames":{
             "alchemy":"Changer le feu en acier",
@@ -1523,7 +1523,7 @@
             "|opportunityIcon| du Feu : si vous effectuez une action d’Attaque au moyen de cette arme, chaque cible doit résister à l’aide d’un test de Forme (Air 4, Eau 1) ND 3 pour éviter de subir l’état En feu."
         ]
     },
-    "Matsu’s Battlecry":{
+    "matsu’s battlecry":{
         "name":"Cri de guerre de Matsu",
         "extraNames":{
             "elemental":"Accueillir les flammes",
@@ -1540,7 +1540,7 @@
             "Effets : en cas de réussite, vous conjurez une illusion effroyable dans l’esprit de la cible, une scène invisible pour les observateurs, mais qui plonge la victime dans une colère noire. Celle-ci reçoit 1 point de Conflit, plus 1 par succès bonus. Elle doit en outre résister à l’aide d’un test de Méditation (Air 4, Eau 1) ND 3 pour éviter de subir immédiatement l’état Enragé."
         ]
     },
-    "Ravenous Swarms":{
+    "ravenous swarms":{
         "name":"Nuée vorace",
         "extraNames":{
             "ancestral":"La fureur oubliée d’Asahina",
@@ -1562,7 +1562,7 @@
             "|opportunityIcon| du Feu : quand vous vous défendez contre des dégâts, vous pouvez sacrifier un nombre de feux follet inférieur ou égal à votre anneau du Feu, chacun réduisant de 1 les dégâts subis."
         ]
     },
-    "Rise, Flame":{
+    "rise, flame":{
         "name":"Feu, incarne-toi",
         "extraNames":{
             "alchemy":"Flacon d’incarnation",
@@ -1584,7 +1584,7 @@
             "|opportunityIcon| du Feu : dès que la Fatigue du kami du Feu dépasse son Endurance, il explose en une immense colonne de flammes. Chaque personnage situé à portée 0-3 doit résister à l’aide d’un test de Forme (Air 6, Eau 3) ND 5 pour éviter de subir les états En feu et Hébété, ainsi qu’un nombre de points de dégâts surnaturels égal au double de votre anneau du Feu."
         ]
     },
-    "The Cleansing Fire":{
+    "the cleansing fire":{
         "name":"Le feu purificateur",
         "extraNames":{
             "alchemy":"Onction du dragon du Feu",
@@ -1601,7 +1601,7 @@
             "Effets : en cas de réussite, vous frappez chaque cible au moyen d’une langue de feu. Chaque cible subit l’état Hébété et doit résister à l’aide d’un test de Forme (Air 4, Eau 1) ND 3 pour éviter de subir l’état En feu ainsi qu’un nombre de points de dégâts surnaturels égal à votre anneau du Feu, plus 1 par degré d’échec."
         ]
     },
-    "The Fires from Within":{
+    "the fires from within":{
         "name":"Feu intérieur",
         "extraNames":{
             "ancestral":"Lumière édifiante d’Asako",
@@ -1621,7 +1621,7 @@
             "|opportunityIcon| du Feu : la portée maximale de cette technique augmente de 1 niveau de portée par |opportunityIcon| dépensé de cette façon."
         ]
     },
-    "The Soul’s Blade":{
+    "the soul’s blade":{
         "name":"Lame spirituelle",
         "extraNames":{
             "alchemy":"Griffe du dragon du Feu",
@@ -1645,7 +1645,7 @@
             "|opportunityIcon|opportunityIcon| du Feu : si vous effectuez une action d’Attaque au moyen de cette arme, chaque cible doit résister à l’aide d’un test de Forme (Air 5, Eau 2) ND 4 pour éviter de subir l’état Hébété."
         ]
     },
-    "Wall of Fire":{
+    "wall of fire":{
         "name":"Muraille de flammes",
         "extraNames":{
             "alchemy":"Poudre de cendre combustible",
@@ -1665,7 +1665,7 @@
             "|opportunityIcon| du Feu : choisissez l’une des propriétés de terrain suivantes : Handicapant ou Voilé. Le mur de feu est considéré comme un terrain doté de cette propriété."
         ]
     },
-    "Wings of the Phoenix":{
+    "wings of the phoenix":{
         "name":"Ailes du phénix",
         "extraNames":{
             "alchemy":"Transmutation enflammée",
@@ -1686,7 +1686,7 @@
             "|opportunityIcon|opportunityIcon| du Feu : cet effet persiste jusqu’à la fin de la scène."
         ]
     },
-    "Bō of Water":{
+    "bō of water":{
         "name":"Bō de l’Eau",
         "extraNames":{
             "ancestral":"Pagaie de Kaimetsu-O",
@@ -1708,7 +1708,7 @@
             "|opportunityIcon| de l’Eau : lors d’une action d’attaque effectuée à l’aide de cette arme, la portée minimale ou maximale de l’arme peut être augmentée ou réduite de 1 niveau."
         ]
     },
-    "Dance of Seasons":{
+    "dance of seasons":{
         "name":"La danse des saisons",
         "extraNames":{
             "alchemy":"Sels de changement saisonnier",
@@ -1729,7 +1729,7 @@
             "|opportunityIcon|+ de l’Eau : en cas de réussite, vous pouvez tenter d’emprisonner dans la glace un personnage situé dans la zone affectée par |opportunityIcon| dépensé de cette façon. Chaque cible doit résister à l’aide d’un test de Forme (Terre 1, Feu 4) ND 3 pour éviter de subir les états Immobilisé et Désorienté."
         ]
     },
-    "Dominion of Suijin":{
+    "dominion of suijin":{
         "name":"Le domaine de Suijin",
         "extraNames":{
             "ancestral":"Fenêtre d’Iuchi",
@@ -1753,7 +1753,7 @@
             "|opportunityIcon|opportunityIcon|opportunityIcon| de l’Eau : en plus d’être capable d’observer à travers l’autre étendue d’eau, vous pouvez traverser le portail temporaire que vous avez créé pour rejoindre l’autre lieu et emmener un nombre de personnages égal à votre anneau de l’Eau. Chaque utilisation de cette invocation permet d’effectuer un aller simple ; en outre, tout le monde est systématiquement trempé à l’arrivée."
         ]
     },
-    "Ever-Changing Waves":{
+    "ever-changing waves":{
         "name":"L’impermanence du ressac",
         "extraNames":{
             "alchemy":"Élixir de métamorphose",
@@ -1775,7 +1775,7 @@
             "|opportunityIcon|+ de l’Eau : en cas de réussite, le gabarit de la forme que vous adoptez peut être augmenté ou réduit de 1 point par |opportunityIcon| dépensé de cette façon (pour un minimum de 0 et un maximum de 6)."
         ]
     },
-    "Hands of the Tides":{
+    "hands of the tides":{
         "name":"Mains des marées",
         "extraNames":{
             "alchemy":"Remonter la lignée du sang",
@@ -1796,7 +1796,7 @@
             "|opportunityIcon|+ de l’Eau : en cas de réussite, vous pouvez obliger une cible à adopter une nouvelle posture de votre choix par |opportunityIcon| dépensé de cette façon."
         ]
     },
-    "Heart of the Water Dragon":{
+    "heart of the water dragon":{
         "name":"Cœur du Dragon de l’eau",
         "extraNames":{
             "alchemy":"Vapeurs de bienveillance",
@@ -1817,7 +1817,7 @@
             "|opportunityIcon|opportunityIcon| de l’Eau : lorsque la cible réussit un test pour résister aux effets d’une technique de type kiho, maho ou invocation, l’assaillant doit également effectuer un test pour résister à l’effet qu’il veut infliger, au risque de le subir en retour."
         ]
     },
-    "Inari’s Blessing":{
+    "inari’s blessing":{
         "name":"Bénédiction d’Inari",
         "extraNames":{
             "ancestral":"Cadeau de Miya",
@@ -1838,7 +1838,7 @@
             "|opportunityIcon|+ de l’Eau : pour chaque |opportunityIcon| dépensé de cette façon, vous conjurez suffisamment de nourriture pour sustenter un nombre de personnes égal à votre anneau de l’Eau, plus 1 par succès bonus. Cet effet remplace l’effet de base."
         ]
     },
-    "Path to Inner Peace":{
+    "path to inner peace":{
         "name":"Voie de la sérénité",
         "extraNames":{
             "alchemy":"Le baiser de Jurōjin",
@@ -1860,7 +1860,7 @@
             "|opportunityIcon| de l’Eau : votre cible élimine aussi un nombre de points de Conflit égal à vos succès bonus."
         ]
     },
-    "Reflections of P’an Ku":{
+    "reflections of p’an ku":{
         "name":"Reflets de P’an Ku",
         "extraNames":{
             "ancestral":"L’immense sagesse d’Agasha",
@@ -1881,7 +1881,7 @@
             "|opportunityIcon| de l’Eau : vous pouvez viser un personnage plutôt qu’un objet. En cas de réussite, vous identifiez une invocation, un kiho, une technique de maho ou une capacité surnaturelle que ce personnage maîtrise, ou encore un objet en sa possession (nom et propriétés générales)."
         ]
     },
-    "Rise, Water":{
+    "rise, water":{
         "name":"Eau, incarne-toi",
         "extraNames":{
             "alchemy":"Vin d’invocation",
@@ -1903,7 +1903,7 @@
             "|opportunityIcon|+ de l’Eau : vous séparez l’incarnation du kami de l’eau en autant de petits avatars que de |opportunityIcon| dépensés de cette façon. Chacun est doté d’une endurance de 12, divisée par le nombre de |opportunityIcon| dépensés pour cet effet (arrondi à l’entier supérieur)."
         ]
     },
-    "Stride the Waves":{
+    "stride the waves":{
         "name":"Marcher sur les vagues",
         "extraNames":{
             "alchemy":"Élixir de flottaison",
@@ -1920,7 +1920,7 @@
             "Effets : en cas de réussite, vous conjurez un courant qui emporte votre cible. Même si celle-ci ne sait pas nager, elle peut aller où bon lui semble sur ou sous la surface de l’eau. La cible ignore tous les effets négatifs du terrain aqueux et ne peut pas suffoquer. Cet effet persiste jusqu’à la fin de la scène."
         ]
     },
-    "Strike the Tsunami":{
+    "strike the tsunami":{
         "name":"Impact du tsunami",
         "extraNames":{
             "alchemy":"Tempête océanique en bouteille",
@@ -1940,7 +1940,7 @@
             "|opportunityIcon| de l’Eau : chaque cible ayant échoué au test de résistance subit également l’état En sang."
         ]
     },
-    "Suijin’s Embrace":{
+    "suijin’s embrace":{
         "name":"Étreinte de Suijin",
         "extraNames":{
             "alchemy":"L’océan contenu dans une goutte",
@@ -1957,7 +1957,7 @@
             "Effets : en cas de réussite, vous frappez votre cible en emplissant ses poumons d’eau de mer. Elle subit un nombre de points de dégâts surnaturels égal à votre anneau de l’Eau, plus 2 par succès bonus. Elle commence à suffoquer si sa Fatigue excède son Endurance de cette façon. Cet effet perdure pendant un nombre de rounds égal à votre anneau de l’Eau, plus 1 par succès bonus, ou jusqu’à ce que vous relâchiez votre emprise au prix d’une action de Soutien."
         ]
     },
-    "Sympathetic Energies":{
+    "sympathetic energies":{
         "name":"Transfert d’énergie",
         "extraNames":{
             "ancestral":"Compassion de Shinjo",
@@ -1977,7 +1977,7 @@
             "|opportunityIcon|opportunityIcon| de l’Eau : à la place d’un effet d’invocation persistant, vous pouvez choisir un état et l’infliger à vos cibles."
         ]
     },
-    "The Rushing Wave":{
+    "the rushing wave":{
         "name":"La déferlante",
         "extraNames":{
             "alchemy":"Le kobune d’argile",
@@ -1995,7 +1995,7 @@
             "En cas de réussite lors d’une scène narrative ou de temps mort, vous conjurez un courant qui double la vitesse de la cible à la surface de l’eau ou dans les profondeurs (lorsqu’elle nage ou qu’elle voyage sur un bateau en mer ou sur un fleuve). Cet effet persiste jusqu’à la fin de la scène."
         ]
     },
-    "Cleansing Rite":{
+    "cleansing rite":{
         "name":"Rite de purification",
         "description":[
             "Le pratiquant de ce rituel sanctifie une personne ou un groupe, les oignant de substances sacrées qui chassent les influences impies et la sorcellerie."
@@ -2012,7 +2012,7 @@
             "|opportunityIcon|+ du Vide : plutôt que des personnages, vous pouvez viser une zone qui englobe autant de niveaux de portée autour de vous que de |opportunityIcon| dépensés de cette façon. Éliminez la propriété de terrain Profané de la zone. S’il s’agit d’un lieu réellement maudit dans lequel le mal a résidé pendant une longue période, la propriété de terrain Profané revient après une journée, plus 1 par succès bonus."
         ]
     },
-    "Commune with the Spirits":{
+    "commune with the spirits":{
         "name":"Communier avec les esprits",
         "description":[
             "Le pratiquant de ce rituel se concentre sur un élément en particulier, faisant appel aux esprits situés autour de lui pour leur demander conseil ou requérir leur bénédiction. Les prêtres comme les profanes peuvent l’utiliser pour que les esprits leur envoient un signe, même vague : par exemple, une feuille qui tombe sur le sol en pointant la direction qui mène à une personne recherchée ou à l’objet de leur convoitise."
@@ -2031,7 +2031,7 @@
             "|opportunityIcon|+ : en cas de réussite, recevez une bénédiction supplémentaire par |opportunityIcon| dépensé de cette façon. Chaque bénédiction ne peut être obtenue qu’une seule fois par activation."
         ]
     },
-    "Divination":{
+    "divination":{
         "name":"Divination",
         "description":[
             "Le pratiquant de ce rituel aperçoit un reflet du futur d’un personnage : il lit son destin dans les étoiles ou interprète les marques de brûlure sur les os d’animaux, la disposition de coquillages jetés au hasard ou divers autres présages."
@@ -2050,7 +2050,7 @@
             "|opportunityIcon| : en cas d’échec, une autre prédiction fait suite à la première. Choisissez l’un des présages ci-dessus et ajoutez-le à celui que le MJ a choisi."
         ]
     },
-    "Tea Ceremony":{
+    "tea ceremony":{
         "name":"Cérémonie du thé",
         "description":[
             "Dame Doji créa la cérémonie du thé lorsqu’elle servit ce breuvage au tout premier empereur. Le rituel lui-même varie selon les clans : il se pratique dans des chambres de thé tapissées d’or pour le Clan du Phénix, avec des bols sélectionnés avec soin pour leurs imperfections chez le Clan du Dragon, lors de rassemblements matinaux chez le Clan de la Grue, ou en pleine contemplation de la lune et de la neige chez le Clan du Scorpion. Quoi qu’il en soit, l’appréciation du thé constitue l’essentiel de cette cérémonie qui représente, lorsqu’on l’exécute correctement, un moment de détente spirituelle pour ses participants. Le thé symbolise les cinq éléments : le Feu utilisé pour chauffer l’Eau, la Terre dans laquelle le théier s’est épanoui et l’Air qui emporte le fumet du breuvage. Enfin, le Vide unit les autres éléments dans une harmonie parfaite et apporte à la cérémonie un mystérieux cinquième élément : l’impression de tranquillité et d’apaisement que l’on ressent en sirotant une tasse de thé."
@@ -2067,7 +2067,7 @@
             "|opportunityIcon|opportunityIcon| : en cas de réussite, chaque cible reçoit 1 point de Vide."
         ]
     },
-    "Threshold Barrier":{
+    "threshold barrier":{
         "name":"Seuil infranchissable",
         "description":[
             "Le pratiquant du rituel dispose autour d’une entrée des protections contre les êtres d’un type particulier, qui les empêchent de voir ce portail ou les révulsent mentalement à l’idée de le franchir."
@@ -2088,7 +2088,7 @@
             "|opportunityIcon| : si un être appartenant à la catégorie dont vous voulez protéger le portail a traversé celui-ci il y a moins de 24 heures, vous en êtes informé."
         ]
     },
-    "Artisan’s Appraisal":{
+    "artisan’s appraisal":{
         "name":"Estimation de l’artisan",
         "description":[
             "Un courtisan qui examine un objet peut se représenter l’artisan qui l’a façonné. Chaque empreinte digitale raconte l’histoire de la main qui l’a fabriqué ; chaque choix de conception révèle quelque détail sur les désirs qui flottaient dans l’esprit de l’artisan."
@@ -2099,7 +2099,7 @@
             "|opportunityIcon| de l’Air : si l’artiste ou l’artisan est un PNJ, vous apprenez son attitude."
         ]
     },
-    "Bend with the Storm":{
+    "bend with the storm":{
         "name":"Le roseau plie sous la tempête",
         "description":[
             "Face à un ennemi beaucoup plus puissant, un courtisan astucieux feint souvent de se trouver dans une position de faiblesse. Ainsi, il peut influencer le comportement de son adversaire en lui présentant des occasions irrésistibles."
@@ -2109,7 +2109,7 @@
             "|opportunityIcon| de l’Air : choisissez un avantage ou un désavantage. La cible est amenée à croire que vous le possédez, sans que vous ayez besoin de le présenter explicitement ou de déployer des efforts particuliers. En outre, la cible est persuadée que vous n’êtes pas au courant d’avoir laissé paraître cette information. Si vous entreprenez quoi que ce soit qui puisse remettre en question votre ruse, n’importe qui peut résister à l’aide d’un test de Sentiments (Terre 6, Feu 3) ND 5 pour découvrir que l’avantage ou le désavantage n’est pas réel. Cet effet persiste jusqu’à ce que la cible soit confrontée à une preuve irréfutable de votre tentative de manipulation, ou qu’elle réussisse le test de résistance et repère les failles qui vous trahissent."
         ]
     },
-    "Cadence":{
+    "cadence":{
         "name":"Cadence",
         "description":[
             "À la cour, il peut être très utile de communiquer entre courtisans du même clan sans recourir à la parole."
@@ -2120,7 +2120,7 @@
             "|opportunityIcon|opportunityIcon| de l’Air : transmettez un signal lourd de sous-entendus, qui modifie le sens de vos paroles ou transmet un message spécifique, à un personnage qui vous observe et qui ne dispose pas de cette technique."
         ]
     },
-    "Feigned Opening":{
+    "feigned opening":{
         "name":"Ouverture feinte",
         "description":[
             "Un dirigeant avisé sait quand il faut feindre la faiblesse pour dissimuler ses atouts, ou mettre en avant sa force pour mieux cacher ses défauts."
@@ -2136,7 +2136,7 @@
             "|opportunityIcon|+ de l’Air : lors d’une bataille rangée, augmentez le ND des tests d’Attaque ciblant votre unité de 1 point, plus 1 par |opportunityIcon|opportunityIcon| dépensés de cette façon."
         ]
     },
-    "Prey on the Weak":{
+    "prey on the weak":{
         "name":"Malheur aux faibles",
         "description":[
             "La cour n’est pas un lieu bienveillant ; une parole déplacée est tout aussi cruelle même si elle est prononcée d’une voix douce et dans le respect de l’étiquette."
@@ -2154,7 +2154,7 @@
             "|opportunityIcon|opportunityIcon| de l’Air : si le personnage décide de s’en aller, vous déduisez sa destination en fonction de la direction empruntée, ou entendez la foule murmurer l’endroit où il s’est retiré."
         ]
     },
-    "Rustling of Leaves":{
+    "rustling of leaves":{
         "name":"Bruissement des feuilles",
         "description":[
             "Si un scandale est connu de tous sans que l’on puisse en définir la source, n’est-il pas forcément fondé ? Le courtisan répand des rumeurs de façon si habile que personne ne peut lui en attribuer l’origine."
@@ -2164,7 +2164,7 @@
             "|opportunityIcon|+ de l’Air : le ND de tout test destiné à faire remonter l’origine de la rumeur jusqu’à vous augmente de 2 par |opportunityIcon| dépensé de cette façon."
         ]
     },
-    "The Wind Blows Both Ways":{
+    "the wind blows both ways":{
         "name":"Le vent tourne",
         "description":[
             "Quelques mots murmurés à la bonne personne au bon moment peuvent mettre en lumière les exploits d’un individu, tandis qu’un sous-entendu grinçant peut amoindrir ses réussites aux yeux des puissants."
@@ -2175,7 +2175,7 @@
             "|opportunityIcon|+ de l’Air : la prochaine fois que la cible met en jeu ou sacrifie des points de Gloire, augmentez le nombre de points de Gloire ainsi mis en jeu ou sacrifiés de 1 par |opportunityIcon| dépensé de cette façon. Cet effet persiste jusqu’à la fin de la scène."
         ]
     },
-    "Whispers of Court":{
+    "whispers of court":{
         "name":"Murmures de la cour",
         "description":[
             "Les rumeurs sont le pain quotidien de la cour ; lorsqu’elles viennent à manquer, les courtisans hésitent rarement à en faire circuler de nouvelles. Ils entretiennent donc leur toile d’intrigue au moyen de manœuvres astucieuses et de vérités partielles mais plausibles."
@@ -2190,7 +2190,7 @@
             "|opportunityIcon| de l’Air : vous entendez une autre rumeur qui court dans la même scène."
         ]
     },
-    "Wolf’s Proposal":{
+    "wolf’s proposal":{
         "name":"Proposition du loup",
         "description":[
             "Pour un courtisan, il est aussi crucial de paraître honorable que de l’être réellement. Le véritable honneur ne peut pas être galvaudé, mais les courtisans parviennent généralement à se forger une respectabilité apparente — même s’ils ne la méritent pas."
@@ -2205,7 +2205,7 @@
             "|opportunityIcon| de l’Air : choisissez un personnage présent. Vous découvrez si sa valeur d’Honneur est supérieure ou inférieure à votre valeur réelle."
         ]
     },
-    "Ancestry Unearthed":{
+    "ancestry unearthed":{
         "name":"Ascendance dévoilée",
         "description":[
             "L’identité des ancêtres d’un samouraï en dit long sur ses possibilités politiques, ses atouts et ses alliés potentiels dans l’Empire d’Émeraude, car la rigidité des castes limite la progression sur l’échelle sociale. Un simple courtisan peut fouiller longuement dans ses souvenirs pour retracer l’arbre généalogique d’un autre samouraï, tandis que certains se rappellent cette ascendance en un clin d’œil."
@@ -2217,7 +2217,7 @@
             "|opportunityIcon|opportunityIcon|opportunityIcon| de la Terre : vous apprenez une information que la cible elle-même ne connaît pas à propos de ses ancêtres."
         ]
     },
-    "Civility Foremost":{
+    "civility foremost":{
         "name":"La courtoisie prime",
         "description":[
             "Les samouraïs ont beau être des guerriers, ils évoluent dans de nombreux contextes où la violence est inappropriée. La bienséance veut que les armes soient rengainées la plupart du temps. Un courtisan qui a mémorisé les règles régissant les rapports en société peut convaincre autrui que le combat serait offensant ou inadéquat."
@@ -2232,7 +2232,7 @@
             "|opportunityIcon|+ de la Terre : pour chaque |opportunityIcon| dépensé de cette façon, choisissez une cible supplémentaire dotée d’une Vigilance inférieure ou égale à celle de la première."
         ]
     },
-    "Honest Assessment":{
+    "honest assessment":{
         "name":"Évaluation honnête",
         "description":[
             "L’honnêteté est l’une des vertus du bushido, mais les samouraïs considèrent souvent la franchise comme malvenue. Plutôt que de parler de manière directe, ils doivent trouver une façon polie de sous-entendre leur propos afin d’épargner les sentiments de la personne concernée. Par conséquent, le franc-parler est une qualité à la fois rare et précieuse."
@@ -2248,7 +2248,7 @@
             "|opportunityIcon|opportunityIcon| de la Terre : le ND du prochain test de compétence de la cible (au moyen de l’anneau auquel le désavantage est lié) est réduit de 2."
         ]
     },
-    "Pillar of Calm":{
+    "pillar of calm":{
         "name":"Pilier de sérénité",
         "description":[
             "Le personnage rappelle les belligérants à la raison et les encourage à rengainer leurs sabres, en évoquant un idéal commun ou une menace qui pèse sur les uns et les autres."
@@ -2263,7 +2263,7 @@
             "|opportunityIcon|opportunityIcon|+ de la Terre : vous pouvez apaiser la confrontation encore davantage : diminuez son ampleur de 1 niveau par |opportunityIcon|opportunityIcon| dépensés de cette façon."
         ]
     },
-    "Stonewall Tactics":{
+    "stonewall tactics":{
         "name":"Tactique d’obstruction",
         "description":[
             "Le courtisan s’arrange pour que nul ne puisse l’ignorer : il attire l’attention sur un problème impérieux qui doit être réglé sans tarder ou s’interpose entre ses alliés et un rival."
@@ -2273,7 +2273,7 @@
             "|opportunityIcon|+ de la Terre : le ND des tests effectué par la cible et prenant pour cibles d’autres personnages que vous augmente de 1 point par |opportunityIcon| dépensé de cette façon. Cet effet persiste jusqu’au début de votre prochain tour."
         ]
     },
-    "Touchstone of Courage":{
+    "touchstone of courage":{
         "name":"Courage exemplaire",
         "description":[
             "Les armées sont rarement vaincues sur le champ de bataille ; en général, elles sont mises en déroute lorsque le moral des troupes tombe au plus bas. À mesure que la panique se répand dans les rangs, les soldats se tournent vers leur commandant. Le personnage incarne cette figure de bravoure, soulignant l’importance du devoir pour rasséréner ses troupes avant qu’elles ne sombrent dans le chaos."
@@ -2290,7 +2290,7 @@
             "|opportunityIcon|opportunityIcon| de la Terre : lors d’une bataille rangée, chaque cible élimine un nombre de points de Panique égal à la valeur de votre anneau de la Terre."
         ]
     },
-    "The Immovable Hand of Peace":{
+    "the immovable hand of peace":{
         "name":"L’immuable main de la paix",
         "description":[
             "Le courtisan s’interpose sur le lieu d’une confrontation pour sommer les guerriers de poser leurs armes, avec une conviction si inébranlable que la fureur et la haine des belligérants se retrouvent temporairement apaisées."
@@ -2305,7 +2305,7 @@
             "|opportunityIcon| de la Terre : vous pouvez également effectuer cette action au cours d’une bataille rangée ou d’une autre forme de confrontation (hors intrigues)."
         ]
     },
-    "Weight of Duty":{
+    "weight of duty":{
         "name":"Le fardeau du devoir",
         "description":[
             "Tous les samouraïs doivent répondre à certaines attentes et subissent diverses formes de pression. Un courtisan observateur est capable de repérer la tension d’un autre personnage, de deviner ce qui lui tient à cœur et pourquoi il craint de ne pas atteindre l’idéal convoité."
@@ -2316,7 +2316,7 @@
             "|opportunityIcon|opportunityIcon| de la Terre : découvrez le giri de la cible."
         ]
     },
-    "Bravado":{
+    "bravado":{
         "name":"Bravade",
         "description":[
             "La gloire repose autant sur la réputation que sur l’assurance. Le courtisan affiche un air confiant, parlant de manière plus détendue que la bienséance ne l’exigerait. Ses paroles et sa posture transmettent une once d’arrogance et sont d’autant plus difficiles à ignorer."
@@ -2331,7 +2331,7 @@
             "|opportunityIcon| du Feu : choisissez un personnage présent. Vous découvrez si sa valeur de Gloire est supérieure ou inférieure à votre valeur réelle."
         ]
     },
-    "Dazzling Performance":{
+    "dazzling performance":{
         "name":"Éclatante démonstration",
         "description":[
             "Accomplir un exploit remarquable permet d’acquérir une renommée, mais accomplir un exploit remarquable puis en narrer le récit octroie davantage de crédit encore. Un courtisan qui se bâtit une réputation au sein des cours impitoyables de Rokugan doit non seulement faire preuve d’excellence, mais doit aussi captiver l’imagination."
@@ -2341,7 +2341,7 @@
             "|opportunityIcon|+ du Feu : la prochaine fois que vous recevez des points de Gloire lors de cette scène, cette récompense augmente de 1 point. Si un personnage de Statut plus élevé assiste à la scène, ce gain augmente plutôt de 1 point par |opportunityIcon| dépensé de cette façon."
         ]
     },
-    "Fanning the Flames":{
+    "fanning the flames":{
         "name":"Attiser les flammes",
         "description":[
             "Pour un courtisan qui manie les mots comme des sabres, il est essentiel de savoir comment inciter les gens à agir de manière inconsidérée ou à se dérober au moment crucial. Une autre de ses armes consiste à induire des émotions incontrôlables, et la plupart des courtisans perfectionnent leur art de la manipulation pour faire ressentir à autrui ce qui les arrange. Le courtisan pique la fierté de sa cible grâce à des attaques choisies avec soin, ou opte pour une manœuvre de séduction afin d’attirer son attention, exacerbant ses émotions afin de les rendre plus faciles à anticiper."
@@ -2352,7 +2352,7 @@
             "|opportunityIcon|opportunityIcon|+ du Feu : une cible par |opportunityIcon|opportunityIcon| dépensés de cette façon reçoit l’état Enragé."
         ]
     },
-    "Lightning Raid":{
+    "lightning raid":{
         "name":"Raid éclair",
         "description":[
             "Le Clan de la Licorne s’est rendu célèbre pour ses frappes éclair, qui consistent à fondre sur les ennemis avec la cavalerie pour semer le chaos dans leurs rangs et ouvrir la voie au reste de l’armée. D’autres clans emploient des tactiques similaires, généralement en attaquant par surprise les cités vulnérables ou en tendant des embuscades aux caravanes de ravitaillement. Le chef rallie ses troupes pour mener une attaque éclair afin de déstabiliser l’ennemi."
@@ -2369,7 +2369,7 @@
             "|opportunityIcon| du Feu : lors d’une bataille rangée, effectuez immédiatement une action Assaillir contre l’officier de l’unité ennemie désignée."
         ]
     },
-    "Rallying Cry":{
+    "rallying cry":{
         "name":"Cri de ralliement",
         "description":[
             "Le général rugit pour entraîner son armée dans la bataille, et elle lui répond dans un écho qui se répercute aux alentours. Les soldats bondissent comme un seul homme pour décrocher la victoire ou périr ensemble."
@@ -2385,7 +2385,7 @@
             "|opportunityIcon|+ du Feu : lors d’une bataille rangée, l’armée ennemie reçoit 1 point de panique par |opportunityIcon| dépensé de cette façon."
         ]
     },
-    "Sear the Wound":{
+    "sear the wound":{
         "name":"Le couteau dans la plaie",
         "description":[
             "La plupart des courtisans ne peuvent pas résister à l’envie de retourner le couteau dans la plaie après avoir asséné une remarque blessante, mais les plus avisés exécutent cette manœuvre avec discernement. Rappeler ses faiblesses à un rival afin de saper sa détermination constitue en général une technique efficace, bien que cruelle."
@@ -2395,7 +2395,7 @@
             "|opportunityIcon|+ du Feu : pour chaque |opportunityIcon| dépensé de cette façon, choisissez l’un des désavantages possédés par l’une des cibles et dont vous avez connaissance. Ce désavantage s’applique à tous les tests de la cible jusqu’à la fin de la scène."
         ]
     },
-    "Sensational Distraction":{
+    "sensational distraction":{
         "name":"Distraction sensationnelle",
         "description":[
             "Se démarquer à la cour requiert une bonne dose d’astuce et de flair, a fortiori si on s’efforce d’y parvenir délibérément. Les courtisans passent une grande partie de leur vie à apprendre comment manipuler la façon dont on les perçoit à la cour. Les meilleurs d’entre eux savent quand ils doivent attirer l’attention en lançant une tirade remarquable ou en exécutant un tour de force mondain, et quand il vaut mieux garder la tête basse. Un courtisan peut aussi faire diversion en accaparant l’attention, une manœuvre très utile pour permettre à ses alliés d’agir en toute discrétion."
@@ -2405,7 +2405,7 @@
             "|opportunityIcon|+ du Feu : lorsqu’elle interagit avec d’autres personnages, la cible réduit sa Vigilance de 1 par |opportunityIcon| dépensé de cette façon. Lorsqu’elle interagit avec vous, la cible augmente sa Vigilance de 1 par |opportunityIcon| dépensé de cette façon. Cet effet persiste jusqu’à la fin de la scène."
         ]
     },
-    "Stirring the Embers":{
+    "stirring the embers":{
         "name":"Souffler sur les braises",
         "description":[
             "Un bon dirigeant ne se contente pas de compenser les faiblesses de ses camarades ; il s’efforce de mettre en avant leurs atouts. Le courtisan rappelle à son allié l’une de ses plus belles qualités, exaltant sa fierté pour l’amener à se battre avec plus de hargne ou à s’exprimer avec davantage de conviction."
@@ -2415,7 +2415,7 @@
             "|opportunityIcon|+ du Feu : pour chaque |opportunityIcon| dépensé de cette façon, désignez une cible et l’une de ses aptitudes dont vous avez connaissance. Jusqu’à la fin de la scène et dès que cet avantage s’applique à l’un de ses tests, la cible peut relancer jusqu’à 3 dés (au lieu de 2 habituellement)."
         ]
     },
-    "Truth Burns through Lies":{
+    "truth burns through lies":{
         "name":"La vérité derrière l’écran de fumée",
         "description":[
             "Le courtisan avance des conjectures, imaginant les ramifications d’un récit et les secrets qu’il renferme. S’il existe le moindre indice, le courtisan le trouve et remonte le fil de l’histoire jusqu’à tirer au clair la plus astucieuse des duperies."
@@ -2425,7 +2425,7 @@
             "|opportunityIcon|+ du Feu : si le récit du personnage repose sur un postulat spécifique, vous repérez ce dernier et déduisez la marche à suivre pour l’avérer ou le démentir."
         ]
     },
-    "All in Jest":{
+    "all in jest":{
         "name":"Aimable plaisanterie",
         "description":[
             "Les courtisans expérimentés font parfois passer leurs faux pas pour des plaisanteries. Cette tactique sournoise mais efficace place l’interlocuteur dans une position délicate : insister sur le problème et paraître obstiné, ou fermer les yeux et laisser le courtisan en paix."
@@ -2435,7 +2435,7 @@
             "|opportunityIcon|+ de l’Eau : si vous avez sacrifié des points d’Honneur lors du test afin de prononcer une remarque offensante ou d’exalter les désirs les plus prosaïques de votre cible (l’avidité, la luxure, la paresse, etc.), regagnez 1 point d’Honneur par |opportunityIcon| dépensé de cette façon."
         ]
     },
-    "Buoyant Arrival":{
+    "buoyant arrival":{
         "name":"Entrée en douceur",
         "description":[
             "Certaines personnes possèdent un don pour se fondre dans n’importe quel environnement social. Ils peuvent fort bien se faire à l’atmosphère bruyante d’une humble taverne, avant de côtoyer des dirigeants de l’Empire le lendemain."
@@ -2447,7 +2447,7 @@
             "Effets : en cas de réussite, vous vous mêlez avec grâce à la conversation ou prenez congé sans offenser vos interlocuteurs. Vous n’avez pas besoin de sacrifier des points d’Honneur ou de Gloire pour interrompre un interlocuteur, pour partir brusquement ou pour agir avant quelqu’un d’autre, quel que soit le Statut des participants."
         ]
     },
-    "Ebb and Flow":{
+    "ebb and flow":{
         "name":"Flux et reflux",
         "description":[
             "Certaines personnes possèdent un don pour se fondre dans n’importe quel environnement social. Ils peuvent fort bien se faire à l’atmosphère bruyante d’une humble taverne, avant de côtoyer des dirigeants de l’Empire le lendemain."
@@ -2464,7 +2464,7 @@
             "|opportunityIcon|opportunityIcon|+ de l’Eau : choisissez une cible supplémentaire dotée d’une valeur de Vigilance inférieure ou égale à celle de la première par |opportunityIcon|opportunityIcon| dépensés de cette façon."
         ]
     },
-    "Regal Bearing":{
+    "regal bearing":{
         "name":"Port altier",
         "description":[
             "Les courtisans soignent leur posture quelle que soit leur tenue : ils s’assurent de maîtriser parfaitement leurs gestes, le ton de leur voix et leur vocabulaire pour afficher le statut social qui les arrange dans chaque situation."
@@ -2479,7 +2479,7 @@
             "|opportunityIcon| de l’Eau : choisissez un personnage présent. Vous découvrez si son Statut est supérieur ou inférieur à votre Statut réel."
         ]
     },
-    "Shallow Waters":{
+    "shallow waters":{
         "name":"Sous la surface",
         "description":[
             "Lors d’une conversation, un bon courtisan est capable de déduire les désirs de ceux qui l’entourent en analysant les subtils indices dissimulés dans leurs réponses, ainsi qu’en creusant pour obtenir plus de détails sans pour autant révéler ses intentions."
@@ -2490,7 +2490,7 @@
             "|opportunityIcon|opportunityIcon| de l’Eau : vous découvrez le ninjo de la cible."
         ]
     },
-    "Slippery Maneuvers":{
+    "slippery maneuvers":{
         "name":"Manœuvre d’esquive",
         "description":[
             "Le général envoie divers signaux pour transmettre des ordres à ses troupes, parfois sous forme de codes. Soudain, la formation se modifie à l’unisson pour tirer avantage du terrain."
@@ -2506,7 +2506,7 @@
             "|opportunityIcon| de l’Eau : toutes les cibles profitent au maximum du terrain Voilé : le ND de tous les tests d’Attaque qui les visent augmente de 2 points au lieu de 1. Cet effet persiste jusqu’à la fin de la scène."
         ]
     },
-    "Tributaries of Trade":{
+    "tributaries of trade":{
         "name":"Affluents du négoce",
         "description":[
             "L’échange de présents constitue une pratique culturelle importante à Rokugan (tout comme l’art de refuser les cadeaux, ce que tout bénéficiaire se doit de faire au moins à deux reprises avant d’accepter la troisième offre). Si certains courtisans transportent en permanence des cadeaux divers pour parer à toute éventualité, la plupart se contentent d’expliquer habilement au bénéficiaire de leur présent pourquoi celui-ci lui correspond tout à fait (même s’ils se l’étaient initialement procuré dans un autre but). La capacité à obtenir un objet rapidement s’avère utile chez les courtisans, car tout don implique une obligation réciproque : en retour, il faut octroyer au bienfaiteur une preuve d’estime, un autre cadeau ou une faveur."
@@ -2521,7 +2521,7 @@
             "|opportunityIcon|+ de l’Eau : réduisez le prix à payer pour l’objet d’un quart par |opportunityIcon| dépensé de cette façon. Vous devez payer au minimum un quart du prix initial."
         ]
     },
-    "Well of Desire":{
+    "well of desire":{
         "name":"Puits du désir",
         "description":[
             "À Rokugan, on considère les pots-de-vin comme de la corruption, et pourtant l’échange de présents et de dons procède d’une tradition séculaire. Les courtisans les plus astucieux élaborent des scénarios pour obliger leurs cibles à accepter leurs cadeaux au risque de ternir leur réputation. Souvent, les personnes à qui l’on offre ce genre de cadeau empoisonné préfèrent devenir redevables envers le « bienfaiteur » plutôt que de se couvrir de honte en refusant."
@@ -2531,7 +2531,7 @@
             "|opportunityIcon| de l’Eau : pour rejeter votre présent, la cible doit sacrifier un nombre de points de Gloire égal à votre anneau de l’Eau. En outre, si elle refuse le cadeau alors qu’elle souhaite en secret l’acquérir, elle reçoit aussi un nombre de points de Conflit égal à la rareté de l’objet. Si votre cible accepte le cadeau, retirez la valeur de rareté de l’objet au ND de votre prochain test de compétence sociale contre cette cible (minimum 1)."
         ]
     },
-    "All Arts Are One":{
+    "all arts are one":{
         "name":"Tous les arts ne font qu’un",
         "description":[
             "À l’instar du Vide qui assure la cohésion des quatre éléments, certains principes sous-jacents comme l’esthétique, la logique et la discipline sont communs à toutes les formes d’art. En méditant sur ces similitudes, un courtisan est capable de cerner plus facilement les principes fondamentaux de n’importe quel sujet."
@@ -2546,7 +2546,7 @@
             "|opportunityIcon| du Vide : choisissez un anneau. Réduisez de 1 le ND de votre prochain test à l’aide de cet anneau et de la compétence choisie. Cet effet persiste jusqu’à la fin de votre prochain tour (ou jusqu’à la fin d’une scène narrative)."
         ]
     },
-    "A Samurai’s Fate":{
+    "a samurai’s fate":{
         "name":"Le destin du samourai",
         "description":[
             "Un chef peut exiger de ses guerriers l’ultime sacrifice que tout samouraï devra un jour accomplir pour son suzerain : donner sa propre vie afin de protéger celle des autres. À l’instant où le samouraï vaincu tombe au combat, son sang irrigue les champs qui accueilleront un millier de victoires futures."
@@ -2560,7 +2560,7 @@
             "Armée héroïque : à la fin de chaque round, les membres de votre armée éliminent un nombre de points de Panique égal à votre rang de Gloire. Cet effet persiste jusqu’à la fin de la scène."
         ]
     },
-    "Courtier’s Resolve":{
+    "courtier’s resolve":{
         "name":"La détermination du courtisan",
         "description":[
             "Les guerriers se battent au moyen de leurs muscles ; les courtisans, en revanche, se servent de leur esprit. Pour garder son sang-froid parmi les remous tumultueux de la cour, un samouraï doit être capable d’évacuer les pensées parasites pour se concentrer sur les tâches les plus importantes."
@@ -2572,7 +2572,7 @@
             "Effets : éliminez un nombre de points de Conflit égal à votre rang de Gloire."
         ]
     },
-    "Lady Doji’s Decree":{
+    "lady doji’s decree":{
         "name":"Décret de Dame Doji",
         "description":[
             "La bienséance, la grâce et l’éloquence constituaient les principales qualités de la fondatrice du Clan de la Grue. On raconte qu’elle était capable de désamorcer d’un seul mot les situations les plus périlleuses. Les courtisans du Clan de la Grue s’efforcent de suivre son exemple en lançant des remarques laconiques mais percutantes qui forcent leurs interlocuteurs à prêter attention à leurs paroles."
@@ -2588,7 +2588,7 @@
             "|opportunityIcon|opportunityIcon| du Vide : vos cibles ne peuvent pas non plus effectuer d’action de Manipulation vous prenant pour cible."
         ]
     },
-    "Lady Shinjo’s Speed":{
+    "lady shinjo’s speed":{
         "name":"Célérité de Dame Shinjo",
         "description":[
             "Shinjo était une Kami dotée d’une curiosité insatiable. Sa passion s’étend à l’ensemble de son clan, qui ressent aujourd’hui encore l’appel de l’inconnu. Cavaliers hors pair, les membres du Clan de la Licorne s’orientent aisément sur des terres inconnues, comme Dame Shinjo le leur a enseigné plusieurs siècles auparavant."
@@ -2603,7 +2603,7 @@
             "|opportunityIcon| du Vide : vous pouvez guider un nombre de personnages volontaires et montés égal à votre rang d’école. Ils se déplacent aussi vite que vous."
         ]
     },
-    "Lord Akodo’s Roar":{
+    "lord akodo’s roar":{
         "name":"Rugissement de Sire Akodo",
         "description":[
             "Akodo le Borgne, Kami fondateur du Clan du Lion, était le plus grand tacticien de l’Empire. Il ne devait pas tant ses victoires à la force de son bras qu’à la finesse de sa réflexion et à sa foi inébranlable dans le peuple qu’il avait rallié à ses côtés. Un véritable général ne combat jamais seul, car il est soutenu par la volonté conjointe de tous ses partisans. Poussant un rugissement repris en chœur par ses soldats, le chef de guerre terrifie ses ennemis et galvanise ses troupes avant de charger à la façon d’Akodo."
@@ -2618,7 +2618,7 @@
             "|opportunityIcon|opportunityIcon|+ du Vide : après cette action, un allié situé à portée 0-3 par |opportunityIcon|opportunityIcon| dépensés de cette façon peut immédiatement effectuer l’action Frapper contre un personnage Hébété."
         ]
     },
-    "Lord Bayushi’s Whispers":{
+    "lord bayushi’s whispers":{
         "name":"Murmures de Sire Bayushi",
         "description":[
             "Le Kami Bayushi, âme damnée de l’Empereur Hantei et maître de la tromperie, fonda le Clan du Scorpion avec une volonté toute simple : subir le déshonneur afin que le reste de Rokugan puisse vivre honorablement. Bayushi entretenait un vaste réseau d’espions et d’informateurs, et il était extrêmement doué pour prendre sous son aile les individus que d’autres avaient envoyés l’espionner. Le Clan du Scorpion honore cette tradition avec une efficacité qui ferait certainement la fierté de Bayushi. Il n’existe pas une seule ville dans l’Empire n’abritant aucun agent du Clan du Scorpion."
@@ -2633,7 +2633,7 @@
             "|opportunityIcon| du Vide : en cas de réussite, choisissez une compétence. L’informateur dispose d’un rang dans cette compétence égal à votre rang d’école et peut s’en servir pour effectuer des tests destinés à vous assister jusqu’à la fin de la scène."
         ]
     },
-    "Lord Togashi’s Insight":{
+    "lord togashi’s insight":{
         "name":"Perspicacité de Sire Togashi",
         "description":[
             "On raconte que l’énigmatique Kami Togashi était capable de voir l’avenir, un don qui le persuada de ne pas prendre part au tournoi des Kamis. De temps à autre, il apparaît à ses descendants (les membres du Clan du Dragon) sous forme d’une vision ou d’un accès de clairvoyance aussi soudain qu’inexplicable. Les érudits du Clan du Dragon ne parviennent pas à trancher : ceux qui entendent la voix de Togashi sont-ils véritablement en contact avec l’âme de leur ancêtre par-delà les siècles, ou bien leur imagination est-elle juste débordante ?"
@@ -2648,7 +2648,7 @@
             "|opportunityIcon| du Vide : retirez votre rang d’école au ND du prochain test destiné à surmonter votre problème (ND minimal 1)."
         ]
     },
-    "Rouse the Soul":{
+    "rouse the soul":{
         "name":"Réveil de l’âme",
         "description":[
             "L’esprit se retrouve parfois embrumé par divers sentiments, mais les mots détiennent le pouvoir de l’éveiller. Un courtisan s’exprime en toute honnêteté et sans prétention, appelant ses alliés à ignorer les aspects les plus terre-à-terre de la situation pour atteindre un but commun"
@@ -2658,7 +2658,7 @@
             "|opportunityIcon|+ du Vide : pour chaque |opportunityIcon| dépensé de cette façon, éliminez l’un des états suivants de l’une de vos cibles : Tourmenté, Enragé, Épuisé, Ivre ou Inconscient."
         ]
     },
-    "Incite Haunting":{
+    "incite haunting":{
         "name":"Emprise maléfique",
         "description":[
             "Les kansen sont des kamis corrompus par le pouvoir de Fu Leng, et il n’est pas nécessaire de les implorer longtemps pour qu’ils répandent le mal. À l’aide d’un rite et d’une incantation blasphématoire qui semble pervertir l’atmosphère elle-même, le mahō-tsukai afflige une âme infortunée d’une affection spirituelle qui s’aggrave peu à peu pour déclencher d’autres effets plus sinistres encore. Les spiritualistes perçoivent les kansen sous la forme de silhouettes fantomatiques et torturées, qui s’accrochent à leur victime et l’entraînent inexorablement vers un sort funeste."
@@ -2675,7 +2675,7 @@
             "|opportunityIcon|+ : choisissez une cible supplémentaire par |opportunityIcon| dépensé de cette façon."
         ]
     },
-    "Grip of Anguish":{
+    "grip of anguish":{
         "name":"Étreinte de l’angoisse",
         "description":[
             "Le mahō-tsukai ordonne aux kansen qui tourmentent sa victime de la faire ployer sous les souffrances et la maladie : elle est aussitôt prise de nausées, de douleurs et d’illusions fiévreuses."
@@ -2693,7 +2693,7 @@
             "|opportunityIcon|opportunityIcon|+ de l’Eau : choisissez l’un des états suivants : En sang, Immobilisé ou Légèrement blessé. L’une des cibles doit résister à l’aide d’un test de Forme (Terre 1, Feu 4) ND 3 pour éviter de subir l’état désigné."
         ]
     },
-    "Mark of Desecration":{
+    "mark of desecration":{
         "name":"Marque de profanation",
         "description":[
             "Le mahō-tsukai entreprend un rite sur un cadavre ou un charnier, déposant des masques sinistres sur le visage des défunts et murmurant de funestes paroles au creux de leurs oreilles sourdes. Les morts se dressent sous l’ordre des kansen qui les possèdent et se déplacent avec la démarche saccadée et artificielle d’une marionnette défectueuse."
@@ -2712,7 +2712,7 @@
             "|opportunityIcon|opportunityIcon|+ de la Terre : une cible par |opportunityIcon|opportunityIcon| dépensés de cette façon revient à la vie sous la forme d’un Squelette de bushi, à condition que cette cible ait été un guerrier avant son trépas."
         ]
     },
-    "Sinful Whispers":{
+    "sinful whispers":{
         "name":"Murmures déviants",
         "description":[
             "Les kansen chuchotent à l’oreille de leur victime et emplissent son esprit de sombres pensées : elles sapent sa concentration et la rendent plus réceptive aux paroles du mahō-tsukai, en plus de l’empêcher de réfléchir de manière cohérente."
@@ -2728,7 +2728,7 @@
             "|opportunityIcon|opportunityIcon|opportunityIcon| de l’Air : vous pouvez donner à la cible un ordre simple à exécuter. Elle peut l’ignorer, mais le cas échéant, elle recevra 2 points de Conflit à la fin de chaque scène. Si elle devient Compromise, elle doit tomber le masque et faire tout ce qu’elle peut pour exécuter cet ordre avant la fin de la scène."
         ]
     },
-    "Unholy Fervor":{
+    "unholy fervor":{
         "name":"Ferveur Impie",
         "description":[
             "Les kansen mordent leur victime et lui arrachent des lambeaux de chair ; sous l’effet de la douleur, la cible sombre dans une rage aveugle."
@@ -2745,7 +2745,7 @@
             "|opportunityIcon|+ du Feu : choisissez une cible supplémentaire par |opportunityIcon| dépensé de cette façon."
         ]
     },
-    "Skulk":{
+    "skulk":{
         "name":"Disparition",
         "description":[
             "Les shinobi sont célèbres pour leur capacité à se faufiler entre les ombres et à se déplacer comme des spectres. Cette capacité repose principalement sur l’agilité et la vitesse, mais les véritables maitres savent que, pour agir en toute discrétion, utiliser une foule de badauds ou une autre diversion est tout aussi efficace que des acrobaties compliquées."
@@ -2755,7 +2755,7 @@
             "|opportunityIcon| de l’Air : si vous vous trouvez en terrain Voilé, au milieu d’une foule ou dissimulé aux regards d’une façon ou d’une autre, vous disparaissez du champ de vision d’un personnage doté d’une Vigilance inférieure ou égale à votre rang en Magouilles."
         ]
     },
-    "Deadly Sting":{
+    "deadly sting":{
         "name":"Dard mortel",
         "description":[
             "Le poison n’est pas l’arme des samouraïs honorables, mais il est terriblement efficace. A l’instar de l’animal dont il tire son nom, le Clan du Scorpion ne rechigne pas à enduire ses armes de poison pour venir à bout d’un ennemi qu’il serait incapable de vaincre autrement."
@@ -2771,7 +2771,7 @@
             "|opportunityIcon|+ de l’Air : en cas de réussite, la cible subit un coup critique d’une gravité de 2, plus 1 par |opportunityIcon| dépensé de cette façon."
         ]
     },
-    "Noxious Cloud":{
+    "noxious cloud":{
         "name":"Nuage toxique",
         "description":[
             "Les substances et les concoctions volatiles représentent une part importante de l’arsenal des shinobi, car elles leur permettent de générer une épaisse fumée susceptible de couvrir leur fuite, voire d’intoxiquer des ennemis imprudents pour les affaiblir avant de leur infliger le coup de grâce."
@@ -2788,7 +2788,7 @@
             "|opportunityIcon|opportunityIcon|+ de l’Air : en cas de réussite, une cible par |opportunityIcon|opportunityIcon| dépensés de cette façon subit un coup critique de gravité 2."
         ]
     },
-    "Silencing Stroke":{
+    "silencing stroke":{
         "name":"Neutralisation",
         "description":[
             "Les shinobi sont souvent amenés à exécuter des cibles sans qu’elles aient le temps de crier, et ils s’entrainent à les mettre hors de combat instantanément. Un shuriken enfoncé dans la trachée ou un coup écrasant la carotide peut empêcher l’ennemi de hurler le temps que le shinobi perpètre ses méfaits."

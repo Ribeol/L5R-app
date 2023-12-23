@@ -3,42 +3,42 @@
         "ringRef":"earth",
         "skillRef":"fitness",
         "status":30,
-        "familyRefs":["Hida","Hiruma","Kaiu","Kuni","Yasuki"]
+        "familyRefs":["hida","hiruma","kaiu","kuni","yasuki"]
     },
     "crane":{
         "ringRef":"air",
         "skillRef":"culture",
         "status":35,
-        "familyRefs":["Asahina","Daidoji","Doji","Kakita"]
+        "familyRefs":["asahina","daidoji","doji","kakita"]
     },
     "dragon":{
         "ringRef":"fire",
         "skillRef":"meditation",
         "status":30,
-        "familyRefs":["Agasha","Kitsuki","Mirumoto","Togashi"]
+        "familyRefs":["agasha","kitsuki","mirumoto","togashi"]
     },
     "lion":{
         "ringRef":"water",
         "skillRef":"tactics",
         "status":35,
-        "familyRefs":["Akodo","Ikoma","Kitsu","Matsu"]
+        "familyRefs":["akodo","ikoma","kitsu","matsu"]
     },
     "phoenix":{
         "ringRef":"void",
         "skillRef":"theology",
         "status":30,
-        "familyRefs":["Asako","Isawa","Kaito","Shiba"]
+        "familyRefs":["asako","isawa","kaito","shiba"]
     },
     "scorpion":{
         "ringRef":"air",
         "skillRef":"skulduggery",
         "status":35,
-        "familyRefs":["Bayushi","Shosuro","Soshi","Yogo"]
+        "familyRefs":["bayushi","shosuro","soshi","yogo"]
     },
     "unicorn":{
         "ringRef":"water",
         "skillRef":"survival",
         "status":30,
-        "familyRefs":["Ide","Iuchi","Moto","Shinjo","Utaku"]
+        "familyRefs":["ide","iuchi","moto","shinjo","utaku"]
     }
 }

@@ -1,5 +1,5 @@
 {
-    "Battle in the Mind":{
+    "battle in the mind":{
         "name":"Battle in the Mind",
         "description":[
             "As two masters of any martial art square off before a duel, each seeks to predict the other’s angle of attack and strategy, and the ways their predictions might be foiled by the opponent’s."
@@ -10,7 +10,7 @@
             "Void |opportunityIcon|+: Choose a technique category. Learn one of your opponent’s known techniques of that category (chosen by the opponent) per |opportunityIcon| spent this way."
         ]
     },
-    "Breath of Wind Style":{
+    "breath of wind style":{
         "name":"Breath of Wind Style",
         "description":[
             "A swift strike to the solar plexus or throat can leave the target reeling; an experienced bushi can steal the breath from their foe with a quick jab even while executing another attack."
@@ -20,7 +20,7 @@
             "Air |opportunityIcon|+: One target of your action must resist with a TN 3 Fitness check (Earth 4, Fire 1) or suffer the Disoriented condition and fatigue equal to their shortfall. Increase the TN of the check to resist by 1 per |opportunityIcon| spent this way."
         ]
     },
-    "Crashing Wave Style":{
+    "crashing wave style":{
         "name":"Crashing Wave Style",
         "description":[
             "The wave washes over the stone, wearing it away, and so the bushi’s weapon passes across their foe’s flesh, leaving behind a bloody gash or slice that is sure to slow their enemy even if the hit is not fatal."
@@ -30,7 +30,7 @@
             "Water |opportunityIcon|+: One target of your action must resist with a TN 3 Fitness check (Earth 1, Fire 4) or suffer the Bleeding condition and fatigue equal to their shortfall. Increase the TN of the check to resist by 1 per |opportunityIcon| spent this way."
         ]
     },
-    "Crescent Moon Style":{
+    "crescent moon style":{
         "name":"Crescent Moon Style",
         "description":[
             "Striking first is valuable, but so is surviving. To defend without sacrificing offense, a bushi must be ready to retaliate swiftly after blocking or evading. With a quick shift, the bushi switches from defense to bring down their full force upon their enemy."
@@ -40,7 +40,7 @@
             "|opportunityIcon|: After a character at range 1–2 performs an Attack action targeting you or another character you are guarding, you may perform a Strike action with one readied Martial Arts [Melee or Unarmed] weapon targeting that character (if they are within your weapon’s range). This effect persists until the start of your next turn, or until you perform a Strike action this way."
         ]
     },
-    "Crimson Leaves Strike":{
+    "crimson leaves strike":{
         "name":"Crimson Leaves Strike",
         "description":[
             "Sweeping their blade down in a sudden arc, the bushi lands a blow atop the enemy’s weapon, scattering it from their hand like falling leaves."
@@ -55,7 +55,7 @@
             "Earth |opportunityIcon|: If you disarm your opponent, you may take control of their weapon instead of knocking it away."
         ]
     },
-    "Disappearing World Style":{
+    "disappearing world style":{
         "name":"Disappearing World Style",
         "description":[
             "Seeing nothing but their enemy, the bushi surges forward in a flurry of strikes, seeking to land a hit to the eyes, temple, or other vulnerable area rapidly after their initial attack. This stunning blow can leave the enemy staggered, giving the bushi a chance to finish the battle with their next attack."
@@ -65,7 +65,7 @@
             "Fire |opportunityIcon|+: One target of your action must resist with a TN 3 Fitness check (Air 4, Water 1) or suffer the Dazed condition and fatigue equal to their shortfall. Increase the TN of the check to resist by 1 per |opportunityIcon| spent this way."
         ]
     },
-    "Flowing Water Strike":{
+    "flowing water strike":{
         "name":"Flowing Water Strike",
         "description":[
             "A skilled warrior is not restricted by the optimal range of their weapon, and can open or close gaps to compensate for positional disadvantages."
@@ -80,7 +80,7 @@
             "Water |opportunityIcon|: Remove the Dazed, Disoriented, Immobilized, or Prone condition from yourself."
         ]
     },
-    "Heartpiercing Strike":{
+    "heartpiercing strike":{
         "name":"Heartpiercing Strike",
         "description":[
             "Battle is the art of killing, and woe betide any warrior who forgets it. With a roar, the bushi launches forward, stabbing out with their weapon to fatally impale their enemy. Even if the strike does not slay the foe, it is likely to weaken them significantly."
@@ -96,7 +96,7 @@
             "Fire |opportunityIcon|: Before resolving the effect, move up to 1 range band toward your target."
         ]
     },
-    "Iron in the Mountains Style":{
+    "iron in the mountains style":{
         "name":"Iron in the Mountains Style",
         "description":[
             "The bushi strikes with crushing force, breaking their enemy’s footing and knocking them to the ground with an overwhelming blow or sweeping their stance out from underneath them with a well-placed kick."
@@ -106,7 +106,7 @@
             "Earth |opportunityIcon|+: One target of your action must resist with a TN 3 Fitness check (Air 1, Water 4) or suffer the Prone condition and fatigue equal to their shortfall. Increase the TN of the check to resist by 1 per |opportunityIcon| spent this way."
         ]
     },
-    "Lord Hida’s Grip":{
+    "lord hida’s grip":{
         "name":"Lord Hida’s Grip",
         "description":[
             "The Kami Hida, patron of the Crab Clan, was a legendary slayer of monsters. He beheaded the massive demon that once menaced the rose-marble palace, and ripped out one skull of the two-headed Kabuto no Oni and crushed the other head with it. However, Hida was no mere brute: he was cunning, killing monsters by exploiting their weaknesses. Warriors of the Crab Clan train in similar techniques. They turn their foes’ great weight against them by pinning or strategically damaging specific body parts."
@@ -122,7 +122,7 @@
             "Void |opportunityIcon|: Your target must resist with a Fitness check or suffer physical damage equal to its silhouette, ignoring its resistance, and the Prone condition. The TN of this check is equal to your school rank."
         ]
     },
-    "Lord Shiba’s Valor":{
+    "lord shiba’s valor":{
         "name":"Lord Shiba’s Valor",
         "description":[
             "Once, in the Shadowlands, the Kami Shiba stood alone between a vast horde of its foul denizens and the last of the Seven Thunders after their victory against Fu Leng. Drawing the legendary sword Ofushikai, Shiba cut his way through the host to the First Oni. Legends say that their blades flashed for a hundred days, shattering mountains around them and cutting great rifts across the ground. In the end, each slew the other, but Shiba fell with his oath to protect unbroken."
@@ -137,7 +137,7 @@
             "Void |opportunityIcon|: If you succeed, increase the TN of Attack and Scheme checks targeting you by 1. This effect persists until the end of your next turn."
         ]
     },
-    "Soaring Slice":{
+    "soaring slice":{
         "name":"Soaring Slice",
         "description":[
             "Jerking their arm in a sudden motion, the bushi hurls their weapon at the enemy, hoping to take the foe off guard or open a gap in their defenses."
@@ -154,7 +154,7 @@
             "|opportunityIcon|: Reduce the TN of the next Attack action against the target before the end of your next turn by 1."
         ]
     },
-    "Soul Sunder":{
+    "soul sunder":{
         "name":"Soul Sunder",
         "description":[
             "While bushi are generally less well equipped to deal with supernatural threats than shugenja, mastery of any art reveals how the world is all interconnected. Warriors deeply engaged with the mysteries of the sword can attune themselves to their ancestral blades to cut even those beings who walk between worlds and whose flesh steel normally will not bite."
@@ -171,7 +171,7 @@
             "Void |opportunityIcon|opportunityIcon|: You may immediately perform a Strike action using your readied weapon."
         ]
     },
-    "Striking as Air":{
+    "striking as air":{
         "name":"Striking as Air",
         "description":[
             "Not every stroke a warrior throws in battle is intended to kill—even if they all lead to that end goal. A skilled fighter can tell when an attack will not land and subtly shift it into a different sort of attack, meant to probe the enemy’s defenses or draw their guard out of position. By carefully placing attack after attack, a master of the blade can eventually whittle down their opponent’s options until none remain but death."
@@ -181,7 +181,7 @@
             "Air |opportunityIcon|+: Reserve one of your rolled dice, plus one additional die per |opportunityIcon|opportunityIcon| spent this way. These dice become dropped dice. When making a check with the same skill before the end of your next turn, you may roll one fewer |ringDieIcon| per reserved |ringDieIcon| and one fewer |skillDieIcon| per reserved |skillDieIcon|, then add the reserved dice to your roll. These dice count as rolled dice, but are added set to the results they had when they were reserved."
         ]
     },
-    "Striking as Earth":{
+    "striking as earth":{
         "name":"Striking as Earth",
         "description":[
             "After striking, the bushi roots themself to the ground, hunkering down to make sure their armor takes the brunt of a hit or raising a weapon in a warding position where it can deflect harm without being damaged."
@@ -191,7 +191,7 @@
             "Earth |opportunityIcon|+: Treat your physical resistance as 1 higher per |opportunityIcon| spent this way until the beginning of your next turn."
         ]
     },
-    "Striking as Fire":{
+    "striking as fire":{
         "name":"Striking as Fire",
         "description":[
             "Victory cannot be achieved through defense alone, and it is a poor student of the sword who forgets that their most important goal is simple: cut down their enemy. All else fades to the background as the bushi fiercely presses the attack, trying to force an error or open an opportunity to end their foe."
@@ -201,7 +201,7 @@
             "Fire |opportunityIcon|+: The next time your target suffers a critical strike, increase its severity by 1 per |opportunityIcon| spent this way. This effect persists until the end of your next turn."
         ]
     },
-    "Striking as Void":{
+    "striking as void":{
         "name":"Striking as Void",
         "description":[
             "The future is part of Void’s domain, infinite in possibility and unfathomable in depth. Because of its formlessness, one cannot scheme to undermine the uncertain future—but the instant it takes shape, an action is vulnerable to countermeasures. The bushi rests until the last possible second, allowing the potential energy of their strike to take shape only after it is too late for their enemy to respond."
@@ -212,7 +212,7 @@
             "Void |opportunityIcon|: If you fail, you may perform another action. This must be an action you have not yet performed this turn. You can only activate this opportunity once per round."
         ]
     },
-    "Striking as Water":{
+    "striking as water":{
         "name":"Striking as Water",
         "description":[
             "The finest armor is useless if a warrior can bypass it, slipping a blade through the gaps that allow the wearer to move or using blunt, concussive force to create a space. As the bushi strikes, they attempt to slide past the target’s defenses to deliver a lethal blow."
@@ -222,7 +222,7 @@
             "Water |opportunityIcon|+: Your target treats their physical resistance as 1 lower per |opportunityIcon| spent this way. This effect persists until the end of your next turn."
         ]
     },
-    "Tactical Assessment":{
+    "tactical assessment":{
         "name":"Tactical Assessment",
         "description":[
             "Akodo’s Leadership and Bayushi’s Lies agree on a few topics, for both leaders were practical to a certain degree, even if Akodo famously scorned many of Bayushi’s methods. As the scholar Hida Fuyuko noted in her revelatory commentary on Leadership’s lessons for commanders on the Kaiu Wall, the most famous meeting of these two minds comes on the matter of preparation: battles are not won in the field, but in the leadup to the conflict. Even in small clashes, the warrior who better understands the terrain, the strength of their own forces, and the composition of the enemy’s troops is usually victorious."
@@ -235,7 +235,7 @@
             "Fire |opportunityIcon|: Choose a character in the conflict and one of their advantages you know. Until the end of their first turn, they apply that advantage to all of their checks."
         ]
     },
-    "Warrior’s Resolve":{
+    "warrior’s resolve":{
         "name":"Warrior’s Resolve",
         "description":[
             "The bushi draws a deep breath, exhaling as they rise to their feet. Pain can be conquered as long as there is a duty to be done. Honor is stronger than steel, it is said, and it falls to the samurai to prove it."
@@ -247,7 +247,7 @@
             "Effects: Remove fatigue equal to your honor rank."
         ]
     },
-    "Coiling Serpent Style":{
+    "coiling serpent style":{
         "name":"Coiling Serpent Style",
         "description":[
             "Entrapping techniques can be performed with many different weapons, from the kusari-gama wielded by brigands to the ornate, hook-headed polearms used by the Phoenix Clan’s greatest masters of the spear."
@@ -258,7 +258,7 @@
             "|opportunityIcon|opportunityIcon|+: One target of your action per |opportunityIcon|opportunityIcon| spent this way becomes Immobilized."
         ]
     },
-    "Iaijutsu Cut: Crossing Blade":{
+    "iaijutsu cut: crossing blade":{
         "name":"Iaijutsu Cut: Crossing Blade",
         "description":[
             "The bushi twists their scabbard outward as they draw, cutting horizontally to extend their reach."
@@ -274,7 +274,7 @@
             "|opportunityIcon|: Ready one other sheathed Razor-Edged weapon."
         ]
     },
-    "Iaijutsu Cut: Rising Blade":{
+    "iaijutsu cut: rising blade":{
         "name":"Iaijutsu Cut: Rising Blade",
         "description":[
             "The bushi grips their scabbard against their hip and draws, cutting upward to catch an advancing foe without being cut themself."
@@ -290,7 +290,7 @@
             "|opportunityIcon|: Ready one other sheathed Razor-Edged weapon."
         ]
     },
-    "Iron Forest Style":{
+    "iron forest style":{
         "name":"Iron Forest Style",
         "description":[
             "A bushi versed in the spear can control their spacing with their opponent, forcing their foe to risk impalement each time they advance or catching loose clothes or stray body parts on the head of the weapon. Akodo’s Leadership refers to such a technique as the Iron Forest style, which turns the length of a single spear into an insurmountable distance."
@@ -300,7 +300,7 @@
             "|opportunityIcon|+: The area in range of your weapon counts as Dangerous terrain for one target of your action per |opportunityIcon| spent this way. When an affected character attempts to move closer to you, they must make a TN 4 Fitness check (Air 2, Water 5); if they fail, they cannot advance. This effect persists until the start of your next turn."
         ]
     },
-    "Open Hand Style":{
+    "open hand style":{
         "name":"Open Hand Style",
         "description":[
             "Power does not come from speed alone. A master martial artist can apply force for maximum effect, making even gentle movements devastatingly effective blocks and strikes. With enough experience, a martial artist can even control their opponent’s stance."
@@ -310,7 +310,7 @@
             "|opportunityIcon|opportunityIcon|+: One target of your action per |opportunityIcon|opportunityIcon| spent this way must switch to a different stance of your choice. Targets of silhouette 3 or greater may resist with a TN 3 Fitness check and ignore this effect if they succeed."
         ]
     },
-    "Rushing Avalanche Style":{
+    "rushing avalanche style":{
         "name":"Rushing Avalanche Style",
         "description":[
             "When adopting this style, the bushi strikes with reckless abandon using a heavy armament. Thanks to the sheer weight of their weapon and the ferocity of their strikes, even a glancing blow can cause serious harm, and a telling blow usually ends the battle."
@@ -321,7 +321,7 @@
             "|opportunityIcon|: If you succeed and your target is Prone, increase the damage you deal by your ranks in Fitness."
         ]
     },
-    "Spinning Blades Style":{
+    "spinning blades style":{
         "name":"Spinning Blades Style",
         "description":[
             "The biggest advantage of dual wielding does not usually stem from striking with two weapons simultaneously, largely because this is a very difficult feat. Instead, it comes from the fact that the warrior does not need to sacrifice defense while attacking or offense while defending. The off-hand blade can deflect and threaten even as the main-hand weapon attacks, or the bushi can strike with the offhand weapon while the main-hand weapon is locked with the foe’s blade. Either weapon can deliver death, and so the enemy must watch both at all times."
@@ -331,7 +331,7 @@
             "|opportunityIcon|+: You must spend |opportunityIcon| equal to your target’s Vigilance to activate this technique. You use your second readied weapon against one target of your action, inflicting physical damage equal to its base damage. If that target is Dazed, increase this damage by your ranks in the skill you used for the check."
         ]
     },
-    "Thunderclap Strike":{
+    "thunderclap strike":{
         "name":"Thunderclap Strike",
         "description":[
             "Sweeping their weapon in a wide arc, the bushi lashes out at their foes, driving them back to make an opening for their next move."
@@ -346,7 +346,7 @@
             "Air |opportunityIcon|+: Increase the TN of checks to resist the effect by 1 per |opportunityIcon| spent this way."
         ]
     },
-    "Veiled Menace Style":{
+    "veiled menace style":{
         "name":"Veiled Menace Style",
         "description":[
             "Assassination and other clandestine tactics are frowned upon by many samurai. None can deny the effectiveness of such techniques, however. By drawing their enemy’s gaze away from the true threat, a bushi can often tip the scales against a strong foe."
@@ -356,7 +356,7 @@
             "|opportunityIcon|+: If you succeed, choose one unaware or Disoriented target of your action. That target suffers a critical strike with severity equal to your weapon’s deadliness plus 1 per |opportunityIcon| spent this way beyond the first."
         ]
     },
-    "Hawk’s Precision":{
+    "hawk’s precision":{
         "name":"Hawk’s Precision",
         "description":[
             "While most bushi are expected to be proficient in the use of the bow, some are terrifyingly accurate, capable of hitting targets well beyond the expected engagement range."
@@ -366,7 +366,7 @@
             "|opportunityIcon|+: Treat the range of the weapon as 1 higher per |opportunityIcon| spent this way, to a maximum of range 6."
         ]
     },
-    "Pelting Hail Style":{
+    "pelting hail style":{
         "name":"Pelting Hail Style",
         "description":[
             "A volley of arrows on the battlefield can be deadly, but most importantly from a strategic standpoint, it is terrifying to even the staunchest veterans. Even if only one in ten shots finds its mark, the salvo rattles opponents and forces caution."
@@ -376,7 +376,7 @@
             "|opportunityIcon|+: Choose a number of other characters at range 0–2 of your target equal to |opportunityIcon| spent this way. Each chosen character receives strife equal to the base damage of your weapon."
         ]
     },
-    "Pin the Fan":{
+    "pin the fan":{
         "name":"Pin the Fan",
         "description":[
             "While it is difficult to kill at range with a single arrow, it can certainly be done, and master archers have been performing legendary feats of precision since the early days of Rokugan. From Hantei Genji’s famous shots to the arrow loosed by Doji Hotaru that slew Akodo Arasou, killing shots have often changed the course of the Emerald Empire’s history."
@@ -391,7 +391,7 @@
             "|opportunityIcon|: If the target becomes Incapacitated as a result of damage from this action, they suffer a critical strike with severity equal to two times the weapon’s deadliness damage plus your bonus successes."
         ]
     },
-    "Cleansing Spirit":{
+    "cleansing spirit":{
         "name":"Cleansing Spirit",
         "description":[
             "The monk centers their ki, then reaches out and touches another character, counterbalancing their turbulent energies with the stillness of the monk’s own soul. This restores the character’s spirit, driving out poison, disease, and even the grip of evil spirits, provided they have not yet taken root in the character’s soul."
@@ -404,7 +404,7 @@
             "Burst Effect: If you have two or more bonus successes, remove one of the following conditions from your target: Afflicted, Bleeding, Dazed, Disoriented, Dying, Fatigued, or Intoxicated."
         ]
     },
-    "Earth Needs No Eyes":{
+    "earth needs no eyes":{
         "name":"Earth Needs No Eyes",
         "description":[
             "The monk who waits and listens sees much, even without eyes. Sending out waves of their own energy and letting the ki of the life around them flow back into their body through the ground, the monk feels the reverberations of everything moving nearby, from the thunderous breaths of a warrior in battle to the footsteps of the tiniest ants."
@@ -417,7 +417,7 @@
             "Burst Effect: If you succeed with three or more bonus successes, you instantly become aware of all living creatures and objects touching the ground within a number of range bands equal to your Earth Ring plus your bonus successes."
         ]
     },
-    "Earthen Fist":{
+    "earthen fist":{
         "name":"Earthen Fist",
         "description":[
             "Placing their hand on the ground, the monk draws forth the hardness of stone, pulling up clumps of rocky soil that coat their skin or invisibly reinforcing their bones and muscles with the durability of granite."
@@ -430,7 +430,7 @@
             "Burst Effect: If you succeed with two or more bonus successes, you deal physical damage to the target equal to your Earth Ring, and your target must resist with a TN 4 Fitness check (Air 2, Water 5) or suffer the Prone condition."
         ]
     },
-    "Grasp the Earth Dragon":{
+    "grasp the earth dragon":{
         "name":"Grasp the Earth Dragon",
         "description":[
             "Planting a foot on the ground and taking a wide stance, the monk stomps, sending reverberations of ki rushing down into the depths. An instant later, the monk’s body is filled with the resilience of bedrock; stones rise and orbit their body to deflect attacks, rocks adhere to their flesh forming rocky scales, or their flesh becomes as difficult to crack as granite."
@@ -444,7 +444,7 @@
             "Burst Effects: If you have three or more bonus successes, reduce all physical damage you suffer to 1. After any character deals physical damage to you, they suffer the Prone condition. This effect persists until the end of your next turn."
         ]
     },
-    "Way of the Earthquake":{
+    "way of the earthquake":{
         "name":"Way of the Earthquake",
         "description":[
             "The monk slams a hand or foot into the ground, and the earth itself shudders under the weight of the blow as their ki rushes through the soil. Nearby enemies are hurled to the ground and find it shifting treacherously underneath them as they struggle to rise."
@@ -457,7 +457,7 @@
             "Burst Effect: If you have two or more bonus successes, each target suffers physical damage equal to your Earth Ring. Each Prone target suffers physical damage equal to your Earth Ring plus your bonus successes and the Immobilized condition instead."
         ]
     },
-    "Air Fist":{
+    "air fist":{
         "name":"Air Fist",
         "description":[
             "The monk swirls their hands in an intricate pattern, channeling their ki into the air and turning even a placid breeze into a funnel of roaring wind. A gale follows the monk’s strikes, hurling foes back and slamming them against intervening objects."
@@ -470,7 +470,7 @@
             "Burst Effect: If you have two or more bonus successes, you deal physical damage to the target equal to your Air Ring. Your target must make a TN 4 Fitness check (Earth 5, Fire 2) or be pushed 1 range band away from you, plus a number of range bands equal to their shortfall."
         ]
     },
-    "Riding the Clouds":{
+    "riding the clouds":{
         "name":"Riding the Clouds",
         "description":[
             "The monk inhales and lets go their earthly bonds to ascend to new heights. Lifted by a small tornado, an invisible current of air, or even a cloud, the monk can move far more freely. While this current of wind does not fully negate the effects of gravity, it allows the user to traverse terrain they otherwise could not and enhances their athleticism greatly."
@@ -484,7 +484,7 @@
             "Burst Effect: If you have one or more bonus successes, you may immediately move 1 range band, plus one additional range band for each bonus success. You may make this move vertically or horizontally, and you ignore the negative effects of terrain while moving."
         ]
     },
-    "The Great Silence":{
+    "the great silence":{
         "name":"The Great Silence",
         "description":[
             "The monk swirls their hands in a spiral, pulling noise inward and stealing even the reverberations that sounds make through the air. Lies die on the lips unspoken, and prayers never reach the spirits for whom they were intended. Skilled practitioners often maintain this technique, twisting the wind around them to steal away pernicious words and wicked prayers alike."
@@ -497,7 +497,7 @@
             "Burst Effect: If you have two or more bonus successes, characters at range 0–3 suffer the Silenced condition and cannot hear. This effect persists until the beginning of your next turn."
         ]
     },
-    "Way of the Willow":{
+    "way of the willow":{
         "name":"Way of the Willow",
         "description":[
             "The oak stands firm against the storm and breaks, but the willow survives it by bending. The monk dances on the wind like the willow, feeling the currents of ki upon the air and moving out of the way of attacks effortlessly."
@@ -510,7 +510,7 @@
             "Burst Effect: If you have two or more bonus successes, increase the TN of Attack action checks targeting you by your ranks in Meditation until the beginning of your next turn."
         ]
     },
-    "Breaking Blow":{
+    "breaking blow":{
         "name":"Breaking Blow",
         "description":[
             "A kihō practitioner skilled in aligning their energy to the element of Fire can deliver a strike that forces a spark of ki into an object and ignites the latent energy within; causing the object to explode or shatter."
@@ -524,7 +524,7 @@
             "If you have four or more bonus successes, the chosen object gains the Destroyed quality instead. At the GM’s discretion, this can be used to destroy even reinforced mundane objects, such as metal doors and stone walls."
         ]
     },
-    "Channel the Fire Dragon":{
+    "channel the fire dragon":{
         "name":"Channel the Fire Dragon",
         "description":[
             "Fire is not just destruction; it is also life. The monk inhales sharply, igniting their ki to strengthen themself. While this life-giving fire smolders within their lungs, the monk is largely immune to cold weather and flames alike. Ki practitioners experienced in this art can even exhale scorching torrents of flame."
@@ -538,7 +538,7 @@
             "Burst Effect: If you have 2 or more bonus successes, each target must resist with a TN 4 Fitness check (Air 5, Water 2) or suffer physical damage equal to your Fire Ring and the Burning condition. Flammable objects in this area ignite, transforming it into Dangerous terrain at the GM’s discretion."
         ]
     },
-    "Flame Fist":{
+    "flame fist":{
         "name":"Flame Fist",
         "description":[
             "The monk throws a rapid, reckless strike, and flame streams out, seizing and charring whatever the monk touches. While sustaining this kihō, the monk’s hands and feet trail fire, lending power to their strikes."
@@ -551,7 +551,7 @@
             "Burst Effects: If you have two or more bonus successes, your target suffers physical damage equal to your Fire Ring and must make a TN 4 Fitness check (Air 5, Water 2) or suffer the Dazed condition."
         ]
     },
-    "The Body Is an Anvil":{
+    "the body Is an anvil":{
         "name":"The Body Is an Anvil",
         "description":[
             "The monk focuses their ki to the point where they expect a foe’s blow to land, expelling energy to counter the force of the strike. Weapons have been known to shatter into clouds of sparks and chunks of metal when touching a monk’s body, unmade by the force of the monk’s inner energy."
@@ -564,7 +564,7 @@
             "Burst Effect: If you have two or more bonus successes, before you defend against damage dealt by the target, reduce the damage by your Fire Ring. If you successfully defend against the damage, one weapon the target used gains the Damaged quality, and the target suffers the Burning condition."
         ]
     },
-    "Way of the Falling Star":{
+    "way of the falling star":{
         "name":"Way of the Falling Star",
         "description":[
             "The monk hurls a series of rapid strikes. With each one, fire or rippling heat erupts from their palm, elbow, foot, or other striking surface scorching their target."
@@ -578,7 +578,7 @@
             "Burst Effect: If you have three or more bonus successes, one target suffers supernatural damage equal to your Fire Ring plus your ranks in Fitness. They must resist with a TN 5 Fitness check (Air 6, Water 3) or suffer the Burning and Dazed conditions."
         ]
     },
-    "Freezing the Lifeblood":{
+    "freezing the lifeblood":{
         "name":"Freezing the Lifeblood",
         "description":[
             "The monk touches a single point on the target’s body and, with an icy stare, causes the ki within the target to seize up, contracting muscles into a spasmed state and then making them fall slack."
@@ -592,7 +592,7 @@
             "If you succeed with four or more bonus successes, the target suffers a critical strike with severity equal to your Water Ring plus your ranks in Medicine instead."
         ]
     },
-    "Ki Protection":{
+    "ki protection":{
         "name":"Ki Protection",
         "description":[
             "The monk touches the injured individual, feeling the flow of their ki and using their own to gently correct its flow. While the monk sustains this kihō, their touch continues to heal, though repeating the effort numerous times is quite draining."
@@ -606,7 +606,7 @@
             "Burst Effect: If you have 2 or more bonus successes, your target removes fatigue equal to your ranks in Medicine plus your bonus successes. Each target cannot be affected by this effect again until the end of the scene."
         ]
     },
-    "Ride the Water Dragon":{
+    "ride the water dragon":{
         "name":"Ride the Water Dragon",
         "description":[
             "The monk shifts their stance and moves with inexorable purpose, making their ki fluid and allowing mystical energy to ripple off them like harmless raindrops."
@@ -621,7 +621,7 @@
             "If you have four or more bonus successes, remove all other persistent effects from supernatural sources (such as invocations, mahō, or kihō) from all characters at range 0–2 instead."
         ]
     },
-    "Water Fist":{
+    "water fist":{
         "name":"Water Fist",
         "description":[
             "The monk throws a soft blow against a nearby object and makes their ki as water, rippling across intervening objects and sliding past protections to reach its destination. The force of the strike travels through any contact surface, striking another target touching it, even if they are on the other side of a wooden door, stone wall, or other physical barrier."
@@ -635,7 +635,7 @@
             "Burst Effect: If you succeed, you deal physical damage to the target equal to your Water Ring."
         ]
     },
-    "Way of the Seafoam":{
+    "way of the seafoam":{
         "name":"Way of the Seafoam",
         "description":[
             "The monk shifts and matches their movements to their surroundings, sliding to their feet and righting themself like a duck bobbing to the surface of a pond. In this state, the monk can even traverse water, their ki buoying them where they contact the waves."
@@ -648,7 +648,7 @@
             "Burst Effect: If you have two or more bonus successes, remove the Immobilized and Prone conditions from yourself. Then, you may switch to any stance and move up to 2 range bands."
         ]
     },
-    "Death Touch":{
+    "death touch":{
         "name":"Death Touch",
         "description":[
             "The monk delivers a blow to a single point on their target’s body and gives a dread proclamation that echoes across the ensuing stillness. The lucky are merely wounded by this experience, but a single brush from a master of such a deadly ki technique can be fatal."
@@ -662,7 +662,7 @@
             "If you have four or more bonus successes and the target is a minion NPC, they are simply slain instead."
         ]
     },
-    "Still the Elements":{
+    "still the elements":{
         "name":"Still the Elements",
         "description":[
             "The monk seeks the infinite Void within themself, delving into their ki and pushing back spiritual beings and tipping the balance between the elements as they desire. Kansen, kami, other spiritual powers, and sometimes even mortals are repelled by the emptiness in the monk."
@@ -676,7 +676,7 @@
             "Burst Effect: If you have two or more bonus successes, the terrain at range 0–3 becomes Imbalanced [Chosen Element] until the end of the scene."
         ]
     },
-    "Touch the Void Dragon":{
+    "touch the void dragon":{
         "name":"Touch the Void Dragon",
         "description":[
             "The root of the universe is nothing and everything, and the monk pursues this spiral to its depths, finding limitless power within. The monk sees many realities swirl around them while maintaining this kihō, the storm of possibilities slowly solidifying into the present. Thus, they can jump at opportunities that might otherwise have passed them by."
@@ -690,7 +690,7 @@
             "Burst Effect: If you have two or more bonus successes, gain 1 Void point. You can only gain 1 Void point from this effect per scene."
         ]
     },
-    "Way of the Edgeless Sword":{
+    "way of the edgeless sword":{
         "name":"Way of the Edgeless Sword",
         "description":[
             "The wise know that it is not the blade that cuts, but the swordmaster. After all, the Tao of Shinsei teaches that weapons are simply another tool, no more sacred than a harvesting thresher or plow. The monk runs their hand along an object, channeling ki into it and transforming it into a killing edge, even if it appears to be nothing more than a common stick, a wooden sword, or their wizened hand."
@@ -703,7 +703,7 @@
             "Burst Effect: If you have two or more bonus successes, each target suffers a critical strike with deadliness equal to your Void Ring plus your ranks in Martial Arts [Unarmed]."
         ]
     },
-    "Blessed Wind":{
+    "blessed wind":{
         "name":"Blessed Wind",
         "extraNames":{
             "alchemy":"Bottled Duststorm",
@@ -723,7 +723,7 @@
             "Air |opportunityIcon|: This effect persists until the end of the scene instead."
         ]
     },
-    "By the Light of the Lord Moon":{
+    "by the light of the lord moon":{
         "name":"By the Light of the Lord Moon",
         "extraNames":{
             "ancestral":"Kitsuki’s Eyes",
@@ -741,7 +741,7 @@
             "Air |opportunityIcon|opportunityIcon|+: Choose one additional character at range 0–1 per |opportunityIcon|opportunityIcon| spent this way. The chosen characters can also see the objects."
         ]
     },
-    "Call Upon the Wind":{
+    "call upon the wind":{
         "name":"Call Upon the Wind",
         "extraNames":{
             "alchemy":"Gentle Wings of the Wren",
@@ -761,7 +761,7 @@
             "Air |opportunityIcon|opportunityIcon|+: While flying, you may carry up to one additional willing character at range 0–2 with you per |opportunityIcon|opportunityIcon| spent this way."
         ]
     },
-    "Cloak of Night":{
+    "cloak of night":{
         "name":"Cloak of Night",
         "extraNames":{
             "alchemy":"Smoke of Stolen Light",
@@ -781,7 +781,7 @@
             "Air |opportunityIcon|opportunityIcon|+: Choose one additional target of the same silhouette or smaller per |opportunityIcon|opportunityIcon| spent this way."
         ]
     },
-    "False Realm of the Fox Spirits":{
+    "false realm of the fox spirits":{
         "name":"False Realm of the Fox Spirits",
         "extraNames":{
             "ancestral":"Ikoma Recalls a Tale",
@@ -802,7 +802,7 @@
             "Air |opportunityIcon|+: The illusory terrain you summon has one of the following terrain qualities per |opportunityIcon| spent this way: Dangerous, Entangling, or Obscuring."
         ]
     },
-    "Grasp of the Air Dragon":{
+    "grasp of the air dragon":{
         "name":"Grasp of the Air Dragon",
         "extraNames":{
             "ancestral":"Shikajin’s Leap",
@@ -823,7 +823,7 @@
             "Air |opportunityIcon|opportunityIcon|+: Increase the height of the fall the target suffers by 1 per |opportunityIcon|opportunityIcon| spent this way."
         ]
     },
-    "Mask of Wind":{
+    "mask of wind":{
         "name":"Mask of Wind",
         "extraNames":{
             "alchemy":"Paste of Moving Features",
@@ -844,7 +844,7 @@
             "Air |opportunityIcon|opportunityIcon|+: This effect persists for one additional scene per |opportunityIcon|opportunityIcon| spent this way."
         ]
     },
-    "Nature’s Touch":{
+    "nature’s touch":{
         "name":"Nature’s Touch",
         "extraNames":{
             "ancestral":"Shinjo’s Whispers",
@@ -866,7 +866,7 @@
             "Air |opportunityIcon|opportunityIcon|: If you succeed, you can communicate with an Otherworldly being this way, provided it has anything to say to you."
         ]
     },
-    "Rise, Air":{
+    "rise, air":{
         "name":"Rise, Air",
         "extraNames":{
             "alchemy":"Dust of Incarnation",
@@ -886,7 +886,7 @@
             "Air |opportunityIcon|: The manifest air kami arrives in a cyclone that hurls aside anything nearby. Each character at range 0–2 of the target position must resist with a TN 4 Fitness check (Earth 5, Fire 2) or suffer supernatural damage equal to your Air Ring and be pushed away 2 range bands."
         ]
     },
-    "Secrets on the Wind":{
+    "secrets on the wind":{
         "name":"Secrets on the Wind",
         "extraNames":{
             "ancestral":"Whisper in Bayushi’s Ear",
@@ -908,7 +908,7 @@
             "Air |opportunityIcon|opportunityIcon|+: The effect persists for twenty-four additional hours per |opportunityIcon|opportunityIcon| spent this way."
         ]
     },
-    "Summon Fog":{
+    "summon fog":{
         "name":"Summon Fog",
         "extraNames":{
             "ancestral":"Soshi’s Escape",
@@ -930,7 +930,7 @@
             "Air |opportunityIcon|opportunityIcon|: The fog bank becomes a freezing ice storm, causing it to become Dangerous terrain as well."
         ]
     },
-    "Tempest of Air":{
+    "tempest of air":{
         "name":"Tempest of Air",
         "extraNames":{
             "alchemy":"Stormy Vial",
@@ -950,7 +950,7 @@
             "Air |opportunityIcon|+: Each target who fails their Fitness check is also pushed 1 range band away from you per |opportunityIcon| spent this way."
         ]
     },
-    "Token of Memory":{
+    "token of memory":{
         "name":"Token of Memory",
         "extraNames":{
             "ancestral":"Riddle of Agasha ",
@@ -972,7 +972,7 @@
             "Air |opportunityIcon|opportunityIcon|: Illusory objects you summon this way have mass, and they can be used as if they were real (though they are still inanimate, and thus do not move on their own). They still vanish when the effect ends."
         ]
     },
-    "Vapor of Nightmares":{
+    "vapor of nightmares":{
         "name":"Vapor of Nightmares",
         "extraNames":{
             "ancestral":"Togashi Speaks Softly",
@@ -993,7 +993,7 @@
             "Air |opportunityIcon|: The phantasm persists until the end of the scene instead."
         ]
     },
-    "Wrath of Kaze-no-Kami":{
+    "wrath of kaze-no-kami":{
         "name":"Wrath of Kaze-no-Kami",
         "extraNames":{
             "alchemy":"Bottled Typhoon",
@@ -1015,7 +1015,7 @@
             "Air |opportunityIcon|opportunityIcon|: While within the hurricane, you can fly, moving vertically and ignoring the effects of terrain."
         ]
     },
-    "Yari of Air":{
+    "yari of air":{
         "name":"Yari of Air",
         "extraNames":{
             "alchemy":"Rod of the Wind Yari",
@@ -1037,7 +1037,7 @@
             "Air |opportunityIcon|opportunityIcon|: You may summon a pair of weapons instead of a single weapon."
         ]
     },
-    "Armor of Earth":{
+    "armor of earth":{
         "name":"Armor of Earth",
         "extraNames":{
             "ancestral":"Hida’s Shell",
@@ -1059,7 +1059,7 @@
             "Earth |opportunityIcon|opportunityIcon|: The armor you summon has the Sacred quality."
         ]
     },
-    "Bind the Shadow":{
+    "bind the shadow":{
         "name":"Bind the Shadow",
         "extraNames":{
             "alchemy":"Circle of Salt and Ash",
@@ -1082,7 +1082,7 @@
             "Earth |opportunityIcon|opportunityIcon|opportunityIcon|opportunityIcon|: Each target that fails its Fitness check to resist is bound for one hundred years instead."
         ]
     },
-    "Caress of Earth":{
+    "caress of earth":{
         "name":"Caress of Earth",
         "extraNames":{
             "alchemy":"Salve of the Stone Kami",
@@ -1102,7 +1102,7 @@
             "Earth |opportunityIcon|: One target gains the Durable quality until the end of the scene."
         ]
     },
-    "Courage of Seven Thunders":{
+    "courage of seven thunders":{
         "name":"Courage of Seven Thunders",
         "extraNames":{
             "ancestral":"Akodo’s Unflinching Stand",
@@ -1124,7 +1124,7 @@
             "Earth |opportunityIcon|opportunityIcon|: This technique targets each friendly character in range instead."
         ]
     },
-    "Earthquake":{
+    "earthquake":{
         "name":"Earthquake",
         "extraNames":{
             "ancestral":"Akodo’s Bellow",
@@ -1146,7 +1146,7 @@
             "Earth |opportunityIcon|opportunityIcon|+: If you succeed, you may destroy one building or fortification in range per |opportunityIcon|opportunityIcon| spent this way. Each character inside must resist with a TN 3 Fitness check (Air 1, Water 4) to escape by immediately moving outside or suffer a critical strike with severity 10."
         ]
     },
-    "Earth Becomes Sky":{
+    "earth becomes sky":{
         "name":"Earth Becomes Sky",
         "extraNames":{
             "alchemy":"Vial of Explosive Earth",
@@ -1163,7 +1163,7 @@
             "Effects: If you succeed, you call forth a boulder to smite your target. The target suffers supernatural damage equal to your Earth Ring plus your bonus successes and must resist with a TN 3 Fitness check (Air 1, Water 4) or suffer the Prone condition. If your target is already suffering the Prone condition, double the damage they suffer this way."
         ]
     },
-    "Embrace of Kenro-Ji-Jin":{
+    "embrace of kenro-ji-jin":{
         "name":"Embrace of Kenro-Ji-Jin",
         "extraNames":{
             "alchemy":"Earth Spider’s Salve",
@@ -1185,7 +1185,7 @@
             "Earth |opportunityIcon|opportunityIcon|: The effects also apply to metal. You count as having physical resistance against damage from metal weapons equal to your Earth Ring."
         ]
     },
-    "Grasp of Earth":{
+    "grasp of earth":{
         "name":"Grasp of Earth",
         "extraNames":{
             "alchemy":"Crystallizing Potion",
@@ -1206,7 +1206,7 @@
             "Earth |opportunityIcon|: Reduce the damage each targets suffers to 0."
         ]
     },
-    "Jade Strike":{
+    "jade strike":{
         "name":"Jade Strike",
         "extraNames":{
             "ancestral":"Tears of the Sun Goddess",
@@ -1227,7 +1227,7 @@
             "Earth |opportunityIcon|: If you succeed, each target that is an Otherworldly being suffers the Silenced condition and cannot use mahō techniques until the end of your next turn."
         ]
     },
-    "Jurōjin’s Balm":{
+    "jurōjin’s balm":{
         "name":"Jurōjin’s Balm",
         "extraNames":{
             "elemental":"Lifeblood of the Earth Kami",
@@ -1249,7 +1249,7 @@
             "Earth |opportunityIcon|opportunityIcon|: If you succeed, you also mend your target, removing any poisons currently afflicting them and the Dying condition, and any symptoms of diseases affecting them are suppressed until the end of the scene."
         ]
     },
-    "Power of the Earth Dragon":{
+    "power of the earth dragon":{
         "name":"Power of the Earth Dragon",
         "extraNames":{
             "alchemy":"Fortifying Stone Vial",
@@ -1270,7 +1270,7 @@
             "Earth |opportunityIcon|: This effect persists until the end of the scene instead."
         ]
     },
-    "Rise, Earth":{
+    "rise, earth":{
         "name":"Rise, Earth",
         "extraNames":{
             "ancestral":"Guardian of Earth",
@@ -1292,7 +1292,7 @@
             "Earth |opportunityIcon|: The manifest earth kami creates a rumbling shockwave when it erupts. Each character at range 0–2 of the chosen position must resist with a TN 4 Fitness check (Air 2, Water 5) or suffer physical or supernatural damage equal to your Earth Ring and gain the Prone condition."
         ]
     },
-    "Symbol of Earth":{
+    "symbol of earth":{
         "name":"Symbol of Earth",
         "extraNames":{
             "alchemy":"Mark of Crystal and Jade",
@@ -1313,7 +1313,7 @@
             "Earth |opportunityIcon|opportunityIcon|: This effect persists for twenty-four hours instead."
         ]
     },
-    "Tetsubō of Earth":{
+    "tetsubō of earth":{
         "name":"Tetsubō of Earth",
         "extraNames":{
             "alchemy":"The Blacksmith’s Hammer",
@@ -1335,7 +1335,7 @@
             "Earth |opportunityIcon|opportunityIcon|: The weapon you summon has the Sacred quality."
         ]
     },
-    "Tomb of Jade":{
+    "tomb of jade":{
         "name":"Tomb of Jade",
         "extraNames":{
             "ancestral":"Mercy of the Sun Goddess",
@@ -1358,7 +1358,7 @@
             "Earth |opportunityIcon|+: Choose one of the following conditions for each |opportunityIcon| spent this way: Dazed, Disoriented, Immobilized, or Prone. If the target is an Otherworldly being, it suffers the chosen conditions."
         ]
     },
-    "Wall of Earth":{
+    "wall of earth":{
         "name":"Wall of Earth",
         "extraNames":{
             "alchemy":"Crystallizing Powder",
@@ -1383,7 +1383,7 @@
             "Earth |opportunityIcon|opportunityIcon|opportunityIcon|opportunityIcon|: Instead of summoning a wall, you may summon a Castle fortification."
         ]
     },
-    "Armor of Radiance":{
+    "armor of radiance":{
         "name":"Armor of Radiance",
         "extraNames":{
             "alchemy":"Oil of Awakening Flames",
@@ -1404,7 +1404,7 @@
             "Fire |opportunityIcon|opportunityIcon|: This effect persists until the end of the scene instead."
         ]
     },
-    "Biting Steel":{
+    "biting steel":{
         "name":"Biting Steel",
         "extraNames":{
             "alchemy":"Salve of Unyielding Metal",
@@ -1426,7 +1426,7 @@
             "Fire |opportunityIcon|opportunityIcon|: This effect persists until the end of the scene instead."
         ]
     },
-    "Breath of the Fire Dragon":{
+    "breath of the fire dragon":{
         "name":"Breath of the Fire Dragon",
         "extraNames":{
             "alchemy":"Oni’s Sake",
@@ -1443,7 +1443,7 @@
             "Effects: If you succeed, you exhale searing flames that smite the target and those around them. The target suffers supernatural damage equal to your Fire Ring plus two times your bonus successes and the Burning condition. Each character at range 0–1 of the target must make a TN 3 Fitness check (Air 4, Water 1) or suffer supernatural damage equal to your Fire Ring."
         ]
     },
-    "Extinguish":{
+    "extinguish":{
         "name":"Extinguish",
         "description":[
             "A shugenja who communes with the spirits of fire must learn to still them, lest the flames they conjure consume the shugenja. The trick is to stoke the kami’s wrath briefly but intensely, so that it is exhausted that much more quickly. With a few words and a rising gesture, the shugenja inhales, drawing the flames to a searing glow, then exhales, letting them settle to embers."
@@ -1458,7 +1458,7 @@
             "Fire |opportunityIcon|opportunityIcon|: If you succeed, you may also end all persistent effects from other Fire invocations and flame-based supernatural effects in the area."
         ]
     },
-    "Fukurokujin’s Wit":{
+    "fukurokujin’s wit":{
         "name":"Fukurokujin’s Wit",
         "extraNames":{
             "ancestral":"Wisdom of the Kitsu",
@@ -1478,7 +1478,7 @@
             "Fire |opportunityIcon|: You may target another character at range 0–2 instead of yourself."
         ]
     },
-    "Fury of Osano-wo":{
+    "fury of osano-wo":{
         "name":"Fury of Osano-wo",
         "extraNames":{
             "alchemy":"Orbs of Heavenly Fire",
@@ -1499,7 +1499,7 @@
             "Fire |opportunityIcon|+: Increase the severity of any critical strikes inflicted as part of this action by 2 per |opportunityIcon| spent this way."
         ]
     },
-    "Katana of Fire":{
+    "katana of fire":{
         "name":"Katana of Fire",
         "extraNames":{
             "alchemy":"Forging Fire Into Steel",
@@ -1521,7 +1521,7 @@
             "Fire |opportunityIcon|: After you perform an Attack action with the weapon, each target must resist with a TN 3 Fitness check (Air 4, Water 1) or suffer the Burning condition."
         ]
     },
-    "Matsu’s Battlecry":{
+    "matsu’s battlecry":{
         "name":"Matsu’s Battlecry",
         "extraNames":{
             "elemental":"Embracing the Flames",
@@ -1538,7 +1538,7 @@
             "Effects: If you succeed, you summon an illusion of a hellish scene that only the target can perceive, pushing them toward rage. The target receives 1 strife plus additional strife equal to your bonus successes, and must resist with a TN 3 Meditation check (Air 4, Water 1) or immediately suffer the Enraged condition."
         ]
     },
-    "Ravenous Swarms":{
+    "ravenous swarms":{
         "name":"Ravenous Swarms",
         "extraNames":{
             "ancestral":"Forgotten Fury of Asahina",
@@ -1560,7 +1560,7 @@
             "Fire |opportunityIcon|: When you defend against damage, you may spend a number of motes up to your Fire Ring to reduce the damage you suffer by 1 for each mote spent this way."
         ]
     },
-    "Rise, Flame":{
+    "rise, flame":{
         "name":"Rise, Flame",
         "extraNames":{
             "alchemy":"Bulb of Incarnation",
@@ -1582,7 +1582,7 @@
             "Fire |opportunityIcon|: When the fire kami’s fatigue exceeds its endurance, it detonates into a column of flame that sears the earth and the sky. Each character at range 0–3 of it must resist with a TN 5 Fitness check (Air 6, Water 3) or suffer supernatural damage equal to two times your Fire Ring and suffer the Burning and Dazed conditions."
         ]
     },
-    "The Cleansing Fire":{
+    "the cleansing fire":{
         "name":"The Cleansing Fire",
         "extraNames":{
             "alchemy":"Anointment of the Fire Dragon",
@@ -1599,7 +1599,7 @@
             "Effects: If you succeed, you smite each target with a roaring burst of fire. Each target suffers the Dazed condition and must resist with a TN 3 Fitness check (Air 4, Water 1) or suffer supernatural damage equal to your Fire Ring plus their shortfall and gain the Burning condition."
         ]
     },
-    "The Fires from Within":{
+    "the fires from within":{
         "name":"The Fires from Within",
         "extraNames":{
             "ancestral":"The Illuminating Light of Asako",
@@ -1619,7 +1619,7 @@
             "Fire |opportunityIcon|+: Treat the maximum range of this technique as 1 higher per |opportunityIcon| spent this way."
         ]
     },
-    "The Soul’s Blade":{
+    "the soul’s blade":{
         "name":"The Soul’s Blade",
         "extraNames":{
             "alchemy":"Talon of the Fire Dragon",
@@ -1643,7 +1643,7 @@
             "Fire |opportunityIcon|opportunityIcon|: After you perform an Attack action with the weapon, each target must resist with a TN 4 Fitness check (Air 5, Water 2) or suffer the Dazed condition."
         ]
     },
-    "Wall of Fire":{
+    "wall of fire":{
         "name":"Wall of Fire",
         "extraNames":{
             "alchemy":"Igniting Powder of Combusting Ash",
@@ -1663,7 +1663,7 @@
             "Fire |opportunityIcon|: The wall of fire counts as terrain with one of the following qualities: Entangling or Obscuring."
         ]
     },
-    "Wings of the Phoenix":{
+    "wings of the phoenix":{
         "name":"Wings of the Phoenix",
         "extraNames":{
             "alchemy":"Flameform Transmutation",
@@ -1684,7 +1684,7 @@
             "Fire |opportunityIcon|opportunityIcon|: This effect persists until the end of the scene instead."
         ]
     },
-    "Bō of Water":{
+    "bō of water":{
         "name":"Bō of Water",
         "extraNames":{
             "ancestral":"Kaimetsu-o’s Paddle",
@@ -1706,7 +1706,7 @@
             "Water |opportunityIcon|: When performing an Attack action with this weapon, treat its minimum or maximum range as 1 higher or lower."
         ]
     },
-    "Dance of Seasons":{
+    "dance of seasons":{
         "name":"Dance of Seasons",
         "extraNames":{
             "alchemy":"Salt of Seasonal Change",
@@ -1727,7 +1727,7 @@
             "Water |opportunityIcon|+: If you succeed, you may attempt to encase in ice one character in the affected area per |opportunityIcon| spent this way. Each of these characters must resist with a TN 3 Fitness check (Earth 1, Fire 4) or suffer the Immobilized and Disoriented conditions."
         ]
     },
-    "Dominion of Suijin":{
+    "dominion of suijin":{
         "name":"Dominion of Suijin",
         "extraNames":{
             "ancestral":"Iuchi’s Window",
@@ -1751,7 +1751,7 @@
             "Water |opportunityIcon|opportunityIcon|opportunityIcon|: In addition to being able to see out of the other body of water, you and a number of other characters up to your Water Ring may pass through the temporary portal you have created to the other location. The trip is always one way for a given use of the technique, and you always arrive soaked."
         ]
     },
-    "Ever-Changing Waves":{
+    "ever-changing waves":{
         "name":"Ever-Changing Waves",
         "alchemy":"Elixir of Transmuting Form",
             "fortunist":"Blessing of Megumi",
@@ -1770,7 +1770,7 @@
             "Water |opportunityIcon|+: You may choose a new form of silhouette 1 higher or lower per |opportunityIcon| spent this way (to a minimum of 0 or a maximum of 6)."
         ]
     },
-    "Hands of the Tides":{
+    "hands of the tides":{
         "name":"Hands of the Tides",
         "extraNames":{
             "alchemy":"Tracing the Lifeblood",
@@ -1791,7 +1791,7 @@
             "Water |opportunityIcon|+: If you succeed, you may choose a new stance for one target per |opportunityIcon| spent this way."
         ]
     },
-    "Heart of the Water Dragon":{
+    "heart of the water dragon":{
         "name":"Heart of the Water Dragon",
         "extraNames":{
             "alchemy":"Vapors of Goodwill",
@@ -1812,7 +1812,7 @@
             "Water |opportunityIcon|opportunityIcon|: When the target succeeds on a check to resist the effect of a kihō, mahō, or invocation technique, the character who used the technique must also make the check to resist that effect, or suffer the effect themself."
         ]
     },
-    "Inari’s Blessing":{
+    "inari’s blessing":{
         "name":"Inari’s Blessing",
         "extraNames":{
             "ancestral":"Miya’s Gift",
@@ -1833,7 +1833,7 @@
             "Water |opportunityIcon|+: The meal can feed a number of people up to your Water Ring plus your bonus successes times the |opportunityIcon| spent this way instead."
         ]
     },
-    "Path to Inner Peace":{
+    "path to inner peace":{
         "name":"Path to Inner Peace",
         "extraNames":{
             "alchemy":"Jurōjin’s Kiss",
@@ -1855,7 +1855,7 @@
             "Water |opportunityIcon|: Your target also removes strife equal to your bonus successes."
         ]
     },
-    "Reflections of P’an Ku":{
+    "reflections of p’an ku":{
         "name":"Reflections of P’an Ku",
         "extraNames":{
             "ancestral":"Agasha’s Vast Wisdom",
@@ -1876,7 +1876,7 @@
             "Water |opportunityIcon|: You may target a character instead of an object. If you succeed, you identify one invocation, kihō, mahō, or supernatural ability or item possessed by that person, along with its name and general qualities."
         ]
     },
-    "Rise, Water":{
+    "rise, water":{
         "name":"Rise, Water",
         "extraNames":{
             "alchemy":"Wine of Invocation",
@@ -1898,7 +1898,7 @@
             "Water |opportunityIcon|+: You split the manifest water kami into a number of smaller manifest water kami equal to |opportunityIcon| spent this way. Each one has an endurance equal to 12 divided by the number of |opportunityIcon| spent this way (rounded up)."
         ]
     },
-    "Stride the Waves":{
+    "stride the waves":{
         "name":"Stride the Waves",
         "extraNames":{
             "alchemy":"Elixir of Cork Properties",
@@ -1915,7 +1915,7 @@
             "Effects: If you succeed, you summon a buoyant current that sweeps the target along. Even if they normally cannot swim, the target can control where they move as they please along the surface of the water or within it. The target ignores any negative effects of terrain while in the water and does not suffocate while underwater. This effect persists until the end of the scene."
         ]
     },
-    "Strike the Tsunami":{
+    "strike the tsunami":{
         "name":"Strike the Tsunami",
         "extraNames":{
             "alchemy":"Bottle of Oceanic Storms",
@@ -1935,7 +1935,7 @@
             "Water |opportunityIcon|: Each target who fails the check to resist also suffers the Bleeding condition."
         ]
     },
-    "Suijin’s Embrace":{
+    "suijin’s embrace":{
         "name":"Suijin’s Embrace",
         "extraNames":{
             "alchemy":"The Ocean in a Drop",
@@ -1952,7 +1952,7 @@
             "Effects: If you succeed, you smite your target with lungfuls of seawater. The target suffers supernatural damage equal to your Water Ring plus two times your bonus successes. If a target’s fatigue exceeds their endurance this way, the target begins to suffocate for a number of rounds equal to your Water Ring plus bonus successes or until you release them, as a Support action."
         ]
     },
-    "Sympathetic Energies":{
+    "sympathetic energies":{
         "name":"Sympathetic Energies",
         "extraNames":{
             "ancestral":"Compassion of Shinjo",
@@ -1972,7 +1972,7 @@
             "Water |opportunityIcon|opportunityIcon|: You may choose a condition that the target is suffering instead of a persistent invocation effect."
         ]
     },
-    "The Rushing Wave":{
+    "the rushing wave":{
         "name":"The Rushing Wave",
         "extraNames":{
             "alchemy":"The Clay Kobune",
@@ -1990,7 +1990,7 @@
             "If you succeed during a narrative or downtime scene, you summon a gentle current that doubles the target’s speed across or through the water (such as while swimming or while traveling in a sailing ship or riverboat). This effect persists until the end of the scene."
         ]
     },
-    "Cleansing Rite":{
+    "cleansing rite":{
         "name":"Cleansing Rite",
         "description":[
             "The ritualist sanctifies a person or group, anointing them with sacred substances that drive out unholy presences and malign sorcery."
@@ -2007,7 +2007,7 @@
             "Void |opportunityIcon|+: Instead of targeting characters, you may target an area that encompasses a number of range bands around you equal to |opportunityIcon| spent this way. Remove the Defiled terrain quality from this area. If it is a deeply unhallowed place that has long been the domain of evil, the Defiled quality returns after one day, plus additional days equal to your bonus successes."
         ]
     },
-    "Commune with the Spirits":{
+    "commune with the spirits":{
         "name":"Commune with the Spirits",
         "description":[
             "The ritualist centers their mind on one of the Elements, appealing to the spirits in their environment and seeking their counsel or boon. Priests and laypeople are able to use this ritual to receive less specific guidance from the spirits, such as a leaf that falls to the ground pointing in the direction of the person or thing they are seeking."
@@ -2026,7 +2026,7 @@
             "|opportunityIcon|+: If you succeed, receive one additional boon per |opportunityIcon| spent this way. Each boon can only be received one time per activation."
         ]
     },
-    "Divination":{
+    "divination":{
         "name":"Divination",
         "description":[
             "The ritualist peers into a character’s future, ascertaining their fate from the patterns of the stars, the char marks upon animal bones, the placement of cast shells, or other omens they can read."
@@ -2047,7 +2047,7 @@
             "|opportunityIcon|: If you fail, an additional omen appears to you after the first. Choose one of the above omens in addition to the one the GM chose."
         ]
     },
-    "Tea Ceremony":{
+    "tea ceremony":{
         "name":"Tea Ceremony",
         "description":[
             "When Lady Doji served tea for the very first Emperor, the tea ceremony was born. Ceremony styles vary among the clans, from the gilded tea rooms of the Phoenix to the imperfect tea bowls of the Dragon, the early morning gatherings of the Crane to the snow- and moon-viewing ceremonies of the Scorpion. However, at its core the tea ceremony is fundamentally an appreciation of tea and, if done well, a spiritual moment for its participants. The tea represents all five elements: the fire used to heat the water, the earth from which the tea is grown, and the air that carries the aroma of the tea. Finally, void holds all four elements together, and brings in the mysterious fifth element, the moment of harmony and tranquility as one sips the tea."
@@ -2064,7 +2064,7 @@
             "|opportunityIcon|opportunityIcon|: If you succeed, each target gains 1 Void point."
         ]
     },
-    "Threshold Barrier":{
+    "threshold barrier":{
         "name":"Threshold Barrier",
         "description":[
             "The ritualist wards an entryway against beings of a certain sort, causing them to fail to observe the entryway or making them mentally repulsed by their efforts to enter it."
@@ -2085,7 +2085,7 @@
             "|opportunityIcon|: If any beings of the type you are attempting to seal the threshold against have passed through the threshold within the last twenty-four hours, you become aware of their passage."
         ]
     },
-    "Artisan’s Appraisal":{
+    "artisan’s appraisal":{
         "name":"Artisan’s Appraisal",
         "description":[
             "The courtier looks at an object but sees its maker. Each thumbprint tells a story about the hand that crafted the piece; every subtle choice reveals something about the desires that linger in the artist’s mind."
@@ -2096,7 +2096,7 @@
             "Air |opportunityIcon|: If the creator or performer is an NPC, learn their demeanor."
         ]
     },
-    "Bend with the Storm":{
+    "bend with the storm":{
         "name":"Bend with the Storm",
         "description":[
             "When faced with a much more powerful foe, a cunning courtier often feigns a position of weakness. In this way, they can lead the opponent where they desire by offering chances the foe cannot pass up."
@@ -2106,7 +2106,7 @@
             "Air |opportunityIcon|: Choose an advantage or disadvantage. The target comes to believe that you possess that advantage or disadvantage without your having to expend noticeable effort or state it directly. Further, the target believes that you do not know you have given this advantage or disadvantage away. If you do anything that could call this misconception into question, any character may resist with a TN 5 Sentiment check (Earth 6, Fire 3) to discern that the advantage or disadvantage is not real. This effect persists until the target is faced with incontrovertible evidence or succeeds on the check to resist in the face of cracks in your façade."
         ]
     },
-    "Cadence":{
+    "cadence":{
         "name":"Cadence",
         "description":[
             "In courtly situations, it can be advantageous for courtiers of the same clan to be able to communicate wordlessly."
@@ -2117,7 +2117,7 @@
             "Air |opportunityIcon|opportunityIcon|: Convey a secret message that alters the meaning of what you are saying outwardly (or has nothing to do with it at all) to one character observing you who does not possess this technique."
         ]
     },
-    "Feigned Opening":{
+    "feigned opening":{
         "name":"Feigned Opening",
         "description":[
             "A wise leader creates the impression of weakness to disguise strength, or strength to conceal weakness."
@@ -2133,7 +2133,7 @@
             "Air |opportunityIcon|+: In a mass battle, increase the TN of Attack checks targeting your cohort by 1, plus 1 per additional |opportunityIcon|opportunityIcon| spent this way."
         ]
     },
-    "Prey on the Weak":{
+    "prey on the weak":{
         "name":"Prey on the Weak",
         "description":[
             "Court is not a kind place, and a harsh word is no less cruel for being spoken softly and with perfect etiquette."
@@ -2151,7 +2151,7 @@
             "Air |opportunityIcon|opportunityIcon|: If the target chooses to leave the scene, you notice their destination from the direction of their departure or overhear from the crowd where they will retreat."
         ]
     },
-    "Rustling of Leaves":{
+    "rustling of leaves":{
         "name":"Rustling of Leaves",
         "description":[
             "If everyone has heard a scandalous story, but it has no clear source, what can it be but true? The courtier cleverly spreads stories so none see them as the source."
@@ -2161,7 +2161,7 @@
             "Air |opportunityIcon|+: Increase the TN of any check to trace the rumor back to you by 2 per |opportunityIcon| spent this way."
         ]
     },
-    "The Wind Blows Both Ways":{
+    "the wind blows both ways":{
         "name":"The Wind Blows Both Ways",
         "description":[
             "A word in the right ear at the right time can enhance the accomplishment of another, or a cutting slight can diminish their success in the eyes of those who matter."
@@ -2172,7 +2172,7 @@
             "Air |opportunityIcon|+: The next time the target forfeits or stakes glory, increase the glory they must forfeit or stake by 1 per |opportunityIcon| spent this way. This effect persists until the end of the scene."
         ]
     },
-    "Whispers of Court":{
+    "whispers of court":{
         "name":"Whispers of Court",
         "description":[
             "Rumors are the currency of court, and when such news is in short supply, many courtiers simply spin it themselves. They use cunning schemes and plausible half-truths to bait their webs of intrigue."
@@ -2187,7 +2187,7 @@
             "Air |opportunityIcon|: Learn one other rumor that is spreading in the current scene."
         ]
     },
-    "Wolf’s Proposal":{
+    "wolf’s proposal":{
         "name":"Wolf’s Proposal",
         "description":[
             "Being honorable is of the same value to a courtier as appearing honorable. True honor cannot be faked, but fortunately for many, the appearance of respectability can be fabricated."
@@ -2202,7 +2202,7 @@
             "Air |opportunityIcon|: Choose a character in the scene. Learn if their honor is higher or lower than yours (the actual value)."
         ]
     },
-    "Ancestry Unearthed":{
+    "ancestry unearthed":{
         "name":"Ancestry Unearthed",
         "description":[
             "A samurai’s ancestry often reveals a great deal about their political opportunities, assets, and probable allies in the Emerald Empire, for the rigid social strata allow little divergence. Any courtier can likely dredge up another samurai’s lineage from the dark corners of their mind, but some can recall it in an instant."
@@ -2214,7 +2214,7 @@
             "Earth |opportunityIcon|opportunityIcon|opportunityIcon|: You know something the character does not even known about their own ancestry."
         ]
     },
-    "Civility Foremost":{
+    "civility foremost":{
         "name":"Civility Foremost",
         "description":[
             "Samurai are warriors, but there are many contexts in which violence is inappropriate. Many strictures exist around the times weapons can and cannot be drawn. A courtier who has memorized the rules of such engagements can articulate why fighting would be improper or profane in nearly any situation."
@@ -2229,7 +2229,7 @@
             "Earth |opportunityIcon|+: Choose one additional target with vigilance lower than or equal to your first target’s vigilance per |opportunityIcon| spent this way."
         ]
     },
-    "Honest Assessment":{
+    "honest assessment":{
         "name":"Honest Assessment",
         "description":[
             "Honesty is a virtue of Bushidō, but direct honesty is often seen as rudeness among the samurai—instead, one is expected to find a polite way to imply one’s meaning to spare the feelings of the other involved. As a result, directness can be something of a rare and valuable commodity."
@@ -2245,7 +2245,7 @@
             "Earth |opportunityIcon|opportunityIcon|: Reduce the TN of the target’s next skill check using the ring the disadvantage is attached to by 2."
         ]
     },
-    "Pillar of Calm":{
+    "pillar of calm":{
         "name":"Pillar of Calm",
         "description":[
             "The character calls for reason to prevail and swords to be sheathed, appealing to a common ideal or greater threat that stands before the belligerent parties."
@@ -2260,7 +2260,7 @@
             "Earth |opportunityIcon|opportunityIcon|+: You may de-escalate the conflict by one additional level per |opportunityIcon|opportunityIcon| spent this way."
         ]
     },
-    "Stonewall Tactics":{
+    "stonewall tactics":{
         "name":"Stonewall Tactics",
         "description":[
             "The courtier makes themself impossible for the target to ignore, raising a pressing concern that must be addressed first or even physically planting themself between a rival and their allies."
@@ -2270,7 +2270,7 @@
             "Earth |opportunityIcon|+: Increase the TN of any check the target makes that does not target you by 1 per |opportunityIcon| spent this way. This effect persists until the beginning of your next turn."
         ]
     },
-    "Touchstone of Courage":{
+    "touchstone of courage":{
         "name":"Touchstone of Courage",
         "description":[
             "Armies are rarely routed in the field; instead, most collapse when morale becomes impossible to maintain. As panic rises in the ranks, soldiers look to leaders to set an example. The character does just this, speaking to the importance of duty to bring their troops back from the edge of chaos."
@@ -2287,7 +2287,7 @@
             "Earth |opportunityIcon|opportunityIcon|: During a mass battle, your army removes panic equal to your Earth Ring."
         ]
     },
-    "The Immovable Hand of Peace":{
+    "the immovable hand of peace":{
         "name":"The Immovable Hand of Peace",
         "description":[
             "The courtier calls for the warriors in the field to lay down their arms and withdraw with such unquestionable conviction that even the fires of hate are temporarily smothered."
@@ -2302,7 +2302,7 @@
             "Earth |opportunityIcon|: You may also perform this action during a mass battle or other form of conflict (other than an intrigue)."
         ]
     },
-    "Weight of Duty":{
+    "weight of duty":{
         "name":"Weight of Duty",
         "description":[
             "All samurai know the pressure of expectation in countless forms. An observant courtier can read this when engaging with another character, learning their beliefs and in what ways they fear they might not live up to their own expectations."
@@ -2313,7 +2313,7 @@
             "Earth |opportunityIcon|opportunityIcon|: Learn the target’s giri."
         ]
     },
-    "Bravado":{
+    "bravado":{
         "name":"Bravado",
         "description":[
             "Glory is half reputation and half poise. The courtier displays a confident mien, speaking more informally than propriety should allow. Their words and posture carry a tinge of arrogance, making them harder to ignore."
@@ -2328,7 +2328,7 @@
             "Fire |opportunityIcon|: Choose a character in the scene. Learn if their glory is higher or lower than yours (the actual value)."
         ]
     },
-    "Dazzling Performance":{
+    "dazzling performance":{
         "name":"Dazzling Performance",
         "description":[
             "Performing a great feat can win a character renown, but performing a great feat and then telling the story of it draws far greater accolades. A courtier building a reputation in the competitive courts of Rokugan must master not just excellence, but also capture the imagination."
@@ -2338,7 +2338,7 @@
             "Fire |opportunityIcon|+: The next time you receive a glory award this scene, increase the amount you receive by 1. If there is a character of higher status in the scene, increase it by 1 per |opportunityIcon| spent this way instead."
         ]
     },
-    "Fanning the Flames":{
+    "fanning the flames":{
         "name":"Fanning the Flames",
         "description":[
             "Inciting people to act foolishly or to flinch at the crucial moment is a key skill of a courtier, for words are their weapons. Inducing unchecked emotion is another tool in the courtier’s arsenal, and most become quite adept in the art of manipulating people into feeling certain things that are advantageous for the courtier. The courtier stings their target’s pride with needling comments or makes a flirtatious remark to draw their attention, pulling the target’s emotions to the surface and making them easier to predict."
@@ -2349,7 +2349,7 @@
             "Fire |opportunityIcon|opportunityIcon|+: One target gains the Enraged condition per |opportunityIcon|opportunityIcon| spent this way."
         ]
     },
-    "Lightning Raid":{
+    "lightning raid":{
         "name":"Lightning Raid",
         "description":[
             "The Unicorn Clan is famous for its quick strikes, smashing down upon its enemies with cavalry to sow chaos in their ranks and leave them vulnerable to the rest of the army. Other clans employ similar tactics, usually by ambushing exposed cities or supply trains in the field. The leader rouses their troops for a swift attack to leave the enemy in a state of disarray."
@@ -2366,7 +2366,7 @@
             "Fire |opportunityIcon|: During a mass battle, immediately perform an Assault action against the chosen enemy cohort’s leader."
         ]
     },
-    "Rallying Cry":{
+    "rallying cry":{
         "name":"Rallying Cry",
         "description":[
             "The leader roars, calling their troops to battle, and the voice of an army echoes around them as the single cry is joined by many. As one, the troops surge forward to claim victory or perish in the attempt."
@@ -2382,7 +2382,7 @@
             "Fire |opportunityIcon|+: In a mass battle, the enemy army suffers 1 panic per |opportunityIcon| spent this way."
         ]
     },
-    "Sear the Wound":{
+    "sear the wound":{
         "name":"Sear the Wound",
         "description":[
             "Many courtiers cannot resist the opportunity to twist the knife after delivering a stabbing remark, but the wise use this power judiciously. Though somewhat cruel, the technique of bringing a rival’s weakness to the forefront of their mind to burn away at their resolve is often effective."
@@ -2392,7 +2392,7 @@
             "Fire |opportunityIcon|+: Choose a known disadvantage of one of your targets per |opportunityIcon| spent this way. That disadvantage applies to all of the target’s checks until the end of the scene."
         ]
     },
-    "Sensational Distraction":{
+    "sensational distraction":{
         "name":"Sensational Distraction",
         "description":[
             "Standing out in court requires a great deal of both cunning and flair, and standing out on purpose can be even harder. Courtiers train for much of their lives to learn to control the perceptions of others at court. The best courtiers know when to draw attention to themselves with a display of rhetorical prowess or another social feat and when to avoid attention. Drawing attention to oneself can give collaborators the chance to work unnoticed as well, and thus it is an extremely valuable tool in the courtier’s arsenal."
@@ -2402,7 +2402,7 @@
             "Fire |opportunityIcon|+: When interacting with other characters, the target treats their vigilance as 1 lower per |opportunityIcon| spent this way; when interacting with you, the target treats their vigilance as 1 higher per |opportunityIcon| spent this way. This effect persists until the end of the scene."
         ]
     },
-    "Stirring the Embers":{
+    "stirring the embers":{
         "name":"Stirring the Embers",
         "description":[
             "A good leader does not just compensate for the weaknesses of comrades, but also fosters their innate strengths. The courtier reminds an ally of one of their finer qualities, sparking their pride to get them to fight more fiercely or speak with greater conviction."
@@ -2412,7 +2412,7 @@
             "Fire |opportunityIcon|+: Choose a target and one of their known distinctions per |opportunityIcon| spent this way. Until the end of the scene, when that advantage applies to a check, the target may reroll up to three dice (instead of two)."
         ]
     },
-    "Truth Burns through Lies":{
+    "truth burns through lies":{
         "name":"Truth Burns through Lies",
         "description":[
             "The courtier rapidly extrapolates, imagining the ramifications of a story and conjecturing what might have gone unsaid. If a loose thread exists in the account, they can find it, and that first thread can become the unraveling of the most cunning duplicity."
@@ -2422,7 +2422,7 @@
             "Fire |opportunityIcon|: If there is a single statement upon which the character’s story hinges, you determine what it is and what you would need to do to verify or disprove it."
         ]
     },
-    "All in Jest":{
+    "all in jest":{
         "name":"All in Jest",
         "description":[
             "Veteran courtiers sometimes play off missteps as jokes. This underhanded but effective tactic puts the other person in a difficult position: press the issue and seem stubborn, or let it slide and give the courtier a pass."
@@ -2432,7 +2432,7 @@
             "Water |opportunityIcon|+: If you forfeited honor as part of the check in order to say something rude or appeal to your target’s base desires (greed, lust, laziness, etc.), regain 1 honor per |opportunityIcon| spent this way."
         ]
     },
-    "Buoyant Arrival":{
+    "buoyant arrival":{
         "name":"Buoyant Arrival",
         "description":[
             "Some people have the ability to blend in with any social environment, fluidly adapting to the rough atmosphere of the humblest tavern one day, while walking among the rulers of the Empire the next."
@@ -2444,7 +2444,7 @@
             "Effects: If you succeed, you may enter or leave the conversation gracefully. You need not forfeit honor or glory for interrupting, suddenly departing, or preempting someone else, regardless of the respective status of the participants."
         ]
     },
-    "Ebb and Flow":{
+    "ebb and flow":{
         "name":"Ebb and Flow",
         "description":[
             "Just as hardest ice and the gentlest mist are composed of the same water, seasoned courtiers know that all it takes is time and work to transform strength into weakness and weakness into strength. The courtier manipulates a person’s perceptions with ease, keeping their allies confident and their foes uneasy."
@@ -2461,7 +2461,7 @@
             "Water |opportunityIcon|opportunityIcon|+: Choose one additional target with vigilance lower than or equal to your first target’s vigilance per |opportunityIcon|opportunityIcon| spent this way."
         ]
     },
-    "Regal Bearing":{
+    "regal bearing":{
         "name":"Regal Bearing",
         "description":[
             "Courtiers train in the art of carrying themselves no matter what clothing they wear, gaining impeccable control over their posture, tone, and choice of words to project exactly the social standing they desire others to see."
@@ -2476,7 +2476,7 @@
             "Water |opportunityIcon|: Choose a character in the scene. Learn if their status is higher or lower than yours (the actual value)."
         ]
     },
-    "Shallow Waters":{
+    "shallow waters":{
         "name":"Shallow Waters",
         "description":[
             "A good courtier learns how to read the desires of those around them from the subtle cues of their responses in conversation, as well as how to probe for details without revealing their intentions."
@@ -2487,7 +2487,7 @@
             "Water |opportunityIcon|opportunityIcon|: Learn the target’s ninjō."
         ]
     },
-    "Slippery Maneuvers":{
+    "slippery maneuvers":{
         "name":"Slippery Maneuvers",
         "description":[
             "The leader makes several signals and calls out a command—often a code word—to their troops; suddenly, the formation shifts in unison to take advantage of the terrain around them."
@@ -2503,7 +2503,7 @@
             "Water |opportunityIcon|: Each target is able to leverage Obscuring terrain to better effect; Attack action checks targeting them have their TN increased by 2 instead of 1. This effect persists until the end of the scene."
         ]
     },
-    "Tributaries of Trade":{
+    "tributaries of trade":{
         "name":"Tributaries of Trade",
         "description":[
             "Gift giving is an important cultural practice in Rokugan (as is the art of gift refusal, which any potential recipient must repeat at least twice before accepting the third offer). While some courtiers have a gift prepared for any possible contingency, many simply get acquainted with the art of explaining why a gift could only have been intended for its current recipient (even if they originally procured it for a different purpose). The ability to quickly acquire an item is valued among all courtiers, as a gift demands reciprocity in some kind, whether that be in favors, esteem, or subsequent gifts."
@@ -2518,7 +2518,7 @@
             "Water |opportunityIcon|+: Reduce the price you must pay for the item by one-quarter per |opportunityIcon| spent this way (to a minimum of one-quarter of the original price)."
         ]
     },
-    "Well of Desire":{
+    "well of desire":{
         "name":"Well of Desire",
         "description":[
             "Bribery is considered to be corruption in Rokugan, yet gift exchanges and gift giving is a time-honored tradition. The shrewdest courtiers can engineer scenarios in which their targets cannot refuse their gifts without tarnishing their reputations. Thus, the recipient of such a poisoned gift might find it preferable to owe the courtier a favor than to be shamed in public."
@@ -2528,7 +2528,7 @@
             "Water |opportunityIcon|: To refuse your gift, your target must forfeit glory equal to your Water Ring. Additionally, if the gift is something that the target desires, the target also must suffer strife equal to its rarity to refuse it. If your target accepts the gift, reduce the TN of your next Social skill check targeting them by the rarity of the item (to a minimum of 1)."
         ]
     },
-    "All Arts Are One":{
+    "all arts are one":{
         "name":"All Arts Are One",
         "description":[
             "Just as the four elements are bound together by Void, certain underlying principles, including aesthetics, logic, and discipline, unite all forms of art. By meditating on these similarities, a courtier is able to more easily grasp the fundamentals of any subject."
@@ -2543,7 +2543,7 @@
             "Void |opportunityIcon|: Choose a ring. Reduce the TN of your next check using that ring for the chosen skill by 1. This effect persists until the end of your next turn (or until the end of the scene during a narrative scene)."
         ]
     },
-    "A Samurai’s Fate":{
+    "a samurai’s fate":{
         "name":"A Samurai’s Fate",
         "description":[
             "A leader asks their warriors for the final service all samurai must someday render to their lord: to lay down their lives that others might live. Even as they fall in battle, their shed blood waters the fields that will grow a thousand victories."
@@ -2556,7 +2556,7 @@
             "If you succeed during a mass battle, your army counts as having the Fearless Army ability, below: Fearless Army: At the end of each round, your army removes panic equal to your glory rank. This effect persists until the end of the scene."
         ]
     },
-    "Courtier’s Resolve":{
+    "courtier’s resolve":{
         "name":"Courtier’s Resolve",
         "description":[
             "Warriors do battle with their bodies, and courtiers do battle with their minds. To maintain one’s composure while surrounded by the challenges of court, one must be able to clear and organize one’s mind, returning focus to the most vital tasks."
@@ -2568,7 +2568,7 @@
             "Effects: Remove strife equal to your glory rank."
         ]
     },
-    "Lady Doji’s Decree":{
+    "lady doji’s decree":{
         "name":"Lady Doji’s Decree",
         "description":[
             "Propriety, grace, and eloquence were of great importance to the founder of the Crane Clan. With a word, she was said to defuse the most dangerous situations. Crane Clan courtiers follow in her footsteps, forcing bystanders to listen with a single striking comment."
@@ -2584,7 +2584,7 @@
             "Void |opportunityIcon|opportunityIcon|: Your targets also cannot perform Scheme actions targeting you."
         ]
     },
-    "Lady Shinjo’s Speed":{
+    "lady shinjo’s speed":{
         "name":"Lady Shinjo’s Speed",
         "description":[
             "The Kami Shinjo carried within her a curiosity that could never be fully satisfied. Her passion extends to her clan, who still feel the call of the unexplored. Peerless riders, the Unicorn Clan finds their way across unfamiliar terrain with ease, as Shinjo taught them centuries ago."
@@ -2599,7 +2599,7 @@
             "Void |opportunityIcon|: You may lead a number of willing characters with mounts of their own up to your school rank."
         ]
     },
-    "Lord Akodo’s Roar":{
+    "lord akodo’s roar":{
         "name":"Lord Akodo’s Roar",
         "description":[
             "The Kami Akodo One-Eye, who founded the Lion Clan, was the greatest tactician in the Empire. His victories rested not upon the strength of his arm, but upon his keen mind and his faith in the people he rallied behind him. The true general never stands alone, for they are always bolstered by the united will of their followers. With a roar that echoes through the ranks, chilling their foes and heartening their comrades, the leader charges as Akodo himself once did."
@@ -2614,7 +2614,7 @@
             "Void |opportunityIcon|opportunityIcon|+: After you perform this action, one other friendly character per |opportunityIcon|opportunityIcon| spent this way at range 0–3 may immediately perform a Strike action targeting a Dazed character."
         ]
     },
-    "Lord Bayushi’s Whispers":{
+    "lord bayushi’s whispers":{
         "name":"Lord Bayushi’s Whispers",
         "description":[
             "The Kami Bayushi, self-appointed villain of the Emperor Hantei and master of duplicity, founded the Scorpion Clan with a simple purpose: to dishonor themselves so that others could live honorably. Bayushi maintained vast networks of spies and informants, and he was extremely skilled at turning assets others used to try to spy on him. The Scorpion Clan has carried on this tradition with an efficiency that would surely make Bayushi proud. Hardly a town exists in the Empire without an agent of the Scorpion."
@@ -2629,7 +2629,7 @@
             "Void |opportunityIcon|: If you succeed, choose one skill. The informant has a number of ranks in that skill equal to your school rank and can perform checks with that skill to assist you until the end of the scene."
         ]
     },
-    "Lord Togashi’s Insight":{
+    "lord togashi’s insight":{
         "name":"Lord Togashi’s Insight",
         "description":[
             "The enigmatic Kami Togashi was said to have the ability to see the future, by which provenance he excused himself from the Tournament of the Kami. Occasionally he appears to his descendants, the members of the Dragon Clan, in flashes of visions or sudden, unexplained bursts of insight. Whether those who hear the voice of Togashi himself are truly in contact with their progenitor, channeling his essence across the ages, or are letting their imaginations run a bit too wild is a topic of discussion among the Dragon’s scholars."
@@ -2644,7 +2644,7 @@
             "Void |opportunityIcon|: Reduce the TN of your first check to overcome the problem you are facing by your school rank (to a minimum of 1)."
         ]
     },
-    "Rouse the Soul":{
+    "rouse the soul":{
         "name":"Rouse the Soul",
         "description":[
             "Many things can cloud the soul, but words can awaken it. The courtier speaks honestly and without pretension, calling upon their allies to overcome earthly circumstances and reach a mutual goal."
@@ -2654,7 +2654,7 @@
             "Void |opportunityIcon|+: Remove one of the following conditions from one target per |opportunityIcon| spent this way: Afflicted, Enraged, Exhausted, Intoxicated, or Unconscious."
         ]
     },
-    "Incite Haunting":{
+    "incite haunting":{
         "name":"Incite Haunting",
         "description":[
             "Kansen are kami twisted by the power of Fu Leng, and they need little prompting to cause harm. Directing them toward a target with a vile rite and profane words that seem to warp the air, the mahō-tsukai afflicts a poor soul with a spiritual malady that can fester and bloom, fueling darker curses still. Spiritualists can perceive kansen as wretched, ghostly figures, clinging to their victim and dragging them inexorably toward a wretched end wrought by their worst nature."
@@ -2671,7 +2671,7 @@
             "|opportunityIcon|+: Choose one additional target per |opportunityIcon| spent this way."
         ]
     },
-    "Grip of Anguish":{
+    "grip of anguish":{
         "name":"Grip of Anguish",
         "description":[
             "The mahō-tsukai calls for the kansen afflicting their victim to wreak sickness and agony upon them. The victim is tormented by nausea, pain, and feverish delusions."
@@ -2689,7 +2689,7 @@
             "Water |opportunityIcon|opportunityIcon|: One target must resist with a TN 3 Fitness check (Earth 1, Fire 4) or suffer one of the following conditions of your choice: Bleeding, Immobilized, or Lightly Wounded."
         ]
     },
-    "Mark of Desecration":{
+    "mark of desecration":{
         "name":"Mark of Desecration",
         "description":[
             "The mahō-tsukai performs the rite upon a corpse or group of corpses, placing ominous masks over their faces and whispering dark words into their dead ears. The dead are dragged to their feet by the kansen possessing them, moving with the jerking, unnatural gait of an ill-made puppet."
@@ -2708,7 +2708,7 @@
             "Earth |opportunityIcon|opportunityIcon|+: One target who was a warrior in life per |opportunityIcon|opportunityIcon| spent this way rises as a Bushi Skeleton."
         ]
     },
-    "Sinful Whispers":{
+    "sinful whispers":{
         "name":"Sinful Whispers",
         "description":[
             "The kansen assail the victim’s mind, murmuring dark things that slowly erode their concentration, making them more receptive to the words of the mahō-tsukai and less able to think coherently."
@@ -2725,7 +2725,7 @@
             "The target may ignore that order, but receives 2 strife at the end of each scene in which they disregard it. When the target becomes Compromised, they must unmask and attempt to fulfill the order until the end of the scene."
         ]
     },
-    "Unholy Fervor":{
+    "unholy fervor":{
         "name":"Unholy Fervor",
         "description":[
             "The kansen bite and tear the flesh of the victim, wracking them with pain that transforms into mindless fury."
@@ -2743,7 +2743,7 @@
             "Fire |opportunityIcon|+: Choose one additional target per |opportunityIcon| spent this way."
         ]
     },
-    "Skulk":{
+    "skulk":{
         "name":"Skulk",
         "description":[
             "Shinobi are known for walking silently from shadow to shadow, moving like phantoms. Some of this relies upon agility and speed, of course, but veterans in the art of stealth know that using a crowd or another visual distraction to walk unnoticed can be as effective as the most complex acrobatics."
@@ -2753,7 +2753,7 @@
             "|opportunityIcon|: If you are in Obscuring terrain, a crowd, or otherwise concealed from sight, one character with vigilance lower than or equal to your ranks in Skulduggery loses sight of you."
         ]
     },
-    "Deadly Sting":{
+    "deadly sting":{
         "name":"Deadly Sting",
         "description":[
             "Poison is not a weapon an honorable samurai would choose, but it is tremendously effective, and like its namesake, the Scorpion Clan is not above envenoming its weapons to defeat foes it otherwise could not best."
@@ -2769,7 +2769,7 @@
             "Air |opportunityIcon|+: If you succeed, the target suffers a critical strike with severity 2, plus 1 per |opportunityIcon| spent this way."
         ]
     },
-    "Noxious Cloud":{
+    "noxious cloud":{
         "name":"Noxious Cloud",
         "description":[
             "Volatile concoctions are an important weapon in many shinobi’s arsenals, allowing them to create choking smoke into which they can escape or even poison unprepared foes to weaken them for a killing blow."
@@ -2786,7 +2786,7 @@
             "Air |opportunityIcon|opportunityIcon|+: If you succeed, one target per |opportunityIcon|opportunityIcon| spent this way suffers a critical strike with severity 2."
         ]
     },
-    "Silencing Stroke":{
+    "silencing stroke":{
         "name":"Silencing Stroke",
         "description":[
             "Shinobi must often eliminate targets without raising an alarm, and so they often train in the art of disabling with a single strike. A shuriken to the trachea or a swift blow to occlude the carotid artery can leave a target unable to scream while the shinobi finishes their unsavory work."

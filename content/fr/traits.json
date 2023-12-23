@@ -1,392 +1,392 @@
 {
-    "Ally":{
+    "ally":{
         "name":"Allié"
     },
-    "Ambidexterity":{
+    "ambidexterity":{
         "name":"Ambidextrie"
     },
-    "Benten’s Blessing":{
+    "benten’s blessing":{
         "name":"Bénédiction de Benten"
     },
-    "Bishamon’s Blessing":{
+    "bishamon’s blessing":{
         "name":"Bénédiction de Bishamon"
     },
-    "Blackmail":{
+    "blackmail":{
         "name":"Chantage"
     },
-    "Blessed Lineage":{
+    "blessed lineage":{
         "name":"Lignée prestigieuse"
     },
-    "Blissful Betrothal":{
+    "blissful betrothal":{
         "name":"Fiançailles bienheureuses"
     },
-    "Daikoku’s Blessing":{
+    "daikoku’s blessing":{
         "name":"Bénédiction de Daikoku"
     },
-    "Dangerous Allure":{
+    "dangerous allure":{
         "name":"Beauté fatale"
     },
-    "Ebisu’s Blessing":{
+    "ebisu’s blessing":{
         "name":"Bénédiction d’Ebisu"
     },
-    "Famously Honest":{
+    "famously honest":{
         "name":"Notoirement honnête"
     },
-    "Famously Lucky":{
+    "famously lucky":{
         "name":"Notoirement chanceux"
     },
-    "Famously Reliable":{
+    "famously reliable":{
         "name":"Notoirement fiable"
     },
-    "Famously Successful":{
+    "famously successful":{
         "name":"Notoirement efficace"
     },
-    "Famously Wealthy":{
+    "famously wealthy":{
         "name":"Notoirement riche"
     },
-    "Flexibility":{
+    "flexibility":{
         "name":"Souplesse"
     },
-    "Fukurokujin’s Blessing":{
+    "fukurokujin’s blessing":{
         "name":"Bénédiction de Fukurokujin"
     },
-    "Indomitable Will":{
+    "indomitable will":{
         "name":"Volonté indomptable"
     },
-    "Jurojin’s Blessing":{
+    "jurojin’s blessing":{
         "name":"Bénédiction de Jurojin"
     },
-    "Keen Balance":{
+    "keen balance":{
         "name":"Équilibre exceptionnel"
     },
-    "Keen Hearing":{
+    "keen hearing":{
         "name":"Ouïe exceptionnelle"
     },
-    "Keen Sight":{
+    "keen sight":{
         "name":"Vue exceptionnelle"
     },
-    "Keen Smell":{
+    "keen smell":{
         "name":"Odorat exceptionnel"
     },
-    "Karmic Tie":{
+    "karmic tie":{
         "name":"Lien karmique"
     },
-    "Kisshōten’s Blessing":{
+    "kisshōten’s blessing":{
         "name":"Bénédiction de Kisshōten"
     },
-    "Large Stature":{
+    "large stature":{
         "name":"Stature imposante"
     },
-    "Paragon of Compassion":{
+    "paragon of compassion":{
         "name":"Parangon de compassion"
     },
-    "Paragon of Courage":{
+    "paragon of courage":{
         "name":"Parangon de courage"
     },
-    "Paragon of Courtesy":{
+    "paragon of courtesy":{
         "name":"Parangon de courtoisie"
     },
-    "Paragon of Duty and Loyalty":{
+    "paragon of duty and loyalty":{
         "name":"Parangon de devoir et loyauté"
     },
-    "Paragon of Honor":{
+    "paragon of honor":{
         "name":"Parangon d’honneur"
     },
-    "Paragon of Righteousness":{
+    "paragon of righteousness":{
         "name":"Parangon de droiture"
     },
-    "Paragon of Sincerity":{
+    "paragon of sincerity":{
         "name":"Parangon de sincérité"
     },
-    "Precise Memory":{
+    "precise memory":{
         "name":"Excellente mémoire"
     },
-    "Quick Reflexes":{
+    "quick reflexes":{
         "name":"Réflexes fulgurants"
     },
-    "Seasoned":{
+    "seasoned":{
         "name":"Aguerri"
     },
-    "Sixth Sense":{
+    "sixth sense":{
         "name":"Sixième sens"
     },
-    "Small Stature":{
+    "small stature":{
         "name":"Petit"
     },
-    "Subtle Observer":{
+    "subtle observer":{
         "name":"Observateur subtil"
     },
-    "Support":{
+    "support":{
         "name":"Soutien"
     },
-    "Animal Bond":{
+    "animal bond":{
         "name":"Animaux"
     },
-    "Armament":{
+    "armament":{
         "name":"Armement"
     },
-    "Brushwork":{
+    "brushwork":{
         "name":"Pinceau"
     },
-    "Curiosity":{
+    "curiosity":{
         "name":"Curiosité"
     },
-    "Daredevil":{
+    "daredevil":{
         "name":"Casse-cou"
     },
-    "Enlightenment":{
+    "enlightenment":{
         "name":"Illumination"
     },
-    "Fashion":{
+    "fashion":{
         "name":"Mode"
     },
-    "Fortune-Telling":{
+    "fortune-telling":{
         "name":"Voyance"
     },
-    "Generosity":{
+    "generosity":{
         "name":"Generosité"
     },
-    "Gossip":{
+    "gossip":{
         "name":"Commérages"
     },
-    "History":{
+    "history":{
         "name":"Histore"
     },
-    "Ikebana":{
+    "ikebana":{
         "name":"Ikebana"
     },
-    "Playfulness":{
+    "playfulness":{
         "name":"Plaisanteries"
     },
-    "Provocation":{
+    "provocation":{
         "name":"Provocation"
     },
-    "Sake":{
+    "sake":{
         "name":"Saké"
     },
-    "Secrets":{
+    "secrets":{
         "name":"Secrets"
     },
-    "Stories":{
+    "stories":{
         "name":"Contes"
     },
-    "Tea":{
+    "tea":{
         "name":"Thé"
     },
-    "Travel":{
+    "travel":{
         "name":"Voyages"
     },
-    "Wordplay":{
+    "wordplay":{
         "name":"Jeux de mots"
     },
-    "Benten’s Curse":{
+    "benten’s curse":{
         "name":"Malédiction de Benten"
     },
-    "Bishamon’s Curse":{
+    "bishamon’s curse":{
         "name":"Malédiction de Bishamon"
     },
-    "Bitter Betrothal":{
+    "bitter betrothal":{
         "name":"Amères fiançailles"
     },
-    "Blackmailed":{
+    "blackmailed":{
         "name":"Chantage exercé"
     },
-    "Blindness":{
+    "blindness":{
         "name":"Cécité"
     },
-    "Bluntness":{
+    "bluntness":{
         "name":"Franc-parler"
     },
-    "Clumsiness":{
+    "clumsiness":{
         "name":"Maladresse"
     },
-    "Cognitive Lapses":{
+    "cognitive lapses":{
         "name":"Absences"
     },
-    "Daikoku’s Curse":{
+    "daikoku’s curse":{
         "name":"Malédiction de Daikoku"
     },
-    "Damaged Heart or Organ":{
+    "damaged heart or organ":{
         "name":"Coeur ou organe défaillant"
     },
-    "Deafness":{
+    "deafness":{
         "name":"Surdité"
     },
-    "Discomfiting Countenance":{
+    "discomfiting countenance":{
         "name":"Aspect déconcertant"
     },
-    "Disdain for Compassion":{
+    "disdain for compassion":{
         "name":"Mépris pour la compassion"
     },
-    "Disdain for Courage":{
+    "disdain for courage":{
         "name":"Mépris pour le courage"
     },
-    "Disdain for Courtesy":{
+    "disdain for courtesy":{
         "name":"Mépris pour la courtoisie"
     },
-    "Disdain for Duty and Loyalty":{
+    "disdain for duty and loyalty":{
         "name":"Mépris pour le devoir et la loyauté"
     },
-    "Disdain for Honor":{
+    "disdain for honor":{
         "name":"Mépris pour l’honneur"
     },
-    "Disdain for Righteousness":{
+    "disdain for righteousness":{
         "name":"Mépris pour la droiture"
     },
-    "Disdain for Sincerity":{
+    "disdain for sincerity":{
         "name":"Mépris pour la sincérité"
     },
-    "Ebisu’s Curse":{
+    "ebisu’s curse":{
         "name":"Malédiction d’Ebisu"
     },
-    "Fractured Spine":{
+    "fractured spine":{
         "name":"Colonne vertébrale fracturée"
     },
-    "Fukurokujin’s Curse":{
+    "fukurokujin’s curse":{
         "name":"Malédiction de Fukurokujin"
     },
-    "Gaijin Name":{
+    "gaijin name":{
         "name":"Nom gaijin"
     },
-    "Gaijin Culture":{
+    "gaijin culture":{
         "name":"Culture gaijin"
     },
-    "Gaijin Appearance":{
+    "gaijin appearance":{
         "name":"Apparence gaijin"
     },
-    "Haunting":{
+    "haunting":{
         "name":"Hanté"
     },
-    "Incurable Illness":{
+    "incurable illness":{
         "name":"Maladie incurable"
     },
-    "Jurōjin’s Curse":{
+    "jurōjin’s curse":{
         "name":"Malédiction de Jurōjin"
     },
-    "Kisshōten’s Curse":{
+    "kisshōten’s curse":{
         "name":"Malédiction de Kisshōten"
     },
-    "Lost Arm or Lost Hand":{
+    "lost arm or lost hand":{
         "name":"Manchot"
     },
-    "Lost Eye":{
+    "lost eye":{
         "name":"Borgne"
     },
-    "Lost Fingers":{
+    "lost fingers":{
         "name":"Doigts manquants"
     },
-    "Lost Leg":{
+    "lost leg":{
         "name":"Unijambiste"
     },
-    "Lost Memories":{
+    "lost memories":{
         "name":"Amnésie"
     },
-    "Maimed Arm":{
+    "maimed arm":{
         "name":"Bras mutilé"
     },
-    "Maimed Visage":{
+    "maimed visage":{
         "name":"Défiguré"
     },
-    "Momoku":{
+    "momoku":{
         "name":"Momoku"
     },
-    "Muteness":{
+    "muteness":{
         "name":"Mutisme"
     },
-    "Nerve Damage":{
+    "nerve damage":{
         "name":"Lésions nerveuses"
     },
-    "Scorn":{
+    "scorn":{
         "name":"Méprisé"
     },
-    "Shadowlands Taint (Air)":{
+    "shadowlands taint (air)":{
         "name":"Souillure de l’Outremonde (Air)"
     },
-    "Shadowlands Taint (Earth)":{
+    "shadowlands taint (earth)":{
         "name":"Souillure de l’Outremonde (Terre)"
     },
-    "Shadowlands Taint (Fire)":{
+    "shadowlands taint (fire)":{
         "name":"Souillure de l’Outremonde (Feu)"
     },
-    "Shadowlands Taint (Void)":{
+    "shadowlands taint (void)":{
         "name":"Souillure de l’Outremonde (Vide)"
     },
-    "Shadowlands Taint (Water)":{
+    "shadowlands taint (water)":{
         "name":"Souillure de l’Outremonde (Eau)"
     },
-    "Sworn Enemy":{
+    "sworn enemy":{
         "name":"Ennemi juré"
     },
-    "Whispers of Cruelty":{
+    "whispers of cruelty":{
         "name":"Réputation de cruauté"
     },
-    "Whispers of Doom":{
+    "whispers of doom":{
         "name":"Réputation de tragédie"
     },
-    "Whispers of Failure":{
+    "whispers of failure":{
         "name":"Réputation d’échec"
     },
-    "Whispers of Poverty":{
+    "whispers of poverty":{
         "name":"Réputation d’indigence"
     },
-    "Whispers of Treachery":{
+    "whispers of treachery":{
         "name":"Réputation de traîtrise"
     },
-    "Addiction":{
+    "addiction":{
         "name":"Addiction"
     },
-    "Battle Trauma":{
+    "battle trauma":{
         "name":"Traumatisme de guerre"
     },
-    "Cynicism":{
+    "cynicism":{
         "name":"Cynisme"
     },
-    "Dark Secret":{
+    "dark secret":{
         "name":"Sombre secret"
     },
-    "Delusions of Grandeur":{
+    "delusions of grandeur":{
         "name":"Mégalomanie"
     },
-    "Fear of Death":{
+    "fear of death":{
         "name":"Peur de la mort"
     },
-    "Ferocity":{
+    "ferocity":{
         "name":"Férocité"
     },
-    "Impatience":{
+    "impatience":{
         "name":"Impatience"
     },
-    "Intolerance":{
+    "intolerance":{
         "name":"Intolérance"
     },
-    "Irrepressible Flirtation":{
+    "irrepressible flirtation":{
         "name":"Joli coeur"
     },
-    "Jealousy":{
+    "jealousy":{
         "name":"Jalousie"
     },
-    "Materialism":{
+    "materialism":{
         "name":"Matérialisme"
     },
-    "Meekness":{
+    "meekness":{
         "name":"Timidité"
     },
-    "Painful Honesty":{
+    "painful honesty":{
         "name":"Douloureuse honnêteté"
     },
-    "Paranoia":{
+    "paranoia":{
         "name":"Paranoïa"
     },
-    "Perfectionism":{
+    "perfectionism":{
         "name":"Perfectionnisme"
     },
-    "Phobia":{
+    "phobia":{
         "name":"Phobie"
     },
-    "Softheartedness":{
+    "softheartedness":{
         "name":"Coeur tendre"
     },
-    "Superstition":{
+    "superstition":{
         "name":"Superstition"
     }
 }

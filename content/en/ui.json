@@ -37,8 +37,10 @@
     "unmask":"Unmask",
     "characterChoice":{
         "new":"New character",
-        "change":"Change character",
-        "delete":"Delete character"
+        "import":"Import",
+        "export":"Export",
+        "change":"Change",
+        "delete":"Delete"
     },
     "skillGroups":{
         "artisan":{
@@ -432,7 +434,7 @@
         "free":"This upgrade will not contribute to any curriculum",
         "forceContribution":"Force a full contribution",
         "notEnoughXp":"Not enough XP",
-        "confirm":"Confirm (irrevocable)"
+        "confirm":"Confirm"
     },
     "activationKeywords":{
         "ring":[" ring"],

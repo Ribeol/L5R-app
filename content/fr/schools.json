@@ -1,5 +1,5 @@
 {
-    "Hida":{
+    "hida":{
         "name":"École de défenseur Hida",
         "types":["Bushi"],
         "description":[
@@ -19,7 +19,7 @@
             ]
         }
     },
-    "Hiruma":{
+    "hiruma":{
         "name":"École d’éclaireur Hiruma",
         "types":["Bushi","Shinobi"],
         "description":[
@@ -38,7 +38,7 @@
             ]
         }
     },
-    "Kaiu":{
+    "kaiu":{
         "name":"École d’ingénieur Kaiu",
         "types":["Artisan","Bushi"],
         "description":[
@@ -57,7 +57,7 @@
             ]
         }
     },
-    "Kuni":{
+    "kuni":{
         "name":"École de purificateur Kuni",
         "types":["Shugenja","Bushi"],
         "description":[
@@ -76,7 +76,7 @@
             ]
         }
     },
-    "Yasuki":{
+    "yasuki":{
         "name":"École de marchand Yasuki",
         "types":["Courtisan"],
         "description":[
@@ -95,7 +95,7 @@
             ]
         }
     },
-    "Asahina":{
+    "asahina":{
         "name":"École d’artificier Asahina",
         "types":["Shugenja","Artisan"],
         "description":[
@@ -114,7 +114,7 @@
             ]
         }
     },
-    "Daidoji":{
+    "daidoji":{
         "name":"École des guerriers de fer Daidoji",
         "types":["Bushi"],
         "description":[
@@ -133,7 +133,7 @@
             ]
         }
     },
-    "Doji":{
+    "doji":{
         "name":"École de diplomate Doji",
         "types":["Courtisan"],
         "description":[
@@ -152,7 +152,7 @@
             ]
         }
     },
-    "Kakita":{
+    "kakita":{
         "name":"École de duelliste Kakita",
         "types":["Bushi","Artisan"],
         "description":[
@@ -174,7 +174,7 @@
             ]
         }
     },
-    "Agasha":{
+    "agasha":{
         "name":"École de mystique Agasha",
         "types":["Shugenja"],
         "description":[
@@ -193,7 +193,7 @@
             ]
         }
     },
-    "Kitsuki":{
+    "kitsuki":{
         "name":"École d’enquêteur Kitsuki",
         "types":["Courtisan","Bushi"],
         "description":[
@@ -213,7 +213,7 @@
             ]
         }
     },
-    "Mirumoto":{
+    "mirumoto":{
         "name":"École d’adepte des Cieux jumeaux Mirumoto",
         "types":["Bushi"],
         "description":[
@@ -236,7 +236,7 @@
             ]
         }
     },
-    "Togashi":{
+    "togashi":{
         "name":"Ordre des moines tatoués de Togashi",
         "types":["Moine"],
         "description":[
@@ -257,7 +257,7 @@
             ]
         }
     },
-    "Akodo":{
+    "akodo":{
         "name":"École de commandant Akodo",
         "types":["Bushi"],
         "description":[
@@ -276,7 +276,7 @@
             ]
         }
     },
-    "Ikoma":{
+    "ikoma":{
         "name":"École de barde Ikoma",
         "types":["Courtisan"],
         "description":[
@@ -298,7 +298,7 @@
             ]
         }
     },
-    "Kitsu":{
+    "kitsu":{
         "name":"École de médium Kitsu",
         "types":["Shugenja"],
         "description":[
@@ -317,7 +317,7 @@
             ]
         }
     },
-    "Matsu":{
+    "matsu":{
         "name":"École de berserker Matsu",
         "types":["Bushi"],
         "description":[
@@ -336,7 +336,7 @@
             ]
         }
     },
-    "Asako":{
+    "asako":{
         "name":"École de maître du savoir Asako",
         "types":["Courtisan"],
         "description":[
@@ -355,7 +355,7 @@
             ]
         }
     },
-    "Isawa":{
+    "isawa":{
         "name":"École d’élémentaliste Isawa",
         "types":["Shugenja"],
         "description":[
@@ -374,7 +374,7 @@
             ]
         }
     },
-    "Shiba":{
+    "shiba":{
         "name":"École de protecteur Shiba",
         "types":["Bushi","Courtisan"],
         "description":[
@@ -393,7 +393,7 @@
             ]
         }
     },
-    "Kaito":{
+    "kaito":{
         "name":"École de gardien de sanctuaire Kaito",
         "types":["Moine"],
         "description":[
@@ -415,7 +415,7 @@
             ]
         }
     },
-    "Bayushi":{
+    "bayushi":{
         "name":"École de manipulateur Bayushi",
         "types":["Courtisan"],
         "description":[
@@ -434,7 +434,7 @@
             ]
         }
     },
-    "Shosuro":{
+    "shosuro":{
         "name":"École d’infiltré Shosuro",
         "types":["Shinobi","Courtisan"],
         "description":[
@@ -454,7 +454,7 @@
             ]
         }
     },
-    "Soshi":{
+    "soshi":{
         "name":"École d’illusionniste Soshi",
         "types":["Shugenja","Courtisan","Shinobi"],
         "description":[
@@ -474,7 +474,7 @@
             ]
         }
     },
-    "Yogo":{
+    "yogo":{
         "name":"École de maître des glyphes Yogo",
         "types":["Shugenja"],
         "description":[
@@ -493,7 +493,7 @@
             ]
         }
     },
-    "Ide":{
+    "ide":{
         "name":"École de négociant Ide",
         "types":["Courtisan"],
         "description":[
@@ -514,7 +514,7 @@
             ]
         }
     },
-    "Iuchi":{
+    "iuchi":{
         "name":"École de maître du meishōdō Iuchi",
         "types":["Shugenja","Artisan"],
         "description":[
@@ -534,7 +534,7 @@
             ]
         }
     },
-    "Moto":{
+    "moto":{
         "name":"École de conquérant Moto",
         "types":["Bushi"],
         "description":[
@@ -554,7 +554,7 @@
             ]
         }
     },
-    "Shinjo":{
+    "shinjo":{
         "name":"École d’éclaireur monté Shinjo",
         "types":["Bushi","Courtisan"],
         "description":[
@@ -573,7 +573,7 @@
             ]
         }
     },
-    "Utaku":{
+    "utaku":{
         "name":"École de vierge de bataille Utaku",
         "types":["Bushi"],
         "description":[

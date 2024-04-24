@@ -1478,8 +1478,8 @@ class DisplayManager {
                 const character = dataManager.current.character;    
                 // Convert JSON to string
                 var jsonString = JSON.stringify(character);    
-                // Create a Blob containing the JSON data
-                var blob = new Blob([jsonString]);    
+                // Create a Blob containing the JSON data and specify type as application/json
+                var blob = new Blob([jsonString], { type: 'application/json' });
                 // Create and trigger a link element
                 var link = document.createElement('a');
                 link.href = window.URL.createObjectURL(blob);
